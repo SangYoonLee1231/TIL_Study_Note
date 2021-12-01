@@ -1,6 +1,6 @@
 # HTML의 기본
 
->  참고 강의 : 「<a href="https://nomadcoders.co/kokoa-clone">노마드 코더 - 코코아톡 클론코딩</a>」
+>  참고 강의 : 「<a href="https://nomadcoders.co/kokoa-clone" target="_blank">노마드 코더 - 코코아톡 클론코딩</a>」
 
 <br/>
 
