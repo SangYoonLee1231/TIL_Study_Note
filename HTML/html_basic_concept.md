@@ -6,13 +6,12 @@
 
 ## 🗨 HTML이란
 
-*  웹사이트는 2개나 3개의 언어로 구성되어 있다. - HTML, CSS, JavaScript
+*  웹사이트는 보통 2개나 3개의 언어로 구성되어 있다. - HTML, CSS, JavaScript
 
-* 이 중 HTML은 웹사이트의 '뼈대'를 담당한다.
+* 이 중 HTML은 웹사이트의 <strong>뼈대</strong>를 담당한다.
 
 * ✨ HTML은 인간의 언어를 이해하지 못하는 브라우저에게,     
-웹사이트의 content(이미지, 제목, 사진, 사이드 바 등등..)가 어떻게 구성되어 있는지 설명할 때  
-쓰이는 언어이다.   
+웹사이트의 content(이미지, 제목, 사진, 사이드 바 등등..)가 어떻게 구성되어 있는지 설명할 때 쓰이는 언어이다.   
 
 *   "브라우저야 이건 title이고, 이건 날짜야. 이것은 image이고 이 이미지는 따로 설명이 되어 있어."
 
@@ -28,17 +27,38 @@
 
 ```html
 /* 일반 태그 작성법 */
-<tag_name> content </tag_name>
+<tag> content </tag>
 
 /* Self-Closing 태그 작성법 */
-<tag_name ... />
+<tag ... />
 ```
-* 일반 HTML 태그는 열고 반드시 닫아주어야 한다.
+* 일반 HTML 태그는 열고 반드시 <strong>닫아주어야</strong> 한다.
 
-* 그리고 여는 태그와 닫는 태그의 이름이 반드시 동일해야 한다.
+* 그리고 여는 태그와 닫는 태그의 이름은 반드시 <strong>동일해야</strong> 한다.
 
 <br/>
 
-### HTML의 기본 구조
+## HTML의 기본 구조
+```html
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+
+  <body>
+      <h1>hello world!</h1>
+  </body>
+
+</html>
+```
+* \<!DOCTYPE html> : 이 파일은 html임을 브라우저에게 알리는 코드
+
+* \<html>은 \<head> 부분과 \<body>부분으로 나뉜다.
+
+* \<head> : 사용자의 눈에 보이지 않는 웹사이트 환경을 설정하는 부분
+
+* \<body> : 사용자가 볼 수 있는 content를 작성하는 부분
 
