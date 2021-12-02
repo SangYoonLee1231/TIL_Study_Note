@@ -4,4 +4,4 @@
 ***
 
 ### HTML
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML/html_basic_concept.md">HTML의 기본 개념, 문법, 구조
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML/html_basic_concept.md">HTML의 기본 개념, 문법, HTML의 구조
