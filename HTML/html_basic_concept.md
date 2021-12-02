@@ -58,13 +58,13 @@
 
 </html>
 ```
-* \<!DOCTYPE html> : 이 파일은 html임을 브라우저에게 알리는 코드
+* <strong>\<!DOCTYPE html></strong> : 이 파일은 html임을 브라우저에게 알리는 코드
 
 * \<html>은 \<head> 부분과 \<body>부분으로 나뉜다.
 
-* \<head> : 사용자의 눈에 보이지 않는 웹사이트 환경을 설정하는 부분
+* <strong>\<head></strong> : 사용자의 눈에 보이지 않는 웹사이트 환경을 설정하는 부분
 
-* \<body> : 사용자가 볼 수 있는 content를 작성하는 부분
+* <strong>\<body></strong> : 사용자가 볼 수 있는 content를 작성하는 부분
 
 <br/>
 
@@ -73,6 +73,7 @@
 * 속성(attribute) : HTML 태그에 추가하는 부가적인 정보
 
 ```html
+/* 작성법 */
 <tagname attrName="">좋은 개발자가 되고 싶다</tagname>
 
 /* 실제 사용 예시 */
