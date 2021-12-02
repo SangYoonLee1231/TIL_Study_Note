@@ -60,7 +60,7 @@
 ```
 * <strong>\<!DOCTYPE html></strong> : 이 파일은 html임을 브라우저에게 알리는 코드
 
-* \<html>은 \<head> 부분과 \<body>부분으로 나뉜다.
+* <strong>\<html></strong>은 <strong>\<head></strong> 부분과 <strong>\<body></strong>부분으로 나뉜다.
 
 * <strong>\<head></strong> : 사용자의 눈에 보이지 않는 웹사이트 환경을 설정하는 부분
 
