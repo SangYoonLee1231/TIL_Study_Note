@@ -21,12 +21,14 @@
 
 ## HTML 기본 문법
 
+* HTML은 '태그'로 구성되어 있다.
+
 * HTML 태그엔 두 종류가 있다. - 일반 태그 vs Self-Closing 태그
 
 
 ```html
 /* 일반 태그 작성법 */
-<tag> content </tag>
+<tag>content</tag>
 
 /* Self-Closing 태그 작성법 */
 <tag ... />
@@ -64,3 +66,28 @@
 
 * \<body> : 사용자가 볼 수 있는 content를 작성하는 부분
 
+<br/>
+
+## HTML 속성(attribute)
+
+* 속성(attribute) : HTML 태그에 추가하는 부가적인 정보
+
+```html
+<tagname attrName="">좋은 개발자가 되고 싶다</tagname>
+
+/* 실제 사용 예시 */
+<div id="title">
+  <a href="http://google.com" target="_blank">구글로 이동</a>
+</div>
+```
+* HTML 태그와 반드시 띄어쓴다.
+
+* attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
+
+* 일부 attribute는 모든 태그에 사용 가능하다. (예: id)
+
+* 반대로 일부 attribute는 특정 태그만 사용 가능하다. (예: \<a href="">, \<img src="">, \<input type="">)
+
+* 다양한 태그의 attribute(속성)이 존재하나 역시 무작정 암기 X. 사용법을 이해하고 필요할 때 검색해서 찾아 쓰자.
+
+* HTML은 attribute와 결합할 때 강력해진다.
