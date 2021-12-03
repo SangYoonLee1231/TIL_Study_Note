@@ -6,7 +6,8 @@
 
 * HTML 자주 쓰이는 태그를 최대한 많이 정리하였다. 단순 암기하지 말고 자주 쓰면서 익숙해지자.
 
-* 모르는 태그는 구글에 검색하여 MDN Web Docs에 가서 찾아 쓰자. https://developer.mozilla.org/ko/docs/Web/HTML/Element
+* 모르는 태그는 구글에 검색하여 MDN Web Docs에 가서 찾아 쓰자. 
+https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 <br/>
 
@@ -30,6 +31,16 @@
 
 ## \<body> 내부 태그
 
+### 블록, 인라인 태그
+    
+* 블록 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
+    
+    * <strong>\<div>, \<p>, \<h1>, \<ul></strong>
+    
+* 인라인 태그 : 블록 속에 삽입되어 블록의 일부로 출력
+    
+    * <strong>\<strong>, \<a>, \<img>, \<span></strong>
+
 ### 줄바꿈
 
 * <strong>\<br></strong> : 강제 줄바꿈 태그 (Self-CLosing 태그)
@@ -47,9 +58,9 @@
 
 ```html
 <ol>
-    <li> </li>
-    <li> </li>
-    <li> </li>
+    <li> 사과 </li>
+    <li> 김치 </li>
+    <li> 고기 </li>
 </ol>
 ```
 
@@ -57,23 +68,14 @@
 
   * <strong>\<ol type="A"></strong> : 1,2,3 숫자 순이 아닌 A,B,C 알바벳 순으로 리스트 항목 표시
 
-<br/>
-
-### 블록, 인라인 태그
-
-* 블록 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
-
-  * <strong>\<div>, \<p>, \<h1>, \<ul></strong>
-
-* 인라인 태그 : 블록 속에 삽입되어 블록의 일부로 출력
-
-  * <strong>\<strong>, \<a>, \<img>, \<span></strong>
 
 ### 미디어 content 태그
 
-* <strong>\<img></strong> : 이미지 삽입 태그 (Self-CLosing Tag)
+* <strong>\<img></strong> : 이미지 삽입 태그 (Self-Closing Tag)
 
   * <strong>\<img src="... .jpg" width="150" height="200" alt="사진 없음 아무튼 없음"></strong>
+
+* <strong>\<video></strong> : 비디오 삽입 태그
 
 ### 표 (테이블) 태그
 
@@ -83,11 +85,23 @@
 
 * <strong>\<tr>,\<th>,\<td></strong> : 행(가로줄), 열(세로줄), 데이터 셀
 
+* 셀 합치기
+
+  * \<td> 요소의 rowspan 속성(attribute) : 위 아래 줄(rows)의 셀 병합
+
+  * \<td> 요소의 colspan 속성(attribute) : 옆 칸(column)의 셀 병합
+
 * 자세한 건 검색을 활용하자.
+
+### Form 태그
+
+*  
 
 ### 기타 태그
 
-* <strong>\<hr> : 수평선 긋기
+* <strong>\<hr></strong> : 수평선 긋기
+
+* <strong>\<a></strong> : 하이퍼링크 태그
 
 <br/>
 

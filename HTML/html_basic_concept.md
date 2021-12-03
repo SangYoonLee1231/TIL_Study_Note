@@ -62,7 +62,8 @@
 
 * <strong>\<html></strong>은 <strong>\<head></strong> 부분과 <strong>\<body></strong>부분으로 나뉜다.
 
-* <strong>\<head></strong> : 사용자의 눈에 보이지 않는 웹사이트 환경을 설정하는 부분
+* <strong>\<head></strong> : 사용자의 눈에 보이지 않는 웹사이트 환경을 설정하는 부분  
+(데이터를 설명하는 메타 데이터를 삽입하는 영역)
 
 * <strong>\<body></strong> : 사용자가 볼 수 있는 content를 작성하는 부분
 
