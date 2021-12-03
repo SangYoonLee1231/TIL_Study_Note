@@ -1,10 +1,10 @@
 # HTML의 다양한 태그
 
->  참고 강의 : 「<a href="https://nomadcoders.co/kokoa-clone">노마드 코더 - 코코아톡 클론코딩</a>」, 「<a href="https://youtube.com/playlist?list=PLuHgQVnccGMAE4Sn_SYvMw5-qEADJcU-X">생활코딩 - 웹 애플리케이션 만들기</a>」
+>  참고 강의 : 「<a href="https://nomadcoders.co/kokoa-clone">노마드 코더 - 코코아톡 클론코딩</a>」, 「<a href="https://youtube.com/playlist?list=PLuHgQVnccGMAE4Sn_SYvMw5-qEADJcU-X">생활코딩 - 웹 애플리케이션 만들기</a>」, 학부 수업 자료
 
 <br/>
 
-* HTML에서 자주 쓰이는 태그를 최대한 많이 정리하였다. 단순 암기하지 말고 계속 쓰면서 익숙해지자.
+* ✨ HTML에서 자주 쓰이는 태그를 최대한 많이 정리하였다. 단순 암기하지 말고 계속 쓰면서 익숙해지자.
 
 * 모르는 태그는 구글에 검색하여 MDN Web Docs에 가서 찾아 쓰자. <br/>
 https://developer.mozilla.org/ko/docs/Web/HTML/Element
