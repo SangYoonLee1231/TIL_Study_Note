@@ -4,18 +4,13 @@
 
 <br/>
 
-* HTML 자주 쓰이는 태그를 정리하였다. 단순 암기하지 말고 자주 쓰면서 익숙해지자.
+* HTML 자주 쓰이는 태그를 최대한 많이 정리하였다. 단순 암기하지 말고 자주 쓰면서 익숙해지자.
 
 * 모르는 태그는 구글에 검색하여 MDN Web Docs에 가서 찾아 쓰자. https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
-## 줄바꿈 태그
+<br/>
 
-* <strong>\<br></strong> : 강제 줄바꿈 태그 (Self-CLosing 태그)
-
-* <strong>\<p></strong> : 단락 표시  
-(의미를 담고 있는 태그이므로 \<br>보다 좋은 태그이다.)
-
-## \<head> 내부 태그
+## \<head> 내부 태그 (메타 데이터 삽입 태그)
 
 * <strong>\<title></strong> : 웹페이지에 타이틀 달기
 
@@ -25,8 +20,75 @@
   
   * <strong>\<meta content="..." name="description" /></strong> : Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 표시.
 
-* \<link>
+* <strong>\<link></strong>
 
   * <strong>\<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /></strong> : 웹 브라우저 탭의 이미지 설정
 
   * <strong>\<link rel="stylesheet" href="style.css" /></strong> : style이름의 css파일과 연결
+
+<br/>
+
+## \<body> 내부 태그
+
+### 줄바꿈
+
+* <strong>\<br></strong> : 강제 줄바꿈 태그 (Self-CLosing 태그)
+
+* <strong>\<p></strong> : 단락 표시  
+(의미를 담고 있는 태그이므로 \<br>보다 좋은 태그이다.)
+
+### 목록 (리스트)
+
+* <strong>\<ol></strong> : ordered list - 순서가 있는 목록 (부모 태그)
+
+* <strong>\<ui></strong> : unordered list - 순서가 있는 목록 (부모 태그)
+
+* <strong>\<li></strong> : 목록의 각 항목을 나열하는 태그 (자식 태그)
+
+```html
+<ol>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+</ol>
+```
+
+* ol 태그의 type 속성(attribute) 
+
+  * <strong>\<ol type="A"></strong> : 1,2,3 숫자 순이 아닌 A,B,C 알바벳 순으로 리스트 항목 표시
+
+<br/>
+
+### 블록, 인라인 태그
+
+* 블록 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
+
+  * <strong>\<div>, \<p>, \<h1>, \<ul></strong>
+
+* 인라인 태그 : 블록 속에 삽입되어 블록의 일부로 출력
+
+  * <strong>\<strong>, \<a>, \<img>, \<span></strong>
+
+### 미디어 content 태그
+
+* <strong>\<img></strong> : 이미지 삽입 태그 (Self-CLosing Tag)
+
+  * <strong>\<img src="... .jpg" width="150" height="200" alt="사진 없음 아무튼 없음"></strong>
+
+### 표 (테이블) 태그
+
+* <strong>\<table></strong> : 표 전체를 담는 컨테이너
+
+* <strong>\<caption></strong> : 표 제목
+
+* <strong>\<tr>,\<th>,\<td></strong> : 행(가로줄), 열(세로줄), 데이터 셀
+
+* 자세한 건 검색을 활용하자.
+
+### 기타 태그
+
+* <strong>\<hr> : 수평선 긋기
+
+<br/>
+
+## Semantic HTML
