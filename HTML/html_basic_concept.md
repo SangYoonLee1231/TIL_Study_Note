@@ -72,6 +72,10 @@
 
 * 속성(attribute) : HTML 태그에 추가하는 부가적인 정보
 
+* HTML 태그와 반드시 띄어쓴다.
+  
+* attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
+
 ```html
 /* 작성법 */
 <tagname attrName="">좋은 개발자가 되고 싶다</tagname>
@@ -81,9 +85,7 @@
   <a href="http://google.com" target="_blank">구글로 이동</a>
 </div>
 ```
-* HTML 태그와 반드시 띄어쓴다.
-
-* attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
+* 태그와 속성은 대소문자를 구분하지 않는다.
 
 * 일부 attribute는 모든 태그에 사용 가능하다. (예: id)
 
