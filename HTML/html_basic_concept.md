@@ -28,7 +28,7 @@
 
 ```html
 /* 일반 태그 작성법 */
-<tag>content</tag>
+<tag> content </tag>
 
 /* Self-Closing 태그 작성법 */
 <tag ... />

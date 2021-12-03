@@ -27,6 +27,8 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
   * <strong>\<link rel="stylesheet" href="style.css" /></strong> : style이름의 css파일과 연결
 
+* <strong>\<style></strong> : 웹 페이지 전체에 적용할 css(스타일 시트) 코드 작성
+
 <br/>
 
 ## \<body> 내부 태그
