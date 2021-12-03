@@ -4,9 +4,9 @@
 
 <br/>
 
-* HTML 자주 쓰이는 태그를 최대한 많이 정리하였다. 단순 암기하지 말고 자주 쓰면서 익숙해지자.
+* HTML에서 자주 쓰이는 태그를 최대한 많이 정리하였다. 단순 암기하지 말고 계속 쓰면서 익숙해지자.
 
-* 모르는 태그는 구글에 검색하여 MDN Web Docs에 가서 찾아 쓰자. 
+* 모르는 태그는 구글에 검색하여 MDN Web Docs에 가서 찾아 쓰자. <br/>
 https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 <br/>
