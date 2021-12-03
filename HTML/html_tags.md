@@ -68,7 +68,7 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 * ol 태그의 type 속성(attribute) 
 
-  * <strong>\<ol type="A"></strong> : 1,2,3 숫자 순이 아닌 A,B,C 알바벳 순으로 리스트 항목 표시
+  * <strong>\<ol type="A"></strong> : 1,2,3 숫자 순이 아닌 A,B,C 알파벳 순으로 리스트 항목 표시
 
 
 ### 미디어 content 태그
