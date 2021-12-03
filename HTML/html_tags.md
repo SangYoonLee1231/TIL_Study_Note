@@ -10,23 +10,23 @@
 
 ## 줄바꿈 태그
 
-* \<br> : 강제 줄바꿈 태그 (Self-CLosing 태그)
+* <strong>\<br></strong> : 강제 줄바꿈 태그 (Self-CLosing 태그)
 
-* \<p> : 단락 표시  
+* <strong>\<p></strong> : 단락 표시  
 (의미를 담고 있는 태그이므로 \<br>보다 좋은 태그이다.)
 
 ## \<head> 내부 태그
 
-* \<title> : 웹페이지에 타이틀 달기
+* <strong>\<title></strong> : 웹페이지에 타이틀 달기
 
-* \<meta> :  다양한 종류의 메타 데이터 나타냄
+* <strong>\<meta></strong> :  다양한 종류의 메타 데이터 나타냄
   
-  * \<meta charset="UTF-8"> : 브라우저에서 text를 어떻게 render할 지 말해주는 역할 (미작성시 글자가 깨질 수 있으니 항상 넣어줄 것)
+  * <strong>\<meta charset="UTF-8"></strong> : 브라우저에서 text를 어떻게 render할 지 말해주는 역할 (미작성시 글자가 깨질 수 있으니 항상 넣어줄 것)
   
-  * \<meta content="..." name="description" /> : Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 표시.
+  * <strong>\<meta content="..." name="description" /></strong> : Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 표시.
 
 * \<link>
 
-  * \<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /> : 웹 브라우저 탭의 이미지 설정
+  * <strong>\<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /></strong> : 웹 브라우저 탭의 이미지 설정
 
-  * \<link rel="stylesheet" href="style.css" /> : style이름의 css파일과 연결
+  * <strong>\<link rel="stylesheet" href="style.css" /></strong> : style이름의 css파일과 연결
