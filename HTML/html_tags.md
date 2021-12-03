@@ -45,7 +45,7 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 ### 줄바꿈
 
-* <strong>\<br></strong> : 강제 줄바꿈 태그 (Self-CLosing 태그)
+* <strong>\<br></strong> : 강제 줄바꿈 태그 (Self-Closing 태그)
 
 * <strong>\<p></strong> : 단락 표시  
 (의미를 담고 있는 태그이므로 \<br>보다 좋은 태그이다.)
@@ -54,7 +54,7 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 * <strong>\<ol></strong> : ordered list - 순서가 있는 목록 (부모 태그)
 
-* <strong>\<ui></strong> : unordered list - 순서가 있는 목록 (부모 태그)
+* <strong>\<ui></strong> : unordered list - 순서가 없는 목록 (부모 태그)
 
 * <strong>\<li></strong> : 목록의 각 항목을 나열하는 태그 (자식 태그)
 
