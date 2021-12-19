@@ -23,7 +23,7 @@
 
 * HTML은 '태그'로 구성되어 있다.
 
-* HTML 태그엔 두 종류가 있다. - 일반 태그 vs Self-Closing 태그
+* HTML 태그엔 두 종류가 있다. - 『일반 태그』 vs 『Self-Closing 태그』
 
 
 ```html
