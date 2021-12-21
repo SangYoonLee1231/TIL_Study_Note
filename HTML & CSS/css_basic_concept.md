@@ -11,6 +11,7 @@
 * CSS = Cascading Style Sheet : 위에서 아래로 코드를 읽는다.  
 => 같은 속성 코드가 중복 작성 시, 제일 마지막 줄이 브라우저에 반영
 
+<br/>
 
 ## HTML 파일에 CSS를 추가하는 방법
 
@@ -29,6 +30,7 @@
 <link href="styles.css (css 파일 이름)" rel="stylesheet" />
 ```
 
+<br/>
 
 ## CSS 기본 문법
 
@@ -52,6 +54,7 @@ h1 {
 
 * 역시 모든 속성을 외우려 하지 말고 모르면 구글링한다.
 
+<br/>
 
 ## Block VS inline
 
@@ -60,3 +63,5 @@ ex) \<div>, \<p>, \<address>
 
 * inline 태그 옆에 다른 요소들이 올 수 있다.  
 ex) \<span>, \<a>, \<image>
+
+<br/>
