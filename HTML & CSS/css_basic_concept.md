@@ -9,7 +9,7 @@
 *  CSS는 선택자(Selector)를 통해 HTML 태그를 가리키고, 디자인 효과를 부여하는 역할을 한다.
 
 * CSS = Cascading Style Sheet : 위에서 아래로 코드를 읽는다.  
-=> 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
+☞ 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
 
 <br/>
 
