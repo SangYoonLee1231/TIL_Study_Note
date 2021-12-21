@@ -8,7 +8,7 @@
 
 ## HTML 파일에 CSS를 추가하는 방법
 
-*  【방법1】 \<style> 태그 이용하여 html 파일에 직접 작성한다.
+*  【방법1】 \<style> 태그 이용하여 html 파일에 직접 작성한다. (inline CSS)
 
 ```html
 <head>
@@ -18,7 +18,7 @@
 </head>
 ```
 
-*  【방법2】 css 파일을 따로 생성한 후, html 문서에서 \<link> 태그를 이용하여 html 파일과 css파일을 서로 연결한다.
+*  【방법2】 css 파일을 따로 생성한 후, html 문서에서 \<link> 태그를 이용하여 html 파일과 css파일을 서로 연결한다. (external CSS)
 ```html
-<link href="styles.css (css 파일 이름)" rel="stylesheet/>
+<link href="styles.css (css 파일 이름)" rel="stylesheet" />
 ```
