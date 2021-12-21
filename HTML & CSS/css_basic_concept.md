@@ -15,7 +15,8 @@
 
 ## HTML 파일에 CSS를 추가하는 방법
 
-*  【inline CSS】 \<style> 태그 이용하여 html 파일에 직접 작성한다.
+*  【inline CSS】 \<style>태그 사이에 html 파일에 css 코드를 직접 작성한다.  
+(\<style>태그는 \<head>태그 사이에 작성한다.)
 
 ```html
 <head>
