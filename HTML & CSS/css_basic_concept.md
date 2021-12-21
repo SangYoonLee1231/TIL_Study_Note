@@ -6,9 +6,9 @@
 
 ## 🗨 CSS란
 
-*  CSS는 선택자(Selector)를 통해 HTML 태그를 가리키고, 디자인 효과를 부여하는 역할을 한다.
+*  CSS는, 선택자(Selector)를 통해 HTML 태그를 가리키고, 디자인 효과를 부여하는 역할을 한다.
 
-* CSS = Cascading Style Sheet : 위에서 아래로 코드를 읽는다.  
+* CSS = <strong>Cascading</strong> Style Sheet : 위에서 아래로 코드를 읽는다.  
 ☞ 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
 
 <br/>
@@ -29,7 +29,7 @@
 *  【external CSS】 css 파일을 따로 생성한 후, html 문서에서 \<link> 태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
 (더 좋은 방법)
 ```html
-/* <link> 태그 작성법 */
+/* link 태그 속성 작성법 */
 <link href="styles.css (css 파일 이름)" rel="stylesheet" />
 ```
 
@@ -61,10 +61,10 @@ h1 {
 
 ## ✨ Block VS inline
 
-* Block 태그 옆엔 다른 요소가 올 수 없다.  
+* Block 태그 옆엔 <strong>다른 요소가 올 수 없다.</strong>  
 ex) \<div>, \<p>, \<address>
 
-* inline 태그 옆에 다른 요소들이 올 수 있다.  
+* inline 태그 옆에 <strong>다른 요소들이 올 수 있다.</strong>  
 ex) \<span>, \<a>, \<image>
 
 <br/>
