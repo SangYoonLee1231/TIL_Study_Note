@@ -10,7 +10,15 @@
 
 *  【방법1】 \<style> 태그 이용하여 html 파일에 직접 작성한다.
 
+```html
+<head>
+    <style>
+        CSS 작성
+    </style>
+</head>
+```
+
 *  【방법2】 css 파일을 따로 생성한 후, html 문서에서 \<link> 태그를 이용하여 html 파일과 css파일을 서로 연결한다.
 ```html
-<link href="styles.css" rel="stylesheet/>
+<link href="styles.css (css 파일 이름)" rel="stylesheet/>
 ```
