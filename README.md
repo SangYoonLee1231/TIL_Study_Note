@@ -12,3 +12,10 @@
 ### 아두이노 (Arduino)
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Arduino/arduino_introduction.md">아두이노 소개</a>
+
+
+## 자료구조
+
+## 알고리즘
+
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
