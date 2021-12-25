@@ -59,20 +59,20 @@ h1 {
 
 <br/>
 
-## ✨ Block VS inline
+## ✨ Block VS Inline
 
 * Block
 
-  * Block 태그 옆엔 다른 요소가 <strong>올 수 없다.</strong>  
+  * block 태그 옆엔 다른 요소가 <strong>올 수 없다.</strong>  
 
-  * Block은 <strong>높이(height)와 너비(width)를 가진다.</strong>  
+  * block은 <strong>높이(height)와 너비(width)를 가진다.</strong>  
 
   * <strong>Block은 Box</strong>이고, 3가지 중요한 특징을 가진다.  
   :   <strong>margin, border, padding</strong>  
 
   *  ex) \<div>, \<p>, \<address>
   
-* inline
+* Inline
 
   * inline 태그 옆에 다른 요소들이 <strong>올 수 있다.</strong>   
 
