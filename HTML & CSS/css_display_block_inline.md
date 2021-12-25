@@ -46,11 +46,11 @@ div {
 }
 ```
 
-* user agent stylesheet :  
+* <strong>user agent stylesheet</strong> :  
 
   브라우저가 기본적으로 부여한 style 속성  
   ex) body { margin : 8px; }
 
-* Collasping Margins :  
+* <strong>Collasping Margins</strong> :  
 
   box 요소의 경계가 부모 box 요소의 경계가 일치하면, 이 두 margin이 하나로 취급되는 현상
