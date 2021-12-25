@@ -29,7 +29,7 @@
 
 ## Box가 갖는 속성 1 : 《 margin 》
 
-* margin은 box의 경계(border)의 바깥에 있는 영역이다.
+* margin은 <strong>box의 경계(border)의 바깥에 있는 영역</strong>이다.
 
 ```css
 div {
