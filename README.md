@@ -8,6 +8,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">Display 속성 : Block과 Inline</a>
 
 ### 아두이노 (Arduino)
 
@@ -16,7 +17,6 @@
 
 ### 자료구조
 
-</br>
 
 ### 알고리즘
 
