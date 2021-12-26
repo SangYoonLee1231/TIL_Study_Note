@@ -15,6 +15,7 @@
   * Block은 높이(height)와 너비(width)를 <strong>가진다.</strong>  
 
   * Block은 <strong>Box</strong>이고, 3가지 중요한 특징을 가진다.  
+  
   :   <strong>margin, border, padding</strong>  
 
   *  ex) \<div>, \<p>, \<address>
