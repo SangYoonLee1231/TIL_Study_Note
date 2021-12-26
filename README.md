@@ -9,7 +9,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
-* * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
 
 ### 아두이노 (Arduino)
 
