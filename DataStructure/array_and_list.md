@@ -18,7 +18,7 @@
 
 * 배열의 이름과 동일한 변수 A에 A[0]의 첫 번째 byte의 주소가 저장된다.
 
-> ※ 배열에서 수
+* 배열의 연산 - 읽기, 쓰기
 
 <br/>
 
@@ -34,8 +34,62 @@
 
 * 리스트의 각 요소는 이 객체들의 주소를 가리킨다.
 
+* 리스트의 다양한 연산
+
+  * 【삽입】 A.append(6) : 맨 뒤에 6을 삽입
+
+  * 【삽입】 A.insert(1, 10) : A[1]에 10을 삽입
+
+  * 【삭제】 A.pop() : 마지막 요소를 지우고 해당 값을 리턴
+  
+  * 【삭제】 A.pop(1) : A[1]을 지우고 해당 값을 리턴
+
+  * 【삭제】 A.remove(value) : A에서 해당 value값 찾아서 제거 (2개 이상 존재 시 첫 번째만 제거)
+
+  * 【탐색】A.index(value) : A에서 해당 value값 찾아서 index 리턴
+
+  * 【탐색】A.count(value) : A에서 해당 value값 가진 요소 개수 리턴
+
+
 <br/>
 
-## 리스트(List)의 또 다른 특징 - Dynamic Array
+## 리스트의 또 다른 특징 - Dynamic Array
 
 * 리스트는 배열과 달리, 자신의 용량을 <strong>자동으로 조절</strong>한다. (리스트를 Dyanamic Array라고도 부르는 이유)
+
+```python
+import sys
+
+A = [] # 빈 리스트
+print(sys.getsizeof(A)) # 28 bytes
+
+A.append(18) # A = [18]
+print(sys.getsizeof(A)) # 44 bytes
+```
+
+* 파이썬에선 자동으로 리스트의 공간이 모자르면 크기를 늘리고 반대로 공간이 남으면 크기를 줄이는 작업을 수시로 한다. (메모리 자동 조절 기능)
+
+<br/>
+
+<img src="img/list2.png">
+
+```python
+A.append(x):
+    if A.n < A.capacity:
+        # 리스트 용량이 넉넉한 경우
+        A[n] = x
+        A.n = n + 1
+    else: # A.n = A.capacity
+        # 리스트 용량이 더 필요한 경우 (자동으로 용량 크기 ↑)
+        B = A.capacity * 2 # B는 임시용 리스트, *2는 용량 확대의 예시
+        for i in range(n):
+            B[i] = A[i]
+        A = B
+        del B
+        A[n] = x
+        A.n = n + 1
+```
+
+<br/`>
+
+## 리스트 연산 수행시간
