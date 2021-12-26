@@ -36,6 +36,7 @@
 
 ```html
 /* link 태그 속성 작성법 */
+
 <link href="styles.css (css 파일 이름)" rel="stylesheet" />
 ```
 
