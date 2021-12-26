@@ -46,7 +46,7 @@
 ## CSS 기본 문법
 
 * 용어 정리  
-: 선택자(Selector), 속성 (속성이름, 속성값)
+: <strong>선택자(Selector), 속성 (속성이름, 속성값)</strong>
 ```css
  ↙ 선택자 (Selector)
 h1 {
