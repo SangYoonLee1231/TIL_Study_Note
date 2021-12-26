@@ -8,7 +8,7 @@
 
 ## 🗨 CSS란
 
-*  CSS는, 선택자(Selector)를 통해 HTML 태그를 가리키고, 디자인 효과(스타일)를 부여하는 역할을 한다.
+*  CSS는, <strong>선택자(Selector)</strong>를 통해 HTML 태그를 가리키고, 디자인 효과(스타일)를 부여하는 역할을 한다.
 
 * CSS = <strong>Cascading</strong> Style Sheet : 위에서 아래로 코드를 읽는다.  
 
@@ -18,7 +18,7 @@
 
 ## HTML 파일에 CSS를 추가하는 방법
 
-*  【inline CSS】 html 문서의 \<style>태그 사이에 css 코드를 직접 작성한다.  
+*  【inline CSS】 html 문서의 <strong>\<style>태그 사이</strong>에 css 코드를 <strong>직접</strong> 작성한다.  
 
    (\<style>태그는 \<head>태그 사이에 작성한다.)
 
@@ -30,10 +30,10 @@
 </head>
 ```
 
-*  【external CSS】 css 파일을 따로 생성한 후, html 문서에서 \<link> 태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
+*  【external CSS】 <strong>css 파일을 따로 생성</strong>한 후, html 문서에서 <strong>\<link> 태그</strong>를 이용하여 html 파일과 css파일을 서로 연결한다.  
 
    (더 좋은 방법)
-   
+
 ```html
 /* link 태그 속성 작성법 */
 <link href="styles.css (css 파일 이름)" rel="stylesheet" />
