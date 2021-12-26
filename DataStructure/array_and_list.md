@@ -38,19 +38,19 @@
 
 * 리스트의 다양한 연산
 
-  * 【삽입】 A.append(6) : 맨 뒤에 6을 삽입
+  * 【삽입】 <strong>A.append(6)</strong> : 맨 뒤에 6을 삽입
 
-  * 【삽입】 A.insert(1, 10) : A[1]에 10을 삽입
+  * 【삽입】 <strong>A.insert(1, 10)</strong> : A[1]에 10을 삽입
 
-  * 【삭제】 A.pop() : 마지막 요소를 지우고 해당 값을 리턴
+  * 【삭제】 <strong>A.pop()</strong> : 마지막 요소를 지우고 해당 값을 리턴
   
-  * 【삭제】 A.pop(1) : A[1]을 지우고 해당 값을 리턴
+  * 【삭제】 <strong>A.pop(1)</strong> : A[1]을 지우고 해당 값을 리턴
 
-  * 【삭제】 A.remove(value) : A에서 해당 value값 찾아서 제거 (2개 이상 존재 시 첫 번째만 제거)
+  * 【삭제】 <strong>A.remove(value)</strong> : A에서 해당 value값 찾아서 제거 (2개 이상 존재 시 첫 번째만 제거)
 
-  * 【탐색】 A.index(value) : A에서 해당 value값 찾아서 index 리턴
+  * 【탐색】 <strong>A.index(value)</strong> : A에서 해당 value값 찾아서 index 리턴
 
-  * 【탐색】 A.count(value) : A에서 해당 value값 가진 요소 개수 리턴
+  * 【탐색】 <strong>A.count(value)</strong> : A에서 해당 value값 가진 요소 개수 리턴
 
 
 <br/>
