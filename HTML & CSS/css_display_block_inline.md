@@ -26,7 +26,7 @@
 
   * Inline은 높이(height)와 너비(width)를 <strong>가질 수 없다.</strong>  
 
-  * ex) \<span>, \<a>, \<image>
+  * ex) \<span>, \<a>, \<img>
 
 <br/>
 
