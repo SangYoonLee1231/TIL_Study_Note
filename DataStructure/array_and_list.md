@@ -44,9 +44,9 @@
 
   * 【삭제】 <strong>A.remove(value)</strong> : A에서 해당 value값 찾아서 제거 (2개 이상 존재 시 첫 번째만 제거)
 
-  * 【탐색】 <strong>A.index(value)</strong> : A에서 해당 value값 찾아서 index 리턴
+  * 【탐색】 <strong>A.index(value)</strong> : A에서 해당 value값 찾아서 그 요소의 index를 리턴
 
-  * 【탐색】 <strong>A.count(value)</strong> : A에서 해당 value값 가진 요소 개수 리턴
+  * 【탐색】 <strong>A.count(value)</strong> : A에서 해당 value값을 가진 요소의 개수 리턴
 
 
 <br/>
