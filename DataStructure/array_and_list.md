@@ -16,17 +16,13 @@
 
 <img src="img/array1.png">
 
-* 배열의 이름과 동일한 변수 A에 A[0]의 첫 번째 byte의 주소가 저장된다.
-
-* 배열의 연산
-
-  *  
+* 배열의 이름과 동일한 변수 A에 A[0]의 첫 번째 byte의 주소가 저장된다
 
 <br/>
 
 ## 리스트 (List) - 파이썬
 
-* 리스트(List)는 배열과 동일하게 같은 자료형의 변수를 모은 자료구조로, 인덱스(index)를 통해 값 접근 가능하다.
+* 리스트(List)는 배열과 동일하게 같은 자료형의 변수를 모은 자료구조로, 역시 인덱스(index)를 통해 값 접근 가능하다.
 
 * 그러나, 배열보다 훨씬 더 <strong>다양하고 유용한 연산</strong>을 제공한다.
 
@@ -92,6 +88,12 @@ A.append(x):
         A.n = n + 1
 ```
 
-<br/`>
+<br/>
 
 ## 리스트 연산 수행시간
+
+* A.append , A.pop : O(1) 평균
+
+* A.insert , A.remove : O(n) Worst Case
+
+* A.index , A.count : O(n) Worst Case
