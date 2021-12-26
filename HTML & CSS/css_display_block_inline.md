@@ -8,7 +8,7 @@
 
 ## ✨ Block VS Inline
 
-* Block
+* <strong>Block</strong>
 
   * Block 태그 옆엔 다른 요소가 올 수 <strong>없다.</strong>  
 
@@ -20,7 +20,7 @@
 
   *  ex) \<div>, \<p>, \<address>
   
-* Inline
+* <strong>Inline</strong>
 
   * Inline 태그 옆에 다른 요소들이 올 수 <strong>있다.</strong>   
 
