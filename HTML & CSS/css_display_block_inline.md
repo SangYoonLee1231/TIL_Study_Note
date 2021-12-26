@@ -54,7 +54,7 @@ div {
 
 * <strong>Collasping Margins</strong> :  
 
-  box 요소의 경계가 부모 box 요소의 경계가 일치하면, 이 두 margin이 하나로 취급되는 현상
+  box 요소의 경계가 부모 box 요소의 경계와 일치하면, 이 두 margin이 하나로 취급되는 현상
 
 <br/>
 
@@ -83,7 +83,7 @@ div {
 
 * border은 말 그대로 박스의 '<strong>경계</strong>'이다.
 
-* border은 box(block)뿐만 아니라 inline 태그에도 적용된다.
+* border은 <strong>box(block)뿐만 아니라 inline 태그에도 적용</strong>된다.
 
 ```css
 div {
