@@ -10,20 +10,20 @@
 
 * Block
 
-  * block 태그 옆엔 다른 요소가 <strong>올 수 없다.</strong>  
+  * Block 태그 옆엔 다른 요소가 올 수 <strong>없다.</strong>  
 
-  * block은 <strong>높이(height)와 너비(width)를 가진다.</strong>  
+  * Block은 높이(height)와 너비(width)를 <strong>가진다.</strong>  
 
-  * <strong>Block은 Box</strong>이고, 3가지 중요한 특징을 가진다.  
+  * Block은 <strong>Box</strong>이고, 3가지 중요한 특징을 가진다.  
   :   <strong>margin, border, padding</strong>  
 
   *  ex) \<div>, \<p>, \<address>
   
 * Inline
 
-  * inline 태그 옆에 다른 요소들이 <strong>올 수 있다.</strong>   
+  * Inline 태그 옆에 다른 요소들이 올 수 <strong>있다.</strong>   
 
-  * inline은 <strong>높이(height)와 너비(width)를 가질 수 없다.</strong>  
+  * Inline은 높이(height)와 너비(width)를 <strong>가질 수 없다.</strong>  
 
   * ex) \<span>, \<a>, \<image>
 
