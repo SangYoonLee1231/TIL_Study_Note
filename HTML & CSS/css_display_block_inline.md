@@ -112,8 +112,8 @@ div {
 
 * Inline Block의 문제점
 
-  * 정해진 형식이 없고 inline Block 요소들 사이에 의미불명한 빈 공간이 생긴다.
+  * 정해진 형식이 없고 Inline Block 요소들 사이에 의미불명한 빈 공간이 생긴다.
 
-  * <strong>반응형 디자인(Responsive Design)을 자원하지 않는다.
+  * <strong>반응형 디자인(Responsive Design)을 자원하지 않는다.</strong>
 
-    * 창 크기가 달라지면 영향을 받는다.</strong>
+    * 창 크기가 달라지면 영향을 받는다.
