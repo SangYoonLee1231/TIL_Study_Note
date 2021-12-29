@@ -40,7 +40,7 @@
 
 * margin은 <strong>요소의 경계(border)의 바깥에 있는 영역</strong>이다.
 
-* <u>block과 inline 요소 모두 가지고 있는 특징이나, <strong>inline은 상하에 margin을 가지지 않는다.</strong></u>
+* block과 inline 요소 모두 가지고 있는 특징이나, <strong>inline은 상하에 margin을 가지지 않는다.</strong>
 
 ```css
 div {
@@ -70,7 +70,7 @@ div {
 
 * padding은 <strong>box의 경계(border)로부터 안쪽에 있는 영역</strong>이다.
 
-* <u>Block과 inline 요소 모두 가지고 있는 특징이다.</u>
+* Block과 inline 요소 모두 가지고 있는 특징이다.
 
 ```css
 div {
@@ -93,7 +93,7 @@ div {
 
 * border은 말 그대로 박스의 '<strong>경계</strong>'이다.
 
-* <u>Block과 inline 요소 모두 가지고 있는 특징이다.</u>
+* Block과 inline 요소 모두 가지고 있는 특징이다.
 
 ```css
 div {
