@@ -14,9 +14,11 @@
 
   * Block은 높이(height)와 너비(width)를 <strong>가진다.</strong>  
 
-  * Block은 <strong>Box</strong>이고, 3가지 중요한 특징을 가진다.  
+  * Block은 <strong>Box</strong>이고, 여백과 관련된 3가지 중요한 특징을 가진다.  
 
     :   <strong>margin, border, padding</strong>  
+
+    (inline도 가지고 있는 특징이다. 상하 margin만 제외하고)
 
   *  ex) \<div>, \<p>, \<address>
   
@@ -26,13 +28,19 @@
 
   * Inline은 높이(height)와 너비(width)를 <strong>가질 수 없다.</strong>  
 
+    * 따라서 <strong>위, 아래에 margin을 가지지 않는다.</strong>
+    
+      (가지도록 하려면 display 속성을 inline-block으로 바꾸어야 한다)
+
   * ex) \<span>, \<a>, \<img>
 
 <br/>
 
-## Box가 갖는 속성 1 : 《 margin 》
+## 여백과 관련된 속성 1 : 《 margin 》
 
-* margin은 <strong>box의 경계(border)의 바깥에 있는 영역</strong>이다.
+* margin은 <strong>요소의 경계(border)의 바깥에 있는 영역</strong>이다.
+
+* <u>block과 inline 요소 모두 가지고 있는 특징이나, <strong>inline은 상하에 margin을 가지지 않는다.</strong></u>
 
 ```css
 div {
@@ -58,9 +66,11 @@ div {
 
 <br/>
 
-## Box가 갖는 속성 2 : 《 padding 》
+## 여백과 관련된 속성 2 : 《 padding 》
 
 * padding은 <strong>box의 경계(border)로부터 안쪽에 있는 영역</strong>이다.
+
+* <u>Block과 inline 요소 모두 가지고 있는 특징이다.</u>
 
 ```css
 div {
@@ -79,11 +89,11 @@ div {
 
 <br/>
 
-## Box가 갖는 속성 3 : 《 border 》
+## 여백과 관련된 속성 3 : 《 border 》
 
 * border은 말 그대로 박스의 '<strong>경계</strong>'이다.
 
-* border은 <strong>box(block)뿐만 아니라 inline 태그에도 적용</strong>된다.
+* <u>Block과 inline 요소 모두 가지고 있는 특징이다.</u>
 
 ```css
 div {
