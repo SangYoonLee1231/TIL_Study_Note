@@ -2,7 +2,7 @@
 
 <br/>
 
->  참고 강의 : 「<a href="https://nomadcoders.co/kokoa-clone">노마드 코더 - 코코아톡 클론코딩</a>」, 「<a href="https://youtube.com/playlist?list=PLuHgQVnccGMAE4Sn_SYvMw5-qEADJcU-X">생활코딩 - 웹 애플리케이션 만들기</a>」, 학부 수업 자료
+>  참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>》 페이지 참고
 
 <br/>
 
