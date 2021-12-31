@@ -76,3 +76,14 @@ print(len(S))  # S의 요소의 개수 출력  ☞  1이 출력  S = [10]
 <br/>
 
 ## 연산 수행시간
+
+* push, pop, top, len : O(1)
+
+    * list에서 요소의 개수를 계속 확인하고 그 값을 이미 저장하고 있기 때문에, len 함수도 O(1)만에 수행된다.
+
+<br/>
+
+## Stack 예제1 : 괄호 맞추기
+
+> <a href="https://www.acmicpc.net/problem/9012" target="_blank">백준 9012번</a>
+
