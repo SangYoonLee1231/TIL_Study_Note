@@ -53,7 +53,7 @@
 
 <br/>
 
-## 리스트의 또 다른 특징 - 리스트는 Dynamic Array이다.
+## 리스트는 Dynamic Array이다.
 
 * 리스트는 배열과 달리, 자신의 용량을 <strong>자동으로 조절</strong>한다. (리스트를 Dyanamic Array라고도 부르는 이유)
 
