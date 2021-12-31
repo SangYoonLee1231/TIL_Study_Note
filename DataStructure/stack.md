@@ -18,7 +18,7 @@
 
     * 추가 연산 : top, isEmpty, size(len) 등
 
-* LIFO : Last In First Out
+* <strong>LIFO : Last In First Out</strong>
 
     * 마지막으로 들어온 요소가 제일 먼저 나간다.
 
@@ -34,7 +34,7 @@
 
     * pop 연산 (삭제) : pop 함수 이용
 
-* But, 리스트는 다른 강력한 연산들을 제공하기 때문에, 사용 도중 실수로 append, pop 외의 다른 함수를 사용해 내부값을 참고하고나 변경할 수 있다.
+* But, <strong>리스트는 다른 강력한 연산들을 제공</strong>하기 때문에, <strong>사용 도중 실수로 append, pop 외의 다른 함수를 사용해 내부값을 참고하고나 변경할 수 있다.</strong>
 
 * 따라서, Stack은 Stack 클래스를 따로 만들어서 쓰고, 리스트는 내부에서 값을 저장하는 역할로만 쓴다.
 
