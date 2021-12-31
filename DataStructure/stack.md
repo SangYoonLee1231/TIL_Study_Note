@@ -14,13 +14,13 @@
 
 * 2가지 기본 연산을 제공한다. (다른 추가 연산도 제공)
 
-    * 기본 연산 : push(삽입), pop(삭제)
+    * 기본 연산 : <strong>push(삽입), pop(삭제)</strong>
 
-    * 추가 연산 : top, isEmpty, size(len) 등
+    * 추가 연산 : <strong>top, isEmpty, size(len) 등</strong>
 
 * <strong>LIFO : Last In First Out</strong>
 
-    * 마지막으로 들어온 요소가 제일 먼저 나간다.
+    * <strong>마지막으로 들어온 요소가 제일 먼저 나간다.</strong>
 
 <img src="img/stack1.png">
 
@@ -81,7 +81,7 @@ print(len(S))  # S의 요소의 개수 출력  ☞  1이 출력  S = [10]
 
 ## 연산 수행시간
 
-* push, pop, top, len : O(1)
+* <strong>push, pop, top, len : O(1)</strong>
 
     * list에서 요소의 개수를 계속 확인하고 그 값을 이미 저장하고 있기 때문에, len 함수도 O(1)만에 수행된다.
 
