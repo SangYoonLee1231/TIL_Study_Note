@@ -90,7 +90,7 @@ A.append(x):
         A.n = n + 1
     else: # A.n == A.capacity
         # 리스트 용량이 더 필요한 경우 (자동으로 용량 크기 ↑)
-        B = A.capacity * 2 # B는 임시용 리스트, *2는 용량 확대의 예시
+        B = A.capacity * 2 # B는 임시용 리스트, *2는 용량을 늘린다는 의미
         for i in range(n):
             B[i] = A[i]
         A = B
