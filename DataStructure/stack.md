@@ -83,7 +83,7 @@ print(len(S))  # S의 요소의 개수 출력  ☞  1이 출력  S = [10]
 
 <br/>
 
-## Stack 예제1 : 괄호 맞추기
+## Stack 활용 예제
 
-> <a href="https://www.acmicpc.net/problem/9012" target="_blank">백준 9012번</a>
+* <a href="https://www.acmicpc.net/problem/9012" target="_blank">괄호 맞추기 (백준 9012번)</a>
 
