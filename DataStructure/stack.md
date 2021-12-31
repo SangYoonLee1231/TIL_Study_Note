@@ -8,7 +8,7 @@
 
 ## 스택 (Stack)
 
-* 가장 고전적인 자료구조 중 하나로 거의 모든 애플리케이션 개발에 사용된다.
+* <strong>가장 고전적인 자료구조</strong> 중 하나로 거의 모든 애플리케이션 개발에 사용된다.
 
 * 1차원의 선형(linear) 자료구조이다.
 
@@ -20,7 +20,7 @@
 
 * <strong>LIFO : Last In First Out</strong>
 
-    * <strong>마지막으로 들어온 요소가 제일 먼저 나간다.</strong>
+    * 마지막으로 들어온 요소가 제일 먼저 나간다.
 
 <img src="img/stack1.png">
 
