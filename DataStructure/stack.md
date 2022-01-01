@@ -91,7 +91,8 @@ print(len(S))  # S의 요소의 개수 출력  ☞  1이 출력  S = [10]
 
 * <a href="https://www.acmicpc.net/problem/9012" target="_blank">괄호 맞추기 (백준 9012번)</a>
 
->
+> 1. 오른쪽과 왼쪽 괄호로만 이루어진 문자열을 입력으로 받고
+> 2. '괄호쌍이 모두 맞춰졌는가'에 따라 True/False 결과값을 출력하는 문제
 
 <br/>
 
