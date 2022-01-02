@@ -16,6 +16,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">순차적 자료구조 : 스택 (Stack)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">순차적 자료구조 : 큐 (Queue)</a>
 
 ### 알고리즘
 
