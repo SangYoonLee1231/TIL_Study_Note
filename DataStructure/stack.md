@@ -79,7 +79,7 @@ print(len(S))  # S의 요소의 개수 출력  ☞  1이 출력  S = [10]
 
 <br/>
 
-## 연산 수행시간
+## Stack 연산 수행시간
 
 * <strong>push, pop, top, len : O(1)</strong>
 
