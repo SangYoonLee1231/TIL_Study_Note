@@ -16,7 +16,7 @@
 
     * 기본 연산 : <strong>push(삽입), pop(삭제)</strong>
 
-    * 추가 연산 : <strong>top, isEmpty, size(len) 등</strong>
+    * 추가 연산 : <strong>top, isEmpty, size(len)</strong>
 
 * <strong>LIFO : Last In First Out</strong>
 
