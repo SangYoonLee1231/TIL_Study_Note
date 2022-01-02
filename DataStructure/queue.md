@@ -24,6 +24,60 @@
 
 <br/>
 
+## Queue 구현 (파이썬)
+
+* Queue의 요소 개수를 구할 시, 2개의 index가 필요
+
+    * enqueue시 들어갈 위치 index, dequeue시 나갈 값의 위치 index
+
+```python
+class Queue:
+    def __init__(self):
+        self.items = []
+        self.front_index = 0
+
+    def enqueue(self, val):
+        self.items.append(val)
+
+    def dequeue(self):
+        if len(self.items) == 0 or self.front_index == len(self.items):
+            print("Q is Empty")
+        else:
+            x = self.items[front_index]
+            self.front_index += 1
+            return x
+
+    def front(self):  # 가장 앞에 저장된 값을 (삭제하지 않고) 리턴
+        if len(self.items) == 0 or self.front_index == len(self.items):
+            print("Q is Empty")
+        else:
+            return self.items[self.front_index]
+
+    def __len__(self):
+        return len(self.items) - self.front_index
+
+```
+```python
+Q = Queue()
+
+Q.enqueue(5)
+Q.enqueue(-2)
+Q.enqueue(10)
+
+print(Q.dequeue())
+print(Q.dequeue())
+print(Q.dequeue())
+print(Q.dequeue())
+```
+
+<br/>
+
+## Queue 연산 수행시간
+
+* <strong>enqueue, dequeue, front, len, isEmpty : O(1)</strong>
+
+<br/>
+
 ## Queue 활용 예제
 
 * <a href="https://www.acmicpc.net/problem/1158" target="_blank">Josephus Problem (백준 1158번)</a>
