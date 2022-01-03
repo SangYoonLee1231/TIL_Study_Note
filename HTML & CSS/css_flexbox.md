@@ -28,7 +28,7 @@ body {
 
       == 이 박스를 flex 컨테이너로 만든다.  
 
-      == 이 box '<strong>안</strong>'에 들어있는 Element들을 이제부터 flex로 관리한다.
+      == 이 box '<strong>안</strong>'에 들어있는 자식 Element들을 이제부터 flex로 관리한다.
 
     * <strong>자식 Element에 display: flex 작성 금지</strong> (처음에 하기 쉬운 실수)
 
