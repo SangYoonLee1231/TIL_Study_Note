@@ -47,6 +47,8 @@ body {
 
 <img src="img/main_axis_cross_axis.png">
 
+</br>
+
 * <strong>justify-content</strong>는 <strong>주축(main axis)에 적용</strong>하는 flex의 속성이다.
 
 * <strong>align-items</strong>는 <strong>교차축(cross axis)에 적용</strong>하는 flex의 속성이다.
