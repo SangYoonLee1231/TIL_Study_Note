@@ -47,9 +47,9 @@ body {
 
 <img src="img/main_axis_cross_axis.png">
 
-* justify-content는 주축(main axis)에 적용할 속성을 속성값으로 받는다.
+* <strong>justify-content</strong>는 <strong>주축(main axis)에 적용</strong>할 속성을 속성값으로 받는다.
 
-* align-items는 교차축(cross axis)에 적용할 속성을 속성값으로 받는다.
+* <strong>align-items</strong>는 <strong>교차축(cross axis)에 적용</strong>할 속성을 속성값으로 받는다.
 
 <br/>
 
@@ -57,13 +57,31 @@ body {
 
 * flex-direction : 주축의 방향을 지정하는 속성
 
-    * row : 주축이 수직 방향 (교차축은 수평 방향) 〈Default 값〉
 
-    <img src="img/flex-direction1.jpg">
+    * <strong>row</strong> 〈Default 값〉
+
+    <img src="img/row.png">
 
     <br/>
 
-    * column : 주축이 수평 방향 (교차축은 수직 방향)
+    * <strong>column</strong>
 
-    <img src="img/flex-direction2.jpg">
+    <img src="img/column.png">
+
+    <br/>
+
+        * row와 column은 두 축의 방향은 모두 같으나 주축과 교차축이 서로 반대이다.
+
+    * <strong>row-reverse</strong>
+
+    <img src="img/row-reverse.png">
+
+    <br/>
+
+    * <strong>column-reverse</strong>
+
+    <img src="img/column-reverse.png">
+
+    <br/>
     
+        * 뒤에 -reverse가 붙으면 교차축은 그대로 두고, 교차축을 중심으로 주축만 선대칭하면 된다.
