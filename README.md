@@ -3,13 +3,19 @@
 
 ***
 
-### HTML & CSS
+### HTML
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
+
+
+### CSS
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">Display 속성 : Block과 Inline</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">ID와 Class</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">Flexbox</a>
+
+
 
 ### 자료구조
 
@@ -18,9 +24,11 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">순차적 자료구조 : 스택 (Stack)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">순차적 자료구조 : 큐 (Queue)</a>
 
+
 ### 알고리즘
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
+
 
 ### 아두이노 (Arduino)
 
