@@ -45,9 +45,9 @@ body {
 
 * flex 컨테이너는 2개의 축을 가지고 있다.
 
-    * 주축 (main axis)
+    * <strong>주축 (main axis)</strong>
 
-    * 교차축 (cross axis)
+    * <strong>교차축 (cross axis)</strong>
 
 <img src="img/main_axis_cross_axis.png">
 
