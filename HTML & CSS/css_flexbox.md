@@ -103,3 +103,9 @@ body {
     <br/>
     
         * 뒤에 -reverse가 붙으면 교차축은 그대로 두고, 교차축을 중심으로 주축만 선대칭하면 된다.
+
+<br/>
+
+## 유용한 자료
+
+<a href="https://flexboxfroggy.com/#ko">Flex에 익숙해질 수 있는 유익한 게임 : FLEXBOX FROGGY</a>
