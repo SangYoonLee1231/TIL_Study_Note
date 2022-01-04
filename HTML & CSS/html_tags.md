@@ -37,11 +37,11 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 ### 블록, 인라인 태그
     
-* 블록 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
+* 블록(Block) 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
     
     * <strong>\<div>, \<p>, \<h1>, \<ul></strong>
     
-* 인라인 태그 : 블록 속에 삽입되어 블록의 일부로 출력
+* 인라인(Inline) 태그 : 블록 속에 삽입되어 블록의 일부로 출력
     
     * <strong>\<strong>, \<a>, \<img>, \<span></strong>
 
