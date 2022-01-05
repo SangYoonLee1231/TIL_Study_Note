@@ -34,9 +34,13 @@
 
 ## 연결 리스트의 장단점 (vs 배열)
 
-* 배열과 달리, <strong>어떤 값에 접근 시 상수 시간 O(1) 내에 수행할 수 없다</strong>는 단점이 있다.
+* 배열과 달리, <strong>어떤 값에 접근 시, 상수 시간 O(1) 내에 수행할 수 없다</strong>는 단점이 있다.
 
 * 그러나 <strong>새로운 값을 중간에 삽입하는 과정은 배열보다 더 빨리 걸린다</strong>.
+
+    * 배열 insert 수행시간 : <strong>O(n)</strong>
+
+    * 연결 리스트 insert 수행시간 : <strong>O(1)</strong>
 
 <img src="img/linked_list2.png" width="250px"> <img src="img/linked_list3.png" width="400px">  
 \<배열> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \<연결 리스트>
