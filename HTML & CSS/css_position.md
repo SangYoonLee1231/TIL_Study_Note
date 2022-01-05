@@ -16,6 +16,8 @@ div {
 }
 ```
 
+<br/>
+
 ## Position 속성1 : Fixed
 
 * 어떤 요소의 position을 fixed로 설정하면, <strong>스크롤을 내려도 그 요소는 계속 그 자리에 위치</strong>하게 된다.
