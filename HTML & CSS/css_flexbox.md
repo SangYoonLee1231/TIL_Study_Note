@@ -69,8 +69,8 @@ body {
 
     justify-content: center;
 
-    justify-content: flex-end;  /* 축의 제일 끝쪽으로 정렬 배치*/
-    justify-content: flex-start;  /* 축의 제일 앞쪽으로 정렬 배치*/
+    justify-content: flex-end;  /* 축의 끝점으로 정렬 배치*/
+    justify-content: flex-start;  /* 축의 시작점으로 정렬 배치*/
 
     justify-content: space-evenly;  /*빈 공간을 같은 크기로 나누어서 중앙 정렬 배치*/
     justify-content: space-around;
@@ -80,6 +80,7 @@ body {
 }
 /* justify-content(또는 align-items)의 다양한 속성값 */
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/flex_space.jpg" width="500px">
 
 <br/>
 
