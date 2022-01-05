@@ -41,7 +41,7 @@ body {
 /* body의 '자식 요소'들에 flex가 적용된다. */
 ```
 
-* 단, 자식의 자식 Element또한 flex로 관리하려면, 자식의 Element에도 display: flex를 명시해야 한다.  
+* 단, 자식의 자식 Element 또한 flex로 관리하려면, 자식의 Element에도 display: flex를 명시해야 한다.  
 
   (부모만 display: flex를 명시한다고 해서 손자까지 영향이 미치진 않는다.)
 
