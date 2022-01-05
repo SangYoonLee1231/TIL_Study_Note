@@ -140,6 +140,7 @@ body {
 
     <img src="img/flex_wrap.jpg" width="450px">
 
+<br/>
 
 ## 유용한 자료
 
