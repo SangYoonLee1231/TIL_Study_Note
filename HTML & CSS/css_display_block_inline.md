@@ -6,6 +6,18 @@
 
 <br/>
 
+* CSS의 Display 속성은 화면에 요소들이 어떻게 배치되는지를 결정한다.
+
+* 웹페이지의 레이아웃(layout)을 결정한다고 해도 무방하다.
+
+```css
+div {
+    display: block;
+}
+```
+
+<br/>
+
 ## ✨ Block VS Inline
 
 * <strong>Block</strong>
