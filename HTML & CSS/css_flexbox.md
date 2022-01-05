@@ -135,8 +135,8 @@ body {
     * <strong>nowrap</strong> : flex 아이템을 한 줄에 강제로 배치.  
     화면 크기가 줄어들면 flex 아이템의 원래 크기를 (비율에 맞게) 줄여서라도 강제로 배치시킨다.
 
-    * <strong>wrap-reverse</strong> : wrap 속성값과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, 요소가 나열되는 시작점과 끝점의 기준이 반대로 배치된다.  
-    (문자의 표기 방향과 정반대)
+    * <strong>wrap-reverse</strong> : wrap과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, 요소 배치 순서의 기준이 정반대로 뒤집힌다.  
+    (문자의 표기 방향과 정반대 방향)
 
     <img src="img/flex_wrap.jpg" width="450px">
 
