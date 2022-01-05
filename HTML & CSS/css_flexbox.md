@@ -8,9 +8,9 @@
 
 ## Flexbox란
 
-* Element(요소)들의 배치를 바꾸는 쉬운 방법으로, 2차원 레이아웃에서 잘 작동한다.
+* Element(요소)들의 배치를 바꾸는 유용한 방법으로, 2차원 레이아웃에서 잘 작동한다.
 
-* flex는 display의 속성 중 하나이다.
+* flex는 display의 속성값 중 하나이다.
 
 ```css
 body {
@@ -18,11 +18,13 @@ body {
 }
 ```
 
+* 어떤 HTML Element(요소)에 CSS 코드 display: flex를 명시하면, 해당 요소는 flex 컨테이너가 되고, 내부 요소는 flex 아이템이 된다.
+
 <br/>
 
 ## ✨ Flexbox 사용 시 유의할 점
 
-* 반드시 flex를 적용하고자 하는 Element(요소)의 <strong>부모 Element에 display: flex를 명시</strong>해야 한다.
+* 반드시 flex로 관리하려는 Element(요소)의 <strong>부모 Element에 display: flex를 명시</strong>해야 한다.
 
     * display: flex  
 
@@ -111,9 +113,33 @@ body {
 
     <br/>
     
-        * 뒤에 -reverse가 붙으면 교차축은 그대로 두고, 교차축을 중심으로 주축만 선대칭하면 된다.
+        * 뒤에 -reverse가 붙으면 교차축 방향은 그대로 두고, 교차축을 중심으로 주축 방향만 선대칭하면 된다.
 
 <br/>
+
+## Flex Wrap
+
+* flex-wrap 속성은 flex 아이템을 한 줄에 강제로 배치할 지, 아님 가능한 영역 내에서 벗어나지 않고 여러 줄로 나누어 배치할 지 결정하는 속성이다.
+
+```css
+body {
+    flex-wrap: wrap;
+}
+```  
+
+* flex-wrap 속성값
+
+    * <strong>wrap</strong> : flex 아이템을 여러 줄로 나누어 배치.  
+    화면 크가가 줄어들면 flex 아이템을 순서대로 다음 줄로 보낸다. 〈Default 값〉
+
+    * <strong>nowrap</strong> : flex 아이템을 한 줄에 강제로 배치.  
+    화면 크기가 줄어들면 flex 아이템의 원래 크기를 (비율에 맞게) 줄여서라도 강제로 배치시킨다.
+
+    * <strong>wrap-reverse</strong> : wrap 속성값과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, 요소가 나열되는 시작점과 끝점의 기준이 반대로 배치된다.  
+    (문자의 표기 방향과 정반대)
+
+    <img src="img/flex_wrap.jpg" width="450px">
+
 
 ## 유용한 자료
 
