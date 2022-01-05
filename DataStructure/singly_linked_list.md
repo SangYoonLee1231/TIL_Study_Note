@@ -14,7 +14,7 @@
 
 * 가장 앞쪽에 있는 Node를 <strong>Head Node</strong>라 부른다.
 
-* Node 1게의 구성 요소
+* Node 1개의 구성 요소
 
     * 단방향 연결 리스트 : Node 1개 = key 1개, <strong>link 1개</strong> (+ 부가 데이터 value)
     
