@@ -28,7 +28,7 @@
 
 * (반복) <strong>연결 리스트란 Node들이 link로 연결된 자료 구조</strong>이다.
 
-* 연결 방향에 따라 <strong>단방향 연결 리스트</strong>, <strong>양방향 연결 리스트</strong>로 구분할 수 있다.
+* Node들이 서로 어떻게 연결되어 있는지에 따라 <strong>단방향 연결 리스트</strong>, <strong>양방향 연결 리스트</strong>로 구분할 수 있다.
 
 <br/>
 
