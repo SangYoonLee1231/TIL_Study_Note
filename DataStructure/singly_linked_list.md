@@ -38,9 +38,10 @@ class Node:
 * <strong>def \_\_str\_\_(self) 함수를 생성하는 이유</strong>
 
     : v라는 Node가 있을 때, print(v.key)는 v의 key값을 출력하는 구문이다.  
+
     But, __str__함수를 만든다면, print(v), 즉 Node만을 매개변수로 입력해도 v의 key값을 출력할 수 있다.
 
-    print(v) == print(\_\_str\_\_)
+    * print(v) == print(v.\_\_str\_\_())
 
 ```python
 a = Node(3)
