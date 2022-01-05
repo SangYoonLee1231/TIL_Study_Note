@@ -22,7 +22,7 @@
 
 * <strong>값(data, key) + 다음 값의 주소(link) = 노드(Node)</strong>
 
-* (반복) 연결 리스트란 <strong>Node들이 link로 연결된 자료 구조</strong>이다.
+* (반복) <strong>연결 리스트란 Node들이 link로 연결된 자료 구조</strong>이다.
 
 * 연결 방향에 따라 <strong>한방향 연결 리스트</strong>, <strong>양방향 연결 리스트</strong>로 구분할 수 있다.
 
