@@ -86,7 +86,7 @@ body {
 
 ## Flex Direction
 
-* flex-direction : 주축의 방향을 지정하는 속성
+* <strong>flex-direction</strong> : 주축의 방향을 지정하는 속성
 
 
     * <strong>row</strong> 〈Default 값〉
@@ -121,7 +121,7 @@ body {
 
 ## Flex Wrap
 
-* flex-wrap 속성은 flex 아이템을 한 줄에 강제로 배치할 지, 아님 가능한 영역 내에서 벗어나지 않고 여러 줄로 나누어 배치할 지 결정하는 속성이다.
+* flex-wrap 속성은 flex 아이템을 한 줄에 강제로 배치할 지, 아님 여러 줄에 나누어 배치할 지를 결정하는 속성이다.
 
 ```css
 body {
