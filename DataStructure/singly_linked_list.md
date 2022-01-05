@@ -12,7 +12,7 @@
 
 <img src="img/singly_linked_list1.png">
 
-* 가장 앞쪽에 있는 Node를 <strong>Head Node</strong>라 부른다.
+* 가장 앞쪽에 있는 Node를 <strong>Head Node</strong>라 부르고, 가장 뒷쪽에 있는 Node를 <strong>Tail Node</strong>라 부른다.
 
 * Node 1개의 구성 요소
 
