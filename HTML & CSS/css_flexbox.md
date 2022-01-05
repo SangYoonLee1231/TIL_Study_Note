@@ -80,7 +80,7 @@ body {
 }
 /* justify-content(또는 align-items)의 다양한 속성값 */
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/flex_space.jpg" width="600px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/flex_space.jpg" width="450px">
 
 <br/>
 
