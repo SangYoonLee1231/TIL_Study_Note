@@ -32,6 +32,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">순차적 자료구조 : 스택 (Stack)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">순차적 자료구조 : 큐 (Queue)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">순차적 자료구조 : 연결 리스트 (Linked List) 기본 개념</a>
 
 
 ### 알고리즘
