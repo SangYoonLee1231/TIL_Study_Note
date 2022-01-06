@@ -94,7 +94,7 @@ div {
     height: 300px;
 
     position: relative;
-    ✔top: 0px;
+    top: 0px; ✔
 }
 .green {
     background-color: teal;
@@ -102,7 +102,7 @@ div {
     width: 100px;
 
     position: absolute;
-    ✔bottom: 10px;
+    bottom: 10px; ✔
     left: 20px;
 }
 ```
