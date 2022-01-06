@@ -94,7 +94,7 @@ class SignlyLinkedList:
             self.head = v
         else:
             # 연결 리스트에 Node가 있는 상태이므로,
-            # Tail Node를 알기 위해선, Head부터 link를 따라 추적하여야 한다.
+            # Tail Node를 알기 위해선, Head부터 link를 따라 추적해야 한다.
             tail = self.head    # 우선, Head Node 주소를 Tail Node 주소로 가정
             while tail.next != None:
                 tail = tail.next     # 그 후, link값이 None이 될 때까지 link따라 실제 Tail Node를 추적
