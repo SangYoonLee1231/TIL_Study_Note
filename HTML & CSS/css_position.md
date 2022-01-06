@@ -28,9 +28,9 @@ div {
 
 ## Position 속성2 : Static
 
-* Default 값이다.
+* Default(초기)값이다.
 
-* 레이아웃의 박스를 처음 위치하는 곳에 둔다.
+* 요소의 위치를 지정하지 않는다.
 
 ```css
 div {
