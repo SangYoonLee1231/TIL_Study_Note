@@ -71,12 +71,14 @@ class SignlyLinkedList:
         self.head = None
         self.size = 0
 
+
     # Head Node 앞에 새로운 Node를 삽입하는 함수
     def pushFront(self, key):
         new_node = Node(key)    # 새 Node 생성
         new_node.next = L.head      # 현 Head Node 앞에 새 Node를 연결 (link에 Head 주소 저장)
         L.head = new_node     # head Node를 새 Node로 업데이트
         L.size += 1      # 연결 리스트 크기 1 증가
+
 
     # Tail Node 다음에 새로운 Node를 삽입하는 함수
     def pushBack(self, key):
