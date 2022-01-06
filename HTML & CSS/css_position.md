@@ -106,4 +106,4 @@ div > div {
     left: 20px;
 }
 ```
-    부모 relative 속성에 top:0px를 주면, 자식 absolute 속성에서 bottomL 10px가 제대로 동작하지 않는다. 그 이유는 뭘까..
+    부모 relative의 속성에 top: 0px를 주면, 자식 absolute에서 bottom: 10px가 제대로 동작하지 않는다. 그 이유는 뭘까..
