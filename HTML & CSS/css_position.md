@@ -28,7 +28,7 @@ div {
 
 ## Position 속성2 : Static
 
-* Default(초기)값이다.
+* <strong>Default(초기)값</strong>이다.
 
 * 요소의 위치를 지정하지 않는다.
 
