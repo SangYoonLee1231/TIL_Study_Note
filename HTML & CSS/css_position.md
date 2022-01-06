@@ -60,6 +60,7 @@ div {
 * ✨absolute 요소는, <strong>가장 가까운 relative 부모의 영역을 기준</strong>으로 top, bottom, left, right 속성을 통해 요소를 배치한다.
 
     * 이때, relative처럼 요소를 (미세하게) 이동하는 것이 아니라,  
+    
     각 방향의 맨 끝에서 top, bottom, left, right 속성값만큼 떨어진 곳에 요소를 배치하는 것이다.
 
 * ✨만일 부모 중에 <strong>relative 요소가 없으면, body 영역을 기준</strong>으로 삼는다.
