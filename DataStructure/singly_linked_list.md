@@ -73,10 +73,10 @@ class SignlyLinkedList:
 
     # Head Node 앞에 새로운 Node를 삽입하는 함수
     def pushFront(self, key):
-        new_node = Node(key)  # 새 Node 생성
-        new_node.next = L.head  # 현 Head Node 앞에 새 Node를 연결 (link에 Head 주소 저장)
-        L.head = new_node  # head Node를 새 Node로 업데이트
-        L.size += 1  # 연결 리스트 크기 1 증가
+        new_node = Node(key)    # 새 Node 생성
+        new_node.next = L.head      # 현 Head Node 앞에 새 Node를 연결 (link에 Head 주소 저장)
+        L.head = new_node     # head Node를 새 Node로 업데이트
+        L.size += 1      # 연결 리스트 크기 1 증가
 
     # Tail Node 다음에 새로운 Node를 삽입하는 함수
     def pushBack(self, key):
@@ -88,9 +88,9 @@ class SignlyLinkedList:
         else:
             # 연결 리스트에 Node가 있는 상태이므로,
             # Tail Node를 알기 위해선, Head부터 link를 따라 추적하여야 한다.
-            tail = self.head  # 우선, Head Node 주소를 Tail Node 주소로 가정
+            tail = self.head    # 우선, Head Node 주소를 Tail Node 주소로 가정
             while tail.next != None:
-                tail = tail.next  # 그 후, link값이 None이 될 때까지 link따라 실제 Tail Node를 추적
-            tail.next = v  # 찾은 Tail Node 다음에 v를 추가. 이제 v가 Tail Node이다.
-        self.size += 1  # 연결 리스트  크기 1증가
+                tail = tail.next     # 그 후, link값이 None이 될 때까지 link따라 실제 Tail Node를 추적
+            tail.next = v    # 찾은 Tail Node 다음에 v를 추가. 이제 v가 Tail Node이다.
+        self.size += 1   # 연결 리스트  크기 1증가
 ```
