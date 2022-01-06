@@ -85,3 +85,7 @@ print(Q.dequeue())
 ## Queue 활용 예제
 
 * <a href="https://www.acmicpc.net/problem/1158" target="_blank">Josephus Problem (백준 1158번)</a>
+
+<br/>
+
+> 사진 출처 : https://galid1.tistory.com/483

@@ -101,3 +101,7 @@ class SignlyLinkedList:
             tail.next = v    # 찾은 Tail Node 다음에 v를 추가. 이제 v가 Tail Node이다.
         self.size += 1   # 연결 리스트  크기 1증가
 ```
+
+<br/>
+
+> 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>

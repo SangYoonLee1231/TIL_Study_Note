@@ -110,3 +110,7 @@ A.append(x):
 * <strong>A.insert , A.remove</strong> : O(n) Worst Case
 
 * <strong>A.index , A.count</strong> : O(n) Worst Case
+
+<br/>
+
+> 사진 출처 : <a href="https://youtu.be/Lqd8o7vL2Z8">신찬수 교수님 유튜브 강의</a>

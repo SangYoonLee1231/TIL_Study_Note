@@ -44,3 +44,7 @@
 
 <img src="img/linked_list2.png" width="250px"> <img src="img/linked_list3.png" width="400px">  
 \<배열> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \<연결 리스트>
+
+<br/>
+
+> 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/sMpsvA5O0xU">신찬수 교수님 유튜브 강의</a>

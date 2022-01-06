@@ -147,3 +147,7 @@ body {
 ## 유용한 자료
 
 <a href="https://flexboxfroggy.com/#ko">Flex에 익숙해질 수 있는 유익한 게임 : FLEXBOX FROGGY</a>
+
+<br/>
+
+> 사진 출처 : https://webdesign.tutsplus.com/tutorials/a-comprehensive-guide-to-flexbox-alignment--cms-30183, https://studiomeal.com/archives/197, https://velog.io/@dev-leesaerom/%EA%B9%80%EC%9D%98-CSS%EB%8A%94-%EC%9E%AC%EB%B0%8C%EB%8B%A4-6-Flexbox
