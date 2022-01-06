@@ -65,6 +65,8 @@ b.next = c
 
     * pushBack : Tail Node 다음에 새로운 Node를 삽입하는 함수
 
+    <img src="img/singly_linked_list2.png" width="550px">
+
 ```python
 class SignlyLinkedList:
     def __init__(self):
