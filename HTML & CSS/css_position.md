@@ -19,6 +19,8 @@
 ```css
 div {
     position: fixed;
+    top: 20px;
+    right: 15px;
 }
 ```
 
