@@ -87,7 +87,7 @@ class SignlyLinkedList:
 
     # Tail Node 다음에 새로운 Node를 삽입하는 함수
     def pushBack(self, key):
-        v = Node(key)     # 새 Node 생성
+        v = Node(key)    # 새 Node 생성
         if len(self) == 0:
             # 연결 리스트에 Node가 0개인 상태이므로,
             # 새로 삽입되는 Node v는 Tail Node인 동시에 Head Node이다.
