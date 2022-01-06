@@ -96,7 +96,7 @@ div {
     position: relative;
     top: 0px; ✔
 }
-.green {
+div > div {
     background-color: teal;
     height: 100px;
     width: 100px;
