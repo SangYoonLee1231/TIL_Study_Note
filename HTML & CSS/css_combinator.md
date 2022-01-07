@@ -1,4 +1,4 @@
-# CSS - 가상 선택자 (Pseudo Selector) & 결합자 (Combinator)
+# CSS - 결합자 (Combinator)
 
 <br/>
 
@@ -6,13 +6,9 @@
 
 <br/>
 
-## 가상 선택자 (Pseudo Selector)
-
-<br/>
-
 ## 결합자 (Combinator)
 
-* 여러 선택자를 결합하여, 더 정밀히 요소를 찾아 가리키는 선택자
+* 여러 선택자를 결합하여, 더 정밀히 요소를 찾아 가리키는 선택자를 결합자(Combinator)라 한다.
 
 <br/>
 
@@ -45,7 +41,7 @@ p + span {
     ...
 }
 ```
-    p 다음에 오는 형제 span 1개 만을 가리킨다.
+    p 다음에 오는 형제 span 1개만을 가리킨다.
 
 <br/>
 
