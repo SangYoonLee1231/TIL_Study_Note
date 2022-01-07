@@ -63,7 +63,7 @@ div {
 
         각 방향의 맨 끝에서 top, bottom, left, right 속성값만큼 떨어진 곳에 요소를 배치하는 것이다.
 
-* ✨만일 부모 중에 <strong>relative 요소가 없으면, body를 기준</strong>으로 삼는다.
+* ✨만일 부모 중에 <strong>relative 요소가 없으면</strong>, absoulte 요소는 <strong>body를 기준</strong>으로 삼는다.
 
 ```css
 div {
