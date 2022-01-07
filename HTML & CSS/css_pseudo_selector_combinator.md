@@ -16,7 +16,7 @@
 
 <br/>
 
-* <strong>자손 결합자</strong> : [A B]
+* <strong>자손 결합자</strong> : [<strong>A B</strong>]
 
 ```css
 p span {
