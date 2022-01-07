@@ -80,10 +80,10 @@ class SignlyLinkedList:
     # Head Node 앞에 새로운 Node를 삽입하는 함수
     def pushFront(self, key):
         new_node = Node(key)    # 새 Node 생성
-        new_node.next = self.head      # 현 Head Node 앞에 새 Node를 연결 (link에 Head 주소 저장)
+        new_node.next = self.head    # 현 Head Node 앞에 새 Node를 연결 (link에 Head 주소 저장)
 
-        self.head = new_node     # head Node를 새 Node로 업데이트
-        self.size += 1      # 연결 리스트 크기 1 증가
+        self.head = new_node    # head Node를 새 Node로 업데이트
+        self.size += 1    # 연결 리스트 크기 1 증가
 
 
     # Tail Node 다음에 새로운 Node를 삽입하는 함수
@@ -103,10 +103,10 @@ class SignlyLinkedList:
 
             tail = self.head    # 우선, Tail Node link를 Head Node 주소로 설정
             while tail.next != None:
-                tail = tail.next     # 그 후, link값이 None이 될 때까지 업데이트
+                tail = tail.next    # 그 후, link값이 None이 될 때까지 업데이트
             tail.next = v    # 찾은 Tail Node 다음에 v를 추가. 이제 v가 Tail Node이다.
 
-        self.size += 1   # 연결 리스트 크기 1증가
+        self.size += 1    # 연결 리스트 크기 1증가
 ```
 ```python
 L = SinglyLinkedList()
@@ -119,6 +119,69 @@ L.pushFront(5)   # 5 → 3 → 9 → -1 → ø
 L.pushBack(4)   # 5 → 3 → 9 → -1 → 4 → ø
 ```
 
+<br/>
+
+### 삭제 연산 구현
+
+* 삭제 연산 함수 2가지
+
+    * <strong>popFront</strong> : Head Node를 삭제하고 그 key값을 리턴하는 함수
+
+    * <strong>popBack</strong> : Tail Node를 삭제하고 그 key값을 리턴하는 함수
+
+<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="img/singly_linked_list3.png" width="550px">
+
+```python
+    # Head Node를 식제하고 그 값을 리턴하는 함수
+    def popFront(self):
+        # Node를 지울 땐, 항상 Node가 존재하는지 확인해야 한다.
+
+        if len(self) == 0:    # Node가 없을 때
+            return None    # 삭제할 Node가 없으므로 아무것도 반환하지 않음
+
+        else:    # 최소 하나 이상 Node 존재 시
+            x = self.head    # x Node == Head Node
+            key = x.key    # Head Node의 key값 저장 (반환하기 위함)
+            self.head = x.next    # 연결 리스트의 head 수정
+            self.size -= 1    # 연결 리스트의 size(크기) 수정
+            del x    # Head 노드 객체 삭제
+            return key    # 미리 저장해둔 key값 반환
+```
+
+<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="img/singly_linked_list4.png" width="550px">
+
+```python
+
+    def popBack(self):
+        # Node를 지울 땐, 항상 Node가 존재하는지 확인해야 한다.
+
+        if len(self) == 0:    # Node가 없을 때
+            return None    # 삭제할 Node가 없으므로 아무것도 반환하지 않음
+
+        else:    # 최소 하나 이상 Node 존재 시
+            # running technique
+            # : Previous Node와 Tail Node를 통시에 찾는 테크닉
+            prev, tail = None, self.head
+
+            while tail.next != None:
+                prev = tail
+                tail = tail.next
+            if len(self) == 1:
+                # 하나 남은 Node를 삭제하면 Node 개수 == 0이 되므로
+                self.head = None    # 연결 리스트 head = None
+            else:
+                prev.next = tail.next # (OR prev.next = tail.next)
+            key = tail.key    # Tail Node의 key값 저장 (반환하기 위함)
+            del tail    # Tail Node 객체 삭제
+            self.size -= 1    # 연결 리스트의 size(크기) 수정
+            return key    # 미리 저장해둔 key값 반환
+```
 <br/>
 
 > 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>
