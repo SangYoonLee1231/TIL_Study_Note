@@ -21,6 +21,13 @@ p span {
 ```
     p 안의 모든 span을 가리킨다.
 
+```css
+div p span {
+    ...
+}
+```
+    div 안의 모든 p, 그 모든 p 안의 모든 span을 가리킨다.
+
 <br/>
 
 * <strong>자식 결합자</strong> : [<strong>A > B</strong>]
