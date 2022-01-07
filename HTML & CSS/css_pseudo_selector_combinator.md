@@ -6,7 +6,7 @@
 
 <br/>
 
-## 가상 선택지 (Pseudo Selector)
+## 가상 선택자 (Pseudo Selector)
 
 <br/>
 
@@ -16,7 +16,7 @@
 
 <br/>
 
-* 자손(Decendant) 결합자 : [A B]
+* <strong>자손 결합자</strong> : [<strong>A B</strong>]
 
 ```css
 p span {
@@ -27,7 +27,7 @@ p span {
 
 <br/>
 
-* 자식(Child) 결합자 : [A > B]
+* <strong>자식 결합자</strong> : [<strong>A > B</strong>]
 
 ```css
 p > span {
@@ -38,7 +38,7 @@ p > span {
 
 <br/>
 
-* 인접 형제 결합자 : [A + B]
+* <strong>인접 형제 결합자</strong> : [<strong>A + B</strong>]
 
 ```css
 p + span {
@@ -49,7 +49,7 @@ p + span {
 
 <br/>
 
-* 일반 형제 결합자 : [A ~ B]
+* <strong>일반 형제 결합자</strong> : [<strong>A ~ B</strong>]
 
 ```css
 p span {
