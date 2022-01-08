@@ -132,8 +132,8 @@ div {
 
 * 그러나 <strong>많은 문제점</strong>을 가지고 있으므로 사용을 지양한다.
 
-  * 문제점 1. 정해진 형식이 없고 Inline Block 요소들 사이에 의미불명한 빈 공간이 생긴다.
+  * 【문제점 1】 정해진 형식이 없고 Inline Block 요소들 사이에 의미불명한 빈 공간이 생긴다.
 
-  * 문제점 2. <strong>반응형 디자인(Responsive Design)을 자원하지 않는다.</strong>
+  * 【문제점 2】 <strong>반응형 디자인(Responsive Design)을 자원하지 않는다.</strong>
 
     * 창 크기가 달라지면 영향을 받는다.
