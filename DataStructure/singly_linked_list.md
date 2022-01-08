@@ -206,7 +206,7 @@ def search(self, key):
 
 ### 【for + in + 리스트】 구문으로 연결 리스트의 모든 Node 탐색하기
 
-* Generator를 이용하면, while문 필요 없이 바로 아래 코드처럼 【for + in + 리스트】 반복 구문으로  
+* <strong>Generator</strong>를 이용하면, while문 필요 없이 바로 아래 코드처럼 【for + in + 리스트】 반복 구문으로  
 
     연결 리스트의 모든 Node를 순차적으로 탐색할 수 있다.
 
@@ -215,7 +215,7 @@ for x in L:
     print(x)
 ```
 
-* 방법 : 한방향 연결리스트에 다음과 같은 특별한 Method를 선언한다.
+* 방법 : 한방향 연결리스트에 다음과 같은 <strong>특별한 Method</strong>를 선언한다.
 
 ```python
 def __iterator__(self):
