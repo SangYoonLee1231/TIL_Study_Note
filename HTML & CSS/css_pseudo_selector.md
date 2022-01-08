@@ -12,7 +12,7 @@
 
 ```css
 input[type="password"] {
-    background-color: thistle;
+    ...
 }
 /* input 태그들 중 type 속성이 password인 모든 태그에 적용 */
 ```
