@@ -203,7 +203,7 @@ def search(self, key):
 
 <br/>
 
-### 【for + in + 리스트】 구문으로 모든 Node 탐색하기
+### 【for + in + 리스트】 구문으로 연결 리스트의 모든 Node 탐색하기
 
 * Generator를 이용하면, while문 필요 없이 바로 아래 코드처럼 【for + in + 리스트】 반복 구문으로  
 
