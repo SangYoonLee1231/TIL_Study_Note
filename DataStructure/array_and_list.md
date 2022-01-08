@@ -105,11 +105,11 @@ A.append(x):
 
 ## 리스트 연산 수행시간
 
-* <strong>A.append , A.pop</strong> : O(1) 평균
+* A.append , A.pop : <strong>O(1) 평균</strong>
 
-* <strong>A.insert , A.remove</strong> : O(n) Worst Case
+* A.insert , A.remove : <strong>O(n) Worst Case</strong>
 
-* <strong>A.index , A.count</strong> : O(n) Worst Case
+* A.index , A.count : <strong>O(n) Worst Case</strong>
 
 <br/>
 

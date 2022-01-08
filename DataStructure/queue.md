@@ -78,7 +78,7 @@ print(Q.dequeue())
 
 ## Queue 연산 수행시간
 
-* <strong>enqueue, dequeue, front, len, isEmpty : O(1)</strong>
+* enqueue, dequeue, front, len, isEmpty : <strong>O(1)</strong>
 
 <br/>
 
