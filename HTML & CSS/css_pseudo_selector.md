@@ -20,7 +20,7 @@ input[type="password"] {
 input[placeholder="username"] {
     background-color: wheat;
 }
-/* input 태그들 중  placeholder 속성이 username인 모든 태그에 적용 */
+/* input 태그들 중 placeholder 속성이 username인 모든 태그에 적용 */
 ```
 ```css
 input[placeholder~="name"] {
@@ -30,12 +30,14 @@ input[placeholder~="name"] {
 (단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
 ```
 ```css
-input[placeholder*="username"] {
+input[placeholder*="name"] {
     background-color: seagreen;
 }
 /* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
 (단, name의 앞뒤에 공백이 없어도 된다.) */
 ```
+
+<br/>
 
 ## 가상 클래스 선택자(Pseudo-class Selector)란
 
@@ -55,10 +57,23 @@ input[placeholder*="username"] {
 
 ```css
 div:first-child {...} /* div들 중 첫번째 요소만 적용 */
+
 div:last-child {...} /* div들 중 마지막 요소만 적용 */
+
+span:nth-child(2) {...} /* span들 중 2번째 요소만 적용 */
+
+span:nth-child(2),
+span:nth-child(4) {...} /* span들 중 2번째 요소와 4번째 요소에 적용 */
+
+span:nth-child(even) {...} /* span들 중 짝수번째 요소만 적용 */
+
+span:nth-child(3n+1) {...} /* span들 중 3n+1번째 요소만 적용 (n은 0 이상의 정수) */
 ```
 
 ```css
 input:required {...} /* required 속성을 가진 input에 적용 */
 input:optional {...} /* required 속성을 가지지 않는 input에 적용 */
+```
+
+```css
 ```
