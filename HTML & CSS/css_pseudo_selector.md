@@ -1,4 +1,4 @@
-# CSS - 속성 선택자, 가상 클래스 선택자
+# CSS - 속성 선택자, 가상 클래스, 가상 요소
 
 <br/>
 
@@ -37,17 +37,17 @@ input[placeholder*="name"] {
 
 <br/>
 
-## 가상 클래스 선택자(Pseudo-class Selector)란
+## 가상 클래스 (Pseudo-class)
 
-* 선택자를 작성하는 3가지 기본 방법
+* 가상 클래스는 어떤 요소의 특정한 이벤트마다 적용할 스타일(효과)를 설정하기 위해 사용한다.
 
-    * 태그의 이름을 쓰는 방법
+* 선택자 뒤에 【:<strong>가상 이벤트</strong>】를 붙인다.
 
-    * 점(.)을 쓰고 클래스 이름을 쓰는 방법
+```css
+선택자:가상이벤트 { property: value; }
+```
 
-    * 해시 기호(#)를 쓰고 id값을 쓰는 방법
-
-* 이 방법 외에 다른 도구로 좀 더 세부적으로 Element를 선택하는 방법이 있다.
+* 가상 클래스는 HTML 문서에 실제로 존재하지 않는다. 그래서 '가상'인 것이다.
 
 <br/>
 
@@ -97,6 +97,10 @@ form:hover input {...}  /* form이 hover되면, input에 효과를 적용한다.
 
 form:hover input:focus {...}  /* form이 hover되고, 동시에 input이 focus되면, input에 효과를 적용한다. */
 ```
+
+<br/>
+
+## 가상 요소 (Pseudo-elements)
 
 <br/>
 

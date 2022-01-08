@@ -25,7 +25,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md">CSS - Display 속성 : Flexbox 기초</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_position.md">CSS - Position</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_combinator.md">CSS - 결합자 (Combinator)</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 속성 선택자, 가상 클래스 선택자</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 속성 선택자, 가상 클래스 선택자, 가상 요소</a>
 
 
 ### 자료구조
