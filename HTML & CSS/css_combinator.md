@@ -55,7 +55,7 @@ p + span {
 * <strong>일반 형제 결합자</strong> : [<strong>A ~ B</strong>]
 
 ```css
-p span {
+p ~ span {
     ...
 }
 ```
