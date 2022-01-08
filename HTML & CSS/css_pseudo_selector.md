@@ -26,15 +26,13 @@ input[placeholder="username"] {
 input[placeholder~="name"] {
     ...
 }
-/* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
-(단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
+/* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용 (단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
 ```
 ```css
 input[placeholder*="name"] {
     ...
 }
-/* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
-(단, name의 앞뒤에 공백이 없어도 된다.) */
+/* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용 (단, name의 앞뒤에 공백이 없어도 된다.) */
 ```
 
 <br/>
