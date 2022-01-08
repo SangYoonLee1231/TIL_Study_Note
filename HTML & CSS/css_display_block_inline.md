@@ -82,7 +82,7 @@ div {
 
 * padding은 <strong>box의 경계(border)로부터 안쪽에 있는 영역</strong>이다.
 
-* Block과 inline 요소 모두 가지고 있는 특징이다.
+* Block과 Inline 요소 모두 가지고 있는 특징이다.
 
 ```css
 div {
@@ -105,7 +105,7 @@ div {
 
 * border은 말 그대로 박스의 '<strong>경계</strong>'이다.
 
-* Block과 inline 요소 모두 가지고 있는 특징이다.
+* Block과 Inline 요소 모두 가지고 있는 특징이다.
 
 ```css
 div {
@@ -121,9 +121,9 @@ span {
 
 <br/>
 
-## 또 하나의 Display 속성 : Inline Block
+## 또 하나의 Display 속성 : Inline-block
 
-* Inline Block은 높이와 너비를 가지는 동시에, 바로 옆에 다른 요소가 올 수 있는 display 속성이다.
+* Inline-block은 높이와 너비를 가지는 동시에, 바로 옆에 다른 요소가 올 수 있는 display 속성이다.
 ```css
 div {
   display: inline-block;
@@ -132,10 +132,8 @@ div {
 
 * 그러나 <strong>많은 문제점</strong>을 가지고 있으므로 사용을 지양한다.
 
-* Inline Block의 문제점
+  * 문제점 1. 정해진 형식이 없고 Inline Block 요소들 사이에 의미불명한 빈 공간이 생긴다.
 
-  * 정해진 형식이 없고 Inline Block 요소들 사이에 의미불명한 빈 공간이 생긴다.
-
-  * <strong>반응형 디자인(Responsive Design)을 자원하지 않는다.</strong>
+  * 문제점 2. <strong>반응형 디자인(Responsive Design)을 자원하지 않는다.</strong>
 
     * 창 크기가 달라지면 영향을 받는다.
