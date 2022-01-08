@@ -191,12 +191,13 @@ L.pushBack(4)   # 5 → 3 → 9 → -1 → 4 → ø
 ```python
 def search(self, key):
     # key값의 Node를 리턴, 없으면 None을 리턴
+
     v = self.head
     while v != None:
         if v.key == key:
             return key;
         v = v.next
-    return None # OR return v (while 반복문 끝까지 갔으므로 v == None)
+    return None    # OR return v (while 반복문 끝까지 갔으므로 v == None)
 ```
 
 * search 함수 수행 시간: <strong>O(n) W.C.</strong>
