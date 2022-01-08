@@ -90,7 +90,7 @@ a:visited {...}  /* 해당 a 링크가 이미 방문한 사이트일 때, a에 �
 
 <br/>
 
-* 상태 (State) 가상 클래스 선택자를 다른 Element와 연계해서 사용할 수 도 있다.
+* 상태 (State) 가상 클래스 선택자를 다른 Element와 연계해서 사용할 수도 있다.
 
 ```css
 form:hover input {...}  /* form이 hover되면, input에 효과를 적용한다. */
