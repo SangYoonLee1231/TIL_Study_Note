@@ -38,9 +38,9 @@ div {
 
   * Inline 태그 옆에 <strong>다른 요소가 올 수 있다.</strong>   
 
-  * Inline은 <strong>높이(height)</strong>와 <strong>너비(width)</strong>를 <strong>가질 수 없다.</strong>  
+  * Inline은 ✨<strong>높이(height)</strong>와 <strong>너비(width)</strong>를 <strong>가질 수 없다.</strong>  
 
-    * 따라서 <strong>위, 아래에 margin을 가지지 않는다.</strong>
+    * 따라서 ✨<strong>위, 아래에 margin을 가지지 않는다.</strong>
     
       (가지도록 하려면 display 속성을 inline-block으로 바꾸어야 한다)
 
