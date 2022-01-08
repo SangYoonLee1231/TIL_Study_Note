@@ -18,7 +18,7 @@ body {
 }
 ```
 
-* 어떤 HTML Element(요소)에 CSS 코드 display: flex를 명시하면, 해당 요소는 flex 컨테이너가 되고, 내부 요소는 flex 아이템이 된다.
+* 어떤 HTML Element(요소)에 CSS 코드 display: flex를 명시하면, 해당 요소는 <strong>flex 컨테이너</strong>가 되고, 내부 요소는 <strong>flex 아이템</strong>이 된다.
 
 <br/>
 
