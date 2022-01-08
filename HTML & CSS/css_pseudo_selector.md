@@ -18,20 +18,20 @@ input[type="password"] {
 ```
 ```css
 input[placeholder="username"] {
-    background-color: wheat;
+    ...
 }
 /* input 태그들 중 placeholder 속성이 username인 모든 태그에 적용 */
 ```
 ```css
 input[placeholder~="name"] {
-    background-color: pink;
+    ...
 }
 /* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
 (단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
 ```
 ```css
 input[placeholder*="name"] {
-    background-color: seagreen;
+    ...
 }
 /* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
 (단, name의 앞뒤에 공백이 없어도 된다.) */
