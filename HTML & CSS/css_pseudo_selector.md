@@ -11,7 +11,9 @@
 * 특정 속성이나 특정 속성값을 가지는 Element를 선택할 수 있는 선택자이다.
 
 ```css
-input[type="password"] {...}
+input[type="password"] {
+    background-color: thistle;
+}
 /* type 속성의 속성값이 password인 input 태그에 적용 */
 ```
 ```css
