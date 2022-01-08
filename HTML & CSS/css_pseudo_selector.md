@@ -14,25 +14,27 @@
 input[type="password"] {
     background-color: thistle;
 }
-/* type 속성의 속성값이 password인 input 태그에 적용 */
+/* input 태그들 중 type 속성이 password인 모든 태그에 적용 */
 ```
 ```css
 input[placeholder="username"] {
     background-color: wheat;
 }
-/* placeholder 속성의 속성값이 username인 input 태그에 적용 */
+/* input 태그들 중  placeholder 속성이 username인 모든 태그에 적용 */
 ```
 ```css
 input[placeholder~="name"] {
     background-color: pink;
 }
-/* placeholder 속성의 속성값에 name을 포함하는 input 태그에 적용 (단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
+/* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
+(단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
 ```
 ```css
 input[placeholder*="username"] {
     background-color: seagreen;
 }
-/* placeholder 속성의 속성값에 name을 포함하는 input 태그에 적용 (단, name의 앞뒤에 공백이 없어도 된다.) */
+/* input 태그들 중 placeholder 속성에 name을 포함하는 모든 태그에 적용
+(단, name의 앞뒤에 공백이 없어도 된다.) */
 ```
 
 ## 가상 클래스 선택자(Pseudo-class Selector)란
