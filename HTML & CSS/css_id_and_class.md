@@ -62,6 +62,6 @@
 <span class="btn potato">HELLO!</span>
 ```
 
-* class 특징을 이용하여 <strong>반복되는 코드를 하나로 묶음으로써</strong> 코드 길이를 줄일 수 있다.
+* class 특징을 활용하여 <strong>반복되는 코드를 하나로 묶음</strong>으로써 코드 길이를 줄일 수 있다.
 
   (위의 btn class처럼)
