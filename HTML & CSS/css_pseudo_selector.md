@@ -49,8 +49,6 @@ input[placeholder*="name"] {
 
 * 이 방법 외에 다른 도구로 좀 더 세부적으로 Element를 선택하는 방법이 있다.
 
-### 상태 (States) 가상 클래스 선택자
-
 <br/>
 
 ```css
@@ -73,6 +71,10 @@ input:required {...} /* required 속성을 가진 input에 효과 적용 */
 
 input:optional {...} /* required 속성을 가지지 않는 input에 효과 적용 */
 ```
+
+<br/>
+
+* 상태 (States) 가상 클래스 선택자
 
 ```css
 button:active {...} /* button을 마우스로 클락했을 때, button에 효과 적용 */
