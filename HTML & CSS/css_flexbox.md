@@ -103,6 +103,8 @@ body {
 
         * row와 column은 두 축의 방향은 모두 같으나 주축과 교차축이 서로 반대이다.
 
+    <br/>
+
     * <strong>row-reverse</strong>
 
     <img src="img/row-reverse.png">
