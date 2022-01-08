@@ -184,4 +184,50 @@ L.pushBack(4)   # 5 → 3 → 9 → -1 → 4 → ø
 ```
 <br/>
 
+### 탐색 연산 구현
+
+* 탐색 연산 함수 : search
+
+```python
+def search(self, key):
+    # key값의 Node를 리턴, 없으면 None을 리턴
+    v = self.head
+    while v != None:
+        if v.key == key:
+            return key;
+        v = v.next
+    return None # OR return v (while 반복문 끝까지 갔으므로 v == None)
+```
+
+* search 함수 수행 시간: O(n) W.C.
+
+<br/>
+
+### 【for + in + 리스트】 구문으로 모든 Node 탐색하기
+
+* Generator를 이용하면, while문 필요 없이 바로 아래 코드처럼 【for + in + 리스트】 반복 구문으로  
+
+    연결 리스트의 모든 Node를 순차적으로 탐색할 수 있다.
+
+```python
+for x in L:
+    print(x)
+```
+
+* 방법 : 한방향 연결리스트에 다음과 같은 특별한 Method를 선언한다.
+
+```python
+def __iterator__(self):
+    v = self.head
+    while v != None:
+        yield v
+        v = v.next
+```
+
+* Generator == yield가 있는 함수
+
+* (자세한 내용은 다음에..)
+
+<br/>
+
 > 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>
