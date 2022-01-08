@@ -186,7 +186,7 @@ L.pushBack(4)   # 5 → 3 → 9 → -1 → 4 → ø
 
 ### 탐색 연산 구현
 
-* 탐색 연산 함수 : search
+* 탐색 연산 함수 : <strong>search</strong>
 
 ```python
 def search(self, key):
@@ -199,7 +199,7 @@ def search(self, key):
     return None # OR return v (while 반복문 끝까지 갔으므로 v == None)
 ```
 
-* search 함수 수행 시간: O(n) W.C.
+* search 함수 수행 시간: <strong>O(n) W.C.</strong>
 
 <br/>
 
