@@ -11,11 +11,15 @@
 * 특정 속성이나 특정 속성값을 가지는 Element를 선택할 수 있는 선택자이다.
 
 ```css
-input[type="password"] {...} /* type 속성의 속성값이 password인 input 태그에 적용 */
-input[placeholder="username"] {...} /* placeholder 속성의 속성값이 username인 input 태그에 적용 */
+input[type="password"] {...}
+/* type 속성의 속성값이 password인 input 태그에 적용 */
+
+input[placeholder="username"] {...}
+/* placeholder 속성의 속성값이 username인 input 태그에 적용 */
 
 input[placeholder~="name"] {...}
 /* placeholder 속성의 속성값에 name을 포함하는 input 태그에 적용 (단, name의 앞뒤에 공백이 반드시 있어야 한다.) */
+
 input[placeholder*="username"] {...}
 /*placeholder 속성의 속성값에 name을 포함하는 input 태그에 적용 (단, name의 앞뒤에 공백이 없어도 된다.) */
 ```
