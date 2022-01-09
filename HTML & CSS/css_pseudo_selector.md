@@ -41,12 +41,14 @@ input[placeholder*="name"] {
 
 ## 가상 클래스 (Pseudo-class)
 
-* 가상 클래스는 어떤 요소에 특정 이벤트가 발생할 때마다 적용할 스타일(효과)를 설정하기 위해 사용한다.
+* <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes">공식 문서 바로가기</a>
 
-* 선택자 뒤에 【:<strong>가상 이벤트</strong>】를 붙인다.
+* 가상 클래스(의사 클래스)는 선택자 뒤에 :을 붙여 추가하는 키워드이다.
+
+* 어떤 요소의 특정 상태에서 발생할 효과를 주기 위해 사용한다.
 
 ```css
-선택자:가상이벤트 { property: value; }
+선택자:가상클래스 { property: value; }
 ```
 
 * 가상 클래스는 HTML 문서에 실제로 존재하지 않는다. 그래서 '가상'인 것이다.
@@ -108,4 +110,4 @@ form:hover input:focus {...}  /* form이 hover되고, 동시에 input이 focus�
 
 ### 토막 지식
 
-* button 요소 중 background-color(배경색) 같이 어떤 속성 하나를 바꾸면, 지정되어 있던 border의 속성은 사라지게 된다.
+* button 요소 중 background-color(배경색) 같이 어떤 속성 하나를 바꾸면, 지정되어 있던 button의 border의 속성은 사라지게 된다.
