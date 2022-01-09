@@ -41,7 +41,7 @@ input[placeholder*="name"] {
 
 ## 가상 클래스 (Pseudo-class)
 
-* <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes">공식 문서 바로가기</a>
+* ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes">공식 문서 바로가기</a>
 
 * 가상 클래스(의사 클래스)는 선택자 뒤에 :을 붙여 추가하는 키워드이다.
 
@@ -105,6 +105,8 @@ form:hover input:focus {...}  /* form이 hover되고, 동시에 input이 focus�
 <br/>
 
 ## 가상 요소 (Pseudo-elements)
+
+* ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-elements">공식 문서 바로가기</a>
 
 <br/>
 
