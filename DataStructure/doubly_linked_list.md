@@ -59,3 +59,31 @@
 <br/>
 
 ### Node 클래스 구현
+
+```python
+class Node:
+    def __init__(self, key="Name"):
+        self.key = key
+        self.next = self  # 자기 자신을 가리킴
+        self.prev = self  # 자기 자신을 가리킴
+```
+
+<br/>
+
+### (원형) 양방향 연결 리스트 클래스 구현
+
+```python
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = Node()
+        self.size = 0
+
+    def __iter__(self):    # Generator
+        
+
+    def __str__(self):    # 
+        return self.key
+
+    def __len__(self):    # 리스트 크기
+        return self.size
+```
