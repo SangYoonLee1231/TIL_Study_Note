@@ -31,3 +31,19 @@
         * next link, prev link
 
 <br/>
+
+## 양방향 연결 리스트 구현
+
+* 위에서 언급한 단방향 연결 리스트의 단점을 보완하는 다음과 같은 연결 리스트를 설계해보자.
+
+    * 이전 Node를 가리키는 link를 포함하여, 양방향으로 이동이 가능하도록 한다.
+
+    * 마지막 Node와 첫 Node를 서로 연결하여, 원형 양방향 연결 리스트 (Circularly Doubly Linked List를 만든다.
+
+    * 첫 Head Node는 Dummy Node가 되도록 한다.
+
+        * Dummy Node : 연결 리스트의 시작을 표기하시 위한 스페셜 Node
+
+            <img src="img\doubly_linked_list3.png" width="300px">
+            
+        * 따라서, 빈 리스트는 Dummy Node 하나로만 구성된다.
