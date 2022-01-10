@@ -108,6 +108,20 @@ form:hover input:focus {...}  /* form이 hover되고, 동시에 input이 focus�
 
 * ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-elements">공식 문서 바로가기</a>
 
+* 가상 클래스와 달리 ::을 붙여 사용한다.
+
+```css
+input::placeholder {...} /* input의 placeholder에 들어길 문자에 스타일 효과를 적용한다. */
+
+p::selection {...} /* 택스트를 드래그 했을 때 효과를 적용한다. */
+
+p::first-letter {...} /* 글의 첫 번째 문자에 효과를 적용한다. (Block 요소 한정) */
+
+p::first-line {...} /* 글의 첫 문장에 효과를 적용한다. (Block 요소 한정) */
+```
+
+* 외우지 말고 원리를 이해한 후, 공식 문서를 보거나 검색해서 찾아 쓰자.
+
 <br/>
 
 ### 토막 지식
