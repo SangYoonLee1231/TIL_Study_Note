@@ -36,6 +36,8 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">순차적 자료구조 : 큐 (Queue)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">순차적 자료구조 : 연결 리스트 (Linked List) 기본 개념</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">순차적 자료구조 : 단방향 연결 리스트 (Singly Linked List)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">순차적 자료구조 : 양방향 연결 리스트 (Doubly Linked List)</a>
+
 
 
 ### 알고리즘
