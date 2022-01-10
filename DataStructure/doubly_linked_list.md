@@ -22,7 +22,7 @@
 
     * 그럴려면, head Node부터 차례대로 탐색해서 찾아야 하는데 (O(n) 걸림) 이는 매우 비효율적이다.
 
-    * 만일, 뒤로 가는 link가 있다면, O(1)안에 prev Node를 찾을 수 있다. (prev link 필요성 대두)
+    * <strong>만일, 뒤로 가는 link가 있다면, O(1)안에 prev Node를 찾을 수 있다. (prev link 필요성 대두)</strong>
 
         <img src="img\doubly_linked_list2.png" width="350px">
 
@@ -34,7 +34,7 @@
     
     * <strong>link 2개</strong>
         
-        * next link, prev link
+        * <strong>next link, prev link</strong>
 
 <br/>
 
@@ -42,19 +42,19 @@
 
 * 위에서 언급한 단방향 연결 리스트의 단점을 보완하는 다음과 같은 연결 리스트를 설계해보자.
 
-    * 이전 Node를 가리키는 link를 포함하여, 양방향으로 이동이 가능하도록 한다.
+    * <strong>이전 Node를 가리키는 link를 포함</strong>하여, 양방향으로 이동이 가능하도록 한다.
 
-    * 마지막 Node와 첫 Node를 서로 연결하여, 원형 양방향 연결 리스트 (Circularly Doubly Linked List)를 만든다.
+    * <strong>마지막 Node와 첫 Node를 서로 연결</strong>하여, <strong>원형 양방향 연결 리스트 (Circularly Doubly Linked List)</strong>를 만든다.
 
         <img src="img\doubly_linked_list4.png" width="450px">
 
-    * 첫 Head Node는 Dummy Node가 되도록 한다.
+    * 첫 Head Node는 <strong>Dummy Node</strong>가 되도록 한다.
 
-        * Dummy Node : 연결 리스트의 시작을 표기하시 위한 스페셜 Node
+        * <strong>Dummy Node</strong> : 연결 리스트의 시작을 표기하시 위한 스페셜 Node
 
             <img src="img\doubly_linked_list3.png" width="300px">
 
-        * 따라서, 빈 리스트는 Dummy Node 하나로만 구성된다.
+        * 따라서, <strong>빈 리스트는 Dummy Node 하나로만 구성</strong>된다.
 
 <br/>
 
