@@ -14,6 +14,8 @@
 
 <img src="img\doubly_linked_list1.png">
 
+<br/>
+
 * 양방향 연결 리스트의 필요성
 
     * tail Node를 지우기 위해선, 직전 prev Node를 알아야 한다.
@@ -22,7 +24,9 @@
 
     * 만일, 뒤로 가는 link가 있다면, O(1)안에 prev Node를 찾을 수 있다. (prev link 필요성 대두)
 
-<img src="img\doubly_linked_list2.png">
+        <img src="img\doubly_linked_list2.png" width="350px">
+
+<br/>
 
 * 양방향 연결 리스트 Node의 구성 요소
     
