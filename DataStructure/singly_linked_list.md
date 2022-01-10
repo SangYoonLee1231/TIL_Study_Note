@@ -24,7 +24,7 @@
 
 ## 단방향 연결 리스트 구현
 
-### Node 구현
+### Node 클래스 구현
 
 ```python
 class Node:

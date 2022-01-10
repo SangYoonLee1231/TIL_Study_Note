@@ -10,6 +10,8 @@
 
 * Node들이 <strong>양쪽 방향으로 모두 연결된</strong> 연결 리스트이다.
 
+* 단방향 연결 리스트에 비해 관리해야 할 link가 2배로 늘어나는 단점이 있으나, 그로 인한 이점이 더 크다.
+
 <img src="img\doubly_linked_list1.png">
 
 * 양방향 연결 리스트의 필요성
@@ -38,12 +40,18 @@
 
     * 이전 Node를 가리키는 link를 포함하여, 양방향으로 이동이 가능하도록 한다.
 
-    * 마지막 Node와 첫 Node를 서로 연결하여, 원형 양방향 연결 리스트 (Circularly Doubly Linked List를 만든다.
+    * 마지막 Node와 첫 Node를 서로 연결하여, 원형 양방향 연결 리스트 (Circularly Doubly Linked List)를 만든다.
+
+        <img src="img\doubly_linked_list4.png" width="450px">
 
     * 첫 Head Node는 Dummy Node가 되도록 한다.
 
         * Dummy Node : 연결 리스트의 시작을 표기하시 위한 스페셜 Node
 
             <img src="img\doubly_linked_list3.png" width="300px">
-            
+
         * 따라서, 빈 리스트는 Dummy Node 하나로만 구성된다.
+
+<br/>
+
+### Node 클래스 구현
