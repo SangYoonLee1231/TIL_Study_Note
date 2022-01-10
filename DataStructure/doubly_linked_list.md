@@ -20,7 +20,7 @@
 
     * tail Node를 지우기 위해선, 직전 prev Node를 알아야 한다.
 
-    * 그럴려면, head Node부터 차례대로 탐색해서 prev Node를 찾아야 하는데 (O(n) 걸림) 이는 매우 비효율적이다.
+    * 그럴려면, head Node부터 차례대로 탐색해서 prev Node를 찾아야 하는데 (O(n) 걸림), 이는 매우 비효율적이다.
 
     * <strong>만일, 뒤로 가는 link가 있다면, O(1)안에 prev Node를 찾을 수 있다. (prev link 필요성 대두)</strong>
 
@@ -42,15 +42,15 @@
 
 * 위에서 언급한 단방향 연결 리스트의 단점을 보완하는 다음과 같은 연결 리스트를 설계해보자.
 
-    * <strong>이전 Node를 가리키는 link를 포함</strong>하여, 양방향으로 이동이 가능하도록 한다.
+    1. <strong>이전 Node를 가리키는 link를 포함</strong>하여, 양방향으로 이동이 가능하도록 한다.
 
-    * <strong>마지막 Node와 첫 Node를 서로 연결</strong>하여, <strong>원형 양방향 연결 리스트 (Circularly Doubly Linked List)</strong>를 만든다.
+    2. <strong>마지막 Node와 첫 Node를 서로 연결</strong>하여, <strong>원형 양방향 연결 리스트 (Circularly Doubly Linked List)</strong>를 만든다.
 
         <img src="img\doubly_linked_list4.png" width="450px">
 
-    * 첫 Head Node는 <strong>Dummy Node</strong>가 되도록 한다.
+    3. 첫 Head Node는 <strong>Dummy Node</strong>가 되도록 한다.
 
-        * <strong>Dummy Node</strong> : 연결 리스트의 시작을 표기하시 위한 스페셜 Node
+        * <strong>Dummy Node</strong> : 연결 리스트의 시작을 표기하기 위한 스페셜 Node
 
             <img src="img\doubly_linked_list3.png" width="300px">
 
