@@ -87,3 +87,7 @@ class DoublyLinkedList:
     def __len__(self):    # 리스트 크기
         return self.size
 ```
+
+### Splice 연산 구현
+
+* 양방향 (원형) 연결 리스트에서 다양한 종류의 삽입/삭제 연산에 쓰이는 중요한 연산 함수
