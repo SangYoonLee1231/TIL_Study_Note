@@ -68,6 +68,10 @@ class Node:
         self.prev = self  # 자기 자신을 가리킴
 ```
 
+* Node 자체가 하나의 (원형) 양방향 연결 리스트이다.
+
+    <img src="img\doubly_linked_list5.png">
+
 <br/>
 
 ### (원형) 양방향 연결 리스트 클래스 구현
