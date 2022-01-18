@@ -59,7 +59,7 @@ p {
     --main-color: #fcce00;
     --default-border: 1px solid var(--main-color);
 }
-/* :root는 모든 document의 뿌리임을 뜻함 */
+/* :root는 모든 document의 뿌리를 뜻함 */
 
 a {
     color: var(--main-color);
