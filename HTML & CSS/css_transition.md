@@ -18,7 +18,7 @@
     
 * transition 속성값 순서
     
-    ［transition 적용 대상 속성］, ［애니메이션 시간］, ［Easing 함수］
+    <strong>［transition 적용 대상 속성］, ［애니메이션 시간］, ［Easing 함수］</strong>
 
 ```css
 a {
@@ -31,7 +31,6 @@ a {
 
     transition: color 0.5s ease-in-out,
     border-radius 0.5s ease-in-out;
-    /* 속성값 순서: transition 적용 대상 속성, 애니메이션 시간, Easing 함수 */
 
     /* 전체 속성 지정 ☞ transition: all 0.5s ease-in-out; */
 }
@@ -58,7 +57,7 @@ a:hover {
 
 ## Easing 함수
 
-* Transition의 마지막 속성값에 들어가는 함수로, 시간 흐름에 따른 애니메이션 변화 속도를 설정한다.
+* Transition의 마지막 속성값에 들어가는 함수로, <strong>시간 흐름에 따른 애니메이션 변화 속도를 설정</strong>한다.
 
 * ☞ <a href="https://matthewlein.com/tools/ceaser">Easing 함수에 따른 애니메이션 변화를 직접 눈으로 확인할 수 있는 사이트</a>
 
@@ -78,7 +77,7 @@ a:hover {
 
 ### cubiz-bezier
 
-* 자신만의 Easing 함수 커브를 설정할 수 있도록 하는 속성
+* <strong>자신만의 Easing 함수 커브를 설정</strong>할 수 있도록 하는 속성
 
 ```css
 p {
