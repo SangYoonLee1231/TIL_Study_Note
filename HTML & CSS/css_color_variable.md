@@ -42,11 +42,11 @@ p {
 
 <br/>
 
-## 사용자 지정 CSS 속성 (Custom Properties) (CSS 변수)
+## 사용자 지정 CSS 속성 (Custom Properties)
 
 * ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Using_CSS_custom_properties">공식 문서 바로가기</a>
 
-* CSS에서 사용하는 <strong>변수</strong>이다.
+* CSS에서 사용하는 <strong>변수</strong>이다. (CSS 변수)
 
 * 반복적으로 사용하는 값을 변수로 저장하여 한 번에 관리할 수 있다.
 
