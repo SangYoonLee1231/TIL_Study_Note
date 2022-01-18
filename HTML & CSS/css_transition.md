@@ -46,7 +46,7 @@ a:hover {
     <a href="#">Go home</a>
 </body>
 ```
-* 위 코드에선 a링크에 마우스를 올리면 color과 border-radius가 0.5초동안 변하게 된다.
+* 위 코드에선 Go home 링크에 마우스를 올리면 color과 border-radius가 0.5초동안 변하게 된다.
 
 
 <br/>
