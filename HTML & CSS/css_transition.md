@@ -6,7 +6,19 @@
 
 <br/>
 
-## 
+## Transition이란
+
+* 어떤 상태에서 다른 상태로 가는 변화를 애니매이션화 하는 속성이다.
+
+* 구체적으로, 어떤 요소의 속성이 state에 따라 달라지면, 이 변화를 단번에 일으키지 않고  
+
+    애니메이션을 적용하여 서서히 변화시킨다.
+
+<br/>
+    
+* transition 속성값 순서
+    
+    ［transition 적용 대상 속성］, ［애니메이션 시간］, ［Easing 함수］
 
 ```css
 a {
@@ -17,7 +29,11 @@ a {
     padding: 3px 5px;
     font-size: 50px;
 
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: color 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out;
+    /* 속성값 순서: transition 적용 대상 속성, 애니메이션 시간, Easing 함수 */
+
+    /* 전체 속성 지정 ☞ transition: all 0.5s ease-in-out; */
 }
 
 a:hover {
@@ -30,4 +46,43 @@ a:hover {
 <body>
     <a href="#">Go home</a>
 </body>
+```
+
+<br/>
+
+### 주의 사항
+
+* ✨ <strong>transition 속성은 반드시 state가 없는 요소에 붙여야 한다.</strong>
+
+<br/>
+
+## Easing 함수
+
+* Transition의 마지막 속성값에 들어가는 함수로, 시간 흐름에 따른 애니메이션 변화 속도를 설정한다.
+
+* ☞ <a href="https://matthewlein.com/tools/ceaser">Easing 함수에 따른 애니메이션 변화를 직접 눈으로 확인할 수 있는 사이트</a>
+
+* Easing 함수 기본값으로 가지고 있는 것
+
+    * linear : 일정한 속도로 진행
+
+    * ease-in : 점점 가속 진행
+
+    * ease-in-out : 시작은 가속, 끝에서 감속
+
+    * ease-out : 점점 감속 진행
+    
+    * ease (default)
+
+<br/>
+
+### cubiz-bezier
+
+* 자신만의 Easing 함수 커브를 설정할 수 있도록 하는 속성
+
+```css
+p {
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  /* EaseInOutExpo */
+}
 ```
