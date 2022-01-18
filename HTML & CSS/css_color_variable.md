@@ -50,6 +50,10 @@ p {
 
 * 반복적으로 사용하는 값을 변수로 저장하여 한 번에 관리할 수 있다.
 
+<br/>
+
+* 사용자 지정 속성은 <strong>전용 표기법</strong>을 사용해 정의하고, <strong>var() 함수</strong>를 사용해 접근할 수 있다.
+
 ```css
 :root {
     --main-color: #fcce00;
@@ -60,8 +64,6 @@ a {
     border: var(--default-border);
 }
 ```
-
-* 사용자 지정 속성은 <strong>전용 표기법</strong>을 사용해 정의하고, <strong>var() 함수</strong>를 사용해 접근할 수 있다.
 
 * <strong>변수 이름 전용 표기법</strong>
 
