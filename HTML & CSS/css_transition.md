@@ -16,9 +16,9 @@
 
 <br/>
     
-* transition 속성값 순서
+* <strong>transition 속성값 순서</strong>
     
-    <strong>［transition 적용 대상 속성］, ［애니메이션 시간］, ［Easing 함수］</strong>
+    ［transition 적용 대상 속성］, ［애니메이션 시간］, ［Easing 함수］
 
 ```css
 a {
