@@ -6,7 +6,7 @@
 
 <br/>
 
-## 큐 (Queue)
+## 큐 (Queue) 소개
 
 * 1차원의 선형(linear) 자료구조로 Stack과 유사하다.
 

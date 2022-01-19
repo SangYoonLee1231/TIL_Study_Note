@@ -6,7 +6,7 @@
 
 <br/>
 
-## 양방향 연결 리스트(Singly Linked List)란
+## 양방향 연결 리스트 (Singly Linked List) 소개
 
 * Node들이 <strong>양쪽 방향으로 모두 연결된</strong> 연결 리스트이다.
 

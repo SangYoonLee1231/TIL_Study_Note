@@ -6,8 +6,6 @@
 
 <br/>
 
-## 🗨 자료구조(Data Structure)란
-
 * 자료(Data)를 담는 구조
 
 * 자료(Data)에 <strong>효율적으로 접근하고 관리</strong>하기 위해, <strong>자료(Data)를 조직하고 저장하는 구조</strong>

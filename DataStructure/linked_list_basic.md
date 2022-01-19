@@ -6,7 +6,7 @@
 
 <br/>
 
-## 연결 리스트(Linked List)란
+## 연결 리스트 (Linked List) 소개
 
 * Node들이 link로 연결된 자료 구조이다.
 
