@@ -24,7 +24,7 @@
 
     * <strong>만일, 뒤로 가는 link가 있다면, O(1)안에 prev Node를 찾을 수 있다. (prev link 필요성 대두)</strong>
 
-        <img src="img\doubly_linked_list2.png" width="350px">
+        <img src="img\doubly_linked_list2.png" width="300px">
 
 <br/>
 
@@ -46,13 +46,13 @@
 
     2. <strong>마지막 Node와 첫 Node를 서로 연결</strong>하여, <strong>원형 양방향 연결 리스트 (Circularly Doubly Linked List)</strong>를 만든다.
 
-        <img src="img\doubly_linked_list4.png" width="450px">
+        <img src="img\doubly_linked_list4.png" width="500px">
 
     3. 첫 Head Node는 <strong>Dummy Node</strong>가 되도록 한다.
 
         * <strong>Dummy Node</strong> : 연결 리스트의 시작을 표기하기 위한 스페셜 Node
 
-            <img src="img\doubly_linked_list3.png" width="300px">
+            <img src="img\doubly_linked_list3.png" width="350px">
 
         * 따라서, <strong>빈 리스트는 Dummy Node 하나로만 구성</strong>된다.
 
@@ -70,7 +70,7 @@ class Node:
 
 * Node 자체가 하나의 (원형) 양방향 연결 리스트이다.
 
-    <img src="img\doubly_linked_list5.png">
+    <img src="img\doubly_linked_list5.png" width="150px">
 
 <br/>
 
@@ -112,8 +112,10 @@ class DoublyLinkedList:
         ap = a.prev; bn = b.next; xn = x.next    # ap, bn, xn 변수 생성
         bn.prev = ap; ap.next = bn
 
-        x.next = a; a.prev = x
-        xn.prev = b; b.next = xn
+        x.next = a
+        a.prev = x
+        xn.prev = b
+        b.next = xn
 ```
 
 <br/>
