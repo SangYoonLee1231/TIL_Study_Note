@@ -31,3 +31,5 @@
 <br/>
 
 ## 해시 함수 (Hash Function)
+
+* key 값을 index로 맵핑(mapping)할 때 쓰이는 함수이다.

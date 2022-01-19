@@ -172,3 +172,10 @@ class DoublyLinkedList:
 <br/>
 
 ### 탐색 연산 구현
+
+```python
+    def search(self, key):
+        # key값을 갖는 Node를 찾아 리턴하고, 없으면 None을 리턴한다.
+
+        v = self.head   # v는 Dummy Node를 가리킨다.
+```
