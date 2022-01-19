@@ -147,9 +147,24 @@ class DoublyLinkedList:
     def insertAfter(x, key):
         # key값을 가진 새로운 Node 생성 후, x 노드 다음에 삽입
         moveAfter(Node(key), x)
+        self.size += 1
     
     def insertBefore(x, key):
         # kwy값을 가진 새로운 Node 생성 후, x 노드 이전에 삽입
         moveBefore(Node(key), x)
+        self.size += 1
 ```
 
+```python
+    def pushFront(key):
+        # key값을 가진 새로운 Node 생성 후, Head Node(=Dummy Node) 다음에 삽입
+        insertAfter(self.head, Node(key))
+        self.size += 1
+
+    def pushBack(key):
+        # key값을 가진 새로운 Node 생성 후, Head Node(=Dummy Node) 이전에 삽입
+        insertBefore(self.head, Node(key))
+        self.size += 1
+```
+
+* 삽입 연산은 새로운 Node를 생성 후 삽입하는 연산이므로, 연산 시 리스트 크기를 1 증가시키는 과정이 있어야 한다.
