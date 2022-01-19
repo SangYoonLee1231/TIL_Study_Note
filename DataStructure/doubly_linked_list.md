@@ -85,9 +85,9 @@ class DoublyLinkedList:
         self.size = 0
 
     def __iter__(self):    # Generator
-        
+        ...
 
-    def __str__(self):    # 
+    def __str__(self):    
         return self.key
 
     def __len__(self):    # 리스트 크기
@@ -168,3 +168,7 @@ class DoublyLinkedList:
 ```
 
 * 삽입 연산은 새로운 Node를 생성 후 삽입하는 연산이므로, 연산 시 리스트 크기를 1 증가시키는 과정이 있어야 한다.
+
+<br/>
+
+### 탐색 연산 구현
