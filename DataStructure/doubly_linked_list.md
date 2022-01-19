@@ -48,6 +48,8 @@
 
         <img src="img\doubly_linked_list4.png" width="500px">
 
+    <br/>
+
     3. 첫 Head Node는 <strong>Dummy Node</strong>가 되도록 한다.
 
         * <strong>Dummy Node</strong> : 연결 리스트의 시작을 표기하기 위한 스페셜 Node
@@ -110,8 +112,9 @@ class DoublyLinkedList:
         # 조건 2. Head Node(=Dummy Node)와 x Node가 a 노드와 b 노드 사이에 오면 X
         
         ap = a.prev; bn = b.next; xn = x.next    # ap, bn, xn 변수 생성
-        bn.prev = ap; ap.next = bn
+        bn.prev = ap; ap.next = bn    # 
 
+        # paste 작업
         x.next = a
         a.prev = x
         xn.prev = b
@@ -120,8 +123,33 @@ class DoublyLinkedList:
 
 <br/>
 
-### 이동 연산
+### 이동 연산 구현
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "img/doubly_linked_list7.png" width="550px">
 
-* 
+```python
+    def moveAfter(self, a, x):
+        # 노드 a를 노드 x 다음으로 이동
+        splice(a, a, x)
+
+    def moveBefore(self, a, x):
+        # 노드 a를 노드 x 이전으로 이동
+        splice(a, a, x.prev)
+```
+
+<br/>
+
+### 삽입 연산 구현
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "img/doubly_linked_list8.png" width="550px">
+
+```python
+    def insertAfter(x, key):
+        # key값을 가진 새로운 Node 생성 후, x 노드 다음에 삽입
+        moveAfter(Node(key), x)
+    
+    def insertBefore(x, key):
+        # kwy값을 가진 새로운 Node 생성 후, x 노드 이전에 삽입
+        moveBefore(Node(key), x)
+```
+
