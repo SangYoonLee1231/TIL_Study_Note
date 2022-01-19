@@ -73,3 +73,12 @@ h1 {
     border: 1px dashed black;
 }
 ```
+
+<br/>
+
+> 참고2 : border-radius 속성에 50% 속성값을 주면 경계선은 원모양이 된다.
+```css
+* {
+    border-radius: 50%;
+}
+```

@@ -92,6 +92,34 @@ class DoublyLinkedList:
         return self.size
 ```
 
+<br/>
+
 ### Splice 연산 구현
 
 * 양방향 (원형) 연결 리스트에서 다양한 종류의 삽입/삭제 연산에 쓰이는 중요한 연산 함수
+
+* 연결 리스트의 일부를 cut하고 다른 곳의 두 Node 사이에 삽입한다.
+
+    <img src="img/doubly_linked_list6.png" width="500px">
+
+```python
+    def splice(self, a, b, x):
+        # 노드 a부터 b까지 cut한 후 노드 x 다음에 삽입하는 함수
+
+        # 조건 1. a 노드 뒤에 b 노드가 있어야 한다.
+        # 조건 2. Head Node(=Dummy Node)와 x Node가 a 노드와 b 노드 사이에 오면 X
+        
+        ap = a.prev; bn = b.next; xn = x.next    # ap, bn, xn 변수 생성
+        bn.prev = ap; ap.next = bn
+
+        x.next = a; a.prev = x
+        xn.prev = b; b.next = xn
+```
+
+<br/>
+
+### 이동 연산
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "img/doubly_linked_list7.png" width="550px">
+
+* 
