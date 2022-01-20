@@ -44,4 +44,4 @@
 
 * key 값을 index로 맵핑(mapping)할 때 쓰이는 함수로, f(key)로 나타낸다.
 
-    <img src="img/hash_table2.png" width="200px">
+    <img src="img/hash_table2.png" width="250px">
