@@ -32,14 +32,16 @@
 
         (key값이 2019317이면, 7번째 서랍에 자료를 저장)
 
-        <img src="img/doubly_linked_list10.png" width="400px">
+        <img src="img/hash_table1.png" width="400px">
 
 <br/>
 
-* 정보(key값)가 저장될 서랍장(슬롯) 번호를 계산하는 함수 f(key) 를 <strong>해시 함수</strong>라 한다.
+* 이 때, <strong>정보(key값)가 저장될 서랍장 번호를 계산하는 함수 f(key)</strong> 를 <strong>해시 함수</strong>라 한다.
 
 <br/>
 
 ## 해시 함수 (Hash Function)
 
-* key 값을 index로 맵핑(mapping)할 때 쓰이는 함수이다.
+* key 값을 index로 맵핑(mapping)할 때 쓰이는 함수로, f(key)로 나타낸다.
+
+    <img src="img/hash_table2.png" width="200px">
