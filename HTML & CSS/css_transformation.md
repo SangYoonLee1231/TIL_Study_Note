@@ -14,11 +14,11 @@
 
 <br/>
 
-* <strong>다른 요소의 box를 변형시키지 않고</strong> 원하는 요소만 독자적으로 변형시킨다.
+* <strong>다른 요소의 box를 변형시키지 않고</strong>, 원하는 요소만 독자적으로 변형시킨다.
 
 * 다른 요소는 해당 요소가 변형되었는지 알아차리지 못한다.
 
-    * Transformation은 box 차원에서 일어나지 않고, 페이지 픽셀의 다른 부분에서 일어나기 때문이다.
+    * Transformation은 box 차원에서 일어나지 않고, <strong>페이지 픽셀의 다른 부분에서 일어나기 때문</strong>이다.
 
 * 일종의 <strong>3D Transformation</strong>이므로 margin, padding이 적용하지 않는다.
 
