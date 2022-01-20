@@ -205,6 +205,34 @@ class DoublyLinkedList:
 ```
 ```python
     def popFornt():
+        # Head Node 다음 노드(Front Node)를 삭제
+        remove(self.head.next)
 
     def popBack():
+        # Head Node 이전 노드(Back Node)를 삭제
+        remove(self.head.prev)
 ```
+
+<br/>
+
+### 기타 연산
+
+* join 함수 : 두 리스트를 하나로 합치는 함수
+
+* split 함수 : 하나의 리스트를 2개로 분리하는 함수
+
+<br/>
+
+## 연산의 시간 복잡도
+
+* moveAfter/moveBefore 함수: O(1)
+
+* insertAfter/insertBefore 함수: O(1)
+
+* pushFront/pushBack 함수: O(1)
+
+* popFront/popBack 함수: O(1)
+
+* remove 함수: O(1)
+
+* search 함수: O(n)
