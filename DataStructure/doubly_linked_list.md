@@ -177,5 +177,34 @@ class DoublyLinkedList:
     def search(self, key):
         # key값을 갖는 Node를 찾아 리턴하고, 없으면 None을 리턴한다.
 
-        v = self.head   # v는 Dummy Node를 가리킨다.
+        v = self.head    # v는 Dummy Node를 가리킨다.
+        while v.next != self.head:
+            # 한 바퀴 순회하여 일치하는 key값 있는지 탐색
+            if v.key == key:
+                return v
+            v = v.next
+        return None;    # 아무 값도 없으면 None 리턴
+```
+
+<br/>
+
+### 삭제 연산 구현
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/doubly_linked_list9.png" width="550px">
+
+```python
+    def remove(self, x):
+        # Node x를 삭제
+
+        if x == None or x == self.head:
+            # x가 없거나 head일 경우는 삭제 연산 수행 X
+            return
+        x.next.prev = x.prev
+        x.prev.next = x.next
+        del x
+```
+```python
+    def popFornt():
+
+    def popBack():
 ```
