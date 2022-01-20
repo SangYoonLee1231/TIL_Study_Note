@@ -6,7 +6,7 @@
 
 <br/>
 
-## Transition이란
+## Transition 소개
 
 * 어떤 상태에서 다른 상태로 가는 변화를 애니매이션화 하는 속성이다.
 
@@ -53,7 +53,7 @@ a:hover {
 
 ### 주의 사항
 
-* ✨ <strong>transition 속성은 반드시 state가 없는 요소에 붙여야 한다.</strong>
+* ✨ <strong>transition 속성은 반드시 state가 아닌 root에 작성해야 한다.</strong>
 
 <br/>
 

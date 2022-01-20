@@ -6,7 +6,7 @@
 
 <br/>
 
-## 🗨 HTML이란
+## 🗨 HTML 소개
 
 *  웹사이트는 보통 3개의 언어로 구성되어 있다. - HTML, CSS, JavaScript
 

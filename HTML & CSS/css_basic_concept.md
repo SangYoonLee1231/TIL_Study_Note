@@ -6,7 +6,7 @@
 
 <br/>
 
-## 🗨 CSS란
+## 🗨 CSS 소개
 
 *  CSS는, <strong>선택자(Selector)</strong>를 통해 HTML 태그를 가리키고, 디자인 효과(스타일)를 부여하는 역할을 한다.
 
