@@ -30,6 +30,8 @@
 </head>
 ```
 
+<br/>
+
 *  【external CSS】 <strong>css 파일을 따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
 
    (더 좋은 방법)
@@ -46,7 +48,8 @@
 ## CSS 기본 문법
 
 * 용어 정리  
-: <strong>선택자(Selector), 속성 (속성이름, 속성값)</strong>
+
+    : <strong>선택자(Selector), 속성 (속성이름, 속성값)</strong>
 ```css
  ↙ 선택자 (Selector)
 h1 {
@@ -65,6 +68,7 @@ h1 {
 
 * 역시 모든 속성을 외우려 하지 말고 모르면 구글링하면 된다는 마인드로.
 
+<br/>
 <br/>
 
 > 참고1 : 선택자 <code>*</code>는 모든 요소를 가리킨다.
