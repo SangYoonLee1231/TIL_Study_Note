@@ -148,7 +148,7 @@ body {
 
 ## 유용한 자료
 
-<a href="https://flexboxfroggy.com/#ko">Flex에 익숙해질 수 있는 유익한 게임 : FLEXBOX FROGGY</a>
+* <a href="https://flexboxfroggy.com/#ko">Flex에 익숙해질 수 있는 유익한 게임 : FLEXBOX FROGGY</a>
 
 <br/>
 
