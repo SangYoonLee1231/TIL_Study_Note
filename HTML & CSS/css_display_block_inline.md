@@ -33,7 +33,9 @@ div {
     (<code>inline</code>도 가지고 있는 특징이다. 상하 margin만 제외하고)
 
   *  ex) <code>\<div></code>, <code>\<p></code>, <code>\<address></code>
-  
+
+<br/>
+
 * <strong>Inline</strong>
 
   * <code>inline</code> 태그 옆에 <strong>다른 요소가 올 수 있다.</strong>   
@@ -66,6 +68,8 @@ div {
     margin-left: 10px;
 }
 ```
+
+<br/>
 
 * <strong>user agent stylesheet</strong> :  
 
