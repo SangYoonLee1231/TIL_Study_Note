@@ -55,7 +55,7 @@ body {
 
     * <strong>교차축 (cross axis)</strong>
 
-<img src="img/main_axis_cross_axis.png">
+    <img src="img/main_axis_cross_axis.png">
 
 </br>
 
