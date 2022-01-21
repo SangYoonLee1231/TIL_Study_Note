@@ -225,14 +225,14 @@ class DoublyLinkedList:
 
 ## 연산의 시간 복잡도
 
-* moveAfter/moveBefore 함수: O(1)
+* <code>moveAfter</code>/<code>moveBefore</code> 함수: O(1)
 
-* insertAfter/insertBefore 함수: O(1)
+* <code>insertAfter</code>/<code>insertBefore</code> 함수: O(1)
 
-* pushFront/pushBack 함수: O(1)
+* <code>pushFront</code>/<code>pushBack</code> 함수: O(1)
 
-* popFront/popBack 함수: O(1)
+* <code>popFront</code>/<code>popBack</code> 함수: O(1)
 
-* remove 함수: O(1)
+* <code>remove</code> 함수: O(1)
 
-* search 함수: O(n)
+* <code>search</code> 함수: O(n)

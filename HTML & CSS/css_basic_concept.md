@@ -18,9 +18,9 @@
 
 ## HTML 파일에 CSS를 추가하는 방법
 
-*  【inline CSS】 html 문서의 <strong>\<style>태그 사이</strong>에 css 코드를 <strong>직접</strong> 작성한다.  
+*  【inline CSS】 html 문서의 <code>\<style></code><strong>태그 사이</strong>에 css 코드를 <strong>직접</strong> 작성한다.  
 
-   (\<style>태그는 \<head>태그 사이에 작성한다.)
+   (<code>\<style></code>태그는 <code>\<head></code>태그 사이에 작성한다.)
 
 ```html
 <head>
@@ -30,7 +30,7 @@
 </head>
 ```
 
-*  【external CSS】 <strong>css 파일을 따로 생성</strong>한 후, html 문서에서 <strong>\<link> 태그</strong>를 이용하여 html 파일과 css파일을 서로 연결한다.  
+*  【external CSS】 <strong>css 파일을 따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
 
    (더 좋은 방법)
 
@@ -67,7 +67,7 @@ h1 {
 
 <br/>
 
-> 참고1 : 선택자 「*」는 모든 요소를 가리킨다.
+> 참고1 : 선택자 <code>*</code>는 모든 요소를 가리킨다.
 ```css
 * {
     border: 1px dashed black;
@@ -76,7 +76,7 @@ h1 {
 
 <br/>
 
-> 참고2 : border-radius 속성에 50% 속성값을 주면 경계선은 원모양이 된다.
+> 참고2 : <code>border-radius</code> 속성에 50% 속성값을 주면 경계선은 원모양이 된다.
 ```css
 * {
     border-radius: 50%;

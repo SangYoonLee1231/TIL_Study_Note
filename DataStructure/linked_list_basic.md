@@ -38,9 +38,9 @@
 
 * 그러나 <strong>새로운 값을 중간에 삽입하는 과정</strong>은 배열보다 더 빨리 걸린다.
 
-    * 배열 insert 수행시간 : <strong>O(n)</strong>
+    * 배열 <code>insert</code> 수행시간 : <strong>O(n)</strong>
 
-    * 연결 리스트 insert 수행시간 : <strong>O(1)</strong>
+    * 연결 리스트 <code>insert</code> 수행시간 : <strong>O(1)</strong>
 
 <img src="img/linked_list2.png" width="250px"> <img src="img/linked_list3.png" width="400px">  
 \<배열> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \<연결 리스트>

@@ -30,11 +30,11 @@
 
 * 파이썬의 대표적인 자료구조인 리스트(List)를 Stack의 자료구조처럼 사용할 수 있다.
 
-    * push 연산 (삽입) : append 함수 이용 
+    * push 연산 (삽입) : <code>append</code> 함수 이용 
 
-    * pop 연산 (삭제) : pop 함수 이용
+    * pop 연산 (삭제) : <code>pop</code> 함수 이용
 
-* But, <strong>리스트는 다른 강력한 연산들을 제공</strong>하기 때문에, 사용 도중 실수로 append, pop 외의 다른 함수를 사용해 내부값을 참고하고나 변경할 수 있다.
+* But, <strong>리스트는 다른 강력한 연산들을 제공</strong>하기 때문에, 사용 도중 실수로 <code>append</code>, <code>pop</code> 외의 다른 함수를 사용해 내부값을 참고하고나 변경할 수 있다.
 
 * 따라서, <strong>Stack은 Stack 클래스를 따로 만들어서 쓰고</strong>, 리스트는 내부에서 값을 저장하는 역할로만 쓴다.
 
@@ -81,7 +81,7 @@ print(len(S))  # S의 요소의 개수 출력  ☞  1이 출력  S = [10]
 
 ## Stack 연산 수행시간
 
-* push, pop, top, len : <strong>O(1)</strong>
+* <code>push</code>, <code>pop</code>, <code>top</code>, <code>len</code> : <strong>O(1)</strong>
 
     * list에서 요소의 개수를 계속 확인하고 그 값을 이미 저장하고 있기 때문에, len 함수도 O(1)만에 수행된다.
 

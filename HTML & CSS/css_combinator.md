@@ -10,9 +10,9 @@
 
     * 태그의 이름을 쓰는 선택자
 
-    * 점(.)을 쓰고 클래스 이름을 쓰는 선택자
+    * 점<code>.</code>을 쓰고 클래스 이름을 쓰는 선택자
 
-    * 해시 기호(#)를 쓰고 id값을 쓰는 선택자
+    * 해시 기호<code>#</code>를 쓰고 id값을 쓰는 선택자
 
 * 이 외에, 좀 더 세부적으로 Element를 선택하는 도구(선택자)가 있다.
 
@@ -24,7 +24,7 @@
 
 <br/>
 
-* <strong>자손 결합자</strong> : [<strong>A B</strong>]
+* <strong>자손 결합자</strong> : <code>A B</code>
 
 ```css
 p span {
@@ -42,7 +42,7 @@ div p span {
 
 <br/>
 
-* <strong>자식 결합자</strong> : [<strong>A > B</strong>]
+* <strong>자식 결합자</strong> : <code>A > B</code>
 
 ```css
 p > span {
@@ -53,7 +53,7 @@ p > span {
 
 <br/>
 
-* <strong>인접 형제 결합자</strong> : [<strong>A + B</strong>]
+* <strong>인접 형제 결합자</strong> : <code>A + B</code>
 
 ```css
 p + span {
@@ -64,7 +64,7 @@ p + span {
 
 <br/>
 
-* <strong>일반 형제 결합자</strong> : [<strong>A ~ B</strong>]
+* <strong>일반 형제 결합자</strong> : <code>A ~ B</code>
 
 ```css
 p ~ span {

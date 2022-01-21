@@ -8,7 +8,7 @@
 
 ## Transition 소개
 
-* 어떤 상태에서 다른 상태로 가는 변화를 애니매이션화 하는 CSS 속성이다.
+* <code>transition</code>이란 어떤 상태에서 다른 상태로 가는 변화를 애니매이션화 하는 CSS 속성이다.
 
 * 구체적으로, <strong>어떤 요소의 속성이 state에 따라 달라지면, 이 변화를 단번에 일으키지 않고  
 
@@ -16,7 +16,7 @@
 
 <br/>
     
-* <strong>transition 속성값 순서</strong>
+* <code>transition</code> <strong>속성값 순서</strong>
     
     ［transition 적용 대상 속성］, ［애니메이션 시간］, ［Easing 함수］
 
@@ -46,34 +46,34 @@ a:hover {
     <a href="#">Go home</a>
 </body>
 ```
-* 위 코드에선 Go home 링크에 마우스를 올리면 color과 border-radius가 0.5초동안 변하게 된다. (배경색은 바로 변한다)
+* 위 코드에선 [Go home] 링크에 마우스를 올리면 <code>color</code>과 <code>border-radius</code>가 0.5초동안 변하게 된다. (<code>background-color</code>은 바로 변한다)
 
 
 <br/>
 
 ### 주의 사항
 
-* ✨ <strong>transition 속성은 반드시 state가 아닌 root에 작성해야 한다.</strong>
+* ✨ <code>transition</code> 속성은 <strong>반드시 state가 아닌 root에 작성해야 한다.</strong>
 
 <br/>
 
 ## Easing 함수
 
-* Transition의 마지막 속성값에 들어가는 함수로, <strong>시간 흐름에 따른 애니메이션 변화 속도를 설정</strong>한다.
+* <code>transition</code>의 마지막 속성값에 들어가는 함수로, <strong>시간 흐름에 따른 애니메이션 변화 속도를 설정</strong>한다.
 
 * ☞ <a href="https://matthewlein.com/tools/ceaser">Easing 함수에 따른 애니메이션 변화를 직접 눈으로 확인할 수 있는 사이트</a>
 
 * Easing 함수 기본값으로 가지고 있는 것
 
-    * linear : 일정한 속도로 진행
+    * <code>linear</code> : 일정한 속도로 진행
 
-    * ease-in : 점점 가속 진행
+    * <code>ease-in</code> : 점점 가속 진행
 
-    * ease-in-out : 시작은 가속, 끝에서 감속
+    * <code>ease-in-out</code> : 시작은 가속, 끝에서 감속
 
-    * ease-out : 점점 감속 진행
+    * <code>ease-out</code> : 점점 감속 진행
     
-    * ease (default)
+    * <code>ease</code> (default)
 
 <br/>
 

@@ -37,13 +37,13 @@ class Node:
         return str(self.key)
 ```
 
-* <strong>def \_\_str\_\_(self) 함수를 생성하는 이유</strong>
+* <code>def \_\_str\_\_(self) </code><strong>함수를 생성하는 이유</strong>
 
     : v라는 Node가 있을 때, print(v.key)는 v의 key값을 출력하는 구문이다.  
 
     But, __str__함수를 만든다면, print(v), 즉 Node만을 매개변수로 입력해도 v의 key값을 출력할 수 있다.
 
-    * print(v) == print(v.\_\_str\_\_())
+    * <code>print(v) == print(v.\_\_str\_\_())</code>
 
 ```python
 a = Node(3)
@@ -61,9 +61,9 @@ b.next = c
 
 * 삽입 연산 함수 2가지
 
-    * <strong>pushFront</strong> : Head Node 앞에 새로운 Node를 삽입하는 함수
+    * <code>pushFront</code> : Head Node 앞에 새로운 Node를 삽입하는 함수
 
-    * <strong>pushBack</strong> : Tail Node 다음에 새로운 Node를 삽입하는 함수
+    * <code>pushBack</code> : Tail Node 다음에 새로운 Node를 삽입하는 함수
 
 <br/>
 
@@ -125,9 +125,9 @@ L.pushBack(4)   # 5 → 3 → 9 → -1 → 4 → ø
 
 * 삭제 연산 함수 2가지
 
-    * <strong>popFront</strong> : Head Node를 삭제하고 그 key값을 리턴하는 함수
+    * <code>popFront</code> : Head Node를 삭제하고 그 key값을 리턴하는 함수
 
-    * <strong>popBack</strong> : Tail Node를 삭제하고 그 key값을 리턴하는 함수
+    * <code>popBack</code> : Tail Node를 삭제하고 그 key값을 리턴하는 함수
 
 <br/>
 
@@ -186,7 +186,7 @@ L.pushBack(4)   # 5 → 3 → 9 → -1 → 4 → ø
 
 ### 탐색 연산 구현
 
-* 탐색 연산 함수 : <strong>search</strong>
+* 탐색 연산 함수 : <code>search</code>
 
 ```python
 def search(self, key):
@@ -200,7 +200,7 @@ def search(self, key):
     return None    # OR return v (while 반복문 끝까지 갔으므로 v == None)
 ```
 
-* search 함수 수행 시간: <strong>O(n) W.C.</strong>
+* <code>search</code> 함수 수행 시간: <strong>O(n) W.C.</strong>
 
 <br/>
 

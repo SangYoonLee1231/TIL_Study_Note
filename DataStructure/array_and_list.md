@@ -46,19 +46,19 @@
 
 * 리스트의 다양한 연산
 
-  * 【삽입】 <strong>A.append(6)</strong> : 맨 뒤에 6을 삽입
+  * 【삽입】 <code>A.append(6)</code> : 맨 뒤에 6을 삽입
 
-  * 【삽입】 <strong>A.insert(1, 10)</strong> : A[1]에 10을 삽입
+  * 【삽입】 <code>A.insert(1, 10)</code> : A[1]에 10을 삽입
 
-  * 【삭제】 <strong>A.pop()</strong> : 마지막 요소를 지우고 해당 값을 리턴
+  * 【삭제】 <code>A.pop()</code> : 마지막 요소를 지우고 해당 값을 리턴
   
-  * 【삭제】 <strong>A.pop(1)</strong> : A[1]을 지우고 해당 값을 리턴
+  * 【삭제】 <code>A.pop(1)</code> : A[1]을 지우고 해당 값을 리턴
 
-  * 【삭제】 <strong>A.remove(value)</strong> : A에서 해당 value값 찾아서 제거 (2개 이상 존재 시 첫 번째만 제거)
+  * 【삭제】 <code>A.remove(value)</code> : A에서 해당 value값 찾아서 제거 (2개 이상 존재 시 첫 번째만 제거)
 
-  * 【탐색】 <strong>A.index(value)</strong> : A에서 해당 value값 찾아서 그 요소의 index를 리턴
+  * 【탐색】 <code>A.index(value)</code> : A에서 해당 value값 찾아서 그 요소의 index를 리턴
 
-  * 【탐색】 <strong>A.count(value)</strong> : A에서 해당 value값을 가진 요소의 개수 리턴
+  * 【탐색】 <code>A.count(value)</code> : A에서 해당 value값을 가진 요소의 개수 리턴
 
 
 <br/>
@@ -105,11 +105,11 @@ A.append(x):
 
 ## 리스트 연산 수행시간
 
-* A.append , A.pop : <strong>O(1) 평균</strong>
+* <code>A.append</code> , <code>A.pop</code> : <strong>O(1) 평균</strong>
 
-* A.insert , A.remove : <strong>O(n) Worst Case</strong>
+* <code>A.insert</code> , <code>A.remove</code> : <strong>O(n) Worst Case</strong>
 
-* A.index , A.count : <strong>O(n) Worst Case</strong>
+* <code>A.index</code> , <code>A.count</code> : <strong>O(n) Worst Case</strong>
 
 <br/>
 

@@ -12,7 +12,7 @@
 
 * id명을 통해 <strong>특정 요소를 직접</strong> 가리킬 수 있다.
 
-* CSS 코드에서 선택자로 id를 쓸 때, 값 앞에 '<strong>#</strong>'을 붙여서 쓴다.
+* CSS 코드에서 선택자로 id를 쓸 때, 값 앞에 <code>#</code>을 붙여서 쓴다.
 
 ```css
 #first {
@@ -40,7 +40,7 @@
 
 * class명을 통해 <strong>여러 요소를 동시에</strong> 가리킬 수 있다.
 
-* CSS 코드에서 선택자로 class를 쓸 때, 값 앞에 '<strong>.</strong>'을 붙여쓴다.
+* CSS 코드에서 선택자로 class를 쓸 때, 값 앞에 <code>.</code>을 붙여쓴다.
 
 * 하나의 HTML 요소에 여러 종류의 class가 쓰일 수 있다.
 

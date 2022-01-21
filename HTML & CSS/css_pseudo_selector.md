@@ -43,7 +43,7 @@ input[placeholder*="name"] {
 
 * ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes">공식 문서 바로가기</a>
 
-* 가상 클래스(의사 클래스)는 선택자 뒤에 :을 붙여 추가하는 키워드이다.
+* 가상 클래스(의사 클래스)는 선택자 뒤에 <code>:</code>을 붙여 추가하는 키워드이다.
 
 * 어떤 요소의 특정 상태에서 발생할 효과를 주기 위해 사용한다.
 
@@ -108,7 +108,7 @@ form:hover input:focus {...}  /* form이 hover되고, 동시에 input이 focus�
 
 * ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-elements">공식 문서 바로가기</a>
 
-* 가상 클래스와 달리 ::을 붙여 사용한다.
+* 가상 클래스와 달리 <code>::</code>을 붙여 사용한다.
 
 ```css
 input::placeholder {...} /* input의 placeholder에 들어길 문자에 스타일 효과를 적용한다. */
@@ -126,4 +126,4 @@ p::first-line {...} /* 글의 첫 문장에 효과를 적용한다. (Block 요�
 
 ### 토막 지식
 
-* button 요소 중 background-color(배경색) 같이 어떤 속성 하나를 바꾸면, 지정되어 있던 button의 border의 속성은 사라지게 된다.
+* <code>button</code> 요소 중 <code>background-color</code>(배경색) 같이 어떤 속성 하나를 바꾸면, 지정되어 있던 <code>button</code>의 <code>border</code>의 속성은 사라지게 된다.
