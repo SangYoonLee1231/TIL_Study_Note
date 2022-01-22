@@ -42,11 +42,11 @@
 
 ### 해시 테이블의 성질을 좌우하는 3가지 요소
 
-* Table : List로 주로 관리 (크게 신경 쓸 필요 X)
+* <strong>Table</strong> : List로 주로 관리 (크게 신경 쓸 필요 X)
 
-* 해시 함수 (Hash Function) : key값을 어떤 해시 함수 인덱스를 맵핑할 것인가
+* <strong>해시 함수 (Hash Function)</strong> : key값을 어떤 해시 함수 인덱스를 맵핑할 것인가
 
-* 충돌 해결 방법 (Collision Resolution Medthod) : 충돌 해결 방법을 어떻게 잘 설계할 것인가
+* <strong>충돌 해결 방법 (Collision Resolution Medthod)</strong> : 충돌 해결 방법을 어떻게 잘 설계할 것인가
 
 <br/>
 
