@@ -44,7 +44,7 @@
 
 * <strong>Table</strong> : List로 주로 관리 (크게 신경 쓸 필요 X)
 
-* <strong>해시 함수 (Hash Function)</strong> : key값을 어떤 해시 함수 인덱스를 맵핑할 것인가
+* <strong>해시 함수 (Hash Function)</strong> : 어떤 해시 함수를 통해 key값을 인덱스로 맵핑할 것인가
 
 * <strong>충돌 해결 방법 (Collision Resolution Medthod)</strong> : 충돌 해결 방법을 어떻게 잘 설계할 것인가
 
