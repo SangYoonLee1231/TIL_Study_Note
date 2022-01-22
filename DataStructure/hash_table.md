@@ -46,7 +46,7 @@
 
 * <strong>해시 함수 (Hash Function)</strong> : 어떤 해시 함수를 통해 key값을 인덱스로 맵핑할 것인가
 
-* <strong>충돌 해결 방법 (Collision Resolution Medthod)</strong> : 충돌 해결 방법을 어떻게 잘 설계할 것인가
+* <strong>충돌 해결 방법 (Collision Resolution Method)</strong> : 충돌 해결 방법을 어떻게 잘 설계할 것인가
 
 <br/>
 
