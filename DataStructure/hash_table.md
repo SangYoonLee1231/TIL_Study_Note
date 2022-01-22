@@ -40,6 +40,16 @@
 
 <br/>
 
+### 해시 테이블의 성질을 좌우하는 3가지 요소
+
+* Table : List로 주로 관리 (크게 신경 쓸 필요 X)
+
+* 해시 함수 (Hash Function) : key값을 어떤 해시 함수 인덱스를 맵핑할 것인가
+
+* 충돌 해결 방법 (Collision Resolution Medthod) : 충돌 해결 방법을 어떻게 잘 설계할 것인가
+
+<br/>
+
 ## 해시 함수 (Hash Function)
 
 * key 값을 index로 맵핑(mapping)할 때 쓰이는 함수로, f(key)로 나타낸다.
