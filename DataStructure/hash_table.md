@@ -36,7 +36,7 @@
 
 <br/>
 
-* 이 때, <strong>정보(key값)가 저장될 서랍장 번호를 계산하는 함수 f(key)</strong> 를 <strong>해시 함수</strong>라 한다.
+* 이 때, 정보가 저장될 서랍장 번호를 계산하는 함수 <strong>f(key)</strong>를 <strong>해시 함수</strong>라 한다.
 
 <br/>
 
