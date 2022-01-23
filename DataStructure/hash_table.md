@@ -38,6 +38,11 @@
 
 * 이 때, 정보가 저장될 서랍장 번호를 계산하는 함수 <strong>f(key)</strong>를 <strong>해시 함수</strong>라 한다.
 
+* 어떤 데이터를 해시 테이블에 저장하려고 할 때, 해시 함수에 의해 계산된 번호의 서랍장에 이미 다른 데이터가 있다면, 이 경우를 <strong>충돌(collision)</strong>이 발생했다고 한다.
+
+    <img src="img/hash_table3.png">
+    <br/>- 2016학년도 9월 모의평가 국어 A형 비트코인 지문 中
+
 <br/>
 
 ### 해시 테이블의 성질을 좌우하는 3가지 요소
@@ -52,6 +57,14 @@
 
 ## 해시 함수 (Hash Function)
 
-* key 값을 index로 맵핑(mapping)할 때 쓰이는 함수로, f(key)로 나타낸다.
+* 해시 함수란 key 값을 index로 맵핑(mapping)할 때 쓰이는 함수로, <strong>f(key)</strong>로 나타낸다.
 
     <img src="img/hash_table2.png" width="250px">
+
+<br/>
+
+* 좋은 성질을 갖는 해시 함수를 만들어야 한다.
+
+* 그럼 좋은 성질의 해시 함수란?
+
+    * Less Collision : 충돌 확률이
