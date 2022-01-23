@@ -40,7 +40,7 @@
 
 * 어떤 데이터를 해시 테이블에 저장하려고 할 때, 해시 함수에 의해 계산된 번호의 서랍장에 이미 다른 데이터가 있다면, 이 경우를 <strong>충돌(collision)</strong>이 발생했다고 한다.
 
-    <img src="img/hash_table3.png">
+    <img src="img/hash_table3.png" width="500px">
     <br/>(2016학년도 9월 모의평가 국어 A형 비트코인 지문 中)
 
 <br/>
