@@ -101,3 +101,9 @@
         <img src="img/hash_table4.jpg" width="200px">
 
 * 역시 상당히 설계하기 어려운 함수이므로, 타협안이 필요하다.
+
+<br/>
+
+### c-universial 해시 함수
+
+* 
