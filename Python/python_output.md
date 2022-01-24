@@ -11,7 +11,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5">기본 출력</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95">변수와 자료형</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D">출력 형식</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">소수점 맞춰 출력</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">소수점 맞춰 출력</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0">변수 값 바꾸기</a>
 
 
