@@ -237,6 +237,8 @@ print("x is {0} and y is {1}" .format(x, y))
 print("x is {new_x} and y is {new_y}" .format(new_x=x, new_y=y))
 print("y is {1} and x is {0}" .format(x, y))
 print("y is {new_y} and x is {new_x}" .format(new_x=x, new_y=y))
+
+#print("x is {x}" .format(x))  # 오류
 ```
 
 ▼ 출력 결과
@@ -277,12 +279,53 @@ x is 10 and y is code
 
 ## 소수점 맞춰 출력
 
+* .4f == 소수 4째 자리까지 반올림 출력
+
 ### 1. 변수 포멧 (%d, %s, ...) 이용
+
+* <code>%</code>를 이용한다.
+
+```python
+x = 3.141592653
+print("%.4f" % x)
+```
+
+▼ 출력 결과
+
+```
+3.1416
+```
 
 <br/>
 
 ### 2. format 함수 이용
 
+* 기존 포멧 <code>{0}</code>에<code>:</code>를 붙여 사용한다.
+
+```python
+x = 3.141592653
+print("{0:.4f}" .format(x))
+```
+
+▼ 출력 결과
+
+```
+3.1416
+```
+
 <br/>
 
 ### 3. f 문자열 포멧 이용
+
+* 마친가지로 기존 포멧에 <code>:</code>를 붙여 사용한다.
+
+```python
+x = 3.141592653
+print(f"{a:.4f}")
+```
+
+▼ 출력 결과
+
+```
+3.1416
+```
