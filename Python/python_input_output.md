@@ -187,14 +187,91 @@ print(type(temp))  # <class 'float'>
 
 ## 출력 형식
 
-### 1. 변수 포멧 (%d, %s, ...)과 % 이용
+### 1. 변수 포멧 (%d, %s, ...) 이용
+
+```python
+x = 10
+print("x is %d" % x)
+
+y = "code"
+print("y is %s" % y)
+
+print("x is %d and y is %s" % (x, y))
+```
+
+▼ 출력 결과
+
+```
+x is 10
+y is code
+x is 10 and y is code
+```
+
+* 변수 포멧
+
+  * <code>%s</code> : 문자열
+
+  * <code>%c</code> : 문자
+
+  * <code>%d</code> : 정수
+
+  * <code>%f</code> : 실수
 
 <br/>
 
 ### 2. format 함수 이용
 
+* format 함수를 이용하면 변수의 타입을 명시하지 않아도 된다.
+
+* 순서 또는 변수 이름을 통해 원하는 변수를 포멧에 맞춰 넣어줄 수 있다.
+
+```python
+x, y = 10, "code"
+
+print("x is {0}" .format(x))
+print("x is {new_x}" .format(new_x=x))
+
+print("\n")
+
+print("x is {0} and y is {1}" .format(x, y))
+print("x is {new_x} and y is {new_y}" .format(new_x=x, new_y=y))
+print("y is {1} and x is {0}" .format(x, y))
+print("y is {new_y} and x is {new_x}" .format(new_x=x, new_y=y))
+```
+
+▼ 출력 결과
+
+```
+x is 10
+x is 10
+
+x is 10 and y is code
+x is 10 and y is code
+y is code and x is 10
+y is code and x is 10
+```
+
 <br/>
 
 ### 3. f 문자열 포멧 이용
 
+* 중괄호를 이용하여 변수 이름만으로 문자열에 원하는 변수를 삽입할 수 있다.
+
+```python
+x, y = 10, "code"
+
+print(f"x is {x}")
+print(f"y is {y}")
+print(f"x is {x} and y is {y}")
+```
+
+▼ 출력 결과
+
+```
+x is 10
+y is code
+x is 10 and y is code
+```
 <br/>
+
+##
