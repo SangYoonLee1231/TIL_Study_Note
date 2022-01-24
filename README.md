@@ -33,7 +33,7 @@
 
 ## Python
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md">입출력</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md">Python : 입출력</a>
 
 
 ## 자료구조
