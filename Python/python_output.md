@@ -12,6 +12,8 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95">변수와 자료형</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D">출력 형식</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">소수점 맞춰 출력</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">변수 값 바꾸기</a>
+
 
 <br/>
 
@@ -341,4 +343,87 @@ print(f"{a:.4f}")
 
 <br/>
 
-## 변수 값 변경
+## 변수 값 바꾸기
+
+### 변수 값 변경 및 복사
+
+* 변수에 새 값을 대입하면, 기존 값은 사라지고 새로 대입한 값만 남는다.
+
+* 변수에 다른 변수를 대입하면, 기존에 있던 값은 사라지고 대입한 변수의 값이 복사된다.
+
+```python
+a, b = 1, 2
+
+a = b
+print(a)
+
+a = 5
+print(a)
+```
+
+▼ 출력 결과
+
+```
+2
+5
+```
+
+<br/>
+
+### 두 변수 값 교환
+
+#### 1. temp 이용
+
+```python
+a, b = 1, 2
+
+temp = b
+b = a
+a = temp
+
+print(f"a = {a}, b = {b}")
+```
+
+▼ 출력 결과
+
+```
+a = 2, b = 1
+```
+
+<br/>
+
+#### 2. <code>,</code> 이용하여 바로 교환
+
+```python
+a, b = 1, 2
+
+a, b = b, a
+
+print(f"a = {a}, b = {b}")
+```
+
+▼ 출력 결과
+
+```
+a = 2, b = 1
+```
+
+<br/>
+
+### 변수값 동시에 복사
+
+* <code>=</code>을 연쇄적으로 사용하면, 한 변수의 값을 여러 변수에 복사할 수 있다.
+
+```python
+a, b, c = 1, 2, 3
+
+a = b = c
+
+print(f"a = {a}, b = {b}, c = {c}")
+```
+
+▼ 출력 결과
+
+```
+a = 3, b = 3, c = 3
+```
