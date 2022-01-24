@@ -1,4 +1,4 @@
-# Python : 입출력
+# Python : 출력
 
 <br/>
 
