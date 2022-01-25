@@ -18,9 +18,9 @@
 
 * 양방향 연결 리스트의 필요성
 
-    * tail Node를 지우기 위해선, 직전 prev Node를 알아야 한다.
+    * Tail Node를 지우기 위해선, 직전 prev Node를 알아야 한다.
 
-    * 그럴려면, head Node부터 차례대로 탐색해서 prev Node를 찾아야 하는데 (O(n) 걸림), 이는 매우 비효율적이다.
+    * 그럴려면, Head Node부터 차례대로 탐색해서 prev Node를 찾아야 하는데 (O(n) 걸림), 이는 매우 비효율적이다.
 
     * <strong>만일, 뒤로 가는 link가 있다면, O(1)안에 prev Node를 찾을 수 있다. (prev link 필요성 대두)</strong>
 
@@ -150,7 +150,7 @@ class DoublyLinkedList:
         self.size += 1
     
     def insertBefore(x, key):
-        # kwy값을 가진 새로운 Node 생성 후, x 노드 이전에 삽입
+        # key값을 가진 새로운 Node 생성 후, x 노드 이전에 삽입
         moveBefore(Node(key), x)
         self.size += 1
 ```
