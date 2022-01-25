@@ -1,4 +1,4 @@
-# Python : 출력
+# Python : 출력 함수 <code>print()</code> 사용법
 
 <br/>
 
@@ -8,20 +8,22 @@
 
 ### 목차
 
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5">기본 출력</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95">변수와 자료형</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D">출력 형식</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">소수점 맞춰 출력</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5">기본 출력 방법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95">변수를 포함하여 출력하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D">변수를 출력하는 다양한 방법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">실수형 변수를 소수점 맞춰 출력하기</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0">변수 값 바꾸기</a>
 
 
 <br/>
 
-## 기본 출력
+## 기본 출력 방법
 
-### 문장 출력
+### print 함수 통해 한 문장 출력하기
 
-- python3에서 문장을 출력 시, 큰 따옴표나 작은 따옴표 아무거나 사용해도 된다.
+- python3에서 문장을 출력하기 위해 <code>print()</code>함수를 사용한다.
+
+* 이때 괄호 내에 큰 따옴표나 작은 따옴표 둘 중 아무거나 사용해도 된다.
 
 ```python
 print("Hello World")
@@ -29,9 +31,9 @@ print("Hello World")
 
 <br/>
 
-### 문자열에 특수 문자를 포함시켜 출력
+### 특수 문자를 포함시켜 출력하기
 
-- 특수 문자 앞에 <code>\\</code>를 붙여주면, 이를 기호가 아닌 문자로 인식한다.
+- 문자열 내에 있는 특수 문자 앞에 <code>\\</code>를 붙여주면, 이를 기호가 아닌 문자로 인식한다.
 
   (자주 사용하는 방법이므로 기억하자)
 
@@ -55,7 +57,7 @@ Let's do it
 
 <br/>
 
-### 2줄 출력 (print 함수 한 번만 사용)
+### 2줄 출력하기 (print 함수 한 번만 사용)
 
 - <code>\n</code>문자를 이용한다. (new line을 의미하는 특수 문자)
 
@@ -88,7 +90,7 @@ Nice to meet you
 
 <br/>
 
-### 두 값을 공백을 두고 출력
+### 두 값을 공백을 두고 출력하기
 
 - print 함수에 2개의 값을 <code>,</code>를 사이에 두고 넣어준다.
 
@@ -139,11 +141,9 @@ print(2)
 
 <br/>
 
-## 변수와 자료형
+## 변수를 포함하여 출력하기
 
-### 변수를 이용한 출력
-
-- 변수를 선언하고 정수값을 넣은 후 출력할 수 있다.
+- 정수값을 넣어 선언한 변수도 <code>print()</code>함수를 통해 출력할 수 있다.
 
 * 2개 이상의 변수를 한 줄에 동시에 선언할 수 있다.
 
@@ -196,7 +196,7 @@ print(type(temp))  # <class 'float'>
 
 <br/>
 
-## 출력 형식
+## 변수를 출력하는 다양한 방법
 
 ### 1. 변수 포멧 (%d, %s, ...) 이용
 
@@ -288,7 +288,7 @@ x is 10 and y is code
 
 <br/>
 
-## 소수점 맞춰 출력
+## 실수형 변수를 소수점 맞춰 출력하기
 
 * .4f == 소수 4째 자리까지 반올림 출력
 
