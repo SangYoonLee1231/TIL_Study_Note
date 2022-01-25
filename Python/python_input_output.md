@@ -8,8 +8,8 @@
 
 ### 목차
 
-* <a href="">기본 입력 방법</a>
-* <a href="">문자열을 나눠서 입력 받기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EA%B8%B0%EB%B3%B8-%EC%9E%85%EB%A0%A5-%EB%B0%A9%EB%B2%95">기본 입력 방법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EB%82%98%EB%88%A0%EC%84%9C-%EC%9E%85%EB%A0%A5-%EB%B0%9B%EA%B8%B0">문자열을 나눠서 입력 받기</a>
 
 <br/>
 
