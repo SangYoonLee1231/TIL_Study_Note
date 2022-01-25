@@ -1,4 +1,4 @@
-# Python : 출력 함수 <code>print()</code> 사용법
+# Python - 출력 함수 <code>print()</code> 사용법
 
 <br/>
 

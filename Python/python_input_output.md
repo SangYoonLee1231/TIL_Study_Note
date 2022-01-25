@@ -1,4 +1,4 @@
-# Python : 입력 함수 <code>input()</code> 사용법
+# Python - 입력 함수 <code>input()</code> 사용법
 
 <br/>
 
