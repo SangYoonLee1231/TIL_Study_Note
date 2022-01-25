@@ -8,10 +8,10 @@
 
 ### 목차
 
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5">기본 출력 방법</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95">변수를 포함하여 출력하기</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%B6%9C%EB%A0%A5-%ED%98%95%EC%8B%9D">변수를 출력하는 다양한 방법</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5">실수형 변수를 소수점 맞춰 출력하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5-%EB%B0%A9%EB%B2%95">기본 출력 방법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%98%EC%97%AC-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">변수를 포함하여 출력하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EB%A5%BC-%EC%B6%9C%EB%A0%A5%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">변수를 출력하는 다양한 방법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%8B%A4%EC%88%98%ED%98%95-%EB%B3%80%EC%88%98%EB%A5%BC-%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">실수형 변수를 소수점 맞춰 출력하기</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0">변수 값 바꾸기</a>
 
 
