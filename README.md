@@ -48,8 +48,8 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">순차적 자료구조 : 단방향 연결 리스트 (Singly Linked List)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">순차적 자료구조 : 양방향 연결 리스트 (Doubly Linked List)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 (Hash Table) 기초 개념</a>
-* <a href="">해시 테이블 (Hash Table) - 해시 함수 (Hash Function)</a>
-* <a href="">해시 테이블 (Hash Table) - 충돌 회피 방법 (Collision Resolution Method) - Open Addressing 위주</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 (Hash Table) - 해시 함수 (Hash Function)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 (Hash Table) - 충돌 회피 방법 (Collision Resolution Method) - Open Addressing 위주</a>
 
 
 ## 알고리즘
