@@ -106,4 +106,40 @@
 
 ### c-universial 해시 함수
 
-* 
+* 서로 다른 임의의 두 key값 x, y에 대해 <code>prob( f(x) == f(y) ) = c / size(H)</code>이 성립하는 해시 함수
+
+    * (size(H)는 해시 테이블의 크기)
+
+        <img src="img/hash_table5.png" width="200px">
+
+* universial 해시 함수의 타협안으로, 확률에 상수 c를 곱했다.
+
+* 실제로 많이 쓰는 함수이다. (그러나 역시 그리 간단한 것은 아니다)
+
+<br/>
+
+### 해시 함수 종류 (간단 정리)
+
+* 어떤 어플리케이션을 사용하는지에 따라 맞는 해시 테이블을 선택해서 사용한다.
+
+    * Division
+
+    * Multiplication
+
+    * Folding
+
+    * Mid-squares
+
+    * Extraction
+
+    * ...
+
+<br/>
+
+* key값이 String인 해시 함수 종류
+
+    * Additive
+
+    * Rotating
+
+    * Universal
