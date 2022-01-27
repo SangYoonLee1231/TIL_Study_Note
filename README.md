@@ -38,7 +38,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_operator.md">Python - 사칙연산을 위한 연산자</a>
 
 
-
 ## 자료구조
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
