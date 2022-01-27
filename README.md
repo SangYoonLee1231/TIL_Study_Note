@@ -35,6 +35,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md">Python - 출력 함수  <code>print()</code> 사용법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md">Python - 입력 함수 <code>input()</code> 사용법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_operator.md">Python - 사칙연산을 위한 연산자</a>
 
 
 

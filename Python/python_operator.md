@@ -8,6 +8,9 @@
 
 ### 목차
 
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_operator.md#%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0">사칙연산</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_operator.md#%EC%97%B0%EC%82%B0%EC%9E%90-%EC%9A%B0%EC%84%A0-%EC%88%9C%EC%9C%84">연산자 우선 순위</a>
+
 <br/>
 
 ## 사칙연산
