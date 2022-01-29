@@ -23,3 +23,26 @@ if 조건식:
 
 <br/>
 
+* python에서 <code>if</code>문의 가장 중요한 점은 들여쓰기다.  
+
+    indent를 정확히 맞춰주어야 한다.
+
+```python
+a = int(input())
+b = int(input())
+
+if a >= 1 and b >= 1:
+    a += 3
+    b += 5
+
+print(f"a = {a}, b = {b}")
+```
+
+▼ 입력 및 출력 결과
+
+```
+>> 1
+>> 2
+
+a = 4, b = 6
+```
