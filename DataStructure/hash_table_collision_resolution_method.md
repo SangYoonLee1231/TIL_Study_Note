@@ -1,4 +1,4 @@
-# 해시 테이블 (Hash Table) - 충돌 회피 방법 (Collision Resolution Method) - Open Addressing의 Linear Probing 위주
+# 해시 테이블 (Hash Table) - 충돌 회피 방법 (Collision Resolution Method) - Open Addressing의 Linear Probing
 
 <br/>
 

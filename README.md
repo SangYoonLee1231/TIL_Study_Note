@@ -24,7 +24,7 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md">CSS - Display 속성 : Flexbox 기초</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_position.md">CSS - Position</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_combinator.md">CSS - 결합자 (Combinator)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_combinator.md">CSS - 결합자</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 속성 선택자, 가상 클래스, 가상 요소</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_color_variable.md">CSS - 색상 체계, 사용자 지정 CSS 속성 (변수)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
@@ -42,14 +42,14 @@
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">순차적 자료구조 : 스택 (Stack)</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">순차적 자료구조 : 큐 (Queue)</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">순차적 자료구조 : 연결 리스트 (Linked List) 기본 개념</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">순차적 자료구조 : 단방향 연결 리스트 (Singly Linked List)</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">순차적 자료구조 : 양방향 연결 리스트 (Doubly Linked List)</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 (Hash Table) 기초 개념</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 (Hash Table) - 해시 함수 (Hash Function)</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 (Hash Table) - 충돌 회피 방법 (Collision Resolution Method) - Open Addressing 위주</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">순차적 자료구조 : 스택</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">순차적 자료구조 : 큐</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">순차적 자료구조 : 연결 리스트 기본 개념</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">순차적 자료구조 : 단방향 연결 리스트</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">순차적 자료구조 : 양방향 연결 리스트</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 기초 개념</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 - 해시 함수</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing</a>
 
 
 ## 알고리즘
