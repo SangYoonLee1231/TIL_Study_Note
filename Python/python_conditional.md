@@ -21,8 +21,6 @@ if 조건식:
     조건식이 참일 경우 수행되는 코드 영역
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/conditional1.png" width="250px">
-
 <br/>
 
 * python에서 <code>if</code>문의 가장 중요한 점은 들여쓰기다.  
@@ -78,6 +76,8 @@ if 조건식:
 else:
     조건식이 거짓일 경우 수행되는 코드 영역
 ```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/conditional1.png" width="250px">
 
 <br/>
 
