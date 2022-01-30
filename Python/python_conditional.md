@@ -14,12 +14,14 @@
 
 ## if 조건문
 
-* 조건식을 만족할 경우, <code>if</code>문의 내부 코드를 실행한다.
+* <code>if</code> 조건식을 만족할 경우, <code>if</code>문의 내부 코드를 실행한다.
 
 ```
 if 조건식:
     조건식이 참일 경우 수행되는 코드 영역
 ```
+
+<img src="img/conditional1.png" width="250px">
 
 <br/>
 
@@ -65,9 +67,10 @@ a = 4, b = 6
 
 ## if else 조건문
 
-* 조건식을 만족하지 않을 경우, <code>else</code>문의 내부 코드를 실행한다.
+* <code>else</code>구문은 <code>if</code>문과 함께 조건문에 사용한다.
 
-* if문과 함께 사용한다.
+* <code>if</code> 조건식을 만족하지 않을 경우, <code>else</code>문의 내부 코드를 실행한다.
+
 
 ```
 if 조건식:
@@ -104,3 +107,29 @@ a = 4, b = 1
 
 a = 1, b = 5
 ```
+
+<br/>
+
+## 삼항 연산자
+
+* 삼항 연산자를 사용하면 조건문을 한 줄로 나타낼 수 있다.
+
+``` python
+if 조건:
+    a = v1
+else:
+    a = v2
+```
+```python
+a = v1 if 조건 else v2
+```
+
+<br/>
+
+## if elif else 조건문
+
+* <code>elif</code>구문은 <code>if</code>문, <code>else</code>문과 함께 조건문에 사용한다.
+
+* <code>if</code> 조건식을 만족하지 않으나, <code>else</code> 조건식을 만족하는 경우, <code>elif</code>문의 내부 코드를 실행한다.
+
+* <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
