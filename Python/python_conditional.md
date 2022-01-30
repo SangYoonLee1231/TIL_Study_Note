@@ -16,7 +16,7 @@
 
 * <code>if</code> 조건식을 만족할 경우, <code>if</code>문의 내부 코드를 실행한다.
 
-```
+```python
 if 조건식:
     조건식이 참일 경우 수행되는 코드 영역
 ```
@@ -61,6 +61,14 @@ a = 4, b = 6
     if a % 2 == 0:
         print("even number")
     ```
+<br/>
+
+## 조건식
+
+* 조건식은 그 결과값이 <code>True</code>나 <code>False</code>로 나온다면 어떤 식이든 가능하다.
+
+* 논리 연산자, 비교 연산자를 조건식에 사용하도 된다는 뜻이다.
+
 <br/>
 
 ## if else 조건문
@@ -132,4 +140,63 @@ a = v1 if 조건 else v2
 
 * <code>if</code> 조건식을 만족하지 않으나, <code>else</code> 조건식을 만족하는 경우, <code>elif</code>문의 내부 코드를 실행한다.
 
-* <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
+* <code>elif</code>은 여러 번 사용할 수 있으며, <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
+
+```python
+if 조건식1:
+    코드 1
+elif 조건식2:
+    코드 2
+else:
+    코드 3
+```
+
+<br/>
+
+```python
+a = int(input())
+b = 0
+
+if a <= 0:
+    pass
+elif a <= 5:
+    b = 1
+elif a <= 10:
+    b = 2
+else:
+    b = 3
+
+print(b)
+```
+
+▼ 입력 및 출력 결과
+
+```
+>> 3
+
+1
+```
+```
+>> 10
+
+2
+```
+```
+>> 25
+
+3
+```
+
+* <code>pass</code> keyword는 아무런 변화가 없음을 의미한다.
+
+<br/>
+
+## 조건문 여러 번 사용하기
+
+<br/>
+
+## 비교 연산자와 조건문
+
+<br/>
+
+> 사진 출처 : https://tioh.weebly.com/

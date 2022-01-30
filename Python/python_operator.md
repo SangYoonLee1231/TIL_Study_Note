@@ -129,3 +129,7 @@ print(a)
 * 내가 의도하고자 하는 연산에 소괄호<code>()</code>를 적절히 잘 쓰면 된다.
 
     * 안쪽 소괄호부터 우선적으로 연산하므로
+
+<br/>
+
+> 사진 출처 : https://dojang.io/mod/page/view.php?id=2461
