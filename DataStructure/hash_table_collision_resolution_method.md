@@ -38,6 +38,6 @@
 
 <br/>
 
-<img src="img/hash_table6.png" width="350px"> <img src="img/hash_table7.png" width="350px">
+<img src="img/hash_table6.png" width="350px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/hash_table7.png" width="350px">
 
-<img src="img/hash_table8.png" width="350px"> <img src="img/hash_table9.png" width="350px">
+<img src="img/hash_table8.png" width="350px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/hash_table9.png" width="350px">
