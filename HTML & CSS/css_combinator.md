@@ -1,4 +1,4 @@
-# CSS - 결합자 (Combinator)
+# CSS - 결합자
 
 <br/>
 

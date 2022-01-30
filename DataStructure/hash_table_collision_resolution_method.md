@@ -1,4 +1,4 @@
-# 해시 테이블 (Hash Table) - 충돌 회피 방법 (Collision Resolution Method) - Open Addressing의 Linear Probing
+# 해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing
 
 <br/>
 
@@ -6,7 +6,7 @@
 
 <br/>
 
-## 총돌 회피 방법
+## 총돌 회피 방법 (Collision Resolution Method)
 
 * 해시 함수를 아무리 잘 설계하더라도 완벽한 해시 함수가 될 수는 없으므로, 그 함수 또한 반드시 충돌이 발생하게 된다.
 
