@@ -18,6 +18,26 @@
 
 ## 대표적인 충돌 회피 방법 : open addressing
 
-* 주위에 빈 장소를 찾아서 제이터를 저장하는 방법이다.
+* 충돌이 발생했을 때, 주위에 빈 장소를 찾아서 데이터를 저장하는 방법이다.
 
-### open addressing의 ㅈ
+### open addressing의 종류
+
+* Linear Probing
+
+* Quadratic Probing
+
+* Double Hashing
+
+<br/>
+
+## Linear Probing
+
+* 충돌 발생 시 빈 공간을 찾기 위해 다음 슬롯을 확인하는 방법
+
+* 이 때, 처음 슬롯과 끝 슬롯을 이어져있다고 가정한다.
+
+<br/>
+
+<img src="img/hash_table6.png" width="350px"> <img src="img/hash_table7.png" width="350px">
+
+<img src="img/hash_table8.png" width="350px"> <img src="img/hash_table9.png" width="350px">
