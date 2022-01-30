@@ -21,7 +21,7 @@ if 조건식:
     조건식이 참일 경우 수행되는 코드 영역
 ```
 
-<img src="img/conditional1.png" width="250px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/conditional1.png" width="250px">
 
 <br/>
 
