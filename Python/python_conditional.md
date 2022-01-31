@@ -83,6 +83,25 @@ else:
 if a % 2 == 0 or (a % 2 == 1 and a >= 10):
     print("special")
 ```
+
+<br/>
+
+* 조건식의 결과값 <code>True</code> 혹은 <code>False</code>를 int형으로 변환하면 각각 <code>1</code> 또는 <code>0</code>이 된다.
+
+```python
+print(0 == 1)
+
+print(int(0 == 1))
+```
+
+▼ 입력 및 출력 결과
+
+```
+False
+
+0
+```
+
 <br/>
 
 ## if else 조건문
