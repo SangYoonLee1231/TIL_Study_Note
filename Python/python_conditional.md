@@ -65,10 +65,24 @@ a = 4, b = 6
 
 ## 조건식
 
-* 조건식은 그 결과값이 <code>True</code>나 <code>False</code>로 나온다면 어떤 식이든 가능하다.
+* 조건문에서 '조건'에 해당하는 식으로, 그 결과값이 <code>True</code>인가 <code>False</code>인가에 따라 코드의 실행 흐름이 달라진다.
 
-* 논리 연산자, 비교 연산자를 조건식에 사용하도 된다는 뜻이다.
+* 조건식은 다양한 형태가 올 수 있다. 그 결과값이 <code>True</code>(0아님)이나 <code>False</code>(0)으로만 나오면 된다.
 
+```python
+if 1 > 2:
+    print("True")
+```
+```python
+if a % 2 == 0 and 10 < a and a < 20:
+    print("special")
+else:
+    print("normal")
+```
+```python
+if a % 2 == 0 or (a % 2 == 1 and a >= 10):
+    print("special")
+```
 <br/>
 
 ## if else 조건문
@@ -193,9 +207,44 @@ print(b)
 
 ## 조건문 여러 번 사용하기
 
+* 여러 조건문을 각각 한 줄 이상 띄워 작성하면, python에선 각각 다른 조건문으로 인식한다.
+
+```python
+if 조건1:
+    코드 1-1
+else:
+    코드 1-2
+
+if 조건2:
+    코드 2-1
+else:
+    코드 2-2
+
+if 조건3:
+    코드 3
+
+if 조건4:
+    코드 4
+```
+
 <br/>
 
-## 비교 연산자와 조건문
+## 중첩 조건문
+
+* 조건문을 중첩으로 작성하여 조건 안에 또 다른 조건을 추가할 수 있다.
+
+```python
+if a % 2 == 1:
+    if a >= 10:
+        print('A')
+    else:
+        print('B')
+else:
+    if a >= 15:
+        print('C')
+    else:
+        print('D')
+```
 
 <br/>
 
