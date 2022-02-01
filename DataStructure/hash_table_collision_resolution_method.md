@@ -41,3 +41,15 @@
 <img src="img/hash_table6.png" width="350px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/hash_table7.png" width="350px">
 
 <img src="img/hash_table8.png" width="350px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/hash_table9.png" width="350px">
+
+* 이 때, 데이터들이 연속된 슬롯에 모여있는 것을 cluster이라 하는데, 되도록 피해야 한다.
+
+* cluster이 많아지면 삽입 및 탐색 연산 시 시간이 더 많이 소요하기 때문이다.
+
+### Linear Probing 연산
+
+* search 연산
+
+* insert 연산
+
+* delete 연산
