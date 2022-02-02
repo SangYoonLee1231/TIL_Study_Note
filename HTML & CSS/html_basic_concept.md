@@ -24,10 +24,11 @@
 
 ## HTML 기본 문법
 
-* HTML은 '태그'로 구성되어 있다.
+* HTML은 <strong>태그</strong>로 구성되어 있다.
 
-* HTML 태그엔 두 종류가 있다. - 『일반 태그』 vs 『Self-Closing 태그』
+* HTML 태그엔 두 종류가 있다. - <strong>『일반 태그』</strong> vs <strong>『Self-Closing 태그』</strong>
 
+<br/>
 
 ```html
 /* 일반 태그 작성법 */
@@ -36,9 +37,18 @@
 /* Self-Closing 태그 작성법 */
 <tag ... />
 ```
+
+<br/>
+
 * 일반 HTML 태그는 열고 반드시 <strong>닫아주어야</strong> 한다.
 
-* 그리고 여는 태그와 닫는 태그의 이름은 반드시 <strong>동일해야</strong> 한다.
+* 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 이름은 반드시 <strong>동일해야</strong> 한다.
+
+* ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성하고, 태그와 내용은 함께 HTML의 한 <strong>요소(Element)</strong>를 이룬다.
+
+* Self-Closing 태그로 구성된 요소를 Void 요소라고 한다.
+
+<br/>
 
 * 만일 HTML 코드를 잘못 입력하더라도 브라우저는 <strong>에러를 표시하지 않는다.</strong>  
 
@@ -76,9 +86,9 @@
 
 ## HTML 속성(attribute)
 
-* 속성(attribute) : HTML 태그에 추가하는 부가적인 정보
+* <strong>속성(attribute)</strong> : HTML 태그에 추가하여 태그의 동작을 제어하도록 사용자가 지정하는 값
 
-* HTML 태그와 반드시 띄어쓴다.
+* HTML 태그의 속성은 태그 이름과 <strong>반드시 띄어쓴다</strong>.
   
 * attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
 
@@ -91,6 +101,9 @@
   <a href="http://google.com" target="_blank">구글로 이동</a>
 </div>
 ```
+
+<br/>
+
 * 태그와 속성은 대소문자를 구분하지 않는다.
 
 * 일부 attribute는 모든 태그에 사용 가능하다. (예: id)
