@@ -101,9 +101,9 @@
 
 ## Linear Probing 연산
 
-* insert, search, remove 3개의 연산이 있다.
+* <strong>insert, search, remove</strong> 3개의 연산이 있다.
 
-* 3개의 연산에 공통적으로 쓰이는 find_slot 함수를 먼저 정의한다.
+* 3개의 연산에 공통적으로 쓰이는 <strong>find_slot 함수</strong>를 먼저 정의한다.
 
 <br/>
 
@@ -117,6 +117,7 @@
 
     * <strong>key값이 없고, 해시 테이블이 모두 차 있는 경우</strong>  
         ☞ FULL 리턴  
+
         (FULL은 해시 테이블이 가득 참을 나타내는 값)
 
     * <strong>key값이 없지만, 해시 테이블에 빈 공간이 있는 경우</strong>  
@@ -135,7 +136,7 @@ def find_slot(key):
     # 탐색하는 슬롯이 차있고 다른 key값이 들어있다.
 
         i = (i + 1) % m   # 다음 슬롯을 탐색
-        # m은 해시 테이블 크기 (한 바퀴 회전을 위해 %연산 진행)
+        # m은 해시 테이블의 크기 (한 바퀴 회전을 위해 % 연산 진행)
 
         if i == start:
         # 탐색을 한 바퀴 진행 == 모든 슬롯이 다른 key값들로 차 있다.
