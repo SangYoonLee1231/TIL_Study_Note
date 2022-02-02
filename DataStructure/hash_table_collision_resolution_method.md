@@ -99,10 +99,76 @@
 
 <br/>
 
-### Linear Probing 연산
+## Linear Probing 연산
 
-* search 연산
+* insert, search, remove 3개의 연산이 있다.
 
-* insert 연산
+* 3개의 연산에 공통적으로 쓰이는 find_slot 함수를 먼저 정의한다.
 
-* delete 연산
+<br/>
+
+### find_slot 함수
+
+* 찾고자 하는 key값이 해시 테이블에 있는지 확인하고, 그 결과를 리턴하는 함수이다.
+
+* 3가지의 case에 따라 리턴값이 달라진다.
+
+    * key값이 없고, 해시 테이블이 모두 차 있는 경우  
+        ☞ FULL(해시 테이블이 가득 참을 나타내는 값) 리턴
+
+    * key값이 없지만, 해시 테이블에 빈 공간이 있는 경우  
+        ☞ 그 key값을 삽입할 슬롯 번호 리턴
+
+    * key값이 있는 경우  
+        ☞ 해당 key값이 있는 슬롯 번호 리턴
+
+```python
+# psuedo code
+def find_slot(key):
+    i = f(key)
+    start = i
+
+    while (H[i] == occupied) and (H[i].key != key)
+        i = (i + 1) % m
+        if i == start:
+            return FULL
+    return i
+```
+
+<br/>
+
+### search 연산
+
+```python
+def search(key):
+    i = find_slot(key)
+
+    if i == FULL:
+        return None
+    if H[i].is_occpupied:
+        return H[i].value
+    else:
+        return None
+```
+
+<br/>
+
+### insert 연산
+
+```python
+def set(key, value = None):
+    i = find_slot(key)
+
+    if i == FULL:
+        return None
+    if H[i].is_occupied:
+        H[i].value = value
+    else:
+        H[i].key, H[i].value = key, value
+    
+    return key
+```
+
+<br/>
+
+### delete 연산
