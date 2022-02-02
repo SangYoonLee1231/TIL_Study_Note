@@ -62,16 +62,13 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
   </head>
-
   <body>
       <h1>hello world!</h1>
   </body>
-
 </html>
 ```
 * <strong>\<!DOCTYPE html></strong> : 이 파일은 html임을 브라우저에게 알리는 코드
