@@ -132,7 +132,7 @@ def find_slot(key):
     start = i   # 시작점은 start로 고정
 
     while (H[i] == occupied) and (H[i].key != key):
-    # 탐색하는 솔롯이 차있고 다른 key값이 들어있다
+    # 탐색하는 슬롯이 차있고 다른 key값이 들어있다
         i = (i + 1) % m   # 다음 슬롯을 탐색
         # m은 해시 테이블 크기 (한 바퀴 회전을 위해 %연산 진행)
 
@@ -194,7 +194,7 @@ def set(key, value = None):
         # ☞ 데이터 삽입
     
     return key
-    # 데이터가 성공적으로 삽입 or Update되었음을 의미
+    # 데이터가 성공적으로 삽입 or Update 되었음을 의미
 ```
 
 <br/>
