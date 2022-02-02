@@ -111,10 +111,13 @@
 
 * 찾고자 하는 key값이 해시 테이블에 있는지 확인하고, 그 결과를 리턴하는 함수이다.
 
+* 만일 찾고자 하는 값이 없다면, 그 값을 새로 삽입할 슬롯을 대신 찾는다. 그리고 그 위치를 리턴한다.
+
 * 3가지의 case에 따라 리턴값이 달라진다.
 
     * <strong>key값이 없고, 해시 테이블이 모두 차 있는 경우</strong>  
-        ☞ FULL(해시 테이블이 가득 참을 나타내는 값) 리턴
+        ☞ FULL 리턴  
+        (FULL은 해시 테이블이 가득 참을 나타내는 값)
 
     * <strong>key값이 없지만, 해시 테이블에 빈 공간이 있는 경우</strong>  
         ☞ 그 key값을 삽입할 슬롯 번호 리턴
@@ -125,14 +128,21 @@
 ```python
 # psuedo code
 def find_slot(key):
-    i = f(key)
-    start = i
+    i = f(key)  # i는 데이터를 저장할 슬롯 번호
+    start = i   # 시작점은 start로 고정
 
-    while (H[i] == occupied) and (H[i].key != key)
-        i = (i + 1) % m
+    while (H[i] == occupied) and (H[i].key != key):
+    # 탐색하는 솔롯이 차있고 다른 key값이 들어있다
+        i = (i + 1) % m   # 다음 슬롯을 탐색
+        # m은 해시 테이블 크기 (한 바퀴 회전을 위해 %연산 진행)
+
         if i == start:
+        # 탐색을 한 바퀴 진행 == 모든 슬롯이 다른 key값들로 차 있다.
             return FULL
+
     return i
+    # 1. 내가 찾는 값이 없지만 비어있다. (i == key값을 새로 삽입할 위치)
+    # 2. 내가 찾는 값이 존재한다. (i == 해당 key값이 있는 위치)
 ```
 
 <br/>
@@ -145,10 +155,13 @@ def search(key):
 
     if i == FULL:
         return None
+        # 찾는 값 x, 슬롯 모두 차 있음
     if H[i].is_occpupied:
         return H[i].value
+        # 찾는 값 O (i값이 무엇인지 case에 따라 다름)
     else:
         return None
+        # 찾는 값 X, 빈 슬롯이 존재
 ```
 
 <br/>
@@ -161,10 +174,13 @@ def set(key, value = None):
 
     if i == FULL:
         return None
+        # 찾는 값 x, 슬롯 모두 차 있음
     if H[i].is_occupied:
         H[i].value = value
+        # 찾는 값 O (i값이 무엇인지 case에 따라 다름)
     else:
         H[i].key, H[i].value = key, value
+        # 찾는 값 X, 빈 슬롯이 존재
     
     return key
 ```
