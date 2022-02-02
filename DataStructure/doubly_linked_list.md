@@ -235,3 +235,7 @@ class DoublyLinkedList:
 * <code>remove</code> 함수: O(1)
 
 * <code>search</code> 함수: O(n)
+
+<br/><br/>
+
+> 사진 출처 : <a href="https://youtu.be/Lqd8o7vL2Z8">신찬수 교수님 유튜브 강의</a>

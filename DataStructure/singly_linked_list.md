@@ -227,6 +227,6 @@ def __iterator__(self):
 
 * Generator == yield가 있는 함수
 
-<br/>
+<br/><br/>
 
 > 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>
