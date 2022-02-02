@@ -194,6 +194,7 @@ def set(key, value = None):
         # ☞ 데이터 삽입
     
     return key
+    # 데이터가 성공적으로 삽입 or Update되었음을 의미
 ```
 
 <br/>
