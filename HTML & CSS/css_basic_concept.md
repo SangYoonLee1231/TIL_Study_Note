@@ -32,7 +32,7 @@
 
 <br/>
 
-*  【<strong>external CSS</strong>】 css 파일을 <strong>따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
+*  【<strong>external CSS</strong>】 css 파일을 <strong>따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css 파일을 서로 연결한다.  
 
    (더 좋은 방법)
 
