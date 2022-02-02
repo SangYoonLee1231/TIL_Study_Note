@@ -42,7 +42,7 @@
 
 * 일반 HTML 태그는 열고 반드시 <strong>닫아주어야</strong> 한다.
 
-* 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 이름은 반드시 <strong>동일해야</strong> 한다.
+* 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 이름은 <strong>반드시 동일해야</strong> 한다.
 
 * ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성하고, 태그와 내용은 함께 HTML의 한 <strong>요소(Element)</strong>를 이룬다.
 
@@ -92,6 +92,8 @@
   
 * attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
 
+<br/>
+
 ```html
 /* 작성법 */
 <tagname attrName="">좋은 개발자가 되고 싶다</tagname>
@@ -99,6 +101,7 @@
 /* 실제 사용 예시 */
 <div id="title">
   <a href="http://google.com" target="_blank">구글로 이동</a>
+  <input disabled />
 </div>
 ```
 
@@ -106,9 +109,11 @@
 
 * 태그와 속성은 대소문자를 구분하지 않는다.
 
-* 일부 attribute는 모든 태그에 사용 가능하다. (예: id)
+* 일부 attribute는 모든 태그에 사용 가능하다. (예: id, class, style)
 
 * 반대로 일부 attribute는 특정 태그만 사용 가능하다. (예: \<a href="">, \<img src="">, \<input type="">)
+
+<br/>
 
 * 다양한 태그의 attribute(속성)이 존재하나 역시 무작정 암기 X. 사용법을 이해하고 필요할 때 검색해서 찾아 쓰자.
 
