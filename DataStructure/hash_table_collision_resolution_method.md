@@ -149,6 +149,10 @@ def find_slot(key):
 
 ### search 연산
 
+* 데이터를 key값을 통해 탐색하여 찾는 연산
+
+* 데이터(key값)가 있으면 해당 value값 리턴, 없으면 None을 리턴한다.
+
 ```python
 def search(key):
     i = find_slot(key)
@@ -168,6 +172,10 @@ def search(key):
 
 ### insert 연산
 
+* 데이터를 빈 공간에 삽입하는 연산
+
+* 이미 데이터의 key값이 존재하면, value값만 Update한다. 없으면 None을 리턴한다.
+
 ```python
 def set(key, value = None):
     i = find_slot(key)
@@ -175,12 +183,15 @@ def set(key, value = None):
     if i == FULL:
         return None
         # 찾는 값 x, 슬롯 모두 차 있음
+        # ☞ H의 용량을 키워야 함
     if H[i].is_occupied:
         H[i].value = value
         # 찾는 값 O (i값이 무엇인지 case에 따라 다름)
+        # ☞ 데이터 Update
     else:
         H[i].key, H[i].value = key, value
         # 찾는 값 X, 빈 슬롯이 존재
+        # ☞ 데이터 삽입
     
     return key
 ```
