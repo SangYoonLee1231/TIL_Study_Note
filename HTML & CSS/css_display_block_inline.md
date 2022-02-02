@@ -50,7 +50,7 @@ div {
 
 <br/>
 
-## 여백과 관련된 속성 1 : 《 margin 》
+## 여백과 관련된 속성 1 : margin
 
 * <code>margin</code>은 <strong>요소의 경계(border)의 바깥에 있는 영역</strong>이다.
 
@@ -82,7 +82,7 @@ div {
 
 <br/>
 
-## 여백과 관련된 속성 2 : 《 padding 》
+## 여백과 관련된 속성 2 : padding
 
 * <code>padding</code>은 <strong>box의 경계(border)로부터 안쪽에 있는 영역</strong>이다.
 
@@ -105,7 +105,7 @@ div {
 
 <br/>
 
-## 여백과 관련된 속성 3 : 《 border 》
+## 여백과 관련된 속성 3 : border
 
 * <code>border</code>은 말 그대로 박스의 '<strong>경계</strong>'이다.
 
