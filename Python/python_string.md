@@ -128,3 +128,64 @@ arr = [
     for _ in range(n)
 ]
 ```
+
+<br/>
+
+## 공백 단위로 문자열 입력받기
+
+* <code>split()</code>함수룰 이용하면 입력받은 문자열이 공백 단위로 쪼개져 리스트로 만들어진다.
+
+```python
+arr = input().split()
+
+print(arr)
+```
+```
+>> hello world python
+
+['hello', 'world', 'python']
+```
+
+<br/>
+
+* 물론, list 힘수와 map 함수를 더 사용해도 된다.
+
+```python
+arr = list(map(str, input().split()))
+```
+
+<br/>
+
+* tuple을 사용하면, 리스트 팔요 없이 두 변수에 문자열을 공백 단위로 잘라 받을 수 있다.
+
+```python
+a, b = tuple(input().split())
+print(a)
+print(b)
+```
+```
+>> hello world
+
+hello
+world
+```
+
+## 문자열 순회하기
+
+* for문을 통해 문자열의 길이를 구하지 않고 바로 원소에 접근할 수 있다.
+
+```python
+sentence = input()
+
+for i in sentence:
+    print(i)
+```
+```
+>> hello
+
+h
+e
+l
+l
+o
+```
