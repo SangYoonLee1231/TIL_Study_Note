@@ -18,7 +18,7 @@
 
 ## HTML 파일에 CSS를 추가하는 방법
 
-*  【<strong>inline CSS</strong>】 html 문서의 <code>\<style></code><strong>태그 사이</strong>에 css 코드를 <strong>직접</strong> 작성한다.  
+*  【<strong>inline CSS</strong>】 html 문서의 <code>\<style></code>태그 사이에 css 코드를 <strong>직접</strong> 작성한다.  
 
    (<code>\<style></code>태그는 <code>\<head></code>태그 사이에 작성한다.)
 
@@ -32,7 +32,7 @@
 
 <br/>
 
-*  【<strong>external CSS</strong>】 <strong>css 파일을 따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
+*  【<strong>external CSS</strong>】 css 파일을 <strong>따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css파일을 서로 연결한다.  
 
    (더 좋은 방법)
 
