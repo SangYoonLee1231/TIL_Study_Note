@@ -42,7 +42,7 @@
 
 <br/>
 
-* 일반 HTML 태그는 열고 반드시 <strong>닫아주어야</strong> 한다.
+* 일반 HTML 태그는 <strong>열고 반드시 닫아주어야</strong> 한다.
 
 * 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 이름은 <strong>반드시 동일해야</strong> 한다.
 
