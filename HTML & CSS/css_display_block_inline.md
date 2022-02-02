@@ -32,7 +32,7 @@ div {
 
     (<code>inline</code>도 가지고 있는 특징이다. 상하 margin만 제외하고)
 
-  *  ex) <code>\<div></code>, <code>\<p></code>, <code>\<address></code>
+  * Block 속성을 갖는 HTML 요소 : <code>\<div></code>, <code>\<p></code>, <code>\<address></code>, ..
 
 <br/>
 
@@ -46,7 +46,7 @@ div {
     
       (가지도록 하려면 <code>display</code> 속성을 <code>inline-block</code>으로 바꾸어야 한다)
 
-  * ex) <code>\<span></code>, <code>\<a></code>, <code>\<img></code>
+  * Inline 속성을 갖는 HTML 요소 :  <code>\<span></code>, <code>\<a></code>, <code>\<img></code>, ..
 
 <br/>
 
