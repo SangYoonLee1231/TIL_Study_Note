@@ -121,3 +121,5 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 <br/>
 
 ## Semantic HTML
+
+<img src="img/html_semantic.jpeg">
