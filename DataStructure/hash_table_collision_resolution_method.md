@@ -119,7 +119,7 @@
     * <strong>key값이 없지만, 해시 테이블에 빈 공간이 있는 경우</strong>  
         ☞ 그 key값을 삽입할 슬롯 번호 리턴
 
-    * <strong>key값이 있는 경우/<strong>  
+    * <strong>key값이 있는 경우</strong>  
         ☞ 해당 key값이 있는 슬롯 번호 리턴
 
 ```python
