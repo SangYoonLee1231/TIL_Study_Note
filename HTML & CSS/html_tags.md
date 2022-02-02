@@ -108,7 +108,9 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 
 ### Form 태그
 
-*  
+* 정보를 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타낸다.
+
+* Form에 관해선 언급할 내용이 다양하여 여기에 적지 않는다.
 
 <br/>
 

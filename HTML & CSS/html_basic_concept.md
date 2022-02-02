@@ -117,6 +117,6 @@
 
 <br/>
 
-* 다양한 태그의 attribute(속성)이 존재하나 역시 무작정 암기 X. 사용법을 이해하고 <strong>필요할 때 검색해서 찾아 쓰자.</strong>
+* 다양한 태그의 attribute(속성)이 존재하나 역시 무작정 암기 X. <strong>사용법을 이해하고 필요할 때 검색해서 찾아 쓰자.</strong>
 
 * HTML은 attribute와 결합할 때 강력해진다.
