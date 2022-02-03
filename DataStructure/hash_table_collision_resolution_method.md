@@ -143,7 +143,7 @@ def find_slot(key):
             return FULL
 
     return i
-    # 1. 내가 찾는 값이 없지만 비어있는 공간이 있다. (i == 탐색 중 처음으로 나온 빈 공간, key값을 새로 삽입할 위치)
+    # 1. 내가 찾는 값이 없지만 비어있는 공간이 있다. (i == 탐색 중 처음으로 나온 빈 슬롯 위치, key값을 새로 삽입할 위치)
     # 2. 내가 찾는 값이 존재한다. (i == 해당 key값이 있는 위치)
 ```
 
@@ -157,7 +157,7 @@ def find_slot(key):
 
 ```python
 def search(key):
-    # find_slot 함수를 이용 (결과값이 세 종류)
+    # find_slot 함수를 이용 (결과값 i는 3가지 case)
     i = find_slot(key)
 
     if i == FULL:
@@ -181,7 +181,7 @@ def search(key):
 
 ```python
 def set(key, value = None):
-    # find_slot 함수를 이용 (결과값이 세 종류)
+    # find_slot 함수를 이용 (결과값 i는 3가지 case)
     i = find_slot(key)
 
     if i == FULL:
