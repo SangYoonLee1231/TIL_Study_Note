@@ -190,11 +190,11 @@ def set(key, value = None):
         # ☞ H의 용량을 키워야 함
     if H[i].is_occupied:
         H[i].value = value
-        # 찾는 값 O (i값이 무엇인지 case에 따라 다름)
+        # 찾는 값 O (i값 == 찾는 값의 위치)
         # ☞ 데이터 Update
     else:
         H[i].key, H[i].value = key, value
-        # 찾는 값 X, 빈 슬롯이 존재
+        # 찾는 값 X, 빈 슬롯이 존재 (i값 == 첫 빈 슬롯 위치)
         # ☞ 데이터 삽입
     
     return key
