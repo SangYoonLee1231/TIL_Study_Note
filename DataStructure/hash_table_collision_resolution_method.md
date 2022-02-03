@@ -47,7 +47,7 @@
 
 * 해시 테이블 H의 슬롯에 하나의 값만 저장될 수 있다고 가정한다.
 
-* 해시 테이블 H에 A5, A2, A3, B5, A9, B2, B9, C2의 값이 순서대로 저장된다.
+* 해시 테이블 H에 A5, A2, A3, B5, A9, B2, B9, C2의 값을 순서대로 저장한다.
 
 * 각 값이 저장되는 슬롯의 번호는 알파벳 다음의 숫자이다.
 
@@ -133,7 +133,7 @@ def find_slot(key):
     start = i   # 시작점은 start로 고정
 
     while (H[i] == occupied) and (H[i].key != key):
-    # 탐색하는 슬롯이 차있고 다른 key값이 들어있다.
+    # 탐색하는 슬롯이 차 있고 다른 key값이 들어있다.
 
         i = (i + 1) % m   # 다음 슬롯을 탐색
         # m은 해시 테이블의 크기 (한 바퀴 회전을 위해 % 연산 진행)
@@ -143,7 +143,7 @@ def find_slot(key):
             return FULL
 
     return i
-    # 1. 내가 찾는 값이 없지만 비어있다. (i == key값을 새로 삽입할 위치)
+    # 1. 내가 찾는 값이 없지만 비어있는 공간이 있다. (i == 탐색 중 처음으로 나온 빈 공간, key값을 새로 삽입할 위치)
     # 2. 내가 찾는 값이 존재한다. (i == 해당 key값이 있는 위치)
 ```
 
@@ -157,6 +157,7 @@ def find_slot(key):
 
 ```python
 def search(key):
+    # find_slot 함수를 이용 (결과값이 세 종류)
     i = find_slot(key)
 
     if i == FULL:
@@ -180,6 +181,7 @@ def search(key):
 
 ```python
 def set(key, value = None):
+    # find_slot 함수를 이용 (결과값이 세 종류)
     i = find_slot(key)
 
     if i == FULL:
