@@ -55,6 +55,8 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 - 해시 함수</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing</a>
 
+### 트리
+* <a href="">트리</a>
 
 ## 알고리즘
 
