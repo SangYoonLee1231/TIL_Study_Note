@@ -191,3 +191,78 @@ l
 l
 o
 ```
+
+<br/>
+
+## 문자열 붙이기
+
+* 문자열끼리 <code>+</code>연산을 통해 붙여줄 수 있다.
+
+```python
+a, b = "hello", "world"
+
+print(a + b)
+```
+```
+helloworld
+```
+
+<br/>
+
+```python
+a, b, c = "hello", "world", "python"
+sentence = ""
+
+sentence += a
+sentence += b
+sentence += c
+
+print(sentence)
+```
+```
+helloworldpython
+```
+
+<br/>
+
+```python
+a, b, c = "hello", "world", "python"
+sentence = ""
+
+for target_str in [a, b, c]:
+    sentence += target_str
+
+print(sentence)
+```
+```
+helloworldpython
+```
+
+<br/>
+
+* <code>join()</code>함수는 지정한 구분값(<code>sep</code>)을 각 원소 사이에 삽입하여 하나의 문자열로 합쳐준다.
+
+* <code>join()</code>함수를 이용하면 여러 문자열을 더 쉽게 연결할 수 있다.
+
+```python
+a, b, c = "hello", "world", "python"
+sentence = "".join([a, b, c])
+
+print(sentence)
+```
+```
+helloworldpython
+```
+
+<br/>
+
+```python
+print(','.join(['hello', 'world', 'python']))
+print(':'.join(['hello', 'world', 'python']))
+print(''.join(['hello', 'world', 'python']))
+```
+```
+hello,world,python
+hello:world:python
+helloworldpython
+```
