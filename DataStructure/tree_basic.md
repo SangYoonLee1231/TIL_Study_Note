@@ -77,5 +77,25 @@
 
 * 방법2. 리스트 이용 - 재귀적으로 표현
 
+    <img src="img/tree_basic3.png" width="300">
+
+```
+A = [a, [a의 왼쪽 sub tree], [a의 오른쪽 sub tree]]
+```
+```python
+A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
+```
+
+<br/>
 
 * 방법3. 직접 노드를 Class로 정의
+
+    * Node Class는 4개의 값을 가져야 한다.
+
+        : <code>parent</code>, <code>key</code>, <code>left</code>, <code>right</code>
+
+    <img src="img/tree_basic4.png" width="200">
+
+<br/><br/>
+
+> 사진 출처 : <a href="https://youtu.be/Lqd8o7vL2Z8">신찬수 교수님 유튜브 강의</a>
