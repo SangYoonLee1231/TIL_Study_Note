@@ -273,6 +273,36 @@ helloworldpython
 
 ### 특정 문자열 포함 여부 확인하기
 
+* <code>in</code> 키워드를 통해 어떤 문자열에 특정 문자열이 포함되어 있는지 쉽게 알 수 있다.
+
+```python
+s = 'helloworld'
+
+print('owo' in s)
+```
+```
+True
+```
+
+<br/>
+
+* 물론 이 키워드를 사용하지 않고 반복문과 조건문으로도 구현할 수 있다.
+
+```python
+s = 'helloworld'
+
+length = len(s)
+exists = False
+
+for i in range(length - 2):
+    if s[i:i+3] == 'owo':
+        exists = True;
+
+print(exists)
+```
+
+<br/>
+
 ### 포함된 특정 문자열의 위치 구하기
 
 <br/>
