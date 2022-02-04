@@ -98,4 +98,4 @@ A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
 
 <br/><br/>
 
-> 사진 출처 : <a href="https://youtu.be/Lqd8o7vL2Z8">신찬수 교수님 유튜브 강의</a>
+> 사진 출처 : <a href="https://youtu.be/w-1w4ood7Bc">신찬수 교수님 유튜브 강의</a>

@@ -94,4 +94,4 @@
 
 <br/><br/>
 
-> 사진 출처 : <a href="https://youtu.be/Lqd8o7vL2Z8">신찬수 교수님 유튜브 강의</a>
+> 사진 출처 : <a href="https://youtu.be/Bzmepm6pYQI">신찬수 교수님 유튜브 강의</a>
