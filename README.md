@@ -60,7 +60,7 @@
 
 ### 트리(Tree) 구조
 
-* <a href="">트리 기본 개념</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
 
 ## 알고리즘
 
