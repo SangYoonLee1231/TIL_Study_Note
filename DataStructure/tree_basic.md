@@ -79,12 +79,12 @@
 
     <img src="img/tree_basic3.png" width="300">
 
-```
-A = [a, [a의 왼쪽 sub tree], [a의 오른쪽 sub tree]]
-```
-```python
-A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
-```
+    ```
+    A = [a, [a의 왼쪽 sub tree], [a의 오른쪽 sub tree]]
+    ```
+    ```python
+    A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
+    ```
 
 <br/>
 
