@@ -67,7 +67,7 @@
 
     <br/>
 
-    <img src="img/tree_basic2.png" width="350">
+    <img src="img/tree_basic2.png" width="300">
 
     ```python
     A = [a, b, c, Node, d, e, f, None, None, h, i  g, None, None, None]
@@ -77,7 +77,7 @@
 
 * 방법2. 리스트 이용 - 재귀적으로 표현
 
-    <img src="img/tree_basic3.png" width="300">
+    <img src="img/tree_basic3.png" width="260">
 
     ```
     A = [a, [a의 왼쪽 sub tree], [a의 오른쪽 sub tree]]
@@ -94,7 +94,7 @@
 
         : <code>parent</code>, <code>key</code>, <code>left</code>, <code>right</code>
 
-    <img src="img/tree_basic4.png" width="250">
+    <img src="img/tree_basic4.png" width="210">
 
 <br/><br/>
 
