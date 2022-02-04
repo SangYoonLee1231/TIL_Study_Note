@@ -94,7 +94,7 @@
 
         : <code>parent</code>, <code>key</code>, <code>left</code>, <code>right</code>
 
-    <img src="img/tree_basic4.png" width="200">
+    <img src="img/tree_basic4.png" width="250">
 
 <br/><br/>
 
