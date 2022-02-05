@@ -57,11 +57,11 @@ div {
 
 ## Position 속성4 : Absolute
 
-* ✨<code>absolute</code> 요소는, <strong>가장 가까운</strong> <code>relative</code> <strong>부모를 기준</strong>으로, 해당 영역 내에서 <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code> 속성을 통해 요소를 배치한다.
+* ✨<code>absolute</code> 요소는, <strong>가장 가까운</strong> <code>relative</code> <strong>부모의 영역</strong>을 기준으로 <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code> 속성을 통해 요소를 배치한다.
 
     * 이때, <code>relative</code>처럼 요소를 (미세하게) 이동하는 것이 아니라,  
 
-        각 방향의 맨 끝에서 <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>  속성값만큼 떨어진 곳에 요소를 배치하는 것이다.
+        부모 요소의 영역 안에서, 각 방향의 맨 끝부터 <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>  속성값만큼 떨어진 곳에 요소를 배치하는 것이다.
 
 * ✨만일 부모 중에 <code>relative</code> <strong>요소가 없으면</strong>, <code>absoulte</code> 요소는 <code>body</code><strong>를 기준</strong>으로 삼는다.
 

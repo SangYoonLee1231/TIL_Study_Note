@@ -8,9 +8,9 @@
 
 ## 속성 선택자
 
-* 속성 선택자는 input 태그의 type과 같은 HTML 속성(attribute)을 선택자로 지정한다.
+* 속성 선택자는 지정한 input 태그의 type과 동일한 HTML 요소의 속성(attribute)을 선택자로 지정한다.
 
-* 속성 선택자를 통해 어떤 속성 및 속성값을 가진 Element를 가리킬 수 있다.
+* 속성 선택자를 통해 지정한 속성의 속성값을 가진 Element를 가리킬 수 있다.
 
 ```css
 input[type="password"] {
