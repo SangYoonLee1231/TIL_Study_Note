@@ -305,7 +305,41 @@ print(exists)
 
 <br/>
 
-### 포함된 특정 문자열의 위치 구하기
+### 포함된 특정 부분 문자열의 위치 구하기
+
+* <code>index</code> 함수를 이용하면 특정 부분 문자열이 등장하는 위치를 구할 수 있다.
+
+* 단, 찾고자 하는 부분 문자열이 없으면 ValueError이 발샐하므로, 아래처럼 <code>in</code> 키워드를 함께 사용해야 한다.
+
+```python
+s = 'helloworld'
+
+if 'owo' in s:
+    print(s.index('owo'))
+else:
+    print(-1)
+```
+```
+4
+```
+
+<br/>
+
+* 사실, 파이썬에선 <code>find()</code> 함수를 통해 위의 문제를 더 간단히 해결할 수 있다.
+
+* <code>find()</code> 함수는 해당 부분자열이 없을 경우 -1을, 있을 경우 가장 앞에 나오는 부분 문자열의 위치를 반환한다.
+
+```python
+s = 'helloworld'
+
+print(s.find('owo'))
+print(s.find('ooo'))
+```
+```
+4
+-1
+```
+
 
 <br/>
 
