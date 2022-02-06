@@ -506,24 +506,151 @@ B
 * 아스키 코드를 통해 대소문자 변환을 쉽게 할 수 있다.
 
 ```python
-X = 'C'
+X = 'B'
 
 num_x = ord(X) - ord('A') + ord('a')    # 99
 
 print(chr(num_x))
 ```
 ```
-c
+b
 ```
 
 <br/>
 
-* 그 다음 알파벳 구하기
+* 물론, <code>upper()</code> 함수와 <code>lower</code> 함수를 통해 대소문자를 변환해도 된다.
+
+```python
+x = 'B'
+
+print(x.lower())
+```
+```
+b
+```
+
+<br/>
+
+```python
+x = 'b'
+
+print(x.upper())
+```
+```
+B
+```
+
+<br/>
+
+* 아스키 코드를 통해 그 다음 알파벳을 바로 구할수도 있다.
+
+```python
+x = 'A'
+
+print(ord(x))
+print(ord(x) + 1)
+print(chr(ord(x) + 1))
+```
+```
+65
+66
+B
+```
+
+<br/>
+
+* 문자열 끼리는 서로 비교가 가능하며, 아스키 코드 번호 순으로 비교된다.
+
+```python
+# 문자 x가 대문자인지 확인하는 코드
+x = input()
+
+if 'A' <= x and x <= 'Z':
+    print("Upper Case")
+```
+```
+>> B
+
+Upper Case
+```
+
+<br/>
+
+## 문자열 
+
+* 문자열이 전부 알파벳인지 혹은 전부 숫자인지 확인하려면, <code>isalpha</code> 함수 혹은 <code>isdigit</code> 함수를 사용하면 된다.
+
+```python
+print("abcg".isalpha())
+print("abc3".isalpha())
+
+print("1234".isdigit())
+print("123g".isdigit())
+```
+```
+True
+False
+
+True
+False
+```
 
 <br/>
 
 ## 문자열 형변환
 
+* 숫자로 이루어진 문자열을 정수로 변환하기 위해선 <code>int()</code> 함수로 감싸주면 된다.
+
+```python
+a = '123'
+
+a = int(a) + 1
+
+print(a)
+```
+```
+124
+```
+
+<br/>
+
+* 반대로, 정수를 문자열로 변환하기 위해선 <code>str()</code> 함수로 감싸주면 된다.
+
+```python
+a = 123
+
+a = str(a) + '456'
+
+print(a)
+```
+```
+123456
+```
+
 <br/>
 
 ## 문자열 비교
+
+* python에선 두 문자열이 동일한 지 비교하기 위해 숫자 비교처럼 <code>==</code> 연산자를 사용하면 된다.
+
+```python
+print('cat' == 'cat')
+print('dog' == 'cat')
+```
+```
+True
+False
+```
+
+<br/>
+
+* <code><</code>,<code>></code> 연산을 통해 사전순으로 앞선 문자열이 무엇인지 알 수 있다. 값이 작을수록 사전순으로 앞서다는 것을 의미한다.
+
+```python
+print('abc' < 'bc')
+print('abc' < 'd')
+```
+```
+True
+False
+```
