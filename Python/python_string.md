@@ -8,20 +8,20 @@
 
 ## 목차
 
-* <a href="">문자열 입출력 기본 방법</a>
-* <a href="">문자열의 문자 참조하기</a>
-* <a href="">문자열의 길이</a>
-* <a href="">문자열 리스트 (+ 문자열 리스트로 입력 받기)</a>
-* <a href="">공백 단위로 문자열 입력받기</a>
-* <a href="">문자열 순회하기</a>
-* <a href="">문자열 붙이기</a>
-* <a href="">특정 문자열이 포함된 경우</a>
-* <a href="">문자열 내 문자 수정하기</a>
-* <a href="">문자열 내 문자 제거하기</a>
-* <a href="">문자열 우측으로 밀기</a>
-* <a href="">아스키 코드</a>
-* <a href="">문자열 형변환</a>
-* <a href="">문자열 비교</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EA%B8%B0%EB%B3%B8-%EB%B0%A9%EB%B2%95">문자열 입출력 기본 방법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EB%AC%B8%EC%9E%90-%EC%B0%B8%EC%A1%B0%ED%95%98%EA%B8%B0">문자열의 문자 참조하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EA%B8%B8%EC%9D%B4">문자열의 길이</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A6%AC%EC%8A%A4%ED%8A%B8">문자열 리스트 (+ 문자열 리스트로 입력 받기)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EA%B3%B5%EB%B0%B1-%EB%8B%A8%EC%9C%84%EB%A1%9C-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9E%85%EB%A0%A5%EB%B0%9B%EA%B8%B0">공백 단위로 문자열 입력받기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%88%9C%ED%9A%8C%ED%95%98%EA%B8%B0">문자열 순회하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%9D%B4%EA%B8%B0">문자열 붙이기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B4-%ED%8F%AC%ED%95%A8%EB%90%9C-%EA%B2%BD%EC%9A%B0">특정 문자열이 포함된 경우</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%B4-%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">문자열 내 문자 수정하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%B4-%EB%AC%B8%EC%9E%90-%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0">문자열 내 문자 제거하기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9A%B0%EC%B8%A1%EC%9C%BC%EB%A1%9C-%EB%B0%80%EA%B8%B0">문자열 우측으로 밀기</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EC%95%84%EC%8A%A4%ED%82%A4-%EC%BD%94%EB%93%9C">아스키 코드</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%98%95%EB%B3%80%ED%99%98">문자열 형변환</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B9%84%EA%B5%90">문자열 비교</a>
 
 <br/>
 
@@ -575,8 +575,6 @@ Upper Case
 ```
 
 <br/>
-
-## 문자열 
 
 * 문자열이 전부 알파벳인지 혹은 전부 숫자인지 확인하려면, <code>isalpha</code> 함수 혹은 <code>isdigit</code> 함수를 사용하면 된다.
 
