@@ -37,6 +37,8 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md">Python - 입력 함수 <code>input()</code> 사용법</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_operator.md">Python - 사칙연산을 위한 연산자</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_conditional.md">Python - 조건문</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md">Python - 1차원 리스트(배열)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md">Python - 2차원 리스트(배열)</a>
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_string.md">Python - 문자열 다루기</a>
 
 
