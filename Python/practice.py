@@ -1,14 +1,9 @@
-arr = []    # 또는 arr = list()
+arr = [1, 2, 3, 4, 5]
 
-arr.append(1)    # arr = [1]
-arr.append(3)    # arr = [1, 3]
-arr.append(5)    # arr = [1. 3, 5]
-
-print(len(arr))  # 3
-print(sum(arr))  # 9
-
-a = arr.pop()
-print(f"a = {a}, arr = {arr}")     # a = 5, arr = [1, 3]
-
-print(len(arr))     # 2
-print(sum(arr[1:]))     # 3
+print(arr[1:3])     # [2, 3]
+print(arr[1:3:1])   # [2, 3]
+print(arr[2:])      # [3, 4, 5]
+print(arr[:3])      # [1, 2, 3]
+print(arr[3:0:-1])  # [4, 3, 2]
+print(arr[::-1])    # [5, 4, 3, 2, 1]
+print(arr[::2])     # [1, 3, 5]

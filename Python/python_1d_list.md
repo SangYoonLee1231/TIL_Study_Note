@@ -8,6 +8,17 @@
 
 ## 목차
 
+* <a href=""><code>input().split()</code> 활용법</a>
+* <a href="">리스트 슬라이싱 (Slicing)</a>
+* <a href="">자주 쓰이는 리스트 함수</a>
+* <a href="">리스트 값 참조</a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
+
 <br/>
 
 ## <code>input().split()</code> 활용법
@@ -70,10 +81,13 @@ arr = [1, 2, 3, 4, 5]
 
 print(arr[1:3])     # [2, 3]
 print(arr[1:3:1])   # [2, 3]
+
 print(arr[2:])      # [3, 4, 5]
 print(arr[:3])      # [1, 2, 3]
+
 print(arr[3:0:-1])  # [4, 3, 2]
 print(arr[::-1])    # [5, 4, 3, 2, 1]
+print(arr[::2])     # [1, 3, 5]
 ```
 
 <br/>
@@ -115,4 +129,95 @@ a = 5, arr = [1, 3]
 
 <br/>
 
-# 리스트 값 참조
+## 리스트 값 참조
+
+* 리스트의 첫 번째 원소는 0번 index, 두 번째 원소는 1번 index, ... 와 같이 0번 index를 시작으로 리스트 원소 값을 조회할 수 있다.
+
+* 다시 말해, 리스트에서 i번째 원소의 값을 얻으려면, <code>arr[i-1]</code>을 참조해야 한다.
+
+```python
+arr = [1, 2, 3, 4, 5]
+
+print(arr[2])   # 3번째 원소
+print(arr[3])   # 4번째 원소
+```
+```
+3
+4
+```
+
+<br/>
+
+* python에선 음수 index를 지원한다.  
+
+* arr[-1] == 끝에서 첫 번째 원소, arr[-2] == 끝에서 두 번째 원소, ...
+
+```python
+arr = [1, 2, 3, 4, 5]
+
+print(arr[-1])
+print(arr[-2])
+```
+```
+5
+4
+```
+
+<br/>
+
+## ✨List Comprehension
+
+* 아래처럼 리스트를 선언하고 for문을 통해 입력값을 넣어주는 과정을, list comprehension을 통해 한 줄로 표현할 수 있다.
+
+* 표현 방식이 삼항 연산자 표현 방식과 비슷하다.
+
+```python
+arr = []
+for i in range(10):
+    arr.append(i)
+```
+```python
+arr = [i for _ in range(10)]
+```
+
+<br/>
+
+```python
+arr = [1, 2, 3, 4]
+
+new_arr = []
+for elem in arr:
+    new_arr.append(elem * elem)
+```
+```python
+arr = [1, 2, 3, 4]
+
+new_arr = [
+    elem * elem
+    for elem in arr
+]
+```
+
+<br/>
+
+### 조건문을 포함하는 list comprehension
+
+```python
+arr = [1, 2, 3, 4]
+
+new_arr = []
+for elem in arr:
+    if elem % 2 == 1:
+        new_arr.append(elem)
+```
+```python
+arr = [1, 2, 3, 4]
+
+new_arr = [
+    elem
+    for elem in arr
+    if elem % 2 == 1
+]
+```
+
+<br/>
