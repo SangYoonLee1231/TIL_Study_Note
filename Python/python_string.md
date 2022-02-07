@@ -81,17 +81,15 @@ llo
 
 * <code>len()</code>함수를 이용하면 된다.
 
-* 이 때, 공백도 길이에 포함된다.
+* 이 때, 공백과 개행문자 <code>\n</code>도 길이에 포함된다.
 
 ```python
-sentence = input()
+sentence = "hello world\n"
 
 print(len(sentence))
 ```
 ```
-hello world
-
-11
+12
 ```
 
 <br/>
