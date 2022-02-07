@@ -25,8 +25,15 @@
 
 * 이때 괄호 내에 큰 따옴표나 작은 따옴표 둘 중 아무거나 사용해도 된다.
 
+* python에선 작은 따옴표로 묶어도 문자가 아닌 문자열로 인식한다.
+
 ```python
 print("Hello World")
+print('Hello World')
+```
+```
+Hello World
+Hello World
 ```
 
 <br/>
