@@ -31,7 +31,7 @@ else:   pass
 
 * 위와 같이 특정 방향(주로 상하좌우)으로 이동하는 문제를 더 잘 구현하기 위해, <code>dx, dy 테크닉</code>을 사용할 수 있다.
 
-<img src="img/dx_dy1.png" width="350px">
+    <img src="img/dx_dy1.png" width="350px">
 
 ```python
 dir_num = 0
