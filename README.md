@@ -72,7 +72,7 @@
 
 ### 실전
 
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/dx_dy.md">dx-dy 테크닉</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/dx_dy.md">dx, dy 테크닉</a>
 
 
 ## 아두이노 (Arduino)
