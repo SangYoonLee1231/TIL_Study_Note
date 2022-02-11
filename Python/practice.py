@@ -1,31 +1,31 @@
-n = int(input())
-a = [
+n, r, c = list(map(int, input().split()))
+
+arr = [
     list(map(int, input().split()))
     for _ in range(n)
 ]
-x, y = 0, 0
 
+dxs = [-1, 1, 0, 0]
+dys = [0, 0 ,-1, 1]
+
+continue_move = True
 
 def in_range(x, y):
-    return x >= 0 and x < 4 and y >= 0 and y < 4
+    return x >= 0 and x <= n-1 and y >= 0 and y <= n-1
 
-def ones_cnt(x, y):
-    cnt = 0
-    dxs = [0, 0, 1, -1]
-    dys = [1, -1, 0, 0]
+def move(x, y):
+    global continue_move
 
     for dx, dy in zip(dxs, dys):
-        nx = x + dx
-        ny = y + dy
-        if in_range(nx, ny) and a[nx][ny] == 1:
-            cnt += 1
+        nx, ny = x + dx, y + dy
+        if arr[x][y] < arr[nx][ny] and in_range(nx, ny):
+            print(arr[x][y], end=" ")
+            return nx, ny
+    print(arr[x][y], end=" ")
+    continue_move = False
+    return x, y
 
-    return cnt
 
-ans = 0
-for i in range(n):
-    for j in range(n):
-        if ones_cnt(i, j) >= 3:
-            ans += 1
-
-print(ans)
+x, y = r-1, c-1
+while continue_move:
+    x, y = move(x, y)
