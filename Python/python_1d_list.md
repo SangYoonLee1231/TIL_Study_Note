@@ -12,12 +12,8 @@
 * <a href="">리스트 슬라이싱 (Slicing)</a>
 * <a href="">자주 쓰이는 리스트 함수</a>
 * <a href="">리스트 값 참조</a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
+* <a href="">List Comprehension</a>
+* <a href="">index, count, max, min 함수</a>
 
 <br/>
 
@@ -221,3 +217,131 @@ new_arr = [
 ```
 
 <br/>
+
+## index, count, max, min 함수
+
+### index 함수
+
+* <code>index()</code> 함수는 어떤 값이 리스트의 몇 번째 index에 있는지를 알려주는 함수이다.
+
+```python
+word = ['A', 'P', 'P', 'L', 'E']
+
+print(word.index('L'))
+```
+```
+3
+```
+
+<br/>
+
+* 단, 존재하지 않는 원소에 대해 index 함수를 이용하면 Value Error가 발생한다
+
+```python
+word = ['A', 'P', 'P', 'L', 'E']
+
+print(word.index('M'))
+```
+```
+ValueError: 'M' is not in list
+```
+
+<br/>
+
+* 따라서 <code>in</code> 키워드를 통해 찾고자 하는 원소가 리스트에 있는지 먼저 확인하는 것이 좋다.
+
+```python
+word = ['A', 'P', 'P', 'L', 'E']
+
+if 'M' in word:
+    print(word.index('M'))
+else:
+    print("There is no 'M'")
+```
+```
+There is no 'M'
+```
+
+<br/>
+
+### count 함수
+
+* 리스트에 어떤 원소가 몇 번 들어있는지는 <code>count</code> 함수를 통해 알 수 있다.
+
+```python
+word = ['A', 'P', 'P', 'L', 'E']
+
+cnt = word.count('P')
+print(cnt)
+```
+```
+2
+```
+
+<br/>
+
+* 물론 <code>count</code> 함수를 쓰지 않고도 구현할 수 있다.
+
+```python
+word = ['A', 'P', 'P', 'L', 'E']
+
+cnt = 0
+for elem in word:
+    if elem = 'P':
+        cnt += 1
+
+print(cnt)
+```
+```
+2
+```
+
+<br/>
+
+### max, min 함수
+
+* python에서 리스트 내의 숫자들 중 최댓값 혹은 최솟값을 쉽고 간단히 구하는 방법은 <code>max</code> 함수 혹은 <code>min</code> 함수를 쓰는 것이다.
+
+    ```python
+    arr = [1, 5, 2, 5, 3, 9]
+
+    print(max(arr))
+    print(min(arr))
+    ```
+    ```
+    9
+    1
+    ```
+
+<br/>
+
+* 위 함수들을 쓰지 않고 직접 구현하는 것도 가능하다.
+
+    ```python
+    import sys
+
+    arr= [1, 5, 2, 5, 3, 9]
+
+
+    # 최댓값 구하기
+    max_val = -sys.maxsize
+    for elem in arr:
+        if elem > max_val:
+            max_val = elem
+
+    print(max_val)
+
+
+    # 최솟값 구하기
+    min_val = sys.maxsize
+    for elem in arr:
+        if elem < min_val:
+            min_val = elem
+
+    print(min_val)
+    ```
+
+    ```
+    9
+    1
+    ```
