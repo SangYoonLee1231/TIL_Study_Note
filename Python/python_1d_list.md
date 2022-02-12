@@ -8,7 +8,8 @@
 
 ## 목차
 
-* <a href=""><code>input().split()</code> 활용법</a>
+* <a href="">1차원 리스트</a>
+* <a href=""><code>1차원 리스트 입력 (input().split())</code> 활용법</a>
 * <a href="">리스트 슬라이싱 (Slicing)</a>
 * <a href="">자주 쓰이는 리스트 함수</a>
 * <a href="">리스트 값 참조</a>
@@ -17,7 +18,21 @@
 
 <br/>
 
-## <code>input().split()</code> 활용법
+## 1차원 리스트
+
+* python에서 배열은 리스트를 사용한다.
+
+* 리스트는 정보 여러개를 하나의 변수처럼 사용하는 자료구조이다.
+
+('자료구조' 카테고리의 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>』 참고)
+
+    ```python
+    arr = [1, 2, 3, 4, 'Life', 'is', 'too', 'short']
+    ```
+
+<br/>
+
+## 1차원 리스트 입력 (<code>input().split()</code> 활용법)
 
 * <code>input().split()</code>으로 공백을 사이에 두고 주어지는 입력값을 나눠 받을 수 있다.
 
