@@ -24,7 +24,7 @@
 
 * 리스트는 정보 여러 개를 하나의 변수처럼 사용하는 자료구조이다.
 
-('자료구조' 카테고리의 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>』 참고)
+    ('자료구조' 카테고리의 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>』 참고)
 
     ```python
     arr = [1, 2, 3, 4, 'Life', 'is', 'too', 'short']
@@ -36,46 +36,46 @@
 
 * <code>input().split()</code>으로 공백을 사이에 두고 주어지는 입력값을 나눠 받을 수 있다.
 
-```python
-arr = input().split()
+    ```python
+    arr = input().split()
 
-print(arr)
-```
-```
->> 1 3 5
+    print(arr)
+    ```
+    ```
+    >> 1 3 5
 
-['1', '3', '5']
-```
+    ['1', '3', '5']
+    ```
 
 <br/>
 
 * 여기서 <code>map</code>을 활용하면, 입력받는 모든 값에 원하는 함수를 적용시킬 수 있다.
 
-```python
-arr = list(map(int, input().split()))
+    ```python
+    arr = list(map(int, input().split()))
 
-print(arr)
-```
-```
->> 1 3 5
+    print(arr)
+    ```
+    ```
+    >> 1 3 5
 
-[1, 3, 5]
-```
+    [1, 3, 5]
+    ```
 
 <br/>
 
 * 이 때, 입력받을 값의 개수가 고정되어 있으면, <code>list()</code>함수 대신 <code>tuple()</code>함수를 쓰는 것이 좋다. (unpacking 활용)
 
-```python
-n, m = tuple(map(int, input().split()))
+    ```python
+    n, m = tuple(map(int, input().split()))
 
-print(n, m)
-```
-```
->> 1 3
+    print(n, m)
+    ```
+    ```
+    >> 1 3
 
-1 3
-```
+    1 3
+    ```
 
 <br/>
 
@@ -83,23 +83,23 @@ print(n, m)
 
 * 리스트에 대해 slice를 활용하면 일부 범위, 조건에 해당하는 원소들을 가져올 수 있다.
 
-```
-배열 이름[start값:end값:step]
-```
+    ```
+    배열 이름[start값:end값:step]
+    ```
 
-```python
-arr = [1, 2, 3, 4, 5]
+    ```python
+    arr = [1, 2, 3, 4, 5]
 
-print(arr[1:3])     # [2, 3]
-print(arr[1:3:1])   # [2, 3]
+    print(arr[1:3])     # [2, 3]
+    print(arr[1:3:1])   # [2, 3]
 
-print(arr[2:])      # [3, 4, 5]
-print(arr[:3])      # [1, 2, 3]
+    print(arr[2:])      # [3, 4, 5]
+    print(arr[:3])      # [1, 2, 3]
 
-print(arr[3:0:-1])  # [4, 3, 2]
-print(arr[::-1])    # [5, 4, 3, 2, 1]
-print(arr[::2])     # [1, 3, 5]
-```
+    print(arr[3:0:-1])  # [4, 3, 2]
+    print(arr[::-1])    # [5, 4, 3, 2, 1]
+    print(arr[::2])     # [1, 3, 5]
+    ```
 
 <br/>
 
@@ -113,30 +113,30 @@ print(arr[::2])     # [1, 3, 5]
 
 * <code>sum</code> 함수 : 리스트 안의 모든 원소의 합을 반환한다.
 
-```python
-# 비어있는 리스트 선언
-arr = []    # 또는 arr = list()
+    ```python
+    # 비어있는 리스트 선언
+    arr = []    # 또는 arr = list()
 
-arr.append(1)    # arr = [1]
-arr.append(3)    # arr = [1, 3]
-arr.append(5)    # arr = [1. 3, 5]
+    arr.append(1)    # arr = [1]
+    arr.append(3)    # arr = [1, 3]
+    arr.append(5)    # arr = [1. 3, 5]
 
-print(len(arr))  # 3
-print(sum(arr))  # 9
+    print(len(arr))  # 3
+    print(sum(arr))  # 9
 
-a = arr.pop()
-print(f"a = {a}, arr = {arr}")     # a = 5, arr = [1, 3]
+    a = arr.pop()
+    print(f"a = {a}, arr = {arr}")     # a = 5, arr = [1, 3]
 
-print(len(arr))         # 2
-print(sum(arr[1:]))     # 3
-```
-```
-3
-9
-a = 5, arr = [1, 3]
-2
-3
-```
+    print(len(arr))         # 2
+    print(sum(arr[1:]))     # 3
+    ```
+    ```
+    3
+    9
+    a = 5, arr = [1, 3]
+    2
+    3
+    ```
 
 <br/>
 
@@ -146,16 +146,16 @@ a = 5, arr = [1, 3]
 
 * 다시 말해, 리스트에서 i번째 원소의 값을 얻으려면, <code>arr[i-1]</code>을 참조해야 한다.
 
-```python
-arr = [1, 2, 3, 4, 5]
+    ```python
+    arr = [1, 2, 3, 4, 5]
 
-print(arr[2])   # 3번째 원소
-print(arr[3])   # 4번째 원소
-```
-```
-3
-4
-```
+    print(arr[2])   # 3번째 원소
+    print(arr[3])   # 4번째 원소
+    ```
+    ```
+    3
+    4
+    ```
 
 <br/>
 
@@ -163,16 +163,16 @@ print(arr[3])   # 4번째 원소
 
 * arr[-1] == 끝에서 첫 번째 원소, arr[-2] == 끝에서 두 번째 원소, ...
 
-```python
-arr = [1, 2, 3, 4, 5]
+    ```python
+    arr = [1, 2, 3, 4, 5]
 
-print(arr[-1])
-print(arr[-2])
-```
-```
-5
-4
-```
+    print(arr[-1])
+    print(arr[-2])
+    ```
+    ```
+    5
+    4
+    ```
 
 <br/>
 
