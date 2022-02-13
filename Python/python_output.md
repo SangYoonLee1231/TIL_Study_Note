@@ -415,7 +415,7 @@ print(f"a = {a}, b = {b}")
 a = 2, b = 1
 ```
 
-* (참고) 파이썬만 temp없이 a,b = b,a 교환할 수 있는 이유는 python만 tuple자료형이 존재하고 그 tuple이 unpacking을 지원해서 이다.
+* (참고) 파이썬만 temp없이 a,b = b,a 교환할 수 있는 이유는 python만 tuple 자료형이 존재하고, 그 tuple이 unpacking을 지원하기 때문이다.
 
 
 <br/>
@@ -429,7 +429,7 @@ arr = [1, 2]
 tup = (1, 2)
 
 a, b = arr
-a,b = tup
+a, b = tup
 ```
 
 
