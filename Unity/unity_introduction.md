@@ -168,17 +168,19 @@
 
 * 우리가 '세트장'에 구성한 모든 요소에 대한 목록을 표현하고 관리한다.
 
-* Scene View에 어떤 오프젝트를 꺼내면 Hierarchy View에 반드시 표시된다. 즉, Scene View와 Hierarchy View는 링크가 연결되어 있다.
+* Scene View에서, 어떤 것을 새상으로 꺼내면 Hierarchy View에도 반드시 표시된다. 즉, Scene View와 Hierarchy View는 서로 링크로 연결되어 있다.
 
-* 계층 뷰. 리스트 뷰라고 부르는 것이 옳은 표현이나, 관리 구조가 계층 구조이므로 Hierarchy View라 부른다. (폴더로 관리)
+* 계층 뷰. 리스트 뷰라고 부르는 것이 옳은 표현이나 관리 구조가 계층 구조이므로 Hierarchy View라 부른다. (폴더로 관리)
 
-* 걔층 구조는 코드에서도 바꿀 수는 있다.
+* 계층 구조는 코드에서도 바꿀 수는 있다.
 
 <br/>
 
 ### Project View
 
 * 영화 세트장의 '창고'에 비유
+
+* Project View에 표시된 Asset들을 우리는 세상에 꺼내놓는다.
 
 <br/>
 
