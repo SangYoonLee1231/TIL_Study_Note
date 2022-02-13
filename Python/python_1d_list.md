@@ -22,7 +22,7 @@
 
 * python에서 배열은 리스트를 사용한다.
 
-* 리스트는 정보 여러개를 하나의 변수처럼 사용하는 자료구조이다.
+* 리스트는 정보 여러 개를 하나의 변수처럼 사용하는 자료구조이다.
 
 ('자료구조' 카테고리의 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">순차적 자료구조 : 배열 vs 리스트</a>』 참고)
 
