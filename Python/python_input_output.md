@@ -17,25 +17,24 @@
 
 * python에선 <code>input()</code>함수를 통해 한 줄 단위로 문자열을 입력 받을 수 있다.
 
+    ```python
+    a = input()
 
-```python
-a = input()
+    print(f"a = {a}")
+    ```
 
-print(f"a = {a}")
-```
+    ▼ 입력 및 출력 결과
 
-▼ 입력 및 출력 결과
+    ```
+    >> Hello World
 
-```
->> Hello World
+    a = Hello World
+    ```
+    ```
+    >> 4
 
-a = Hello World
-```
-```
->> 4
-
-a = 4    (이때 4는 문자열 "4"이다.)
-```
+    a = 4    (이때 4는 문자열 "4"이다.)
+    ```
 
 <br/>
 
@@ -43,75 +42,74 @@ a = 4    (이때 4는 문자열 "4"이다.)
 
 * <code>input()</code>함수로 입력받을 때, 입력값의 자료형이 정수나 실수여도 문자열로 인식된다.
 
+    ```python
+    b = input()
 
-```python
-b = input()
+    print(b + 1)
+    ```
 
-print(b + 1)
-```
+    ▼ 입력 및 출력 결과
 
-▼ 입력 및 출력 결과
+    ```
+    >> 4
 
-```
->> 4
+    ----> 4 print(b + 1)
 
-----> 4 print(b + 1)
-
-TypeError: can only concatenate str (not "int") to str
-```
+    TypeError: can only concatenate str (not "int") to str
+    ```
 
 * 문자열에 숫자를 더할 순 없으므로 에러가 발생하는 것이다.
 
 * 숫자로만 이루어진 문자열을 다른 자료형으로 바꾸기 위해선, 아래와 같이 형변환을 해주어야 한다.
 
-```python
-b = int(input())
+    ```python
+    b = int(input())
 
-print(b + 1)
-```
+    print(b + 1)
+    ```
 
-▼ 입력 및 출력 결과
+    ▼ 입력 및 출력 결과
 
-```
->> 4
+    ```
+    >> 4
 
-5
-```
+    5
+    ```
 
 * 또는 아래와 같이 값을 우선 입력 받고 형변환을 해줘도 된다.
 
-```python
-b = input()
-b = int(b)
+    ```python
+    b = input()
+    b = int(b)
 
-print(b + 1)
-```
+    print(b + 1)
+    ```
 
-▼ 입력 및 출력 결과
+    ▼ 입력 및 출력 결과
 
-```
->> 4
+    ```
+    >> 4
 
-5
-```
+    5
+    ```
 
 <br/>
 
 * 실수형이라면 <code>float()</code>로 감싸주면 된다.
 
-```python
-c = float(input())
+    ```python
+    c = float(input())
 
-print(c + 0.32)
-```
+    print(c + 0.32)
+    ```
 
-▼ 입력 및 출력 결과
+    ▼ 입력 및 출력 결과
 
-```
->> 2.23
+    ```
+    >> 2.23
 
-2.55
-```
+    2.55
+    ```
 
 <br/>
 
@@ -121,54 +119,52 @@ print(c + 0.32)
 
 * <code>split()</code>함수를 그대로 사용하면, 공백을 기준으로 문자열을 자르고, 잘려나간 각 요소를 원소로 갖는 하나의 리스트가 만들어진다.
 
-* 
+    ```python
+    a = input()
+    print(a.split())
+    ```
 
-```python
-a = input()
-print(a.split())
-```
+    ▼ 입력 및 출력 결과
 
-▼ 입력 및 출력 결과
-
-```
->> Hello World
-['Hello', 'World']
-```
+    ```
+    >> Hello World
+    ['Hello', 'World']
+    ```
 
 <br/>
 
 * <code>split()</code>함수 안에 다른 문자를 넣으면, 공백 대신 그 문자를 기준으로 문자열을 자른다.
 
-```python
-a = input()
-print(a.split("."))
-```
+    ```python
+    a = input()
+    print(a.split("."))
+    ```
 
-▼ 입력 및 출력 결과
+    ▼ 입력 및 출력 결과
 
-```
->> 20.48.67
-['20', '48', '67']
-```
+    ```
+    >> 20.48.67
+    ['20', '48', '67']
+    ```
 
 <br/>
 
 * ✨ <code>input()</code>함수와 <code>split()</code>함수를 같이 이어 쓰면, 입력 받은 문자열을 나눠서 리스트로 바로 저장할 수 있다.
 
-```python
-arr = input().split()
-n = int(arr[0])
-m - int(arr[1])
+    ```python
+    arr = input().split()
+    n = int(arr[0])
+    m - int(arr[1])
 
-print(n, m, n * m, sep="\n")
-```
+    print(n, m, n * m, sep="\n")
+    ```
 
-▼ 입력 및 출력 결과
+    ▼ 입력 및 출력 결과
 
-```
->> 16 12
+    ```
+    >> 16 12
 
-16
-12
-192
-```
+    16
+    12
+    192
+    ```
