@@ -1,11 +1,24 @@
 ## enumerate 함수
 
-```python
-arr = [10, 20, 30, 40, 50]
+* <code>enumerate</code> 함수는 for문을 돌 때, 각 원소와 동시에 index를 뽑아주는 역할을 하는 함수이다.
 
-for i, elem in enumerate(arr):
-    print(i, elem)
-```
+    ```python
+    arr = [10, 20, 30, 40, 50]
+
+    for i, elem in enumerate(arr):
+        print(i, elem)
+    ```
+    ```
+    0 10
+    1 20
+    2 30
+    3 40
+    4 50
+    ```
+
+<br/>
+
+* <code>enumerate</code> 함수에 start값을 인자로 넘기면 시작 index값을 설정할 수 있다.
 
 ```python
 arr = [10, 20, 30, 40, 50]
@@ -13,19 +26,10 @@ arr = [10, 20, 30, 40, 50]
 for i, elem in enumerate(arr, start=1):
     print(i, elem)
 ```
-
-```python
-students = []
-
-students.sort(key=lambda x: -x[0])
-
-for idx, (_, _, _, number) in enumerate(students, start=1):
-    print(f"{idx}등: {number}번")
-
-a, b = 3, (5, 6, 7, 4, 6)
-
-a, (b1, b2, b3, b4, b5) = 3, (5, 6, 7, 4, 6)
-
-b1, b2, b3, b4, b5 = b
-print(b5)
+```
+1 10
+2 20
+3 30
+4 40
+5 50
 ```
