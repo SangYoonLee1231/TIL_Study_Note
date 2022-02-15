@@ -43,8 +43,6 @@
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_enumerate.md">Python - <code>enumerate</code> 함수</a>
 
 
-
-
 ## 자료구조
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
@@ -65,6 +63,7 @@
 
 * <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
 
+
 ## 알고리즘
 
 ### 기본 개념
@@ -72,6 +71,7 @@
 
 ### 실전 개념
 * <a href=""></a>
+
 
 ## 아두이노 (Arduino)
 
