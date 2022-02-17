@@ -206,9 +206,11 @@
 
 - 어떤 리스트 내 정수 원소들의 최댓값 혹은 최솟값을 찾는 프로그램을 내장 함수를 쓰지 않고 직접 구현할 땐, 초깃값을 잘 잡아주어야 한다.
 
-* 이 때, 첫 번째 원소를 초갓값으로 잡아주어도 되지만, python의 <code>int</code>의 최댓값인 <code>sys.maxsize</code>를 활용하는 것이 좋다.
+<br/>
 
-* 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구한다.
+- 이 때, 첫 번째 원소를 초갓값으로 잡아주어도 되지만, python의 <code>int</code>의 최댓값인 <code>sys.maxsize</code>를 활용하는 것이 좋다.
+
+- 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구한다.
 
     <br/>
 
@@ -232,6 +234,6 @@
   67
   ```
 
-- 위 코드처럼 리스트 내 원소들의 최댓값 찾을 땐, 초기값을 가장 작은 수인 <code>-sys.maxsize</code>로 둔다. (for문을 돌면서 더 큰 값으로 업데이트 할 수 있도록)
+* 위 코드처럼 리스트 내 원소들의 최댓값 찾을 땐, 초기값을 가장 작은 수인 <code>-sys.maxsize</code>로 둔다. (for문을 돌면서 더 큰 값으로 업데이트 할 수 있도록)
 
   - 반대로 최솟값을 찾을 땐, 가장 큰 수 <code>sys.maxsize</code>로 초기값을 잡아준다.
