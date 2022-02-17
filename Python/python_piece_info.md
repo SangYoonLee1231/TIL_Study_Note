@@ -17,7 +17,97 @@
 
 * 파이썬에서 <code>for</code>문이나 <code>if</code>문, 또는 함수의 내부에 선언한 지역 변수는 놀랍개도 main 함수 영역(indent가 없는 코드 영역)에서도 전역 변수처럼 그대로 사용된다.
 
+
+```python
+sum_val = 0
+for idx in range(1, 6):
+    sum_val += idx
+
+print(idx)
+```
+```
+5
+```
+
+<br/>
+
+```python
+n = 10
+if n % 2 == 0:
+    k = 5
+else:
+    k = 6
+
+print(k)
+```
+```
+5
+```
+
 * 다만 이러한 지역 변수는 다른 함수(<code>for</code>문, <code>if</code>문도 표함)의 내부 영역에선 참조할 수 없다.
+
+```python
+def g(n):
+    return n + t  # 이 g 함수 내부에선, f 함수 내부의 t에 접근할 수 없다.
+
+def f(n, p1):
+    t = 15
+    return n + p1 + g(10)
+
+p = 9
+print(f(6, 10))
+```
+```
+NameError: name 't' is not defined
+```
+
+* 그러나 코드는 되도록 이렇게 안 짜는 것이 좋다.
+
+<br/>
+
+## range 함수의 이해 (C++ 반복문과 python 반복문의 차이점)
+
+* <code>range(1, 6)</code> == <code>[1, 2, 3, 4, 5]</code> 이렇게 이해하면 편한다. (틀린 설명이나)
+
+<br/>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum_val = 0;
+    int i;
+
+    for (i = 0; i < 6; i++) {
+        sum_val += i;
+    }
+
+    cout << i;
+
+    return 0;
+}
+```
+```
+6
+```
+
+* C++에서 for문은 변수 i 자체가 값이 1씩 증가하다 조건을 벗어나는 순간, 즉 위 코드에선 i가 6이 된 직후, 종료한다.
+
+<br/>
+
+```python
+sum_val = 0
+for i in range(1, 6):
+    sum_val += i
+
+print(i)
+```
+```
+5
+```
+
+* 반면 파이썬에서 for문은 변수 i 자리에 1부터 5까지 값이 하나씩 대입되고 끝난다. 즉 i값은 5인 상태가 된다.
 
 <br/>
 
