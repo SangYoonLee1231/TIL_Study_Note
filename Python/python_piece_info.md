@@ -44,11 +44,13 @@ print(k)
 5
 ```
 
+<br/>
+
 * 다만 이러한 지역 변수는 다른 함수(<code>for</code>문, <code>if</code>문도 포함)의 내부 영역에선 참조할 수 없다.
 
 ```python
 def g(n):
-    return n + t  # 이 g 함수 내부에선, f 함수 내부의 t에 접근할 수 없다.
+    return n + t    # 이 g함수 내부에선, f함수 내부의 t에 접근할 수 없다.
 
 def f(n, p1):
     t = 15
