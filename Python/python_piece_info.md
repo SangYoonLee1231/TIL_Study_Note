@@ -210,6 +210,8 @@
 
 * 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구한다.
 
+    <br/>
+
   ```python
   import sys
 
