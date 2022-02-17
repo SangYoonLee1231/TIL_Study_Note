@@ -18,50 +18,50 @@
 * 파이썬에서 <code>for</code>문이나 <code>if</code>문, 또는 함수의 내부에 선언한 지역 변수는 놀랍개도 main 함수 영역(indent가 없는 코드 영역)에서도 그대로 사용할 수 있다.
 
 
-```python
-sum_val = 0
-for idx in range(1, 6):
-    sum_val += idx
+    ```python
+    sum_val = 0
+    for idx in range(1, 6):
+        sum_val += idx
 
-print(idx)
-```
-```
-5
-```
+    print(idx)
+    ```
+    ```
+    5
+    ```
 
-<br/>
+    <br/>
 
-```python
-n = 10
-if n % 2 == 0:
-    k = 5
-else:
-    k = 6
+    ```python
+    n = 10
+    if n % 2 == 0:
+        k = 5
+    else:
+        k = 6
 
-print(k)
-```
-```
-5
-```
+    print(k)
+    ```
+    ```
+    5
+    ```
 
 <br/>
 
 * 다만 이러한 지역 변수는 다른 함수(<code>for</code>문, <code>if</code>문도 포함)의 내부 영역에선 참조할 수 없다.
 
-```python
-def g(n):
-    return n + t    # 이 g함수 내부에선, f함수 내부의 t에 접근할 수 없다.
+    ```python
+    def g(n):
+        return n + t    # 이 g함수 내부에선, f함수 내부의 t에 접근할 수 없다.
 
-def f(n, p1):
-    t = 15
-    return n + p1 + g(10)
+    def f(n, p1):
+        t = 15
+        return n + p1 + g(10)
 
-p = 9
-print(f(6, 10))
-```
-```
-NameError: name 't' is not defined
-```
+    p = 9
+    print(f(6, 10))
+    ```
+    ```
+    NameError: name 't' is not defined
+    ```
 
 <br/>
 
@@ -73,43 +73,43 @@ NameError: name 't' is not defined
 
 * <code>range(1, 6)</code> == <code>[1, 2, 3, 4, 5]</code> 이렇게 이해하면 편한다. (틀린 설명이나)
 
-<br/>
+    <br/>
 
-```c++
-#include <iostream>
-using namespace std;
+    ```c++
+    #include <iostream>
+    using namespace std;
 
-int main() {
-    int sum_val = 0;
-    int i;
+    int main() {
+        int sum_val = 0;
+        int i;
 
-    for (i = 0; i < 6; i++) {
-        sum_val += i;
+        for (i = 0; i < 6; i++) {
+            sum_val += i;
+        }
+
+        cout << i;
+
+        return 0;
     }
-
-    cout << i;
-
-    return 0;
-}
-```
-```
-6
-```
+    ```
+    ```
+    6
+    ```
 
 * C++에서 for문은 변수 i 자체가 값이 1씩 증가하다 조건을 벗어나는 순간, 즉 위 코드에선 i가 6이 된 직후, 종료한다.
 
-<br/>
+    <br/>
 
-```python
-sum_val = 0
-for i in range(1, 6):
-    sum_val += i
+    ```python
+    sum_val = 0
+    for i in range(1, 6):
+        sum_val += i
 
-print(i)
-```
-```
-5
-```
+    print(i)
+    ```
+    ```
+    5
+    ```
 
 * 반면 파이썬에서 for문은 변수 i 자리에 1부터 5까지 값이 하나씩 대입되고 끝난다. 즉 i값은 5인 상태가 된다.
 
@@ -119,24 +119,24 @@ print(i)
 
 * 다음과 같이 2차원 배열을 선언하면 안 된다.
 
-```python
-[[0] * n ] * n
-```
+    ```python
+    [[0] * n ] * n
+    ```
 
 <br/>
 
 * 그 이유를 이해하기 위해 우선 다음 코드를 살펴보자.
 
-```python
-a = [0, 0, 0]
-b = a
+    ```python
+    a = [0, 0, 0]
+    b = a
 
-b[0] = 1
-print(a[0])
-```
-```
-1
-```
+    b[0] = 1
+    print(a[0])
+    ```
+    ```
+    1
+    ```
 
 * 놀랍게도, <code>b[0]</code>의 값을 바꾸었는데 <code>a[0]</code>의 값이 바뀌었다.
 
@@ -149,43 +149,43 @@ print(a[0])
 
 * 이제 다시 2차원 배열 선언 코드로 돌아오자.
 
-```python
-[0] * n 
-```
+    ```python
+    [0] * n 
+    ```
 
 * 위의 코드처럼 1차원 리스트를 선언해주는 것은, 그저 숫자를 복사하는 것이기 때문에 아무런 상관이 없다.
 
-```python
-[0, 0, 0, ... , 0] * n
-```
+    ```python
+    [0, 0, 0, ... , 0] * n
+    ```
 
 * 그러나 위처럼 1차원 리스트를 복사하여 2차원 리스트를 선언해주면, 복제된 모든 리스트가 같은 주소를 가리키게 된다.
 
 * 즉, 이 상태에서 2차원 리스트 내부의 하나의 리스트에 변화를 주면, 다른 모든 리스트에도 반영이 된다.
 
-```python
-a = [[0] * 10] * 10
+    ```python
+    a = [[0] * 10] * 10
 
-a[0][1] = 17
+    a[0][1] = 17
 
-print(a[1][1])
-```
-```
-17
-```
+    print(a[1][1])
+    ```
+    ```
+    17
+    ```
 
 <br/>
 
 * 그러므로 2차원 리스트를 선언할 땐, <code>list comprehension</code>을 쓰거나 <code>for</code>문을 통해 값을 추가하는 방법으로 해야 한다.
 
-```python
-lst1 = [
-    [0] * n
-    for _ in range(n)
-]
+    ```python
+    lst1 = [
+        [0] * n
+        for _ in range(n)
+    ]
 
-lst2 = []
-for _ in range(n):
-    lst_1d = [0] * n
-    lst2.append(lst_1d)
-```
+    lst2 = []
+    for _ in range(n):
+        lst_1d = [0] * n
+        lst2.append(lst_1d)
+    ```
