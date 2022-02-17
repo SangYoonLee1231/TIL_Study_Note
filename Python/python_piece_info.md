@@ -176,7 +176,7 @@ print(a[1][1])
 
 <br/>
 
-* 그러므로 2차원 리스트를 선언할 떈 <code>list comprehension</code>을 쓰거나 <code>for</code>문을 통해 값을 추가하는 방법으로 해야 한다.
+* 그러므로 2차원 리스트를 선언할 땐, <code>list comprehension</code>을 쓰거나 <code>for</code>문을 통해 값을 추가하는 방법으로 해야 한다.
 
 ```python
 lst1 = [
