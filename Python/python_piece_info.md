@@ -10,7 +10,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%97%90%EC%84%9C-%EB%B3%80%EC%88%98%EC%9D%98-scope-%EB%B2%94%EC%9C%84">파이썬에서 변수의 scope 범위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4-%EC%84%A0%EC%96%B8-%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD">2차원 배열 선언 시 유의 사항</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#python%EC%9D%98-%EC%B5%9C%EB%8C%80-%EC%B5%9C%EC%86%8C-%EC%A0%95%EC%88%98%EA%B0%92-%EC%B0%BE%EC%95%84-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">python의 최대 정수값 <code>sys.maxsize</code> 활용하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#python%EC%9D%98-%EC%B5%9C%EB%8C%80-%EC%A0%95%EC%88%98%EA%B0%92-sysmaxsize-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">python의 최대 정수값 <code>sys.maxsize</code> 활용하기</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
