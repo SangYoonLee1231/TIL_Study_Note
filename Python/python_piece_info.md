@@ -4,8 +4,6 @@
 
 * 파이썬과 관련된 공부 내용 중 하나의 목차로 분류하기 애매한 지식을 따로 모아 정리하는 곳입니다.
 
-> 참고 자료 : <a href="https://www.codetree.ai/missions/4">Code Tree</a>
-
 <br/>
 
 ### 목차
