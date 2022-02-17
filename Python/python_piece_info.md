@@ -220,7 +220,7 @@
   INT_MAX = sys.maxsize
 
   lst = [34, 5, 67, 4, 8, 15, 2]
-  max_sum = -sys.minsize
+  max_sum = -sys.maxsize
 
   for elem in lst:
       if elem > max_sum:
