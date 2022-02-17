@@ -236,4 +236,26 @@
 
 * 위 코드처럼 리스트 내 원소들의 최댓값 찾을 땐, 초기값을 가장 작은 수인 <code>-sys.maxsize</code>로 둔다. (for문을 돌면서 더 큰 값으로 업데이트 할 수 있도록)
 
-  - 반대로 최솟값을 찾을 땐, 가장 큰 수 <code>sys.maxsize</code>로 초기값을 잡아준다.
+    <br/>
+
+  ```python
+  import sys
+
+  INT_MAX = sys.maxsize
+
+  lst = [34, 5, 67, 4, 8, 15, 2]
+  min_sum = INT_MAX  # 초깃값
+
+  for elem in lst:
+      if elem < min_sum:
+          min_sum = elem
+      #max_sum = max(elem, min_sum)
+
+  print(min_sum)
+  ```
+
+  ```
+  2
+  ```
+
+- 반대로 최솟값을 찾을 땐, 가장 큰 수 <code>sys.maxsize</code>로 초기값을 잡아준다.
