@@ -10,7 +10,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%97%90%EC%84%9C-%EB%B3%80%EC%88%98%EC%9D%98-scope-%EB%B2%94%EC%9C%84">파이썬에서 변수의 scope 범위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4-%EC%84%A0%EC%96%B8-%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD">2차원 배열 선언 시 유의 사항</a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#python%EC%9D%98-%EC%B5%9C%EB%8C%80-%EC%B5%9C%EC%86%8C-%EC%A0%95%EC%88%98%EA%B0%92-%EC%B0%BE%EC%95%84-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">python의 최대, 최소 정수값 찾아 활용하기</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
@@ -204,31 +204,31 @@
 
 ## python의 최대, 최소 정수값 찾아 활용하기
 
-- 어떤 리스트 내 정수 원소들의 최댓값 혹은 최솟값을 내장 함수를 쓰지 않고 직접 구현할 때, 초깃값을 잘 잡아주어야 한다.
+- 어떤 리스트 내 정수 원소들의 최댓값 혹은 최솟값을 찾는 프로그램을 내장 함수를 쓰지 않고 직접 구현할 땐, 초깃값을 잘 잡아주어야 한다.
 
 * 이 떄, 첫 번째 원소를 초갓값으로 잡아주어도 되지만, python의 <code>int</code>의 최댓값인 <code>sys.maxsize</code>를 사용하는 것이 좋다.
 
-* 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구할 수 있다.
+* 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구한다.
 
-```python
-import sys
+  ```python
+  import sys
 
-INT_MAX = sys.maxsize
+  INT_MAX = sys.maxsize
 
-lst = [34, 5, 67, 4, 8, 15, 2]
-max_sum = -sys.minsize
+  lst = [34, 5, 67, 4, 8, 15, 2]
+  max_sum = -sys.minsize
 
-for elem in lst:
-    if elem > max_sum:
-        max_sum = elem
-    #max_sum = max(elem, max_sum)
+  for elem in lst:
+      if elem > max_sum:
+          max_sum = elem
+      #max_sum = max(elem, max_sum)
 
-print(max_sum)
-```
+  print(max_sum)
+  ```
 
-```
-67
-```
+  ```
+  67
+  ```
 
 - 위 코드처럼 리스트 내 원소들의 최댓값 찾을 땐, 초기값을 가장 작은 수인 <code>-sys.maxsize</code>로 두어야 한다. (for문을 돌면서 더 큰 값으로 업데이트 할 수 있도록)
 
