@@ -8,13 +8,13 @@
 
 ## 목차
 
-* <a href="">1차원 리스트</a>
-* <a href=""><code>1차원 리스트 입력 (input().split())</code> 활용법</a>
-* <a href="">리스트 슬라이싱 (Slicing)</a>
-* <a href="">자주 쓰이는 리스트 함수</a>
-* <a href="">리스트 값 참조</a>
-* <a href="">List Comprehension</a>
-* <a href="">index, count, max, min 함수</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#1%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8">1차원 리스트</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#1%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9E%85%EB%A0%A5-inputsplit-%ED%99%9C%EC%9A%A9%EB%B2%95">1차원 리스트 입력 (<code>input().split()</code>) 활용법</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-slicing">리스트 슬라이싱 (Slicing)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#%EC%9E%90%EC%A3%BC-%EC%93%B0%EC%9D%B4%EB%8A%94-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%A8%EC%88%98-append-pop-len-sum-%ED%95%A8%EC%88%98">자주 쓰이는 리스트 함수 (append, pop, len, sum 함수)</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%92-%EC%B0%B8%EC%A1%B0">리스트 값 참조</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#list-comprehension">List Comprehension</a>
+* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#%EC%9E%90%EC%A3%BC-%EC%93%B0%EC%9D%B4%EB%8A%94-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%A8%EC%88%98-2-index-count-max-min-%ED%95%A8%EC%88%98">자주 쓰이는 리스트 함수 2 (index, count, max, min 함수)</a>
 
 <br/>
 
@@ -103,7 +103,7 @@
 
 <br/>
 
-## 자주 쓰이는 리스트 함수
+## 자주 쓰이는 리스트 함수 (append, pop, len, sum 함수)
 
 * <code>append</code> 함수 : 리스트 맨 끝에 원소를 추가한다.
 
@@ -233,7 +233,7 @@ new_arr = [
 
 <br/>
 
-## index, count, max, min 함수
+## 자주 쓰이는 리스트 함수 2 (index, count, max, min 함수)
 
 ### index 함수
 
