@@ -130,7 +130,7 @@
 ```python
 # psuedo code
 def find_slot(key):
-    i = f(key)  # i는 해시함수 결과값으로, 데이터를 저장하기 위해 처음으로 확인하는 슬롯의 번호
+    i = f(key)  # i는 해시 함수의 결과값으로, 데이터를 저장하기 위해 처음으로 확인하는 슬롯의 번호
     start = i   # 시작점은 start로 고정
 
     while (H[i] == occupied) and (H[i].key != key):
