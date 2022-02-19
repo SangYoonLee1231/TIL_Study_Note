@@ -104,7 +104,7 @@
 
 ## Linear Probing 연산
 
-- <code>insert, search, remove</code> 3개의 연산이 있다.
+- <code>insert</code>, <code>search</code>, <code>remove</code> 3개의 연산이 있다.
 
 - 3개의 연산에 공통적으로 쓰이는, 매우 중요한 함수 <code>find_slot</code>을 먼저 정의한 후, 위 세 연산들을 살펴보도록 하자.
 
