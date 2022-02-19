@@ -98,15 +98,15 @@
 
 - H[2] ~ H[7]처럼 데이터들이 연속된 슬롯에 모여있는 것을 <strong>cluster</strong>이라 한다.
 
-- cluster이 많아지면 <strong>삽입 및 탐색 연산 시 시간이 더 많이 소요</strong>되기 때문에, 되도록 cluster이 생기지 않도록 해야 한다.
+- cluster이 많아지면 <strong>삽입 및 탐색 연산 시 시간이 더 많이 소요</strong>되기 때문에, 되도록 cluster은 생기지 않도록 하는 것이 좋다.
 
 <br/>
 
 ## Linear Probing 연산
 
-- <strong>insert, search, remove</strong> 3개의 연산이 있다.
+- <code>insert, search, remove</code> 3개의 연산이 있다.
 
-- 3개의 연산에 공통적으로 쓰이는 <strong>find_slot 함수</strong>를 먼저 정의한다.
+- 3개의 연산에 공통적으로 쓰이는, 매우 중요한 함수 <code>find_slot</code>을 먼저 정의한 후, 위 세 연산들을 살펴보도록 하자.
 
 <br/>
 
