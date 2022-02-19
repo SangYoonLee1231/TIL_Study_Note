@@ -46,7 +46,7 @@
 
 <br/>
 
-- 그리고 이 데이터를 저장할 다른 곳을 정하여 충돌 문제를 피하는 방법을 <strong>충돌 해결 방법(Collision Resolution Method)</strong>이라 한다.
+- 충돌이 발생하면, 저장하려 했던 데이터를 담을 다른 빈 공간을 찾아야 하는데, 이렇게 하여 충돌 문제를 피하는 방법을 <strong>충돌 해결 방법(Collision Resolution Method)</strong>이라 한다.
 
 <br/>
 
