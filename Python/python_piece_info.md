@@ -212,7 +212,7 @@
 
 - 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구한다.
 
-* <code>sys.maxsize</code>를 활용하려면 <code>sys</code> 모듈을 가져와야 한다.
+* <code>sys.maxsize</code>를 활용하려면 <code>sys</code> 모듈을 불러와야 한다.
 
     <br/>
 
