@@ -90,6 +90,8 @@
 
 11. 2번 슬롯부터 6번 슬롯까지 모두 차 있으므로, C2는 H[7]에 저장된다.
 
+    이렇게 모든 데이터를 Linear Probing에 따라 해시 테이블 H에 저장하였다.
+
 <img src="img/hash_table9.png" width="350px">
 
 <br/>
