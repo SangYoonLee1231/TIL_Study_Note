@@ -212,7 +212,9 @@
 
 - 더불어 python의 <code>int</code>의 최솟값은 여기에 마이너스를 붙여 <code>-sys.maxsize</code>로 구한다.
 
-* <code>sys.maxsize</code>를 활용하려면 <code>sys</code> 모듈을 불러와야 한다.
+<br/>
+
+- <code>sys.maxsize</code>를 활용하려면 <code>sys</code> 모듈을 불러와야 한다.
 
     <br/>
 
@@ -236,7 +238,7 @@
   67
   ```
 
-* 위 코드처럼 리스트 내 원소들의 최댓값 찾을 땐, 초기값을 가장 작은 수인 <code>-sys.maxsize</code>로 둔다. (for문을 돌면서 더 큰 값으로 업데이트 할 수 있도록)
+- 위 코드처럼 리스트 내 원소들의 최댓값 찾을 땐, 초기값을 가장 작은 수인 <code>-sys.maxsize</code>로 둔다. (for문을 돌면서 더 큰 값으로 업데이트 할 수 있도록)
 
     <br/>
 
@@ -260,4 +262,4 @@
   2
   ```
 
-- 반대로 최솟값을 찾을 땐, 가장 큰 수 <code>sys.maxsize</code>로 초기값을 잡아준다.
+* 반대로 최솟값을 찾을 땐, 가장 큰 수 <code>sys.maxsize</code>로 초기값을 잡아준다.
