@@ -166,7 +166,7 @@ def search(key):
         # 찾는 값 x, 슬롯 모두 차 있음
     if H[i].is_occpupied:
         return H[i].value
-        # 찾는 값 O, i 위치애 존재
+        # 찾는 값 O (i 위치애 존재)
     else:
         return None
         # 찾는 값 X, 빈 슬롯이 존재 (i 위치가 새 데이터를 저장할 빈 곳)
