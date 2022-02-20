@@ -32,7 +32,7 @@
 
 ## JavaScript
 
-### 공식 문서 공부
+#### 공식 문서 공부
 
 - <a href="">JavaScript에 대하여</a>
 
@@ -53,7 +53,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
 
-### 순차적 자료구조
+#### 순차적 자료구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">배열 vs 리스트</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">스택 (Stack)</a>
@@ -65,17 +65,17 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 - 해시 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing</a>
 
-### 트리(Tree) 구조
+#### 트리(Tree) 구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
 
 ## 알고리즘
 
-### 기본 개념
+#### 기본 개념
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
 
-### 실전 개념
+#### 실전 개념
 
 - <a href=""></a>
 
