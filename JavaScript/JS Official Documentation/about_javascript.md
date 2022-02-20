@@ -1,4 +1,4 @@
-# 공식 문서 읽기 - JavaScript 소개
+# 공식 문서 공부 - JavaScript 소개
 
 > <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">JS 공식 문서 - JavaScript 메인 페이지 바로 가기 (MDN Web Docs)</a>
 
@@ -69,7 +69,7 @@
 
 * 자세한 내용은 아래 링크를 참조
 
-> 참고 자료 : <a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EA%B8%B0%EB%B0%98_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">프로토타입 기반 프로그래밍 (위키백과) </a>,  
+> 참고 자료 : <a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EA%B8%B0%EB%B0%98_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">프로토타입 기반 프로그래밍 (위키백과)</a>,  
 > <a href="https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67">[Javascript] 프로토타입 이해하기 (개인 블로그)</a>,  
 > <a href="https://evan-moon.github.io/2019/10/23/js-prototype/">✨ [JS 프로토타입] 자바스크립트의 프로토타입 훑어보기 (개인 블로그)</a>
 
