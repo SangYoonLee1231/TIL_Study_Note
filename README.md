@@ -30,6 +30,12 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
 
+## JavaScript
+
+### 공식 문서 공부
+
+- <a href="">JavaScript에 대하여</a>
+
 ## Python
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md">Python - 출력 함수 <code>print()</code> 사용법</a>
