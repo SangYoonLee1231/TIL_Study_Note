@@ -16,7 +16,7 @@
 
 <br/>
 
-- 이 글은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>』의 내용을 전제로 기록합니다.
+- 이 글은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>』의 내용을 전제로 기록하였습니다.
 
 <br/>
 
@@ -195,7 +195,7 @@
   UnboundLocalError: local variable 'num' referenced before assignment
   ```
 
-* 왜 에러가 발생하는지 이해해보자.
+* 이 코드에선 왜 이러한 에러가 발생하는지 이해해보자.
 
 - <code>num += 5</code> 는 <code>num = num + 5</code>와 동일한 코드이다.
 
@@ -218,11 +218,11 @@
 
 * 따라서 (2번) <code>num</code>도, 전역 변수의 <code>num</code>이 아닌, 새로운 지역 변수로 인식된다.
 
-* 이 지역 변수 <code>num</code>은 값이 아직 할당이 되지 않았기 때문에 위와 같은 에러가 발생하는 것이다.
+* 이 지역 변수 (2번) <code>num</code>은 값이 아직 할당이 되지 않았기 때문에 위와 같은 에러가 발생하는 것이다.
 
 <br/>
 
-- 이를 해결하고자 한다면, global 표식을 붙여 <code>modify()</code> 함수 내 <code>num</code>을 전역 변수 <code>num</code>으로 인식되도록 해주면 된다.
+- 이를 해결하고자 한다면, 함수 내에 global 표식을 붙여 <code>modify()</code> 함수 내 <code>num</code>을 전역 변수 <code>num</code>으로 인식되도록 해주면 된다.
 
   ```python
   num = 10
@@ -281,10 +281,10 @@ print_a_and_b()
 10 20
 ```
 
-- (1번)에서의 a, b는 전역 변수의 a, b (10, 20)를 참조하는 것도 가능하고 인자 값 (50, 60)을 참조하는 것도 가능하다.
+- (1번)에서의 <code>a</code>, <code>b</code>는 전역 변수의 <code>a</code>, <code>b</code> (10, 20)를 참조하는 것도 가능하고 인자 값 (50, 60)을 참조하는 것도 가능하다.
 
 * 이렇게 참조할 수 있는 값이 여러 가지일 땐, <strong>가장 가까이에 있는 값을 참조한다.</strong>
 
-* 즉, (1번)에서 a는 50을 가리키고, b는 60을 가리킨다.
+* 즉, (1번)에서 <code>a</code>는 50을 가리키고, <code>b</code>는 60을 가리킨다.
 
-* (2번)의 경우, a, b는 전역 변수 a, b밖에 참고할 값이 없으므로 각각 10, 20을 가리킨다.
+* (2번)의 경우, <code>a</code>, <code>b</code>는 전역 변수 <code>a</code>, <code>b</code>밖에 참고할 값이 없으므로 각각 10, 20을 가리킨다.
