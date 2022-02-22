@@ -287,4 +287,4 @@ print_a_and_b()
 
 * 즉, (1번)에서 <code>a</code>는 50을 가리키고, <code>b</code>는 60을 가리킨다.
 
-* (2번)의 경우, <code>a</code>, <code>b</code>는 전역 변수 <code>a</code>, <code>b</code>밖에 참고할 값이 없으므로 각각 10, 20을 가리킨다.
+* (2번)의 경우, <code>a</code>, <code>b</code>는 전역 변수 <code>a</code>, <code>b</code>밖에 참조할 값이 없으므로 각각 10, 20을 가리킨다.
