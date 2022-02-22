@@ -131,22 +131,22 @@
 
 ### 예시 3.
 
-- 코드 1.
+    - 코드 1.
 
-```python
-num = 10
-
-
-def modify():
-    print(num)
+    ```python
+    num = 10
 
 
-modify()
-```
+    def modify():
+        print(num)
 
-```
-10
-```
+
+    modify()
+    ```
+
+    ```
+    10
+    ```
 
 - 전역 변수를 함수 내부에서 값을 끌어다 쓰는 것은 모두 허용된다.
 
