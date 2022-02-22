@@ -1,0 +1,125 @@
+# Python - Call By Assignment
+
+<br/>
+
+### 목차
+
+- <a href=""><code>mutable</code> VS <code>immutable</code></a>
+- <a href="">Python에서의 Call By Value VS Call By Reference</a>
+- <a href="">Call By Assignment
+  </a>
+- <a href=""></a>
+
+<br/>
+
+## <code>mutable</code> VS <code>immutable</code>
+
+- python에선 모든 것이 <strong>객체</strong>이다.
+
+<br/>
+
+- python에서 객체는 2가지 종류가 있다
+
+  - <code>immutable</code> 객체 : 값이 변경 불가능한 객체
+
+    - int, float, str, tuple 등
+
+  - <code>mutable</code> 객체 : 값이 변경 가능한 객체 (단, 자신의 id값은 일정하게 유지)
+
+    - list, dictonary, set 등
+
+<br/>
+
+## Python에서의 Call By Value VS Call By Reference
+
+```python
+def swap(a, b):
+    a, b = b, a
+    print(a, b)
+
+n, m = 10, 20
+swap(n, m)
+print(n, m)
+```
+
+```
+20 10
+10 20
+```
+
+- immutable 객체가 함수의 인자로 전달되면 마치 값이 복사되어 전달되는 Call By Value'처럼' 작동한다. (원본값 영향 X)
+
+* 반면, mutable한 객체가 함수의 인자로 전달되면 마치 값이 주소가 전달되는 Call By Reference'처럼' 작동한다. (원본값 영향 O)
+
+- 즉 python에선, C++과 달리, Call By Value와 Call By Reference를 명시적으로 할 수 없는 것이다.
+
+<br/>
+
+## Call By Assignment (Call By Object Reference)
+
+- 위에서 "마치 Call By Value'처럼', Call By Reference'처럼'" 설명한 이유는, 사실 python에선 함수에 인자를 넘겨줄 때 call by value나 call by reference와 조금 다르게 동작하기 때문이다.
+
+<br/>
+
+- python에선 모든 것이 <strong>객체</strong>이다.
+
+* 변수에 값을 할당할 때, 실제로 값들은 변수 내에 저장되는 것이 아니라 1, 2와 같은 객체가 생성되고 변수가 그 객체를 가리키게 되는 것이다. (변수 이름을 '이름표'에 비유)
+
+* 아래의 코드를 예로 들자.
+
+  ```python
+  a = 1
+  c = 1
+  ```
+
+  이 때, 1이라는 하나의 객체는 a와 c라는 두 개의 이름표가 붙어있다고 이해하면 된다.
+
+<br/>
+
+### immutable 객체가 함수의 인자로 전달될 때
+
+- 아래 코드를 예로 들자.
+
+  ```python
+  def func(c):
+      c = 2
+
+  a = 1
+  func(a)
+  ```
+
+* 1이라는 객체를 a가 가리키고 있다.
+
+* func 함수에 변수 a를 인자로 전달하면, c라는 변수도 a가 가리키는 객체 1을 같이 가리키게 된다.
+
+* 함수 내에서 c의 값을 2로 바꾸면, 변수 c의 값이 1에서 2로 바뀌는 것이 아니라, 2라는 객체가 생성되고 1을 가리키던 지역 변수 c가 2를 가리키게 된다.
+
+<br/>
+
+- 어떤 두 변수 x, y가 같은 값을 가리키면, x와 y의 id 또한 동일해진다.
+
+  ```python
+  def func(c):
+      print(id(c))
+      c = 2;  print(id(c))
+
+  a = 1;  print(id(a))
+  b = 2;  print(id(b))
+  func(a)
+  ```
+
+  ```
+  1570728274224
+  1570728274256
+  1570728274224
+  1570728274256
+  ```
+
+<br/>
+
+### mutable 객체가 함수의 인자로 전달될 때
+
+<br/>
+
+> 참고 자료 : <a href="https://aalphaca.tistory.com/4">Python은 Call by reference일까? Call by value일까? (개인 블로그)</a>,  
+> <a href="https://foramonth.tistory.com/20">Python - Call by Object Reference (개인 블로그)</a>

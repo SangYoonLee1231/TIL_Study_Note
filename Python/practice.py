@@ -1,4 +1,7 @@
-a = 6
-b = 3
+def func(c):
+    print(id(c))
+    c = 2;  print(id(c))
 
-print(a / b)
+a = 1;  print(id(a))
+b = 2;  print(id(b))
+func(a)
