@@ -48,7 +48,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_enumerate.md">Python - <code>enumerate</code> 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_module.md">Python - 모듈</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>
-- <a href="">Python - 변수 Scope (전역 변수와 지역 변수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md">Python - 변수 Scope (전역 변수와 지역 변수)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md">Python - 조각 지식 모음🖋</a>
 
 ## 자료구조
