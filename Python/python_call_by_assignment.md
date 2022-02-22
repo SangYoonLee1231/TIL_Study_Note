@@ -48,9 +48,9 @@ print(n, m)
 10 20
 ```
 
-- immutable 객체가 함수의 인자로 전달되면 마치 값이 복사되어 전달되는 Call By Value'처럼' 작동한다. (원본값 영향 X)
+- immutable 객체가 함수의 인자로 전달되면 마치 값이 복사되어 전달되는 Call By Value처럼 작동한다. (원본값 영향 X)
 
-* 반면, mutable한 객체가 함수의 인자로 전달되면 마치 값이 주소가 전달되는 Call By Reference'처럼' 작동한다. (원본값 영향 O)
+* 반면, mutable한 객체가 함수의 인자로 전달되면 마치 값이 주소가 전달되는 Call By Reference처럼 작동한다. (원본값 영향 O)
 
 - 즉 python에선, C++과 달리, Call By Value와 Call By Reference를 명시적으로 할 수 없는 것이다.
 
@@ -79,6 +79,8 @@ print(n, m)
 
 ### immutable 객체가 함수의 인자로 전달될 때
 
+- immutable 객체를 함수의 인자 값으로 넘기면, 이 객체는 '불변'이기 때문에 함수 안에서는 새로운 값을 생성한다. 이는 마치 Call By Value 처럼 보이게 한다.
+
 - 아래 코드를 예로 들자.
 
   ```python
@@ -93,7 +95,7 @@ print(n, m)
 
   - func 함수에 변수 a를 인자로 전달하면, c라는 지역 변수도 a가 가리키는 객체 1을 같이 가리키게 된다.
 
-  - 함수 내에서 c의 값을 2로 바꾸면, 실제 c의 값이 1에서 2로 바뀌는 것이 아니라, 2라는 객체가 생성되고 1을 가리키던 지역 변수 c가 2를 가리키게 된다.
+  - 함수 내에서 c의 값을 2로 바꾸면, 정수는 immutable하므로, 실제 c의 값이 1에서 2로 바뀌는 것이 아니라, 2라는 객체가 생성되고 1을 가리키던 지역 변수 c가 2를 가리키게 된다.
 
 <br/>
 
@@ -119,6 +121,8 @@ print(n, m)
 <br/>
 
 ### mutable 객체가 함수의 인자로 전달될 때
+
+- 하지만 가변 객체는 새로 값을 만들 필요가 없기 때문에 레퍼런스만 유지되서 Call By Reference 처럼 보이는 것이다.
 
 - 아래 코드를 살펴보자.
 
@@ -156,7 +160,19 @@ print(n, m)
 
   * 따라서, 함수가 종료된 이후에도 a는 여전히 [1, 2, 3, 4]를 가리키고 있는 것이다.
 
+  * 이렇게 아무리 immutable한 객체라 하더라도 기존과 다른 새 값을 할당하면, 원본에는 영향을 미치지 않는다(고 한다..).
+
+  <br/>
+
+  ```python
+  b = a
+  ```
+
+  - 위 코드에서 변수 a가 immutable인지 mutable인지 상관없이 (b와) 다른 값을 b에 할당하면, b의 값은 변하지 않는다.
+
 <br/>
 
 > 참고 자료 : <a href="https://aalphaca.tistory.com/4">Python은 Call by reference일까? Call by value일까? (개인 블로그)</a>,  
-> <a href="https://foramonth.tistory.com/20">Python - Call by Object Reference (개인 블로그)</a>
+> <a href="https://foramonth.tistory.com/20">Python - Call by Object Reference (개인 블로그)</a>,  
+> <a href="https://www.pymoon.com/entry/Python-%EC%9D%80-callbyvalue-%EC%9D%BC%EA%B9%8C-callbyreference-%EC%9D%BC%EA%B9%8C">Python 은 call-by-value 일까 call-by-reference 일까 (개인 블로그)</a>,  
+> <a href="https://stackoverflow.com/q/986006/17881946">How do I pass a variable by reference? (StackOverflow)</a>
