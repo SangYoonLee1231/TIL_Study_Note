@@ -1,7 +1,10 @@
-def func(c):
-    print(id(c))
-    c = 2;  print(id(c))
+_list = [1, 2, 3, 4]
 
-a = 1;  print(id(a))
-b = 2;  print(id(b))
-func(a)
+def modify():
+    global _list
+    _list = [5, 6, 7, 8]
+
+
+modify()
+for elem in _list:
+    print(elem, end=" ")
