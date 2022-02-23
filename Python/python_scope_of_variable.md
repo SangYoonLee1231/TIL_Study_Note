@@ -6,6 +6,10 @@
 
 <br/>
 
+- 이 글은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>』의 내용을 전제로 기록하였습니다.
+
+<br/>
+
 ### 목차
 
 - <a href="">예시 1.</a>
@@ -13,10 +17,6 @@
 - <a href="">예시 3.</a>
 - <a href="">✨ 정리</a>
 - <a href="">(+) 참조 가능한 값이 여러 가지일 때</a>
-
-<br/>
-
-- 이 글은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>』의 내용을 전제로 기록하였습니다.
 
 <br/>
 
@@ -98,7 +98,7 @@
   1 2 3 4
   ```
 
-- 반면, 위의 코드에선 <code>modify()</code> 함수 내부의 <code>\_list</code>가 재정의 되었으므로, 이는 새로운 지역 변수로 인식된다.
+- 반면, 위의 코드에선 <code>modify()</code> 함수 내부의 <code>\_list</code>가 재정의 되었으므로, python에선 이를 새로운 지역 변수로 인식한다.
 
 * 따라서 <code>modify()</code> 함수가 끝나는 순간 (새로 생성됐던) 함수 내부의 <code>\_list</code> 객체는 소멸하고, 외부에 선언된 전역 변수 <code>\_list</code>만 남게 된다.
 
