@@ -1,10 +1,7 @@
-_list = [1, 2, 3, 4]
+def swap(lst):
+    lst[0], lst[1] = lst[1], lst[0]
+    print(lst[0], lst[1])
 
-def modify():
-    global _list
-    _list = [5, 6, 7, 8]
-
-
-modify()
-for elem in _list:
-    print(elem, end=" ")
+lst = [10, 20]
+swap(lst)
+print(lst[0], lst[1])

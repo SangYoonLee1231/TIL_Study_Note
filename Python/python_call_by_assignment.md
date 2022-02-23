@@ -33,6 +33,8 @@
 
 ## Python에서의 Call By Value VS Call By Reference
 
+- immutable 객체가 함수의 인자로 전달되면 마치 값이 복사되어 전달되는 Call By Value처럼 작동한다. (원본값 영향 X)
+
 ```python
 def swap(a, b):
     a, b = b, a
@@ -48,9 +50,26 @@ print(n, m)
 10 20
 ```
 
-- immutable 객체가 함수의 인자로 전달되면 마치 값이 복사되어 전달되는 Call By Value처럼 작동한다. (원본값 영향 X)
+<br/>
 
-* 반면, mutable한 객체가 함수의 인자로 전달되면 마치 값이 주소가 전달되는 Call By Reference처럼 작동한다. (원본값 영향 O)
+- 반면, mutable한 객체가 함수의 인자로 전달되면 마치 값이 주소가 전달되는 Call By Reference처럼 작동한다. (원본값 영향 O)
+
+```python
+def swap(lst):
+    lst[0], lst[1] = lst[1], lst[0]
+    print(lst[0], lst[1])
+
+lst = [10, 20]
+swap(lst)
+print(lst[0], lst[1])
+```
+
+```
+20 10
+20 10
+```
+
+<br/>
 
 - 즉 python에선, C++과 달리, Call By Value와 Call By Reference를 명시적으로 할 수 없는 것이다.
 
