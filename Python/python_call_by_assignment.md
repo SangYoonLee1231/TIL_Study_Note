@@ -179,17 +179,11 @@ print(lst[0], lst[1])
 
   * 따라서, 함수가 종료된 이후에도 a는 여전히 [1, 2, 3, 4]를 가리키고 있는 것이다.
 
-  * 이렇게 아무리 immutable한 객체라 하더라도 기존과 다른 새 값을 할당하면, 원본에는 영향을 미치지 않는다(고 한다..).
+  * 이렇게 아무리 immutable한 객체라 하더라도 기존과 다른 새 값을 할당하면, 원본에는 영향을 미치지 않는다.
 
-  <br/>
+    - 이 부분은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md">Python - 변수 Scope (전역 변수와 지역 변수)</a>』에서 자세히 다루었다.
 
-  ```python
-  b = a
-  ```
-
-  - 위 코드에서 변수 a가 immutable인지 mutable인지 상관없이 (b와) 다른 값을 b에 할당하면, b의 값은 변하지 않는다.
-
-<br/>
+<br/><br/>
 
 > 참고 자료 : <a href="https://aalphaca.tistory.com/4">Python은 Call by reference일까? Call by value일까? (개인 블로그)</a>,  
 > <a href="https://foramonth.tistory.com/20">Python - Call by Object Reference (개인 블로그)</a>,  
