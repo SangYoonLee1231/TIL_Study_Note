@@ -181,7 +181,7 @@ print(lst[0], lst[1])
 
   * 이렇게 아무리 immutable한 객체라 하더라도 기존과 다른 새 값을 할당하면, 원본에는 영향을 미치지 않는다.
 
-    - 이 부분은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md">Python - 변수 Scope (전역 변수와 지역 변수)</a>』에서 자세히 다루었다.
+    - 이 부분은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md">Python - 변수 Scope (전역 변수와 지역 변수)</a>』에서 더 자세히 다루었다.
 
 <br/><br/>
 
