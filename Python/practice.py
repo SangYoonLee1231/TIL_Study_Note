@@ -1,7 +1,16 @@
-def swap(lst):
-    lst[0], lst[1] = lst[1], lst[0]
-    print(lst[0], lst[1])
+n = int(input())
+lst = list(map(int, input().split()))
+leader_ablity, member_ablity = tuple(map(int, input().split()))
 
-lst = [10, 20]
-swap(lst)
-print(lst[0], lst[1])
+ans = 0
+
+for i, elem in enumerate(lst):
+    lst[i] -= leader_ablity
+    ans += 1
+
+for i, elem in enumerate(lst):
+    while lst[i] > 0:
+        lst[i] -= member_ablity
+        ans += 1
+    
+print(ans)
