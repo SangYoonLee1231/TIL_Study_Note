@@ -1,4 +1,3 @@
-<<<<<<< HEAD:JavaScript/about_javascript.md
 # JavaScript 소개 (By 공식 문서)
 
 > <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">JS 공식 문서 - JavaScript 메인 페이지 바로 가기 (MDN Web Docs)</a>
