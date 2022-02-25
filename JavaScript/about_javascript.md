@@ -1,4 +1,4 @@
-# JavaScript 소개 (By 공식 문서)
+# JavaScript 소개 (By MDN 문서)
 
 > <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">JS 공식 문서 - JavaScript 메인 페이지 바로 가기 (MDN Web Docs)</a>
 

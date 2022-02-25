@@ -32,7 +32,7 @@
 
 ## JavaScript
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By 공식 문서)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
 
 ## Python
 
