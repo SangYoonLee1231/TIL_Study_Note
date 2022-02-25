@@ -38,7 +38,7 @@
 
 ### JavaScript는 일급 함수를 지원한다.
 
-- 함수를 마치 변수처럼 다루는 언어를 '일급 함수를 가졌다'고 표현한다.
+- 함수를 마치 변수처럼 다루는 언어를 '일급 함수를 가진 언어'라고 표현한다.
 
 - 일급 함수를 가진 언에에선 다음이 모두 가능하다.
 
@@ -50,7 +50,7 @@
 
 * 함수를 어떻게 변수처럼 다루는 지는 아래 공식 문서에 기술된 여러 예시를 통해 자세히 알 수 있다.
 
-> 참고 자료 : <a href="https://ko.wikipedia.org/wiki/JIT_%EC%BB%B4%ED%8C%8C%EC%9D%BC"> 일급 함수 (MDN Web Docs)</a>
+> 참고 자료 : <a href="https://developer.mozilla.org/ko/docs/Glossary/First-class_Function"> 일급 함수 (MDN Web Docs)</a>
 
 <br/><br/>
 
