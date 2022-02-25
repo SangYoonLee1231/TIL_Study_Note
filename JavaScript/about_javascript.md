@@ -56,6 +56,20 @@
 
 ### JavaScript는 웹페이지를 위한 스크립트 언어로 잘 알려져 있지만, 많은 비 브라우저 환경에서도 사용하고 있다.
 
+* JavaScript는 브라우저 뿐만 아니라 서버에서도 실행할 수 있다.
+
+* 또한, 이 외에도 자바스크립트 엔진(JavaScript Engine)이라 불리는 특별한 프로그램리 들어있는 모든 디바이스에서도 동작한다.
+
+* 자바스크립트 엔진의 종류
+
+  * V8 : CHrome이나 Opera에서 쓰인다.
+
+  * SpiderMonkey: Firefox에서 쓰인다.
+
+  * ChakraCore : Microsoft Edge에 쓰인다.
+
+  * SquirrelFish : Safari에 쓰인다.
+
 - JavaScript가 쓰이는 비 브라우저 환경 예시
 
   - Node.js, Apache CouchDB, Adobe Acrobat
