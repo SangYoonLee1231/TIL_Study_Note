@@ -58,11 +58,11 @@
 
 * JavaScript는 브라우저 뿐만 아니라 서버에서도 실행할 수 있다.
 
-* 또한, 이 외에도 자바스크립트 엔진(JavaScript Engine)이라 불리는 특별한 프로그램리 들어있는 모든 디바이스에서도 동작한다.
+* 또한, 이 외에도 자바스크립트 엔진(JavaScript Engine)이라 불리는 특별한 프로그램이 들어있는 모든 디바이스에서 동작한다.
 
 * 자바스크립트 엔진의 종류
 
-  * V8 : CHrome이나 Opera에서 쓰인다.
+  * V8 : Chrome이나 Opera에서 쓰인다.
 
   * SpiderMonkey: Firefox에서 쓰인다.
 
@@ -73,6 +73,8 @@
 - JavaScript가 쓰이는 비 브라우저 환경 예시
 
   - Node.js, Apache CouchDB, Adobe Acrobat
+
+> 참고 자료 : <a href="https://ko.javascript.info/intro">자바스크립트란? (javascript.info)</a>
 
 <br/><br/>
 
