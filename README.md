@@ -32,9 +32,7 @@
 
 ## JavaScript
 
-#### 공식 문서 공부
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/JS%20Official%20Documentation/about_javascript.md">JavaScript에 대하여</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By 공식 문서)</a>
 
 ## Python
 
