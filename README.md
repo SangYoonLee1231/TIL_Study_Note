@@ -33,6 +33,7 @@
 ## JavaScript
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기초 문법 - 약점 포인트 1</a>
 
 ## Python
 

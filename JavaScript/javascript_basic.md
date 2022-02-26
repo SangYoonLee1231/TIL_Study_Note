@@ -1,10 +1,25 @@
-# JavaScript 기초 문법 (주의 포인트만)
+# JavaScript 기초 문법 - 약점 포인트 1
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
 <br/>
 
-* 자바스크립트의 문법을 전반적으로 다 기록하는 것이 아니라, 잘 몰랐거나 헷갈릴 내용들만을 항목 단위로 기록한다.
+* 자바스크립트의 문법을 전반적으로 다 기록하는 것이 아니라, 잘 몰랐거나 헷갈릴 내용들만을 항목 단위로 묶어 기록한다.
+
+<br/>
+
+### 목차
+
+* <a href="">외부 스크립트 삽입하기</a>
+* <a href="">JavaScript 기본 동작 원리</a>
+* <a href="">JavaScript의 제약 사항</a>
+* <a href="">세미콜론 자동 삽입</a>
+* <a href="">주석</a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
+* <a href=""></a>
 
 <br/><br/>
 
