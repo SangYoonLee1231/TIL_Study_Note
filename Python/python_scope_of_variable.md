@@ -12,11 +12,11 @@
 
 ### 목차
 
-- <a href="">예시 1.</a>
-- <a href="">에시 2</a>
-- <a href="">예시 3.</a>
-- <a href="">✨ 정리</a>
-- <a href="">(+) 참조 가능한 값이 여러 가지일 때</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md#%EC%98%88%EC%8B%9C-1">예시 1.</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md#%EC%97%90%EC%8B%9C-2">에시 2</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md#%EC%98%88%EC%8B%9C-3">예시 3.</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md#-%EC%A0%95%EB%A6%AC">✨ 정리</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md#-%EC%B0%B8%EC%A1%B0-%EA%B0%80%EB%8A%A5%ED%95%9C-%EA%B0%92%EC%9D%B4-%EC%97%AC%EB%9F%AC-%EA%B0%80%EC%A7%80%EC%9D%BC-%EB%95%8C">(+) 참조 가능한 값이 여러 가지일 때</a>
 
 <br/>
 
