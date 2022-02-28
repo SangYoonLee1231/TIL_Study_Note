@@ -217,7 +217,11 @@
     ```javascript
     let isContinue = confirm("계속 진행하시겠습니까?");
 
-    alert(isContinue);
+    if (isContinue) {
+      alert("다음으로 넘아갑니다");
+    } else {
+      alert("여기서 중단합니다");
+    }
     ```
 
     <br/>
