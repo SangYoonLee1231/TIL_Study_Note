@@ -130,4 +130,26 @@
 
 <br/><br/>
 
+### JavaScript은 동적 타입(Dynamically Typed) 언어이다.
+
+* JavaScipt는 8가지 기본 자료형이 있다.
+
+* 이러한 자료형에 관계없이, JavaScript의 변수는 모든 데이터를 할당할 수 있다.
+
+* 따라서, 하나의 변수값은 어떤 순간엔 문자열일 수 있고, 다른 순간엔 숫자일 수 있다.
+
+* 이처럼 자료의 타입은 존재하나, 변수에 저장되는 자료는 언제든지 그 타입이 바뀔 수 있는 언어를 동적 타입 언어라 부른다.
+
+> 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
+
+<br/><br/>
+
 ### JavaScript의 표준은 ECMAScript 언어 사양 (ECMA-262) 및 ECMAScript 국제화 API 사양 (ECMA-402)이다.
+
+* ECMA는 European Computer Manufacturer's Association의 줄임말로, 정보와 통신 시스템을 위한 국제적 표준화 기구이다. 
+
+* ECMAScript는 JavaScript와 같은 스크립트 언어의 표준을 말한다.
+
+* JavaScript는 ECMAScript를 기반으로 하먀, 이를 공식 문서로 삼는다.
+
+> 참고 자료 : <a href="https://sustainable-dev.tistory.com/105">ECMAScript 와 JavaScript의 차이점 (개인 블로그)</a>
