@@ -266,3 +266,37 @@
     * <code>true</code>, <code>false</code>값을 나타낼 떄 사용된다.
 
 * <code>null</code>
+
+    * <code>null</code> 값만을 위한 독립 자료형이다.
+
+    * 존재하지 않는 값, 비어 있는 값, 알 수 없는 값을 나타내는 데 사용된다.
+
+* <code>undefined</code>
+
+    * <code>undefined</code> 값만을 위한 독립 자료형이다.
+
+    * 값이 할당되지 않은 상태를 나타낸다.
+
+    * 변수를 선언했지만, 값을 할당하지 않은 경우, 해당 변수에 <code>undefined</code>가 자동으로 할당된다.
+
+    * 변수에 <code>undefined</code>를 직접 할당하는 것은 권장하지 않는다.
+
+* <code>객체형</code>
+
+    * 데이터 컬렉션이나 복잡한 객체를 표현할 떄 사용한다.
+
+* <code>심볼형</code>
+
+    * 객체의 고유한 식별자를 만들 때 사용한다.
+
+<br/>
+
+* <code>typeof</code> 연산자는 피연산자의 자료형을 문자열 형태로 반환한다.
+
+* 연산자 형태 <code>typeof x</code> 또는 함수 형태 <code>typeof(x)</code>로 사용된다.
+
+<br/>
+
+* <code>null</code>의 typeof 연산은 <code>"object"</code>인데, 이는 언어상의 오류다. null은 객체가 아니다.
+
+* 함수(예:<code>alert</code>)의 typeof 연산은 <code>"function"</code>인데, '함수'형은 따로 존재하지 않는다. 함수는 객체형에 속한다. 이 또한 오류이나, 하위 호환성 문제로 인해 언어에 남겨져 있다.
