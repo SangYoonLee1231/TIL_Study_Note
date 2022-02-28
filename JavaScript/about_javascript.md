@@ -56,21 +56,21 @@
 
 ### JavaScript는 웹페이지를 위한 스크립트 언어로 잘 알려져 있지만, 많은 비 브라우저 환경에서도 사용하고 있다.
 
-* JavaScript는 브라우저 뿐만 아니라 서버에서도 실행할 수 있다.
+- JavaScript는 브라우저 뿐만 아니라 서버에서도 실행할 수 있다.
 
-* 또한, 이 외에도 자바스크립트 엔진(JavaScript Engine)이라 불리는 특별한 프로그램이 들어있는 모든 디바이스에서 동작한다.
+- 또한, 이 외에도 자바스크립트 엔진(JavaScript Engine)이라 불리는 특별한 프로그램이 들어있는 모든 디바이스에서 동작한다.
 
-* 자바스크립트 엔진의 종류
+- 자바스크립트 엔진의 종류
 
-  * V8 : Chrome이나 Opera에서 쓰인다.
+  - V8 : Chrome이나 Opera에서 쓰인다.
 
-  * SpiderMonkey: Firefox에서 쓰인다.
+  - SpiderMonkey: Firefox에서 쓰인다.
 
-  * ChakraCore : Microsoft Edge에 쓰인다.
+  - ChakraCore : Microsoft Edge에 쓰인다.
 
-  * SquirrelFish : Safari에 쓰인다.
+  - SquirrelFish : Safari에 쓰인다.
 
-- JavaScript가 쓰이는 비 브라우저 환경 예시
+* JavaScript가 쓰이는 비 브라우저 환경 예시
 
   - Node.js, Apache CouchDB, Adobe Acrobat
 
@@ -84,7 +84,7 @@
 
 * JavaScript에서 객체는 함수를 통해서 만들어지고, 객체는 함수의 프로토타입 객체를 복제하여 생성한다.
 
-* JavaScript의 모든 객체는 다른 프로토타입 객체를 복제해서 만들어지는데, 이러한 복제 과정을 거슬러 올라가보면, 그 시작점은 Object 함수의 프로토타입인 Object.prototype임을 알 수 있다.
+* JavaScript의 모든 객체의 복제 과정을 거슬러 올라가보면, 그 시작점은 Object 함수의 프로토타입인 Object.prototype임을 알 수 있다.
 
   - JavaScript의 모든 함수는 Function.prototype 객체를 자신의 원본으로 가진다. 그리고 Function.prototype은 결국 객체이므로, 원본으로 Object.prototype 객체를 가진다.
 
@@ -101,7 +101,7 @@
 - 다중 패러다임 (프로그래밍) 언어는 두 가지 이상의 프로그래밍 패러다임을 지원하는 언어를 말한다.
 
 * "모든 문제를 가장 쉽고 효율적으로 풀 수 있는 단 하나의 패러다임은 존재하지 않는다"  
-  이 사실을 인정하고, 프로그래머가 자신의 작업에 가장 알맞는 패러다임을 선택할 수 있도록 하는 것이 다중 패러다임 언어의 설계 목적이다.
+  이러한 사실을 인정하고, 프로그래머가 자신의 작업에 가장 알맞는 패러다임을 선택할 수 있도록 하는 것이 다중 패러다임 언어의 설계 목적이다.
 
 * 객체지향 프로그래밍, 함수형 프로그래밍, 명령형 프로그래밍, 선언형 프로그래밍, 절차적 프로그래밍 등등 프로그래밍 패러다임의 종류는 다양하다.
 
@@ -122,7 +122,7 @@
 
 * 싱글 스레드란 하나의 프로세스에서 하나의 스레드만 실행하는 것을 의미한다. 하나의 레지스터와 스택으로만 표현할 수 있다.
 
-* JavaScript는 메인 스레드인 이벤트 루프가 싱글 스레드이기 때문에 JavaScript는 싱글 스레드를 기반으로 동작하는 언어이다.
+* JavaScript는 메인 스레드인 이벤트 루프가 싱글 스레드이기 때문에, JavaScript를 싱글 스레드 기반으로 동작하는 언어라고 한다.
 
 > 참고 자료 : <a href="https://namu.wiki/w/%EC%8A%A4%EB%A0%88%EB%93%9C">스레드 (나무위키)</a>,  
 > <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C_(%EC%BB%B4%ED%93%A8%ED%8C%85)">스레드 (컴퓨팅) (위키백과)</a>,  
@@ -132,15 +132,15 @@
 
 ### JavaScript은 동적 타입(Dynamically Typed) 언어이다.
 
-* JavaScipt는 8가지 기본 자료형이 있다.
+- JavaScipt는 8가지 기본 자료형이 있다.
 
-  * 숫자형, bigint, 문자형, boolean형, null, undefined, 객체형, 심볼형
+  - 숫자형, bigint, 문자형, boolean형, null, undefined, 객체형, 심볼형
 
-* 이러한 자료형에 관계없이, JavaScript의 변수는 모든 데이터를 할당할 수 있다.
+- 이러한 자료형에 관계없이, JavaScript의 변수는 모든 데이터를 할당할 수 있다.
 
-* 따라서, 하나의 변수값은 어떤 순간엔 문자열일 수 있고, 다른 순간엔 숫자일 수 있다.
+- 따라서, 하나의 변수값은 어떤 순간엔 문자열일 수 있고, 다른 순간엔 숫자일 수 있다.
 
-* 이처럼 자료의 타입은 존재하나, 변수에 저장되는 자료는 언제든지 그 타입이 바뀔 수 있는 언어를 동적 타입 언어라 부른다.
+- 이처럼 자료의 타입은 존재하나, 변수에 저장되는 자료는 언제든지 그 타입이 바뀔 수 있는 언어를 동적 타입 언어라 부른다.
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
@@ -148,10 +148,10 @@
 
 ### JavaScript의 표준은 ECMAScript 언어 사양 (ECMA-262) 및 ECMAScript 국제화 API 사양 (ECMA-402)이다.
 
-* ECMA는 European Computer Manufacturer's Association의 줄임말로, 정보와 통신 시스템을 위한 국제적 표준화 기구이다. 
+- ECMA는 European Computer Manufacturer's Association의 줄임말로, 정보와 통신 시스템을 위한 국제적 표준화 기구이다.
 
-* ECMAScript는 JavaScript와 같은 스크립트 언어의 표준을 말한다.
+- ECMAScript는 JavaScript와 같은 스크립트 언어의 표준을 말한다.
 
-* JavaScript는 ECMAScript를 기반으로 하먀, 이를 공식 문서로 삼는다.
+- JavaScript는 ECMAScript를 기반으로 하먀, 이를 공식 문서로 삼는다.
 
 > 참고 자료 : <a href="https://sustainable-dev.tistory.com/105">ECMAScript 와 JavaScript의 차이점 (개인 블로그)</a>
