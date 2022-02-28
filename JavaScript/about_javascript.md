@@ -122,7 +122,7 @@
 
 * 싱글 스레드란 하나의 프로세스에서 하나의 스레드만 실행하는 것을 의미한다. 하나의 레지스터와 스택으로만 표현할 수 있다.
 
-* JavaScript는 메인 스레드인 이벤트 루프가 싱글 스레드이기 때문에, JavaScript를 싱글 스레드 기반으로 동작하는 언어라고 한다.
+* JavaScript는 메인 스레드인 이벤트 루프가 싱글 스레드이기 때문에, JavaScript를 싱글 스레드 기반으로 동작하는 언어라 한다.
 
 > 참고 자료 : <a href="https://namu.wiki/w/%EC%8A%A4%EB%A0%88%EB%93%9C">스레드 (나무위키)</a>,  
 > <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C_(%EC%BB%B4%ED%93%A8%ED%8C%85)">스레드 (컴퓨팅) (위키백과)</a>,  
