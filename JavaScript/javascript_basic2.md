@@ -1,4 +1,4 @@
-# JavaScript 기본 2 - 변수와 자료형, 상호작용
+# JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
@@ -93,6 +93,8 @@
 
     * 정수의 한계는 ±2^53이다.
 
+<br/>
+
 * <code>bigint</code>
 
     * 길이 제약 없이 정수형을 나타낼 수 있다.
@@ -102,6 +104,8 @@
         ```javascript
         const bigInt = 1234567890123456789012345678901234567890n;
         ```
+
+<br/>
 
 * <code>문자형</code>
 
@@ -117,15 +121,21 @@
         alert(`I got ${50 + 50} in test!`);
         ```
 
+<br/>
+
 * <code>boolean형</code>
 
     * <code>true</code>, <code>false</code>값을 나타낼 떄 사용된다.
+
+<br/>
 
 * <code>null</code>
 
     * <code>null</code> 값만을 위한 독립 자료형이다.
 
     * 존재하지 않는 값, 비어 있는 값, 알 수 없는 값을 나타내는 데 사용된다.
+
+<br/>
 
 * <code>undefined</code>
 
@@ -137,9 +147,13 @@
 
     * 변수에 <code>undefined</code>를 직접 할당하는 것은 권장하지 않는다.
 
+<br/>
+
 * <code>객체형</code>
 
     * 데이터 컬렉션이나 복잡한 객체를 표현할 떄 사용한다.
+
+<br/>
 
 * <code>심볼형</code>
 
@@ -160,3 +174,53 @@
 <br/><br/>
 
 ### 브라우저와의 상호작용 (<code>alert</code>, <code>prompt</code>, <code>confirm</code>)
+
+* 브라우저는 사용자와 상호작용을 할 수 있도록 스크립트의 3가지 함수를 제공한다.
+
+* <code>alert</code>
+
+    * 사용자에게 메세지를 보여주는 모달 창을 띄운다.
+
+    ```javascript
+    alert("Hello User");
+    ```
+
+<br/>
+
+* <code>prompt</code>
+
+    * 사용자에게 메서지와 입력 필드를 함께 보여주는 모달 창을 띄운다.
+
+    * [확인]을 누르면 사용자가 입력 필드에 입력한 문자열이 반환되고,  
+    [취소] 또는 Esc를 누르면 <code>null</code>이 반환된다.
+
+        <br/>
+
+    ```javascript
+    result = prompt(title, [default]);
+    ```
+
+    * title : 사용자에게 보여줄 문자열
+
+    * default : 입력 필드의 초기값  
+    (인수를 감싸는 대괄호 <code>[]</code>는 필수가 아닌 선택값이란 의미)
+
+<br/>
+
+* <code>confirm</code>
+
+    * 사용자에게 메세지 그리고 눌러야 할 [확인] 또는 [취소] 버튼을 모딜 창으로 보여준다.
+
+    * 사용자가 [확인] 버튼을 누르면 <code>True</code>, [취소] 버튼을 누르면 <code>False</code>가 반환된다.
+
+    ```javascript
+    let isContinue = confirm("계속 진행하시겠습니까?")
+
+    alert(isContinue);
+    ```
+
+    <br/>
+
+    * 위 함수들을 통해 모달 창이 사용자에게 띄워지면, 스크립트의 실행이 일시 중단되고, 사용자는 창을 닫기 전까진 나머지 페이지와 상호작용 할 수 없다.
+
+    * 모딜 창의 위치와 모양은 수정할 수 없다. 이러한 제약사항은 간결성을 위해 치러야 할 대가이다.
