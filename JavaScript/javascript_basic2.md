@@ -147,13 +147,13 @@
 
   - 변수를 선언했지만, 값을 할당하지 않은 경우, 해당 변수에 <code>undefined</code>가 자동으로 할당된다.
 
-  - 변수에 <code>undefined</code>를 직접 할당하는 것은 권장하지 않는다.
+  - 변수에 <code>undefined</code>를 직접 할당하는 것이 가능하나, 권장하지 않는다.
 
 <br/>
 
 - <code>객체형</code>
 
-  - 데이터 컬렉션이나 복잡한 객체를 표현할 떄 사용한다.
+  - 데이터 컬렉션이나 복잡한 객체를 표현할 때 사용한다.
 
 <br/>
 
@@ -171,7 +171,8 @@
 
 - <code>null</code>의 typeof 연산은 <code>"object"</code>인데, 이는 언어상의 오류다. null은 객체가 아니다.
 
-- 함수(예:<code>alert</code>)의 typeof 연산은 <code>"function"</code>인데, '함수'형은 따로 존재하지 않는다. 함수는 객체형에 속한다. 이 또한 오류이나, 하위 호환성 문제로 인해 언어에 남겨져 있다.
+- 함수(예:<code>alert</code>)의 typeof 연산은 <code>"function"</code>인데, '함수'형은 따로 존재하지 않는다. 함수는 객체형에 속한다.  
+  이 또한 오류이나, 하위 호환성 문제로 인해 언어에 남겨져 있다.
 
 <br/><br/>
 
@@ -183,9 +184,9 @@
 
   - 사용자에게 메세지를 보여주는 모달 창을 띄운다.
 
-  ```javascript
-  alert("Hello User");
-  ```
+    ```javascript
+    alert("Hello User");
+    ```
 
 <br/>
 
@@ -196,7 +197,7 @@
   - [확인]을 누르면 사용자가 입력 필드에 입력한 문자열이 반환되고,  
     [취소] 또는 Esc를 누르면 <code>null</code>이 반환된다.
 
-        <br/>
+    <br/>
 
   ```javascript
   result = prompt(title, [default]);
@@ -215,11 +216,11 @@
 
   - 사용자가 [확인] 버튼을 누르면 <code>True</code>, [취소] 버튼을 누르면 <code>False</code>가 반환된다.
 
-  ```javascript
-  let isContinue = confirm("계속 진행하시겠습니까?");
+    ```javascript
+    let isContinue = confirm("계속 진행하시겠습니까?");
 
-  alert(isContinue);
-  ```
+    alert(isContinue);
+    ```
 
     <br/>
 
