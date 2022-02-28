@@ -13,13 +13,13 @@
 * <a href="">변수 (약점 Point 위주)</a>
 * <a href="">자료형</a>
 * <a href="">브라우저와의 상호작용 (<code>alert</code>, <code>prompt</code>, <code>confirm</code>)</a>
-* <a href=""></a>
+* <a href="">형 변환</a>
 * <a href=""></a>
 * <a href=""></a>
 
 <br/><br/>
 
-### 변수 (약점 Point 위주)
+## 변수 (약점 Point 위주)
 
 * 변수 명명 시,
 
@@ -68,7 +68,7 @@
 
 <br/><br/>
 
-### 자료형
+## 자료형
 
 * JavaScript엔 8가지 기본 자료형이 있다.
 
@@ -173,7 +173,7 @@
 
 <br/><br/>
 
-### 브라우저와의 상호작용 (<code>alert</code>, <code>prompt</code>, <code>confirm</code>)
+## 브라우저와의 상호작용 (<code>alert</code>, <code>prompt</code>, <code>confirm</code>)
 
 * 브라우저는 사용자와 상호작용을 할 수 있도록 스크립트의 3가지 함수를 제공한다.
 
@@ -224,3 +224,9 @@
     * 위 함수들을 통해 모달 창이 사용자에게 띄워지면, 스크립트의 실행이 일시 중단되고, 사용자는 창을 닫기 전까진 나머지 페이지와 상호작용 할 수 없다.
 
     * 모딜 창의 위치와 모양은 수정할 수 없다. 이러한 제약사항은 간결성을 위해 치러야 할 대가이다.
+
+<br/><br/>
+
+## 형 변환
+
+* 

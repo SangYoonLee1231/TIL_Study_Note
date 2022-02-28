@@ -21,7 +21,7 @@
 
 <br/><br/>
 
-### 외부 스크립트 삽입하기
+## 외부 스크립트 삽입하기
 
 * JavaScript로 작성한 프로그램을 스크립트(script)라 부른다.
 
@@ -51,7 +51,7 @@
 
 <br/><br/>
 
-### JavaScript 기본 동작 원리
+## JavaScript 기본 동작 원리
 
 1. 파싱 : 앤진이 스크립트를 읽는다.
 
@@ -65,7 +65,7 @@
 
 <br/><br/>
 
-### JavaScript의 제약 사항
+## JavaScript의 제약 사항
 
 * JavaScript는 메모리나 CPU 같은 저수준 영역을 함부로 조작할 수 없다. ('안전한' 프로그래밍 언어)
 
@@ -73,7 +73,7 @@
 
 <br/><br/>
 
-### 세미콜론 자동 삽입
+## 세미콜론 자동 삽입
 
 * JavaScript에선 줄바꿈이 있을 시, 이를 '암시적' 세미콜론(';')으로 해석한다.
 
@@ -112,7 +112,7 @@
 
 <br/><br/>
 
-### 주석
+## 주석
 
 * JavaScript 주석 문법은 C언어와 동일하게 <code>//</code> 또는 <code>/\*</code> <code>*/</code>을 사용한다.
 
@@ -136,7 +136,7 @@
 
 <br/><br/>
 
-### 엄격 모드 (<code>use strict</code>)
+## 엄격 모드 (<code>use strict</code>)
 
 * JavaScript는 기존의 기능을 유지하면서 발전해왔다. 
 
