@@ -73,7 +73,7 @@
 
 - JavaScript엔 8가지 기본 자료형이 있다.
 
-- JavaScript는 하나의 변수에 저장되는 값의 종류가 자유롭게 바뀔 수 있는 '동적 타입(Dynamically Typed) 언어'이다.
+- JavaScript는 하나의 변수에 저장되는 값의 종류가 자유롭게 바뀔 수 있는 '동적 타입(Dynamically Typed)' 언어이다.
 
 <br/>
 
@@ -81,9 +81,10 @@
 
   - 정수, 부동 소숫점 숫자 등을 나타낼 때 사용한다.
 
-  - 그 외애도 <code>Infinity</code>, <code>-Infinity</code>,<code>NaN</code> 같은 특수 숫자 값이 있다.
+  - 그 외애도 <code>Infinity</code>, <code>-Infinity</code>, <code>NaN</code> 같은 특수 숫자 값이 있다.
 
-  - 이러한 특수 숫자 값 덕분에 스크립트는 말도 안되는 수학 연산을 하더라도 치명적인 에러를 내뿜으며 죽지 않는다. (수학 연산은 안전하다)
+  - 이러한 특수 숫자 값 덕분에 스크립트는 말도 안되는 수학 연산을 하더라도 치명적인 에러를 내뿜으며 죽지 않는다.  
+    (수학 연산은 안전하다)
 
     ```javascript
     alert(1 / 0); // Infinity
