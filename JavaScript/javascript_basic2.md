@@ -127,7 +127,7 @@
 
 - <code>boolean형</code>
 
-  - <code>true</code>, <code>false</code>값을 나타낼 떄 사용된다.
+  - <code>true</code>, <code>false</code>값을 나타낼 때 사용된다.
 
 <br/>
 
