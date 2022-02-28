@@ -151,7 +151,13 @@
 
 <br/>
 
-- <code>use strict</code>를 코드 상단에 작성하면 엄격 모드가 적용되고, 코드 전체가 "모던한" 방식으로 동작한다.
+- 지시자 <code>"use strict"</code> 혹은 <code>'use strict'</code>를 작성하면, 그 밑에 작성된 코드는 엄격 모드가 적용되어 "모던한" 방식으로 동작한다.
+
+  ```javascript
+  "use script";
+
+  // 이 코드는 "모던한" 방식으로 동작합니다.
+  ```
 
 - 특정 함수에만 엄격 모드를 적용하려면, 함수 본문 맨 앞에 <code>use strict</code>를 작성하면 된다.
 
