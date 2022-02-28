@@ -209,3 +209,60 @@
 * 개발 시, 새로운 변수를 추가하는 것은 좋은 습관이다.   
 
     (변수를 재사용하면 디버깅에 10배 많은 시간을 쏟아야 한다.)
+
+<br/><br/>
+
+### 자료형
+
+* JavaScript엔 8가지 기본 자료형이 있다.
+
+* JavaScript는 하나의 변수에 저장되는 값의 종류가 자유롭게 바뀔 수 있는 '동적 타입(Dynamically Typed) 언어'이다.
+
+<br/>
+
+* <code>숫자형</code>
+
+    * 정수, 부동 소숫점 숫자 등을 나타낼 때 사용한다.
+
+    * 그 외애도 <code>Infinity</code>, <code>-Infinity</code>,<code>NaN</code> 같은 특수 숫자 값이 있다.
+
+    * 이러한 특수 숫자 값 덕분에 스크립트는 말도 안되는 수학 연산을 하더라도 치명적인 에러를 내뿜으며 죽지 않는다. (수학 연산은 안전하다)
+
+        ```javascript
+        alert( 1 / 0 ); // Infinity
+        alert(Infinity); // Infinity
+        
+        alert( "나는 빡빡이다" / 3 + 7); // NaN
+        ```
+
+    * 정수의 한계는 ±2^53이다.
+
+* <code>bigint</code>
+
+    * 길이 제약 없이 정수형을 나타낼 수 있다.
+
+    * 정수 리터럴 끝에 n을 붙이면 만들 수 있다.
+
+        ```javascript
+        const bigInt = 1234567890123456789012345678901234567890n;
+        ```
+
+* <code>문자형</code>
+
+    * 글자들로 이루어진 문자열을 나타낸다.
+    
+    * 비어있거나 한 글자여도 문자형으로 취급한다.
+
+    * 역 따옴표(백틱)을 사용하면 문자열 중간에 변수나 표현식을 쉽게 삽입할 수 있다. (문자열의 일부로 출력된다.)
+
+        ```javascript
+        score = 100
+        alert(`I got ${score} in test!`);
+        alert(`I got ${50 + 50} in test!`);
+        ```
+
+* <code>boolean형</code>
+
+    * <code>true</code>, <code>false</code>값을 나타낼 떄 사용된다.
+
+* <code>null</code>
