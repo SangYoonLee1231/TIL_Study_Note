@@ -197,16 +197,14 @@
   - [확인]을 누르면 사용자가 입력 필드에 입력한 문자열이 반환되고,  
     [취소] 또는 Esc를 누르면 <code>null</code>이 반환된다.
 
-    <br/>
+    ```javascript
+    result = prompt(title, [default]);
+    ```
 
-  ```javascript
-  result = prompt(title, [default]);
-  ```
+    - title : 사용자에게 보여줄 문자열
 
-  - title : 사용자에게 보여줄 문자열
-
-  - default : 입력 필드의 초기값  
-    (인수를 감싸는 대괄호 <code>[]</code>는 필수가 아닌 선택값이란 의미)
+    - default : 입력 필드의 초기값  
+       (인수를 감싸는 대괄호 <code>[]</code>는 필수가 아닌 선택값이란 의미)
 
 <br/>
 
