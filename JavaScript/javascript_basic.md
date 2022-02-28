@@ -1,10 +1,12 @@
-# JavaScript 기초 문법 - 약점 포인트 1
+# JavaScript 기본 1 - 사전 지식 약점 포인트
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
 <br/>
 
-* 자바스크립트의 문법을 하나부터 열까지 다 기록하는 것이 아니라, 잘 몰랐거나 헷갈릴 내용들만을 따로 모아 항목 단위로 묶어 기록한다.
+* <a href="https://ko.javascript.info/">javascript.info</a>의 【자바스크립트 기본】 챕터의 1 ~ 3장 내용
+
+* 모든 내용을 하나부터 열까지 다 기록하는 것이 아니라, 잘 몰랐거나 헷갈릴만한 내용들만을 따로 모아 항목 단위로 묶어 기록하였다.
 
 <br/>
 
@@ -15,11 +17,7 @@
 * <a href="">JavaScript의 제약 사항</a>
 * <a href="">세미콜론 자동 삽입</a>
 * <a href="">주석</a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
-* <a href=""></a>
+* <a href="">엄격 모드 (<code>use strict</code>)</a>
 
 <br/><br/>
 
