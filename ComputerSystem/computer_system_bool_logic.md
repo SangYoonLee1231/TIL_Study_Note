@@ -8,8 +8,9 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
+- <a href="">도입부</a>
+- <a href="">불 논리</a>
+- <a href="">기초 논리 게이트</a>
 
 <br/>
 
@@ -65,7 +66,7 @@
         <tr><td>1</td><td>1</td><td>1</td></tr>
     </table>
 
-- <code>부정 논리곱 (Nand)</code> :
+- <code>부정 논리곱 (Nand)</code> : 논리곱의 결과값을 부정한 연산
 
     <table style="text-align: center">
         <tr><td>a</td><td>b</td><td>out</td></tr>
@@ -75,7 +76,7 @@
         <tr><td>1</td><td>1</td><td>0</td></tr>
     </table>
 
-- <code>부정 논리합 (Nor)</code> :
+- <code>부정 논리합 (Nor)</code> : 논리합의 결과값을 부정한 연산
 
     <table style="text-align: center">
         <tr><td>a</td><td>b</td><td>out</td></tr>
@@ -85,7 +86,7 @@
         <tr><td>1</td><td>1</td><td>0</td></tr>
     </table>
 
-- <code>배타적 논리합 (Xor)</code> :
+- <code>배타적 논리합 (Xor)</code> : 두 명제의 참거짓 여부가 반대여야만 결과값이 참인 연산
 
     <table style="text-align: center">
         <tr><td>a</td><td>b</td><td>out</td></tr>
@@ -95,7 +96,7 @@
         <tr><td>1</td><td>1</td><td>0</td></tr>
     </table>
 
-<br/><br/>
+<br/>
 
 ### 불 함수
 
@@ -103,8 +104,14 @@
 
 - 컴퓨터는 2진수로 모든 작업을 처리하는 하드웨어이므로, 불 함수는 하드웨어 아키텍처(의 명세, 구성, 최적화)에 중심적인 역할을 한다.
 
-### 게이트 (또는 칩)
+<br/>
+
+#### 불 함수를 표현하는 여러가지 방식
 
 <br/>
+
+### 게이트 (또는 칩)
+
+<br/><br/>
 
 ## 기초 논리 게이트
