@@ -93,7 +93,7 @@
 
 ### 컴퓨터 시스템
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터의 구조 큰 개요</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
 - <a href="">불 논리</a>
 
 <br/>
