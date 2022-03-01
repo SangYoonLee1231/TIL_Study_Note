@@ -12,31 +12,9 @@
 
 ---
 
-## HTML
+## 기본 언어
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
-
-## CSS
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md">CSS - Display 속성 : Flexbox 기초</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_position.md">CSS - Position</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_combinator.md">CSS - 결합자</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 속성 선택자, 가상 클래스, 가상 요소</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_color_variable.md">CSS - 색상 체계, 사용자 지정 CSS 속성 (변수)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
-
-## JavaScript
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
-
-## Python
+### Python
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md">Python - 출력 함수 <code>print()</code> 사용법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md">Python - 입력 함수 <code>input()</code> 사용법</a>
@@ -51,7 +29,39 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_scope_of_variable.md">Python - 변수 Scope (전역 변수와 지역 변수)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md">Python - 조각 지식 모음🖋</a>
 
-## 자료구조
+<br/>
+
+## 프론트엔드 지식
+
+### HTML
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
+
+### CSS
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md">CSS - Display 속성 : Flexbox 기초</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_position.md">CSS - Position</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_combinator.md">CSS - 결합자</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 속성 선택자, 가상 클래스, 가상 요소</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_color_variable.md">CSS - 색상 체계, 사용자 지정 CSS 속성 (변수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
+
+### JavaScript
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
+
+<br/>
+
+## Computer Science 지식
+
+### 자료구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
 
@@ -71,7 +81,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
 
-## 알고리즘
+### 알고리즘
 
 #### 기본 개념
 
@@ -81,10 +91,19 @@
 
 - <a href=""></a>
 
-## 아두이노 (Arduino)
+### 컴퓨터 시스템
+
+- <a href="">컴퓨터의 구조 큰 개요</a>
+- <a href="">불 논리</a>
+
+<br/>
+
+## Etc.
+
+### 아두이노 (Arduino)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Arduino/arduino_introduction.md">아두이노의 학습 목적 및 소개</a>
 
-## 유니티 (Unity)
+### 유니티 (Unity)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_introduction.md">유니티 소개 및 설치</a>
