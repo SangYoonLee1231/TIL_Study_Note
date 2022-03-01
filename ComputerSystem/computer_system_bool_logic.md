@@ -108,10 +108,56 @@
 
 #### 불 함수를 표현하는 여러가지 방식
 
+- <strong>진리표 표현</strong>
+
+  - 논리 연산의 종류를 소개할 때처럼 불 함수의 입력값과 출력값(결과값)을 나란히 서술하여 표현하는 방법이다.
+
+    <table style="text-align: center">
+        <tr><td>a</td><td>b</td><td>out</td></tr>
+        <tr><td>0</td><td>0</td><td>1</td></tr>
+        <tr><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>1</td><td>0</td></tr>
+    </table>
+
+- <strong>정준 표현</strong>
+
+  - 함수의 진리표에서 함수값이 1인 행들을 And 연산으로 묶어 항으로 만들고 이를 Or 연산으로 이어주면, 진리표와 동등한 불 표현식을 얻을 수 있다.
+
+    <table style="text-align: center">
+        <tr><td>x</td><td>y</td><td>z</td><td>out</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+        <tr><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+        <tr><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+        <tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+    </table>
+
+    <code>f(x, y, z) = x'yz' + xy'z' + xyz'</code> (바(-) 대신 '로 표기)
+
+    <br/>
+
+#### Nand 함수의 중요한 성질
+
+- Nand 함수만으로 And, Or, Not 연산을 모두 만들 수 있다.
+
+- 모든 불 함수는 And, Or, Not 연산으로만 이루어진 정준 표현식으로 나타낼 수 있다.
+
+- ✨ 즉, 모든 불 함수는 Nand 함수만으로 표현할 수 있다.
+
 <br/>
 
 ### 게이트 (또는 칩)
 
+- 게이트는 불 함수를 물리적으로 구현한 장치이다.
+
 <br/><br/>
 
 ## 기초 논리 게이트
+
+- 모든 논리 게이트는 Nand 게이트로 구현할 수 있다.
+
+- 즉, Nand 게이트가 컴퓨터 아키텍처의 시작점인 것이다.
