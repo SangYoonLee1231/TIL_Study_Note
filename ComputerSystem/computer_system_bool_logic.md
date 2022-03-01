@@ -8,9 +8,9 @@
 
 ### 목차
 
-- <a href="">도입부</a>
-- <a href="">불 논리</a>
-- <a href="">기초 논리 게이트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md#%EB%8F%84%EC%9E%85%EB%B6%80">도입부</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md#%EB%B6%88-%EB%85%BC%EB%A6%AC-1">불 논리</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md#%EA%B8%B0%EC%B4%88-%EB%85%BC%EB%A6%AC-%EA%B2%8C%EC%9D%B4%ED%8A%B8">기초 논리 게이트</a>
 
 <br/>
 
