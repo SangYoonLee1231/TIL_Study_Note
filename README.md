@@ -91,9 +91,10 @@
 
 - <a href=""></a>
 
-### 컴퓨터 시스템
+### 컴퓨터 구조 및 시스템
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
 
 <br/>
