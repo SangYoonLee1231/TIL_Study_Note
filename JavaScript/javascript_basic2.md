@@ -259,7 +259,7 @@
   * <code>alert</code> 메서드는 매개변수로 문자형을 받기 때문에, <code>alert(value)</code>에서 value가 문자형이 아니면, 문자형으로 자동 변환된다.
 
     ```javascript
-    alert(123456);  // "123456"
+    alert(123456);  // 123456이 문자열로 자동 변환되어 출력된다.
     ```
 
 <br/>
@@ -314,11 +314,11 @@
 
 * 숫자형으로의 변환은 그 결과가 일부 예측하기 어렵다. 따라서 변환 시 적용되는 규칙을 잘 숙지하고 있는 것이 중요하다.
 
-  * ✨ <code>undefined</code> &nbsp; → &nbsp; <code>NaN</code> &nbsp; (<code>0</code>이 아님에 유의)
+  * ✨ <code>Number(undefined)</code> &nbsp; → &nbsp; <code>NaN</code> &nbsp; (<code>0</code>이 아님에 유의)
 
-  * <code>null</code> &nbsp; → &nbsp; <code>0</code>
+  * <code>Number(null)</code> &nbsp; → &nbsp; <code>0</code>
 
-  * <code>true</code> / <code>false</code> &nbsp; → &nbsp; <code>1</code> / <code>0</code>
+  * <code>Number(true)</code> / <code>Number(false)</code> &nbsp; → &nbsp; <code>1</code> / <code>0</code>
 
   * <code>string</code> &nbsp; → &nbsp; 전달받은 문자열을, 앞 뒤 공백 무시하고, <strong>그대로</strong> 읽는다. 단, 문자열이 비어있으면 <code>0</code>, 변환에 실패하면 <code>NaN</code>이 된다.
 
