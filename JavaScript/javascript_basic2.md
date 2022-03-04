@@ -127,7 +127,7 @@
 
 - <code>boolean형</code>
 
-  - <code>true</code>, <code>false</code>값을 나타낼 때 사용된다.
+  - <code>true</code>, <code>false</code>값을 나타내는 자료형이다.
 
 <br/>
 
@@ -165,7 +165,7 @@
 
 - <code>typeof</code> 연산자는 피연산자의 자료형을 문자열 형태로 반환한다.
 
-- 연산자 형태 <code>typeof x</code> 또는 함수 형태 <code>typeof(x)</code>로 사용된다.
+- 연산자 형태 <code>typeof x</code> 또는 함수 형태 <code>typeof(x)</code>로 사용할 수 있다.
 
 <br/>
 
@@ -178,7 +178,7 @@
 
 ## 브라우저와의 상호작용 (<code>alert</code>, <code>prompt</code>, <code>confirm</code>)
 
-- 브라우저는 사용자와 상호작용을 할 수 있도록 스크립트의 3가지 함수를 제공한다.
+- 브라우저는 사용자가 브라우저와 상호작용을 할 수 있도록 스크립트의 3가지 함수를 제공한다.
 
 - <code>alert</code>
 
