@@ -1,28 +1,16 @@
-n, t = tuple(map(int, input().split()))
-x, y, dir_num = tuple(input().split())
-x, y = int(x), int(y)
+n = int(input())
 
-dxs = [0, -1, 1, 0]
-dys = [1, 0, 0, -1]
+isPrime = True
+i = 2
 
-mapper = {
-    'U' : 1,
-    'D' : 2,
-    'R' : 0,
-    'L' : 3
-}
-
-dir_num = mapper[dir_num]
-
-def in_range(x, y):
-    return x >= 1 and x <= n and y >= 1 and y <= n
-
-for _ in range(t):
-    nx, ny = x + dxs[dir_num], y + dys[dir_num]
-
-    if not in_range(nx, ny):
-        dir_num = 3 - dir_num
+while i*i < n:
+    if n % i == 0:
+        isPrime = False
+        break
     else:
-        x, y = nx, ny
+        i += 1
 
-print(x, y)
+if isPrime:
+    print(f"{n} is a prime number")
+else:
+    print(f"{n} is not a prime number")

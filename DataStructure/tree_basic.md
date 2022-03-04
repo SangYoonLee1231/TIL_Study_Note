@@ -1,5 +1,11 @@
 # 트리 기본 개념
 
+<br/>
+
+> 참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>》 페이지 참고
+
+<br/>
+
 - <strong>부모 - 자식</strong> 간의 관계에 따라 자료를 구성하는 자료구조
 
 - 순서에 따라 자료가 저장되는 순차적 자료구조와 다른 개념이다.

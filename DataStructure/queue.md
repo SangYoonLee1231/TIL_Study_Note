@@ -2,27 +2,36 @@
 
 <br/>
 
->  참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>》 페이지 참고
+> 참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>》 페이지 참고
+
+<br/>
+
+### 목차
+
+- <a href="">큐 (Queue) 소개</a>
+- <a href="">Queue 구현 (파이썬)</a>
+- <a href="">Queue 연산 수행시간</a>
+- <a href="">Queue 활용 예제</a>
 
 <br/>
 
 ## 큐 (Queue) 소개
 
-* 1차원의 선형(linear) 자료구조로 Stack과 유사하다.
+- 1차원의 선형(linear) 자료구조로 Stack과 유사하다.
 
-* 그러나 Stack과 달리, 삽입하는 곳과 삭제하는 곳이 서로 반대쪽이다.
+- 그러나 Stack과 달리, 삽입하는 곳과 삭제하는 곳이 서로 반대쪽이다.
 
-    * Stack은 '<strong>접시 쌓기</strong>', Queue는 '<strong>선착순</strong>'에 비유
+  - Stack은 '<strong>접시 쌓기</strong>', Queue는 '<strong>선착순</strong>'에 비유
 
-* 2가지 기본 연산을 제공한다. (다른 추가 연산도 제공)
+- 2가지 기본 연산을 제공한다. (다른 추가 연산도 제공)
 
-    * 기본 연산 : <strong>enqueue(삽입), dequeue(삭제)</strong>
+  - 기본 연산 : <strong>enqueue(삽입), dequeue(삭제)</strong>
 
-    * 추가 연산 : <strong>isEmpty, front, len</strong>
+  - 추가 연산 : <strong>isEmpty, front, len</strong>
 
-* <strong>FIFO : First In First Out</strong>
+- <strong>FIFO : First In First Out</strong>
 
-    * 처음으로 들어온 요소가 제일 먼저 나간다.
+  - 처음으로 들어온 요소가 제일 먼저 나간다.
 
 <img src="img/queue1.png">
 
@@ -30,9 +39,9 @@
 
 ## Queue 구현 (파이썬)
 
-* Queue의 요소 개수를 구할 시, 2개의 index가 필요
+- Queue의 요소 개수를 구할 시, 2개의 index가 필요
 
-    * enqueue시 들어갈 위치 index, dequeue시 나갈 값의 위치 index
+  - enqueue시 들어갈 위치 index, dequeue시 나갈 값의 위치 index
 
 ```python
 class Queue:
@@ -61,6 +70,7 @@ class Queue:
         return len(self.items) - self.front_index
 
 ```
+
 ```python
 Q = Queue()
 
@@ -78,13 +88,13 @@ print(Q.dequeue())
 
 ## Queue 연산 수행시간
 
-* <code>enqueue</code>, <code>dequeue</code>, <code>front</code>, <code>len</code>, <code>isEmpty</code> : <strong>O(1)</strong>
+- <code>enqueue</code>, <code>dequeue</code>, <code>front</code>, <code>len</code>, <code>isEmpty</code> : <strong>O(1)</strong>
 
 <br/>
 
 ## Queue 활용 예제
 
-* <a href="https://www.acmicpc.net/problem/1158" target="_blank">Josephus Problem (백준 1158번)</a>
+- <a href="https://www.acmicpc.net/problem/1158" target="_blank">Josephus Problem (백준 1158번)</a>
 
 <br/><br/>
 

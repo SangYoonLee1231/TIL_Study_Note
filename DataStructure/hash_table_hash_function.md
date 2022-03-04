@@ -6,6 +6,17 @@
 
 <br/>
 
+### 목차
+
+- <a href="">해시 함수 (Hash Function)</a>
+
+  - <a href="">완전(perfect) 해시 함수</a>
+  - <a href="">universial 해시 함수</a>
+  - <a href="">c-universial 해시 함수</a>
+  - <a href="">해시 함수 종류 (간단 정리)</a>
+
+<br/>
+
 ## 해시 함수 (Hash Function)
 
 - 해시 함수란 <strong>key 값을 index로 맵핑(mapping)할 때 쓰이는 함수</strong>로, <code>f(key)</code>로 나타낸다.
