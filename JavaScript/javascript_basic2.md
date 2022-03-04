@@ -259,8 +259,7 @@
   * <code>alert</code> 메서드는 매개변수로 문자형을 받기 때문에, <code>alert(value)</code>에서 value가 문자형이 아니면, 문자형으로 자동 변환된다.
 
     ```javascript
-    let val = true;
-    alert(typeof val);  // boolean
+    alert(123456);  // "123456"
     ```
 
 <br/>
@@ -270,6 +269,9 @@
   * <code>String(value)</code> 함수를 호출하여 문자열이 아닌 값을 문자열로 직접 명시해서 변환해줄 수 있다.
   
     ```javascript
+    let val = true;
+    alert(typeof val);  // boolean
+
     val = String(val);
     alert(typeof val);  // string
     ```
@@ -278,7 +280,7 @@
 
 * 문자형으로의 변환은 그 결과가 대부분 예측 가능한 방식으로 일어난다.
 
-  * <code>"true"</code> → <code>true</code>, <code>"null"</code> → <code>null</code>
+  * <code>"true"</code> → <code>true</code>, &nbsp; <code>"null"</code> → <code>null</code>
 
 <br/>
 
