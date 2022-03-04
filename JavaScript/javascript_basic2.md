@@ -332,13 +332,13 @@
 
 <br/>
 
-* 불린형 명시적 형변환
+* 불린형 명시적 형 변환
 
   * <code>Boolean(value)</code> 함수를 호출하면 명시적으로 불린형으로의 형 변환을 수행할 수 있다.
 
 <br/>
 
-* 불린형으로의 변환 시 적용되는 규칙은, 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 바뀐다.
+* 불린형으로의 형 변환 시 적용되는 규칙은, 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 바뀐다는 것이다.
   
   * <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code> &nbsp; → &nbsp; <code>false</code>
 
@@ -346,6 +346,6 @@
 
   <br/>
 
-  * ✨ 문자열 <code>"0"</code>과, 공백 <code>" "</code>은 불린형으로 변환 시 <code>true</code>가 됨에 유의한다.
+  * ✨ 문자열 <code>"0"</code>과, 공백 <code>" "</code>은 비어있지 않은 문자열이므로, 불린형으로 변환 시 <code>true</code>가 됨에 유의한다.
 
     (반면, 숫자 <code>0</code>과, 빈 문자열 <code>""</code>은 불린형으로 변환 시 <code>false</code>가 된다.)
