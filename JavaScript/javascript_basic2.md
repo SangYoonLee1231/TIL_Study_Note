@@ -254,6 +254,96 @@
 
 ### 문자형으로 변환
 
+* 문자형 자동 형 변환
+
+  * <code>alert</code> 메서드는 매개변수로 문자형을 받기 때문에, <code>alert(value)</code>에서 value가 문자형이 아니면, 문자형으로 자동 변환된다.
+
+    ```javascript
+    let val = true;
+    alert(typeof val);  // boolean
+    ```
+
+<br/>
+
+* 문자형 명시적 형 변환
+
+  * <code>String(value)</code> 함수를 호출하여 문자열이 아닌 값을 문자열로 직접 명시해서 변환해줄 수 있다.
+  
+    ```javascript
+    val = String(val);
+    alert(typeof val);  // string
+    ```
+
+<br/>
+
+* 문자형으로의 변환은 그 결과가 대부분 예측 가능한 방식을 일어난다.
+
+  * <code>"true"</code> → <code>true</code>, <code>"null"</code> → <code>null</code>
+
 <br/>
 
 ### 숫자형으로 변환
+
+* 숫자형 자동 형 변환
+
+  * 주로 수학과 관련된 함수에서 자동으로 형 변환이 일어난다.
+
+    ```javascript
+    alert("6" / "2");  // 3
+    ```
+
+<br/>
+
+* 숫자형 명시적 형 변환
+
+  * <code>Number(value)</code> 함수를 호출하여 주어진 value값을 숫자형으로 직접 변환할 수 있다.
+
+    ```javascript
+    let val = "1234";
+    alert(typeof val);  // string
+
+    val = Number(val);
+    alert(typeof val);  // number
+    ```
+
+* 어떤 값을 문자 기반 폼으로 입력받아 숫자형으로 사용하고자 할 때, 명시적 형 변환을 꼭 해주어야 한다.
+
+<br/>
+
+* 숫자형으로의 변환은 그 결과가 일부 예측하기 어렵다. 따라서 변환 시 적용되는 규칙을 잘 숙지하고 있는 것이 중요하다.
+
+  * ✨ <code>undefined</code> &nbsp; → &nbsp; <code>NaN</code> &nbsp; (<code>0</code>이 아님에 유의)
+
+  * <code>null</code> &nbsp; → &nbsp; <code>0</code>
+
+  * <code>true</code> / <code>false</code> &nbsp; → &nbsp; <code>1</code> / <code>0</code>
+
+  * <code>string</code> &nbsp; → &nbsp; 전달받은 문자열을, 앞 뒤 공백 무시하고, <strong>그대로</strong> 읽는다. 단, 문자열이 비어있으면 <code>0</code>, 변환에 실패하면 <code>NaN</code>이 된다.
+
+<br/>
+
+### 불린형으로 변환
+
+* 불린형 자동 형 변환
+
+  * 논리 연산을 수행할 때 발생한다.
+
+<br/>
+
+* 불린형 명시적 형변환
+
+  * <code>Boolean(value)</code> 함수를 호출하면 먕시적으로 불린형으로의 형 변환을 수행할 수 있다.
+
+<br/>
+
+* 불린형으로의 변환 시 적용되는 규칙은, 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 바뀐다.
+  
+  * <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code> &nbsp; → &nbsp; <code>false</code>
+
+  * 그 외의 값 &nbsp; → &nbsp; <code>true</code>
+
+  <br/>
+
+  * ✨ 문자열 <code>"0"</code>과, 공백 <code>" "</code>은 불린형으로 변환 시 <code>true</code>가 됨에 유의한다.
+
+    (반면, 숫자 <code>0</code>과, 빈 문자열 <code>""</code>은 불린형으로 변환 시 <code>false</code>가 된다.)
