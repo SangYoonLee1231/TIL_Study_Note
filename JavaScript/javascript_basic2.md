@@ -276,7 +276,7 @@
 
 <br/>
 
-* 문자형으로의 변환은 그 결과가 대부분 예측 가능한 방식을 일어난다.
+* 문자형으로의 변환은 그 결과가 대부분 예측 가능한 방식으로 일어난다.
 
   * <code>"true"</code> → <code>true</code>, <code>"null"</code> → <code>null</code>
 
