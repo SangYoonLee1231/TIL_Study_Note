@@ -57,6 +57,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
+  <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md">JavaScript 기본 3 - 기본 연산자와 수학</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음🖋</a>
 
 <br/>
