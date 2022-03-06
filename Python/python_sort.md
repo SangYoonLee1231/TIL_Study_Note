@@ -4,9 +4,9 @@
 
 ### 목차
 
-- <a href="">숫자 정렬</a>
-- <a href="">문자열 내 문자 정렬</a>
-- <a href="">문자열 리스트 정렬</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EC%88%AB%EC%9E%90-%EC%A0%95%EB%A0%AC">숫자 정렬</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%B4-%EB%AC%B8%EC%9E%90-%EC%A0%95%EB%A0%AC">문자열 내 문자 정렬</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A0%95%EB%A0%AC">문자열 리스트 정렬</a>
 
 <br/>
 
