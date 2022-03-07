@@ -16,7 +16,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#list-comprehension">List Comprehension</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_1d_list.md#%EC%9E%90%EC%A3%BC-%EC%93%B0%EC%9D%B4%EB%8A%94-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%A8%EC%88%98-2-index-count-max-min-%ED%95%A8%EC%88%98">자주 쓰이는 리스트 함수 2 (index, count, max, min 함수)</a>
 
-<br/>
+<br/><br/>
 
 ## 1차원 리스트
 
@@ -30,7 +30,7 @@
   arr = [1, 2, 3, 4, 'Life', 'is', 'too', 'short']
   ```
 
-<br/>
+<br/><br/>
 
 ## 1차원 리스트 입력 (<code>input().split()</code> 활용법)
 
@@ -80,7 +80,7 @@
   1 3
   ```
 
-<br/>
+<br/><br/>
 
 ## 리스트 슬라이싱 (Slicing)
 
@@ -104,7 +104,7 @@
   print(arr[::2])     # [1, 3, 5]
   ```
 
-<br/>
+<br/><br/>
 
 ## 자주 쓰이는 리스트 함수 (append, pop, len, sum 함수)
 
@@ -142,7 +142,7 @@
   3
   ```
 
-<br/>
+<br/><br/>
 
 ## 리스트 값 참조
 
@@ -180,11 +180,11 @@
   4
   ```
 
-<br/>
+<br/><br/>
 
 ## ✨List Comprehension
 
-- 아래처럼 리스트를 선언하고 for문을 통해 입력값을 넣어주는 과정을, list comprehension을 통해 한 줄로 표현할 수 있다.
+- 아래처럼 리스트를 선언하고 for문을 통해 입력값을 넣어주는 과정을, <strong>list comprehension</strong>을 통해 한 줄로 표현할 수 있다.
 
 - 표현 방식이 삼항 연산자 표현 방식과 비슷하다.
 
@@ -199,6 +199,8 @@
     ```python
     arr = [i for _ in range(10)]
     ```
+
+    <br/>
 
   - 예시 2
 
@@ -219,30 +221,30 @@
     ]
     ```
 
-<br/>
+    <br/>
 
-- 조건문을 포함하는 list comprehension
+    - 예시 3 : 조건문을 포함하는 list comprehension
 
-  ```python
-  arr = [1, 2, 3, 4]
+    ```python
+    arr = [1, 2, 3, 4]
 
-  new_arr = []
-  for elem in arr:
-      if elem % 2 == 1:
-          new_arr.append(elem)
-  ```
+    new_arr = []
+    for elem in arr:
+        if elem % 2 == 1:
+            new_arr.append(elem)
+    ```
 
-  ```python
-  arr = [1, 2, 3, 4]
+    ```python
+    arr = [1, 2, 3, 4]
 
-  new_arr = [
-      elem
-      for elem in arr
-      if elem % 2 == 1
-  ]
-  ```
+    new_arr = [
+        elem
+        for elem in arr
+        if elem % 2 == 1
+    ]
+    ```
 
-<br/>
+<br/><br/>
 
 ## 자주 쓰이는 리스트 함수 2 (index, count, max, min 함수)
 
