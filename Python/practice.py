@@ -1,10 +1,5 @@
-n = int(input())
-lst = list(map(int, input().split()))
+arr1 = [1, 2, 3, 4, 5, 6, 7]
+arr2 = [8, 9, 10, 11, 12]
 
-if n == 1:
-    print(lst[0] * lst[0])
-else:
-    print(max(lst) * min(lst))
-
-# 약수가 1개이면 그 값을 제곱
-# 약수가 2개 이상이면 제일 큰 값 * 제일 작은 값
+for elem1, elem2 in zip(arr1, arr2):
+  print(elem1, elem2)
