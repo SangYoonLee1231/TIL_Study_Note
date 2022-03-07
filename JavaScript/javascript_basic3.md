@@ -12,7 +12,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#%EC%97%B0%EC%82%B0%EC%9E%90-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4">연산자 관련 용어</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#%EC%82%B0%EC%88%A0-%EC%97%B0%EC%82%B0%EC%9E%90">산술 연산자</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#--%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%EA%B8%B0%EB%8A%A5">'+' 연산자의 기능</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#-%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%EA%B8%B0%EB%8A%A5">'+' 연산자의 기능</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#%EC%97%B0%EC%82%B0%EC%9E%90-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84">연산자 우선순위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#%ED%95%A0%EB%8B%B9-%EC%97%B0%EC%82%B0%EC%9E%90">할당 연산자</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md#%EC%A6%9D%EA%B0%80%EA%B0%90%EC%86%8C-%EC%97%B0%EC%82%B0%EC%9E%90">증가/감소 연산자</a>
