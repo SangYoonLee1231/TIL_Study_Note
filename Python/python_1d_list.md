@@ -217,26 +217,26 @@
 
 <br/>
 
-### 조건문을 포함하는 list comprehension
+- 조건문을 포함하는 list comprehension
 
-    ```python
-    arr = [1, 2, 3, 4]
+  ```python
+  arr = [1, 2, 3, 4]
 
-    new_arr = []
-    for elem in arr:
-        if elem % 2 == 1:
-            new_arr.append(elem)
-    ```
+  new_arr = []
+  for elem in arr:
+      if elem % 2 == 1:
+          new_arr.append(elem)
+  ```
 
-    ```python
-    arr = [1, 2, 3, 4]
+  ```python
+  arr = [1, 2, 3, 4]
 
-    new_arr = [
-        elem
-        for elem in arr
-        if elem % 2 == 1
-    ]
-    ```
+  new_arr = [
+      elem
+      for elem in arr
+      if elem % 2 == 1
+  ]
+  ```
 
 <br/>
 
