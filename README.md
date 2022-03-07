@@ -87,12 +87,7 @@
 
 ### 알고리즘
 
-#### 기본 개념
-
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
-
-#### 실전 개념
-
 - <a href=""></a>
 
 ### 컴퓨터 구조 및 시스템
