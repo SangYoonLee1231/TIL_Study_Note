@@ -223,7 +223,7 @@
 
     <br/>
 
-    - 예시 3 : 조건문을 포함하는 list comprehension
+  - 예시 3 : 조건문을 포함하는 list comprehension
 
     ```python
     arr = [1, 2, 3, 4]
