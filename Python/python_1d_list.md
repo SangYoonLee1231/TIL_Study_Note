@@ -188,32 +188,36 @@
 
 - 표현 방식이 삼항 연산자 표현 방식과 비슷하다.
 
-  ```python
-  arr = []
-  for i in range(10):
-      arr.append(i)
-  ```
+  - 예시 1
 
-  ```python
-  arr = [i for _ in range(10)]
-  ```
+    ```python
+    arr = []
+    for i in range(10):
+        arr.append(i)
+    ```
 
-  ```python
-  arr = [1, 2, 3, 4]
+    ```python
+    arr = [i for _ in range(10)]
+    ```
 
-  new_arr = []
-  for elem in arr:
-      new_arr.append(elem * elem)
-  ```
+  - 예시 2
 
-  ```python
-  arr = [1, 2, 3, 4]
+    ```python
+    arr = [1, 2, 3, 4]
 
-  new_arr = [
-      elem * elem
-      for elem in arr
-  ]
-  ```
+    new_arr = []
+    for elem in arr:
+        new_arr.append(elem * elem)
+    ```
+
+    ```python
+    arr = [1, 2, 3, 4]
+
+    new_arr = [
+        elem * elem
+        for elem in arr
+    ]
+    ```
 
 <br/>
 
