@@ -1,5 +1,9 @@
-arr1 = [1, 2, 3, 4, 5, 6, 7]
-arr2 = [8, 9, 10, 11, 12]
+x, y, w, h = tuple(map(int, input().split()))
+dist = [x, y, (h - y), (w - x)]
 
-for elem1, elem2 in zip(arr1, arr2):
-  print(elem1, elem2)
+min = 1000
+for elem in dist:
+  if elem < min:
+    min = elem
+
+print(min)
