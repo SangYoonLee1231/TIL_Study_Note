@@ -221,7 +221,21 @@
     ]
     ```
 
-    <br/>
+  - 예시 3
+
+    ```python
+    arr = [
+      int(x)
+      for x in input().split()
+    ]
+    ```
+
+    ```
+    >> 10 20 30 40 50
+    [10, 20, 30, 40, 50]
+    ```
+
+     <br/>
 
   - 예시 3 : 조건문을 포함하는 list comprehension
 
