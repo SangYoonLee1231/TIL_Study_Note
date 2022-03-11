@@ -15,8 +15,6 @@
   - <a href="">insert 연산</a>
   - <a href="">find_max 연산</a>
   - <a href="">delete_max 연산</a>
-  - <a href=""></a>
-  - <a href=""></a>
 
 <br/>
 

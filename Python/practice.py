@@ -1,9 +1,18 @@
-x, y, w, h = tuple(map(int, input().split()))
-dist = [x, y, (h - y), (w - x)]
+d = {
+  'cs101' : 'python programming',
+  'cs202' : 'data structures'
+}
 
-min = 1000
-for elem in dist:
-  if elem < min:
-    min = elem
+print(d.get('cs101'))
+print(d.get('cs102', 0))
+print(d.items())
+print(d.keys())
+print(d.values())
 
-print(min)
+
+s = [
+  int(x)
+  for x in input().split()
+]
+
+print(s)
