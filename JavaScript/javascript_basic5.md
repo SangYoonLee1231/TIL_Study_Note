@@ -28,17 +28,18 @@
 
 * <code>if (...)</code>문의 괄호 안에 들어가는 조건식(표현식)은 불린형 값을 반환하고, 만일 그 값이 <code>true</code>면 코드 블록을 실행한다.
 
-    * 불린형으로 변환 시 true가 되는 값은 'truthy(참 같은) 값이라 한다. (예 : <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code>)
+    * 불린형으로 변환 시 true가 되는 값은 'truthy(참 같은)' 값이라 한다. (예 : <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code>)
 
     * 반대로, 불린형으로 변환 시 false가 되는 값은 'falsy(거짓 같은) 값이라 한다.
 
 <br/>
 
-* 이 떄, 중괄호 <code>{}</code>로 코드 불록을 항상 감싸준다. 코드 블록이 한 줄 뿐이더라도 중괄호로 감싸는 것이 가독성에 좋기 떄문이다.
+* 이 때, 중괄호 <code>{}</code>로 코드 불록을 항상 감싸주는 것이 좋다. 코드 블록이 한 줄 뿐이더라도 중괄호로 감싸는 것이 가독성에 좋기 때문이다.
 
 <br/>
 
-* <code>else</code>문은 <code>if</code>문에 붙여, 조건이 거짓일 때 뒤에 이어지는 코드 블록을 실행하는 문법이다. <code>else</code>문은 필수가 아닌 선택 사항이다.
+* <code>else</code>문은 <code>if</code>문에 붙어 조건이 거짓일 때 뒤에 이어지는 코드 블록을 실행시키는 문법이다.  
+참고로 <code>else</code>문은 필수가 아닌 선택 사항이다.
 
 * <code>if</code>문과 <code>else</code>문 중간에 <code>else if</code>를 사용하면, 조건 여러 개를 처리할 수 있다.
 
