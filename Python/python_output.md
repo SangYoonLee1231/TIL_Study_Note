@@ -8,12 +8,11 @@
 
 ### 목차
 
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5-%EB%B0%A9%EB%B2%95">기본 출력 방법</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%98%EC%97%AC-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">변수를 포함하여 출력하기</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EB%A5%BC-%EC%B6%9C%EB%A0%A5%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">변수를 출력하는 다양한 방법</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%8B%A4%EC%88%98%ED%98%95-%EB%B3%80%EC%88%98%EB%A5%BC-%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">실수형 변수를 소수점 맞춰 출력하기</a>
-* <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0">변수 값 바꾸기</a>
-
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EA%B8%B0%EB%B3%B8-%EC%B6%9C%EB%A0%A5-%EB%B0%A9%EB%B2%95">기본 출력 방법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%98%EC%97%AC-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">변수를 포함하여 출력하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98%EB%A5%BC-%EC%B6%9C%EB%A0%A5%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">변수를 출력하는 다양한 방법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EC%8B%A4%EC%88%98%ED%98%95-%EB%B3%80%EC%88%98%EB%A5%BC-%EC%86%8C%EC%88%98%EC%A0%90-%EB%A7%9E%EC%B6%B0-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">실수형 변수를 소수점 맞춰 출력하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md#%EB%B3%80%EC%88%98-%EA%B0%92-%EB%B0%94%EA%BE%B8%EA%B8%B0">변수 값 바꾸기</a>
 
 <br/>
 
@@ -31,6 +30,7 @@
   print("Hello World")
   print('Hello World')
   ```
+
   ```
   Hello World
   Hello World
@@ -99,7 +99,7 @@
 
 ### 두 값을 공백을 두고 출력하기
 
-  - print 함수에 2개의 값을 <code>,</code>를 사이에 두고 넣어준다.
+- print 함수에 2개의 값을 <code>,</code>를 사이에 두고 넣어준다.
 
   ```python
   print(1, 2)
@@ -207,6 +207,8 @@
 
 ### 1. 변수 포멧 (%d, %s, ...) 이용
 
+- <code>%d</code>, <code>%s</code> 등의 변수 포멧을 사용하여 문자열에 변수 값을 삽입한다.
+
   ```python
   x = 10
   print("x is %d" % x)
@@ -225,23 +227,23 @@
   x is 10 and y is code
   ```
 
-* 변수 포멧
+- 변수 포멧
 
-  * <code>%s</code> : 문자열
+  - <code>%s</code> : 문자열
 
-  * <code>%c</code> : 문자
+  - <code>%c</code> : 문자
 
-  * <code>%d</code> : 정수
+  - <code>%d</code> : 정수
 
-  * <code>%f</code> : 실수
+  - <code>%f</code> : 실수
 
 <br/>
 
 ### 2. format 함수 이용
 
-* format 함수를 이용하면 변수의 타입을 명시하지 않아도 된다.
+- format 함수를 이용하면 변수의 타입을 명시하지 않아도 된다.
 
-* 순서 또는 변수 이름을 통해 원하는 변수를 포멧에 맞춰 넣어줄 수 있다.
+- 순서 또는 변수 이름을 통해 원하는 변수를 포멧에 맞춰 넣어줄 수 있다.
 
   ```python
   x, y = 10, "code"
@@ -275,7 +277,7 @@
 
 ### 3. f 문자열 포멧 이용 (사용 권장)
 
-* 문자열 앞에 f를 붙이면, 중괄호와 변수 이름만으로 문자열에 원하는 변수를 삽입할 수 있다.
+- 문자열 앞에 f를 붙이면, 중괄호와 변수 이름만으로 문자열에 원하는 변수를 삽입할 수 있다.
 
   ```python
   x, y = 10, "code"
@@ -297,11 +299,11 @@
 
 ## 실수형 변수를 소수점 맞춰 출력하기
 
-* .4f == 소수 4째 자리까지 반올림 출력
+- .4f == 소수 4째 자리까지 반올림 출력
 
 ### 1. 변수 포멧 (%d, %s, ...) 이용
 
-* <code>%</code>를 이용한다.
+- <code>%</code>를 이용한다.
 
   ```python
   x = 3.141592653
@@ -318,7 +320,7 @@
 
 ### 2. format 함수 이용
 
-* 기존 포멧 <code>{0}</code>에<code>:</code>를 붙여 사용한다.
+- 기존 포멧 <code>{0}</code>에<code>:</code>를 붙여 사용한다.
 
   ```python
   x = 3.141592653
@@ -335,7 +337,7 @@
 
 ### 3. f 문자열 포멧 이용
 
-* 마친가지로 기존 포멧에 <code>:</code>를 붙여 사용한다.
+- 마친가지로 기존 포멧에 <code>:</code>를 붙여 사용한다.
 
   ```python
   x = 3.141592653
@@ -354,9 +356,9 @@
 
 ### 변수 값 변경 및 복사
 
-* 변수에 새 값을 대입하면, 기존 값은 사라지고 새로 대입한 값만 남는다.
+- 변수에 새 값을 대입하면, 기존 값은 사라지고 새로 대입한 값만 남는다.
 
-* 변수에 다른 변수를 대입하면, 기존에 있던 값은 사라지고 대입한 변수의 값이 복사된다.
+- 변수에 다른 변수를 대입하면, 기존에 있던 값은 사라지고 대입한 변수의 값이 복사된다.
 
   ```python
   a, b = 1, 2
@@ -379,7 +381,7 @@
 
 ### 두 변수 값 교환
 
-#### 1. temp 이용
+- [방법 1] temp 이용
 
   ```python
   a, b = 1, 2
@@ -399,7 +401,7 @@
 
 <br/>
 
-#### 2. <code>,</code> 이용하여 바로 교환
+- [방법 2] <code>,</code> 이용하여 바로 교환
 
   ```python
   a, b = 1, 2
@@ -415,13 +417,13 @@
   a = 2, b = 1
   ```
 
-* (참고) 파이썬만 temp없이 a,b = b,a 교환할 수 있는 이유는 python만 tuple 자료형이 존재하고, 그 tuple이 unpacking을 지원하기 때문이다.
+- (참고) 파이썬만 temp없이 a,b = b,a 교환할 수 있는 이유는 python만 tuple 자료형이 존재하고, 그 tuple이 unpacking을 지원하기 때문이다.
 
 <br/>
 
 #### (참고) Unpacking
 
-* 언패킹(Unpacking)이란 여러 개의 데이터가 패킹된 것을 풀어서 각각의 다른 변수에 저장하는 것이다.
+- 언패킹(Unpacking)이란 여러 개의 데이터가 패킹된 것을 풀어서 각각의 다른 변수에 저장하는 것이다.
 
   ```
   arr = [1, 2]
@@ -433,7 +435,7 @@
 
   <br/>
 
-* 다음과 같이 언패킹을 활용할 수 있다.
+- 다음과 같이 언패킹을 활용할 수 있다.
 
   ```python
   a, b = 3, (5, 6, 7, 4, 6)
@@ -443,6 +445,7 @@
 
   print(b1, b2, b3, b4, b5)
   ```
+
   ```
   5 6 7 4 6
   ```
@@ -451,7 +454,7 @@
 
 ### 변수값 동시에 복사
 
-* <code>=</code>을 연쇄적으로 사용하면, 한 변수의 값을 여러 변수에 복사할 수 있다.
+- <code>=</code>을 연쇄적으로 사용하면, 한 변수의 값을 여러 변수에 복사할 수 있다.
 
   ```python
   a, b, c = 1, 2, 3
