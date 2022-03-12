@@ -381,7 +381,7 @@
 
 ### 두 변수 값 교환
 
-- [방법 1] temp 이용
+- <strong>[방법 1] temp 이용</strong>
 
   ```python
   a, b = 1, 2
@@ -401,7 +401,7 @@
 
 <br/>
 
-- [방법 2] <code>,</code> 이용하여 바로 교환
+- <strong>[방법 2] <code>,</code> 이용하여 바로 교환</strong>
 
   ```python
   a, b = 1, 2
