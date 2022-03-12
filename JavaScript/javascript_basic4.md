@@ -14,7 +14,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md#%EB%B9%84%EA%B5%90%ED%95%98%EB%A0%A4%EB%8A%94-%EB%91%90-%EC%9E%90%EB%A3%8C%EA%B0%92%EC%9D%B4-%EC%84%9C%EB%A1%9C-%EB%8B%A4%EB%A5%B8-%EA%B2%BD%EC%9A%B0">비교하려는 두 자료값이 서로 다른 경우</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md#%EC%9D%BC%EC%B9%98-%EC%97%B0%EC%82%B0%EC%9E%90-strict-equality-operator-">일치 연산자 (Strict Equality Operator) <code>===</code></a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B9%84%EA%B5%90">문자열 비교</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md#%EB%8F%99%EB%93%B1-%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%ED%8A%B9%EB%B3%84%ED%95%9C-%EA%B7%9C%EC%B9%99-null--undefined">동등 연산자의 특별한 규칙 (<code>null</code>, <code>undefined</code>)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md#%EB%8F%99%EB%93%B1-%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%ED%8A%B9%EB%B3%84%ED%95%9C-%EA%B7%9C%EC%B9%99-null-undefined">동등 연산자의 특별한 규칙 (<code>null</code>, <code>undefined</code>)</a>
 
 <br/><br/>
 
