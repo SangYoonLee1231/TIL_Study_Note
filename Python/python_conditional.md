@@ -183,7 +183,7 @@
 
 - <code>elif</code>구문은 <code>if</code>문, <code>else</code>문과 함께 조건문에 사용한다.
 
-- <code>if</code> 조건식을 만족하지 않으나, <code>else</code> 조건식을 만족하는 경우, <code>elif</code>문의 내부 코드를 실행한다.
+- <code>if</code> 조건식을 만족하지 않으나, <code>elif</code> 조건식을 만족하는 경우, <code>elif</code>문의 내부 코드를 실행한다.
 
 - <code>elif</code>은 여러 번 사용할 수 있으며, <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
 
