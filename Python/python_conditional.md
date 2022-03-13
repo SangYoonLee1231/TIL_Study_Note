@@ -8,13 +8,13 @@
 
 ## 조건문 개념
 
-* 특정 조건을 만족할 경우에만 코드를 수행하고 싶을 때 쓰는, 매우 중요한 문법이다.
+- 특정 조건을 만족할 경우에만 코드를 수행하고 싶을 때 쓰는, 매우 중요한 문법이다.
 
 <br/>
 
 ## if 조건문
 
-* <code>if</code> 조건식을 만족할 경우, <code>if</code>문의 내부 코드를 실행한다.
+- <code>if</code> 조건식을 만족할 경우, <code>if</code>문의 내부 코드를 실행한다.
 
 ```python
 if 조건식:
@@ -23,9 +23,9 @@ if 조건식:
 
 <br/>
 
-* python에서 <code>if</code>문의 가장 중요한 점은 들여쓰기다.  
+- python에서 <code>if</code>문의 가장 중요한 점은 들여쓰기다.
 
-    indent를 정확히 맞춰주어야 한다.
+  indent를 정확히 맞춰주어야 한다.
 
 ```python
 a = int(input())
@@ -44,47 +44,50 @@ print(f"a = {a}, b = {b}")
 >> 1
 >> 2
 
-a = 4, b = 6
+a = 4, b = 7
 ```
 
 <br/>
 
-* (TIP) if 조건문에서 <code>and</code>로 연결된 앞의 조건식이 False이면, 뒤의 조건식은 실행하지 않는다.
+- (TIP) if 조건문에서 <code>and</code>로 연결된 앞의 조건식이 False이면, 뒤의 조건식은 실행하지 않는다.
 
-* 즉 뒷 조건식이 오류가 나는 코드여도 앞 조건식이 이미 False면 오류가 발생하지 않는다.
+- 즉 뒷 조건식이 오류가 나는 코드여도 앞 조건식이 이미 False면 오류가 발생하지 않는다.
 
 <br/>
 
-* <code>==</code>기호는 값과 데이터 type이 모두 동일하야 True이다.
+- <code>==</code>기호는 값과 데이터 type이 모두 동일하야 True이다.
 
-    * <code>1 == '1'</code>은 False이다.
+  - <code>1 == '1'</code>은 False이다.
 
-* 정수 a가 짝수인지 홀수인지 판별하려면, <code>%</code>를 연산을 통해 a를 2로 나눈 나머지 값이 0인지 아닌지 판별하면 된다.
+- 정수 a가 짝수인지 홀수인지 판별하려면, <code>%</code>를 연산을 통해 a를 2로 나눈 나머지 값이 0인지 아닌지 판별하면 된다.
 
-    ```python
-    a = int(input())
+      ```python
+      a = int(input())
 
-    if a % 2 == 0:
-        print("even number")
-    ```
-<br/>
+      if a % 2 == 0:
+          print("even number")
+      ```
+
+  <br/>
 
 ## 조건식
 
-* 조건문에서 '조건'에 해당하는 식으로, 그 결과값이 <code>True</code>인가 <code>False</code>인가에 따라 코드의 실행 흐름이 달라진다.
+- 조건문에서 '조건'에 해당하는 식으로, 그 결과값이 <code>True</code>인가 <code>False</code>인가에 따라 코드의 실행 흐름이 달라진다.
 
-* 조건식은 다양한 형태가 올 수 있다. 그 결과값이 <code>True</code>(0아님)이나 <code>False</code>(0)으로만 나오면 된다.
+- 조건식은 다양한 형태가 올 수 있다. 그 결과값이 <code>True</code>(0아님)이나 <code>False</code>(0)으로만 나오면 된다.
 
 ```python
 if 1 > 2:
     print("True")
 ```
+
 ```python
 if a % 2 == 0 and 10 < a and a < 20:
     print("special")
 else:
     print("normal")
 ```
+
 ```python
 if a % 2 == 0 or (a % 2 == 1 and a >= 10):
     print("special")
@@ -92,7 +95,7 @@ if a % 2 == 0 or (a % 2 == 1 and a >= 10):
 
 <br/>
 
-* 조건식의 결과값 <code>True</code> 혹은 <code>False</code>를 int형으로 변환하면 각각 <code>1</code> 또는 <code>0</code>이 된다.
+- 조건식의 결과값 <code>True</code> 혹은 <code>False</code>를 int형으로 변환하면 각각 <code>1</code> 또는 <code>0</code>이 된다.
 
 ```python
 print(0 == 1)
@@ -112,10 +115,9 @@ False
 
 ## if else 조건문
 
-* <code>else</code>구문은 <code>if</code>문과 함께 조건문에 사용한다.
+- <code>else</code>구문은 <code>if</code>문과 함께 조건문에 사용한다.
 
-* <code>if</code> 조건식을 만족하지 않을 경우, <code>else</code>문의 내부 코드를 실행한다.
-
+- <code>if</code> 조건식을 만족하지 않을 경우, <code>else</code>문의 내부 코드를 실행한다.
 
 ```
 if 조건식:
@@ -148,6 +150,7 @@ print(f"a = {a}, b = {b}")
 
 a = 4, b = 1
 ```
+
 ```
 >> 1
 >> 0
@@ -159,14 +162,15 @@ a = 1, b = 5
 
 ## 삼항 연산자
 
-* 삼항 연산자를 사용하면 조건문을 한 줄로 나타낼 수 있다.
+- 삼항 연산자를 사용하면 조건문을 한 줄로 나타낼 수 있다.
 
-``` python
+```python
 if 조건:
     a = v1
 else:
     a = v2
 ```
+
 ```python
 a = v1 if 조건 else v2
 ```
@@ -175,11 +179,11 @@ a = v1 if 조건 else v2
 
 ## if elif else 조건문
 
-* <code>elif</code>구문은 <code>if</code>문, <code>else</code>문과 함께 조건문에 사용한다.
+- <code>elif</code>구문은 <code>if</code>문, <code>else</code>문과 함께 조건문에 사용한다.
 
-* <code>if</code> 조건식을 만족하지 않으나, <code>else</code> 조건식을 만족하는 경우, <code>elif</code>문의 내부 코드를 실행한다.
+- <code>if</code> 조건식을 만족하지 않으나, <code>else</code> 조건식을 만족하는 경우, <code>elif</code>문의 내부 코드를 실행한다.
 
-* <code>elif</code>은 여러 번 사용할 수 있으며, <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
+- <code>elif</code>은 여러 번 사용할 수 있으며, <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
 
 ```python
 if 조건식1:
@@ -215,24 +219,26 @@ print(b)
 
 1
 ```
+
 ```
 >> 10
 
 2
 ```
+
 ```
 >> 25
 
 3
 ```
 
-* <code>pass</code> keyword는 아무런 변화가 없음을 의미한다.
+- <code>pass</code> keyword는 아무런 변화가 없음을 의미한다.
 
 <br/>
 
 ## 조건문 여러 번 사용하기
 
-* 여러 조건문을 각각 한 줄 이상 띄워 작성하면, python에선 각각 다른 조건문으로 인식한다.
+- 여러 조건문을 각각 한 줄 이상 띄워 작성하면, python에선 각각 다른 조건문으로 인식한다.
 
 ```python
 if 조건1:
@@ -256,7 +262,7 @@ if 조건4:
 
 ## 중첩 조건문
 
-* 조건문을 중첩으로 작성하여 조건 안에 또 다른 조건을 추가할 수 있다.
+- 조건문을 중첩으로 작성하여 조건 안에 또 다른 조건을 추가할 수 있다.
 
 ```python
 if a % 2 == 1:

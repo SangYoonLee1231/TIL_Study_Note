@@ -1,18 +1,8 @@
-d = {
-  'cs101' : 'python programming',
-  'cs202' : 'data structures'
-}
+a = int(input())
+b = int(input())
 
-print(d.get('cs101'))
-print(d.get('cs102', 0))
-print(d.items())
-print(d.keys())
-print(d.values())
+if a >= 1 and b >= 1:
+    a += 3
+    b += 5
 
-
-s = [
-  int(x)
-  for x in input().split()
-]
-
-print(s)
+print(f"a = {a}, b = {b}")
