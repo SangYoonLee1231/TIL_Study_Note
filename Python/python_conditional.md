@@ -27,16 +27,16 @@ if 조건식:
 
   indent를 정확히 맞춰주어야 한다.
 
-```python
-a = int(input())
-b = int(input())
+  ```python
+  a = int(input())
+  b = int(input())
 
-if a >= 1 and b >= 1:
-    a += 3
-    b += 5
+  if a >= 1 and b >= 1:
+      a += 3
+      b += 5
 
-print(f"a = {a}, b = {b}")
-```
+  print(f"a = {a}, b = {b}")
+  ```
 
 ▼ 입력 및 출력 결과
 
@@ -61,12 +61,12 @@ a = 4, b = 7
 
 - 정수 a가 짝수인지 홀수인지 판별하려면, <code>%</code>를 연산을 통해 a를 2로 나눈 나머지 값이 0인지 아닌지 판별하면 된다.
 
-      ```python
-      a = int(input())
+  ```python
+  a = int(input())
 
-      if a % 2 == 0:
-          print("even number")
-      ```
+  if a % 2 == 0:
+      print("even number")
+  ```
 
   <br/>
 
@@ -76,40 +76,40 @@ a = 4, b = 7
 
 - 조건식은 다양한 형태가 올 수 있다. 그 결과값이 <code>True</code>(0아님)이나 <code>False</code>(0)으로만 나오면 된다.
 
-```python
-if 1 > 2:
-    print("True")
-```
+  ```python
+  if 1 > 2:
+      print("True")
+  ```
 
-```python
-if a % 2 == 0 and 10 < a and a < 20:
-    print("special")
-else:
-    print("normal")
-```
+  ```python
+  if a % 2 == 0 and 10 < a and a < 20:
+      print("special")
+  else:
+      print("normal")
+  ```
 
-```python
-if a % 2 == 0 or (a % 2 == 1 and a >= 10):
-    print("special")
-```
+  ```python
+  if a % 2 == 0 or (a % 2 == 1 and a >= 10):
+      print("special")
+  ```
 
 <br/>
 
 - 조건식의 결과값 <code>True</code> 혹은 <code>False</code>를 int형으로 변환하면 각각 <code>1</code> 또는 <code>0</code>이 된다.
 
-```python
-print(0 == 1)
+  ```python
+  print(0 == 1)
 
-print(int(0 == 1))
-```
+  print(int(0 == 1))
+  ```
 
-▼ 입력 및 출력 결과
+  ▼ 입력 및 출력 결과
 
-```
-False
+  ```
+  False
 
-0
-```
+  0
+  ```
 
 <br/>
 
@@ -119,44 +119,46 @@ False
 
 - <code>if</code> 조건식을 만족하지 않을 경우, <code>else</code>문의 내부 코드를 실행한다.
 
-```
-if 조건식:
-    조건식이 참일 경우 수행되는 코드 영역
-else:
-    조건식이 거짓일 경우 수행되는 코드 영역
-```
+  ```
+  if 조건식:
+      조건식이 참일 경우 수행되는 코드 영역
+  else:
+      조건식이 거짓일 경우 수행되는 코드 영역
+  ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/conditional1.png" width="250px">
 
 <br/>
 
-```python
-a = int(input())
-b = int(input())
+- 예시
 
-if a >= 1 and b >= 1:
-    a += 3
-else:
-    b += 5
+  ```python
+  a = int(input())
+  b = int(input())
 
-print(f"a = {a}, b = {b}")
-```
+  if a >= 1 and b >= 1:
+      a += 3
+  else:
+      b += 5
 
-▼ 입력 및 출력 결과
+  print(f"a = {a}, b = {b}")
+  ```
 
-```
->> 1
->> 2
+  ▼ 입력 및 출력 결과
 
-a = 4, b = 1
-```
+  ```
+  >> 1
+  >> 2
 
-```
->> 1
->> 0
+  a = 4, b = 1
+  ```
 
-a = 1, b = 5
-```
+  ```
+  >> 1
+  >> 0
+
+  a = 1, b = 5
+  ```
 
 <br/>
 
@@ -164,16 +166,16 @@ a = 1, b = 5
 
 - 삼항 연산자를 사용하면 조건문을 한 줄로 나타낼 수 있다.
 
-```python
-if 조건:
-    a = v1
-else:
-    a = v2
-```
+  ```python
+  if 조건:
+      a = v1
+  else:
+      a = v2
+  ```
 
-```python
-a = v1 if 조건 else v2
-```
+  ```python
+  a = v1 if 조건 else v2
+  ```
 
 <br/>
 
@@ -185,52 +187,54 @@ a = v1 if 조건 else v2
 
 - <code>elif</code>은 여러 번 사용할 수 있으며, <code>elif</code>문을 통해 조건의 분기를 늘릴 수 있다.
 
-```python
-if 조건식1:
-    코드 1
-elif 조건식2:
-    코드 2
-else:
-    코드 3
-```
+  ```python
+  if 조건식1:
+      코드 1
+  elif 조건식2:
+      코드 2
+  else:
+      코드 3
+  ```
 
 <br/>
 
-```python
-a = int(input())
-b = 0
+- 예시
 
-if a <= 0:
-    pass
-elif a <= 5:
-    b = 1
-elif a <= 10:
-    b = 2
-else:
-    b = 3
+  ```python
+  a = int(input())
+  b = 0
 
-print(b)
-```
+  if a <= 0:
+      pass
+  elif a <= 5:
+      b = 1
+  elif a <= 10:
+      b = 2
+  else:
+      b = 3
 
-▼ 입력 및 출력 결과
+  print(b)
+  ```
 
-```
->> 3
+  ▼ 입력 및 출력 결과
 
-1
-```
+  ```
+  >> 3
 
-```
->> 10
+  1
+  ```
 
-2
-```
+  ```
+  >> 10
 
-```
->> 25
+  2
+  ```
 
-3
-```
+  ```
+  >> 25
+
+  3
+  ```
 
 - <code>pass</code> keyword는 아무런 변화가 없음을 의미한다.
 
@@ -240,23 +244,23 @@ print(b)
 
 - 여러 조건문을 각각 한 줄 이상 띄워 작성하면, python에선 각각 다른 조건문으로 인식한다.
 
-```python
-if 조건1:
-    코드 1-1
-else:
-    코드 1-2
+  ```python
+  if 조건1:
+      코드 1-1
+  else:
+      코드 1-2
 
-if 조건2:
-    코드 2-1
-else:
-    코드 2-2
+  if 조건2:
+      코드 2-1
+  else:
+      코드 2-2
 
-if 조건3:
-    코드 3
+  if 조건3:
+      코드 3
 
-if 조건4:
-    코드 4
-```
+  if 조건4:
+      코드 4
+  ```
 
 <br/>
 
@@ -264,18 +268,18 @@ if 조건4:
 
 - 조건문을 중첩으로 작성하여 조건 안에 또 다른 조건을 추가할 수 있다.
 
-```python
-if a % 2 == 1:
-    if a >= 10:
-        print('A')
-    else:
-        print('B')
-else:
-    if a >= 15:
-        print('C')
-    else:
-        print('D')
-```
+  ```python
+  if a % 2 == 1:
+      if a >= 10:
+          print('A')
+      else:
+          print('B')
+  else:
+      if a >= 15:
+          print('C')
+      else:
+          print('D')
+  ```
 
 <br/>
 
