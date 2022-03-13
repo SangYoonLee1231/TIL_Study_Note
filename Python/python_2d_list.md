@@ -8,12 +8,12 @@
 
 ## 목차
 
-- <a href="">2차원 리스트 개념</a>
-- <a href="">2차원 리스트 입력</a>
-- <a href="">2차원 리스트 선언</a>
-- <a href="">2차원 배열 선언 시 유의 사항</a>
-- <a href="">2차원 리스트 출력</a>
-- <a href="">2차원 리스트 활용</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md#2%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90">2차원 리스트 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md#2%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9E%85%EB%A0%A5">2차원 리스트 입력</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md#2%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%84%A0%EC%96%B8">2차원 리스트 선언</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md#2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4-%EC%84%A0%EC%96%B8-%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD">2차원 배열 선언 시 유의 사항</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md#2%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%B6%9C%EB%A0%A5">2차원 리스트 출력</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_2d_list.md#2%EC%B0%A8%EC%9B%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9">2차원 리스트 활용</a>
 
 <br/>
 
