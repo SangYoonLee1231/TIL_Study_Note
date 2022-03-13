@@ -7,13 +7,14 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EC%88%AB%EC%9E%90-%EC%A0%95%EB%A0%AC">숫자 정렬</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%B4-%EB%AC%B8%EC%9E%90-%EC%A0%95%EB%A0%AC">문자열 내 문자 정렬</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A0%95%EB%A0%AC">문자열 리스트 정렬</a>
-- <a href="">객체 정렬</a>
-  - <a href="">class를 이용한 객체 정렬</a>
-  - <a href="">tuple을 이용한 객체 정렬</a>
-- <a href="">객체 정렬 응용</a>
-  - <a href="">여러 우선순위를 갖는 객체 정렬</a>
-  - <a href="">정렬 기준이 복잡한 객체 정렬</a>
-  - <a href="">객체 정렬시 index 맴버 변수의 필요성</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC">객체 정렬</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#lambda-%ED%95%A8%EC%88%98">lambda 함수</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#class%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC">class를 이용한 객체 정렬</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#tuple%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC">tuple을 이용한 객체 정렬</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC-%EC%9D%91%EC%9A%A9">객체 정렬 응용</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EC%97%AC%EB%9F%AC-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%EB%A5%BC-%EA%B0%96%EB%8A%94-%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC">여러 우선순위를 갖는 객체 정렬</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EC%A0%95%EB%A0%AC-%EA%B8%B0%EC%A4%80%EC%9D%B4-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC">정렬 기준이 복잡한 객체 정렬</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md#%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A0%AC%EC%8B%9C-index-%EB%A7%B4%EB%B2%84-%EB%B3%80%EC%88%98%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1">객체 정렬시 index 맴버 변수의 필요성</a>
 
 <br/>
 
