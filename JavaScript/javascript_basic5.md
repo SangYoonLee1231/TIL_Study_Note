@@ -12,12 +12,12 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4-%EC%97%B0%EC%82%B0%EC%9E%90-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC">조건 연산자 (간단 정리)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%B6%80-%EC%97%B0%EC%82%B0%EC%9E%90-%EB%AC%BC%EC%9D%8C%ED%91%9C-%EC%97%B0%EC%82%B0%EC%9E%90-">조건부 연산자 (물음표 연산자) <code>?</code></a>
-- <a href="">논리 연산자</a>
-  - <a href="">OR 연산자 <code>||</code></a>
-  - <a href="">AND 연산자 <code>&&</code></a>
-  - <a href="">AND 연산자 <code>&&</code> 와 OR 연산자 <code>||</code> 의 동작 원리</a>
-  - <a href="">NOT 연산자 <code>!</code></a>
-  - <a href="">Etc.</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0%EC%9E%90">논리 연산자</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#or-%EC%97%B0%EC%82%B0%EC%9E%90-">OR 연산자 <code>||</code></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#and-%EC%97%B0%EC%82%B0%EC%9E%90-">AND 연산자 <code>&&</code></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#or-%EC%97%B0%EC%82%B0%EC%9E%90--%EC%99%80-and-%EC%97%B0%EC%82%B0%EC%9E%90--%EC%9D%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC">OR 연산자 <code>||</code> 와 AND 연산자 <code>&&</code> 의 동작 원리</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#not-%EC%97%B0%EC%82%B0%EC%9E%90-">NOT 연산자 <code>!</code></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#etc">Etc.</a>
 
 <br/><br/>
 
