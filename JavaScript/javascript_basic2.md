@@ -340,14 +340,20 @@
 
 <br/>
 
-- 불린형으로의 형 변환 시 적용되는 규칙은, 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 바뀐다는 것이다.
+- 불린형으로의 형 변환 시 적용되는 규칙은,
+
+  숫자 <code>0</code> 혹은 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 바뀐다는 것이다.
 
   - <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code> &nbsp; → &nbsp; <code>false</code>
 
   - 그 외의 값 &nbsp; → &nbsp; <code>true</code>
 
-  <br/>
+    <br/>
 
   - ✨ 문자열 <code>"0"</code>과, 공백 <code>" "</code>은 비어있지 않은 문자열이므로, 불린형으로 변환 시 <code>true</code>가 됨에 유의한다.
 
     (반면, 숫자 <code>0</code>과, 빈 문자열 <code>""</code>은 불린형으로 변환 시 <code>false</code>가 된다.)
+
+    <br/>
+
+  - ✨ 또한, <code>-1</code>과 같은 음수 값 또한 불린형으로 변환 시 <code>true</code>가 됨에 유의한다.
