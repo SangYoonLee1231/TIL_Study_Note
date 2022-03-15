@@ -8,8 +8,8 @@
 
 ### 목차
 
-- <a href="">알고리즘 (Algorithm) 이란</a>
-- <a href="">인류 최초의 알고리즘</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md#-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-algorithm-%EC%9D%B4%EB%9E%80">알고리즘 (Algorithm) 이란</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md#%EC%9D%B8%EB%A5%98-%EC%B5%9C%EC%B4%88%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">인류 최초의 알고리즘</a>
 
 <br/><br/>
 
@@ -45,7 +45,7 @@
 
 - ex) gcd(8, 12) = max(1, 2, 4) = 4
 
-  <img src="img/algorithm_introduction1.png">
+  <img src="img/algorithm_introduction1.png" width="550">
 
 - <strong>(큰 수) = (큰 수) - (작은 수)</strong> ← 두 수 중 하나가 0이 될 때까지 이 과정을 반복
 
@@ -63,7 +63,7 @@
 
   - gcd(2, 100)을 계산하려면 50번 정도 while문을 반복해야 한다.
 
-    <img src="img/algorithm_introduction2.png" width="450">
+    <img src="img/algorithm_introduction2.png" width="550">
 
 <br/>
 
