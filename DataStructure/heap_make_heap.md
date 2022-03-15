@@ -8,30 +8,27 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
+- <a href="">필기 노트</a>
+- <a href=""><code>make_heap</code> 과정</a>
+  - <a href=""><code>heapify-down</code></a>
+  - <a href="">시간복잡도</a>
 
 <br/><br/>
 
-<img src="img/heap_make_heap1.jpg" width="800">
-<img src="img/heap_make_heap2.jpg" width="800">
+## 필기 노트
+
+<img src="img/heap_make_heap1.jpg" width="900">
+<img src="img/heap_make_heap2.jpg" width="900">
 
 <br/>
 
-## make_heap 과정
+## <code>make_heap</code> 과정
 
 - 배열 맨 마지막 원소에 해당하는 Node부터 하나씩 탐색하면서, heap 성질을 만족하는 위치로 Node를 이동시킨다.
 
 - 따라서 Leaf Node는 고려 대상에서 제외된다.
 
-### heapify-down
+### <code>heapify-down</code>
 
 - 어떤 Node를 자식 노드와 서로 비교하며 heap 성질을 만족하는 위치로 내려보내는 함수
 
@@ -58,14 +55,16 @@
               break
   ```
 
+<br/>
+
 ### 시간복잡도
 
-- make_heap : <code>O(n \* t)</code> = <code>O(nh)</code> = <code>O(nlogn)</code>  
+- <code>make_heap</code> 함수 : <code>O(n \* t)</code> = <code>O(nh)</code> = <code>O(nlogn)</code>  
    => <code>O(n)</code>
 
   - t = heapify_down 시간
 
-- heapify_down : <code>O(h) \* O(1)</code> = <code>O(h)</code> = <code>O(logn)</code>
+- <code>heapify_down</code> 함수 : <code>O(h) \* O(1)</code> = <code>O(h)</code> = <code>O(logn)</code>
 
   - h = 힙의 높이
 
