@@ -18,6 +18,12 @@
   - <a href=""></a>
   - <a href=""></a>
 
+<br/><br/>
+
+<img src="img/heap_make_heap1.jpg" width="800">
+
+<img src="img/heap_make_heap2.jpg" width="800">
+
 <br/>
 
 ## make_heap 과정
