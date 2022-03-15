@@ -83,7 +83,7 @@
   ]
   ```
 
-  - n행 m열 격자
+- n행 m열 격자
 
   ```python
   n, m = tuple(map(int, input().split()))

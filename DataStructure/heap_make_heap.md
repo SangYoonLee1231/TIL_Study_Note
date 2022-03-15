@@ -30,28 +30,28 @@
 
 - 어떤 Node를 자식 노드와 서로 비교하며 heap 성질을 만족하는 위치로 내려보내는 함수
 
-```python
-A = [2, 8, 6, 1, 10, 15, 3, 12, 11]
+  ```python
+  A = [2, 8, 6, 1, 10, 15, 3, 12, 11]
 
-def make_heap(A):
-    n = len(A)
-    for k in range(n-1, -1, -1):
-        # A[k]를 heap 성질 만족시키는 곳으로 이동
-        heapify_down(k, n)
-```
+  def make_heap(A):
+      n = len(A)
+      for k in range(n-1, -1, -1):
+          # A[k]를 heap 성질 만족시키는 곳으로 이동
+          heapify_down(k, n)
+  ```
 
-```python
-def heapify_down(k, n):
-    while A[k] != leaf node:
-        L, R = 2*k + 1, 2*k + 2
-        m = index(A[k], A[L], A[R])
-                # 이 3개 중 최댓값 index가 m으로 전달
-        if k != m:
-            A[k], A[m] = A[m], A[k]
-            k = m
-        else:
-            break
-```
+  ```python
+  def heapify_down(k, n):
+      while A[k] != leaf node:
+          L, R = 2*k + 1, 2*k + 2
+          m = index(A[k], A[L], A[R])
+                  # 이 3개 중 최댓값 index가 m으로 전달
+          if k != m:
+              A[k], A[m] = A[m], A[k]
+              k = m
+          else:
+              break
+  ```
 
 ### 시간복잡도
 
