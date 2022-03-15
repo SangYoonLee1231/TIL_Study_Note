@@ -123,9 +123,9 @@
 
 <br/>
 
-- search 함수가 heap에 없는 이유
+- <strong>search 함수가 heap에 없는 이유</strong>
 
-  : Node가 heapify될 떄, 어디로 이동할 지 확정지을 수 없기 때문이다.
+  : Node가 heapify 될 때, 어디로 이동할 지 확정지을 수 없기 때문이다.
 
 <br/>
 
