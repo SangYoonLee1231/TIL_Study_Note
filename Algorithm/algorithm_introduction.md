@@ -45,7 +45,7 @@
 
 - ex) gcd(8, 12) = max(1, 2, 4) = 4
 
-  <img src="img/algorithm_introduction1.png" width="550">
+  <img src="img/algorithm_introduction1.png" width="700">
 
 - <strong>(큰 수) = (큰 수) - (작은 수)</strong> ← 두 수 중 하나가 0이 될 때까지 이 과정을 반복
 
