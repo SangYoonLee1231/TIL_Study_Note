@@ -126,7 +126,7 @@ l
 
 <br/>
 
-### 여러 문자열을 리스트에 입력 받기
+### 여러 문자열을 입력 받아 문자열 리스트 만들기
 
 - 방법1. for문을 이용하여 문자열을 하나씩 리스트에 append 하기
 
@@ -157,42 +157,42 @@ arr = [
 
 - <code>split()</code>함수룰 이용하면 입력받은 문자열이 공백 단위로 쪼개져 리스트로 만들어진다.
 
-```python
-arr = input().split()
+  ```python
+  arr = input().split()
 
-print(arr)
-```
+  print(arr)
+  ```
 
-```
->> hello world python
+  ```
+  >> hello world python
 
-['hello', 'world', 'python']
-```
-
-<br/>
-
-- 물론, list 힘수와 map 함수를 더 사용해도 된다.
-
-```python
-arr = list(map(str, input().split()))
-```
+  ['hello', 'world', 'python']
+  ```
 
 <br/>
 
-- tuple을 사용하면, 리스트 팔요 없이 두 변수에 문자열을 공백 단위로 잘라 받을 수 있다.
+- list 힘수와 map 함수를 추가로 사용해도 된다.
 
-```python
-a, b = tuple(input().split())
-print(a)
-print(b)
-```
+  ```python
+  arr = list(map(str, input().split()))
+  ```
 
-```
->> hello world
+<br/>
 
-hello
-world
-```
+- tuple을 사용하면, 리스트 필요 없이 두 변수에 문자열을 공백 단위로 잘라 받을 수 있다.
+
+  ```python
+  a, b = tuple(input().split())
+  print(a)
+  print(b)
+  ```
+
+  ```
+  >> hello world
+
+  hello
+  world
+  ```
 
 <br/>
 
@@ -200,22 +200,22 @@ world
 
 - for문을 통해 문자열의 길이를 구하지 않고 바로 원소에 접근할 수 있다.
 
-```python
-sentence = input()
+  ```python
+  sentence = input()
 
-for i in sentence:
-    print(i)
-```
+  for i in sentence:
+      print(i)
+  ```
 
-```
->> hello
+  ```
+  >> hello
 
-h
-e
-l
-l
-o
-```
+  h
+  e
+  l
+  l
+  o
+  ```
 
 <br/>
 
@@ -223,48 +223,48 @@ o
 
 - 문자열끼리 <code>+</code>연산을 통해 붙여줄 수 있다.
 
-```python
-a, b = "hello", "world"
+  ```python
+  a, b = "hello", "world"
 
-print(a + b)
-```
+  print(a + b)
+  ```
 
-```
-helloworld
-```
+  ```
+  helloworld
+  ```
 
-<br/>
+    <br/>
 
-```python
-a, b, c = "hello", "world", "python"
-sentence = ""
+  ```python
+  a, b, c = "hello", "world", "python"
+  sentence = ""
 
-sentence += a
-sentence += b
-sentence += c
+  sentence += a
+  sentence += b
+  sentence += c
 
-print(sentence)
-```
+  print(sentence)
+  ```
 
-```
-helloworldpython
-```
+  ```
+  helloworldpython
+  ```
 
-<br/>
+    <br/>
 
-```python
-a, b, c = "hello", "world", "python"
-sentence = ""
+  ```python
+  a, b, c = "hello", "world", "python"
+  sentence = ""
 
-for target_str in [a, b, c]:
-    sentence += target_str
+  for target_str in [a, b, c]:
+      sentence += target_str
 
-print(sentence)
-```
+  print(sentence)
+  ```
 
-```
-helloworldpython
-```
+  ```
+  helloworldpython
+  ```
 
 <br/>
 
@@ -272,30 +272,30 @@ helloworldpython
 
 - <code>join()</code>함수를 이용하면 여러 문자열을 더 쉽게 연결할 수 있다.
 
-```python
-a, b, c = "hello", "world", "python"
-sentence = "".join([a, b, c])
+  ```python
+  a, b, c = "hello", "world", "python"
+  sentence = "".join([a, b, c])
 
-print(sentence)
-```
+  print(sentence)
+  ```
 
-```
-helloworldpython
-```
+  ```
+  helloworldpython
+  ```
 
-<br/>
+    <br/>
 
-```python
-print(','.join(['hello', 'world', 'python']))
-print(':'.join(['hello', 'world', 'python']))
-print(''.join(['hello', 'world', 'python']))
-```
+  ```python
+  print(','.join(['hello', 'world', 'python']))
+  print(':'.join(['hello', 'world', 'python']))
+  print(''.join(['hello', 'world', 'python']))
+  ```
 
-```
-hello,world,python
-hello:world:python
-helloworldpython
-```
+  ```
+  hello,world,python
+  hello:world:python
+  helloworldpython
+  ```
 
 <br/>
 
@@ -305,34 +305,34 @@ helloworldpython
 
 - <code>in</code> 키워드를 통해 어떤 문자열에 특정 문자열이 포함되어 있는지 쉽게 알 수 있다.
 
-```python
-s = 'helloworld'
+  ```python
+  s = 'helloworld'
 
-print('owo' in s)
-```
+  print('owo' in s)
+  ```
 
-```
-True
-```
+  ```
+  True
+  ```
 
-<br/>
+    <br/>
 
-- 물론 이 키워드를 사용하지 않고 반복문과 조건문으로도 구현할 수 있다.
+  - 물론 이 키워드를 사용하지 않고 반복문과 조건문으로도 구현할 수 있다.
 
-- slicing을 이용하면 좋다.
+  - slicing을 이용하면 좋다.
 
-```python
-s = 'helloworld'
+  ```python
+  s = 'helloworld'
 
-length = len(s)
-exists = False
+  length = len(s)
+  exists = False
 
-for i in range(length - 2):
-    if s[i:i+3] == 'owo':
-        exists = True;
+  for i in range(length - 2):
+      if s[i:i+3] == 'owo':
+          exists = True;
 
-print(exists)
-```
+  print(exists)
+  ```
 
 <br/>
 
@@ -342,18 +342,18 @@ print(exists)
 
 - 단, 찾고자 하는 부분 문자열이 없으면 ValueError이 발샐하므로, 아래처럼 <code>in</code> 키워드를 함께 사용해야 한다.
 
-```python
-s = 'helloworld'
+  ```python
+  s = 'helloworld'
 
-if 'owo' in s:
-    print(s.index('owo'))
-else:
-    print(-1)
-```
+  if 'owo' in s:
+      print(s.index('owo'))
+  else:
+      print(-1)
+  ```
 
-```
-4
-```
+  ```
+  4
+  ```
 
 <br/>
 
@@ -361,17 +361,17 @@ else:
 
 - <code>find()</code> 함수는 해당 부분자열이 없을 경우 -1을, 있을 경우 가장 앞에 나오는 부분 문자열의 위치를 반환한다.
 
-```python
-s = 'helloworld'
+  ```python
+  s = 'helloworld'
 
-print(s.find('owo'))
-print(s.find('ooo'))
-```
+  print(s.find('owo'))
+  print(s.find('ooo'))
+  ```
 
-```
-4
--1
-```
+  ```
+  4
+  -1
+  ```
 
 <br/>
 
@@ -392,17 +392,17 @@ print(s.find('ooo'))
 
 - <code>slicing</code>을 통해 수정할 문자의 새 값과, 양 옆의 두 부분 문자열을 서로 합친다.
 
-```python
-s = 'click'
+  ```python
+  s = 'click'
 
-s = s[:2] + 'o' + s[3:]
+  s = s[:2] + 'o' + s[3:]
 
-print(s)
-```
+  print(s)
+  ```
 
-```
-clock
-```
+  ```
+  clock
+  ```
 
 <br/>
 
@@ -414,19 +414,19 @@ clock
 
 - <code>join()</code> 함수를 통해 다시 문자열로 합친다.
 
-```python
-s = 'click'
+  ```python
+  s = 'click'
 
-arr = list(s)
-arr[2] = 'o'
-s = ''.join(arr)
+  arr = list(s)
+  arr[2] = 'o'
+  s = ''.join(arr)
 
-print(s)
-```
+  print(s)
+  ```
 
-```
-clock
-```
+  ```
+  clock
+  ```
 
 <br/>
 
@@ -438,34 +438,34 @@ clock
 
 1. slicing을 통해 지워져야 할 문자의 양쪽 문자열만 따로 살려서 이어 붙인다.
 
-```python
-s = 'three'
+   ```python
+   s = 'three'
 
-s = s[:1] + s[2:]
-print(s)
-```
+   s = s[:1] + s[2:]
+   print(s)
+   ```
 
-```
-tree
-```
+   ```
+   tree
+   ```
 
 <br/>
 
 2. 다른 방법으로, 문자열을 리스트로 변환한 후 <code>pop</code> 함수를 이용해 해당 문자를 제거한 후 다시 문자열로 변환한다.
 
-```python
-s = 'three'
+   ```python
+   s = 'three'
 
-arr = list(s)
-arr.pop(1)
-s = ''.join(arr)
+   arr = list(s)
+   arr.pop(1)
+   s = ''.join(arr)
 
-print(s)
-```
+   print(s)
+   ```
 
-```
-tree
-```
+   ```
+   tree
+   ```
 
 <br/>
 
@@ -473,17 +473,17 @@ tree
 
 - <code>slicing</code>을 통해 다음과 같이 구현할 수 있다.
 
-```python
-s = 'earth'
+  ```python
+  s = 'earth'
 
-s = s[-1] + s[:-1]
+  s = s[-1] + s[:-1]
 
-print(s)
-```
+  print(s)
+  ```
 
-```
-heart
-```
+  ```
+  heart
+  ```
 
 <br/>
 
@@ -493,29 +493,29 @@ heart
 
 - python에서 특정 문자의 아스키 코드 값은 <code>ord()</code> 함수를 통해 알 수 있다.
 
-```python
-print(ord('A'))
-print(ord('B'))
-```
+  ```python
+  print(ord('A'))
+  print(ord('B'))
+  ```
 
-```
-65
-66
-```
+  ```
+  65
+  66
+  ```
 
 <br/>
 
 - 반대로, 아스키 코드 값이 어떤 문자에 대응하는 지도 <code>chr()</code> 함수를 통해 알 수 있다.
 
-```python
-print(chr(65))
-print(chr(66))
-```
+  ```python
+  print(chr(65))
+  print(chr(66))
+  ```
 
-```
-A
-B
-```
+  ```
+  A
+  B
+  ```
 
 <br/>
 
@@ -527,99 +527,99 @@ B
 
 - 아스키 코드를 통해 대소문자 변환을 쉽게 할 수 있다.
 
-```python
-X = 'B'
+  ```python
+  X = 'B'
 
-num_x = ord(X) - ord('A') + ord('a')    # 99
+  num_x = ord(X) - ord('A') + ord('a')    # 99
 
-print(chr(num_x))
-```
+  print(chr(num_x))
+  ```
 
-```
-b
-```
+  ```
+  b
+  ```
 
 <br/>
 
 - 물론, <code>upper()</code> 함수와 <code>lower</code> 함수를 통해 대소문자를 변환해도 된다.
 
-```python
-x = 'B'
+  ```python
+  x = 'B'
 
-print(x.lower())
-```
+  print(x.lower())
+  ```
 
-```
-b
-```
+  ```
+  b
+  ```
 
-<br/>
+    <br/>
 
-```python
-x = 'b'
+  ```python
+  x = 'b'
 
-print(x.upper())
-```
+  print(x.upper())
+  ```
 
-```
-B
-```
+  ```
+  B
+  ```
 
 <br/>
 
 - 아스키 코드를 통해 그 다음 알파벳을 바로 구할수도 있다.
 
-```python
-x = 'A'
+  ```python
+  x = 'A'
 
-print(ord(x))
-print(ord(x) + 1)
-print(chr(ord(x) + 1))
-```
+  print(ord(x))
+  print(ord(x) + 1)
+  print(chr(ord(x) + 1))
+  ```
 
-```
-65
-66
-B
-```
+  ```
+  65
+  66
+  B
+  ```
 
 <br/>
 
 - 문자열 끼리는 서로 비교가 가능하며, 아스키 코드 번호 순으로 비교된다.
 
-```python
-# 문자 x가 대문자인지 확인하는 코드
-x = input()
+  ```python
+  # 문자 x가 대문자인지 확인하는 코드
+  x = input()
 
-if 'A' <= x and x <= 'Z':
-    print("Upper Case")
-```
+  if 'A' <= x and x <= 'Z':
+      print("Upper Case")
+  ```
 
-```
->> B
+  ```
+  >> B
 
-Upper Case
-```
+  Upper Case
+  ```
 
 <br/>
 
 - 문자열이 전부 알파벳인지 혹은 전부 숫자인지 확인하려면, <code>isalpha</code> 함수 혹은 <code>isdigit</code> 함수를 사용하면 된다.
 
-```python
-print("abcg".isalpha())
-print("abc3".isalpha())
+  ```python
+  print("abcg".isalpha())
+  print("abc3".isalpha())
 
-print("1234".isdigit())
-print("123g".isdigit())
-```
+  print("1234".isdigit())
+  print("123g".isdigit())
+  ```
 
-```
-True
-False
+  ```
+  True
+  False
 
-True
-False
-```
+  True
+  False
+  ```
 
 <br/>
 
@@ -627,33 +627,33 @@ False
 
 - 숫자로 이루어진 문자열을 정수로 변환하기 위해선 <code>int()</code> 함수로 감싸주면 된다.
 
-```python
-a = '123'
+  ```python
+  a = '123'
 
-a = int(a) + 1
+  a = int(a) + 1
 
-print(a)
-```
+  print(a)
+  ```
 
-```
-124
-```
+  ```
+  124
+  ```
 
 <br/>
 
 - 반대로, 정수를 문자열로 변환하기 위해선 <code>str()</code> 함수로 감싸주면 된다.
 
-```python
-a = 123
+  ```python
+  a = 123
 
-a = str(a) + '456'
+  a = str(a) + '456'
 
-print(a)
-```
+  print(a)
+  ```
 
-```
-123456
-```
+  ```
+  123456
+  ```
 
 <br/>
 
@@ -661,26 +661,26 @@ print(a)
 
 - python에선 두 문자열이 동일한 지 비교하기 위해 숫자 비교처럼 <code>==</code> 연산자를 사용하면 된다.
 
-```python
-print('cat' == 'cat')
-print('dog' == 'cat')
-```
+  ```python
+  print('cat' == 'cat')
+  print('dog' == 'cat')
+  ```
 
-```
-True
-False
-```
+  ```
+  True
+  False
+  ```
 
 <br/>
 
 - <code><</code>,<code>></code> 연산을 통해 사전순으로 앞선 문자열이 무엇인지 알 수 있다. 값이 작을수록 사전순으로 앞서다는 것을 의미한다.
 
-```python
-print('abc' < 'bc')
-print('abc' < 'd')
-```
+  ```python
+  print('abc' < 'bc')
+  print('abc' < 'd')
+  ```
 
-```
-True
-False
-```
+  ```
+  True
+  False
+  ```
