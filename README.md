@@ -32,7 +32,7 @@
 
 <br/>
 
-## 프론트엔드 지식
+## Front-End
 
 ### HTML
 
@@ -64,7 +64,7 @@
 
 <br/>
 
-## Computer Science 지식
+## Computer Science
 
 ### 자료구조
 
