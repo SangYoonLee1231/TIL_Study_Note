@@ -86,8 +86,8 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap.md">힙 (Heap)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md">힙 (Heap) - make_heap 연산</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - insert와 delete_max 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md">힙 (Heap) - <code>make_heap</code> 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - <code>insert</code>와 <code>delete_max</code> 연산</a>
 
 ### 알고리즘
 
