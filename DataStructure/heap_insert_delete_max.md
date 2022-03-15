@@ -88,6 +88,8 @@
 
   - <code>A[0]</code>으로 이동 → <code>heapify_down</code>
 
+  <br/>
+
   ```python
   def delete_max():
       if len(A) == 0:  return None
