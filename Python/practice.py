@@ -1,8 +1,10 @@
-a = int(input())
-b = int(input())
+def add(*args, a=0):
+    s = 0
+    for x in args:
+        s = s + x
+    s += a
 
-if a >= 1 and b >= 1:
-    a += 3
-    b += 5
+    return s
 
-print(f"a = {a}, b = {b}")
+print(add(3,4,5,6))
+print(add(3,4,5,6), 20)
