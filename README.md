@@ -1,14 +1,22 @@
+<div align=center>
+
 # ✔ Today I Learned
+
+<img src="https://img.shields.io/badge/author-SangYoonLee-lightgrey"></a>
+<img src="https://img.shields.io/apm/l/vim-mode"></a>
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSangYoonLee1231%2Fcontent-list-for-frontend-dreamers&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+</div>
 
 - 그날그날 학습한 내용을 소화하고 정리하여 매일 기록으로 남긴다.
 
-- 카테고리에 따라 내용을 분류하여 정리한다. (작성 날짜는 번거로움으로 인해 따로 기록하지 않았다.)
+- 카테고리에 따라 내용을 분류하여 정리한다.
 
-### ☝ '나'와의 약속
+### ☝ TIL 작성 규칙
 
-- 다른 사람들도 보고 이해하기 편하도록, 최대한 쉽고 깔끔하게 기록한다. (블로그 포스트 작성하듯이)
+- 다른 사람들도 보고 이해하기 편하도록, 최대한 쉽고 깔끔하게 기록한다.
 - 충분히 소화하지 못한 내용은 따로 분류해두거나 기록하지 않는다.
-- 기록한 내용은 시간를 두고 주기적으로 복습한다.
+- 기록한 내용 중 더 많이 공유되었으면 하는 내용은 <a href="https://sylagape1231.tistory.com/">블로그</a>에 포스팅한다.
 
 ---
 
