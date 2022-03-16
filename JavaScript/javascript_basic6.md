@@ -10,9 +10,9 @@
 
 ### 목차
 
-- <a href="">nullish 병합 연산자 <code>??</code></a>
-  - <a href=""><code>??</code> 와 <code>||</code> 의 차이</a>
-- <a href="">while과 for 반복문</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#nullish-%EB%B3%91%ED%95%A9-%EC%97%B0%EC%82%B0%EC%9E%90-">nullish 병합 연산자 <code>??</code></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#-%EC%99%80--%EC%9D%98-%EC%B0%A8%EC%9D%B4"><code>??</code> 와 <code>||</code> 의 차이</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#while%EA%B3%BC-for-%EB%B0%98%EB%B3%B5%EB%AC%B8">while과 for 반복문</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
