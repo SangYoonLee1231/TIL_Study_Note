@@ -43,6 +43,8 @@
 
   참고로 <code>else</code>문은 필수가 아닌 선택 사항이다.
 
+<br/>
+
 - <code>if</code>문과 <code>else</code>문 중간에 <code>else if</code>를 사용하면, 조건 여러 개를 처리할 수 있다.
 
   ```javascript
