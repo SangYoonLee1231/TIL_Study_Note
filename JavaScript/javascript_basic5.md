@@ -10,7 +10,7 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4-%EC%97%B0%EC%82%B0%EC%9E%90-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC">조건문 (<code>if</code>, <code>else</code>) (간단 정리)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%AC%B8-if-else-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC">조건문 (<code>if</code>, <code>else</code>) (간단 정리)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%B6%80-%EC%97%B0%EC%82%B0%EC%9E%90-%EB%AC%BC%EC%9D%8C%ED%91%9C-%EC%97%B0%EC%82%B0%EC%9E%90-">조건부 연산자 (물음표 연산자) <code>?</code></a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0%EC%9E%90">논리 연산자</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#or-%EC%97%B0%EC%82%B0%EC%9E%90-">OR 연산자 <code>||</code></a>
