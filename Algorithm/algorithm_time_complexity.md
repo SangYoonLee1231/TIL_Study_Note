@@ -8,9 +8,9 @@
 
 ### 목차
 
-- <a href="">가상 컴퓨터의 필요성</a>
-- <a href="">가상 컴퓨터</a>
-- <a href="">기본 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md#%EA%B0%80%EC%83%81-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1">가상 컴퓨터의 필요성</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md#%EA%B0%80%EC%83%81-%EC%BB%B4%ED%93%A8%ED%84%B0">가상 컴퓨터</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md#%EA%B8%B0%EB%B3%B8-%EC%97%B0%EC%82%B0">기본 연산</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
@@ -71,16 +71,16 @@
 
 - 기본 연산 종류 (모두 <strong><code>1</code></strong>시간 내에 수행된다 가정)
 
-  - 배정, 대입, 복사 연산 : <code>A = B</code>
+  - <strong>배정, 대입, 복사 연산 : <code>A = B</code></strong>
 
-  - 산술 연산 : <code>+</code>, <code>-</code> ,<code>\*</code>, <code>/</code>
+  - <strong>산술 연산 : <code>+</code>, <code>-</code> ,<code>\*</code>, <code>/</code></strong>
 
     - 나머지(<code>%</code>), 올림, 버림, 반올림 연산은 기본 연산으로 정의하진 않지만, 단위 시간 내에 수행된다고 가정한다.
 
-  - 비교 연산 : <code>></code>, <code>>=</code>, <code><</code>, <code><=</code>, <code>==</code>, <code>!=</code>
+  - <strong>비교 연산 : <code>></code>, <code>>=</code>, <code><</code>, <code><=</code>, <code>==</code>, <code>!=</code></strong>
 
     - <code>A < B</code> <=> <code>A - B < 0</code> : 두 수를 비교하는 것은 뺄셈 연산을 1번 수행하는 것과 같다.
 
-  - 논리 연산 : <code>AND</code>, <code>OR</code>, <code>NOT</code>
+  - <strong>논리 연산 : <code>AND</code>, <code>OR</code>, <code>NOT</code></strong>
 
-  - 비트 연산 : <code>bit-AND</code>, <code>OR</code>, <code>NOT</code>
+  - <strong>비트 연산 : <code>bit-AND</code>, <code>OR</code>, <code>NOT</code></strong>
