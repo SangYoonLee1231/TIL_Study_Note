@@ -66,6 +66,8 @@
 
 - 순회하는 방법은 3가지가 있다.
 
+    <br/>
+
     <img src="img/binary_tree3.png">
 
     <br/>

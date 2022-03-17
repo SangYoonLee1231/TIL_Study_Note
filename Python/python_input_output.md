@@ -10,6 +10,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EA%B8%B0%EB%B3%B8-%EC%9E%85%EB%A0%A5-%EB%B0%A9%EB%B2%95">기본 입력 방법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EB%82%98%EB%88%A0%EC%84%9C-%EC%9E%85%EB%A0%A5-%EB%B0%9B%EA%B8%B0">문자열을 나눠서 입력 받기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md#%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EB%82%98%EB%88%A0%EC%84%9C-%EC%9E%85%EB%A0%A5-%EB%B0%9B%EA%B8%B0">1차원 리스트 입력 (<code>input().split()</code> 활용법)</a>
 
 <br/><br/>
 
@@ -174,4 +175,54 @@
   16
   12
   192
+  ```
+
+<br/><br/>
+
+## 1차원 리스트 입력 (<code>input().split()</code> 활용법)
+
+- <code>input().split()</code>으로 공백을 사이에 두고 주어지는 입력값을 나눠 받을 수 있다.
+
+  ```python
+  arr = input().split()
+
+  print(arr)
+  ```
+
+  ```
+  >> 1 3 5
+
+  ['1', '3', '5']
+  ```
+
+<br/>
+
+- 여기서 <code>map</code>을 활용하면, 입력받는 모든 값에 원하는 함수를 적용시킬 수 있다.
+
+  ```python
+  arr = list(map(int, input().split()))
+
+  print(arr)
+  ```
+
+  ```
+  >> 1 3 5
+
+  [1, 3, 5]
+  ```
+
+<br/>
+
+- 이 때, 입력받을 값의 개수가 고정되어 있으면, <code>list()</code>함수 대신 <code>tuple()</code>함수를 쓰는 것이 좋다. (unpacking 활용)
+
+  ```python
+  n, m = tuple(map(int, input().split()))
+
+  print(n, m)
+  ```
+
+  ```
+  >> 1 3
+
+  1 3
   ```
