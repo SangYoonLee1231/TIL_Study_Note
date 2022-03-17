@@ -69,7 +69,7 @@
 
 <br/>
 
-- 기본 연산 종류 (모두 <strong><code>1</code></strong>시간 내에 수행된다 가정)
+- 기본 연산 종류 (모두 <strong><code>1</code>시간 내에 수행</strong>된다 가정)
 
   - <strong>배정, 대입, 복사 연산 : <code>A = B</code></strong>
 
