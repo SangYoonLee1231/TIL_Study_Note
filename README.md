@@ -24,7 +24,7 @@
 
 ## 📌 기본 언어
 
-### 🟢 Python
+### ◻ Python
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md">Python - 출력 함수 <code>print()</code> 사용법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_input_output.md">Python - 입력 함수 <code>input()</code> 사용법</a>
@@ -44,12 +44,12 @@
 
 ## 📌 Front-End
 
-### HTML
+### ◻ HTML
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
 
-### CSS
+### ◻ CSS
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
@@ -62,7 +62,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
 
-### JavaScript
+### ◻ JavaScript
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
@@ -77,7 +77,7 @@
 
 ## 📌 Computer Science
 
-### 자료구조
+### ◻ 자료구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
 
@@ -101,12 +101,12 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - <code>insert</code>와 <code>delete_max</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md">이진 트리</a>
 
-### 알고리즘
+### ◻ 알고리즘
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
 
-### 컴퓨터 구조 및 시스템
+### ◻ 컴퓨터 구조 및 시스템
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
@@ -116,10 +116,10 @@
 
 ## 📌 Etc.
 
-### 아두이노 (Arduino)
+### ◻ 아두이노 (Arduino)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Arduino/arduino_introduction.md">아두이노의 학습 목적 및 소개</a>
 
-### 유니티 (Unity)
+### ◻ 유니티 (Unity)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_introduction.md">유니티 소개 및 설치</a>
