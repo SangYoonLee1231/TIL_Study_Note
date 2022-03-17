@@ -31,6 +31,8 @@
   print('Hello World')
   ```
 
+  ▼ 출력 결과
+
   ```
   Hello World
   Hello World
