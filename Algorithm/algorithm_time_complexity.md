@@ -43,7 +43,7 @@
 
 - 컴퓨터의 초기 모델 : Turing Machine
 
-- 현대적 컴퓨터 모델 : <strong>RAM (Random Access Machine)/strong> &nbsp; (폰 노이만 (von Neumann) 이 제시)
+- 현대적 컴퓨터 모델 : <strong>RAM (Random Access Machine)</strong> &nbsp; (폰 노이만 (von Neumann) 이 제시)
 
 <br/>
 
@@ -59,6 +59,24 @@
 
 <br/><br/>
 
-## 기본 언어
+## 기본 연산
 
-- 단위 시간 내에 수행되는 가장 기본적인 연산이다.
+- <strong>단위 시간 내</strong>에 수행되는 가장 기본적인 연산이다.
+
+<br/>
+
+- 기본 연산 종류 (모두 <strong><code>1</code></strong>시간 내에 수행된다 가정)
+
+  - 배정, 대입, 복사 연산 : <code>A = B</code>
+
+  - 산술 연산 : <code>+</code>, <code>-</code> ,<code>\*</code>, <code>/</code>
+
+    - 나머지(<code>%</code>), 올림, 버림, 반올림 연산은 기본 연산으로 정의하진 않지만, 단위 시간 내에 수행된다고 가정한다.
+
+  - 비교 연산 : <code>></code>, <code>>=</code>, <code><</code>, <code><=</code>, <code>==</code>, <code>!=</code>
+
+    - <code>A < B</code> <=> <code>A - B < 0</code> : 두 수를 비교하는 것은 뺄셈 연산을 1번 수행하는 것과 같다.
+
+  - 논리 연산 : <code>AND</code>, <code>OR</code>, <code>NOT</code>
+
+  - 비트 연산 : <code>bit-AND</code>, <code>OR</code>, <code>NOT</code>
