@@ -8,8 +8,8 @@
 
 ### 목차
 
-- <a href="">이진 트리 (Binary Tree)</a>
-- <a href="">이진 트리 순회 (Traversal)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md#%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-binary-tree-1">이진 트리 (Binary Tree)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md#%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%88%9C%ED%9A%8C-traversal">이진 트리 순회 (Traversal)</a>
 
 <br/><br/>
 
@@ -21,7 +21,7 @@
 
 - 표현법 1
 
-  - 이진 트리를 배열(리스트)로 표현한다. (ex. heap)
+  - 이진 트리를 <strong>배열(리스트)</strong>로 표현한다. (ex. heap)
 
   - 단점 : 메모리를 낭비할 가능성이 크다.
 
@@ -29,9 +29,13 @@
 
 - 표현법 3
 
-  - 노드 클래스를 직접 정의하고, 각 노드 객체를 링크로 연결하여 표현한다.
+  - <strong>노드 클래스를 직접 정의</strong>하고, <strong>각 노드 객체를 링크로 연결</strong>하여 표현한다.
 
   - 원하는 노드를 만들어서 그 노드를 원하는 위치에 가져다 놓고, 부모와 자식 노드를 각각 링크를 통해 연결하면 된다.
+
+    <br/>
+
+    <img src="img/binary_tree2.png" width="200"> <img src="img/binary_tree1.png" width="200">
 
     ```python
     class Node:
@@ -54,15 +58,11 @@
     d.parent = b
     ```
 
-    <br/>
-
-    <img src="img/binary_tree2.png" width="200"> <img src="img/binary_tree1.png" width="200">
-
 <br/><br/>
 
 ## 이진 트리 순회 (Traversal)
 
-- 노드들을 특정 순서에 따라 차례대로 빠지지 않고 방문하여 모든 key값을 출력하는 과정을 말한다.
+- 노드들을 <strong>특정 순서</strong>에 따라 차례대로 빠지지 않고 방문하여 <strong>모든 key값을 출력하는 과정</strong>을 말한다.
 
 - 순회하는 방법은 3가지가 있다.
 
