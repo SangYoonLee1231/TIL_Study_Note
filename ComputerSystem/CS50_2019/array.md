@@ -17,7 +17,7 @@
 
 ## 컴파일링
 
-- C언어로 작성된 프로그램을 make나 clang 명령어를 통해 실행할 때 컴파일링 (Compiling) 이 일어난다.
+- C언어로 작성된 프로그램을 make나 clang 명령어를 통해 실행할 때 <strong>컴파일링 (Compiling)</strong> 이 일어난다.
 
 <br/>
 
