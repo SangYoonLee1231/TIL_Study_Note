@@ -19,15 +19,15 @@
 
 ## 가상 컴퓨터의 필요성
 
-- 자료구조와 알고리즘은 <strong>코드</strong>로 구현되고, 이 코드는 <strong>컴퓨터</strong> 위에서 돌아간다.
+- 자료구조와 알고리즘은 모두 <strong>코드</strong>로 구현되고, 이 코드는 <strong>컴퓨터</strong> 위에서 돌아간다.
 
 <br/>
 
-- 그러나 각 컴퓨터마다 <strong>HW(하드웨어)와 SW(소프트웨어)의 환경이 상이</strong>하고, 이는 알고리즘의 성능에 큰 문제가 된다.
+- 그러나 각 컴퓨터마다 <strong>HW(하드웨어)와 SW(소프트웨어)의 환경이 상이</strong>하고, 이는 알고리즘의 성능 측정에 큰 문제가 된다.
 
   - 문제 1. 똑같은 알고리즘을 똑같은 언어로 구현하더라도 SW / HW 환경에 따라 <strong>성능이 달라진다</strong>.
 
-  - 문제 2. <strong>다양한 입력</strong>에 따라 내가 작성한 코드가 얼마나 빨리 동작하는 객관적으로 측정할 수 없다.
+  - 문제 2. <strong>다양한 입력</strong>에 따라 내가 작성한 코드가 얼마나 빨리 동작하는 지 객관적으로 측정할 수 없다.
 
 <br/>
 
@@ -35,13 +35,13 @@
 
 - 하지만, 실제 그런 모델을 존재하지 않는다.
 
-- 그러므로, 대신 HW / SW 환경과 독립적인 <strong>가상 컴퓨터 (Virtual Machine)</strong> 를 정의하고, 그 위에서 <strong>가상 언어 (Psuedo Language)</strong> 로 작성된 <strong>가상 코드 (Psuedo Code)</strong> 를 통해 알고리즘의 수행 시간을 측정하여 비교한다.
+- 그러므로, 대신 HW / SW 환경과 독립적인 <strong>가상 컴퓨터 (Virtual Machine)</strong> 를 정의하고, 그 위에서 <strong>가상 언어 (Psuedo Language)</strong> 로 작성된 <strong>가상 코드 (Psuedo Code)</strong> 를 통해 알고리즘의 수행 시간을 측정하기로 한다.
 
 <br/><br/>
 
 ## 가상 컴퓨터
 
-- 가상 컴퓨터를 통해 누구나 같은 환경에서 여러 알고리즘들을 객관적으로 비교할 수 있다.
+- 가상 컴퓨터를 통해 누구나 같은 환경에서 여러 알고리즘의 성능을 객관적으로 비교할 수 있다.
 
 <br/>
 
@@ -53,7 +53,7 @@
 
 - <strong>RAM 모델 = CPU + Memory + Code (기본 연산들로 구성)</strong>
 
-  - 프로그램과 프로그램이 다루는 모든 데이커가 Memory 상에 올라간다.
+  - 프로그램과 프로그램이 다루는 모든 데이터가 Memory 상에 올라간다.
 
   - CPU가 그 Memory에 접근하여 데이터를 읽고, 쓰고, 변형시켜 원하는 값을 만들어낸다.
 
@@ -67,15 +67,17 @@
 
 - <strong>단위 시간 내</strong>에 수행되는 가장 기본적인 연산이다.
 
+- 이제부터 단위 시간을 <strong><code>1</code>시간</strong>이라 가정한다.
+
 <br/>
 
-- 기본 연산 종류 (모두 <strong><code>1</code>시간 내에 수행</strong>된다 가정)
+- 기본 연산 종류 (모두 <code>1</code>시간 내에 수행된다고 가정)
 
   - <strong>배정, 대입, 복사 연산 : <code>A = B</code></strong>
 
   - <strong>산술 연산 : <code>+</code>, <code>-</code> ,<code>\*</code>, <code>/</code></strong>
 
-    - 나머지(<code>%</code>), 올림, 버림, 반올림 연산은 기본 연산으로 정의하진 않지만, 단위 시간 내에 수행된다고 가정한다.
+    -<strong> 나머지(<code>%</code>), 올림, 버림, 반올림 연산</strong>은 기본 연산으로 정의하진 않지만, 단위 시간 내에 수행된다고 가정한다.
 
   - <strong>비교 연산 : <code>></code>, <code>>=</code>, <code><</code>, <code><=</code>, <code>==</code>, <code>!=</code></strong>
 
