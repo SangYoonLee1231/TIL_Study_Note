@@ -112,9 +112,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
 
-<br/>
-
-### <a href="">모두를 위한 컴퓨터 과학 (CS50 2019)</a>
+#### <a href="">모두를 위한 컴퓨터 과학 (CS50 2019)</a>
 
 <br/>
 
