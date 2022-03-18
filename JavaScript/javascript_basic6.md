@@ -161,6 +161,48 @@
 
 ### <code>for</code> 반복문
 
+- <code>for</code>문 예시
+
+  ```javascript
+  let i = 0;
+  for (i = 0; i < 10; i++) {
+    alert(i);
+  }
+  ```
+
+- 인라인 변수 선언 방식
+
+  ```javascript
+  for (let i = 0; i < 10; i++) {
+    alert(i);
+  }
+  ```
+
+<br/>
+
+- <code>for</code>문의 구성 요소를 생략할 수도 있다.
+
+  ```javascript
+  let i = 0;
+
+  for (; i < 3; ) {
+    alert(i++);
+  }
+  ```
+
+  ```javascript
+  for (let i = 0; ; i++) {
+    alert(i);
+  }
+  // 이 반복문은 무한 루프(Infinity Loop)를 돈다.
+  ```
+
+  - 각 구성요소를 <strong>2개 이상</strong> 생략하는 것도 가능하다. 다만 세미콜론은 확실히 넣어주어야 에러가 나지 않는다.
+
+<br/>
+
 ### <code>break</code> 문, <code>continue</code> 문
+
+<br/>
 
 ### 레이블
