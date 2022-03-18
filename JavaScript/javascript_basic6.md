@@ -92,4 +92,75 @@
 
 <br/><br/>
 
-## while과 for 반복문
+## <code>while</code>과 <code>for</code> 반복문
+
+- 개발을 하면서 어떤 동작을 반복하는 코드를 작성하는 것은 필수 불가결이다.
+
+- 따라서 반복문은 (조건문과 함께) 매우 중요하고 기초적인 문법으로 꼽힌다.
+
+<br/>
+
+- 자바스크립트에서의 반복문은 C언어의 문법과 크게 다르지 않다.
+
+<br/>
+
+### <code>while</code> 반복문
+
+- <code>while</code>문 예시
+
+  ```javascript
+  let i = 0;
+  while (i < 10) {
+    alert(i);
+    i++;
+  }
+  ```
+
+<br/>
+
+- <code>while</code>문의 조건식 평가 값이 <code>true</code>면, 대괄호로 묶인 반복문 본문의 코드가 실행된다.
+
+- 본문의 코드가 모두 실행된 후 조건식을 다시 평가한다.
+
+<br/>
+
+- 반복문의 조건식엔 모든 종류의 표현식, 변수가 올 수 있다.
+
+- 만일 반복문의 본문이 한 줄이라면, 대괄호를 쓰지 않아도 된다.
+
+  ```javascript
+  let i = 0;
+  while (i < 10) i++;
+  ```
+
+<br/>
+
+- 반복문 본문이 한 번 실행되는 것을 <strong>이터레이션</strong>(iteration, 반복)이라 부른다.
+
+  - 위의 예시 코드에선 반복문이 10번의 이터레이션을 만든다.
+
+<br/>
+
+### <code>do while</code> 반복문
+
+- <code>do..while</code>문 예시
+
+  ```javascript
+  let i = 0;
+  do {
+    alert(i);
+    i++;
+  } while (i < 10);
+  ```
+
+<br/>
+
+- 반복문 본문을 우선 실행한 후 조건식을 평가한다. 그 값이 <code>true</code>면 본문을 처음부터 다시 실행한다.
+
+- 본문을 <strong>최소한 한 번</strong>이라도 실행해야 할 때만 사용해야 한다.
+
+### <code>for</code> 반복문
+
+### <code>break</code> 문, <code>continue</code> 문
+
+### 레이블
