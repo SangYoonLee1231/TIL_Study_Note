@@ -4,7 +4,7 @@
 
 ### 목차
 
-- <a href="">하드웨어의 한계</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/CS50_2019/c.md#%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EC%9D%98-%ED%95%9C%EA%B3%84">하드웨어의 한계</a>
 
 <br/>
 
