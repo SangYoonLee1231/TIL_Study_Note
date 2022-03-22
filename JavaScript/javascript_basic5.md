@@ -28,15 +28,15 @@
 
 <br/>
 
-- <code>if (...)</code>문의 괄호 안에 들어가는 조건식(표현식)은 불린형 값을 반환하고, 만일 그 값이 <code>true</code>면 코드 블록을 실행한다.
+- <code>if (...)</code>문의 괄호 안에 들어가는 조건식(표현식)은 <strong>불린형 값을 반환</strong>하고, 만일 그 값이 <code>true</code>면 코드 블록을 실행한다.
 
-  - 불린형으로 변환 시 true가 되는 값은 'truthy(참 같은)' 값이라 한다. (예 : <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code>)
+  - 불린형으로 변환 시 true가 되는 값은 '<strong>truthy(참 같은)</strong>' 값이라 한다. (예 : <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code>)
 
-  - 반대로, 불린형으로 변환 시 false가 되는 값은 'falsy(거짓 같은) 값이라 한다.
+  - 반대로, 불린형으로 변환 시 false가 되는 값은 '<strong>falsy(거짓 같은)</strong>' 값이라 한다.
 
 <br/>
 
-- 이 때, 중괄호 <code>{}</code>로 코드 불록을 항상 감싸주는 것이 좋다. 코드 블록이 한 줄 뿐이더라도 중괄호로 감싸는 것이 가독성에 좋기 때문이다.
+- 이 때, <strong>코드 블록이 한 줄 뿐이더라도 중괄호 <code>{}</code>로 코드 블록을 항상 감싸주는 것이 좋다.</strong> 중괄호로 감싸는 것이 가독성에 좋기 때문이다.
 
 <br/>
 
@@ -66,7 +66,7 @@
 
 <br/><br/>
 
-## <code>switch</code>문 (간단 정리)
+## <code>switch</code>문
 
 - <code>switch</code>문은 특정 변수가 어떤 값인가에 따라 다른 코드를 실행시키는 문법이다.
 
@@ -86,17 +86,17 @@
   }
   ```
 
-  - 변수 x의 값과 case문의 값을 순서대로 일치 비교하고, 일치하는 값을 찾으면 해당 case문을 시작점으로 잡는다.
+  - 변수 <code>x</code>의 값과 <code>case</code>문의 값을 순서대로 일치 비교하고, 일치하는 값을 찾으면 해당 <code>case</code>문을 <strong>시작점</strong>으로 잡는다.
 
-  - 시작점으로 잡은 case문 아래의 코드를 break문을 만날 때까지 모두 실행한다. 이 때 다른 case문을 만나도 일치 비교를 하지 않고 넘어간다.
+  - <strong>시작점</strong>으로 잡은 <code>case</code>문 아래의 코드를 <code>break</code>문을 만날 때까지 모두 실행한다. 이 때, <strong>다른 <code>case</code>문을 만나도 일치 비교를 하지 않고 넘어간다.</strong>
 
-  - 값과 일치하는 case문이 없으면, default문 아래의 코드를 실행한다. (default문은 없어도 된다.)
+  - 값과 일치하는 <code>case</code>문이 없으면, <code>default</code>문 아래의 코드를 실행한다. (<strong><code>default</code>문은 없어도 된다.</strong>)
 
 <br/>
 
-- switch문과 case문의 인수엔 어떤 표현식이 와도 상관없다.
+- <code>switch</code>문과 <code>case</code>문의 인수엔 <strong>어떤 표현식이 와도 상관없다.</strong>
 
-- switch문 일치 비교 시, 값과 자료형이 모두 동일해야 해당 case문이 실행된다.
+- <code>switch</code>문 일치 비교 시, <strong>값과 자료형이 모두 동일</strong>해야 해당 <code>case</code>문이 실행된다.
 
   ```javascript
   let a = "10";
