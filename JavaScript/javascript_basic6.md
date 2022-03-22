@@ -12,12 +12,12 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#nullish-%EB%B3%91%ED%95%A9-%EC%97%B0%EC%82%B0%EC%9E%90-">nullish 병합 연산자 <code>??</code></a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#-%EC%99%80--%EC%9D%98-%EC%B0%A8%EC%9D%B4"><code>??</code> 와 <code>||</code> 의 차이</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#while%EA%B3%BC-for-%EB%B0%98%EB%B3%B5%EB%AC%B8">while과 for 반복문</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#while%EA%B3%BC-for-%EB%B0%98%EB%B3%B5%EB%AC%B8"><code>while</code>과 <code>for</code> 반복문</a>
+  - <a href=""><code>while</code> 반복문</a>
+  - <a href=""><code>do while</code> 반복문</a>
+  - <a href=""><code>for</code> 반복문</a>
+- <a href=""><code>break</code> 문과 <code>continue</code> 문</a>
+- <a href="">레이블</a>
 
 <br/><br/>
 
@@ -199,10 +199,78 @@
 
   - 각 구성요소를 <strong>2개 이상</strong> 생략하는 것도 가능하다. 다만 세미콜론은 확실히 넣어주어야 에러가 나지 않는다.
 
+<br/><br/>
+
+## <code>break</code> 문과 <code>continue</code> 문
+
+- 반복문 실행 중 <code>break</code>를 만나면 해당 반복문을 빠져나온다.
+
+  ```javascript
+  let sum = 0;
+
+  while (true) {
+    let value = +prompt("숫자를 입력하세요.", "");
+
+    if (!value) break; // (*)
+
+    sum += value;
+  }
+  alert("합계: " + sum);
+  ```
+
 <br/>
 
-### <code>break</code> 문, <code>continue</code> 문
+- 반복문 실행 중 <code>continue</code>를 만나면 현재 실행 중인 이터레이션(iteration)을 멈추고 다음 이터레이션을 강제로 실행시킨다.
+
+  ```javascript
+  for (let i = 0; i < 10; i++) {
+    // 조건이 참이라면 남아있는 본문은 실행되지 않습니다.
+    if (i % 2 == 0) continue;
+
+    alert(i); // 1, 3, 5, 7, 9가 차례대로 출력됨
+  }
+  ```
 
 <br/>
 
-### 레이블
+- <code>break</code>나 <code>continue</code>는 <strong>반복문 내부</strong>에서만 사용할 수 있다.
+
+- <code>?</code> 오른쪽엔 <code>break</code>나 <code>continue</code>가 <strong>올 수 없다</strong>.
+
+<br/><br/>
+
+## 레이블
+
+- <strong>여러 개의 중첩 반복문을 한 번에 빠져나와야 할 때 레이블(<code>label</code>)을 사용할 수 있다.</strong>
+
+- 레이블은 <strong>반복문 앞에 붙여</strong> 사용한다.
+
+<br/>
+
+- 반복문 앞에 콜론(<code>:</code>)과 함께 레이블을 쓴다.
+
+- 반복문 안에 쓰이는 <code>break 레이블이름</code>은 <strong>해당 레이블이름이 붙은 반복문을 찾아</strong> 그 반복문을 빠져나가게 해준다.
+
+  ```javascript
+  outer: for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      let input = prompt(`(${i},${j})의 값`, "");
+
+      // 사용자가 아무것도 입력하지 않거나 Cancel 버튼을 누르면 두 반복문 모두를 빠져나옵니다.
+      if (!input) break outer; // (*)
+
+      // 입력받은 값을 가지고 무언가를 함
+    }
+  }
+  alert("완료!");
+  ```
+
+<br/>
+
+- 레이블은 반드시 <strong><code>break</code> 이나 <code>continue</code> 지시자 위</strong>에 있어야 한다.
+
+  ```javascript
+  break label; // 아래 for 문으로 점프할 수 없습니다.
+
+  label: for (...)
+  ```
