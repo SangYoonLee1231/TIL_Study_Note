@@ -1,4 +1,4 @@
-# JavaScript 기본 5 - 조건문 (<code>if</code>, <code>else</code>), 논리 연산자
+# JavaScript 기본 5 - 조건문 (<code>if</code>, <code>else</code>, <code>switch</code>), 논리 연산자
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
