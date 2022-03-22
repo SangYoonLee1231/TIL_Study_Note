@@ -11,7 +11,7 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%AC%B8-if-else-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC">조건문 (<code>if</code>, <code>else</code>) (간단 정리)</a>
-- <a href=""><code>switch</code>문 (간단 정리)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#switch%EB%AC%B8"><code>switch</code>문 (간단 정리)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%B6%80-%EC%97%B0%EC%82%B0%EC%9E%90-%EB%AC%BC%EC%9D%8C%ED%91%9C-%EC%97%B0%EC%82%B0%EC%9E%90-">조건부 연산자 (물음표 연산자) <code>?</code></a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0%EC%9E%90">논리 연산자</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#or-%EC%97%B0%EC%82%B0%EC%9E%90-">OR 연산자 <code>||</code></a>
@@ -121,9 +121,9 @@
 
 ## 조건부 연산자 (물음표 연산자) <code>?</code>
 
-- 자바스크립트에서 피연산자를 3개 받는 유일한 연산자로, C++의 삼항 연산자와 동일한 문법을 가졌다.
+- 자바스크립트에서 <strong>피연산자를 3개 받는</strong> 유일한 연산자로, C++의 삼항 연산자와 동일한 문법을 가졌다.
 
-- 조건에 따라 반환 값을 달리하려는 목적으로 만들어졌다.
+- <strong>조건</strong>에 따라 반환 값을 달리하려는 목적으로 만들어졌다.
 
   ```javascript
   let = result = condition ? value1 : value2;
@@ -176,25 +176,23 @@
 
   - 그럼 불린형으로의 형 변환 시 적용되는 규칙을 다시 한 번 짚어보자.
 
-  <br/>
+    - <code>0</code>이나 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 변환된다고 우선 생각하면 좋다.
 
-  - <code>0</code>이나 비어있다고 보이는 값들은 <code>false</code>로, 나머지는 <code>true</code>로 변환된다고 우선 생각하면 좋다.
+    <br/>
 
-  <br/>
+    - <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code> &nbsp; → &nbsp; <code>false</code>
 
-  - <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code> &nbsp; → &nbsp; <code>false</code>
+    - 그 외의 값 &nbsp; → &nbsp; <code>true</code>
 
-  - 그 외의 값 &nbsp; → &nbsp; <code>true</code>
+    <br/>
 
-  <br/>
+    - 다만, 문자열 <code>"0"</code>과, 공백 <code>" "</code>은 비어있지 않은 문자열이므로, <code>true</code>로 변환된다.
 
-  - 다만, 문자열 <code>"0"</code>과, 공백 <code>" "</code>은 비어있지 않은 문자열이므로, <code>true</code>로 변환된다.
+    - 또한, <code>-1</code>과 같은 음수 값도 <code>true</code>로 변환된다.
 
-  - 또한, <code>-1</code>과 같은 음수 값도 <code>true</code>로 변환된다.
+    <br/>
 
-  <br/>
-
-  - 그러나, 숫자 <code>0</code>과, 빈 문자열 <code>""</code>은 <code>false</code>로 변환된다.
+    - 그러나, 숫자 <code>0</code>과, 빈 문자열 <code>""</code>은 <code>false</code>로 변환된다.
 
 <br/>
 
@@ -231,17 +229,17 @@
 
 - 자바스크립트에서만 해당되는, 두 논리 연산자 <code>&&</code> 와 <code>||</code> 의 <strong>동작 원리</strong>에 대해 알아보자.
 
-- 결론적으로, 두 논리 연산자 <code>&&</code> 와 <code>||</code> 도 값을 반환하는 연산이다.
+- 결론적으로, 두 논리 연산자 <code>&&</code> 와 <code>||</code> 도 <strong>값을 반환하는 연산</strong>이다.
 
 <br/>
 
 - <strong>OR 연산자 <code>||</code> 의 동작 순서</strong>
 
-  - 가장 왼쪽부터 오른쪽으로 나아가며 피연산자를 평가한다. 이 때, 각 피연산자는 불린형으로 바뀐다.
+  - 가장 왼쪽부터 오른쪽으로 나아가며 피연산자를 평가한다. 이 때, 각 피연산자는 <strong>불린형</strong>으로 바뀐다.
 
-  - 평가 중 피연산자 값이 <code>true</code>로 나오면, 그 즉시 연산을 멈추고 해당 피연산자의 <strong>원래 값</strong>을 반환한다.
+  - 평가 중 <strong>피연산자 값이 <code>true</code>로 나오면</strong>, 그 즉시 연산을 멈추고 해당 피연산자의 <strong>원래 값</strong>을 반환한다.
 
-  - 피연산자가 모두 <code>false</code>로 평가되면, 맨 마지막 피연산자의 <strong>원래 값</strong>을 반환한다.
+  - <strong>피연산자가 모두 <code>false</code>로 평가되면</strong>, 맨 마지막 피연산자의 <strong>원래 값</strong>을 반환한다.
 
     ```javascript
     alert(1 || 0); // 1
@@ -254,11 +252,11 @@
 
 - <strong>AND 연산자 <code>&&</code> 의 동작 순서</strong>
 
-  - 가장 왼쪽부터 오른쪽으로 나아가며 피연산자를 평가한다. 이 때, 각 피연산자는 불린형으로 바뀐다.
+  - 가장 왼쪽부터 오른쪽으로 나아가며 피연산자를 평가한다. 이 때, 각 피연산자는 <strong>불린형</strong>으로 바뀐다.
 
-  - 평가 중 피연산자 값이 <code>false</code>로 나오면, 그 즉시 연산을 멈추고 해당 피연산자의 <strong>원래 값</strong>을 반환한다.
+  - 평가 중 피연산자 값이 <code>false</code>로 나오면</strong>, 그 즉시 연산을 멈추고 해당 피연산자의 <strong>원래 값</strong>을 반환한다.
 
-  - 피연산자가 모두 <code>true</code>로 평가되면, 맨 마지막 피연산자의 <strong>원래 값</strong>을 반환한다.
+  - <strong>피연산자가 모두 <code>true</code>로 평가되면</strong>, 맨 마지막 피연산자의 <strong>원래 값</strong>을 반환한다.
 
     ```javascript
     alert(1 && 0); // 0
@@ -304,7 +302,7 @@
 
 <br/>
 
-- <code>alert()</code> 메소드의 반환값은 <code>undefined</code>이다.
+- <strong><code>alert()</code> 메소드의 반환값은 <code>undefined</code>이다.</strong>
 
   ```javascript
   alert(alert(1) || 2 || alert(3)); // 1, 2 출력
