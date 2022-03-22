@@ -11,6 +11,7 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%AC%B8-if-else-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC">조건문 (<code>if</code>, <code>else</code>) (간단 정리)</a>
+- <a href=""><code>switch</code>문 (간단 정리)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EC%A1%B0%EA%B1%B4%EB%B6%80-%EC%97%B0%EC%82%B0%EC%9E%90-%EB%AC%BC%EC%9D%8C%ED%91%9C-%EC%97%B0%EC%82%B0%EC%9E%90-">조건부 연산자 (물음표 연산자) <code>?</code></a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0%EC%9E%90">논리 연산자</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md#or-%EC%97%B0%EC%82%B0%EC%9E%90-">OR 연산자 <code>||</code></a>
@@ -61,6 +62,59 @@
   }
 
   alert(message);
+  ```
+
+<br/><br/>
+
+## <code>switch</code>문 (간단 정리)
+
+- <code>switch</code>문은 특정 변수가 어떤 값인가에 따라 다른 코드를 실행시키는 문법이다.
+
+  ```javascript
+  switch (x) {
+    case 1:
+      ...
+      break
+
+    case 2:
+      ...
+      break
+
+    default:
+      ...
+      break
+  }
+  ```
+
+  - 변수 x의 값과 case문의 값을 순서대로 일치 비교하고, 일치하는 값을 찾으면 해당 case문을 시작점으로 잡는다.
+
+  - 시작점으로 잡은 case문 아래의 코드를 break문을 만날 때까지 모두 실행한다. 이 때 다른 case문을 만나도 일치 비교를 하지 않고 넘어간다.
+
+  - 값과 일치하는 case문이 없으면, default문 아래의 코드를 실행한다. (default문은 없어도 된다.)
+
+<br/>
+
+- switch문과 case문의 인수엔 어떤 표현식이 와도 상관없다.
+
+- switch문 일치 비교 시, 값과 자료형이 모두 동일해야 해당 case문이 실행된다.
+
+  ```javascript
+  let a = "10";
+  let b = 0;
+
+  switch (+a) {
+    case b + 10:
+      alert("표현식 +a는 10, 표현식 b+10는 10이므로, 이 코드는 실행된다.");
+      break;
+
+    case "10":
+      alert('10과 "10"은 자료형이 다르므로, 이 코드는 실행되지 않는다.');
+
+    ...
+
+    default:
+      alert("이 코드는 실행되지 않는다.");
+  }
   ```
 
 <br/><br/>
