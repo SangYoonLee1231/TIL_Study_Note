@@ -188,7 +188,7 @@ print(lst[0], lst[1])
 
 ### immutable 객체가 들어있는 변수에 새로운 immutable 객체를 할당해도 괜찮은 이유
 
-- 지금부터 편의 상 immutable한 값이 할당된 변수를 'immutable 변수'라 부른다.
+- 지금부터 편의상 immutable한 값이 할당된 변수를 'immutable 변수'라 부른다.
 
 <br/>
 
