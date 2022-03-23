@@ -206,7 +206,7 @@ print(lst[0], lst[1])
   TypeError: 'str' object does not support item assignment
   ```
 
-  - 따라서 위처럼 immutable 변수의 문자열을 수정하려 하면 에러가 발생한다.
+  - 따라서 위처럼 immutable 변수인 <strong>문자열을 수정하려 하면 에러가 발생</strong>한다.
 
 <br/>
 
