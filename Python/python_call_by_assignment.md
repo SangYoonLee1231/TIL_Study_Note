@@ -242,7 +242,7 @@ print(lst[0], lst[1])
 
   - 어떤 변수를 값을 바꾸고 다시 원래대로 돌려놓으면, 그 변수는 처음과 동일한 id를 가진다.
 
-  - 어떤 두 변수가 같은 값을 가지면 두 변수(객체)의 id도 동일하다.
+  - 어떤 두 변수가 같은 값을 가지면 두 변수(객체)의 id는 동일해진다.
 
   ```python
   a = 200; print(id(a))
@@ -284,7 +284,7 @@ print(lst[0], lst[1])
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/python_call_by_assignment3.jpg">
 
-- 즉, 겉으로 봤을 땐 immutable 객체가 달라지는 것처럼 보여도, 실은 변수가 가리키는 부분만 달라지고, 변수가 가리키는 부분의 값은 그대로인 것이다.
+- 즉, 겉으로 봤을 땐 immutable 객체는 그 값이 변경된 것처럼 보여도, 실은 변수가 가리키는 부분만 달라진 것이고, 변수가 가리키는 부분의 값은 그대로이다.
 
 <br/><br/>
 
