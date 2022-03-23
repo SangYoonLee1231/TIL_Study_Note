@@ -2,10 +2,6 @@
 
 <br/>
 
-> 참고 자료 : Code Tree
-
-<br/>
-
 - 이 글은 『<a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>』의 내용을 전제로 기록하였습니다.
 
 <br/>
@@ -73,7 +69,7 @@
   10 2 3 4
   ```
 
-* list는 mutable한 객체이므로, 전역 변수로 선언되었을 때 함수 내부에서 값을 참조하고 수정해도 원본에 반영된다.
+* list는 <strong>mutable</strong>한 객체이므로, 전역 변수로 선언되었을 때 함수 내부에서 값을 참조하고 수정해도 원본에 반영된다.
 
 * 위의 코드에서 <code>modify()</code> 함수 내부의 <code>\_list</code> 변수는 외부에 선언된 전역 변수 <code>\_list</code>로 인식된다.
 
@@ -161,6 +157,7 @@
 
   def modify():
       num = 5
+      print(num)
 
 
   modify()
@@ -168,12 +165,17 @@
   ```
 
   ```
+  5
   10
   ```
 
-- 10, 5는 immutable한 객체이다. 따라서 <code>modify()</code> 함수 내부에 선언된 <code>num</code>은 지역 변수이다.
+- 10, 5는 <strong>immutable</strong>한 객체이다.
 
-* 따라서 5의 값에 <code>num</code>을 연결해도 전역 변수의 <code>num</code> 값은 그대로인 것이다.
+* 따라서 함수 외부와 내부에 같은 이름의 변수 <code>num</code>을 선언하면
+
+  - 함수 내부에서 <code>num</code>을 출력할 땐 지역 변수 <code>num</code>의 값 5를 출력하고 (내부 변수가 외부 변수를 가림)
+
+  - 함수 밖에서 <code>num</code>을 출력할 땐 전역 변수의 <code>num</code> 값 10을 출력하는 것이다.
 
 <br/>
 
@@ -288,3 +290,7 @@ print_a_and_b()
 * 즉, (1번)에서 <code>a</code>는 50을 가리키고, <code>b</code>는 60을 가리킨다.
 
 * (2번)의 경우, <code>a</code>, <code>b</code>는 전역 변수 <code>a</code>, <code>b</code>밖에 참조할 값이 없으므로 각각 10, 20을 가리킨다.
+
+<br/><br/>
+
+> 참고 자료 : Code Tree, <a href="http://irakla.egloos.com/7444165">Python - 변수의 특징(mutable, immutable)과 전달(Call by ?) (개인 블로그)</a>

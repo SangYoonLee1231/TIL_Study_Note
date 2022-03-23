@@ -10,6 +10,7 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md#immutable-%EA%B0%9D%EC%B2%B4%EA%B0%80-%ED%95%A8%EC%88%98%EC%9D%98-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EC%A0%84%EB%8B%AC%EB%90%A0-%EB%95%8C">immutable 객체가 함수의 인자로 전달될 때</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md#mutable-%EA%B0%9D%EC%B2%B4%EA%B0%80-%ED%95%A8%EC%88%98%EC%9D%98-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EC%A0%84%EB%8B%AC%EB%90%A0-%EB%95%8C">mutable 객체가 함수의 인자로 전달될 때</a>
+  - <a href="">변수에 immutable 객체를 재할당해도 오류가 나지 않는 이유</a>
 
 <br/>
 
@@ -29,7 +30,7 @@
 
     - list, dictonary, set 등
 
-<br/>
+<br/><br/>
 
 ## Python에서의 Call By Value VS Call By Reference
 
@@ -185,7 +186,110 @@ print(lst[0], lst[1])
 
 <br/><br/>
 
+### immutable 객체가 들어있는 변수에 새로운 immutable 객체를 할당해도 오류가 나지 않는 이유
+
+- 지금부터 편의 상 immutable한 값이 할당된 변수를 'immutable 변수'라 부른다.
+
+<br/>
+
+- immutable 변수는 레퍼런스가 가리키는 데이터의 값을 변경할 수 없다.
+
+  ```python
+  string = "Hello"
+
+  string[5] = 'a'
+
+  print(string)
+  ```
+
+  ```
+  TypeError: 'str' object does not support item assignment
+  ```
+
+  - 따라서 위처럼 immutable 변수의 문자열을 수정하려 하면 에러가 발생한다.
+
+<br/>
+
+- 그러나 <strong>immutable 변수의 값을 아래처럼 통째로 바꾸는 것은 아무런 에러 없이 잘 동작한다.</strong>
+
+  ```python
+  string = "Hello"
+  string = "World"
+
+  a = 10
+  a = 20
+
+  print(string)
+  print(a)
+  ```
+
+  ```
+  World
+  20
+  ```
+
+- 이는 값이 변경되선 안되는 immutable 객체의 값이 변경된 것처럼 보인다.
+
+- 하지만 실제론 <strong>immutable 객체의 값은 변경되지 않았다.</strong>
+
+- 왜 그런걸가? 그 원리를 아래에서 살펴보자.
+
+<br/>
+
+- 우선, 파이썬은 <code>id(객체)</code>로 객체의 id를 가져올 수 있다. (참고로 id는 VM상에서의 위치를 의미한다.)
+
+- 이 때 <strong>id는 하나의 값에 대응</strong>되므로
+
+  - 어떤 변수를 값을 바꾸고 다시 원래대로 돌려놓으면, 그 변수는 처음과 동일한 id를 가진다.
+
+  - 어떤 두 변수가 같은 값을 가지면 두 변수(객체)의 id도 동일하다.
+
+  ```python
+  a = 200; print(id(a))
+  a = 300; print(id(a))
+
+  a = 200; print(id(a))
+  a = 300; print(id(a))
+
+  b = 200; print(id(b))
+  b = 300; print(id(b))
+  ```
+
+  ```
+  2623010923152
+  2623039916720
+  2623010923152
+  2623039916720
+  2623010923152
+  2623039916720
+  ```
+
+<br/>
+
+- 즉, (파이썬에서) immutable한 값이 들어있는 어떤 변수 a에 다른 immutable한 값을 할당하면
+
+  - C언어처럼 기존 값이 지워지고, 새로 할당 받은 값이 a에 저장되는 것이 아니라
+
+    <img src="img/python_call_by_assignment1.jpg">
+
+    <br/>
+
+  - ✨ <strong>새로운 메모리 공간을 할당 받고 그 곳에 새 값이 저장</strong>된 후 변수 a가 이를 가리키게 되는 것이다. 그리고 기존값은 지워지지 않고 그대로 메모리 상에 잔류한다.
+
+    <img src="img/python_call_by_assignment2.jpg">
+
+    <br/>
+
+  - 만일 여기서 a에 처음 값을 재할당하면, 변수 a는 다시 처음 변수를 가리키고, 처음의 id값을 가지게 된다.
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/python_call_by_assignment3.jpg">
+
+- 즉, 겉으로 봤을 땐 immutable 객체가 달라지는 것처럼 보여도, 실은 변수가 가리키는 부분만 달라지고, 변수가 가리키는 부분의 값은 그대로인 것이다.
+
+<br/><br/>
+
 > 참고 자료 : <a href="https://aalphaca.tistory.com/4">Python은 Call by reference일까? Call by value일까? (개인 블로그)</a>,  
 > <a href="https://foramonth.tistory.com/20">Python - Call by Object Reference (개인 블로그)</a>,  
 > <a href="https://www.pymoon.com/entry/Python-%EC%9D%80-callbyvalue-%EC%9D%BC%EA%B9%8C-callbyreference-%EC%9D%BC%EA%B9%8C">Python 은 call-by-value 일까 call-by-reference 일까 (개인 블로그)</a>,  
-> <a href="https://stackoverflow.com/q/986006/17881946">How do I pass a variable by reference? (StackOverflow)</a>
+> <a href="https://stackoverflow.com/q/986006/17881946">How do I pass a variable by reference? (StackOverflow)</a>,
+> <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md">Python - Call By Assignment</a>
