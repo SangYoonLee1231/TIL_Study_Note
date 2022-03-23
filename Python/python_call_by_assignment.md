@@ -10,7 +10,7 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md#immutable-%EA%B0%9D%EC%B2%B4%EA%B0%80-%ED%95%A8%EC%88%98%EC%9D%98-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EC%A0%84%EB%8B%AC%EB%90%A0-%EB%95%8C">immutable 객체가 함수의 인자로 전달될 때</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md#mutable-%EA%B0%9D%EC%B2%B4%EA%B0%80-%ED%95%A8%EC%88%98%EC%9D%98-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EC%A0%84%EB%8B%AC%EB%90%A0-%EB%95%8C">mutable 객체가 함수의 인자로 전달될 때</a>
-  - <a href="">변수에 immutable 객체를 재할당해도 오류가 나지 않는 이유</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_call_by_assignment.md#immutable-%EA%B0%9D%EC%B2%B4%EA%B0%80-%EB%93%A4%EC%96%B4%EC%9E%88%EB%8A%94-%EB%B3%80%EC%88%98%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-immutable-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%ED%95%A0%EB%8B%B9%ED%95%B4%EB%8F%84-%EC%98%A4%EB%A5%98%EA%B0%80-%EB%82%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%9D%B4%EC%9C%A0">변수에 immutable 객체를 재할당해도 오류가 나지 않는 이유</a>
 
 <br/>
 
