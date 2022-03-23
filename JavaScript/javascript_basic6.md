@@ -13,25 +13,25 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#nullish-%EB%B3%91%ED%95%A9-%EC%97%B0%EC%82%B0%EC%9E%90-">nullish 병합 연산자 <code>??</code></a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#-%EC%99%80--%EC%9D%98-%EC%B0%A8%EC%9D%B4"><code>??</code> 와 <code>||</code> 의 차이</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#while%EA%B3%BC-for-%EB%B0%98%EB%B3%B5%EB%AC%B8"><code>while</code>과 <code>for</code> 반복문</a>
-  - <a href=""><code>while</code> 반복문</a>
-  - <a href=""><code>do while</code> 반복문</a>
-  - <a href=""><code>for</code> 반복문</a>
-- <a href=""><code>break</code> 문과 <code>continue</code> 문</a>
-- <a href="">레이블</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#while-%EB%B0%98%EB%B3%B5%EB%AC%B8"><code>while</code> 반복문</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8"><code>do while</code> 반복문</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#for-%EB%B0%98%EB%B3%B5%EB%AC%B8"><code>for</code> 반복문</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#break-%EB%AC%B8%EA%B3%BC-continue-%EB%AC%B8"><code>break</code> 문과 <code>continue</code> 문</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md#%EB%A0%88%EC%9D%B4%EB%B8%94">레이블</a>
 
 <br/><br/>
 
 ## nullish 병합 연산자 <code>??</code>
 
-- <code>??</code> 연산자는 왼쪽부터 탐색 중, <strong>첫 번째로 정의된(defined)</strong> 값을 그대로 반환한다.
+- <code>??</code> 연산자는 왼쪽부터 탐색 중, <strong>첫 번째로 정의된(defined) 값</strong>을 그대로 반환한다.
 
 <br/>
 
 - <code>a ?? b</code> 평가 결과
 
-  - a가 <code>null</code>도, <code>undefined</code>도 아니라면, 그대로 a로 평가한다.
+  - a가 <code>null</code>도, <code>undefined</code>도 아니라면, 그대로 <strong>a</strong>로 평가한다.
 
-  - a가 <code>null</code>이나 <code>undefined</code>면, a 대신 b로 평가한다.
+  - a가 <code>null</code>이나 <code>undefined</code>면, <strong>a 대신 b</strong>로 평가한다.
 
     ```javascript
     x = a != null && a != undefined ? a : b;
@@ -49,7 +49,7 @@
 
 <br/>
 
-- <code>??</code> 연산자는 우선순위는 5로 애매하므로, 복잡한 표현식 안에선 괄호<code>()</code>로 묶어서 사용하는 것이 좋다.
+- <code>??</code> 연산자는 우선순위는 5로 애매하므로, 복잡한 표현식 안에선 <strong>괄호<code>()</code>로 묶어서</strong> 사용하는 것이 좋다.
 
   ```javascript
   let height = null;
@@ -76,9 +76,9 @@
 
 - <code>a || b</code> 평가 결과
 
-  - a가 불린형으로 변환시 <code>true</code>면, 그대로 a로 평가한다.
+  - a가 불린형으로 변환시 <code>true</code>면, 그대로 <strong>a</strong>로 평가한다.
 
-  - a가 불린형으로 변환시 <code>false</code>면, b로 평가한다.
+  - a가 불린형으로 변환시 <code>false</code>면, <strong>b</strong>로 평가한다.
 
 <br/>
 
@@ -96,11 +96,11 @@
 
 - 개발을 하면서 어떤 동작을 반복하는 코드를 작성하는 것은 필수 불가결이다.
 
-- 따라서 반복문은 (조건문과 함께) 매우 중요하고 기초적인 문법으로 꼽힌다.
+- 따라서 <strong>반복문</strong>은 (조건문과 함께) 매우 중요하고 기초적인 문법으로 꼽힌다.
 
 <br/>
 
-- 자바스크립트에서의 반복문은 C언어의 문법과 크게 다르지 않다.
+- 자바스크립트에서의 반복문은 <strong>C언어의 문법과 크게 다르지 않다.</strong>
 
 <br/>
 
@@ -124,9 +124,9 @@
 
 <br/>
 
-- 반복문의 조건식엔 모든 종류의 표현식, 변수가 올 수 있다.
+- 반복문의 조건식엔 <strong>모든 종류의 표현식, 변수가 올 수 있다.</strong>
 
-- 만일 반복문의 본문이 한 줄이라면, 대괄호를 쓰지 않아도 된다.
+- 만일 반복문의 <strong>본문이 한 줄</strong>이라면, <strong>대괄호를 쓰지 않아도 된다.</strong>
 
   ```javascript
   let i = 0;
@@ -249,7 +249,7 @@
 
 - 반복문 앞에 콜론(<code>:</code>)과 함께 레이블을 쓴다.
 
-- 반복문 안에 쓰이는 <code>break 레이블이름</code>은 <strong>해당 레이블이름이 붙은 반복문을 찾아</strong> 그 반복문을 빠져나가게 해준다.
+- 반복문 안에 쓰이는 <code>break 레이블이름</code>은 <strong>해당 레이블 이름이 붙은 반복문을 찾아</strong> 그 반복문을 빠져나가게 해준다.
 
   ```javascript
   outer: for (let i = 0; i < 3; i++) {

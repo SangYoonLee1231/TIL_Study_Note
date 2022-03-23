@@ -4,7 +4,7 @@
 
 <br/>
 
-- <a href="https://ko.javascript.info/">javascript.info</a>의 【자바스크립트 기본】 챕터 10 ~ 11장 내용
+- <a href="https://ko.javascript.info/">javascript.info</a>의 【자바스크립트 기본】 챕터 10 ~ 11, 14장 내용
 
 <br/>
 
