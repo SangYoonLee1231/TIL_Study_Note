@@ -1,4 +1,4 @@
-# 연결 리스트 - Iterator
+# 순차적 자료구조 : 덱 (Deque)
 
 <br/>
 
@@ -6,9 +6,18 @@
 
 <br/>
 
-제대로 공부한 후 정리해서 다시 올리겠습니다..
+### 목차
 
-<img src="img/linked_list_iterator.png">
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+
+<br/><br/>
+
+##
+
+<img src="img/deque1.png">
 
 <br/><br/>
 

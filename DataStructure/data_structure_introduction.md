@@ -2,7 +2,7 @@
 
 <br/>
 
-> 참고 자료 : 「자료구조」 학부 수업 및 <a href="https://youtube.com/playlist?list=PLsMufJgu5933ZkBCHS7bQTx0bncjwi4PK">유튜브 강의</a> (신찬수 교수님), 「파이썬 알고리즘 인터뷰」 (박상길 저, '책만' 출판사), Code Tree - Novice High
+> 참고 자료 : 「자료구조」 학부 수업 및 <a href="https://youtube.com/playlist?list=PLsMufJgu5933ZkBCHS7bQTx0bncjwi4PK">유튜브 강의</a> (신찬수 교수님), 「파이썬 알고리즘 인터뷰」 (박상길 저, '책만' 출판사), <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>
 
 <br/>
 

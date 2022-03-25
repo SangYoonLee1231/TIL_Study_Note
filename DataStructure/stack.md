@@ -1,4 +1,4 @@
-# 순차적 자료구조 : 스택
+# 순차적 자료구조 : 스택 (Stack)
 
 <br/>
 
@@ -8,10 +8,10 @@
 
 ### 목차
 
-- <a href="">스택 (Stack) 소개</a>
-- <a href="">Stack 구현 (파이썬)</a>
-- <a href="">Stack 연산 수행시간</a>
-- <a href="">Stack 활용 예제</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#%EC%8A%A4%ED%83%9D-stack-%EC%86%8C%EA%B0%9C">스택 (Stack) 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#stack-%EA%B5%AC%ED%98%84-%ED%8C%8C%EC%9D%B4%EC%8D%AC">Stack 구현 (파이썬)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#stack-%EC%97%B0%EC%82%B0-%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84">Stack 연산 수행시간</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#stack-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%A0%9C">Stack 활용 예제</a>
 
 <br/><br/>
 
@@ -20,6 +20,8 @@
 - <strong>가장 고전적인 자료구조</strong> 중 하나로 거의 모든 애플리케이션 개발에 사용된다.
 
 - 1차원의 선형(linear) 자료구조이다.
+
+  <img src="img/stack1.png">
 
 <br/>
 
@@ -35,7 +37,7 @@
 
   - 마지막으로 들어온 요소가 제일 먼저 나간다.
 
-<img src="img/stack1.png">
+    <img src="img/stack.gif">
 
 <br/><br/>
 
@@ -95,6 +97,12 @@
   # len(S) == S.__len__()
   ```
 
+<br/>
+
+- 덧붙여, 리스트(배열) 대신 <strong>연결 리스트</strong>를 활용하여 스택을 구현해도 된다.
+
+  - 모든 연산에 대한 시간 복잡도를 <code>O(1)</code>만큼 갖게 할 수 있기 때문
+
 <br/><br/>
 
 ## Stack 연산 수행시간
@@ -149,4 +157,4 @@
 
 <br/><br/>
 
-> 사진 출처 : http://www.incodom.kr/%EC%8A%A4%ED%83%9D
+> 사진 출처 : http://www.incodom.kr/%EC%8A%A4%ED%83%9D, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>
