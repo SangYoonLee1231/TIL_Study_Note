@@ -43,20 +43,25 @@
 
 - deque에 자주 쓰이는 8가지 함수 및 표현(expression) 정리
 
-  - <code>dq.appendleft(value)</code>
+  왼쪽 끝이 맨 앞, 오른쪽 끝이 맨 뒤라 가정한다.
 
-  - <code>dq.append(value)</code>
+  - <code>dq.appendleft(value)</code> : 맨 앞에 value 데이터를 삽입한다.
 
-  - <code>dq.popleft()</code>
+  - <code>dq.append(value)</code> :
+    맨 뒤에 value 데이터를 삽입한다.
 
-  - <code>dq.pop()</code>
+  - <code>dq.popleft()</code> : 맨 앞의 데이터를 삭제 후 반환한다.
 
-  - <code>len(dq)</code>
+  - <code>dq.pop()</code> : 맨 뒤의 데이터를 삭제 후 반환한다.
 
-  - <code>if dq</code>
+  - <code>len(dq)</code> : 덱에 남아있는 데이터의 수를 반환한다.
 
-  - <code>dq[0]</code>
+  - <code>if dq</code> : 덱에 데이터가 존재하는 확인한다. 반대로 <code>if not dq</code>는 덱이 비어있는지를 확인한다.
 
-  - <code>dq[-1]</code>
+  - <code>dq[0]</code> : 맨 앞의 데이터를 반환한다. (삭제 X)
+
+  - <code>dq[-1]</code> : 맨 뒤의 데이터를 반환한다. (삭제 X)
+
+<br/><br/>
 
 > 사진 출처 : <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>

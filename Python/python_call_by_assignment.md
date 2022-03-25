@@ -281,4 +281,4 @@ print(lst[0], lst[1])
 > 참고 자료 : <a href="https://aalphaca.tistory.com/4">Python은 Call by reference일까? Call by value일까? (개인 블로그)</a>,  
 > <a href="https://foramonth.tistory.com/20">Python - Call by Object Reference (개인 블로그)</a>,  
 > <a href="https://www.pymoon.com/entry/Python-%EC%9D%80-callbyvalue-%EC%9D%BC%EA%B9%8C-callbyreference-%EC%9D%BC%EA%B9%8C">Python 은 call-by-value 일까 call-by-reference 일까 (개인 블로그)</a>,  
-> <a href="https://stackoverflow.com/q/986006/17881946">How do I pass a variable by reference? (StackOverflow)</a>,
+> <a href="https://stackoverflow.com/q/986006/17881946">How do I pass a variable by reference? (StackOverflow)</a>
