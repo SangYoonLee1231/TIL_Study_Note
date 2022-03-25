@@ -86,10 +86,11 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">배열 vs 리스트</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">스택 (Stack)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">큐 (Queue)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">연결 리스트 기본 개념</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">단방향 연결 리스트</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">양방향 연결 리스트 (원형 연결 리스트 </a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 기초 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">연결 리스트 - 기본 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">연결 리스트 - 단방향 연결 리스트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">연결 리스트 - 양방향 연결 리스트 (원형 연결 리스트)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_iterator.md">연결 리스트 - Iterator</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 - 기초 개념</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 - 해시 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing</a>
 

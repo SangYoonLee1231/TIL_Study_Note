@@ -1,4 +1,4 @@
-# 순차적 자료구조 : 단방향 연결 리스트
+# 연결 리스트 - 단방향 연결 리스트
 
 <br/>
 
@@ -8,16 +8,16 @@
 
 ### 목차
 
-- <a href="">단방향 연결 리스트(Singly Linked List)란</a>
-- <a href="">단방향 연결 리스트 구현</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#%EB%8B%A8%EB%B0%A9%ED%96%A5-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8singly-linked-list%EB%9E%80">단방향 연결 리스트(Singly Linked List)란</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#%EB%8B%A8%EB%B0%A9%ED%96%A5-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84">단방향 연결 리스트 구현</a>
 
-  - <a href="">Node 클래스 구현</a>
-  - <a href="">단방향 연결 리스트 클래스와 삽입 연산 구현</a>
-  - <a href="">삭제 연산 구현</a>
-  - <a href="">탐색 연산 구현</a>
-  - <a href="">【for + in + 리스트】 구문으로 연결 리스트의 모든 Node 탐색하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#node-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B5%AC%ED%98%84">Node 클래스 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#%EC%82%BD%EC%9E%85-%EC%97%B0%EC%82%B0-%EA%B5%AC%ED%98%84">삽입 연산 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#%EC%82%AD%EC%A0%9C-%EC%97%B0%EC%82%B0-%EA%B5%AC%ED%98%84">삭제 연산 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#%ED%83%90%EC%83%89-%EC%97%B0%EC%82%B0-%EA%B5%AC%ED%98%84">탐색 연산 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md#for--in--%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EB%AC%B8%EC%9C%BC%EB%A1%9C-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-node-%ED%83%90%EC%83%89%ED%95%98%EA%B8%B0">【for + in + 리스트】 구문으로 연결 리스트의 모든 Node 탐색하기</a>
 
-<br/>
+<br/><br/>
 
 ## 단방향 연결 리스트(Singly Linked List)란
 

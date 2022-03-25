@@ -1,4 +1,4 @@
-# 순차적 자료구조 : 양방향 연결 리스트
+# 연결 리스트 - 양방향 연결 리스트 (원형 연결 리스트)
 
 <br/>
 
@@ -8,17 +8,15 @@
 
 ### 목차
 
-- <a href="">양방향 연결 리스트 (Singly Linked List) 소개</a>
-- <a href="">양방향 연결 리스트 (양방향 연결 리스트 (원형 연결 리스트) 구현</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#%EC%96%91%EB%B0%A9%ED%96%A5-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-singly-linked-list-%EC%86%8C%EA%B0%9C">양방향 연결 리스트 (Singly Linked List) 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#%EC%96%91%EB%B0%A9%ED%96%A5-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9B%90%ED%98%95-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B5%AC%ED%98%84">양방향 연결 리스트 (양방향 연결 리스트 (원형 연결 리스트) 구현</a>
 
-  - <a href="">Node 클래스 구현</a>
-  - <a href="">양방향 연결 리스트 클래스 구현</a>
-  - <a href="">Splice 연산 구현</a>
-  - <a href="">연산 함수 구현 (Splice, 이동, 삽입, 탐색, 삭제)</a>
-  - <a href="">기타 연산</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#node-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B5%AC%ED%98%84">Node 클래스 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#%EC%96%91%EB%B0%A9%ED%96%A5-%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B5%AC%ED%98%84">양방향 연결 리스트 클래스 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#%EC%97%B0%EC%82%B0-%ED%95%A8%EC%88%98-%EA%B5%AC%ED%98%84-splice-%EC%9D%B4%EB%8F%99-%EC%82%BD%EC%9E%85-%ED%83%90%EC%83%89-%EC%82%AD%EC%A0%9C">연산 함수 구현 (Splice, 이동, 삽입, 탐색, 삭제)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#%EA%B8%B0%ED%83%80-%EC%97%B0%EC%82%B0">기타 연산</a>
 
-- <a href="">연산의 시간 복잡도</a>
-- <a href="">✨ Iterator (반복자)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md#%EC%97%B0%EC%82%B0%EC%9D%98-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84">연산의 시간 복잡도</a>
 
 <br/><br/>
 

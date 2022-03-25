@@ -1,4 +1,4 @@
-# 순차적 자료구조 : 연결 리스트 기본 개념
+# 연결 리스트 - 기본 개념
 
 <br/>
 
@@ -8,8 +8,9 @@
 
 ### 목차
 
-- <a href="">연결 리스트 (Linked List) 소개</a>
-- <a href="">연결 리스트의 장단점 (vs 배열)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md#%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-linked-list-%EB%93%B1%EC%9E%A5-%EB%B0%B0%EA%B2%BD">연결 리스트 (Linked List) 등장 배경</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md#%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-linked-list-%EC%86%8C%EA%B0%9C">연결 리스트 (Linked List) 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md#%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90-vs-%EB%B0%B0%EC%97%B4">연결 리스트의 장단점 (vs 배열)</a>
 
 <br/><br/>
 
@@ -58,6 +59,8 @@
 - 배열과 달리, 연결 리스트는 <strong>어떤 값에 접근 시, 상수 시간 O(1) 내에 수행할 수 없다</strong>는 단점이 있다.  
   (<code>O(n)</code>만큼 걸린다)
 
+<br/>
+
 - 그러나 <strong>새로운 값을 중간에 삽입하는 과정</strong>은 배열보다 더 빨리 걸린다.
 
   - 배열 <code>insert</code> 수행시간 : <strong>O(n)</strong>
@@ -67,6 +70,6 @@
 <img src="img/linked_list2.png" width="250px"> <img src="img/linked_list3.png" width="400px">  
 \<배열> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \<연결 리스트>
 
-<br/>
+<br/><br/>
 
 > 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/sMpsvA5O0xU">신찬수 교수님 유튜브 강의</a>
