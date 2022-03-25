@@ -43,9 +43,9 @@
 
 - deque에 자주 쓰이는 8가지 함수 및 표현(expression) 정리
 
-  - <code>dq.appendleft(E)</code>
+  - <code>dq.appendleft(value)</code>
 
-  - <code>dq.append(E)</code>
+  - <code>dq.append(value)</code>
 
   - <code>dq.popleft()</code>
 
@@ -58,7 +58,5 @@
   - <code>dq[0]</code>
 
   - <code>dq[-1]</code>
-
-  - <code></code>
 
 > 사진 출처 : <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>
