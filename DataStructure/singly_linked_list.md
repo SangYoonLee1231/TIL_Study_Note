@@ -113,6 +113,8 @@ b.next = c
           self.size += 1  # 연결 리스트 크기 1 증가
   ```
 
+  - <code>popFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
+
 <br/>
 
 - ✨ <strong><code>pushAfterFront</code> 함수 구현</strong>
@@ -128,6 +130,8 @@ b.next = c
 
           self.size += 1  # 연결 리스트 크기 1 증가
   ```
+
+  - <code>popAfterFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
 
 <br/>
 
@@ -159,9 +163,11 @@ b.next = c
           self.size += 1  # 연결 리스트 크기 1증가
   ```
 
+  - <code>pushBack</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
+
 <br/>
 
-- <strong>함수 사용 예시</strong>
+- <strong>삽입 함수 사용 예시</strong>
 
   ```python
   L = SinglyLinkedList()
@@ -209,6 +215,8 @@ b.next = c
               return key    # 미리 저장해둔 key값 반환
   ```
 
+  - <code>popFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
+
 <br/>
 
 - <strong><code>popBack</code> 함수 구현</strong>
@@ -244,27 +252,29 @@ b.next = c
               return key    # 미리 저장해둔 key값 반환
   ```
 
+  - <code>popBack</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
+
 <br/>
 
 ### 탐색 연산 구현
 
 - <strong>탐색 연산 함수 : <code>search</code></strong>
 
-<img src="img/singly_linked_list9.png">
+    <img src="img/singly_linked_list9.png">
 
-```python
-def search(self, key):
-    # key값의 Node를 리턴, 없으면 None을 리턴
+  ```python
+  def search(self, key):
+      # key값의 Node를 리턴, 없으면 None을 리턴
 
-    v = self.head
-    while v != None:
-        if v.key == key:
-            return key;
-        v = v.next
-    return None    # OR return v (while 반복문 끝까지 갔으므로 v == None)
-```
+      v = self.head
+      while v != None:
+          if v.key == key:
+              return key;
+          v = v.next
+      return None    # OR return v (while 반복문 끝까지 갔으므로 v == None)
+  ```
 
-- <code>search</code> 함수 수행 시간: <strong>O(n) W.C.</strong>
+  - <code>search</code> 함수 수행 시간 : <strong><code>O(n)</code></strong>
 
 <br/>
 
