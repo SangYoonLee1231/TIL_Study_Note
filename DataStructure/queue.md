@@ -8,10 +8,10 @@
 
 ### 목차
 
-- <a href="">큐 (Queue) 소개</a>
-- <a href="">Queue 구현 (파이썬)</a>
-- <a href="">Queue 연산 수행시간</a>
-- <a href="">Queue 활용 예제</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#%ED%81%90-queue-%EC%86%8C%EA%B0%9C">큐 (Queue) 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#queue-%EA%B5%AC%ED%98%84-%ED%8C%8C%EC%9D%B4%EC%8D%AC">Queue 구현 (파이썬)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#queue-%EC%97%B0%EC%82%B0-%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84">Queue 연산 수행시간</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#queue-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%A0%9C">Queue 활용 예제</a>
 
 <br/><br/>
 
@@ -114,6 +114,65 @@
   print(Q.dequeue())
   print(Q.dequeue())
   print(Q.dequeue())
+  ```
+
+<br/>
+
+### (Python) collections 모듈에 있는 deque 패캐지를 활용해 구현하기
+
+- 큐를 직접 구현하지 않고, python에서 제공하는 deque를 사용해서 구현할 수도 있다.
+
+<br/>
+
+- python에 queue라는 class가 있긴 하지만 사용해선 안된다. <strong>반드시 deque 라이브러리를 사용해서 큐를 구현해주어야 한다.</strong>
+
+  - python에 있는 queue class는 (알고리즘 문제를 풀기 위해 나온 class가 아니라) thread간의 synchronized를 맞춰야 하는 제약이 있는 class이기 때문에 사용 시 속도가 굉장히 느려진다.
+
+<br/>
+
+- 편의를 위해 Queue라는 class를 직접 만들어 deque를 이용해 클래스 내 함수를 정의한 뒤, 정의된 Queue 클래스를 이용하기로 한다.
+
+  ```python
+  from collections import deque
+
+  class Queue:
+      def __init__(self):          # 빈 큐 하나를 생성합니다.
+          self.dq = deque()
+
+      def push(self, item):        # 큐의 맨 뒤에 데이터를 추가합니다.
+          self.dq.append(item)
+
+      def empty(self):             # 큐가 비어있으면 True를 반환합니다.
+          return not self.dq
+
+      def size(self):              # 큐에 들어있는 데이터 수를 반환합니다.
+          return len(self.dq)
+
+      def pop(self):               # 큐의 맨 앞에 있는 데이터를 반환하고 제거합니다.
+          if self.empty():
+              raise Exception("Queue is empty")
+
+          return self.dq.popleft()
+
+      def front(self):             # 큐의 맨 앞에 있는 데이터를 제거하지 않고 반환합니다.
+          if self.empty():
+              raise Exception("Queue is empty")
+
+          return self.dq[0]
+  ```
+
+  ```python
+  q = Queue()             # 정수를 관리할 queue를 선언한다. => 빈 큐
+  q.push(3)
+  q.push(5)
+  q.push(9)
+
+  print(q.front())        # 가장 앞에 있는 원소를 출력한다. => 3
+  q.pop()                 # 가장 앞에 있는 원소를 제거한다.
+  print(q.size())         # 원소의 개수를 출력한다 => 2
+  while not q.empty():    # 가장 앞에 있는 원소부터 순서대로 출력한다.
+      print(q.front())    # 순서대로 5 9 출력된다.
+      q.pop()             # 가장 앞에 있는 원소를 제거힌디.
   ```
 
 <br/><br/>

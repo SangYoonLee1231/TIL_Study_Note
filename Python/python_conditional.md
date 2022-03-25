@@ -126,8 +126,6 @@
       조건식이 거짓일 경우 수행되는 코드 영역
   ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/conditional1.png" width="250px">
-
 <br/>
 
 - 예시
@@ -280,7 +278,3 @@
       else:
           print('D')
   ```
-
-<br/>
-
-> 사진 출처 : https://tioh.weebly.com/

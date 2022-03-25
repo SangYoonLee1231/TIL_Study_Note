@@ -270,19 +270,9 @@ print(lst[0], lst[1])
 
   - C언어처럼 기존 값이 지워지고, 새로 할당 받은 값이 a에 저장되는 것이 아니라
 
-    <img src="img/python_call_by_assignment1.jpg">
-
-    <br/>
-
   - ✨ <strong>새로운 메모리 공간을 할당 받고 그 곳에 새 값이 저장</strong>된 후 변수 a가 이를 가리키게 되는 것이다. 그리고 기존값은 지워지지 않고 그대로 메모리 상에 잔류한다.
 
-    <img src="img/python_call_by_assignment2.jpg">
-
-    <br/>
-
   - 만일 여기서 a에 처음 값을 재할당하면, 변수 a는 다시 처음 변수를 가리키고, 처음의 id값을 가지게 된다.
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/python_call_by_assignment3.jpg">
 
 - 즉, 겉으로 봤을 땐 immutable 객체는 그 값이 변경된 것처럼 보여도, 실은 변수가 가리키는 부분만 달라진 것이고, 변수가 가리키는 부분의 값은 그대로이다.
 
