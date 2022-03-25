@@ -133,6 +133,8 @@ b.next = c
 
 - <strong><code>pushBack</code> 함수 구현</strong>
 
+  <img src="img/singly_linked_list10.png">
+
   ```python
       # Tail Node 다음에 새로운 Node를 삽입하는 함수
       def pushBack(self, key):
