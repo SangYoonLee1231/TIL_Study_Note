@@ -8,12 +8,12 @@
 
 ### 목차
 
-- <a href="">배열 (Array) - C언어</a>
-- <a href="">리스트 (List) - 파이썬</a>
-- <a href="">리스트는 Dynamic Array(동적 배열)이다.</a>
-- <a href="">리스트 연산 수행시간</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md#%EB%B0%B0%EC%97%B4-array---c%EC%96%B8%EC%96%B4">배열 (Array) - C언어</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8-list---%ED%8C%8C%EC%9D%B4%EC%8D%AC">리스트 (List) - 파이썬</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%8A%94-dynamic-array%EB%8F%99%EC%A0%81-%EB%B0%B0%EC%97%B4%EC%9D%B4%EB%8B%A4">리스트는 Dynamic Array(동적 배열)이다.</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%97%B0%EC%82%B0-%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84">리스트 연산 수행시간</a>
 
-<br/>
+<br/><br/>
 
 ## 배열 (Array) - C언어
 
