@@ -11,37 +11,52 @@
 - <a href="">연결 리스트 (Linked List) 소개</a>
 - <a href="">연결 리스트의 장단점 (vs 배열)</a>
 
+<br/><br/>
+
+## 연결 리스트 (Linked List) 등장 배경
+
+- 배열의 삽입과 삭제 연산 수행 시간은 <code>O(n)</code>이다. 이는 삽입과 삭제가 자주 일어나는 상황에선 비효율적일 수 있다.
+
+- 이런 문제를 해결하기 위해 <strong>연결 리스트</strong>라는 새로운 자료구조가 등장한다.
+
 <br/>
+
+- 연결 리스트는 탐색 할 때 <code>O(n)</code>만큼 걸리지만, <strong>삽입과 삭제 연산은 <code>O(1)</code>만에 수행</strong>할 수 있으므로 삽입과 삭제가 잦은 상황에 자주 사용된다.
+
+<br/><br/>
 
 ## 연결 리스트 (Linked List) 소개
 
-- Node들이 link로 연결된 자료 구조이다.
+- 연결 리스트 (Linked List)는 <strong>Node들이 link로 연결된 형태의 자료 구조</strong>이다.
 
-<img src="img/linked_list1.png">
+  <img src="img/linked_list1.png">
 
 <br/>
 
 - 연결 리스트는 값을 저장하는 각각의 공간이 <strong>메모리 상에 흩어져 있다</strong>.
 
-  - 연속된 메모리 공간에 값을 저장하는 배열과 다름
-
-- 어떤 값의 다음 위치에 있는 값을 알기 위해선, 한 공간에 <strong>2개의 정보</strong>를 저장해야 한다. 이 공간을 <strong>노드(Node)</strong>라 부른다.
-
-  - 2개의 정보 = 어떤 값 + 그 다음 값이 저장된 메모리의 주소
-
-  - <strong>노드(Node) = 값(data, key) + 다음 값의 주소(link)</strong>
+  - 연속된 메모리 공간에 값을 저장하는 배열과 다르다.
 
 <br/>
 
-- (반복) <strong>연결 리스트란 Node들이 link로 연결된 자료 구조</strong>이다.
+- 어떤 값과 그 다음 위치에 있는 값을 알기 위해선, 한 공간에 <strong>2개의 정보</strong>를 저장해야 한다. 이 공간을 <strong>노드(Node)</strong>라 부른다.
+
+- <strong>노드(Node)</strong>는 <strong>데이터를 담는 하나의 창구</strong>이다.
+
+  - <strong>노드(Node)</strong> = <strong>값(data, key)</strong> + <strong>다음 값의 주소(link)</strong>
+
+<br/>
+
+- (반복) 연결 리스트란 Node들이 link로 연결된 자료 구조이다.
 
 - Node들이 서로 어떻게 연결되어 있는지에 따라 <strong>단방향 연결 리스트</strong>, <strong>양방향 연결 리스트</strong>로 구분할 수 있다.
 
-<br/>
+<br/><br/>
 
 ## 연결 리스트의 장단점 (vs 배열)
 
-- 배열과 달리, 연결 리스트는 <strong>어떤 값에 접근 시</strong>, 상수 시간 O(1) 내에 수행할 수 없다는 단점이 있다.
+- 배열과 달리, 연결 리스트는 <strong>어떤 값에 접근 시, 상수 시간 O(1) 내에 수행할 수 없다</strong>는 단점이 있다.  
+  (<code>O(n)</code>만큼 걸린다)
 
 - 그러나 <strong>새로운 값을 중간에 삽입하는 과정</strong>은 배열보다 더 빨리 걸린다.
 

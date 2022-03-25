@@ -25,43 +25,25 @@
 
 <br/>
 
-- <strong>인덱스(index)</strong>를 통해 각각의 값에 <strong>매우 빠르게</strong> 접근 가능하다.
+- 배열의 이름과 동일한 변수 A에 A[0]의 첫 번째 byte의 주소가 저장된다.
+
+  <img src="img/array1.png">
+
+<br/>
+
+- 배열은 <strong>인덱스(index)</strong>를 통해 각각의 값에 <strong>매우 빠르게</strong> 접근할 수 있다.
 
   - 수행시간 = <strong><code>O(1)</code> (RAM : Random Access Memory)</strong>
 
   - 배열의 시작 주소, 데이터 타입, 인덱스 3가지 정보만으로 값이 저장된 곳의 주소를 단위 시간 내에 계산할 수 있다.
 
-<br/>
-
-- 배열의 이름과 동일한 변수 A에 A[0]의 첫 번째 byte의 주소가 저장된다.
-
-  <img src="img/array1.png">
-
 <br/><br/>
 
 ## 리스트 (List) - 파이썬
 
-- 리스트는 배열처럼 여러 변수를 모은 자료구조로, 역시 인덱스(index)를 통해 각각의 값에 빠르게 접근 가능하다.
+- 리스트는 배열처럼 여러 변수를 모은 자료구조이나, 배열과 달리 한 리스트에 <strong>다른 자료형</strong>의 값들이 있어도 된다.
 
 - 배열과 함께 대표적인 <strong>1차원의 선형(linear) 자료구조</strong>다.
-
-<br/>
-
-- 리스트 역시 <strong>인덱스(index)</strong>를 통해 각각의 값에 <strong>매우 빠르게</strong> 접근 가능하다.
-
-  - 수행시간 = <strong><code>O(1)</code> </strong>
-
-<br/>
-
-- ✨ 그러나 배열과 달리 <strong>메모리 공간을 배열처럼 연속적으로 할당하지 않는다.</strong>
-
-  그럼에도 각각의 값에 접근할 때 걸리는 시간은 <code>O(1)</code>이다.
-
-- 또한, 히나의 리스트에 다른 자료형의 값들이 있어도 된다. (배열은 안된다.)
-
-<br/>
-
-- 그리고 리스트는 배열보다 훨씬 더 <strong>다양하고 유용한 연산</strong>을 제공한다. (리스트의 장점)
 
 <br/>
 
@@ -73,7 +55,25 @@
 
 <br/>
 
+- 리스트 역시 <strong>인덱스(index)</strong>를 통해 각각의 값에 <strong>매우 빠르게</strong> 접근 가능하다.
+
+  - 수행시간 = <strong><code>O(1)</code> </strong>
+
+<br/>
+
+- ✨ 그러나 배열과 달리 <strong>메모리 공간을 배열처럼 연속적으로 할당하지 않는다.</strong>
+
+- 리스트는 값을 저장하는 각각의 공간이 <strong>메모리 상에 흩어져 있다</strong>.
+
+  그럼에도 각각의 값에 접근할 때 걸리는 시간은 <code>O(1)</code>이다.
+
+<br/>
+
 ### 리스트의 다양한 연산
+
+- 리스트는 배열보다 훨씬 더 <strong>다양하고 유용한 연산</strong>을 제공한다. (리스트의 장점)
+
+<br/>
 
 - 【삽입】 <code>A.append(6)</code> : 맨 뒤에 6을 삽입
 
