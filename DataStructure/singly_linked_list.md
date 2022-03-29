@@ -113,7 +113,7 @@ b.next = c
           self.size += 1  # 연결 리스트 크기 1 증가
   ```
 
-  - <code>popFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
+  - <code>pushFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
 
 <br/>
 
@@ -131,7 +131,7 @@ b.next = c
           self.size += 1  # 연결 리스트 크기 1 증가
   ```
 
-  - <code>popAfterFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
+  - <code>pushAfterFront</code> 함수 수행 시간 : <strong><code>O(1)</code></strong>
 
 <br/>
 
