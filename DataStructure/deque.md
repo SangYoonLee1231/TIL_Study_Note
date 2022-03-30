@@ -31,6 +31,11 @@
 
   - 삭제 연산 : <strong>pop front(앞에서 삭제), pop back(뒤에서 삭제)</strong>
 
+<br/>
+
+- ✨ <strong>Deque은 탐색 연산을 제공하지 않는다.</strong> Stack와 Deque처럼 일반적인 탐색이 안 되는 자료구조이기 때문이다.  
+  이는 Deque을 리스트로 구현하든 연결 리스트로 구현하든 마찬가지이다.
+
 <br/><br/>
 
 ## (Python) collections 모듈에 있는 deque 패캐지 설명

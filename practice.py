@@ -1,35 +1,36 @@
-n = int(input())
+from collections import deque
 
-lst = []
-'''
-for _ in range(n):
-    command = input()
+class Queue:
+    def __init__(self):
+        self.dq = deque()
+
+    def push(self, item):
+        self.dq.append(item)
+
+    def pop(self):
+        if self.empty():
+            raise Exception("Queue is Empty")
+        return self.dq.popleft()
     
-    if command[:9] == 'push_back':
-        lst.append(int(command[10:]))
-    elif command == 'pop_back':
-        lst.pop()
-    elif command == 'size':
-        print(len(lst))
-    elif command[:3] == 'get':
-        k = int(command[4:])
-        print(lst[k-1])
-    else:
-        pass
-'''
+    def empty(self):
+        return not self.size()
+    
+    def front(self):
+        if self.empty():
+            raise Exception("Queue is Empty")
+        return self.dq[0]
 
-for _ in range(n):
-    command = input()
+    def size(self):
+        return len(self.dq)
 
-    if command.startswith == 'push_back':
-        _, num = command.split()
-        lst.append(int(num))
-    elif command == 'pop_back':
-        lst.pop()
-    elif command == 'size':
-        print(len(lst))
-    elif command.startswith == 'get':
-        _, k = command.split()
-        print(lst[k-1])
-    else:
-        pass
+
+n, k = tuple(map(int, input().split()))
+q = Queue()
+
+for i in range(1, n+1):
+    q.push(i)
+
+while not q.empty():
+    for _ in range(k-1):
+        q.push(q.pop())
+    print(q.pop(), end=' ')

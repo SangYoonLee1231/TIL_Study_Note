@@ -37,6 +37,12 @@
 
 <br/>
 
+- ✨ <strong>Queue은 탐색 연산을 제공하지 않는다.</strong> 일반적인 탐색이 불가능한 자료구조이기 때문이다.  
+  이는 Queue을 리스트로 구현하든 연결 리스트로 구현하든 마찬가지이다.  
+  (Stack와 Deque도 마찬가지로 탐색이 불가능한 자료구조이다.)
+
+<br/>
+
 - <strong>FIFO : First In First Out</strong>
 
   - 처음으로 들어온 요소가 제일 먼저 나간다.
