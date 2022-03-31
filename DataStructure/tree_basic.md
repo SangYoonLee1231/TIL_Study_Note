@@ -10,10 +10,10 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%ED%8A%B8%EB%A6%AC-tree-%EB%9E%80">트리 (Tree) 란?</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#-%ED%8A%B8%EB%A6%AC-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC">트리 용어 정리</a>
-- <a href="">트리인 경우</a>
-  - <a href="">Unrooted Tree</a>
-  - <a href="">루트 노드는 정하기 나름</a>
-  - <a href="">트리가 아닌 경우</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%ED%8A%B8%EB%A6%AC%EC%9D%B8-%EA%B2%BD%EC%9A%B0">트리인 경우</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#unrooted-tree">Unrooted Tree</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%EB%A3%A8%ED%8A%B8-%EB%85%B8%EB%93%9C%EB%8A%94-%EC%A0%95%ED%95%98%EA%B8%B0-%EB%82%98%EB%A6%84">루트 노드는 정하기 나름</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%ED%8A%B8%EB%A6%AC%EA%B0%80-%EC%95%84%EB%8B%8C-%EA%B2%BD%EC%9A%B0">트리가 아닌 경우</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%A2%85%EB%A5%98">트리의 종류</a>
 
 <br/><br/>
@@ -24,7 +24,7 @@
 
 - 나무를 180도 돌려서 보면, <strong>커다란 기둥에 가지가 아래로 계속 뻗어나오는 모양</strong>이다. 그렇기에 우리는 이 구조를 <strong>트리 구조</strong>라 부른다.
 
-  <img src="img/tree_basic6.png" width="600">
+  <img src="img/tree_basic6.png" width="800">
 
 <br/>
 
@@ -38,7 +38,7 @@
 
 ## ✨ 트리 용어 정리
 
-  <img src="img/tree_basic5.png" width="600">
+  <img src="img/tree_basic5.png" width="800">
 
   <br/>
 
@@ -96,7 +96,7 @@
 
 - 따라서, 다음과 같이 <strong>부모 - 자식 관계가 정의되지 않은 경우</strong>도 <strong>트리</strong>라고 부른다. 이를 <strong>Unrooted Tree</strong>라 한다.
 
-  <img src="img/tree_basic7.png" width="600">
+  <img src="img/tree_basic7.png" width="800">
 
 <br/>
 
@@ -106,7 +106,7 @@
 
 - 같은 트리라도 1번 노드를 루트로 정할지, 2번 트리로 정할지에 따라 그리는 모양이 달라진다.
 
-  <img src="img/tree_basic9.png" width="600">
+  <img src="img/tree_basic9.png" width="800">
 
 - 정해진 이후부터 부모, 자식, 차수가 정의된다.
 
@@ -116,7 +116,7 @@
 
 - Node끼리 모두 이어져 있지 않은 경우, 순환 구조(사이클)이 존재하는 경우
 
-  <img src="img/tree_basic8.png" width="600">
+  <img src="img/tree_basic8.png" width="800">
 
 <br/><br/>
 
