@@ -8,11 +8,13 @@
 
 ### 목차
 
-- <a href="">트리 (Tree) 란?</a>
-- <a href="">트리 용어 정리</a>
-- <a href="">Unrooted Tree</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%ED%8A%B8%EB%A6%AC-tree-%EB%9E%80">트리 (Tree) 란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#-%ED%8A%B8%EB%A6%AC-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC">트리 용어 정리</a>
+- <a href="">트리인 경우</a>
+  - <a href="">Unrooted Tree</a>
+  - <a href="">루트 노드는 정하기 나름</a>
   - <a href="">트리가 아닌 경우</a>
-- <a href="">트리의 종류</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md#%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%A2%85%EB%A5%98">트리의 종류</a>
 
 <br/><br/>
 
@@ -20,9 +22,9 @@
 
 - <strong>부모 - 자식 간의 관계</strong>에 따라 자료를 구성하는 자료구조이다.
 
-- 나무를 180도 돌려서 보면, <strong>커다란 기둥에 가지가 아래로 계속 뻗어나오는 모양</strong>이다. 그렇기 때문에 우리는 이 구조를 <strong>트리 구조</strong>라고 부른다.
+- 나무를 180도 돌려서 보면, <strong>커다란 기둥에 가지가 아래로 계속 뻗어나오는 모양</strong>이다. 그렇기에 우리는 이 구조를 <strong>트리 구조</strong>라 부른다.
 
-  <img src="img/tree_basic6.png">
+  <img src="img/tree_basic6.png" width="600">
 
 <br/>
 
@@ -36,11 +38,11 @@
 
 ## ✨ 트리 용어 정리
 
-  <img src="img/tree_basic5.png">
+  <img src="img/tree_basic5.png" width="600">
 
   <br/>
 
-- <strong>노드 (Node)</strong>
+- <strong>노드 (Node) or 정점</strong>
 
 - <strong>링크 (Link) or 에지 (Edge) or 간선</strong> : 부모 노드와 자식 노드를 잇는 연결 고리
 
@@ -86,21 +88,25 @@
 
 <br/><br/>
 
-## Unrooted Tree
+## 트리인 경우
 
-- 트리의 원래 정의는 <strong>정점(Node)끼리 전부 연결되어 있으면서 사이클이 존재하지 않는 그래프</strong>이다.
+### Unrooted Tree
 
-- 따라서, 다음과 같이 <strong>부모-자식 관계가 정의되지 않은 경우</strong>도 <strong>트리</strong>라고 부른다. 이를 <strong>Unrooted Tree</strong>라 한다.
+- <strong>트리의 원래 정의</strong>는 정점(Node)끼리 전부 연결되어 있으면서 사이클이 존재하지 않는 그래프이다.
 
-  <img src="img/tree_basic7.png">
+- 따라서, 다음과 같이 <strong>부모 - 자식 관계가 정의되지 않은 경우</strong>도 <strong>트리</strong>라고 부른다. 이를 <strong>Unrooted Tree</strong>라 한다.
+
+  <img src="img/tree_basic7.png" width="600">
 
 <br/>
 
-- Rooted Tree에서 루트 노드는 <strong>정하기 나름이다.</strong>
+### 루트 노드는 정하기 나름
+
+- <strong>Rooted Tree</strong>에서 루트 노드는 <strong>정하기 나름이다.</strong>
 
 - 같은 트리라도 1번 노드를 루트로 정할지, 2번 트리로 정할지에 따라 그리는 모양이 달라진다.
 
-  <img src="img/tree_basic9.png">
+  <img src="img/tree_basic9.png" width="600">
 
 - 정해진 이후부터 부모, 자식, 차수가 정의된다.
 
@@ -110,7 +116,7 @@
 
 - Node끼리 모두 이어져 있지 않은 경우, 순환 구조(사이클)이 존재하는 경우
 
-  <img src="img/tree_basic8.png">
+  <img src="img/tree_basic8.png" width="600">
 
 <br/><br/>
 
