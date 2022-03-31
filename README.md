@@ -100,10 +100,13 @@
 #### 트리(Tree) 구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md">이진 트리</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap.md">힙 (Heap)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md">힙 (Heap) - <code>make_heap</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - <code>insert</code>와 <code>delete_max</code> 연산</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md">이진 트리</a>
+- <a href="">이진 탐색 트리 (Binary Search Tree / BST)</a>
+- <a href="">이진 탐색 트리 (Binary Search Tree / BST) 의 삭제 연산</a>
+- <a href="">균형 이진 탐색 트리 (Balanced BST)</a>
 
 ### ◻ 알고리즘
 

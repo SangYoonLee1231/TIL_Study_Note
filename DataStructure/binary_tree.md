@@ -39,11 +39,33 @@
 A = [a, b, c, None, d, e, f, None, None, h, i  g, None, None, None]
 ```
 
+<br/>
+
+- 이진트리를 배열로 구현하면 부모와 자식 노드를 <code>O(1)</code>안에 접근할 수 있다.
+
+  <img src="img/binary_tree4.png" width="800">
+
+- 리스트의 0번 공간을 비우고, 1번부터 데이터를 채운다고 가정하자.
+
+  - <code>Array[k]</code>의 <strong>왼쪽 자식 노드</strong> : <strong><code>Array[2*k]</code></strong>
+
+  - <code>Array[k]</code>의 <strong>오른쪽 자식 노드</strong> : <strong><code>Array[2*k + 1]</code></strong>
+
+  <br/>
+
+  - <code>Array[k]</code>의 <strong>부모 노드</strong> : <strong><code>Array[k // 2]</code></strong>
+
+<br/>
+
+- 아래처럼 이진트리가 꽉 차있지 않으면, 비어있는 자식은 <strong>리스트에도 칸을 비워둬야 한다.</strong>
+
+  <img src="img/binary_tree5.png" width="800">
+
 <br/><br/>
 
 ### 방법2. 리스트 이용 - 재귀적으로 표현
 
-    <img src="img/tree_basic3.png" width="260">
+  <img src="img/tree_basic3.png" width="260">
 
 ```
 A = [a, [a의 왼쪽 sub tree], [a의 오른쪽 sub tree]]
@@ -100,54 +122,68 @@ A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
 
 - 노드들을 <strong>특정 순서</strong>에 따라 차례대로 빠지지 않고 방문하여 <strong>모든 key값을 출력하는 과정</strong>을 말한다.
 
-- 순회하는 방법은 3가지가 있다.
+<br/>
 
-    <br/>
+- 순회하는 방법은 <strong>3가지</strong>가 있다.
 
-    <img src="img/binary_tree3.png">
+  <img src="img/binary_tree3.png">
 
-    <br/>
+<br/>
 
-  - <strong>preorder (전위 순회)</strong> : 부모노드 → 왼쪽 자식 노드 → 오른쪽 자식 노드
+- <strong>preorder (전위 순회)</strong> : 부모노드 → 왼쪽 자식 노드 → 오른쪽 자식 노드
 
-    ```python
-    def preorder(self):  # MLR
-        if self != None:
-            print(self.key)
-            if self.left:
-                self.left.preorder()
-            if self.right:
-                self.right.preorder()
-    ```
+  <img src="img/binary_tree6.png" width="800">
 
-    <br/>
+  ```python
+  def preorder(self):  # MLR
+      if self != None:
+          print(self.key)
+          if self.left:
+              self.left.preorder()
+          if self.right:
+              self.right.preorder()
+  ```
 
-  - <strong>inorder (중위 순회)</strong> : 왼쪽 자식 노드 → 부모노드 → 오른쪽 자식 노드
+  <br/>
 
-    ```python
-    def inorder(self):  # LMR
-        if self != None:
-            if self.left:
-                self.left.preorder()
-            print(self.key)
-            if self.right:
-                self.right.preorder()
-    ```
+- <strong>inorder (중위 순회)</strong> : 왼쪽 자식 노드 → 부모노드 → 오른쪽 자식 노드
 
-    <br/>
+  <img src="img/binary_tree7.png" width="800">
 
-  - <strong>postorder (후위 순회)</strong> : 왼쪽 자식 노드 → 오른쪽 자식 노드 → 부모노드
+  ```python
+  def inorder(self):  # LMR
+      if self != None:
+          if self.left:
+              self.left.preorder()
+          print(self.key)
+          if self.right:
+              self.right.preorder()
+  ```
 
-    ```python
-    def postorder(self):  # LRM
-        if self != None:
-            if self.left:
-                self.left.preorder()
-            if self.right:
-                self.right.preorder()
-            print(self.key)
-    ```
+  <br/>
+
+- <strong>postorder (후위 순회)</strong> : 왼쪽 자식 노드 → 오른쪽 자식 노드 → 부모노드
+
+  <img src="img/binary_tree8.png" width="800">
+
+      ```python
+      def postorder(self):  # LRM
+          if self != None:
+              if self.left:
+                  self.left.preorder()
+              if self.right:
+                  self.right.preorder()
+              print(self.key)
+      ```
+
+  <br/>
+
+- <strong>탐색 순서가 헷갈리면, 재귀 함수의 탐색 순서를 생각해보자.</strong>
 
 <br/>
 
 - 이진 트리의 모양을 모르는 상태에서 preorder 탐색 순서, inorder 탐색 순서 정보만으로 이진 트리의 구성을 알아낼 수 있다. (Reconstruct)
+
+<br/><br/>
+
+> 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>

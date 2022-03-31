@@ -20,19 +20,20 @@
 
 ## 힙 (Heap) 이란?
 
-- 힙의 조건을 만족하는 이진 트리
+- <strong>힙의 조건</strong>을 만족하는 <strong>이진 트리</strong>
 
 <br/>
 
-- ✨ 힙 조건
+- ✨ <strong>힙 조건</strong>
 
-  - 모양 성질을 만족해야 한다.
+  - <strong>모양 성질</strong>을 만족해야 한다.
 
-    - 모양 성질 : 이진 트리의 각 레벨마다 노드가 좌측부터 순서대로 꽉 차있다.
+    - <strong>모양 성질</strong> : 이진 트리의 각 레벨마다 노드가 좌측부터 순서대로 꽉 차있다.  
+      (이러한 트리를 <strong>완전 이진트리</strong>라 한다.)
 
-  - 힙 성질을 만족해야 한다.
+  - <strong>힙 성질</strong>을 만족해야 한다.
 
-    - 힙 성질 : 모든 부모 노드의 key값은 자식 노드의 key값보다 같거나 크다.
+    - <strong>힙 성질</strong> : 모든 부모 노드의 key값은 자식 노드의 key값보다 <strong>같거나 크다</strong>.
 
     <br/>
 
@@ -48,7 +49,7 @@
 
 <br/>
 
-- <code>H[x]</code>의 부모 노드 : <code>H[(x-1) // 2]</code>
+- <code>H[k]</code>의 부모 노드 : <code>H[(k-1) // 2]</code>
 
 <br/>
 
@@ -101,3 +102,5 @@
 <br/>
 
 <br/><br/>
+
+> 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>
