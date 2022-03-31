@@ -21,7 +21,7 @@
 
 - 덱은 <strong>앞에서 삽입</strong>, <strong>뒤에서 삽입</strong>, <strong>앞에서 삭제</strong>, <strong>뒤에서 삭제</strong>가 모두 가능하며, 모든 연산의 시간복잡도는 <code>O(1)</code>이다.
 
-    <img src="img/deque1.png">
+    <img src="img/deque1.png" width="800">
 
 <br/>
 
