@@ -66,6 +66,10 @@
 
 ## 이진 탐색 트리의 삽입
 
+- ..
+
+  <img src="img/binary_search_tree3.gif">
+
 <br/><br/>
 
 > 사진 출처 : <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>

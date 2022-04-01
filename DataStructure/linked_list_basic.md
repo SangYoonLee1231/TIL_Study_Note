@@ -30,7 +30,7 @@
 
 - 연결 리스트 (Linked List)는 <strong>Node들이 link로 연결된 형태의 자료 구조</strong>이다.
 
-  <img src="img/linked_list1.png">
+  <img src="img/linked_list4.png" width="800">
 
 <br/>
 
@@ -43,6 +43,8 @@
 - 어떤 값과 그 다음 위치에 있는 값을 알기 위해선, 한 공간에 <strong>2개의 정보</strong>를 저장해야 한다. 이 공간을 <strong>노드(Node)</strong>라 부른다.
 
 - <strong>노드(Node)</strong>는 <strong>데이터를 담는 하나의 창구</strong>이다.
+
+  <img src="img/linked_list5.png">
 
   - <strong>노드(Node)</strong> = <strong>값(data, key)</strong> + <strong>다음 값의 주소(link)</strong>
 
