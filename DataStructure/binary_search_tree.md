@@ -46,6 +46,8 @@
 
   <img src="img/binary_search_tree3.gif">
 
+  - 만일 찾으려는 값이 없다면 노드가 맨 아래 비어있는 위치(null 위치)로 이동하게 될 것이다.
+
 <br/>
 
 - <strong>수도 코드로 구현</strong>
@@ -72,4 +74,4 @@
 
 <br/><br/>
 
-> 사진 출처 : <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>
+> 사진 출처 : <a href="https://youtu.be/kGZoEShMcSQ">신찬수 교수님 유튜브 강의</a>, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)

@@ -201,4 +201,4 @@
 
 <br/><br/>
 
-> 사진 출처 : https://galid1.tistory.com/483, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>
+> 사진 출처 : https://galid1.tistory.com/483, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)

@@ -74,4 +74,4 @@
 
 <br/><br/>
 
-> 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/sMpsvA5O0xU">신찬수 교수님 유튜브 강의</a>
+> 사진 출처 : https://ehclub.co.kr/1228 , <a href="https://youtu.be/sMpsvA5O0xU">신찬수 교수님 유튜브 강의</a>, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)

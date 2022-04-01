@@ -161,4 +161,4 @@
 
 <br/><br/>
 
-> 사진 출처 : http://www.incodom.kr/%EC%8A%A4%ED%83%9D, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a>
+> 사진 출처 : http://www.incodom.kr/%EC%8A%A4%ED%83%9D, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)
