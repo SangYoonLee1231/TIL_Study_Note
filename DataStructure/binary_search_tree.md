@@ -30,11 +30,15 @@
 
     <img src="img/binary_search_tree2.png" width="800">
 
+- ✨ 부모와 자식 관계만 고려한다면 이렇게 이진 탐색 트리가 아닌 것을 맞다고 착각할 수 있으니 조심하자.
+
 <br/><br/>
 
 ## 이진 탐색 트리의 탐색
 
 - 이진 탐색 트리에 어떤 값 x가 있는지 찾고자 한다.
+
+<br/>
 
 - 우선 루트 노드와 x값을 비교한다.
 
@@ -68,9 +72,57 @@
 
 ## 이진 탐색 트리의 삽입
 
-- ..
+- 이진 탐색 트리에 어떤 값 x를 삽입하고자 한다.
+
+<br/>
+
+- 이진 탐색 트리의 탐색 과정처럼 x를 우선 루트 노드와 비교하고, 그 결과에 따라 계속 아래 쪽으로 이동한다.
+
+- 리프 노드의 자식인 null에 도달할 때까지 탐색을 진행한다.
+
+- 이 때 parent 정보가 함께 필요한데, 그 이유는 이 null 정보 만으론 x값이 든 새 노드를 좌측에 삽압할 지, 우측에 삽입할 지 알 수 없기 때문이다.
 
   <img src="img/binary_search_tree3.gif">
+
+<br/>
+
+- Case 1> <strong>parent 값 == null</strong> 이라면
+
+  - 트리에 노드가 전혀 없는 경우이므로, 이진 탐색 트리의 <strong>root</strong>를 node(x)로 설정한다.
+
+- Case 2> <strong>parent 값 > x값</strong> 이라면
+
+  - parent의 <strong>좌측</strong>에 node(x)를 삽입한다.
+
+- Case 3> <strong>parent 값 < x값</strong> 이라면
+
+  - parent의 <strong>우측</strong>에 node(x)를 삽입한다.
+
+  <img src="img/binary_search_tree4.png">
+
+<br/>
+
+- <strong>수도 코드로 구현</strong>
+
+  ```python
+  function bst.insert(x)
+    set node = bst.root          # root에서 시작합니다.
+    set parent = bst.root        # parent도 root로 설정하고 시작합니다.
+
+    while node != null           # node가 null이 되기 전까지 반복합니다.
+        parent = node            # parent는 항상 node가 움직이기 직전의 위치로 갱신해줍니다.
+        if node.value > x        # node에 적혀있는 값이 x보다 크다면
+            node = node.left     # 왼쪽 자식으로 이동해야 합니다.
+        else                     # node에 적혀있는 값이 x보다 작다면
+            node = node.right    # 오른쪽 자식으로 이동해야 합니다.
+
+    if parent == null            # Case 1. 비어있는 tree라면
+        bst.root = node(x)       # root를 node(x)로 설정해줍니다.
+    else if parent.value > x     # Case 2. parent에 적혀있는 값이 추가하려는 값 x보다 크다면
+        parent.left = node(x)    # parent의 왼쪽에 node(x)를 넣어줍니다.
+    else                         # Case 3. parent에 적혀있는 값이 추가하려는 값 x보다 작다면
+        parent.right = node(x)   # parent의 오른쪽에 node(x)를 넣어줍니다.
+  ```
 
 <br/><br/>
 
