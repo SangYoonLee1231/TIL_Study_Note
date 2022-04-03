@@ -8,10 +8,8 @@
 
 ### 목차
 
-- <a href="">덱 (Deque) 소개</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/deque.md#%EB%8D%B1-deque-%EC%86%8C%EA%B0%9C">덱 (Deque) 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/deque.md#python-collections-%EB%AA%A8%EB%93%88%EC%97%90-%EC%9E%88%EB%8A%94-deque-%ED%8C%A8%EC%BA%90%EC%A7%80-%EC%84%A4%EB%AA%85">(Python) collections 모듈에 있는 deque 패캐지 설명</a>
 
 <br/><br/>
 

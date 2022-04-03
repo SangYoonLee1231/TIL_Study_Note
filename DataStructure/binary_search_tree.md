@@ -8,9 +8,9 @@
 
 ### 목차
 
-- <a href="">이진 탐색 트리란?</a>
-- <a href="">이진 탐색 트리의 탐색</a>
-- <a href="">이진 탐색 트리의 삽입</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC%EB%9E%80">이진 탐색 트리란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC%EC%9D%98-%ED%83%90%EC%83%89">이진 탐색 트리의 탐색</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%82%BD%EC%9E%85">이진 탐색 트리의 삽입</a>
 
 <br/><br/>
 
