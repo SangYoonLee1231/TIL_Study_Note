@@ -72,19 +72,20 @@ print(lst[0], lst[1])
 
 <br/>
 
-- 즉 python에선, C++과 달리, Call By Value와 Call By Reference를 명시적으로 할 수 없는 것이다.
+- 즉 python에선, C++과 달리, Call By Value와 Call By Reference를 명시적으로 할 수 없는 것이다. (인수의 자료형에 의해 결정)
 
 <br/><br/>
 
 ## Call By Assignment (Call By Object Reference)
 
-- 위에서 "마치 Call By Value'처럼', Call By Reference'처럼'" 설명한 이유는, 사실 python에선 함수에 인자를 넘겨줄 때 Call By Value나 Call By Reference와는 조금 다르게 동작하기 때문이다.
+- 사실 python에선 함수에 인자를 넘겨줄 때 Call By Value나 Call By Reference와는 <strong>조금 다르게 동작한다.</strong>
 
 <br/>
 
-- python에선 모든 것이 <strong>객체</strong>이다.
+- 다시 한 번 말하자면, python에선 모든 것이 <strong>객체</strong>이다.
 
-* 변수에 값을 할당할 때, 실제로 값들은 변수 내에 저장되는 것이 아니라, <strong>1, 2와 같은 객체가 생성되고 변수가 그 객체를 가리키게 되는 것이다.</strong> (변수 이름을 '<strong>이름표</strong>'에 비유)
+* 즉, 변수에 값을 할당할 때 실제로 값들은 변수 내에 저장되는 것이 아니라,  
+  <strong>1, 2와 같은 객체가 생성되고 변수가 그 객체를 가리키는 것이다.</strong> (변수 이름을 '<strong>이름표</strong>'에 비유)
 
 * 아래의 코드를 예로 들자.
 
