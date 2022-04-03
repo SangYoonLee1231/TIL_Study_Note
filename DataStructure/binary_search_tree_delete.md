@@ -22,35 +22,35 @@
 
 <br/>
 
-- 우선 이진 탐색 트리를 탐색하며 x를 찾는다.
+- 우선 이진 탐색 트리를 <strong>탐색</strong>하며 x를 찾는다.
 
-- 해당 x값이 든 Node를 삭제한다.
+- 해당 x 값이 든 Node를 <strong>삭제</strong>한다.
 
-  - Case 1 > 삭제할 Node의 <strong>왼쪽</strong>이 비어있으면, Node의 <strong>오른쪽 서브 트리</strong>를 그대로 위로 올려준다.
+  - <strong>Case 1 ></strong> 삭제할 Node의 <strong>왼쪽</strong>이 비어있으면, Node의 <strong>오른쪽 서브 트리</strong>를 그대로 위로 올려준다.
 
-    <img src="img/binary_search_tree_delete1.gif" width="800">
-
-    <br/>
-
-  - Case 2 > 삭제할 Node의 <strong>오른쪽</strong>이 비어있으면, Node의 <strong>왼쪽 서브 트리</strong>를 그대로 위로 올려준다.
-
-    <img src="img/binary_search_tree_delete2.gif" width="800">
+    <img src="img/binary_search_tree_delete1.gif" width="700">
 
     <br/>
 
-  - Case 3 > 삭제할 Node의 양쪽에 자식이 모두 존재한다면, 자식 Node 중 가장 작은 수(successor)를 찾아 삭제할 Node의 위치로 옮긴다. 그 후, 빈 successor의 자리는 그 오른쪽 서브 트리로 채워준다.
+  - <strong>Case 2 ></strong> 삭제할 Node의 <strong>오른쪽</strong>이 비어있으면, Node의 <strong>왼쪽 서브 트리</strong>를 그대로 위로 올려준다.
 
-    - successor은 현재 Node의 오른쪽 자식인 node.right를 기준으로 왼쪽으로 쭉 끝까지 내려가서 찾는다.
+    <img src="img/binary_search_tree_delete2.gif" width="700">
 
-      <img src="img/binary_search_tree_delete3.png" width="800">
+    <br/>
 
-      <img src="img/binary_search_tree_delete4.gif" width="800">
+  - <strong>Case 3 ></strong> 삭제할 Node의 <strong>양쪽</strong>에 자식이 모두 존재한다면, <strong>자식 Node 중 가장 작은 수(successor)</strong>를 찾아 <strong>삭제할 Node의 위치</strong>로 옮긴다. 그 후, 빈 successor의 자리는 <strong>그 오른쪽 서브 트리</strong>로 채워준다.
+
+    - <strong>successor</strong>은 <strong>현재 Node의 오른쪽 자식</strong>인 node.right를 기준으로 <strong>왼쪽으로 쭉 끝까지 내려가서</strong> 찾는다.
+
+      <img src="img/binary_search_tree_delete3.png" width="700">
+
+      <img src="img/binary_search_tree_delete4.gif" width="700">
 
       <br/>
 
-    - 만일 successor가 node의 (바로) 오른쪽 자신인 경우, 단순히 오른쪽 서브 트리를 올려주면 된다.
+    - 만일 <strong>successor</strong>가 <strong>node의 (바로) 오른쪽 자신</strong>인 경우, 단순히 <strong>오른쪽 서브 트리</strong>를 올려주면 된다.
 
-      <img src="img/binary_search_tree_delete5.gif" width="800">
+      <img src="img/binary_search_tree_delete5.gif" width="700">
 
 <br/>
 
@@ -67,27 +67,27 @@
 
       return node
 
-  function bst.minimum(node)  # node 하위 트리에서 최솟값을 구합니다.
-      while node.left != null  # node의 left가 null이 아니면 계속 내려갑니다.
+  function bst.minimum(node)    # node 하위 트리에서 최솟값을 구합니다.
+      while node.left != null    # node의 left가 null이 아니면 계속 내려갑니다.
           node = node.left
-      return node  # 최종 node의 위치를 반환합니다.
+      return node    # 최종 node의 위치를 반환합니다.
 
-  function bst.delete(x)  # x를 찾아 삭제하는 함수입니다.
-      set node = bst.search(x)  # x 값을 찾습니다.
+  function bst.delete(x)    # x를 찾아 삭제하는 함수입니다.
+      set node = bst.search(x)    # x 값을 찾습니다.
 
-      if node.left == null  # Case 1. node의 왼쪽 자식이 비어있다면
-          move(node.right, node)  # 오른쪽 자식을 위로 올려줍니다.
-      else if node.right == null  # Case 2. node의 오른쪽 자식이 비어있다면
-          move(node.left, node)  # 왼쪽 자식을 위로 올려줍니다.
-      else  # Case 3. 왼쪽 오른쪽 자식이 모두 채워져있다면
+      if node.left == null    # Case 1. node의 왼쪽 자식이 비어있다면
+          move(node.right, node)    # 오른쪽 자식을 위로 올려줍니다.
+      else if node.right == null    # Case 2. node의 오른쪽 자식이 비어있다면
+          move(node.left, node)    # 왼쪽 자식을 위로 올려줍니다.
+      else    # Case 3. 왼쪽 오른쪽 자식이 모두 채워져있다면
           set succ = bst.minimum(node.right)
           # 해당 노드의 successor를 구합니다.
           # 이는 현재 노드의 오른쪽 자식에서 시작하여 계속 왼쪽으로 내려가는 것을
           # 반복하면 가능합니다.
 
-          if succ == node.right  # 만약 successor가 현재 노드의 오른쪽 자식이라면
-              move(node.right, node)  # 오른쪽 자식을 위로 올려줍니다.
+          if succ == node.right    # 만약 successor가 현재 노드의 오른쪽 자식이라면
+              move(node.right, node)    # 오른쪽 자식을 위로 올려줍니다.
           else  # 그렇지 않은 일반적인 경우라면
               node.value = succ  # node의 값을 successor의 값으로 대체시켜준 뒤,
-              move(succ.right, succ)  # successor의 오른쪽 자식을 위로 끌어올려줍니다.
+              move(succ.right, succ)    # successor의 오른쪽 자식을 위로 끌어올려줍니다.
   ```
