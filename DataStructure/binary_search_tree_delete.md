@@ -28,13 +28,13 @@
 
   - Case 1 > 삭제할 Node의 <strong>왼쪽</strong>이 비어있으면, Node의 <strong>오른쪽 서브 트리</strong>를 그대로 위로 올려준다.
 
-    <img src="img/binary_search_tree_delete1.gif">
+    <img src="img/binary_search_tree_delete1.gif" width="800">
 
     <br/>
 
   - Case 2 > 삭제할 Node의 <strong>오른쪽</strong>이 비어있으면, Node의 <strong>왼쪽 서브 트리</strong>를 그대로 위로 올려준다.
 
-    <img src="img/binary_search_tree_delete2.gif">
+    <img src="img/binary_search_tree_delete2.gif" width="800">
 
     <br/>
 
@@ -42,15 +42,15 @@
 
     - successor은 현재 Node의 오른쪽 자식인 node.right를 기준으로 왼쪽으로 쭉 끝까지 내려가서 찾는다.
 
-      <img src="img/binary_search_tree_delete3.png">
+      <img src="img/binary_search_tree_delete3.png" width="800">
 
-      <img src="img/binary_search_tree_delete4.gif">
+      <img src="img/binary_search_tree_delete4.gif" width="800">
 
       <br/>
 
     - 만일 successor가 node의 (바로) 오른쪽 자신인 경우, 단순히 오른쪽 서브 트리를 올려주면 된다.
 
-      <img src="img/binary_search_tree_delete5.gif">
+      <img src="img/binary_search_tree_delete5.gif" width="800">
 
 <br/>
 
