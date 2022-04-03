@@ -8,13 +8,9 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="">이진 탐색 트리란?</a>
+- <a href="">이진 탐색 트리의 탐색</a>
+- <a href="">이진 탐색 트리의 삽입</a>
 
 <br/><br/>
 
@@ -54,18 +50,18 @@
 
 <br/>
 
-- <strong>수도 코드로 구현</strong>
+- <strong>수도 코드</strong>
 
   ```python
   function bst.search(x)
-      set node = bst.root                     # root에서 시작합니다.
+      set node = bst.root  # root에서 시작합니다.
       while node != null and node.value != x  # node에 들어있는 값이 x가 되기 전까지 계속 반복합니다.
-          if node.value > x                   # 노드에 있는 값이 x보다 크다면
-              node = node.left                # 왼쪽 자식으로 내려와 탐색을 진행합니다.
-          else                                # 노드에 있는 값이 x보다 작다면
-              node = node.right               # 오른쪽 자식으로 내려와 탐색을 진행합니다.
+          if node.value > x  # 노드에 있는 값이 x보다 크다면
+              node = node.left  # 왼쪽 자식으로 내려와 탐색을 진행합니다.
+          else  # 노드에 있는 값이 x보다 작다면
+              node = node.right  # 오른쪽 자식으로 내려와 탐색을 진행합니다.
 
-      return node                             # 최종 위치를 반환합니다.
+      return node  # 최종 위치를 반환합니다.
   ```
 
 <br/><br/>
@@ -106,22 +102,22 @@
 
   ```python
   function bst.insert(x)
-    set node = bst.root          # root에서 시작합니다.
-    set parent = bst.root        # parent도 root로 설정하고 시작합니다.
+    set node = bst.root  # root에서 시작합니다.
+    set parent = bst.root  # parent도 root로 설정하고 시작합니다.
 
-    while node != null           # node가 null이 되기 전까지 반복합니다.
-        parent = node            # parent는 항상 node가 움직이기 직전의 위치로 갱신해줍니다.
-        if node.value > x        # node에 적혀있는 값이 x보다 크다면
-            node = node.left     # 왼쪽 자식으로 이동해야 합니다.
-        else                     # node에 적혀있는 값이 x보다 작다면
-            node = node.right    # 오른쪽 자식으로 이동해야 합니다.
+    while node != null  # node가 null이 되기 전까지 반복합니다.
+        parent = node  # parent는 항상 node가 움직이기 직전의 위치로 갱신해줍니다.
+        if node.value > x  # node에 적혀있는 값이 x보다 크다면
+            node = node.left  # 왼쪽 자식으로 이동해야 합니다.
+        else  # node에 적혀있는 값이 x보다 작다면
+            node = node.right  # 오른쪽 자식으로 이동해야 합니다.
 
-    if parent == null            # Case 1. 비어있는 tree라면
-        bst.root = node(x)       # root를 node(x)로 설정해줍니다.
-    else if parent.value > x     # Case 2. parent에 적혀있는 값이 추가하려는 값 x보다 크다면
-        parent.left = node(x)    # parent의 왼쪽에 node(x)를 넣어줍니다.
-    else                         # Case 3. parent에 적혀있는 값이 추가하려는 값 x보다 작다면
-        parent.right = node(x)   # parent의 오른쪽에 node(x)를 넣어줍니다.
+    if parent == null  # Case 1. 비어있는 tree라면
+        bst.root = node(x)  # root를 node(x)로 설정해줍니다.
+    else if parent.value > x  # Case 2. parent에 적혀있는 값이 추가하려는 값 x보다 크다면
+        parent.left = node(x)  # parent의 왼쪽에 node(x)를 넣어줍니다.
+    else  # Case 3. parent에 적혀있는 값이 추가하려는 값 x보다 작다면
+        parent.right = node(x)  # parent의 오른쪽에 node(x)를 넣어줍니다.
   ```
 
 <br/><br/>
