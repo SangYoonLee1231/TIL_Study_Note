@@ -8,38 +8,51 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#%ED%95%84%EA%B8%B0-%EB%85%B8%ED%8A%B8">필기 노트</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#make_heap-%EA%B3%BC%EC%A0%95"><code>make_heap</code> 과정</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#heapify-down"><code>heapify-down</code></a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84">시간복잡도</a>
+- <a href=""><code>make_heap</code></a>
+  - <a href="">✨ <code>make_heap</code> (<code>heapify-down</code>) 과정</a>
+- <a href=""><code>heapify-down</code> 함수 구현</a>
+  - <a href="">시간복잡도</a>
+- <a href="">필기 노트 (참고용, 악필 주의)</a>
+
 
 <br/><br/>
 
-## 필기 노트
+## <code>make_heap</code>
 
-<img src="img/heap_make_heap1.jpg" width="900">
-<img src="img/heap_make_heap2.jpg" width="900">
-
-<br/>
-
-## <code>make_heap</code> 과정
-
-- 배열 맨 마지막 원소에 해당하는 Node부터 하나씩 탐색하면서, heap 성질을 만족하는 위치로 Node를 이동시킨다.
-
-- 따라서 Leaf Node는 고려 대상에서 제외된다.
+- 힙 성질을 만족하지 않는 완전 이진 트리를 <strong>힙 성질을 만족하도록</strong> 재배치하는 것
 
 <br/>
 
-### <code>heapify-down</code>
+### ✨ <code>make_heap</code> (<code>heapify-down</code>) 과정
 
-- 어떤 Node를 자식 노드와 서로 비교하며 heap 성질을 만족하는 위치로 내려보내는 함수
+- <strong>n / 2번째 Node</strong>부터 <strong>루트 Node</strong>까지 순서대로 하나씩 탐색하면서, <strong>heap 성질을 만족하는 위치로 Node를 이동</strong>시킨다.
+
+- Leaf Node는 자식 Node가 없으므로 고려 대상에서 제외된다.
+
+<br/>
+
+- 현재 Node와 2개의 자식 Node, 총 3개의 Node 중 <strong>가장 큰 값을 가진 Node (largest Node)</strong> 를 비교하여 찾는다.
+
+  - 만일 현재 Node 보다 <strong>자식 Node가 더 크다면<s/trong>, largest Node와 현재 Node의 <strong>자리를 교환</strong>한다.
+
+  - 교환이 끝나면, 다시 largest Node 위치에서 <strong>heapify 과정을 재귀적으로 진행</strong>한다.
+
+  - 만일 <strong>현재 Node가 largest Node</strong>라면, 비교 및 교환을 중단하고 다음 Node를 탐색한다.
+
+    <img src="img/heap_make_heap.gif">
+
+<br/><br/>
+
+## <code>heapify-down</code> 함수 구현
+
+- <strong><code>heapify-down</code> 함수</strong> : 어떤 Node를 자식 노드와 서로 비교하며 heap 성질을 만족하는 위치로 내려보내는 함수
 
   ```python
-  A = [2, 8, 6, 1, 10, 15, 3, 12, 11]
+  A = [2, 8, 6, 1, 10, 15, 3, 12, 11]  # 예시
 
   def make_heap(A):
       n = len(A)
-      for k in range(n-1, -1, -1):
+      for k in range(n // 2, -1, -1):
           # A[k]를 heap 성질 만족시키는 곳으로 이동
           heapify_down(k, n)
   ```
@@ -73,3 +86,12 @@
   - <code>h</code> = 힙의 높이
 
   - 최악의 경우 : heap 성질을 만족시키기 위해 root 노드가 leaf 노드까지 이동하는 경우
+
+<br/><br/>
+
+## 필기 노트 (참고용, 악필 주의)
+
+<img src="img/heap_make_heap1.jpg" width="900">
+<img src="img/heap_make_heap2.jpg" width="900">
+
+<br/>
