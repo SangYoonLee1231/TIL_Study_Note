@@ -74,8 +74,7 @@
 
 ### 시간복잡도
 
-- <code>make_heap</code> 함수 : <code>O(n \* t)</code> = <code>O(nh)</code> = <code>O(nlogn)</code>  
-   => <code>O(n)</code>
+- <code>make_heap</code> 함수 : <code>O(n \* t)</code> = <code>O(nh)</code> = <code>O(nlogn)</code> → <strong><code>O(n)</code></strong>
 
   - <code>t</code> = heapify_down 시간
 
