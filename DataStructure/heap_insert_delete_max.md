@@ -1,4 +1,4 @@
-# 힙 (Heap) - <code>insert</code>와 <code>delete_max</code> 연산
+# 힙 (Heap) - <code>insert</code>, <code>find_max</code> 와 <code>delete_max</code> 연산
 
 <br/>
 
@@ -8,34 +8,29 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#%ED%95%84%EA%B8%B0-%EB%85%B8%ED%8A%B8">필기 노트</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#insert-%EC%97%B0%EC%82%B0"><code>insert</code> 연산</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#heapify_up-%EC%97%B0%EC%82%B0"><code>heapify_up</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#find_max-%EC%97%B0%EC%82%B0"><code>find_max</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#delete_max-%EC%97%B0%EC%82%B0"><code>delete_max</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#heap-%EC%97%B0%EC%82%B0-%EC%A0%95%EB%A6%AC">heap 연산 정리</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#heap-sort-%ED%9E%99-%EC%A0%95%EB%A0%AC">heap sort (힙 정렬)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#%ED%95%84%EA%B8%B0-%EB%85%B8%ED%8A%B8">필기 노트</a>
 
 <br/><br/>
-
-## 필기 노트
-
-<img src="img/heap_insert_delete_max1.jpg" width="900">
-<img src="img/heap_insert_delete_max2.jpg" width="900">
-
-<br/>
 
 ## <code>insert</code> 연산
 
 - <code>insert</code> 연산은 다음 두 과정을 순서대로 진행하는 연산이다.
 
-  - 노드를 특정 위치에 삽입
+  - 노드를 트리의 <strong>맨 뒤</strong>에 삽입
 
-  - heap 성질을 만족하도록 삽입한 노드를 위로 이동 (<code>heapify_up</code>)
+  - <strong>heap 성질을 만족</strong>하도록 삽입한 노드를 <strong>위로 이동</strong> (<code>heapify_up</code>)
+
+    <img src="img/heap_insert_delete_max.gif">
 
 <br/>
 
-- key값 n을, heap인 배열 A에 삽입하는 insert 함수 정의
+- key값 <code>n</code>을 heap인 배열 A에 삽입하는 <code>insert</code> 함수 정의
 
   ```python
   A = [15, 12, 6, 11, 10, 2, 3, 1, 8]
@@ -84,9 +79,11 @@
 
 ## <code>delete_max</code> 연산
 
-- heap에서 가장 큰 값(<code>A[0]</code>)을 지우고, 맨 끝 원소의 Node를 <code>A[0]</code>으로 이동하는 연산
+- heap에서 <strong>가장 큰 값(<code>A[0]</code>)을 지우고</strong>, <strong>맨 끝 원소의 Node를 <code>A[0]</code>으로 이동</strong>하는 연산
 
-  - <code>A[0]</code>으로 이동 → <code>heapify_down</code>
+- 이동 후에는 <strong>힙 성질을 만족하도록</strong> <code>A[0]</code> 자리로 이동한 Node를 <strong>다시 heapify down</strong> 해주어야 한다.
+
+  - 정리 : 맨 끝 원소를 <code>A[0]</code>으로 이동 → <code>heapify_down</code>
 
   <br/>
 
@@ -149,3 +146,10 @@
   ```
 
 - 시간 복잡도 : <code>O(logn)</code>
+
+<br/><br/>
+
+## 필기 노트 (참고용)
+
+<img src="img/heap_insert_delete_max1.jpg" width="900">
+<img src="img/heap_insert_delete_max2.jpg" width="900">
