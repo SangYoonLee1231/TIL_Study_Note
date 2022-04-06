@@ -1,22 +1,24 @@
-n, m = tuple(map(int, input().split()))
+def check(skill, skill_tree):
+    pos = -1
+    for skill_tree_elem in skill_tree:
+        for i, skill_elem in enumerate(skill):
+            if skill_tree_elem == skill_elem:
+                if pos < i:
+                    pos = i
+                    break
+                else:
+                    return 0
+    return 1
 
-lst = [
-    list(map(int, input().split()))
-    for _ in range(n)
-]
+                    
+def solution(skill, skill_trees):
+    answer = 0
+    for skill_tree in skill_trees:
+        answer += check(skill, skill_tree)
 
-for x in range(2):
-    l, r = tuple(map(int, input().split()))
+    return answer
 
-    for i in range(l-1, l+4):
-        for j in range(m):
-            if lst[i][j] == 1:
-                lst[i][j] = 0
-                break
+skill = input()
+skill_trees = list(input().split())
 
-ans = 0
-for i in range(n):
-    for j in range(m):
-        ans += lst[i][j]
-
-print(lst[i][j])
+print(solution(skill, skill_trees))
