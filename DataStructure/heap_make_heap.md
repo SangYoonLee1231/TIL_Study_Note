@@ -12,8 +12,6 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#-make_heap-heapify-down-%EA%B3%BC%EC%A0%95">✨ <code>make_heap</code> (<code>heapify-down</code>) 과정</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#heapify-down-%ED%95%A8%EC%88%98-%EA%B5%AC%ED%98%84"><code>heapify-down</code> 함수 구현</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84">시간복잡도</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md#%ED%95%84%EA%B8%B0-%EB%85%B8%ED%8A%B8-%EC%B0%B8%EA%B3%A0%EC%9A%A9-%EC%95%85%ED%95%84-%EC%A3%BC%EC%9D%98">필기 노트 (참고용, 악필 주의)</a>
-
 
 <br/><br/>
 
@@ -88,9 +86,4 @@
 
 <br/><br/>
 
-## 필기 노트 (참고용, 악필 주의)
-
-<img src="img/heap_make_heap1.jpg" width="900">
-<img src="img/heap_make_heap2.jpg" width="900">
-
-<br/>
+> 사진 출처 : <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)

@@ -14,7 +14,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#delete_max-%EC%97%B0%EC%82%B0"><code>delete_max</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#heap-%EC%97%B0%EC%82%B0-%EC%A0%95%EB%A6%AC">heap 연산 정리</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#heap-sort-%ED%9E%99-%EC%A0%95%EB%A0%AC">heap sort (힙 정렬)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md#%ED%95%84%EA%B8%B0-%EB%85%B8%ED%8A%B8">필기 노트</a>
 
 <br/><br/>
 
@@ -145,11 +144,7 @@
       delete_max() # (단, pop 과정은 생략)
   ```
 
-- 시간 복잡도 : <code>O(logn)</code>
+- 시간 복잡도 : <code>O(nlogn)</code>
 
 <br/><br/>
 
-## 필기 노트 (참고용)
-
-<img src="img/heap_insert_delete_max1.jpg" width="900">
-<img src="img/heap_insert_delete_max2.jpg" width="900">
