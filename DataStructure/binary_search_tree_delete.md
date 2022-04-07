@@ -9,10 +9,6 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree_delete.md#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%82%AD%EC%A0%9C">이진 탐색 트리의 삭제</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
 
 <br/><br/>
 

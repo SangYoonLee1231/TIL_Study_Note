@@ -105,7 +105,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - <code>insert</code>, <code>find_max</code> 와 <code>delete_max</code> 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md">이진 탐색 트리 (Binary Search Tree / BST)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree_delete.md">이진 탐색 트리 (Binary Search Tree / BST) 의 삭제 연산</a>
-- <a href="">균형 이진 탐색 트리 (Balanced BST)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/balanced_bst.md">균형 이진 탐색 트리 (Balanced BST)</a>
 
 ### ◻ 알고리즘
 
