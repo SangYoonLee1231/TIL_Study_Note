@@ -113,6 +113,8 @@
 
   - 모든 연산에 대한 시간 복잡도를 <code>O(1)</code>만큼 갖게 할 수 있기 때문
 
+  <br/>
+
   <img src="img/linked_stack.png">
 
 <br/>
