@@ -115,19 +115,19 @@
 
   <img src="img/linked_stack.png">
 
-  <br/>
+<br/>
 
 - 삽입 연산 (<code>push</code>)
 
   <img src="img/linked_stack_insert.png">
 
-  <br/>
+<br/>
 
 - 삭제 연산 (<code>pop</code>)
 
   <img src="img/linked_stack_pop.png">
 
-  <br/>
+<br/>
 
 - 코드
 
