@@ -43,6 +43,8 @@
 
 ## Stack 구현 (파이썬)
 
+### 리스트(배열)로 구현
+
 - 파이썬의 대표적인 자료구조인 <strong>리스트(List)</strong>를 Stack의 자료구조처럼 사용할 수 있다.
 
   - push 연산 (삽입) : <code>append</code> 함수 이용
@@ -103,9 +105,55 @@
 
 <br/>
 
-- 덧붙여, 리스트(배열) 대신 <strong>연결 리스트</strong>를 활용하여 스택을 구현해도 된다.
+### 연결 리스트로 구현
+
+- 리스트(배열) 대신 <strong>연결 리스트</strong>를 활용하여 스택을 구현해도 된다.
 
   - 모든 연산에 대한 시간 복잡도를 <code>O(1)</code>만큼 갖게 할 수 있기 때문
+
+  <img src="img/linked_stack.png">
+
+  <br/>
+
+- 삽입 연산 (<code>push</code>)
+
+  <img src="img/linked_stack_insert.png">
+
+  <br/>
+
+- 삭제 연산 (<code>pop</code>)
+
+  <img src="img/linked_stack_pop.png">
+
+  <br/>
+
+- 코드
+
+  ```python
+  class Node:
+      def __init__(self, val):
+          self.data = val
+          self.link = None
+
+  class LinkedStack:
+      def __init__(self):
+          self.top = None
+
+      def isEmpty(self):
+          return self.top == None
+
+      def push(self, val):
+          newNode = Node(val)
+          newNode.link = self.top
+          self.top = newNode
+
+      def pop(self):
+          if self.isEmpty == None:
+              return "Empty"
+          e = self.top.data
+          self.top = self.top.link
+          return e
+  ```
 
 <br/><br/>
 
@@ -161,4 +209,4 @@
 
 <br/><br/>
 
-> 사진 출처 : http://www.incodom.kr/%EC%8A%A4%ED%83%9D, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)
+> 사진 출처 : 『자료구조』 학부 수업 자료, http://www.incodom.kr/%EC%8A%A4%ED%83%9D, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)

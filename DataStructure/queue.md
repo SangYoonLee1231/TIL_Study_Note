@@ -65,11 +65,7 @@
 
 <br/>
 
-### 연결 리스트를 이용한 구현
-
-<br/>
-
-### 리스트를 이용한 구현
+### 리스트(배열)를 이용한 구현
 
 - 큐는 삽입 및 삭제 연산의 수행시간이 <code>O(1)</code> 내로 동작해야 사용하는 의미가 있으므로 연결리스트를 활용하여 구현하는 것이 맞다.
 
@@ -121,6 +117,68 @@
   print(Q.dequeue())
   print(Q.dequeue())
   ```
+
+<br/>
+
+### 연결 리스트를 이용한 구현 (Linked Queue)
+
+- 스택과 마찬가지로, 큐도 연결 리스트를 통해 구현할 수 있다.
+
+  <img src="img/linked_queue.png">
+
+  <br/>
+
+- 삽입 연산 (<code>enqueue</code>)
+
+  <img src="img/linked_queue_insert.png">
+
+  <br/>
+
+- 삭제 연산 (<code>dequeue</code>)
+
+  <img src="img/linked_queue_pop.png">
+
+  <br/>
+
+- 코드
+
+  ```python
+  class Node(self):
+      def __init__(self, element):
+          self.data = element
+          self.link = None
+
+  class LinkedQueue:
+      def __init__(self):
+          self.front = self.rear = None
+
+      def isEmpty(self):
+          return self.front == None
+
+      def enqueue(self, e):
+          newNode = Node(e)
+          if self.front == None:
+              self.front = self.rear = None
+          else:
+              self.rear.link = newNode
+              self.rear = newNode
+
+      def dequeue(self):
+          if self.isEmpty():
+              print("Queue is Empty")
+              return
+
+          e = self.front.data
+          self.front = self.front.link
+          if self.front == None:
+              self.rear = None
+
+          return e
+  ```
+
+<br/>
+
+### 원형 큐
 
 <br/>
 
@@ -201,4 +259,4 @@
 
 <br/><br/>
 
-> 사진 출처 : https://galid1.tistory.com/483, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)
+> 사진 출처 : 『자료구조』 학부 수업 자료, https://galid1.tistory.com/483, <a href="https://www.codetree.ai/missions">Code Tree - Novice High</a> (사진 자료 사용 허락 받음)
