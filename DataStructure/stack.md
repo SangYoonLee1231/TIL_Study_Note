@@ -10,6 +10,8 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#%EC%8A%A4%ED%83%9D-stack-%EC%86%8C%EA%B0%9C">스택 (Stack) 소개</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#stack-%EA%B5%AC%ED%98%84-%ED%8C%8C%EC%9D%B4%EC%8D%AC">Stack 구현 (파이썬)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%B0%B0%EC%97%B4%EB%A1%9C-%EA%B5%AC%ED%98%84">리스트(배열)로 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A1%9C-%EA%B5%AC%ED%98%84">연결 리스트로 구현</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#stack-%EC%97%B0%EC%82%B0-%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84">Stack 연산 수행시간</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md#stack-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%A0%9C">Stack 활용 예제</a>
 

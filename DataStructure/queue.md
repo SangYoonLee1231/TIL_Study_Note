@@ -10,6 +10,10 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#%ED%81%90-queue-%EC%86%8C%EA%B0%9C">큐 (Queue) 소개</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#queue-%EA%B5%AC%ED%98%84-%ED%8C%8C%EC%9D%B4%EC%8D%AC">Queue 구현 (파이썬)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%B0%B0%EC%97%B4%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AC%ED%98%84">리스트(배열)를 이용한 구현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AC%ED%98%84-linked-queue">연결 리스트를 이용한 구현 (Linked Queue)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#%EC%9B%90%ED%98%95-%ED%81%90">원형 큐</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#python-collections-%EB%AA%A8%EB%93%88%EC%97%90-%EC%9E%88%EB%8A%94-deque-%ED%8C%A8%EC%BA%90%EC%A7%80%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%B4-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">(Python) collections 모듈에 있는 deque 패캐지를 활용해 구현하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#queue-%EC%97%B0%EC%82%B0-%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84">Queue 연산 수행시간</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md#queue-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%A0%9C">Queue 활용 예제</a>
 
@@ -126,19 +130,19 @@
 
   <img src="img/linked_queue.png">
 
-  <br/>
+<br/>
 
 - 삽입 연산 (<code>enqueue</code>)
 
   <img src="img/linked_queue_insert.png">
 
-  <br/>
+<br/>
 
 - 삭제 연산 (<code>dequeue</code>)
 
   <img src="img/linked_queue_pop.png">
 
-  <br/>
+<br/>
 
 - 코드
 
