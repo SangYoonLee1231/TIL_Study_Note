@@ -26,13 +26,13 @@
 
     <img src="img/binary_search_tree_delete1.gif" width="700">
 
-    <br/>
+  <br/>
 
   - <strong>Case 2 ></strong> 삭제할 Node의 <strong>오른쪽</strong>이 비어있으면, Node의 <strong>왼쪽 서브 트리</strong>를 그대로 위로 올려준다.
 
     <img src="img/binary_search_tree_delete2.gif" width="700">
 
-    <br/>
+  <br/>
 
   - <strong>Case 3 ></strong> 삭제할 Node의 <strong>양쪽</strong>에 자식이 모두 존재한다면, <strong>자식 Node 중 가장 작은 수(successor)</strong>를 찾아 <strong>삭제할 Node의 위치</strong>로 옮긴다. 그 후, 빈 successor의 자리는 <strong>그 오른쪽 서브 트리</strong>로 채워준다.
 
@@ -42,7 +42,7 @@
 
       <img src="img/binary_search_tree_delete4.gif" width="700">
 
-      <br/>
+    <br/>
 
     - 만일 <strong>successor</strong>가 <strong>node의 (바로) 오른쪽 자신</strong>인 경우, 단순히 <strong>오른쪽 서브 트리</strong>를 올려주면 된다.
 
