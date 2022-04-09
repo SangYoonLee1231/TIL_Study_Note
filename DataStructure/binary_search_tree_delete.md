@@ -22,6 +22,8 @@
 
 - 해당 x 값이 든 Node를 <strong>삭제</strong>한다.
 
+  <br/>
+  
   - <strong>Case 1 ></strong> 삭제할 Node의 <strong>왼쪽</strong>이 비어있으면, Node의 <strong>오른쪽 서브 트리</strong>를 그대로 위로 올려준다.
 
     <img src="img/binary_search_tree_delete1.gif" width="700">

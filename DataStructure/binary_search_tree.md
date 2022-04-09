@@ -26,11 +26,11 @@
 
     <img src="img/binary_search_tree2.png" width="800">
 
-- ✨ 부모와 자식 관계만 고려한다면 이렇게 이진 탐색 트리가 아닌 것을 맞다고 착각할 수 있으니 조심하자.
+- ✨ <strong>부모와 자식 관계만 고려</strong>한다면 이렇게 이진 탐색 트리가 아닌 것을 맞다고 <strong>착각</strong>할 수 있으니 조심하자.
 
 <br/>
 
-- 참고로, 이진 탐색 트리를 중위 탐색하면 오름차순 순으로 정렬된 결과가 나온다.
+- 참고로, <strong>이진 탐색 트리를 중위 탐색</strong>하면 <strong>오름차순 순으로 정렬</strong>된 결과가 나온다.
 
   <img src="img/binary_search_tree5.png" width="600">
 
@@ -42,7 +42,7 @@
 
 ## 이진 탐색 트리의 탐색
 
-- 이진 탐색 트리에 어떤 값 x가 있는지 찾고자 한다.
+- 이진 탐색 트리에 어떤 값 <strong>x</strong>가 있는지 찾고자 한다.
 
 <br/>
 
@@ -78,7 +78,7 @@
 
 ## 이진 탐색 트리의 삽입
 
-- 이진 탐색 트리에 어떤 값 x를 삽입하고자 한다.
+- 이진 탐색 트리에 어떤 값 <strong>x</strong>를 삽입하고자 한다.
 
 <br/>
 
@@ -96,13 +96,19 @@
 
   - 트리에 노드가 전혀 없는 경우이므로, 이진 탐색 트리의 <strong>root</strong>를 node(x)로 설정한다.
 
+<br/>
+
 - Case 2> <strong>parent 값 > x값</strong> 이라면
 
   - parent의 <strong>좌측</strong>에 node(x)를 삽입한다.
 
+<br/>
+
 - Case 3> <strong>parent 값 < x값</strong> 이라면
 
   - parent의 <strong>우측</strong>에 node(x)를 삽입한다.
+
+  <br/>
 
   <img src="img/binary_search_tree4.png">
 
