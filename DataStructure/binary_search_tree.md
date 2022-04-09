@@ -112,7 +112,7 @@
 
   <br/>
 
-    <img src="img/binary_search_tree4.png">
+    <img src="img/binary_search_tree4.png" width="800">
 
 <br/>
 
