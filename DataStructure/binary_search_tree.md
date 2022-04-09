@@ -92,25 +92,27 @@
 
 <br/>
 
-- <strong>Case 1 : parent 값 == null</strong> 이라면
+- null에 도달 후 다음 3가지 경우에 따라 새 노드를 어디에 삽입할 지가 달라진다.
 
-  - 트리에 노드가 전혀 없는 경우이므로, 이진 탐색 트리의 <strong>root</strong>를 node(x)로 설정한다.
+  - <strong>Case 1 : parent 값 == null</strong> 이라면
 
-<br/>
+    - 트리에 노드가 전혀 없는 경우이므로, 이진 탐색 트리의 <strong>root</strong>를 node(x)로 설정한다.
 
-- <strong>Case 2 : parent 값 > x값</strong> 이라면
+  <br/>
 
-  - parent의 <strong>좌측</strong>에 node(x)를 삽입한다.
+  - <strong>Case 2 : parent 값 > x값</strong> 이라면
 
-<br/>
+    - parent의 <strong>좌측</strong>에 node(x)를 삽입한다.
 
-- <strong>Case 3 : parent 값 < x값</strong> 이라면
+  <br/>
 
-  - parent의 <strong>우측</strong>에 node(x)를 삽입한다.
+  - <strong>Case 3 : parent 값 < x값</strong> 이라면
 
-  <br/><br/>
+    - parent의 <strong>우측</strong>에 node(x)를 삽입한다.
 
-  <img src="img/binary_search_tree4.png">
+  <br/>
+
+    <img src="img/binary_search_tree4.png">
 
 <br/>
 
