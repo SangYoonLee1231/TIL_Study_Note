@@ -1,4 +1,4 @@
-# 해시 테이블 (Hash Table) 기본 개념
+# 해시 테이블 (Hash Table) - 기본 개념
 
 <br/>
 
@@ -8,17 +8,17 @@
 
 ### 목차
 
-- <a href="">해시 함수와 해시 테이블의 개념</a>
-- <a href="">해시 테이블 소개</a>
-- <a href="">해시 테이블의 성질을 좌우하는 3가지 요소</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md#%ED%95%B4%EC%8B%9C-%ED%95%A8%EC%88%98%EC%99%80-%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%98-%EA%B0%9C%EB%85%90">해시 함수와 해시 테이블의 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md#%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%86%8C%EA%B0%9C">해시 테이블 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md#%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%98-%EC%84%B1%EC%A7%88%EC%9D%84-%EC%A2%8C%EC%9A%B0%ED%95%98%EB%8A%94-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C">해시 테이블의 성질을 좌우하는 3가지 요소</a>
 
 <br/>
 
 ## 해시 함수와 해시 테이블의 개념
 
-- <strong>해시 함수</strong>는 임의의 데이터를 <strong>고정된 길이이 특정 값으로 변환</strong>해주는 함수이다.
+- <strong>해시 함수 (Hash Function)</strong>는 <strong>임의의 데이터(key)</strong>를 <strong>고정된 길이이 특정 값(index)</strong>으로 변환해주는 함수이다.
 
-- 해시 함수를 통해 저장된 자료구조를 <strong>해시 테이블</strong>이라 한다.
+- 해시 함수를 통해 저장된 자료구조를 <strong>해시 테이블 (Hash Table)</strong>이라 한다.
 
 <br/>
 
@@ -37,6 +37,12 @@
   - 해시 함수의 <strong>결과값</strong>
 
   - <strong>입력값</strong>을 <strong>key</strong>로, (고정된 길이의) <strong>결과값</strong>을 <strong>value</strong>로 서로 <strong>쌍</strong>을 이루어 만들어진 데이터
+
+<br/>
+
+- ✨ <strong>해싱</strong>은 데이터가 들어오는 <strong>순서에 상관없이</strong> 삽입, 삭제, 탐색 연산이 자주 사용 될 때 유용하다.
+
+  - 반대로 <strong>배열</strong>은 데이터간의 순서가 index 기반으로 확실히 매겨져 있다.
 
 <br/><br/>
 

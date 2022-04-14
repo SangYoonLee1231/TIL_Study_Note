@@ -1,4 +1,4 @@
-# 해시 테이블 - 해시 함수
+# 해시 테이블 - 해시 함수 (Hash Function)
 
 <br/>
 
@@ -9,7 +9,7 @@
 ### 목차
 
 - <a href="">해시 함수 (Hash Function)</a>
-
+- <a href="">좋은 성질의 해시 함수</a>
   - <a href="">완전(perfect) 해시 함수</a>
   - <a href="">universial 해시 함수</a>
   - <a href="">c-universial 해시 함수</a>
@@ -19,13 +19,17 @@
 
 ## 해시 함수 (Hash Function)
 
-- 해시 함수란 <strong>key 값을 index로 맵핑(mapping)할 때 쓰이는 함수</strong>로, <code>f(key)</code>로 나타낸다.
+- <strong>해시 함수 (Hash Function)</strong>는 <strong>임의의 데이터(key)</strong>를 <strong>고정된 길이이 특정 값(index)</strong>으로 변환해주는 함수이다.
+
+- key 값을 index로 변환하는 것을 <strong>맵핑(mapping)</strong>이라 하며, 해시 함수는 보통 <code>f(key)</code>로 나타낸다.
 
     <img src="img/hash_table2.png" width="250px">
 
-<br/>
+<br/><br/>
 
-- <strong>좋은 해시 테이블을 설계하기 위해 좋은 성질을 갖는 해시 함수를 만들어야 한다.</strong>
+## 좋은 성질의 해시 함수
+
+- ✨ <strong>좋은 해시 테이블을 설계하기 위해 좋은 성질을 갖는 해시 함수를 만들어야 한다.</strong>
 
 - 그럼 <strong>좋은 성질의 해시 함수</strong>란?
 
