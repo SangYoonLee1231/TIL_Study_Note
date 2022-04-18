@@ -197,7 +197,7 @@ while not s.isEmpty():
 - 예시
 
   <img src="img/stack_recursion_call3.gif"></a>
-
+  
 <br/>
 
 ### 계산기 문제
