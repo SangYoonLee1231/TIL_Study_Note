@@ -171,6 +171,24 @@
 
 ## Stack 활용 예제
 
+### 이진수 변환
+
+```python
+s = Stack()
+
+n = int(input())
+
+while n != 0:
+  s.push(n%2)
+  n //= 2
+
+while not s.isEmpty():
+  digit = s.pop
+  print(digit, end ="")
+```
+
+<br/>
+
 ### <a href="https://www.acmicpc.net/problem/9012" target="_blank">괄호 맞추기 (백준 9012번)</a>
 
 > 1. 오른쪽과 왼쪽 괄호로만 이루어진 문자열을 입력으로 받고 ☞ ex) ()(()))
