@@ -9,12 +9,11 @@
 
 ### 목차
 
-- <a href="">디지털 시스템</a>
-- <a href="">2진수 (+ 8진수, 16진수)</a>
-- <a href="">기수 변환</a>
-- <a href="">수의 보수</a>
-- <a href="">보수를 이용한 뺄셈</a>
-- <a href="">부호 있는 2진수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#%EB%94%94%EC%A7%80%ED%84%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C">디지털 시스템</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#2%EC%A7%84%EC%88%98--8%EC%A7%84%EC%88%98-16%EC%A7%84%EC%88%98">2진수 (+ 8진수, 16진수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#%EA%B8%B0%EC%88%98-%EB%B3%80%ED%99%98">기수 변환</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#%EC%88%98%EC%9D%98-%EB%B3%B4%EC%88%98">수의 보수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#%EB%B3%B4%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%BA%84%EC%85%88">보수를 이용한 뺄셈</a>
 
 <br/>
 
@@ -50,23 +49,23 @@
 
 ## 2진수 (+ 8진수, 16진수)
 
-[10진수] &nbsp; 7392 = (7 _ 10^3) + (3 _ 10^2) + (9 _ 10^1) + (2 _ 10^0)
+<strong>[10진수]</strong> &nbsp; 7392 = (7 \* 10^3) + (3 \* 10^2) + (9 \* 10^1) + (2 \* 10^0)
 
-[2진수] &nbsp; 11010.11(2) = (1 _ 2^4) + (1 _ 2^3) +(0 _ 2^2) + (1 _ 2^1) + (0 _ 2^0) + (1 _ 2^-1) + (1 \* 2^-2)
+<strong>[2진수]</strong> &nbsp; 11010.11(2) = (1 \* 2^4) + (1 \* 2^3) +(0 \* 2^2) + (1 \* 2^1) + (0 \* 2^0) + (1 \* 2^-1) + (1 \* 2^-2)
 
 <br/>
 
-- 디지털에서 8진수와 16진수도 쓰는 이유
+- <strong>디지털에서 8진수와 16진수도 쓰는 이유</strong>strong>
 
   : 2진수보다 자리를 덜 차지하여 bit를 절약할 수 있다. (1byte = 8bit)
 
-[8진수] &nbsp; 254(8) = (2 _ 8^2) + (5 _ 8^1) + (4 \* 8^0)
+<strong>[8진수]</strong> &nbsp; 254(8) = (2 \* 8^2) + (5 \* 8^1) + (4 \* 8^0)
 
 <br/>
 
 - 16진수에서 10 = A, 11 = B, ... , 15 = F
 
-[16진수] &nbsp; F9(16) = (15 \* 16^1) + (9 + 16^0)
+<strong>[16진수]</strong> &nbsp; F9(16) = (15 \* 16^1) + (9 + 16^0)
 
 <br/><br/>
 
@@ -248,11 +247,5 @@
   - Step 3-1) 피감수 < 감수이므로, 결괏값 1101111에 다시 2의 보수를 취한다.
 
   - Step 3-2) 계산값 0010001에 마이너스를 붙인 -0010001이 답이다.
-
-<br/><br/>
-
-## 부호 있는 2진수
-
--
 
 > 사진 출처 : <a href="https://m.blog.naver.com/piyoro/221770535071">10진수를 2진수로 변환, 2진수를 10진수로 변환 (개인 블로그)</a>
