@@ -55,7 +55,7 @@
 
 <br/>
 
-- <strong>디지털에서 8진수와 16진수도 쓰는 이유</strong>strong>
+- <strong>디지털에서 8진수와 16진수도 쓰는 이유</strong>
 
   : 2진수보다 자리를 덜 차지하여 bit를 절약할 수 있다. (1byte = 8bit)
 
