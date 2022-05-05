@@ -99,39 +99,38 @@
 
 - 리스트는 배열과 달리, <strong>자신의 용량을 자동으로 조절한다.</strong> (리스트를 Dyanamic Array라고도 부르는 이유)
 
-```python
-import sys
+  ```python
+  import sys
 
-A = [] # 빈 리스트
-print(sys.getsizeof(A)) # 28 bytes
+  A = [] # 빈 리스트
+  print(sys.getsizeof(A)) # 28 bytes
 
-A.append(18) # A = [18]
-print(sys.getsizeof(A)) # 44 bytes
-```
+  A.append(18) # A = [18]
+  print(sys.getsizeof(A)) # 44 bytes
+  ```
 
 - 파이썬에선, 자동으로 리스트의 공간이 모자르면 크기를 늘리고, 반대로 공간이 남으면 크기를 줄이는 작업을 수시로 한다.  
   (메모리 자동 조절 기능)
 
-<br/>
 
-<img src="img/list2.png">
+  <img src="img/list2.png">
 
-```python
-A.append(x):
-    if A.n < A.capacity:
-        # 리스트 용량이 넉넉한 경우
-        A[n] = x
-        A.n = n + 1
-    else: # A.n == A.capacity
-        # 리스트 용량이 더 필요한 경우 (자동으로 용량 크기 ↑)
-        B = A.capacity * 2 # B는 임시용 리스트, *2는 용량을 늘린다는 의미
-        for i in range(n):
-            B[i] = A[i]
-        A = B
-        del B
-        A[n] = x
-        A.n = n + 1
-```
+  ```python
+  A.append(x):
+      if A.n < A.capacity:
+          # 리스트 용량이 넉넉한 경우
+          A[n] = x
+          A.n = n + 1
+      else: # A.n == A.capacity
+          # 리스트 용량이 더 필요한 경우 (자동으로 용량 크기 ↑)
+          B = A.capacity * 2 # B는 임시용 리스트, *2는 용량을 늘린다는 의미
+          for i in range(n):
+              B[i] = A[i]
+          A = B
+          del B
+          A[n] = x
+          A.n = n + 1
+  ```
 
 <br/>
 
