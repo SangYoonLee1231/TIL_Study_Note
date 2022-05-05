@@ -287,6 +287,7 @@
   print(f"x is {x}")
   print(f"y is {y}")
   print(f"x is {x} and y is {y}")
+  print(f"x * y = {x*y}")
   ```
 
   ▼ 출력 결과
@@ -295,6 +296,7 @@
   x is 10
   y is code
   x is 10 and y is code
+  x * y = 100
   ```
 
 <br/>
