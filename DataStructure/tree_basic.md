@@ -44,7 +44,7 @@
 
 - <strong>노드 (Node) or 정점</strong>
 
-- <strong>링크 (Link) or 에지 (Edge) or 간선</strong> : 부모 노드와 자식 노드를 잇는 연결 고리
+- <strong>링크 (Link)</strong> or <strong>에지 (Edge)</strong> or <strong>간선</strong> : 부모 노드와 자식 노드를 잇는 연결 고리
 
 - <strong>루트 노드 (Root Node)</strong> : 맨 꼭대기에 있는, 모든 노드의 조상이 되는 노드
 
@@ -122,11 +122,11 @@
 
 ## 트리의 종류
 
-- 이진 트리
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md">이진 트리</a>
 
-- 이진 탐색 트리
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md">이진 탐색 트리</a>
 
-- 힙
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap.md">힙</a>
 
 <br/><br/>
 
