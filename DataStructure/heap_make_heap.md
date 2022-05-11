@@ -23,13 +23,14 @@
 
 ### ✨ <code>make_heap</code> (<code>heapify-down</code>) 과정
 
-- <strong>n / 2번째 Node</strong>부터 <strong>루트 Node</strong>까지 순서대로 하나씩 탐색하면서, <strong>heap 성질을 만족하는 위치로 Node를 이동</strong>시킨다.
+- (자식 노드가 존재하는) <strong>n / 2번째 Node</strong>부터 <strong>루트 Node</strong>까지 순서대로 하나씩 탐색하면서,  
+  <strong>heap 성질을 만족하는 위치로 Node를 이동</strong>시킨다.
 
 - Leaf Node는 자식 Node가 없으므로 고려 대상에서 제외된다.
 
 <br/>
 
-- 현재 Node와 2개의 자식 Node, 총 3개의 Node 중 <strong>가장 큰 값을 가진 Node (largest Node)</strong> 를 비교하여 찾는다.
+- 현재 Node와 2개의 자식 Node, 총 3개의 Node 중 <strong>가장 큰 값을 가진 Node (largest Node)</strong> 를 찾는다.
 
   - 만일 현재 Node 보다 <strong>자식 Node가 더 크다면</strong>, largest Node와 현재 Node의 <strong>자리를 교환</strong>한다.
 
@@ -51,20 +52,23 @@
   def make_heap(A):
       n = len(A)
       for k in range(n // 2, -1, -1):
-          # A[k]를 heap 성질 만족시키는 곳으로 이동
-          heapify_down(k, n)
+          heapify_down(k, n)   # A[k]를 heap 성질 만족시키는 곳으로 이동
+          # k : 대상 index
+          # n : 원소 개수
   ```
 
   ```python
   def heapify_down(k, n):
+      # k : 대상 index    # n : 원소 개수
       while A[k] != leaf node:
           L, R = 2*k + 1, 2*k + 2
-          m = index(A[k], A[L], A[R])
-                  # 이 3개 중 최댓값 index가 m으로 전달
+          m = index(A[k], A[L], A[R])  # (A[k], A[L], A[R]) 이 3개 중 최댓값 index가 m에 할당
           if k != m:
+              # 촤댓값 index가 자식 node일 경우 → 자리 교환
               A[k], A[m] = A[m], A[k]
               k = m
           else:
+              # 최댓값 index가 자신일 경우 → 교환 종료
               break
   ```
 
@@ -72,17 +76,17 @@
 
 ### 시간복잡도
 
-- <code>make_heap</code> 함수 : <code>O(n \* t)</code> = <code>O(nh)</code> = <code>O(nlogn)</code> → <strong><code>O(n)</code></strong>
-
-  - <code>t</code> = heapify_down 시간
-
-<br/>
-
-- <code>heapify_down</code> 함수 : <code>O(h) \* O(1)</code> = <code>O(h)</code> = <code>O(logn)</code>
+- <code>heapify_down</code> 함수 : <code>O(h) \* O(1)</code> = <code>O(h)</code> = <strong><code>O(logn)</code></strong>
 
   - <code>h</code> = 힙의 높이
 
   - 최악의 경우 : heap 성질을 만족시키기 위해 root 노드가 leaf 노드까지 이동하는 경우
+
+<br/>
+
+- <code>make_heap</code> 함수 : <code>O(n \* t)</code> = <code>O(nh)</code> = <strong><code>O(nlogn)</code></strong> → ✨<strong><code>O(n)</code></strong>
+
+  - <code>t</code> = heapify_down 시간
 
 <br/><br/>
 

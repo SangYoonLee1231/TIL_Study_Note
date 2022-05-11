@@ -47,7 +47,7 @@
   '''
   ```
 
-- 시간 복잡도 : <code>O(logn)</code>
+- 시간 복잡도 : <code>O(logn)</code> (힙의 높이)
 
 <br/>
 
@@ -58,11 +58,13 @@
   ```python
   def heapify_up(k):  # A[k]를 heapify
     while k > 0 and A[(k - 1) // 2] < A[k]:
-        A[k], A[(k - 1) // 2] = A[(k - 1) // 2], A[k]
-        k = (k - 1) // 2
+      # while 조건식 1 {k > 0} : 루트 노드에 도달하지 않음
+      # while 조건식 2 {A[(k - 1) // 2] < A[k]} : parent 노드가 자신보다 작음
+      A[k], A[(k - 1) // 2] = A[(k - 1) // 2], A[k]
+      k = (k - 1) // 2
   ```
 
-- 시간 복잡도 : <code>O(logn)</code>
+- 시간 복잡도 : <code>O(logn)</code> (힙의 높이)
 
 <br/><br/>
 
