@@ -80,11 +80,20 @@
 
 ## <code>delete_max</code> 연산
 
-- heap에서 <strong>가장 큰 값(<code>A[0]</code>)을 지우고</strong>, <strong>맨 끝 원소의 Node를 <code>A[0]</code>으로 이동</strong>하는 연산
+- heap에서 <strong>가장 큰 값(<code>A[0]</code>에 있음)을 지우고</strong> 이를 반환하는 연산
 
-- 이동 후에는 <strong>힙 성질을 만족하도록</strong> <code>A[0]</code> 자리로 이동한 Node를 <strong>다시 heapify down</strong> 해주어야 한다.
+  - 배열의 <strong>첫 번째 원소(<code>A[0]</code>)</strong>와 <strong>마지막 원소(<code>A[len(A)-1]</code>)</strong>의 <strong>자리를 바꾸고</strong>, 맨 끝 원소를 <strong>pop</strong>한다.
 
-  - 정리 : 맨 끝 원소를 <code>A[0]</code>으로 이동 → <code>heapify_down</code>
+  - 이후에는 다시 <strong>힙 성질을 만족하도록</strong> <code>A[0]</code> 자리로 이동한 Node를 <strong>다시 heapify down</strong> 해주어야 한다.
+
+  <br/>
+
+  - <strong>정리</strong>
+
+    - <strong>1st</strong>> 맨 끝 원소(<code>A[len(A)-1]</code>)를 <code>A[0]</code>와 자리 교환
+
+    - <strong>2nd</strong>> 배열 A에 pop연산 수행
+    - <strong>3rd</strong>> <code>A[0]</code>로 이동한 원소를 <code>heapify_down</code>
 
   <br/>
 
@@ -123,13 +132,19 @@
 
 - <strong>search 함수가 heap에 없는 이유</strong>
 
-  : Node가 heapify 될 때, 어디로 이동할 지 확정지을 수 없기 때문이다.
+  : Node가 heapify 될 때, 원소들이 <strong>어디로 이동할 지 확정지을 수 없기 때문</strong>이다.
 
 <br/>
 
 - heap 자료구조는 <strong><code>insert</code>, <code>find_max</code>, <code>delete_max</code> 세 연산에 특화된 자료구조이다.</strong>
 
 - 반면, <strong><code>search</code> 연산과는 어울리지 않는 자료구조이다.</strong>
+
+<br/>
+
+- <code>find_min</code>, <code>delete_min</code> 연산을 쓰려고 한다면
+
+  → <code>min-heap</code>을 만들면 된다.
 
 <br/><br/>
 
