@@ -16,9 +16,14 @@
 
 ## 이진 탐색 트리란?
 
-- <strong>부모의 왼쪽 서브 트리 (모든) Node들은 부모보다 값이 작고, 오른쪽 서브 트리 (모든) Node들은 부모보다 값이 큰 이진 트리</strong>
+- 가장 일반적으로 사용되는 이진 트리
 
-    <img src="img/binary_search_tree1.png" width="800">
+- 어떤 key 값이 있는지 탐색하는 'Search 연산'을 상대적으로 더 효율적으로 할 수 있도록 잘 조직화된 이진 트리
+
+- <strong>각 Node의 왼쪽 서브 트리 (모든) Node들</strong>은 그 Node보다 <strong>값이 작고</strong>,  
+  <strong>오른쪽 서브 트리 (모든) Node들</strong>은 그 Node보다 <strong>값이 큰</strong> 이진 트리
+
+      <img src="img/binary_search_tree1.png" width="800">
 
 <br/>
 
