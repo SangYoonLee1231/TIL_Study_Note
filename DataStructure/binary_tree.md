@@ -137,7 +137,8 @@ A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
   <img src="img/binary_tree6.png" width="800">
 
   ```python
-  def preorder(self):  # MLR
+  # MLR
+  def preorder(self):  # 현재 방문 중인 Node = self
       if self != None:
           print(self.key)
           if self.left:
@@ -153,7 +154,8 @@ A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
   <img src="img/binary_tree7.png" width="800">
 
   ```python
-  def inorder(self):  # LMR
+  # LMR
+  def inorder(self):
       if self != None:
           if self.left:
               self.left.preorder()
@@ -168,15 +170,16 @@ A = [ a, [ b, [], [ d, [], [] ] ] ], [ c, [ e, [], [] ], [ f, [], [] ] ]
 
   <img src="img/binary_tree8.png" width="800">
 
-      ```python
-      def postorder(self):  # LRM
-          if self != None:
-              if self.left:
-                  self.left.preorder()
-              if self.right:
-                  self.right.preorder()
-              print(self.key)
-      ```
+  ```python
+  # LRM
+  def postorder(self):
+      if self != None:
+          if self.left:
+              self.left.preorder()
+          if self.right:
+              self.right.preorder()
+          print(self.key)
+  ```
 
   <br/>
 
