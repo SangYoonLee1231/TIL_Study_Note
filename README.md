@@ -27,8 +27,7 @@
 
 ### ◻ C
 
-- <a href="">포인터</a>
-- <a href="">파일 입출력</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md">파일 입출력</a>
 
 ### ◻ Python
 
