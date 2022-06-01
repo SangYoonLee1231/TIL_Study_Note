@@ -63,7 +63,7 @@
 
 <br/>
 
-- 이때, 특정 이벤트가 listen될 시, 어떤 동작이 이루어지게 할 것인지를 설정하기 위해  
+- 이 때, 특정 이벤트가 listen될 시, 어떤 동작이 이루어지게 할 것인지를 설정하기 위해  
 
      <strong>새로운 함수를 선언</strong>하여 <code>addEventListener</code> 함수에 연결해준다.
 
@@ -109,9 +109,7 @@
     const title = document.querySelector(".hello:first-child h1");
 
     console.log(title);
-
     title.innerText = "Click Me!";
-
     console.log(title);
 
     function handleTitleClick() {
