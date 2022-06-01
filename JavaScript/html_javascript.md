@@ -1,4 +1,4 @@
-# JavaScript에서 HTML 요소에 접근하고 가져오기
+# JavaScript를 통해 HTML 요소에 접근하고 읽기
 
 > 참고 자료 : <a href="https://nomadcoders.co/javascript-for-beginners">노마드 코더 - 바닐라 JS로 크롬 앱 만들기</a>
 
@@ -6,8 +6,8 @@
 
 ### 목차
 
-- <a href="">Document 객체(Object)</a>
-- <a href="">JS에서 HTML 요소에 접근하는 다양한 방법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#document-%EA%B0%9D%EC%B2%B4object">Document 객체(Object)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EC%97%90%EC%84%9C-html-%EC%9A%94%EC%86%8C%EC%97%90-%EC%A0%91%EA%B7%BC%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">JS에서 HTML 요소에 접근하는 다양한 방법</a>
 
 <br/><br/>
 
