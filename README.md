@@ -25,6 +25,11 @@
 
 ## 📌 기본 언어
 
+### ◻ C
+
+- <a href="">포인터</a>
+- <a href="">파일 입출력</a>
+
 ### ◻ Python
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md">Python - 출력 함수 <code>print()</code> 사용법</a>
