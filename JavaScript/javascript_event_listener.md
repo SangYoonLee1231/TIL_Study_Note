@@ -20,7 +20,7 @@
 - HTML에서 특정한 요소를 JS로 가져온 후 그 요소(element)의 <strong>내부</strong>를 보려면, 다음과 같이 코드를 작성하면 된다.
 
     ```javascript
-    console.dir(element 이름)
+    console.dir(element 이름);
     ```
 
     <br/>
@@ -64,7 +64,8 @@
 <br/>
 
 - 이때, 특정 이벤트가 listen될 시, 어떤 동작이 이루어지게 할 것인지를 설정하기 위해  
- <strong>새로운 함수를 선언</strong>하여 <code>addEventListener</code> 함수에 연결해준다.
+
+     <strong>새로운 함수를 선언</strong>하여 <code>addEventListener</code> 함수에 연결해준다.
 
     ```javascript
     function handleTitleClick() {
