@@ -19,7 +19,7 @@
 
 ## 시스템에서 txt 파일을 처리하는 내부 과정
 
-<img src="img/txt_to_hd.png" width="500px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/txt_to_hd.png" width="500px">
 
 <br/>
 
@@ -40,7 +40,7 @@
 
 <br/>
 
-<img src="img/stream_file.png" width="600px">
+&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/stream_file.png" width="600px">
 
 <br/>
 
