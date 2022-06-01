@@ -40,7 +40,7 @@
 
 <br/>
 
-<img src="img/stream_file.png" width="550px">
+<img src="img/stream_file.png" width="600px">
 
 <br/>
 
