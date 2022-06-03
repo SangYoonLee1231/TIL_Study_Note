@@ -1,24 +1,18 @@
-def check(skill, skill_tree):
-    pos = -1
-    for skill_tree_elem in skill_tree:
-        for i, skill_elem in enumerate(skill):
-            if skill_tree_elem == skill_elem:
-                if pos < i:
-                    pos = i
-                    break
-                else:
-                    return 0
-    return 1
+class Node:
+    def __init__(self, key):
+        self.key = key;
+        self.parent = self.left = self.right = None;
+    def __str__(self):
+        return str(self.key)
 
-                    
-def solution(skill, skill_trees):
-    answer = 0
-    for skill_tree in skill_trees:
-        answer += check(skill, skill_tree)
+a = Node(6)
+b = Node(9)
+c = Node(5)
+d = Node(1)
 
-    return answer
-
-skill = input()
-skill_trees = list(input().split())
-
-print(solution(skill, skill_trees))
+a.left = b
+a.right = d
+b.parent = a
+b.right = c
+c.parent = b
+d.parent = a

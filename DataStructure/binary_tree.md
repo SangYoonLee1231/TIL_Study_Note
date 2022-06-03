@@ -23,13 +23,13 @@
 
 <br/><br/>
 
-## (코드를 통해) 이진 트리에 데이터를 저장하는 방법
+## (코드에서) 이진 트리에 데이터를 저장하는 방법
 
 ### 방법1. 리스트 이용
 
 - 이진 트리를 <strong>배열(리스트)</strong>로 표현한다. (ex. heap)
 
-- 단점 : 메모리를 낭비할 가능성이 크다.
+- 단점 : 빈 공간이 생길 수 있어 메모리를 낭비할 가능성이 크다.
 
 - 레벨1 → 레벨2 → 레벨3 → ...
 
@@ -43,19 +43,19 @@ A = [a, b, c, None, d, e, f, None, None, h, i  g, None, None, None]
 
 <br/>
 
-- 이진트리를 배열로 구현하면 부모와 자식 노드를 <code>O(1)</code>안에 접근할 수 있다.
+- 이진트리를 배열로 구현하면, 부모와 자식 노드에 <code>O(1)</code>내로 접근할 수 있다.
 
   <img src="img/binary_tree4.png" width="800">
 
 - 리스트의 0번 공간을 비우고, 1번부터 데이터를 채운다고 가정하자.
 
-  - <code>Array[k]</code>의 <strong>왼쪽 자식 노드</strong> : <strong><code>Array[2*k]</code></strong>
+  - <code>Array[<strong>k</strong>]</code>의 <strong>왼쪽 자식 노드</strong> : <strong><code>Array[2*k]</code></strong>
 
-  - <code>Array[k]</code>의 <strong>오른쪽 자식 노드</strong> : <strong><code>Array[2*k + 1]</code></strong>
+  - <code>Array[<strong>k</strong>]</code>의 <strong>오른쪽 자식 노드</strong> : <strong><code>Array[2*k + 1]</code></strong>
 
   <br/>
 
-  - <code>Array[k]</code>의 <strong>부모 노드</strong> : <strong><code>Array[k // 2]</code></strong>
+  - <code>Array[<strong>k</strong>]</code>의 <strong>부모 노드</strong> : <strong><code>Array[k // 2]</code></strong>
 
 <br/>
 

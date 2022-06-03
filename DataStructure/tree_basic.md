@@ -92,7 +92,7 @@
 
 ### Unrooted Tree
 
-- <strong>트리의 원래 정의</strong>는 정점(Node)끼리 전부 연결되어 있으면서 사이클이 존재하지 않는 그래프이다.
+- <strong>트리의 원래 정의</strong>는 <code>정점(Node)끼리 전부 연결</code>되어 있으면서 <code>사이클이 존재하지 않는 그래프</code>이다.
 
 - 따라서, 다음과 같이 <strong>부모 - 자식 관계가 정의되지 않은 경우</strong>도 <strong>트리</strong>라고 부른다. 이를 <strong>Unrooted Tree</strong>라 한다.
 
