@@ -8,7 +8,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%84%9C%EB%A1%A0">서론</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A6%AC%EC%8A%A4%EB%84%88-event-listener">이벤트 리스너 (Event Listener)</a>
-- <a href=""></a>
+- <a href="">이벤트 종류</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
@@ -119,3 +119,51 @@
 
     title.addEventListener("click", handleTitleClick);
     ```
+
+<br/><br/>
+
+## 이벤트 종류
+
+- listen하고 싶은 event를 찾는 한 가지 방법으로 <code>console.dir(element 이름);</code>을 통해 어떤 요소의 내부를 확인하면, 앞에 <code>on</code>이 붙은 다양한 <strong>event</strong> 요소들을 확인할 수 있다.
+
+  <img src="img/console_dir2.png">
+
+<br/>
+
+- listen하고 싶은 event를 찾는 <strong>가장 좋은 방법</strong>은 mdn web docs 페이지에 찾아가서 확인하는 것이다.  
+👉 <a href="https://developer.mozilla.org/ko/docs/Web/Events">바로가기</a>
+
+<br/>
+
+- 대표적인 event 예시 (노마드코더 강의에서 소개한)
+
+  - <code>click</code> : 마우스로 해당 요소를 클릭할 때
+  - <code>mouseenter</code> : 마우스를 해당 요소에 올렸을 때
+  - <code>mouseleave</code> : 마우스를 해당 요소에 올린 후 벗어날 때
+
+<br/>
+
+- 코드 예시
+
+  ```javascript
+  const title = document.querySelector(".hello:first-child h1");
+
+  title.innerText = "Click Me!";
+
+  function handleTitleClick() {
+    console.log("Title was clicked");
+    title.style.color = "blue";
+  }
+
+  function handleMouseEnter() {
+    title.innerText = "Mouse is here";
+  }
+
+  function handleMouseLeave() {
+    title.innerText = "Mouse is gone";
+  }
+
+  title.addEventListener("click", handleTitleClick);
+  title.addEventListener("mouseenter", handleMouseEnter);
+  title.addEventListener("mouseleave", handleMouseLeave);
+  ```
