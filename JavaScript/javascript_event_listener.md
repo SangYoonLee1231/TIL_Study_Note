@@ -8,10 +8,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%84%9C%EB%A1%A0">서론</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A6%AC%EC%8A%A4%EB%84%88-event-listener">이벤트 리스너 (Event Listener)</a>
-- <a href="">이벤트 종류</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%A2%85%EB%A5%98">이벤트 종류</a>
 
 <br/><br/>
 

@@ -13,9 +13,9 @@
 
 ## Document 객체(Object)
 
-- JavaScript를 사용하는 이유는 HTML과 상호작용하기 위해서이다.
+- JavaScript를 사용하는 이유는 <strong>HTML과 상호작용</strong>하기 위해서이다.
 
-- 그러기 위해 JS에선 HTML의 요소(Element)에 접근하고 읽을 수 있도록 이미 설정되어 있다.
+- 그러기 위해 JS에선 <strong>HTML의 요소(Element)에 접근하고 읽을 수 있도록</strong> 이미 설정되어 있다.
 
 - 이를 통해 우리는 HTML의 요소를 JS를 통해 변경하고 읽을 수 있다.
 
@@ -37,11 +37,11 @@
 
 <br/>
 
-- 하지만 div나 h1같은 HTML 요소는 document 객체를 통해 접근하여 JS로 가져올 수 없다.  
+- 하지만 <code>div</code>나 <code>h1</code>같은 HTML 요소는 document 객체를 통해 접근하여 JS로 가져올 수 <strong>없다</strong>.  
 
-  즉, document 객체를 통해 접근할 수 있는 HTML 요소가 한정되어 있다는 것이다.
+  즉, document 객체를 통해 접근할 수 있는 HTML 요소가 <strong>한정되어 있다</strong>는 것이다.
 
-- 따라서, 이러한 HTML 요소도 모두 접근할 수 있는 다른 방법이 필요하다.
+- 따라서, 이러한 HTML 요소도 모두 접근할 수 있는 <strong>다른 방법</strong>이 필요하다.
 
 <br/><br/>
 
