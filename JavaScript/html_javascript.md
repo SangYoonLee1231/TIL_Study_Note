@@ -35,6 +35,14 @@
   document.title = "Momentum"; // HTML의 title 값을 "Momentum"으로 변경한다.
   ```
 
+<br/>
+
+- 하지만 div나 h1같은 HTML 요소는 document 객체를 통해 접근하여 JS로 가져올 수 없다.  
+
+  즉, document 객체를 통해 접근할 수 있는 HTML 요소가 한정되어 있다는 것이다.
+
+- 따라서, 이러한 HTML 요소도 모두 접근할 수 있는 다른 방법이 필요하다.
+
 <br/><br/>
 
 ## JS에서 HTML 요소에 접근하는 다양한 방법

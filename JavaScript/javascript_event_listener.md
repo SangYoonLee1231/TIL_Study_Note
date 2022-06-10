@@ -63,9 +63,9 @@
 
 <br/>
 
-- 이 때, 특정 이벤트가 listen될 시, 어떤 동작이 이루어지게 할 것인지를 설정하기 위해  
+- 이 때, <strong>특정 이벤트가 listen될 시, 어떤 동작이 이루어지게 할 것인지</strong>를 설정하기 위해  
 
-     <strong>새로운 함수를 선언</strong>하여 <code>addEventListener</code> 함수에 연결해준다.
+     <strong>새로운 함수</strong>를 선언하여 <code>addEventListener</code> 인자로 준다.
 
     ```javascript
     function handleTitleClick() {
@@ -74,6 +74,15 @@
 
     title.addEventListener("click", handleTitleClick);
     ```
+
+<br/>
+
+- 참고로 다음과 같은 코드로도 이벤트를 listen하여 원하는 동작이 이루어지도록 할 수 있다.
+
+  ```javascript
+  title.onclick = handleTitleClick;
+  ```
+
 
 <br/>
 
@@ -108,9 +117,7 @@
     ```javascript
     const title = document.querySelector(".hello:first-child h1");
 
-    console.log(title);
     title.innerText = "Click Me!";
-    console.log(title);
 
     function handleTitleClick() {
         console.log("Title was clicked!");
@@ -118,28 +125,41 @@
     }
 
     title.addEventListener("click", handleTitleClick);
+    //title.onclick = handleTitleClick;
     ```
 
 <br/><br/>
 
 ## 이벤트 종류
 
-- listen하고 싶은 event를 찾는 한 가지 방법으로 <code>console.dir(element 이름);</code>을 통해 어떤 요소의 내부를 확인하면, 앞에 <code>on</code>이 붙은 다양한 <strong>event</strong> 요소들을 확인할 수 있다.
+- listen하고 싶은 event를 찾는 한 가지 방법으로 <code>console.dir(element 이름);</code>을 통해 어떤 요소의 내부를 확인하면,  
+
+  앞에 <code>on</code>이 붙은 다양한 <strong>event</strong> 요소들을 확인할 수 있다.
 
   <img src="img/console_dir2.png">
 
 <br/>
 
 - listen하고 싶은 event를 찾는 <strong>가장 좋은 방법</strong>은 mdn web docs 페이지에 찾아가서 확인하는 것이다.  
-👉 <a href="https://developer.mozilla.org/ko/docs/Web/Events">바로가기</a>
+
+  👉 <a href="https://developer.mozilla.org/ko/docs/Web/Events">바로가기</a>
 
 <br/>
 
 - 대표적인 event 예시 (노마드코더 강의에서 소개한)
 
-  - <code>click</code> : 마우스로 해당 요소를 클릭할 때
-  - <code>mouseenter</code> : 마우스를 해당 요소에 올렸을 때
-  - <code>mouseleave</code> : 마우스를 해당 요소에 올린 후 벗어날 때
+  - 마우스(mouse) 이벤트
+  
+    - <strong><code>click</code></strong> : 마우스로 해당 요소를 클릭할 때
+    - <strong><code>mouseenter</code></strong> : 마우스를 해당 요소에 올렸을 때
+    - <strong><code>mouseleave</code></strong> : 마우스를 해당 요소에 올린 후 벗어날 때
+
+  - 윈도우(window) 이벤트
+
+    - <strong><code>resize</code></strong> : 브라우저 창의 크기를 변경할 때
+    - <strong><code>copy</code></strong> : 사용자가 '복사' 행위를 했을 때
+    - <strong><code>offline</code></strong> : 인터넷 연결이 끊어졌을 때
+    - <strong><code>online</code></strong> : 인터넷이 연결되었을 때
 
 <br/>
 
@@ -149,6 +169,10 @@
   const title = document.querySelector(".hello:first-child h1");
 
   title.innerText = "Click Me!";
+
+  //const title = document.querySelector(".hello:first-child h1");
+
+  //title.innerText = "Click Me!";
 
   function handleTitleClick() {
     console.log("Title was clicked");
@@ -163,7 +187,32 @@
     title.innerText = "Mouse is gone";
   }
 
+  function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+  }
+
+  function handleWindowCopy() {
+    alert("You Copier");
+  }
+
+  function handleWindowOffline() {
+    alert("SOS no WIFI");
+  }
+
+  function handleWindowOnline() {
+    alert("ALL GOOOOD");
+  }
+
   title.addEventListener("click", handleTitleClick);
+  //title.onclick = handleTitleClick;
   title.addEventListener("mouseenter", handleMouseEnter);
+  //title.onmouseenter = handleMouseEnter;
   title.addEventListener("mouseleave", handleMouseLeave);
+  //title.onmouseleave = handleMouseLeave;
+
+  window.addEventListener("resize", handleWindowResize);
+  window.addEventListener("copy", handleWindowCopy);
+  window.addEventListener("offline", handleWindowOffline);
+  window.addEventListener("online", handleWindowOnline);
+
   ```
