@@ -256,9 +256,9 @@
 
 ## 이벤트 활용하기
 
-### 제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트
+### 제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트 만들기
 
-- 【방법 1】style 클래스에 직접 접근하는 방법 (JS만을 활용)
+- <strong>【방법 1】 style 클래스에 직접 접근하는 방법 (JS만을 활용)</strong>
 
   ```javascript
   const h1 = document.querySelector(".hello:first-child h1");
@@ -278,11 +278,11 @@
   h1.addEventListener("click", handleTitleClick);
   ```
 
-- 문제점 : JS는 애니메이션에 적합한 도구고, CSS는 style 작업에 적합한 도구다. JS에서 style 작업까지 다루는 것은 좋지 않다.
+- <strong>문제점</strong> : JS는 애니메이션에 적합한 도구고, CSS는 style 작업에 적합한 도구다. JS에서 style 작업까지 다루는 것은 좋지 않다.
 
 <br/>
 
-- 【방법 2】JS으로 클래스 이름을 HTML 요소에 추가하는 방법
+- <strong>【방법 2】 JS으로 클래스 이름을 HTML 요소에 추가하는 방법</strong>
 
   - style.css
 
@@ -313,11 +313,11 @@
     }
     ```
 
-- 문제점 : className으로 인해 기존 HTML 요소에 있던 클래스를 모두 잃을 수 있다.
+- <strong>문제점</strong> : className으로 인해 기존 HTML 요소에 있던 클래스를 모두 잃을 수 있다.
 
 <br/>
 
-- 【방법 3】JS의 classList를 활용하여 클래스 이름을 HTML 요소에 추가하는 방법
+- <strong>【방법 3】 JS의 classList를 활용하여 클래스 이름을 HTML 요소에 추가하는 방법</strong>
 
   - style.css
 
@@ -353,7 +353,7 @@
 
 <br/>
 
-- 【방법 4】JS classList의 toggle 함수를 활용하는 방법 (✨추천)
+- <strong>【방법 4】 JS classList의 toggle 함수를 활용하는 방법 (✨추천)</strong>
 
   - classList의 <code>toggle</code>함수는 class 이름이 요소에 존재하는지 확인한 후, <strong>해당 class 이름이 있으면 이를 제거하고, 없으면 추가한다.</strong>
 
