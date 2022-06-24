@@ -162,57 +162,154 @@
 
 - 코드 예시
 
-  ```javascript
-  const title = document.querySelector(".hello:first-child h1");
+  - index.html
 
-  title.innerText = "Click Me!";
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        ...
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Momentum App</title>
+      </head>
+      <body>
+        <div id="hi" class="hello">
+          <h1>Grab Me! 1</h1>
+        </div>
+        <div class="hello">
+          <h2>Grab Me! 2</h2>
+        </div>
+        <div class="hello">
+          <h3>Grab Me! 3</h3>
+        </div>
+        <script src="js/app.js"></script>
+      </body>
+    </html>
+    ```
 
-  //const title = document.querySelector(".hello:first-child h1");
+  - style.css
 
-  //title.innerText = "Click Me!";
+    ```css
+    body {
+      background-color: beige;
+    }
+    h1 {
+      color: cornflowerblue;
+      transition: color 0.5s ease-in-out;
+    }
+    ```
 
-  function handleTitleClick() {
-    console.log("Title was clicked");
-    title.style.color = "blue";
-  }
+  - app.js
 
-  function handleMouseEnter() {
-    title.innerText = "Mouse is here";
-  }
+    ```javascript
+    const title = document.querySelector(".hello:first-child h1");
 
-  function handleMouseLeave() {
-    title.innerText = "Mouse is gone";
-  }
+    title.innerText = "Click Me!";
 
-  function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
-  }
+    //const title = document.querySelector(".hello:first-child h1");
 
-  function handleWindowCopy() {
-    alert("You Copier");
-  }
+    //title.innerText = "Click Me!";
 
-  function handleWindowOffline() {
-    alert("SOS no WIFI");
-  }
+    function handleTitleClick() {
+      console.log("Title was clicked");
+      title.style.color = "blue";
+    }
 
-  function handleWindowOnline() {
-    alert("ALL GOOOOD");
-  }
+    function handleMouseEnter() {
+      title.innerText = "Mouse is here";
+    }
 
-  title.addEventListener("click", handleTitleClick);
-  //title.onclick = handleTitleClick;
-  title.addEventListener("mouseenter", handleMouseEnter);
-  //title.onmouseenter = handleMouseEnter;
-  title.addEventListener("mouseleave", handleMouseLeave);
-  //title.onmouseleave = handleMouseLeave;
+    function handleMouseLeave() {
+      title.innerText = "Mouse is gone";
+    }
 
-  window.addEventListener("resize", handleWindowResize);
-  window.addEventListener("copy", handleWindowCopy);
-  window.addEventListener("offline", handleWindowOffline);
-  window.addEventListener("online", handleWindowOnline);
-  ```
+    function handleWindowResize() {
+      document.body.style.backgroundColor = "tomato";
+    }
+
+    function handleWindowCopy() {
+      alert("You Copier");
+    }
+
+    function handleWindowOffline() {
+      alert("SOS no WIFI");
+    }
+
+    function handleWindowOnline() {
+      alert("ALL GOOOOD");
+    }
+
+    title.addEventListener("click", handleTitleClick);
+    //title.onclick = handleTitleClick;
+    title.addEventListener("mouseenter", handleMouseEnter);
+    //title.onmouseenter = handleMouseEnter;
+    title.addEventListener("mouseleave", handleMouseLeave);
+    //title.onmouseleave = handleMouseLeave;
+
+    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener("copy", handleWindowCopy);
+    window.addEventListener("offline", handleWindowOffline);
+    window.addEventListener("online", handleWindowOnline);
+    ```
 
 <br/><br/>
 
 ## 이벤트 활용하기
+
+### 제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트
+
+-【방법 1】tyle 클래스에 직접 접근하는 방법 (JS만을 활용)
+
+```javascript
+const h1 = document.querySelector(".hello:first-child h1");
+
+// 옵션 1
+function handleTitleClick() {
+  const currentColor = h1.style.color;
+  let newColor;
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
+
+- 문제점 : JS는 애니메이션에 적합한 도구고, CSS는 style 작업에 적합한 도구다. JS에서 style 작업까지 다루는 것은 좋지 않다.
+
+<br/>
+
+-【방법 2】JS으로 클래스 이름을 HTML 요소에 추가하는 방법 (JS와 CSS를 같이 활용)
+
+```javascript
+const h1 = document.querySelector(".hello:first-child h1");
+function handleTitleClick() {
+  const clickedClass = "active";
+  if (h1.className === clickedClass) {
+    h1.className = "";
+  } else {
+    h1.className = clickedClass;
+  }
+}
+```
+
+- 문제점 : className으로 인해 기존 HTML 요소에 있던 클래스를 모두 잃을 수 있다.
+
+<br/>
+
+-【방법 3】 (✨추천)
+
+- style.css
+
+```css
+
+```
+
+- app.js
+
+```javascript
+
+```
