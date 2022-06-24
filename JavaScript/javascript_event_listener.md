@@ -376,7 +376,7 @@
 
     ```javascript
     function handleTitleClick() {
-      // clicked 클래스를 한 번만 사용하기 때문에, 따로 변수를 선언해 줄 필요가 없다.
+      // clicked 클래스를 한 번만 사용하기 때문에, 따로 변수를 선언해 줄 필요는 없다.
       h1.classList.toggle(clicked);
     }
 
