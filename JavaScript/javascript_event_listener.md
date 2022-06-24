@@ -9,7 +9,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%84%9C%EB%A1%A0">서론</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A6%AC%EC%8A%A4%EB%84%88-event-listener">이벤트 리스너 (Event Listener)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%A2%85%EB%A5%98">이벤트 종류</a>
-- <a href="">이벤트 활용하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">이벤트 활용하기</a>
 
 <br/><br/>
 
@@ -258,58 +258,127 @@
 
 ### 제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트
 
--【방법 1】tyle 클래스에 직접 접근하는 방법 (JS만을 활용)
+- 【방법 1】style 클래스에 직접 접근하는 방법 (JS만을 활용)
 
-```javascript
-const h1 = document.querySelector(".hello:first-child h1");
+  ```javascript
+  const h1 = document.querySelector(".hello:first-child h1");
 
-// 옵션 1
-function handleTitleClick() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato";
-  } else {
-    newColor = "blue";
+  // 옵션 1
+  function handleTitleClick() {
+    const currentColor = h1.style.color;
+    let newColor;
+    if (currentColor === "blue") {
+      newColor = "tomato";
+    } else {
+      newColor = "blue";
+    }
+    h1.style.color = newColor;
   }
-  h1.style.color = newColor;
-}
 
-h1.addEventListener("click", handleTitleClick);
-```
+  h1.addEventListener("click", handleTitleClick);
+  ```
 
 - 문제점 : JS는 애니메이션에 적합한 도구고, CSS는 style 작업에 적합한 도구다. JS에서 style 작업까지 다루는 것은 좋지 않다.
 
 <br/>
 
--【방법 2】JS으로 클래스 이름을 HTML 요소에 추가하는 방법 (JS와 CSS를 같이 활용)
+- 【방법 2】JS으로 클래스 이름을 HTML 요소에 추가하는 방법
 
-```javascript
-const h1 = document.querySelector(".hello:first-child h1");
-function handleTitleClick() {
-  const clickedClass = "active";
-  if (h1.className === clickedClass) {
-    h1.className = "";
-  } else {
-    h1.className = clickedClass;
-  }
-}
-```
+  - style.css
+
+    ```css
+    body {
+      background-color: beige;
+    }
+    h1 {
+      color: cornflowerblue;
+      transition: color 0.5s ease-in-out;
+    }
+    .clicked {
+      color: tomato;
+    }
+    ```
+
+  - app.js
+
+    ```javascript
+    const h1 = document.querySelector(".hello:first-child h1");
+    function handleTitleClick() {
+      const clickedClass = "clicked";
+      if (h1.className === clickedClass) {
+        h1.className = "";
+      } else {
+        h1.className = clickedClass;
+      }
+    }
+    ```
 
 - 문제점 : className으로 인해 기존 HTML 요소에 있던 클래스를 모두 잃을 수 있다.
 
 <br/>
 
--【방법 3】 (✨추천)
+- 【방법 3】JS의 classList를 활용하여 클래스 이름을 HTML 요소에 추가하는 방법
 
-- style.css
+  - style.css
 
-```css
+    ```css
+    body {
+      background-color: beige;
+    }
+    h1 {
+      color: cornflowerblue;
+      transition: color 0.5s ease-in-out;
+    }
+    .clicked {
+      color: tomato;
+    }
+    ```
 
-```
+  - app.js
 
-- app.js
+    ```javascript
+    const h1 = document.querySelector(".hello:first-child h1");
 
-```javascript
+    function handleTitleClick() {
+      const clickedClass = "clicked";
+      if (h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass);
+      } else {
+        h1.classList.add(clickedClass);
+      }
+    }
 
-```
+    h1.addEventListener("click", handleTitleClick);
+    ```
+
+<br/>
+
+- 【방법 4】JS classList의 toggle 함수를 활용하는 방법 (✨추천)
+
+  - classList의 <code>toggle</code>함수는 class 이름이 요소에 존재하는지 확인한 후, <strong>해당 class 이름이 있으면 이를 제거하고, 없으면 추가한다.</strong>
+
+  - style.css
+
+    ```css
+    body {
+      background-color: beige;
+    }
+    h1 {
+      color: cornflowerblue;
+      transition: color 0.5s ease-in-out;
+    }
+    .clicked {
+      color: tomato;
+    }
+    ```
+
+  - app.js
+
+    ```javascript
+    function handleTitleClick() {
+      // clicked 클래스를 한 번만 사용하기 때문에, 따로 변수를 선언해 줄 필요가 없다.
+      h1.classList.toggle(clicked);
+    }
+
+    h1.addEventListener("click", handleTitleClick);
+    ```
