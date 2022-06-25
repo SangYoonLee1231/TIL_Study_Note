@@ -9,9 +9,9 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%EC%84%9C-txt-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%82%B4%EB%B6%80-%EA%B3%BC%EC%A0%95">시스템에서 txt 파일을 처리하는 내부 과정</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%8C%8C%EC%9D%BC-stream-file-%EC%83%9D%EC%84%B1">스트림 파일 (stream file) 생성</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#fopen-%ED%95%A8%EC%88%98-fclose-%ED%95%A8%EC%88%98"><code>fopen</code> 함수, <code>fclose</code> 함수</a>
-- <a href="">다양한 입출력 함수</a>
-- <a href="">기본 개방 스트림 파일</a>
-- <a href="">버퍼 공유 문제와 <code>fflush</code> 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EB%8B%A4%EC%96%91%ED%95%9C-%EC%9E%85%EC%B6%9C%EB%A0%A5-%ED%95%A8%EC%88%98">다양한 입출력 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%B0%A9-%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%8C%8C%EC%9D%BC">기본 개방 스트림 파일</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EB%B2%84%ED%8D%BC-%EA%B3%B5%EC%9C%A0-%EB%AC%B8%EC%A0%9C%EC%99%80-fflush-%ED%95%A8%EC%88%98">버퍼 공유 문제와 <code>fflush</code> 함수</a>
 
 <br/><br/>
 

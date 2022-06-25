@@ -1,4 +1,4 @@
-# JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환
+# JavaScript 기본 2 - 변수와 자료형, 상호작용(<code>alert</code>, <code>prompt</code>, <code>confirm</code>), 형 변환
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
