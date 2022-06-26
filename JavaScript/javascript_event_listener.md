@@ -10,6 +10,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A6%AC%EC%8A%A4%EB%84%88-event-listener">이벤트 리스너 (Event Listener)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%A2%85%EB%A5%98">이벤트 종류</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">이벤트 활용하기</a>
+- <a href="">제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트 만들기</a>
+- <a href="">이벤트 리스너의 첫 인자(event)를 통해 이벤트의 기본 동작 막기</a>
 
 <br/><br/>
 
@@ -382,3 +384,63 @@
 
     h1.addEventListener("click", handleTitleClick);
     ```
+
+<br/><br/>
+
+### 이벤트 리스너의 첫 인자(event)를 통해 이벤트의 기본 동작 막기
+
+- 모든 EventListener 함수의 <strong>첫 번째 인수</strong>는 항상 <strong>방금 일어난 이벤트에 대한 정보</strong>를 담고 있다.
+
+- <code>event.preventDefault()</code> 이 코드를 통해 실행된 함수 <code>preventDefault</code>는 어떤 이벤트의 기본 행동이 발생하지 않도록 막는다.
+
+  - 기본 행동 : 어떤 함수에 대해 브라우저가 기본적으로 수행하는 동작
+
+- index.html
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      ...
+    </head>
+    <body>
+      <form id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <button>Log In</button>
+      </form>
+      <a href="https://nomadcoders.co">Go to courses</a>
+      <script src="js/app.js" defer></script>
+    </body>
+  </html>
+  ```
+
+- app.js
+
+  ```javascript
+  const loginForm = document.querySelector("#login-form");
+
+  const link = document.querySelector("a");
+
+  function onLoginSubmit(event) {
+    event.preventDefault(); // 기본 동작인 submit이 되지 않음
+    console.log(event);
+  }
+
+  function handleLinkClick(event) {
+    event.preventDefault(); // 기본 동작인 다른 페이지로 이동이 되지 않음
+    console.log(event);
+  }
+
+  loginForm.addEventListener("submit", onLoginSubmit);
+  link.addEventListener("click", handleLinkClick);
+  ```
+
+- 이벤트의 기본 행동
+
+  - <code>form</code> : submit
+  - <code>a(링크)</code> : 클릭 시 다른 페이지로 이동
