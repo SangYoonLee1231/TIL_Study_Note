@@ -74,7 +74,7 @@
 
 ### 모바일에서 가로 모드 / 세로 모드에 따라 다른 CSS 적용시키기
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/smartphone_portrait_vs_landscape_orientation.png" img="600">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/smartphone_portrait_vs_landscape_orientation.png" width="700">
 
 - home.html
 
