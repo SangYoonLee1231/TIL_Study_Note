@@ -67,6 +67,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md">CSS - 미디어 쿼리 (Media Query)</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
 
 ### ◻ JavaScript
 
@@ -130,6 +131,10 @@
 <br/>
 
 ## 📌 Etc.
+
+### ◻ 깃 (Git)
+
+- 🧩 <a href="">Git - 조각 지식 모음</a>
 
 ### ◻ 아두이노 (Arduino)
 
