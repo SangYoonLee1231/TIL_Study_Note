@@ -6,10 +6,10 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md#%EB%AF%B8%EB%94%94%EC%96%B4-%EC%BF%BC%EB%A6%AC-media-query">미디어 쿼리 (Media Query)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md#%ED%99%94%EB%A9%B4-%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%9D%98-%ED%81%AC%EA%B8%B0%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-css-%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EA%B8%B0">화면 스크린의 크기에 따라 다른 CSS 적용시키기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md#%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%97%90%EC%84%9C-%EA%B0%80%EB%A1%9C-%EB%AA%A8%EB%93%9C--%EC%84%B8%EB%A1%9C-%EB%AA%A8%EB%93%9C%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-css-%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EA%B8%B0">모바일에서 가로 모드 / 세로 모드에 따라 다른 CSS 적용시키기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md#%EA%B7%B8-%EC%99%B8-media-queries-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5">그 외 Media Queries 주요 기능</a>
 
 <br/><br/>
 
@@ -74,7 +74,7 @@
 
 ### 모바일에서 가로 모드 / 세로 모드에 따라 다른 CSS 적용시키기
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/smartphone_portrait_vs_landscape_orientation.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/smartphone_portrait_vs_landscape_orientation.png" img="700">
 
 - home.html
 
