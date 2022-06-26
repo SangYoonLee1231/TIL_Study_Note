@@ -134,7 +134,7 @@
 
 ### ◻ 깃 (Git)
 
-- 🧩 <a href="">Git - 조각 지식 모음</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md">Git - 조각 지식 모음</a>
 
 ### ◻ 아두이노 (Arduino)
 
