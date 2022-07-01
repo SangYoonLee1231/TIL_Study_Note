@@ -81,6 +81,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript를 통해 HTML 요소에 접근하고 읽기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md">JavaScript - 이벤트 리스너 (Event Listener)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
 
 <br/>
