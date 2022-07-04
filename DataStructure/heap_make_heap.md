@@ -62,7 +62,7 @@
       # k : 대상 index    # n : 원소 개수
       while A[k] != leaf node:
           L, R = 2*k + 1, 2*k + 2
-          m = index(A[k], A[L], A[R])  # (A[k], A[L], A[R]) 이 3개 중 최댓값 index가 m에 할당
+          m = max(A[k], A[L], A[R])  # (A[k], A[L], A[R]) 이 3개 중 최댓값 index가 m에 할당
           if k != m:
               # 촤댓값 index가 자식 node일 경우 → 자리 교환
               A[k], A[m] = A[m], A[k]

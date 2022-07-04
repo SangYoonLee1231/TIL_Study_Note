@@ -66,6 +66,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_color_variable.md">CSS - 색상 체계, 사용자 지정 CSS 속성 (변수)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md">CSS - 미디어 쿼리 (Media Query)</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
 
 ### ◻ JavaScript
 
@@ -78,6 +80,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md">JavaScript 기본 6 - nullish 병합 연산자 <code>??</code>, 반복문 (<code>for</code>, <code>while</code>)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript를 통해 HTML 요소에 접근하고 읽기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md">JavaScript - 이벤트 리스너 (Event Listener)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
 
 <br/>
@@ -129,6 +133,10 @@
 <br/>
 
 ## 📌 Etc.
+
+### ◻ 깃 (Git)
+
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md">Git - 조각 지식 모음</a>
 
 ### ◻ 아두이노 (Arduino)
 

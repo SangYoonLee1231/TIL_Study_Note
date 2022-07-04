@@ -9,11 +9,9 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%EC%84%9C-txt-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%82%B4%EB%B6%80-%EA%B3%BC%EC%A0%95">시스템에서 txt 파일을 처리하는 내부 과정</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%8C%8C%EC%9D%BC-stream-file-%EC%83%9D%EC%84%B1">스트림 파일 (stream file) 생성</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#fopen-%ED%95%A8%EC%88%98-fclose-%ED%95%A8%EC%88%98"><code>fopen</code> 함수, <code>fclose</code> 함수</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EB%8B%A4%EC%96%91%ED%95%9C-%EC%9E%85%EC%B6%9C%EB%A0%A5-%ED%95%A8%EC%88%98">다양한 입출력 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%B0%A9-%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%8C%8C%EC%9D%BC">기본 개방 스트림 파일</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EB%B2%84%ED%8D%BC-%EA%B3%B5%EC%9C%A0-%EB%AC%B8%EC%A0%9C%EC%99%80-fflush-%ED%95%A8%EC%88%98">버퍼 공유 문제와 <code>fflush</code> 함수</a>
 
 <br/><br/>
 
@@ -60,6 +58,22 @@
   fopen("파일 이름", "개방 모드");
   ```
 
+  - <strong>개방 모드</strong>
+
+    - <code>r</code> : (하드디스크에서 데이터를) <strong>읽기</strong> (read mode)
+
+    - <code>w</code> : (하드디스크에 데이터를) <strong>쓰기</strong> (write mode)
+
+    - <code>a</code> : (하드디스크의 데이터에) <strong>덧붙이기</strong> (append mode)
+
+    - <code>rt</code>, <code>wt</code>, <code>at</code> : 텍스트(text) 모드 (r, w, a도 텍스트 모드이다.)
+
+    - <code>rb</code>, <code>wb</code>, <code>ab</code> : 바이너리(binary) 모드
+
+    - <code>r+</code>, <code>w+</code> : 읽기 + 쓰기
+
+    - <code>a+</code> : 데이터 붙여넣기 + 읽기
+
 <br/>
 
 - fopen 함수는 개방하고자 하는 파일 구조체 변수의 시작 주솟값을 반환한다.
@@ -91,24 +105,62 @@
 
 - fopen 함수로 파일을 개방했으면, 모든 작업을 종료하고 <strong>반드시 <code>fclose</code> 함수를 통해 파일을 닫아주어야 한다.</strong>
 
-- <strong><code>fclose</code></strong> 함수는 메모리에 있는 fp관련 모든 데이처를 제거해주는 함수이다.
-
-<br/><br/>
-
-### 개방모드
-
-<br/><br/>
-
-## 기본 개방 스트림 파일
+- <strong><code>fclose</code></strong> 함수는 메모리에 있는 fp관련 모든 데이터를 제거해주는 함수이다.
 
 <br/><br/>
 
 ## 다양한 입출력 함수
 
+- <code>fscanf</code>, <code>fprintf</code> 함수
+
+  - 형식에 맞춰 파일 입/출력하는 함수
+
+  ```c
+
+  ```
+
+<br/>
+
+- <code>fputc</code>, <code>fgetc</code> 함수
+
+  - 파일에 하나의 문자를 입력 혹은 출력하는 함수
+
+  ```c
+
+  ```
+
+<br/>
+
+- <code>fputs</code>, <code>fgets</code> 함수
+
+  - 파일에 한 줄을 입력 혹은 출력하는 함수
+
+  ```c
+
+  ```
+
+<br/>
+
+- <code>fread</code>, <code>fwrite</code> 함수
+
+  - 파일에 데이터를 변환 없이 그대로 입력 혹은 출력하는 함수
+
+  ```c
+
+  ```
+
+<br/><br/>
+
+## 기본 개방 스트림 파일
+
+- 프로그램이 최초로 실행될 때 운영체제가 기본적으로 open하는 3개의 파일
+
+  - <code>stdin</code>, <code>stdout</code>, <code>stderr</code>
+
 <br/><br/>
 
 ## 버퍼 공유 문제와 <code>fflush</code> 함수
 
-<br/><br/>
+```c
 
-## <code>fread</code>, <code>fwrite</code> 함수
+```
