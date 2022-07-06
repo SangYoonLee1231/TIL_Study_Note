@@ -11,10 +11,10 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#setinterval-%ED%95%A8%EC%88%98"><code>setInterval</code> 함수</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#settimeout-%ED%95%A8%EC%88%98"><code>setTimeout</code> 함수</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#date-%EA%B0%9D%EC%B2%B4"></a>
-    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-date-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EB%82%B4%EC%9E%A5-%ED%95%A8%EC%88%98"></a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%99%9C%EC%9A%A9"></a> 
-    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%A0%84%EC%9E%90-%EC%8B%9C%EA%B3%84-%EB%A7%8C%EB%93%A4%EA%B8%B0"></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#date-%EA%B0%9D%EC%B2%B4"><code>Date</code> 객체</a>
+    - <a href="">대표적인 <code>Date</code> 객체의 내장 함수</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%99%9C%EC%9A%A9">활용</a> 
+    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%A0%84%EC%9E%90-%EC%8B%9C%EA%B3%84-%EB%A7%8C%EB%93%A4%EA%B8%B0">현재 시간을 실시간으로 알려주는 전자 시계 만들기</a>
 
 
 <br/><br/>
@@ -81,7 +81,7 @@
 
 <br/>
 
-### 대표적인 Date 객체의 내장 함수
+### 대표적인 <code>Date</code> 객체의 내장 함수
 
 - <code>new Date().getFullYear()</code> : 현재 년도를 반환
 
