@@ -8,8 +8,8 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0---font-awesome">폰트 삽입하기 - Font Awesome</a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0---font-awesome">아이콘 삽입하기 - <a href="https://fontawesome.com/">Font Awesome</a></a>
+- <a href="">HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
@@ -47,3 +47,8 @@
 
 <br/><br/>
 
+### HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기
+
+- head 태그 내부에 <code>link:css</code>라 직성하면 된다.
+
+<br/><br/>
