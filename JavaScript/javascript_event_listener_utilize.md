@@ -6,8 +6,9 @@
 
 ### 목차
 
-- <a href="">제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트 만들기</a>
-- <a href="">이벤트 리스너의 첫 인자(event)를 통해 이벤트의 기본 동작 막기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md#%EC%A0%9C%EB%AA%A9%EC%9D%84-%ED%81%B4%EB%A6%AD%ED%95%A0-%EB%95%8C%EB%A7%88%EB%8B%A4-2%EA%B0%9C%EC%9D%98-%EA%B8%80%EC%94%A8-%EC%83%89%EC%9D%B4-%EB%B2%88%EA%B0%88%EC%95%84%EA%B0%80%EB%A9%B0-%EB%B0%94%EB%80%8C%EB%8A%94-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">제목을 클릭할 때마다 2개의 글씨 색이 번갈아가며 바뀌는 이벤트 만들기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A6%AC%EC%8A%A4%EB%84%88%EC%9D%98-%EC%B2%AB-%EC%9D%B8%EC%9E%90event%EB%A5%BC-%ED%86%B5%ED%95%B4-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EB%8F%99%EC%9E%91-%EB%A7%89%EA%B8%B0">이벤트 리스너의 첫 인자(event)를 통해 이벤트의 기본 동작 막기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md#input-%EA%B3%B5%EA%B0%84%EC%97%90-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%9E%85%EB%A0%A5-%ED%9B%84-sumbit%EC%8B%9C-form-%EC%9A%94%EC%86%8C%EA%B0%80-%EC%82%AC%EB%9D%BC%EC%A7%80%EA%B3%A0-%EC%9E%85%EB%A0%A5%ED%95%9C-%EC%9D%B4%EB%A6%84%EC%9D%B4-%ED%99%94%EB%A9%B4%EC%97%90-%EC%B6%9C%EB%A0%A5%EB%90%98%EB%8F%84%EB%A1%9D-%ED%95%98%EA%B8%B0">input 공간에 이름을 입력 후 sumbit시, form 요소가 사라지고 입력한 이름이 화면에 출력되도록 하기</a>
 
 <br/><br/>
 
@@ -210,9 +211,11 @@
   }
   ```
 
-- 우선 h1 요소에 hidden class를 추가하여 화면에서 가려준다.
+<br/>
 
-- 그리고 sumbit시, form 요소에 hidden class를 추가하고, 반대로 h1 요소의 hidden class를 제거한다.
+- 우선 h1 요소에 <code>hidden</code> class를 추가하여 화면에서 가려준다.
+
+- 그리고 sumbit시, form 요소에 <code>hidden</code> class를 추가하고, 반대로 h1 요소의 <code>hidden</code> class를 제거한다.
 
 <br/>
 
