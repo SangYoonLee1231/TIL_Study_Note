@@ -9,11 +9,13 @@
 
 ### 목차
 
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#setinterval-%ED%95%A8%EC%88%98"><code>setInterval</code> 함수</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#settimeout-%ED%95%A8%EC%88%98"><code>setTimeout</code> 함수</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#date-%EA%B0%9D%EC%B2%B4"></a>
+    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-date-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EB%82%B4%EC%9E%A5-%ED%95%A8%EC%88%98"></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%99%9C%EC%9A%A9"></a> 
+    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%A0%84%EC%9E%90-%EC%8B%9C%EA%B3%84-%EB%A7%8C%EB%93%A4%EA%B8%B0"></a>
+
 
 <br/><br/>
 
@@ -101,7 +103,7 @@
 
 ### 현재 시간을 실시간으로 알려주는 전자 시계 만들기
 
-- Step 1 > <code>Date</code>객체와 <code>setInterval()</code>함수를 활용하여 기능 구현하기
+- <strong>Step 1</strong> > <code>Date</code>객체와 <code>setInterval()</code>함수를 활용하여 기능 구현하기
 
     - index.html
 
@@ -142,11 +144,13 @@
 
 <br/>
 
-- Step 2 > <code>padStart()</code> 함수를 추가하여 자리 수 맞추기 (Step 1 문제점 해결)
+- <strong>Step 2</strong> > <code>padStart()</code> 함수를 추가하여 자리 수 맞추기 (Step 1 문제점 해결)
 
     - <code>padStart()</code> 함수 : 문자열 앞에 새 문자열을 삽입하여, 문자열을 원하는 길이로 만드는 함수
 
         - <code>"문자열".padStart(원하는 문자열 길이, "짧을 경우 앞에 삽입할 문자열")</code>
+
+        <br/>
 
         ```javascript
         "1".padStart(2, "0");
@@ -154,8 +158,6 @@
         ```
         "01"
         ```
-
-        <br/>
 
         ```javascript
         "12".padStart(2, "0");
@@ -166,7 +168,7 @@
 
     <br/>
 
-    - 코드
+    - <strong>코드</strong>
 
     - index.html
 
