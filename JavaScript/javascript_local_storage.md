@@ -1,4 +1,4 @@
-## JavaScript - 로컬 스토리지 (Local Storage)
+# JavaScript - 로컬 스토리지 (Local Storage)
 
 > 참고 자료 : <a href="https://nomadcoders.co/javascript-for-beginners">노마드 코더 - 바닐라 JS로 크롬 앱 만들기</a>
 

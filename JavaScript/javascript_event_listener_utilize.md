@@ -1,4 +1,4 @@
-## JavaScript - 이벤트 활용하기
+# JavaScript - 이벤트 활용하기
 
 > 참고 자료 : <a href="https://nomadcoders.co/javascript-for-beginners">노마드 코더 - 바닐라 JS로 크롬 앱 만들기</a>
 

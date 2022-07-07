@@ -1,4 +1,4 @@
-## JavaScript - 조각 지식 모음
+# JavaScript - 조각 지식 모음
 
 <br/>
 

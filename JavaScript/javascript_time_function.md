@@ -1,4 +1,4 @@
-## JavaScript - 시간과 관련된 함수 및 객체     
+# JavaScript - 시간과 관련된 함수 및 객체     
 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)
 
 <br/>
