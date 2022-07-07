@@ -76,6 +76,8 @@ div {
   브라우저가 기본적으로 부여한 style 속성  
   ex) <code>body { margin : 8px; }</code>
 
+  - 이를 없에려면 <strong><a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#reset-css">Reset CSS</a></strong>를 적용해주면 된다.
+
 * <strong>Collasping Margins</strong> :  
 
   box 요소의 경계가 부모 box 요소의 경계와 일치하면, 이 두 <code>margin</code>이 하나로 취급되는 현상

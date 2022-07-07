@@ -24,8 +24,6 @@
     - 직접 이미지 아이콘 추가
     - SVG (픽셀이 없는 이미지 파일 형식)
 
-<br/>
-
 - 아이콘 모음 사이트 추천
 
     - <a href="https://heroicons.dev/">Heroicons [Heroicons - Free Open Source SVG Icon Library]</a>
@@ -113,3 +111,27 @@
         border-spacing: 0;
     }
     ```
+
+<br/><br/>
+
+### CSS 변수 선언 및 사용
+
+- variables.css (변수 선언)
+
+    ```css
+    :root {
+        --yellow: #FAE100;
+    }
+    ```
+
+- styles.css (변수 사용)
+
+    ```css
+    @import "variables.css";
+
+    body {
+        color: var(--yellow);
+    }
+    ```
+
+- variables.css 파일을 반드시 import 해주어야 하는 것을 잊지 말자.
