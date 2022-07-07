@@ -6,8 +6,8 @@
 
 ### 목차
 
-  - <a href="">객체 생성 및 사용법</a>
-  - <a href="">함수를 객체 내에 선언 및 사용하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_how_to_create_and_use_object.md#%EA%B0%9D%EC%B2%B4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EC%82%AC%EC%9A%A9%EB%B2%95">객체 생성 및 사용법</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_how_to_create_and_use_object.md#%ED%95%A8%EC%88%98%EB%A5%BC-%EA%B0%9D%EC%B2%B4-%EB%82%B4%EC%97%90-%EC%84%A0%EC%96%B8-%EB%B0%8F-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">함수를 객체 내에 선언 및 사용하기</a>
 
 <br/><br/>
 
