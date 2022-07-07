@@ -108,6 +108,12 @@
 - <code>form</code> 내부에서, <code>input</code> 안에 있는 버튼을 누르거나, <code>type="submit"</code>인 input을 클릭하거나, 엔터를 누르면 (<code>input</code>이 더 이상 존재X)  
   작성된 form이 자동으로 submit되고, 웹페이지는 새로고침 된다.
 
+- form 속성
+
+  - <code>action</code> : form 제출 시, 어떤 html 파일로 데이터를 보낼 지를 지정하는 것
+  - <code>method</code> : form의 데이터를 보내는 방식. GET 방식 또는 POST 방식이 있음.  
+    (GET 방식은 URL, POST 방식은 서버에 전송하는 방식)
+
 <br/>
 
 ### 기타 태그

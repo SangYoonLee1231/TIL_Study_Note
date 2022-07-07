@@ -135,3 +135,23 @@
     ```
 
 - variables.css 파일을 반드시 import 해주어야 하는 것을 잊지 말자.
+
+<br/><br/>
+
+### not 속성 (부정 CSS 가상 클래스)
+
+- 특정 선택자가 없을 때에 대한 스타일 처리를 하고자 할 때 사용한다.
+
+- <code>:not()</code> 형태로 쓰는 가상 클래스 개념이다.
+
+- <code>:not(X)</code> 은 임의 요소 X가 아닌 모든 요소와 일치한다.
+
+<br/>
+
+- 사용 예시
+
+    ```css
+    .login-form input:not([type="submit"]) {
+        ...
+    }
+    ```
