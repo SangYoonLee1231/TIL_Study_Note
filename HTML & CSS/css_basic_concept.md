@@ -14,7 +14,7 @@
 
   ☞ 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
 
-<br/>
+<br/><br/>
 
 ## HTML 파일에 CSS를 추가하는 방법
 
@@ -22,13 +22,13 @@
 
    (<code>\<style></code>태그는 <code>\<head></code>태그 사이에 작성한다.)
 
-```html
-<head>
-    <style>
-        /* 이 곳에 CSS 코드를 작성 */
-    </style>
-</head>
-```
+    ```html
+    <head>
+        <style>
+            /* 이 곳에 CSS 코드를 작성 */
+        </style>
+    </head>
+    ```
 
 <br/>
 
@@ -36,14 +36,30 @@
 
    (더 좋은 방법)
 
-```html
-/* link 태그 속성 작성법 */
-<head>
-    <link href="styles.css (css 파일 이름)" rel="stylesheet" />
-</head>
-```
+    ```html
+    /* link 태그 속성 작성법 */
+    <head>
+        <link href="styles.css (css 파일 이름)" rel="stylesheet" />
+    </head>
+    ```
+
+<br/><br/>
+
+## CSS 파일에 CSS를 추가하는 방법
+
+- <code>import</code>를 이용한다.
+
+    - style.css
+
+    ```css
+    @import "reset.css";
+    ```
 
 <br/>
+
+- CSS 파일에 CSS를 추가하는 것이 HTML 파일에 CSS를 추가하는 것보다 더 낫다.
+
+<br/><br/>
 
 ## CSS 기본 문법
 
@@ -51,15 +67,15 @@
 
     : <strong>선택자(Selector), 속성 (속성이름, 속성값)</strong>
 
-```
- ↙ 선택자 (Selector)
-h1 {
-    font-style: italic;
-        ↑          ↑
-     속성 이름   속성 값
-    (Property)  (Value)
-}
-```
+    ```
+    ↙ 선택자 (Selector)
+    h1 {
+        font-style: italic;
+            ↑          ↑
+        속성 이름   속성 값
+        (Property)  (Value)
+    }
+    ```
 
 * 속성 이름은 띄어쓰기를 해선 안 된다. (font-style처럼 '-'를 이용하여 띄어쓰기 표시)
 
@@ -69,8 +85,7 @@ h1 {
 
 * 역시 모든 속성을 외우려 하지 말고 모르면 구글링하면 된다는 마인드로.
 
-<br/>
-<br/>
+<br/><br/>
 
 > 참고1 : 선택자 <code>*</code>는 모든 요소를 가리킨다.
 ```css
