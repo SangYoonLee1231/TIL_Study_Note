@@ -23,7 +23,8 @@
 
 - 크롬 콘솔창에서 작업 시 줄 바꿈을 하려면, <strong>[Shift] + [Enter]</strong> 두 키를 동시에 누르면 된다.
 
-<br/>
+<br/><br/>
+
 
 ### 템플릿 리터럴 (Template Literal) - 백틱을 사용하는 문자열 표기법
 
@@ -43,3 +44,30 @@
   console.log(`first line
   second line`);
   ```
+
+<br/><br/>
+
+### Math 모듈 - Random 기능
+
+- <strong>0부터 9까지 중 무작위로 숫자 뽑기</strong>
+
+  - <code>Math.random()</code> 코드를 활용한다.
+
+    - 0과 1사이 임의의 소수를 무작위로 반환해주는 코드
+
+  <br/>
+
+  - <code>Math.random()</code>을 통해 임의로 반환된 소수에 <strong>10을 곱한후 정수로 변환</strong>하여 소수점을 버린다.
+
+    ```javascript
+    const num = Math.random() * 10;
+
+    /* [방법1] ceil : 올림 */
+    const ans = Math.ceil(num) - 1;
+
+    /* [방법2] floor : 버림 */
+    const ans = Math.floor(num);
+
+    /* [방법3] round : 반올림 */
+    const ans = Math.round(num - 0.5);
+    ```

@@ -15,6 +15,8 @@
 
 - 객체(Object)는 속성(property)를 가진 데이터를 저장하는 역할을 한다.
 
+- 객체를 생성할 땐 <strong>중괄호<code>{}</code></strong>를 사용한다.
+
     ```javascript
     const player = {
        name: tomato,
@@ -89,3 +91,7 @@
 
     object.sayHello("SYL");
     ```
+
+<br/>
+
+- 이렇게 객체 내부에 선언한 함수를 <strong>메서드</strong>라 한다.
