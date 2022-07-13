@@ -4,10 +4,11 @@
 
 ### 목차
 
-- <a href="">터미널 명령어 모음</a>
-  - <a href="">Window</a>
-- <a href="">깃 명령어 모음</a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md#%ED%84%B0%EB%AF%B8%EB%84%90-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D%8C">터미널 명령어 모음</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md#window">Window</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md#windows-%EC%BB%A4%EB%A7%A8%EB%93%9C-vs-mac-os-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%B9%84%EA%B5%90">Windows 커맨드 vs Mac OS 터미널 명령어 비교</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md#%EA%B9%83-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D%8C">깃 명령어 모음</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md#%EA%B9%83-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%84%A4%EC%A0%95">깃 단축키 설정</a>
 - <a href=""></a>
 
 <br/><br/>
