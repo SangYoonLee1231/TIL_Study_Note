@@ -56,6 +56,77 @@
 
 - <code>exit</code> : 재 명령 프롬프트 창 종료
 
+<br/>
+
+### Windows 커맨드 vs Mac OS 터미널 명령어 비교
+
+<table>
+    <thead>
+        <tr>
+            <th>명령어</th>
+            <th>Windows CMD</th>
+            <th>Max OS Terminal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>현재 디렉토리</th>
+            <th>cd</th>
+            <th>pwd</th>
+        </tr>
+        <tr>
+            <th>현재 디렉토리 파일 리스트 보기</th>
+            <th>dir</th>
+            <th>ls</th>
+        </tr>
+        <tr>
+            <th>디렉토리 이동</th>
+            <th>cd</th>
+            <th>cd</th>
+        </tr>
+        <tr>
+            <th>디렉토리 생성</th>
+            <th>md, mkdir</th>
+            <th>mkdir</th>
+        </tr>
+        <tr>
+            <th>디렉토리 삭제</th>
+            <th>rm, rmdir</th>
+            <th>rmdir</th>
+        </tr>
+        <tr>
+            <th>화면 클리어</th>
+            <th>cls</th>
+            <th>clear</th>
+        </tr>
+        <tr>
+            <th>null 파일 생성</th>
+            <th>type NUL></th>
+            <th>touch</th>
+        </tr>
+        <tr>
+            <th>파일삭제</th>
+            <th>del</th>
+            <th>rm</th>
+        </tr>
+        <tr>
+            <th>파일이동</th>
+            <th>move</th>
+            <th>mv</th>
+        </tr>
+        <tr>
+            <th>파일/디렉토리 이름 바꾸기</th>
+            <th>ren, rename</th>
+            <th>mv</th>
+        </tr>
+        <tr>
+            <th>Explorer / Finder에서 열기</th>
+            <th>start</th>
+            <th>open</th>
+        </tr>
+    </tbody>
+</table>
+
 <br/><br>
 
 ## 깃 명령어 모음
@@ -65,6 +136,10 @@
 - git commit
 
 - git add -option
+
+### 깃 단축키 설정
+
+- git config --global alias.st status : git의 status 명령어로 st로 줄여쓰기 허용
 
 <br/>
 
