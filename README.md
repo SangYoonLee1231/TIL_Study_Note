@@ -79,7 +79,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md">JavaScript 기본 4 - 비교 연산자</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md">JavaScript 기본 5 - 조건문 (<code>if</code>, <code>else</code>, <code>switch</code>), 논리 연산자</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md">JavaScript 기본 6 - nullish 병합 연산자 <code>??</code>, 반복문 (<code>for</code>, <code>while</code>)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript를 통해 HTML 요소에 접근하고 읽기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_how_to_create_and_use_object.md">JavaScript - 객체 생성 및 사용법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md">JavaScript - 이벤트 리스너 (Event Listener)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>

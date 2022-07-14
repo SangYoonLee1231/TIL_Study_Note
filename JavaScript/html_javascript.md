@@ -1,4 +1,4 @@
-# JavaScript를 통해 HTML 요소에 접근하고 읽기
+# JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기
 
 > 참고 자료 : <a href="https://nomadcoders.co/javascript-for-beginners">노마드 코더 - 바닐라 JS로 크롬 앱 만들기</a>
 
@@ -8,6 +8,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#document-%EA%B0%9D%EC%B2%B4object">Document 객체(Object)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EC%97%90%EC%84%9C-html-%EC%9A%94%EC%86%8C%EC%97%90-%EC%A0%91%EA%B7%BC%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">JS에서 HTML 요소에 접근하는 다양한 방법</a>
+- <a href="">JS를 통해 HTML 요소 생성하여 HTML 파일에 삽입하기</a>
 
 <br/><br/>
 
@@ -107,3 +108,27 @@
     title3.innerText = "Hello";
     console.log(title3); // <h1>Hello</h1>
     ```
+
+<br/><br/>
+
+## JS를 통해 HTML 요소 생성하여 HTML 파일에 삽입하기
+
+- document 객체의 내장 함수인 <code>createElement</code> 함수를 사용한다.
+
+- Step 1 > JS 통해 HTML 요소 생성하기
+
+  ```javascript
+  const li = document.createElement("li");
+  const span = document.createElement("span");
+  
+  li.appendChild(span);
+
+  span.innerText = "Hello World";
+  ```
+
+- Step 2 > 생성한 요소 HTML 파일에 삽압하기
+
+  ```javascript
+  const element = document.querySelector("ul");
+  element.appendChild(li);
+  ```
