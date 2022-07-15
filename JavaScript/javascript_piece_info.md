@@ -57,7 +57,7 @@
 
   <br/>
 
-  - <code>Math.random()</code>을 통해 임의로 반환된 소수에 <strong>10을 곱한후 정수로 변환</strong>하여 소수점을 버린다.
+  - <code>Math.random()</code>을 통해 임의로 반환된 소수에 <strong>10을 곱한후 소수점을 버린다</strong>.
 
     ```javascript
     const num = Math.random() * 10;
@@ -76,13 +76,22 @@
 
 ### <code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수
 
-- <code>JSON.stringify(어떤것)</code> 함수는 JS object나 array 또는 어떤 JS 코드이건 간에 문자열로 변환시켜주는 함수이다.
+- <code>JSON.stringify(어떤것)</code> 함수는 JS object나 array 또는 어떤 JS 코드이건 간에, 문자열로 변환시켜주는 함수이다.
 
   ```javascript
   const player = {name:"Sang Yoon Lee"}
 
   JSON.stringify(player);
   ```
+
+<br/>
+
+- 이를 다시 객체(혹은 배열)로 변환하려면 <code>JSON.parse(어떤것)</code> 함수를 사용하면 된다.
+
+  ```javascript
+  JSON.parse(player);
+  ```
+
 
 <br/><br/>
 
@@ -109,7 +118,7 @@
   Say Hello to 5
   ```
 
-  - <code>forEach</code>는 각각의 <code>item</code>에 대해 <code>sayHello</code> 함수를 실행시킨다.
+  - <code>forEach</code>문은 <code>numList</code> 배열 내 각각의 <code>item</code>에 대해 <code>sayHello</code> 함수를 실행시킨다.
 
 <br/>
 
