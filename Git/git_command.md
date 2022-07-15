@@ -140,7 +140,7 @@
 
 ### 깃 단축키 설정
 
-- git config --global alias.st status : git의 status 명령어로 st로 줄여쓰기 허용
+- git config --global alias.st status : git의 status 명령어를 st로 줄여쓰기 허용
 
 <br/>
 

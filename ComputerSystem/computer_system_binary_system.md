@@ -15,7 +15,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#%EC%88%98%EC%9D%98-%EB%B3%B4%EC%88%98">수의 보수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md#%EB%B3%B4%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%BA%84%EC%85%88">보수를 이용한 뺄셈</a>
 
-<br/>
+<br/><br/>
 
 ## 디지털 시스템
 
@@ -247,5 +247,7 @@
   - Step 3-1) 피감수 < 감수이므로, 결괏값 1101111에 다시 2의 보수를 취한다.
 
   - Step 3-2) 계산값 0010001에 마이너스를 붙인 -0010001이 답이다.
+
+<br/><br/>
 
 > 사진 출처 : <a href="https://m.blog.naver.com/piyoro/221770535071">10진수를 2진수로 변환, 2진수를 10진수로 변환 (개인 블로그)</a>
