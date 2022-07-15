@@ -83,3 +83,40 @@
 
   JSON.stringify(player);
   ```
+
+<br/><br/>
+
+### <code>forEach</code>문
+
+- 배열의 모든 요소에 대해 인수값으로 주어진 함수를 실행한다.
+
+- 주어진 함수에 인자를 부여하면, 배열의 각 요소를 함수 내부에서 사용할 수 있다.
+
+  ```javascript
+  const numList = [1, 2, 3, 4, 5];
+
+  function sayHello(item) {
+    console.log("Say Hello to " + item);
+  }
+
+  numList.forEach(sayHello);
+  ```
+  ```
+  Say Hello to 1
+  Say Hello to 2
+  Say Hello to 3
+  Say Hello to 4
+  Say Hello to 5
+  ```
+
+  - <code>forEach</code>는 각각의 <code>item</code>에 대해 <code>sayHello</code> 함수를 실행시킨다.
+
+<br/>
+
+- 화살표 함수(arrow function) <code>=></code>를 활용하면 위 코드를 다음과 같이 줄여서 쓸 수 있다.
+
+  ```javascript
+  const numList = [1, 2, 3, 4, 5];
+
+  numList.forEach((item) => console.log("Say Hello to " + item));
+  ```
