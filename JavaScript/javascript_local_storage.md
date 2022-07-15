@@ -67,3 +67,21 @@
     // 특정 Key의 Value값이 있을 경우 해당 블록 실행
   }
   ```
+
+<br/><br/>
+
+### Local Storage에 객체(혹은 배열)을 저장하고, 이를 JS로 불러오는 방법
+
+- Local Storage에 객체(혹은 배열)을 저장할 땐, <a href=""><code>JSON.stringify()</code></a>를 통해 저장할 객체를 문자열로 바꾸어 저장한다.
+
+  ```javascript
+  const numList = [1, 2, 3, 4, 5];
+
+  localStorage.setItem("numberList", JSON.stringify(numList));
+  ```
+
+- Local Storage에 저장된 객체(혹은 배열)을 JS로 불러올 땐, <code>JSON.parse()</code>를 통해 다시 객체로 변환해준다.
+
+  ```javascript
+  JSON.parse(localStorage.getItem("numberList"));
+  ```

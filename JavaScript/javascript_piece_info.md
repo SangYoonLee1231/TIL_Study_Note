@@ -71,3 +71,15 @@
     /* [방법3] round : 반올림 */
     const ans = Math.round(num - 0.5);
     ```
+
+<br/><br/>
+
+### <code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수
+
+- <code>JSON.stringify(어떤것)</code> 함수는 JS object나 array 또는 어떤 JS 코드이건 간에 문자열로 변환시켜주는 함수이다.
+
+  ```javascript
+  const player = {name:"Sang Yoon Lee"}
+
+  JSON.stringify(player);
+  ```
