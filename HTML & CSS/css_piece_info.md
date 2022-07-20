@@ -13,7 +13,7 @@
 - <a href="">Reset CSS</a>
 - <a href="">CSS 변수 선언 및 사용</a>
 - <a href="">not 속성 (부정 CSS 가상 클래스)</a>
-- <a href=""></a>
+- <a href="">Border Box</a>
 - <a href=""></a>
 - <a href=""></a>
 
@@ -241,3 +241,7 @@
     ...;
   }
   ```
+
+<br/><br/>
+
+### Border Box
