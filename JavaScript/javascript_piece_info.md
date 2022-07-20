@@ -97,7 +97,7 @@
 
 ### <code>forEach</code>문
 
-- 배열의 모든 요소에 대해 인수값으로 주어진 함수를 실행한다.
+- 주어진 배열의 각 요소가 순서대로 '<code>forEach</code>의 인자로 주어진 함수'의 인자값으로 넘겨진다.
 
 - 주어진 함수에 인자를 부여하면, 배열의 각 요소를 함수 내부에서 사용할 수 있다.
 
@@ -128,4 +128,31 @@
   const numList = [1, 2, 3, 4, 5];
 
   numList.forEach((item) => console.log("Say Hello to " + item));
+  ```
+
+<br/><br/>
+
+### <code>filter</code> 함수
+
+- 주어진 배열을 <strong>필터링</strong>하여 새로운 배열을 생성해 반환한다.
+
+- <code>filter</code> 함수에 인자로 주어진 함수(이하 필터링 함수)가 필터링 역할을 수행한다.
+
+  - <code>[주어진 배열].filter(필터링 함수)</code>
+
+  - <code>forEach</code> 함수와 마찬가지로, 주어진 배열의 각 요소가 순서대로 필터링 함수의 인자값으로 넘겨진다.
+
+  - ✨ 그 중 필터링 함수에서 true로 반환된 요소만 새 배열에 삽입된다.
+
+  ```javascript
+  const numList = [1, 2, 3, 4, 5];
+
+  function sexyFilter(item) {
+    return item != 3;
+  }
+
+  numList.filter(sexyFilter)
+  ```
+  ```
+  [1, 2, 4, 5]
   ```
