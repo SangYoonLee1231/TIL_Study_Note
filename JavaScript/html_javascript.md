@@ -8,7 +8,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#document-%EA%B0%9D%EC%B2%B4object">Document 객체(Object)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EC%97%90%EC%84%9C-html-%EC%9A%94%EC%86%8C%EC%97%90-%EC%A0%91%EA%B7%BC%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">JS에서 HTML 요소에 접근하는 다양한 방법</a>
-- <a href="">JS를 통해 HTML 요소 생성하여 HTML 파일에 삽입하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EB%A5%BC-%ED%86%B5%ED%95%B4-html-%EC%9A%94%EC%86%8C-%EC%83%9D%EC%84%B1%ED%95%98%EC%97%AC-html-%ED%8C%8C%EC%9D%BC%EC%97%90-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0">JS를 통해 HTML 요소 생성하여 HTML 파일에 삽입하기</a>
 
 <br/><br/>
 

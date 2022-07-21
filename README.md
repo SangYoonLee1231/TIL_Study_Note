@@ -70,7 +70,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_hack.md">CSS 핵 (Hack) 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
 
-### ◻ Vanila JavaScript
+### ◻ Vanila JS
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
@@ -89,7 +89,7 @@
 
 ### ◻ React JS
 
-- <a href="">React 소개</a>
+- <a href="">React 소개 및 설치</a>
 - <a href=""></a>
 
 <br/>
