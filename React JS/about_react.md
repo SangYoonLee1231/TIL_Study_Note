@@ -6,7 +6,8 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react%EC%9D%98-%EB%AA%A9%EC%A0%81">React의 목적</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 - <a href=""></a>
 
 <br/><br/>
