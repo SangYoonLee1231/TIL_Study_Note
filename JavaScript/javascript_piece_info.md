@@ -108,7 +108,7 @@
     console.log("Say Hello to " + item);
   }
 
-  numList.forEach(sayHello);
+  newList = numList.forEach(sayHello);
   ```
   ```
   Say Hello to 1
@@ -146,13 +146,30 @@
 
   ```javascript
   const numList = [1, 2, 3, 4, 5];
+  const newList = [];
 
   function sexyFilter(item) {
     return item != 3;
   }
 
-  numList.filter(sexyFilter)
+  const newList = numList.filter(sexyFilter);
+  console.log(newList);
   ```
   ```
   [1, 2, 4, 5]
   ```
+
+  <br/>
+
+  - <code>filter</code> 함수 역시 화살표 함수(arrow function) <code>=></code>를 활용하면 코드를 간략하게 쓸 수 있다.
+
+    ```javascript
+    const numList = [1, 2, 3, 4, 5];
+    const newList = [];
+
+    newList = numList.filter(item => item > 3);
+    console.log(newList);
+    ```
+    ```
+    [4, 5]
+    ```
