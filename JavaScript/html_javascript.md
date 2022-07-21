@@ -113,22 +113,72 @@
 
 ## JS를 통해 HTML 요소 생성하여 HTML 파일에 삽입하기
 
-- document 객체의 내장 함수인 <code>createElement</code> 함수를 사용한다.
+### 생성
 
-- Step 1 > JS 통해 HTML 요소 생성하기
+- <code>document</code>의 함수 <code>createElement("태그")</code>를 통해 HTML 요소를 생성할 수 있다.
+
+- 이를 변수에 담고, 속성을 부여해 줄 수도 있다.
+
+- 예시 1
+
+  ```javascript
+  const newTag = document.createElement("img");
+  newTag.src = "img/img.png";
+  ```
+
+- 예시 2
 
   ```javascript
   const li = document.createElement("li");
   const span = document.createElement("span");
-  
+
   li.appendChild(span);
 
   span.innerText = "Hello World";
   ```
 
-- Step 2 > 생성한 요소 HTML 파일에 삽압하기
+<br/>
+
+### 삽입
+
+- JS에 생성한 코드를 HTML에 삽입하고자 할 떈, <code>appendChild(태그)</code> 함수를 이용하면 된다.
+
+- 예시 1
 
   ```javascript
   const element = document.querySelector("ul");
   element.appendChild(li);
   ```
+
+- 예시 2
+
+  - background.js
+
+    ```javascript
+    const newTag = document.createElement("img");
+    newTag.src = "img/image.png";
+
+    document.body.appendChild(newTag);
+    ```
+
+  - 위 JS 코드 실행 결과 (index.html)
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            ...
+        </head>
+        <body>
+            ...
+            <script src="js/background.js" defer></script>
+            <!-- 해당 위치에 요소 삽입 -->
+            <img src="img/image.png">
+        </body>
+    </html>
+
+    ```
+
+  - <code>appendChild()</code> 대신 <code>append()</code> 함수를 써도 된다.
+
+  - <code>prepend()</code> 함수를 쓰면 주어진 태그 내부의 최상단에 코드가 삽입된다.
