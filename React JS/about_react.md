@@ -22,7 +22,9 @@
 
 ## React JS 설치
 
-- React JS를 설치하기 위해선 두 개의 Javascript 코드를 import 해야 한다.
+### 방법 1 : HTML 문서에 <code>react</code>, <code>react-dom</code>을 import하는 방법
+
+- React JS를 설치하기 위힌 하나의 방법으로, 두 개의 Javascript 코드를 HTML에 import 해준다.
 
   - <code>react</code>, <code>react-dom</code>
 
