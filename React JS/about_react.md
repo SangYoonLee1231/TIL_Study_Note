@@ -26,6 +26,10 @@
 
   - <code>react</code>, <code>react-dom</code>
 
+    - React JS는 어플리케이션이 interactive하도록 만들어주는 library이다.
+
+    - react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.
+
   ```html
   <!-- React 17.0.2 버전 -->
   <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
@@ -34,6 +38,4 @@
 
 <br/><br/>
 
-- React JS는 어플리케이션이 interactive하도록 만들어주는 library이다.
-
-- react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.
+##
