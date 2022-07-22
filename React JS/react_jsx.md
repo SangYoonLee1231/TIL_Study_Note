@@ -6,10 +6,9 @@
 
 ### 목차
 
-- <a href=""><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
-- <a href="">JSX</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EB%B0%A9%EB%B2%95%EC%9C%BC%EB%A1%9C-html-%EC%9A%94%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0"><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
     - babel, 화살표 함수
-- <a href=""></a>
 
 <br/><br/>
 
@@ -86,7 +85,9 @@
 
 - HTML 문법과 같은 규칙을 사용한다.
 
-- <code>createElement</code> VS <strong>JSX</strong>
+<br/>
+
+- <code>createElement</code> vs <strong>JSX</strong>
 
     - 예시 1
 
@@ -136,9 +137,12 @@
         </button>
         ```
 
-- 하지만 JSX 문법으로 작성한 코드는 브라우저가 바로 이해할 수 없기 때문에, 브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
+<br/>
 
-    - => <strong>Babel</strong>
+- 하지만 JSX 문법으로 작성한 코드는 브라우저가 바로 이해할 수 없기 때문에,  
+브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.  
+
+    => <strong>Babel</strong>
 
 <br/>
 
@@ -174,6 +178,8 @@
 
     - 전통적인 함수 표현(function)의 간편한 대안이다.
 
+    - <a href="https://ko.javascript.info/arrow-functions-basics">javascript.info '화살표 함수 기본' 링크</a>
+
     ```javascript
     function title() {
         return (
@@ -192,7 +198,7 @@
 
 <br/>
 
-- 직접 만든 컴포넌트를 렌더링해서 다른 곳에 사용할 때는 <strong>항상 대문자로 시작</strong>해야 한다.
+- 직접 만든 컴포넌트(사용자 장의 태그)를 렌더링해서 다른 곳에 사용할 때는 <strong>항상 대문자로 시작</strong>해야 한다.
 
     ```javascript
     const root = document.getElementById("root");
