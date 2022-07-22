@@ -1,4 +1,4 @@
-# React 소개 및 설치
+# React JS 소개 및 설치
 
 > 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>
 
@@ -12,19 +12,28 @@
 
 <br/><br/>
 
-## React의 목적
+## React JS의 목적
 
 - React JS는 UI를 interactive하게 만들어준다. (React가 탄생한 이유)
 
+- React JS는 모든 것이 JavaScript에서 시작한다. HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
+
 <br/><br/>
 
-## React 설치
+## React JS 설치
 
 - React JS를 설치하기 위해선 두 개의 Javascript 코드를 import 해야 한다.
 
   - <code>react</code>, <code>react-dom</code>
 
   ```html
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- React 17.0.2 버전 -->
+  <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
   ```
+
+<br/><br/>
+
+- React JS는 어플리케이션이 interactive하도록 만들어주는 library이다.
+
+- react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.
