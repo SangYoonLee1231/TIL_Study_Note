@@ -19,11 +19,11 @@
 
 - <strong>구현 목표</strong>
 
-    <img src="img/react_jsx1.png" width="550">
+    <img src="img/react_jsx1.png">
 
-  - 1.&nbsp;&nbsp;<code>Hello I'm a span</code>에 마우스 닿을 시 콘솔 창에 <code>mouse enter</code> 문구 표시
+  - 1.&nbsp;&nbsp;<code>Hello I'm a span</code>에 마우스 닿을 시, 콘솔 창에 <code>mouse enter</code> 문구 표시
 
-  - 2.&nbsp;&nbsp;<code>Click me</code> 버튼 클릭 시 콘솔 창에 <code>i clicked</code> 문구 표시
+  - 2.&nbsp;&nbsp;<code>Click me</code> 버튼 클릭 시, 콘솔 창에 <code>i clicked</code> 문구 표시
 
  <br/>
 
