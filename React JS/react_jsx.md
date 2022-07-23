@@ -8,11 +8,10 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EB%B0%A9%EB%B2%95%EC%9C%BC%EB%A1%9C-html-%EC%9A%94%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0"><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
-  - babel, 화살표 함수, 컴포넌트
-  - <a href=""><code>createElement</code> vs <strong>JSX</strong></a>
-  - <a href="">Babel</a>
-  - <a href="">※ 화살표 함수 (array function)</a>
-  - <a href="">포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs <strong>JSX</strong></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">※ 화살표 함수 (array function)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
 
 <br/><br/>
 
@@ -84,7 +83,7 @@
 
 - 하지만 <code>createElement</code>를 사용한 위 두 방법보다 <strong>더 편리하게</strong> HTML 요소를 만들어 넣는 방법이 있다.
 
-<br/>
+<br/><br/>
 
 ## JSX
 
@@ -95,6 +94,10 @@
 <br/>
 
 ### <code>createElement</code> vs <strong>JSX</strong>
+
+- <code>createElement</code>로 작성된 코드와 <strong>JSX</strong> 문법으로 작성된 코드를 서로 비교해보면 <strong>JSX</strong> 문법의 강력함을 알 수 있다.
+
+<br/>
 
 - 예시 1
 
@@ -120,6 +123,8 @@
       </h3>
     );
     ```
+
+<br/>
 
 - 예시 2
 
@@ -159,7 +164,7 @@
 
   => <strong>Babel</strong>
 
-<br/>
+<br/><br/>
 
 ### Babel
 
@@ -187,7 +192,7 @@
 
   - 이 방식은 느리기 때문에 혼자할 때는 절대 이렇게 할 일이 없을 것이다. 이보다 더 나은 방식이 있다.
 
-<br/>
+<br/><br/>
 
 ### ※ 화살표 함수 (array function)
 
@@ -213,7 +218,7 @@
   );
   ```
 
-<br/>
+<br/><br/>
 
 ### 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
 
