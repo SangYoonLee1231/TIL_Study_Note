@@ -11,7 +11,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#fopen-%ED%95%A8%EC%88%98-fclose-%ED%95%A8%EC%88%98"><code>fopen</code> 함수, <code>fclose</code> 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EB%8B%A4%EC%96%91%ED%95%9C-%EC%9E%85%EC%B6%9C%EB%A0%A5-%ED%95%A8%EC%88%98">다양한 입출력 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%B0%A9-%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%8C%8C%EC%9D%BC">기본 개방 스트림 파일</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md#%EB%B2%84%ED%8D%BC-%EA%B3%B5%EC%9C%A0-%EB%AC%B8%EC%A0%9C%EC%99%80-fflush-%ED%95%A8%EC%88%98">버퍼 공유 문제와 <code>fflush</code> 함수</a>
 
 <br/><br/>
 
@@ -156,11 +155,3 @@
 - 프로그램이 최초로 실행될 때 운영체제가 기본적으로 open하는 3개의 파일
 
   - <code>stdin</code>, <code>stdout</code>, <code>stderr</code>
-
-<br/><br/>
-
-## 버퍼 공유 문제와 <code>fflush</code> 함수
-
-```c
-
-```
