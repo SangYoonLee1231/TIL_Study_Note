@@ -238,7 +238,7 @@
 
 ### 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
 
-- element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong>
+- element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong> (이 때 화살표 함수를 사용한다.)
 
 - 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
 

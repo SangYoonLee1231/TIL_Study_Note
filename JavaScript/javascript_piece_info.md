@@ -13,6 +13,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#math-%EB%AA%A8%EB%93%88---random-%EA%B8%B0%EB%8A%A5">Math 모듈 - Random 기능</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#jsonstringify---%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%84-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%EC%8B%9C%ED%82%A4%EB%8A%94-%ED%95%A8%EC%88%98"><code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#foreach%EB%AC%B8"><code>forEach</code>문</a>
+- <a href="">화살표 함수 (array function)</a>
 - <a href=""></a>
 
 <br/>
@@ -24,7 +25,6 @@
 - 크롬 콘솔창에서 작업 시 줄 바꿈을 하려면, <strong>[Shift] + [Enter]</strong> 두 키를 동시에 누르면 된다.
 
 <br/><br/>
-
 
 ### 템플릿 리터럴 (Template Literal) - 백틱을 사용하는 문자열 표기법
 
@@ -79,7 +79,7 @@
 - <code>JSON.stringify(어떤것)</code> 함수는 JS object나 array 또는 어떤 JS 코드이건 간에, 문자열로 변환시켜주는 함수이다.
 
   ```javascript
-  const player = {name:"Sang Yoon Lee"}
+  const player = { name: "Sang Yoon Lee" };
 
   JSON.stringify(player);
   ```
@@ -91,7 +91,6 @@
   ```javascript
   JSON.parse(player);
   ```
-
 
 <br/><br/>
 
@@ -110,6 +109,7 @@
 
   newList = numList.forEach(sayHello);
   ```
+
   ```
   Say Hello to 1
   Say Hello to 2
@@ -155,6 +155,7 @@
   const newList = numList.filter(sexyFilter);
   console.log(newList);
   ```
+
   ```
   [1, 2, 4, 5]
   ```
@@ -167,9 +168,36 @@
     const numList = [1, 2, 3, 4, 5];
     const newList = [];
 
-    newList = numList.filter(item => item > 3);
+    newList = numList.filter((item) => item > 3);
     console.log(newList);
     ```
+
     ```
     [4, 5]
     ```
+
+<br/><br/>
+
+### 화살표 함수 (array function)
+
+- 전통적인 함수 표현(function)의 간편한 대안이다.
+
+- <a href="https://ko.javascript.info/arrow-functions-basics">javascript.info '화살표 함수 기본' 링크</a>
+
+  ```javascript
+  function title() {
+    return (
+      <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+        Hello I'm a title
+      </h3>
+    );
+  }
+  ```
+
+  ```javascript
+  const title = () => (
+    <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+      Hello I'm a title
+    </h3>
+  );
+  ```
