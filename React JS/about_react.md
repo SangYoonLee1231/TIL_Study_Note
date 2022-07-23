@@ -34,7 +34,7 @@
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
   ```
 
-  (react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.)
+  (<code>react-dom</code>은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.)
 
 <br/><br/>
 
