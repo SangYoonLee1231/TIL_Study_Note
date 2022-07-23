@@ -8,7 +8,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EB%B0%A9%EB%B2%95%EC%9C%BC%EB%A1%9C-html-%EC%9A%94%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0"><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs <strong>JSX</strong></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">※ 화살표 함수 (array function)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
@@ -17,7 +17,17 @@
 
 ## <code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기
 
-- Vanila JS 이용 + createElement 함수 활용
+- <strong>구현 목표</strong>
+
+    <img src="img/react_jsx1.png" width="550">
+
+  - 1.&nbsp;&nbsp;<code>Hello I'm a span</code>에 마우스 닿을 시 콘솔 창에 <code>mouse enter</code> 문구 표시
+
+  - 2.&nbsp;&nbsp;<code>Click me</code> 버튼 클릭 시 콘솔 창에 <code>i clicked</code> 문구 표시
+
+ <br/>
+
+- <strong>Vanila JS</strong> 이용 + <code>createElement</code> 함수 활용
 
   ```html
   <!DOCTYPE html>
@@ -38,12 +48,14 @@
         console.log("mouse enter");
       }
       button.addEventListener("click", handleClick);
-      button.addEventListener("mouseenter", handleMouseEnter);
+      text.addEventListener("mouseenter", handleMouseEnter);
     </script>
   </html>
   ```
 
-- React JS 이용 + createElement 함수 활용
+<br/>
+
+- <strong>React JS</strong> 이용 + <code>createElement</code> 함수 활용
 
   ```html
   <!DOCTYPE html>
@@ -81,7 +93,13 @@
 
 <br/>
 
+- <strong>React JS</strong>를 이용하는 것이 Vanila JS를 이용하는 것보다 <strong>더 편리함</strong>을 확인할 수 있다.
+
+  - JS에서 직접 HTML 요소를 생성한 후 필요한 기능을 한 번에 붙인 뒤 HTML에 삽입하기만 하면 되므로
+
 - 하지만 <code>createElement</code>를 사용한 위 두 방법보다 <strong>더 편리하게</strong> HTML 요소를 만들어 넣는 방법이 있다.
+
+  => <strong>JSX</strong>
 
 <br/><br/>
 
