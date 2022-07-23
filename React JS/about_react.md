@@ -14,7 +14,9 @@
 
 ## React JS의 목적
 
-- React JS는 UI를 interactive하게 만들어준다. (React가 탄생한 이유)
+- React JS는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>framework</strong>이자 <strong>library</strong>이다. (React 탄생 이유)
+
+  <img src="img/react-is-both.png" width="550">
 
 - React JS는 모든 것이 JavaScript에서 시작한다. HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
@@ -27,8 +29,6 @@
 - React JS를 설치하기 위힌 하나의 방법으로, 두 개의 Javascript 코드를 HTML에 import 해준다.
 
   - <code>react</code>, <code>react-dom</code>
-
-    - React JS는 어플리케이션이 interactive하도록 만들어주는 library이다.
 
     - react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.
 
