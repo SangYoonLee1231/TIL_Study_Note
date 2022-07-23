@@ -241,7 +241,7 @@
     </button>
   );
 
-  // Title, Btn 처럼 대문자로 시작해야 한다.
+  // Title, Btn, Container와 같이 이름이 대문자로 시작해야 컴포넌트로 바르게 인식된다.
   const Container = () => (
     <div>
       <Title />
