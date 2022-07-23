@@ -10,7 +10,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">※ 화살표 함수 (array function)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
 
 <br/><br/>
@@ -210,35 +209,10 @@
 
 <br/><br/>
 
-### ※ 화살표 함수 (array function)
-
-- 전통적인 함수 표현(function)의 간편한 대안이다.
-
-- <a href="https://ko.javascript.info/arrow-functions-basics">javascript.info '화살표 함수 기본' 링크</a>
-
-  ```javascript
-  function title() {
-    return (
-      <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-        Hello I'm a title
-      </h3>
-    );
-  }
-  ```
-
-  ```javascript
-  const title = () => (
-    <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-      Hello I'm a title
-    </h3>
-  );
-  ```
-
-<br/><br/>
-
 ### 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
 
-- element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong> (이 때 화살표 함수를 사용한다.)
+- element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong>  
+  (이 때 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수</a>를 사용한다.)
 
 - 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
 
