@@ -9,6 +9,10 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EB%B0%A9%EB%B2%95%EC%9C%BC%EB%A1%9C-html-%EC%9A%94%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0"><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
   - babel, 화살표 함수, 컴포넌트
+  - <a href=""><code>createElement</code> vs <strong>JSX</strong></a>
+  - <a href="">Babel</a>
+  - <a href="">※ 화살표 함수 (array function)</a>
+  - <a href="">포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
 
 <br/><br/>
 
@@ -90,75 +94,74 @@
 
 <br/>
 
-- <code>createElement</code> vs <strong>JSX</strong>
+### <code>createElement</code> vs <strong>JSX</strong>
 
-  - 예시 1
+- 예시 1
 
-    - <code>createElement</code>
+  - <code>createElement</code>
 
-      ```javascript
-      const title = React.createElement(
-        "h3",
-        {
-          id: "title",
-          onMouseEnter: () => console.log("mouse enter"),
+    ```javascript
+    const title = React.createElement(
+      "h3",
+      {
+        id: "title",
+        onMouseEnter: () => console.log("mouse enter"),
+      },
+      "Hello. I'm a title."
+    );
+    ```
+
+  - <strong>JSX</strong>
+
+    ```javascript
+    const title = (
+      <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+        Hello I'm a title
+      </h3>
+    );
+    ```
+
+- 예시 2
+
+  - <code>createElement</code>
+
+    ```javascript
+    const btn = React.createElement(
+      "button",
+      {
+        onClick: () => console.log("i clicked"),
+        style: {
+          backgroundColor: "tomato",
         },
-        "Hello. I'm a title."
-      );
-      ```
+      },
+      "Click Me"
+    );
+    ```
 
-    - <strong>JSX</strong>
+  - <strong>JSX</strong>
 
-      ```javascript
-      const title = (
-        <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-          Hello I'm a title
-        </h3>
-      );
-      ```
-
-  - 예시 2
-
-    - <code>createElement</code>
-
-      ```javascript
-      const btn = React.createElement(
-        "button",
-        {
-          onClick: () => console.log("i clicked"),
-          style: {
-            backgroundColor: "tomato",
-          },
-        },
-        "Click Me"
-      );
-      ```
-
-    - <strong>JSX</strong>
-
-      ```javascript
-      const btn = (
-        <button
-          style={{
-            backgroundColor: "tomato",
-          }}
-          onClick={() => console.log("i clicked")}
-        >
-          Click Me
-        </button>
-      );
-      ```
+    ```javascript
+    const btn = (
+      <button
+        style={{
+          backgroundColor: "tomato",
+        }}
+        onClick={() => console.log("i clicked")}
+      >
+        Click Me
+      </button>
+    );
+    ```
 
 <br/>
 
-- 하지만 JSX 문법으로 작성한 코드는 브라우저가 바로 이해할 수 없기 때문에,  
-  브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
+- 하지만 JSX 문법으로 작성한 JS 코드는 브라우저가 바로 이해할 수 없기 때문에, 브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
 
   => <strong>Babel</strong>
 
 <br/>
 
-### <strong>Babel</strong>
+### Babel
 
 - JSX로 적은 코드를 브라우저가 이해할 수 있는 형태로 바꿔주는 장치
 
@@ -186,7 +189,7 @@
 
 <br/>
 
-### <strong>화살표 함수 (array function)</strong>
+### ※ 화살표 함수 (array function)
 
 - 전통적인 함수 표현(function)의 간편한 대안이다.
 
