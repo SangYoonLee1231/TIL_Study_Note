@@ -18,7 +18,7 @@
 
   <img src="img/react-is-both.png" width="650">
 
-- React JS는 모든 것이 JavaScript에서 시작한다. HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
+- React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
 <br/><br/>
 
@@ -26,7 +26,7 @@
 
 ### 방법 1 : HTML 문서에 <code>react</code>, <code>react-dom</code>을 import하는 방법
 
-- React JS를 설치하기 위힌 하나의 방법으로, 두 개의 Javascript 코드를 HTML에 import 해준다.
+- 따로 다른 프로그램을 PC에 설치하지 않는 방법으로, 두 개의 Javascript 코드를 HTML에 import 해준다.
 
   - <code>react</code>, <code>react-dom</code>
 
