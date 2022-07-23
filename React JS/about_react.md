@@ -16,7 +16,7 @@
 
 - React JS는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>framework</strong>이자 <strong>library</strong>이다. (React 탄생 이유)
 
-  <img src="img/react-is-both.png" width="550">
+  <img src="img/react-is-both.png" width="650">
 
 - React JS는 모든 것이 JavaScript에서 시작한다. HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
