@@ -6,13 +6,13 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react%EC%9D%98-%EB%AA%A9%EC%A0%81">React의 목적</a>
+- <a href="">React JS란</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 - <a href=""></a>
 
 <br/><br/>
 
-## React JS의 목적
+## React JS란
 
 - React JS는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>framework</strong>이자 <strong>library</strong>이다. (React 탄생 이유)
 
