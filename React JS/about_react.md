@@ -26,17 +26,15 @@
 
 ### 방법 1 : HTML 문서에 <code>react</code>, <code>react-dom</code>을 import하는 방법
 
-- 따로 다른 프로그램을 PC에 설치하지 않는 방법으로, 두 개의 Javascript 코드를 HTML에 import 해준다.
-
-  - <code>react</code>, <code>react-dom</code>
-
-    - react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.
+- 따로 다른 프로그램을 PC에 설치하지 않는 방법으로, 두 개의 Javascript 코드(<code>react</code>, <code>react-dom</code>)를 HTML에 import 해준다.
 
   ```html
   <!-- React 17.0.2 버전 -->
   <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
   ```
+
+  (react-dom은 모든 React element들을 HTML에 둘 수 있도록 해주는 library 또는 package이다.)
 
 <br/><br/>
 
