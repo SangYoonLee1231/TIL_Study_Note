@@ -87,7 +87,7 @@
 
 ## JSX
 
-- JSX는 Javascript를 확장한 문법이다.
+- <strong>JSX</strong>는 Javascript를 확장한 문법이다.
 
 - HTML 문법과 같은 규칙을 사용한다.
 
@@ -97,66 +97,64 @@
 
 - <code>createElement</code>로 작성된 코드와 <strong>JSX</strong> 문법으로 작성된 코드를 서로 비교해보면 <strong>JSX</strong> 문법의 강력함을 알 수 있다.
 
-<br/>
+  - 예시 1
 
-- 예시 1
+    - <code>createElement</code>
 
-  - <code>createElement</code>
-
-    ```javascript
-    const title = React.createElement(
-      "h3",
-      {
-        id: "title",
-        onMouseEnter: () => console.log("mouse enter"),
-      },
-      "Hello. I'm a title."
-    );
-    ```
-
-  - <strong>JSX</strong>
-
-    ```javascript
-    const title = (
-      <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-        Hello I'm a title
-      </h3>
-    );
-    ```
-
-<br/>
-
-- 예시 2
-
-  - <code>createElement</code>
-
-    ```javascript
-    const btn = React.createElement(
-      "button",
-      {
-        onClick: () => console.log("i clicked"),
-        style: {
-          backgroundColor: "tomato",
+      ```javascript
+      const title = React.createElement(
+        "h3",
+        {
+          id: "title",
+          onMouseEnter: () => console.log("mouse enter"),
         },
-      },
-      "Click Me"
-    );
-    ```
+        "Hello. I'm a title."
+      );
+      ```
 
-  - <strong>JSX</strong>
+    - <strong>JSX</strong>
 
-    ```javascript
-    const btn = (
-      <button
-        style={{
-          backgroundColor: "tomato",
-        }}
-        onClick={() => console.log("i clicked")}
-      >
-        Click Me
-      </button>
-    );
-    ```
+      ```javascript
+      const title = (
+        <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+          Hello I'm a title
+        </h3>
+      );
+      ```
+
+  <br/>
+
+  - 예시 2
+
+    - <code>createElement</code>
+
+      ```javascript
+      const btn = React.createElement(
+        "button",
+        {
+          onClick: () => console.log("i clicked"),
+          style: {
+            backgroundColor: "tomato",
+          },
+        },
+        "Click Me"
+      );
+      ```
+
+    - <strong>JSX</strong>
+
+      ```javascript
+      const btn = (
+        <button
+          style={{
+            backgroundColor: "tomato",
+          }}
+          onClick={() => console.log("i clicked")}
+        >
+          Click Me
+        </button>
+      );
+      ```
 
 <br/>
 
