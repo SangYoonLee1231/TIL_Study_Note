@@ -6,7 +6,7 @@
 
 ### 목차
 
-- <a href="">React JS란</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EB%9E%80">React JS란</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 - <a href=""></a>
 
