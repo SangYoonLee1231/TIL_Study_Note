@@ -6,8 +6,8 @@
 
 ### 목차
 
-- <a href=""><code></code></a>
-- <a href=""></a>
+- <a href=""><code>React.useState()</code> 함수</a>
+- <a href="">State 함수</a>
 - <a href=""></a>
 
 <br/><br/>
@@ -57,12 +57,12 @@
   <script type="text/babel">
     const root = document.getElementById("root");
     const App = () => {
-      <!-- 주목할 부분 -->
+      // 주목할 부분
       const [counter, setCounter] = React.useState(0);
       const onClick = () => {
         setCounter(counter + 1);
       };
-      <!-- 여기까지 -->
+      // 여기까지
       return (
         <div>
           <h3>Total clicks: {counter}</h3>
@@ -73,3 +73,31 @@
     ReactDOM.render(<App />, root);
   </script>
   ```
+
+- ✨ modifier 함수를 통해 state(값)을 변경하면 컴포넌트가 새 값을 가지고 재생성(리랜더링)된다.
+
+<br/>
+
+## State 함수
+
+- state 변경 시 이전 값을 바탕으로 현재 값을 설정하는 더 안전한 방법은 함수를 사용하는 것이다.
+
+  ```javascript
+  // 덜 안전한 방법
+  const [counter, setCounter] = React.useState(0);
+  const onClick = () => {
+    setCounter(counter + 1);
+  };
+  ```
+
+  ```javascript
+  // 더 안전한 방법 - 함수 사용
+  const [counter, setCounter] = React.useState(0);
+  const onClick = () => {
+    setCounter((counter) => counter + 1);
+  };
+  ```
+
+- 함수를 사용하면 state 값이 외부에서 변경되는 경우로 인해 예상과 다른 결과가 나오는 상황을 대비할 수 있다.
+
+<br/>
