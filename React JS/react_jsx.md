@@ -175,7 +175,15 @@
 
 <br/>
 
-- 하지만 JSX 문법으로 작성한 JS 코드는 브라우저가 바로 이해할 수 없기 때문에, 브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
+- JSX 문법은 HTML과 유사하나 다른 점도 존재함을 기억해야 한다.
+
+  - <code>class</code>나 <code>for</code>같은 키워드는 React JS에서 제대로 동작하지 않을 수 있다.
+
+    (<code>class</code> => <code>className</code>, <code>for</code> => <code>htmlFor</code>을 써야 한다.)
+
+<br/>
+
+- JSX 문법으로 작성한 JS 코드는 브라우저가 바로 이해할 수 없기 때문에, 브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
 
   => <strong>Babel</strong>
 
