@@ -6,10 +6,10 @@
 
 ### 목차
 
-- <a href=""><code>React.useState()</code> 함수</a>
-- <a href="">State 함수</a>
-- <a href="">State 활용하기</a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#reactusestate-%ED%95%A8%EC%88%98"><code>React.useState()</code> 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#state-%ED%95%A8%EC%88%98">State 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#state-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">State 활용하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#input%EC%97%90-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0"><code>input</code>에 활용하기</a>
 
 <br/><br/>
 
@@ -144,6 +144,38 @@
         </div>
         <button onClick={reset}>Reset</button>
         <button onClick={onFlip}>Flip</button>
+      </div>
+    );
+  };
+  ReactDOM.render(<App />, root);
+  ```
+
+- <strong>업그레이드 단위 변환기 (기능 선택 옵션 추가)</strong>
+
+  ```javascript
+  const MinutesToHours = () => {
+    // (코드 생략)
+  };
+  const KmToMiles = () => {
+    // (코드 생략)
+  };
+  const App = () => {
+    const [index, setIndex] = React.useState("xx");
+    const onSelect = (event) => {
+      setIndex(event.target.value);
+    };
+    return (
+      <div>
+        <h1>Super Converter</h1>
+        <select value={index} onChange={onSelect}>
+          <option value="xx">Select Your Units</option>
+          <option value="0">Minutes & Hours</option>
+          <option value="1">Km & Miles</option>
+        </select>
+        <hr />
+        {index === "xx" ? "Please select your units" : null}
+        {index === "0" ? <MinutesToHours /> : null}
+        {index === "1" ? <KmToMiles /> : null}
       </div>
     );
   };
