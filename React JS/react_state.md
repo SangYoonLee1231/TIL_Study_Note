@@ -8,6 +8,7 @@
 
 - <a href=""><code>React.useState()</code> 함수</a>
 - <a href="">State 함수</a>
+- <a href="">State 활용하기</a>
 - <a href=""></a>
 
 <br/><br/>
@@ -22,23 +23,21 @@
 
 - <code>React.useState()</code> 호출 시 '<strong>변수값</strong>'과 '<strong>modifier 함수</strong>' 2개의 원소가 배열로 묶여 반환된다.
 
-  ```html
-  <script type="text/babel">
-    const root = document.getElementById("root");
-    const App = () => {
-      <!-- 주목할 부분 -->
-      const data = React.useState(0);
-      console.log(data);
-      <!-- 여기까지 -->
-      return (
-        <div>
-          <h3>Total clicks: {counter}</h3>
-          <button>Click Me</button>
-        </div>
-      );
-    };
-    ReactDOM.render(<App />, root);
-  </script>
+  ```javascript
+  const root = document.getElementById("root");
+  const App = () => {
+    // 주목할 부분
+    const data = React.useState(0);
+    console.log(data);
+    // 여기까지
+    return (
+      <div>
+        <h3>Total clicks: {counter}</h3>
+        <button>Click Me</button>
+      </div>
+    );
+  };
+  ReactDOM.render(<App />, root);
   ```
 
   ```
@@ -53,30 +52,28 @@
 
 - <strong><a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9">구조분해할당</a></strong>을 활용하면 좀 더 효율적으로 코드를 작성할 수 있다.
 
-  ```html
-  <script type="text/babel">
-    const root = document.getElementById("root");
-    const App = () => {
-      // 주목할 부분
-      const [counter, setCounter] = React.useState(0);
-      const onClick = () => {
-        setCounter(counter + 1);
-      };
-      // 여기까지
-      return (
-        <div>
-          <h3>Total clicks: {counter}</h3>
-          <button onClick={onClick}>Click Me</button>
-        </div>
-      );
+  ```javascript
+  const root = document.getElementById("root");
+  const App = () => {
+    // 주목할 부분
+    const [counter, setCounter] = React.useState(0);
+    const onClick = () => {
+      setCounter(counter + 1);
     };
-    ReactDOM.render(<App />, root);
-  </script>
+    // 여기까지
+    return (
+      <div>
+        <h3>Total clicks: {counter}</h3>
+        <button onClick={onClick}>Click Me</button>
+      </div>
+    );
+  };
+  ReactDOM.render(<App />, root);
   ```
 
 - ✨ modifier 함수를 통해 state(값)을 변경하면 컴포넌트가 새 값을 가지고 재생성(리랜더링)된다.
 
-<br/>
+<br/><br/>
 
 ## State 함수
 
@@ -100,4 +97,55 @@
 
 - 함수를 사용하면 state 값이 외부에서 변경되는 경우로 인해 예상과 다른 결과가 나오는 상황을 대비할 수 있다.
 
-<br/>
+<br/><br/>
+
+## State 활용하기
+
+### <code>input</code>에 활용하기
+
+- <strong>시간 / 분 단위 변환기</strong>
+
+  ```javascript
+  const App = () => {
+    const [amount, setAmount] = React.useState(0);
+    const [inverted, setInverted] = React.useState(false);
+    const onChange = (event) => {
+      setAmount(event.target.value);
+    };
+    const onFlip = () => {
+      setInverted((inverted) => !inverted);
+      reset();
+    };
+    const reset = () => setAmount(0);
+    return (
+      <div>
+        <h1>Super Converter</h1>
+        <div>
+          <label htmlFor="minutes">Minutes</label>
+          <input
+            value={inverted ? amount : amount * 60}
+            id="minutes"
+            placeholder="Minutes"
+            type="number"
+            onChange={onChange}
+            disabled={!inverted}
+          />
+        </div>
+        <div>
+          <label htmlFor="hours">Hours</label>
+          <input
+            value={inverted ? Math.floor(amount / 60) : amount}
+            id="hours"
+            placeholder="Hours"
+            type="number"
+            onChange={onChange}
+            disabled={inverted}
+          />
+        </div>
+        <button onClick={reset}>Reset</button>
+        <button onClick={onFlip}>Flip</button>
+      </div>
+    );
+  };
+  ReactDOM.render(<App />, root);
+  ```
