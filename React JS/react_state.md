@@ -91,11 +91,21 @@
   // 더 안전한 방법 - 함수 사용
   const [counter, setCounter] = React.useState(0);
   const onClick = () => {
-    setCounter((counter) => counter + 1);
+    setCounter((current) => current + 1);
   };
   ```
 
 - 함수를 사용하면 state 값이 외부에서 변경되는 경우로 인해 예상과 다른 결과가 나오는 상황을 대비할 수 있다.
+
+<br/>
+
+- ❓ modifier 함수 (setState 함수) 내에 변수 명을 current로 설정해도 무방한 이유
+
+  - setState는 그 인자값이 객체인지 함수인지 판별하는 부분이 있다. 만일 함수일 경우 알아서 현재 state값을 찾아 매핑해준다.
+
+<br/>
+
+- setState 함수는 비동기적으로 동작한다.
 
 <br/><br/>
 

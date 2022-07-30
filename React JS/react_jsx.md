@@ -225,6 +225,8 @@
 
 - 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
 
+- <strong>컴포넌트</strong>란 JSX를 반환하는 함수이다. (<strong>함수형 컴포넌트</strong>)
+
 <br/>
 
 - ✨ 직접 만든 컴포넌트를 렌더링해서 다른 곳에 사용할 때는 이름이 <strong>항상 대문자로 시작</strong>되어야 한다.
