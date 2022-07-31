@@ -18,6 +18,8 @@
 
   <img src="img/react-is-both.png" width="650">
 
+<br/>
+
 - React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
 <br/><br/>
@@ -38,4 +40,4 @@
 
 <br/><br/>
 
-##
+## 방법 2 : Node.js 설치

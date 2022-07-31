@@ -94,7 +94,7 @@
 
 - <strong>React JS</strong>를 이용하는 것이 Vanila JS를 이용하는 것보다 <strong>더 편리함</strong>을 확인할 수 있다.
 
-  - JS에서 직접 HTML 요소를 생성한 후 필요한 기능을 한 번에 붙인 뒤 HTML에 삽입하기만 하면 되므로
+  - <strong>JS에서 직접 HTML 요소를 생성</strong>한 후 <strong>필요한 기능을 한 번에 붙인 뒤</strong> HTML에 삽입하기만 하면 되므로
 
 - 하지만 <code>createElement</code>를 사용한 위 두 방법보다 <strong>더 편리하게</strong> HTML 요소를 만들어 넣는 방법이 있다.
 
@@ -223,9 +223,9 @@
 
   (이 때 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수</a>를 이용한다.)
 
-- 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
-
 - <strong>컴포넌트</strong>란 JSX를 반환하는 함수이다. (<strong>함수형 컴포넌트</strong>)
+
+- 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
 
 <br/>
 

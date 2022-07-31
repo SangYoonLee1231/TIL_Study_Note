@@ -71,6 +71,8 @@
   ReactDOM.render(<App />, root);
   ```
 
+<br/>
+
 - ✨ modifier 함수를 통해 state(값)을 변경하면 컴포넌트가 새 값을 가지고 재생성(리랜더링)된다.
 
 <br/><br/>
@@ -159,6 +161,8 @@
   };
   ReactDOM.render(<App />, root);
   ```
+
+<br/>
 
 - <strong>업그레이드 단위 변환기 (기능 선택 옵션 추가)</strong>
 
