@@ -72,7 +72,7 @@
 
   - 사용 예시
 
-    ```json
+    ```javascript
     //package.json
     {
         ...
@@ -90,7 +90,7 @@
 
 ### 【3】 Webpack
 
-- Webpack 개념을 이해하기 위한 사전 지식 학습 (<storng>모듈</storng>, <storng>모듈 번들러</storng>)
+- Webpack 개념을 이해하기 위한 사전 지식 학습 (<strong>모듈</strong>, <strong>모듈 번들러</strong>)
 
   - 모듈 : 특정한 기능을 수행하는 코드 묶음 단위. 비슷한 기능을 하는 코드를 하나의 파일로 묶은 것.
 
@@ -98,7 +98,7 @@
 
   - 모듈 번들러 : 여러 모듈을 하나로 묶는(병합 및 압축하는) 동작
 
-- <storng>JS 모듈화의 배경</storng>
+- <strong>JS 모듈화의 배경</strong>
 
   - 주로 작은 기능만을 수행했던 초창기 JS 프로그램과 달리, 시간이 지날수록 JS 프로그램이 더 많은 기능을 수행하게 되었다.
 
@@ -108,7 +108,7 @@
 
 <br/>
 
-- <storng>Webpack 사용 이유 (4가지)</storng>
+- <strong>Webpack 사용 이유 (4가지)</strong>
 
   - 모듈로 관리되는 스크립트의 변수 범위로 인해 의도치 않게 변수 값이 변경되는 문제 해결
     => JS 변수 유효 범위 문제 해결 (By ES6 모듈 문법)
@@ -124,7 +124,7 @@
 
 ### 【4】 Webapck 설치 (+ npm 명령어 익숙해지기)
 
-- <storng>npm 명령어에 익숙해지기 위해 정리하였다.</storng>
+- <strong>npm 명령어에 익숙해지기 위해 정리하였다.</strong>
 
   - <code>npm init (-y)</code> : NPM 프로젝트 생성하여 package.json 생성 (-y : 개별 설정 X)
 
@@ -138,7 +138,7 @@
 
     - Cannot GET / 에러 때문에 좀 고생했으나, 전 기수의 채널을 참고해서 해결! (<code>/public/index.html</code> 경로로 수정)
 
-- <storng>정상 동작 확인!</storng>
+- <strong>정상 동작 확인!</strong>
 
 <br/><br/>
 
