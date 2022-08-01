@@ -1,10 +1,12 @@
 <div align=center>
 
-# CodeSoom 리엑트 11기
+# 💻 CodeSoom 리엑트 11기
 
 ### (2022.08.01 ~ 2022.10.02)
 
 </div>
+
+<br/>
 
 > <a href="https://www.codesoom.com/courses/1">코드숨 사이트 바로가기</a>
 
@@ -15,5 +17,5 @@
 
 ## Week 1
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day-1.md">Day 1</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day-1.md">Day 1 - 개발환경 세팅, </a>
 
