@@ -152,9 +152,19 @@
 
 <br/><br/>
 
-### 【5】 EsLint
+### 【5】 ESLint
 
 - 개발팀 내에서 원할한 협업을 위해 코드 스타일을 하나로 통일하기 위한 도구중 하나
+
+- <strong>ESLint 설치 및 초기화</strong>
+
+  - <code>npm i -D eslint</code> : 개발자 모드로 ESLint 설치
+
+  - 추가로 VS Code에서 ESLint 확장 프로그램을 설치하면 자동 실행 기능을 이용할 수 있다.
+
+  - <code>npm init @eslint/config</code> : ESLint 초기화 및 초기 설정
+
+    (<code>npx eslint --init</code> 명령어로 입력했더니 <code>ReferenceError: primordials is not defined</code> 오류 발생)
 
 <br/><br/>
 
