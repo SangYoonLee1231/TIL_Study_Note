@@ -164,13 +164,15 @@
 
   - <code>npm init @eslint/config</code> 또는 <code>npx eslint --init</code> : ESLint 초기화 및 초기 설정
 
-    - <strong>그러나 버전 오류 발생</strong> (<code>ReferenceError: primordials is not defined</code>)
+    - <strong>그러나 난감한 오류 발생</strong> (<code>ReferenceError: primordials is not defined</code>)
 
-    - 이를 해결하기 위해 노력하다 결국 코드숨 대표님께 문의 => 수동으로 코드 삽입하면 된다는 답변 받음
+    - Stack Overflow를 통해 해당 오류가 버전 관련 문제임을 깨달음
 
-    - 공식 문서와 공식 GitHub 계정을 열심히 찾아봄 (<a href="https://github.com/eslint/eslint/blob/main/.eslintrc.js">코드</a> 하나를 찾았으나 해결X)
+    - 이를 해결하기 위해 열심히 구글링하다 결국 코드숨 대표님께 질문 드림 => 수동으로 코드 삽입하면 된다는 답변 받음
 
-    - 결국 Node와 NPM의 버전을 변경하기로 결정 => NVM 설치 이용
+    - 삽입할 코드를 찾기 위해 공식 문서와 공식 GitHub 계정을 열심히 뒤짐 (<a href="https://github.com/eslint/eslint/blob/main/.eslintrc.js">뭔가 하나</a>를 찾았으나 해결X)
+
+    - 결국 Node와 NPM의 버전을 변경하기로 결정 => NVM 설치
 
     - NVM exit 1, exit 5 에러 발생 -> 구글링으로 해결
 
@@ -182,7 +184,7 @@
 
       - (Node 기준 안되는 버전 : 16.16.0, 18, 14.17.5)
 
-    - <strong>아직 미해결</strong>
+    - <strong>결국 아직 해결하지 못한 채 하루를 마무리</strong>
 
 <br/><br/>
 
