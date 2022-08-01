@@ -14,6 +14,8 @@
 
   - Chrome V8 JS Engine으로 빌드되었다.
 
+<br/>
+
 - <strong>Node.js 설치하기</strong>
 
   - LTS 버전으로 설치 + 터미널에서 정상적으로 설치되었는지 확인
@@ -25,6 +27,8 @@
 - <strong>NPM의 간단한 개념</strong>
 
   - JS 라이브러리 설치 및 관리 역할 (패키지 매니저)
+
+<br/>
 
 - <strong>코드숨 전용 디렉토리 생성 및 npm 프로젝트 생성</strong>
 
@@ -59,6 +63,8 @@
   - 배포용 : 배포시 라이브러리 적용 O
 
     - <code>npm install [이름]</code>
+
+<br/>
 
 - <strong>npm 버전 관리</strong> (자세히 학습하진 않았음)
 
@@ -137,6 +143,8 @@
   - <code>npx webpack serve --mode development</code> : 개발용 서버 실행
 
     - Cannot GET / 에러 때문에 좀 고생했으나, 전 기수의 채널을 참고해서 해결! (<code>/public/index.html</code> 경로로 수정)
+
+<br/>
 
 - <strong>정상 동작 확인!</strong>
 
