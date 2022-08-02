@@ -17,3 +17,5 @@
 ## Week 1
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day-1.md">Day 1 - 개발환경 세팅 (RSLint 에서 막힘) </a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day-2.md">Day 2 - 웹개발 파트 학습 </a>
