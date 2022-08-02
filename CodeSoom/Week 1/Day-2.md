@@ -193,7 +193,7 @@
 하지만 베이스가 많이 부족하여 진도가 생각보다 더 느려지게 되니, PR을 못 보내게 되고 그만큼 성장의 기회 또한 놓치게 되는 것 같아 불안한 마음이 들기 시작했다.  
 이것이 내 걱정의 원인이었다. 그걸 알게 되니 최악의 상황 또한 대충 그려졌다.
 
-    <img src="img/codesoom-question.png">
+    <img src="img/codesoom-day-1-question.png">
 
 <br/>
 
