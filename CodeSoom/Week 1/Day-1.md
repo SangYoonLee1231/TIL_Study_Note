@@ -81,8 +81,10 @@
     ```javascript
     //package.json
     {
-        ...
+      ...
+      "scripts" : {
         "server" : "npx webpack serve --mode development"
+      }
     }
     ```
 
