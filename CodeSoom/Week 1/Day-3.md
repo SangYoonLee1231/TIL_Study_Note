@@ -91,7 +91,9 @@
             );
             ```
 
-    - <strong>총체적 난국</strong>
+    <br/>
+
+    - 😰 <strong>총체적 난국</strong>
 
         - jsx가 <code>.js</code>에 적용이 되지 않아 Stack Overflow를 통해 해결했다. (<a href="https://stackoverflow.com/questions/43031126/jsx-not-allowed-in-files-with-extension-js-with-eslint-config-airbnb/49505827#49505827">도움받은 질문글</a>)
 
@@ -100,7 +102,7 @@
         - 이쯤되니 뭘 어떻게 해야할 지 모르겠다.
 
         - 그래서 <strong>폴더 안 내용을 싹 지우고 개발 환경 설치부터 전부 다시 하기로 했다.</strong>
-
+        
 <br/><br/>
 
 ### 【2】 개발 환경 세팅부터 재진행
