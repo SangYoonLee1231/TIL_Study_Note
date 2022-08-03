@@ -1,31 +1,33 @@
-n, m = tuple(map(int, input().split()))
+def is_on_origin():
+    global x, y, total_time
+
+    dir_num = 3
+    for cmd in cmds:
+        if cmd == 'L':
+            dir_num = (dir_num - 1 + 4) % 4
+        elif cmd == 'R':
+            dir_num = (dir_num + 1) % 4
+        else:
+            nx = x + dxs[dir_num]
+            ny = y + dys[dir_num]
+            x, y = nx, ny
+
+        total_time += 1
+
+        if x == 0 and y == 0:
+            return True
+    
+    return False
+
+
+cmds = list(input().split())
 x, y = 0, 0
+total_time = 0
 
-grid = [
-    [0] * m
-    for i in range(n)
-]
+dxs = [1, 0, -1, 0]
+dys = [0, -1, 0, 1]
 
-dxs = [0, 1, 0, -1]
-dys = [1, 0, -1, 0]
-
-dir_num = 0
-
-def is_range(x, y):
-    return x >= 0 and x < m and y >= 0 and y < n
-
-for i in range(1, n*m+1):
-    grid[x][y] = i
-    nx, ny = x + dxs[dir_num], y + dys[dir_num]
-
-    if not is_range(nx, ny) or grid[nx][ny]:
-        dir_num = (dir_num + 1) % 4
-        nx, ny = x + dxs[dir_num], y + dys[dir_num]
-    
-    x, y = nx, ny
-    
-
-for i in range(n):
-    for j in range(m):
-        print(grid[i][j], end=' ')
-    print()
+if is_on_origin():
+    print(total_time)
+else:
+    print(-1)

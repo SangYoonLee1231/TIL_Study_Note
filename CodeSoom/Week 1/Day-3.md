@@ -105,7 +105,7 @@
 
 <br/><br/>
 
-### 【2】 개발 환경 세팅부터 재진행
+### 【2】 개발 환경 세팅부터 다시 진행
 
 - 디렉토리 내 파일 완전 삭제
 
@@ -126,6 +126,10 @@
     <br/>
 
     - 중괄호, 대괄호가 햇갈려서 찾아본 <a href="https://velog.io/@ylyl/TIL-Warning-arrow-function-return-value">믈로그 포스트 (Warning; arrow function을 사용할 때 return문 작성법)</a>
+
+<br/><br/>
+
+### 【3】 Babel + JSX 다시 학습
 
 <br/><br/>
 
