@@ -93,34 +93,101 @@
 
 <br/>
 
-- 최종 완성 코드
+- 새로 알게 된 DOM API
+
+    - <code>createTextNode</code>
+
+<br/>
+
+- ➕ Step 1
+
+    ```javascript
+    const container = document.getElementById('app');
+
+    const paragraph1 = document.createElement('p');
+    const text1 = document.createTextNode('Hello World!!!');
+    const text2 = document.createTextNode('Hello World!!!!!');
+    paragraph1.appendChild(text1);
+    paragraph1.appendChild(text2);
+    container.appendChild(paragraph1);
+
+    const paragraph2 = document.createElement('p');
+    const text3 = document.createTextNode('Hi!!!');
+    paragraph2.appendChild(text3);
+    container.appendChild(paragraph2);
+    ```
+
+<br/>
+
+- ➕ Step 2
 
     ```javascript
     function createElement(tagName, ...children) {
-    const newElem = document.createElement(tagName);
+    const element = document.createElement(tagName);
 
     children.forEach((child) => {
-            newElem.appendChild(child);
+        element.appendChild(child);
+    });
+
+    return element;
+    }
+
+    //
+
+    const paragraph1 = createElement(
+    'p',
+    document.createTextNode('Hello World!!!'),
+    document.createTextNode('Hello World!!!!!'),
+    );
+
+    const paragraph2 = createElement(
+    'p',
+    document.createTextNode('Hi!!!'),
+    );
+
+    //
+
+    const root = createElement(
+    'div',
+    paragraph1,
+    paragraph2,
+    );
+    const container = document.getElementById('app');
+
+    container.appendChild(root);
+
+    ```
+<br/>
+
+- ➕ Step 3
+
+    ```javascript
+    function createElement(tagName, ...children) {
+        const element = document.createElement(tagName);
+
+        children.forEach((child) => {
+            element.appendChild(child);
         });
 
-        return newElem;
+        return element;
     }
+
+    //
 
     document.getElementById('app').appendChild(
         createElement(
             'div',
             createElement(
-            'p',
-            ...[1, 2, 3].map((i) => (
-                document.createTextNode(`Hello World ${i} `)
-            )),
+                'p',
+                ...['!!!', '!!!!!'].map((c) => document.createTextNode(`Hello World${c}`)),
             ),
             createElement(
-            'p',
-            document.createTextNode('Hi'),
+                'p',
+                document.createTextNode('Hi!!!'),
             ),
         ),
     );
+
     ```
 
 <br/>

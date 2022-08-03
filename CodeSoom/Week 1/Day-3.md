@@ -101,11 +101,31 @@
 
         - 이쯤되니 뭘 어떻게 해야할 지 모르겠다.
 
-        - 그래서 <strong>폴더 안 내용을 싹 지우고 개발 환경 설치부터 전부 다시 하기로 했다.</strong>
-        
+        - 그래서 결국 폴더 안 내용을 싹 지우고 <strong>개발 환경 설치부터 전부 다시 하기로 했다.</strong>
+
 <br/><br/>
 
 ### 【2】 개발 환경 세팅부터 재진행
+
+- 디렉토리 내 파일 완전 삭제
+
+- <strong>NPM 재설치</strong>
+
+    - <code>npx serve</code>시 알 수 없는 오류로 서버가 호스팅되지 않아 난감했으나, node.js 재설치하니 정상 작동
+
+- <strong>Webpack 재설치</strong>
+
+- <strong>ESLint 재설치</strong>
+
+    - 이번엔 신기하게도 오류 없이 eslint 초기화가 진행되었다. 저번엔 도대체 무엇이 문제였을까.
+
+- <strong>스크립트 재작성</strong> (Vanila JS로 HTML에 요소 직접 만들어 삽입)
+
+    - 처음엔 잘 이해되지 않던 코드들이 다시 찬찬히 보며 따라치니 이해되기 시작
+
+    <br/>
+
+    - 중괄호, 대괄호가 햇갈려서 찾아본 <a href="https://velog.io/@ylyl/TIL-Warning-arrow-function-return-value">믈로그 포스트 (Warning; arrow function을 사용할 때 return문 작성법)</a>
 
 <br/><br/>
 
