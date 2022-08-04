@@ -1,33 +1,42 @@
-def is_on_origin():
-    global x, y, total_time
+n = int(input())
+blocks = []
 
-    dir_num = 3
-    for cmd in cmds:
-        if cmd == 'L':
-            dir_num = (dir_num - 1 + 4) % 4
-        elif cmd == 'R':
-            dir_num = (dir_num + 1) % 4
-        else:
-            nx = x + dxs[dir_num]
-            ny = y + dys[dir_num]
-            x, y = nx, ny
+num = [
+    int(input())
+    for _ in range(n)
+]   
 
-        total_time += 1
-
-        if x == 0 and y == 0:
-            return True
-    
-    return False
+del_st = list(map(int, input().split()))
+del_nd = list(map(int, input().split()))
 
 
-cmds = list(input().split())
-x, y = 0, 0
-total_time = 0
+# 1st
+temp = [0] * n
 
-dxs = [1, 0, -1, 0]
-dys = [0, -1, 0, 1]
+temp_idx = 0
+for i in range(n):
+    if (i+1) < del_st[0] or (i+1) > del_st[1]:
+        temp[temp_idx] = blocks[i]
+        temp_idx += 1
 
-if is_on_origin():
-    print(total_time)
-else:
-    print(-1)
+blocks = temp
+n = temp_idx
+
+
+# 2nd
+temp = [0] * n
+
+temp_idx = 0
+for i in range(n):
+    if (i+1) < del_nd[0] or (i+1) > del_nd[1]:
+        temp[temp_idx] = blocks[i]
+        temp_idx += 1
+
+blocks = temp
+n = temp_idx
+
+
+# 출력
+print(n)
+for i in range(n):
+    print(blocks[i])
