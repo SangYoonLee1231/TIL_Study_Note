@@ -114,6 +114,14 @@
     ```
 <br/>
 
-- <strong>과제 1 뼈대 코드 완성</strong>
+- (드디어) <strong>과제 1 뼈대 코드 완성</strong>
 
     (문제가 될 수 있으니 코드는 올리지 않겠습니다.)
+
+<br/><br/>
+
+## 과제 진행
+
+### 과제1. let을 제거해보자
+
+- <a href="https://github.com/CodeSoom/react-week1-assignment-1/pull/193">PR 기록 바로가기</a>
