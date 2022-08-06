@@ -1,42 +1,28 @@
-n = int(input())
-blocks = []
-
-num = [
-    int(input())
+n, t = tuple(map(int, input().split()))
+grid = [
+    list(map(int, input().split()))
     for _ in range(n)
-]   
+]
 
-del_st = list(map(int, input().split()))
-del_nd = list(map(int, input().split()))
+lst = []
+N = n * 3
 
-
-# 1st
-temp = [0] * n
-
-temp_idx = 0
-for i in range(n):
-    if (i+1) < del_st[0] or (i+1) > del_st[1]:
-        temp[temp_idx] = blocks[i]
-        temp_idx += 1
-
-blocks = temp
-n = temp_idx
+for elems in grid:
+    for elem in elems:
+        lst.append(elem)
 
 
-# 2nd
-temp = [0] * n
+for _ in range(t):
+    temp = lst[N-1]
 
-temp_idx = 0
-for i in range(n):
-    if (i+1) < del_nd[0] or (i+1) > del_nd[1]:
-        temp[temp_idx] = blocks[i]
-        temp_idx += 1
+    for i in range(N-1, 0, -1):
+        lst[i] = lst[i-1]
 
-blocks = temp
-n = temp_idx
+    lst[0] = temp
 
 
-# 출력
-print(n)
-for i in range(n):
-    print(blocks[i])
+for i in range(N):
+    print(lst[i], end=" ")
+    
+    if i % n == (n-1):
+        print()
