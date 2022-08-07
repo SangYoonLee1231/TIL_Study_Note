@@ -26,7 +26,7 @@
 
         - <code>npm i -D babel-loader</code> : Webpack에서 Babel을 쓸 수 있도록 도와줌
         - <code>webpack.config.js</code> 파일 : webpack 설정 파일
-        - <code>npm i -D @babel/core npm i</code> 
+        - <code>npm i -D @babel/core</code> 
         - <code>npm i -D @babel/preset-env @babel/preset-react</code>
 
     - <strong>config 설정</strong>
