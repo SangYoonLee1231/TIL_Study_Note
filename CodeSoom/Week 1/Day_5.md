@@ -101,7 +101,7 @@
             element[key.toLowerCase()] = value;
         });
 
-        children.forEach((child) => {
+        children.flat().forEach((child) => {
             if (child instanceof Node) {
                 element.appendChild(child);
                 return;
