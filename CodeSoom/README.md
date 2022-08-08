@@ -22,4 +22,10 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_4.md">Day 4 : Git 기초 학습 + 다루기 연습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_5.md">Day 5 : React, JavaScript 객체 학습 + 1주차 과제 1 코드 이해하기 + 과제 수행</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_6-7.md">Day 6-7 : 과제 수행 (해설 강의 참고)</a>
-- <a href="https://sylagape1231.tistory.com/48">💻 1주차 주간 회고 (블로그 포스트)</a>
+- <a href="https://sylagape1231.tistory.com/48">✏ 1주차 주간 회고 (블로그 포스트)</a>
+
+<br/>
+
+## Week 2
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_1.md">Day 1 : </a>
