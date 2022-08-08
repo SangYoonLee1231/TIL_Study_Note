@@ -28,4 +28,5 @@
 
 ## Week 2
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_1.md">Day 1 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_1.md">Day 1 : React 학습 + 1주차 코드 복습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_2.md">Day 2 : </a>
