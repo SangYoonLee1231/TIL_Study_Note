@@ -28,4 +28,4 @@
 
 ## Week 2
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_1.md">Day 1 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_1.md">Day 1 : </a>

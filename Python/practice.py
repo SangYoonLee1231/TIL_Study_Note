@@ -1,28 +1,22 @@
-n, t = tuple(map(int, input().split()))
-grid = [
-    list(map(int, input().split()))
-    for _ in range(3)
-]
-
-lst = []
-N = n * 3
-
-for elems in grid:
-    for elem in elems:
-        lst.append(elem)
+k, n = tuple(map(int, input().split()))
+answer = []
 
 
-for _ in range(t):
-    temp = lst[N-1]
-
-    for i in range(N-1, 0, -1):
-        lst[i] = lst[i-1]
-
-    lst[0] = temp
+def print_answer():
+    for elem in answer:
+        print(elem, end=" ")
+    print()
 
 
-for i in range(N):
-    print(lst[i], end=" ")
+def choose(curr_num, k_num):
+    if n > curr_num:
+        print_answer()
+        return
     
-    if i % n == (n-1):
-        print()
+    for i in range(1, k+1):
+        answer.append(i)
+        choose(curr_num + 1, i)
+        answer.pop()
+
+
+choose(1, 1)
