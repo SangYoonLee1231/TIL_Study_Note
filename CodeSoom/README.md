@@ -29,4 +29,6 @@
 ## Week 2
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_1.md">Day 1 : React 학습 + 1주차 코드 복습</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_2.md">Day 2 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_2.md">Day 2 : React 이어 학습 + 실습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_3.md">Day 3 : React 관심사의 분리 + 첫 번째 과제 수행 (1차 목표 달성)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_4.md">Day 4 : </a>
