@@ -16,7 +16,7 @@
 
 ## Week 1
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_1.md">Day 1 : 개발환경 세팅 (RSLint 에서 막힘) </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_1.md">Day 1 : 개발환경 세팅 (ESLint 에서 막힘) </a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_2.md">Day 2 : 웹개발 파트 학습 </a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_3.md">Day 3 : 오류로 인해 처음부터 다시 시작, JSX에서 중단 </a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%201/Day_4.md">Day 4 : Git 기초 학습 + 다루기 연습</a>

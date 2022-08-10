@@ -48,7 +48,7 @@
 
 - +<strong> 추가로 학습한 것</strong>
 
-    - webpack 서버 띄울 시 경로 설정 바꾸기
+    - ✨ webpack 서버 띄울 시 경로 설정 바꾸기 (<code>index.js</code>=><code>index.jsx</code>)
 
         ```javascript
         // webpack.config.js
