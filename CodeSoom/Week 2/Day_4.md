@@ -6,6 +6,105 @@
 
 ## 배운 것 (간략히 정리)
 
+### 【0】 ✨ Fork한 코드숨 과제 Repository - 업데이트 순서
+
+- 경로 이동 :<code>cd cd react-week?-assignment-?</code>
+
+- NPM 초기화 : <code>npm init -y</code>
+
+- Webpack 업데이트 : <code>npx webpack serve --mode development</code> (모두 설치)
+
+- ESLint 업데이트 : <code>npm i -D eslint</code>
+
+- ESLint 설정 : <code>npx eslint --init</code>
+
+- webpack 서버 띄울 시 경로 설정 바뀌어 있는지 확인 (<code>index.js</code>=><code>index.jsx</code>)
+
+    ```javascript
+    // webpack.config.js
+    const path = require('path');
+
+    module.exports = {
+        entry: path.resolve(__dirname, 'src/index.jsx'),
+        mode: 'development',
+        module: {
+            rules: [
+                {
+                    test: /\.jsx?$/,
+                    exclude: /node_modules/,
+                    use: 'babel-loader',
+                },
+            ],
+        },
+        resolve: {
+            extensions: ['.js', '.jsx'],
+        },
+    };
+    ```
+
+- <code>.eslintrc.js</code> 파일 수정
+
+    ```javascript
+    // .eslintrc.js
+    module.exports = {
+        env: {
+            browser: true,
+            es2021: true,
+        },
+        extends: [
+            'plugin:react/recommended',
+            'airbnb',
+        ],
+        parserOptions: {
+            ecmaFeatures: {
+            jsx: true,
+            },
+            ecmaVersion: 12,
+            sourceType: 'module',
+        },
+        plugins: [
+            'react',
+        ],
+        globals: {
+            Atomics: 'readonly',
+            SharedArrayBuffer: 'readonly',
+            actor: 'readonly',
+            Feature: 'readonly',
+            Scenario: 'readonly',
+        },
+        rules: {
+            'linebreak-style': 0,
+            indent: ['error', 2],
+            'no-trailing-spaces': 'error',
+            curly: 'error',
+            'brace-style': 'error',
+            'no-multi-spaces': 'error',
+            'space-infix-ops': 'error',
+            'space-unary-ops': 'error',
+            'no-whitespace-before-property': 'error',
+            'func-call-spacing': 'error',
+            'space-before-blocks': 'error',
+            'keyword-spacing': ['error', { before: true, after: true }],
+            'comma-spacing': ['error', { before: false, after: true }],
+            'comma-style': ['error', 'last'],
+            'comma-dangle': ['error', 'always-multiline'],
+            'space-in-parens': ['error', 'never'],
+            'block-spacing': 'error',
+            'array-bracket-spacing': ['error', 'never'],
+            'object-curly-spacing': ['error', 'always'],
+            'key-spacing': ['error', { mode: 'strict' }],
+            'arrow-spacing': ['error', { before: true, after: true }],
+
+            'react/prop-types': 'off',
+            'react/react-in-jsx-scope': 'off',
+            'react/jsx-no-bind': 'off',
+        },
+    };
+
+    ```
+
+<br/><br/>
+
 ### 【1】 과제1 진행하면서 겪은 것 + 배운 것
 
 - 코드의 오류가 도저히 보이지 않음에도 서버 페이지가 계속 백지 상태면  
@@ -14,7 +113,11 @@
 
 <br/>
 
-- <strong>컴포넌트에 key 속성을 부여해선 안된다.</strong> 이는 prop이 아니란다.
+- <strong>컴포넌트에 key 속성을 부여하면 해당 컴포넌트에서 값을 제대로 읽지 못한다..</strong> 이는 prop이 아니라고 한다.
+
+- 하지만 <a href="https://ko.reactjs.org/docs/lists-and-keys.html#extracting-components-with-keys">React 공식문서의 해당 부분</a>을 살펴보면, <strong>컴포넌트에 key 속성을 부여하는 것이 옳바른 사용법이다.</strong>
+
+- <strong>그럼 어떻게 해야 할까?</strong> (코드숨 트레이너님께 질문 남겼음)
 
     ```jsx
     <Button key={i} onClick={onClick} />
@@ -60,6 +163,14 @@
 
     export default App;
     ```
+
+<br/><br/>
+
+### 【2】 과제2 진행을 위한 지식 학습
+
+- <strong>이벤트 처리</strong>
+
+- <strong>리스트와 key</strong>
 
 <br/><br/>
 

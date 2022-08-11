@@ -138,7 +138,7 @@
 
 <br/><br/>
 
-### 【4】 Webapck 설치 (+ npm 명령어 익숙해지기)
+### 【4】 Webpack 설치 (+ npm 명령어 익숙해지기)
 
 - <strong>npm 명령어에 익숙해지기 위해 정리하였다.</strong>
 
