@@ -21,7 +21,10 @@
     ```
 
     ```
-    react.development.js:210 Warning: Button: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop.
+    react.development.js:210 Warning: Button: `key` is not a prop.
+    Trying to access it will result in `undefined` being returned.
+    If you need to access the same value within the child component,
+    you should pass it as a different prop.
     ```
 
 <br/>
@@ -31,6 +34,8 @@
     - (React를 사용하므로) <code>import React from 'react';</code>는 모든 파일의 최상단에 꼭 작성해주어야 한다.
 
         - useState Hook을 같이 사용한다면 <code>import React, { useState } from 'react';</code> 이렇게 작성해주면 된다.
+
+    <br/>
 
     - 다른 컴포넌트를 불러올 때 <code>import</code>를 사용한다.
 
