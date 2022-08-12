@@ -1,14 +1,20 @@
 from collections import deque
 
-n, m = tuple(map(int, input().split()))
 
-snake = [
+n, k = tuple(map(int, input().split()))
+
+grid = [
     list(map(int, input().split()))
     for _ in range(n)
 ]
 
+start_list = [
+    tuple(map(int, input().split()))
+    for _ in range(k)
+]
+
 visited = [
-    [False] * (m)
+    [False] * n
     for _ in range(n)
 ]
 
@@ -16,36 +22,40 @@ q = deque()
 
 
 def can_move(x, y):
-    if x < 0 or y < 0 or x >= n or y >= m:
-        return False
+    return not grid[x][y]
 
-    if not snake[x][y]:
-        return False
-    
-    return True
-
+def in_range(x, y):
+    return x >= 0 and y >= 0 and x < n and y < n
 
 def bfs():
-    x, y = q.popleft()
-
     while q:
-        dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0]
+        q.popleft()
+
+        dxs = [0, 1, 0, -1]
+        dys = [1, 0 , -1, 0]
 
         for dx, dy in zip(dxs, dys):
             nx = x + dx
             ny = y + dy
 
-            if can_move(nx, ny) and not visited[nx][ny]:
-                visited[nx][ny] = True
+            if in_range(nx, ny) and can_move(nx, ny) and not visited[nx][ny]:
                 q.append((nx, ny))
+                visited[nx][ny] = True
+                
 
-                if nx == (n-1) and ny == (m-1):
-                    return
 
+# 처리
+for x, y in start_list:
+    x, y = x-1, y-1
+    q.append((x, y))
+    visited[x][y] = True
+    bfs()
 
-visited[0][0] = True
-q.append((0, 0))
-bfs()
+# 출력
+count = 0
+for i in range(n):
+    for j in range(n):
+        if visited[i][j] == True:
+            count += 1
 
-print(1 if visited[n-1][m-1] else 0)
-
+print(count)
