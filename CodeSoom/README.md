@@ -33,3 +33,11 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_3.md">Day 3 : React 관심사의 분리 + 첫 번째 과제 수행 (1차 목표 달성)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_4.md">Day 4 : 과제 진행 (컴포넌트 분리 실습)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_5.md">Day 5 : (코테 대비 캠프 과제로 코드숨 공부를 전혀 하지 못함..😥)</a>
+- Day 6-7 : (코테 대비 캠프 과제 및 개인 일정으로 코드숨 공부를 전혀 하지 못함..😥)
+- <a href="https://sylagape1231.tistory.com/49">✏ 2주차 주간 회고 (블로그 포스트)</a>
+
+<br/>
+
+## Week 3
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_1.md">Day 1 : </a>
