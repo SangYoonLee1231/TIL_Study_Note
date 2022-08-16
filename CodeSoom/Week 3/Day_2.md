@@ -257,7 +257,7 @@
 
 ### 【3】 React 테스트 - 실전 연습
 
-- <code>test.js</code> 롹장자를 가진 파일 생성
+- <code>test.js</code> 확장자를 가진 파일 생성
 
 - <code>.eslintrc.js</code> 업데이트
 
@@ -363,7 +363,7 @@
 
     - jest가 28버전 이상이 되면서 패키지 크기를 줄이기 위해 <code>jest-environment-jsdom</code>을 삭제했다고 한다.  
 
-    (<a href="https://stackoverflow.com/questions/69227566/consider-using-the-jsdom-test-environment">참고한 StackOverflow 질문</a>)
+        (<a href="https://stackoverflow.com/questions/69227566/consider-using-the-jsdom-test-environment">참고한 StackOverflow 질문</a>)
 
     - <strong>해결 방법</strong>
     
@@ -371,9 +371,8 @@
 
             - 명령어 : <code>npm i -D jest-environment-jsdom</code>
 
-        2. <code>package.json</code>에 아래 코드를 추가하거나, <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가한다.  
-        
-        (<strong>반드시 둘 중 하나만 해야 한다.</strong>)
+        2. <code>package.json</code>에 아래 코드를 추가하거나, <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가한다.   
+            (<strong>반드시 둘 중 하나만 해야 한다.</strong>)
 
             - package.json
 
