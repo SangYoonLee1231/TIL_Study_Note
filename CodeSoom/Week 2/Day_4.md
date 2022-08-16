@@ -6,11 +6,13 @@
 
 ## 배운 것 (간략히 정리)
 
-### 【0】 ✨ Fork한 코드숨 과제 Repository - 업데이트 순서
+### 【0】 ✨ Fork한 코드숨 과제 Repository - 기본 세팅 순서
 
 - 경로 이동 :<code>cd cd react-week?-assignment-?</code>
 
 - NPM 초기화 : <code>npm init -y</code>
+
+<br/>
 
 - Webpack 업데이트 : <code>npx webpack serve --mode development</code> (모두 설치)
 
@@ -50,6 +52,7 @@
         env: {
             browser: true,
             es2021: true,
+            jest: true,
         },
         extends: [
             'plugin:react/recommended',
@@ -100,8 +103,15 @@
             'react/jsx-no-bind': 'off',
         },
     };
-
     ```
+
+<br/>
+
+- 테스트 환경 구축
+
+    - Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
+
+    - React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
 
 <br/><br/>
 

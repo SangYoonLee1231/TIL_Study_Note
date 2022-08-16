@@ -197,7 +197,7 @@
 
 <br/><br/>
 
-### 【2】 React 테스트
+### 【2】 React 테스트 - 개념 학습
 
 - Jest : 자바스크립트 테스팅 라이브러리
 
@@ -209,20 +209,147 @@
 
 <br/>
 
-- <strong>TDD (테스트 주도 개발)</strong>
+- <strong>TDD (테스트 주도 개발 / Test Driven Development)</strong>
 
-    - 테스트가 개발을 주도하는 방법
+    - <strong>단위 테스트</strong> : 구현에 대한 테스트
 
-    - 2가지 룰
+    - <strong>TDD</strong> : 테스트가 개발을 주도하는 방법
+
+        - 자동화된 단위 테스트 코드를 먼저 작성함으로써 테스트가 개발을 이끌어 나가도록 하는 방식
+
+        - 테스트 코드가 자동으로 돌아가도록 한다.
+
+        - 어떤 결과를 원하는지 명확히 알고, 그 결과가 도출되는 과정 또한 명확히 안 후, 이를 구체적으로 (코드로) 표현할 수 있어야 한다.
+
+            - Test First Programming
+
+    <br/>
+
+    - <strong>2가지 룰</strong>
 
         - 테스트에 실패하는 코드가 없을 경우, 더 이상 새 코드를 작성하지 않는다.
 
         - 중복된 코드를 제거한다.
 
-    - How - Red Green Refactoring
+    <br/>
+
+    - <strong>TDD 사이클 (How - Red Green Refactoring)</strong>
 
         1. [Red] 처음에는 통과하지 못하는 테스트를 작성하라
 
         2. [Green] 그 다음 테스트를 통과할 수 있도록 코드를 작성하라.
 
         3. [Refactor] 통과한 코드를 리펙토링을 통해 개선하라. (TDD의 핵심)
+
+    <br/>
+
+    - <strong>React testing library</strong>
+
+        - 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
+
+    <br/>
+
+    - TDD 라이브 코딩 시청
+
+        👉 <a href="https://youtu.be/L1dtkLeIz-M">링크</a>
+
+<br/><br/>
+
+### 【3】 React 테스트 - 실전 연습
+
+- <code>test.js</code> 롹장자를 가진 파일 생성
+
+- <code>.eslintrc.js</code> 업데이트
+
+    ```javascript
+    module.exports = {
+        env: {
+            browser: true,
+            es2021: true,
+            jest: true,  <-- '이거 추가'
+        },
+        extends: [
+            'plugin:react/recommended',
+            'airbnb',
+        ],
+
+        ...
+
+    };
+    ```
+
+<br/>
+
+- <strong>테스트 실행 명령어</strong>
+
+    - <code>npx jest</code> : 테스트 파일 한 번 검사
+    
+    - <code>npx jest --watchAll</code> : 프로젝트에 있는 모든 테스트 파일 감시 (테스트 파일 저장 시 해당 파일 검사)
+
+<br/>
+
+- 코드 작성
+
+    ```javascript
+    test('simple', () => {
+        expect(1 + 1).toBe(2);
+    })
+    ```
+
+    - 테스트의 기본 구조 : <strong>단언문 (Assertion)</strong>
+    
+      - <strong>A</strong>는 <strong>B</strong>어야 한다. => A(<strong>실제값, actual</strong>)는 B(<strong>기대값, expect</strong>)어야 한다.
+
+    ```javascript
+    test('테스트 이름', 테스트 할 코드를 실행하는 함수 {
+        expect(A).toBe(B)
+        => '실제값(A)'이 '기대값(B)'이기를 기대한다.
+    })
+    ```
+
+<br/>
+
+- 다른 테스트 코드 예시
+
+    - Step 1 > RED
+
+        ```javascript
+        function add() {
+            // TODO
+        }
+
+        test('add', () => {
+            expect(add(1, 3)).toBe(4);
+        })
+        ```
+
+        - 여기서 우리는 <code>add</code>라는 <strong>Signature</strong>을 정의했다.
+
+            - name(add), parameters(x, y), return(result)
+
+    <br/>
+
+    - Step 2 > GREEN
+
+        ```javascript
+        function add() {
+            return 4;
+            // return 1 + 3;
+        }
+
+        test('add', () => {
+            expect(add(1, 3)).toBe(4);
+        })
+
+    <br/>
+
+    - Step 3 > Refactoring
+
+        ```javascript
+        function add(x, y) {
+            return x + y;
+        }
+
+        test('add', () => {
+            expect(add(1, 3)).toBe(4);
+        })

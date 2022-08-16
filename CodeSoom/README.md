@@ -31,7 +31,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_1.md">Day 1 : React 학습 + 1주차 코드 복습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_2.md">Day 2 : React 이어 학습 + 실습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_3.md">Day 3 : React 관심사의 분리 + 첫 번째 과제 수행 (1차 목표 달성)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_4.md">Day 4 : 과제 진행 (컴포넌트 분리 실습)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_4.md">Day 4 : 과제 진행 (컴포넌트 분리 실습)</a> \<Fork한 코드숨 과제 Repository - 기본 세팅 순서\>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%202/Day_5.md">Day 5 : (코테 대비 캠프 과제로 코드숨 공부를 전혀 하지 못함..😥)</a>
 - Day 6-7 : (코테 대비 캠프 과제 및 개인 일정으로 코드숨 공부를 전혀 하지 못함..😥)
 - <a href="https://sylagape1231.tistory.com/49">✏ 2주차 주간 회고 (블로그 포스트)</a>
@@ -41,4 +41,4 @@
 ## Week 3
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_1.md">Day 1 : Special Props Warning 문제에 대한 고찰</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_2.md">Day 2 : 지난 주 과제 코드 복습 + TDD 개념 학습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_2.md">Day 2 : 지난 주 과제 코드 복습 + TDD 개념 학습 + 테스트 코드 작성 실습</a>
