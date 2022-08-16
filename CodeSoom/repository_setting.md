@@ -42,6 +42,8 @@
     };
     ```
 
+<br/>
+
 7. <code>.eslintrc.js</code> 파일 수정
 
     ```javascript
@@ -122,6 +124,7 @@
             testEnvironment: 'jsdom',
         };
         ```
+<br/>
 
 11. React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
 
