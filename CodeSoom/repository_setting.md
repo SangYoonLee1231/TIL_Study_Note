@@ -1,6 +1,8 @@
-### ✨ Fork한 코드숨 과제 Repository - 기본 세팅 순서
+## ✨ Fork한 코드숨 과제 Repository - 작업 세팅 순서
 
 <br/>
+
+### 개발 환경 구축
 
 1. 경로 이동 : <code>cd react-week?-assignment-?</code>
 
@@ -101,47 +103,45 @@
 
 <br/>
 
-- 테스트 환경 구축
+### 테스트 환경 구축
 
-    8. Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
+8. Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
 
-    9. <code>jest-environment-jsdom</code> 설치 : 명령어 : <code>npm i -D jest-environment-jsdom</code>
+9. <code>jest-environment-jsdom</code> 설치 : 명령어 : <code>npm i -D jest-environment-jsdom</code>
 
-    10. <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가
+10. <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가
 
-        - jest.config.js
+    - jest.config.js
 
-            ```js
-            {
-                testEnvironment: 'jsdom',
-            };
-            ```
+        ```js
+        {
+            testEnvironment: 'jsdom',
+        };
+        ```
 
-    11. React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
+11. React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
 
 
-- 테스트 환경 추가 작업
+#### 테스트 환경 추가 작업 : 모든 테스트 파일에 적용할 코드 설정하기
 
-    - 모든 테스트 파일에 적용할 코드 설정하기
+12. <code>jest.config.js</code> 파일에 다음 코드를 추가
 
-        12. <code>jest.config.js</code> 파일에 다음 코드를 추가
+    ```js
+    // jest.config.js
+    module.exports = {
+        setupFilesAfterEnv: [
+            './jest.setup',
+        ],
 
-            ```js
-            // jest.config.js
-            module.exports = {
-                setupFilesAfterEnv: [
-                    './jest.setup',
-                ],
+        // ...
+    };
 
-                // ...
-            };
+    ```
 
-            ```
-        
-        13. <code>jest.setup.js</code> 파일을 <strong>생성</strong>하고, 모든 테스트 파일에 적용할 코드를 그 안에 작성
+13. <code>jest.setup.js</code> 파일을 <strong>생성</strong>하고, 모든 테스트 파일에 적용할 코드를 그 안에 작성
 
-            ```js
-            // jest.setup.js
-            import '@testing-library/jest-dom';
-            ```
+    ```js
+    // jest.setup.js
+    import '@testing-library/jest-dom';
+    ```
 
