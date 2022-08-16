@@ -16,6 +16,8 @@
 
 5. ESLint 설정 : <code>npx eslint --init</code>
 
+<br/>
+
 6. webpack 서버 띄울 시 경로 설정 바뀌어 있는지 확인 (<code>index.js</code>=><code>index.jsx</code>)
 
     ```js
@@ -107,7 +109,9 @@
 
 8. Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
 
-9. <code>jest-environment-jsdom</code> 설치 : 명령어 : <code>npm i -D jest-environment-jsdom</code>
+9. jest-environment-jsdom 설치 : <code>npm i -D jest-environment-jsdom</code>
+
+<br/>
 
 10. <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가
 
@@ -121,6 +125,7 @@
 
 11. React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
 
+<br/>
 
 #### 테스트 환경 추가 작업 : 모든 테스트 파일에 적용할 코드 설정하기
 
