@@ -40,4 +40,5 @@
 
 ## Week 3
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_1.md">Day 1 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_1.md">Day 1 : Special Props Warning 문제에 대한 고찰</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_2.md">Day 2 : 지난 주 과제 코드 복습 + TDD 개념 학습</a>
