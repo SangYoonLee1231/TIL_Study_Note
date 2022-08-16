@@ -1,18 +1,20 @@
 ### ✨ Fork한 코드숨 과제 Repository - 기본 세팅 순서
 
-- 경로 이동 : <code>cd react-week?-assignment-?</code>
+<br/>
 
-- NPM 초기화 : <code>npm init -y</code>
+1. 경로 이동 : <code>cd react-week?-assignment-?</code>
+
+2. NPM 초기화 : <code>npm init -y</code>
 
 <br/>
 
-- Webpack 업데이트 : <code>npx webpack serve --mode development</code> (모두 설치)
+3. Webpack 업데이트 : <code>npx webpack serve --mode development</code> (모두 설치)
 
-- ESLint 업데이트 : <code>npm i -D eslint</code>
+4. ESLint 업데이트 : <code>npm i -D eslint</code>
 
-- ESLint 설정 : <code>npx eslint --init</code>
+5. ESLint 설정 : <code>npx eslint --init</code>
 
-- webpack 서버 띄울 시 경로 설정 바뀌어 있는지 확인 (<code>index.js</code>=><code>index.jsx</code>)
+6. webpack 서버 띄울 시 경로 설정 바뀌어 있는지 확인 (<code>index.js</code>=><code>index.jsx</code>)
 
     ```js
     // webpack.config.js
@@ -36,7 +38,7 @@
     };
     ```
 
-- <code>.eslintrc.js</code> 파일 수정
+7. <code>.eslintrc.js</code> 파일 수정
 
     ```javascript
     // .eslintrc.js
@@ -101,11 +103,11 @@
 
 - 테스트 환경 구축
 
-    - Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
+    8. Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
 
-    - <code>jest-environment-jsdom</code> 설치 : 명령어 : <code>npm i -D jest-environment-jsdom</code>
+    9. <code>jest-environment-jsdom</code> 설치 : 명령어 : <code>npm i -D jest-environment-jsdom</code>
 
-    - <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가
+    10. <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가
 
         - jest.config.js
 
@@ -115,14 +117,14 @@
             };
             ```
 
-    - React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
+    11. React testing libraty 설치 : <code>npm i -D @testing-library/react @testing-library/jest-dom</code>
 
 
 - 테스트 환경 추가 작업
 
     - 모든 테스트 파일에 적용할 코드 설정하기
 
-        - <code>jest.config.js</code> 파일에 다음 코드를 추가
+        12. <code>jest.config.js</code> 파일에 다음 코드를 추가
 
             ```js
             // jest.config.js
@@ -136,7 +138,7 @@
 
             ```
         
-        - <code>jest.setup.js</code> 파일을 <strong>생성</strong>하고, 모든 테스트 파일에 적용할 코드를 그 안에 작성
+        13. <code>jest.setup.js</code> 파일을 <strong>생성</strong>하고, 모든 테스트 파일에 적용할 코드를 그 안에 작성
 
             ```js
             // jest.setup.js

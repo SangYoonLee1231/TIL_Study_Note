@@ -201,7 +201,7 @@
 
 - Jest : 자바스크립트 테스팅 라이브러리
 
-    - Jest 설치 -> <code>npm i -D jest @types/jest babel-jest</code>
+    - Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
 
 - Assertion : 단정문. 기댓값이 실제값과 일치하는 지 확인하는 데 사용
 
@@ -290,7 +290,9 @@
 
 - 테스트의 기본 구조 : <strong>단언문 (Assertion)</strong>
     
-    - <strong>A</strong>는 <strong>B</strong>어야 한다. -> A(<strong>실제값, actual</strong>)는 B(<strong>기대값, expect</strong>)어야 한다.
+    - <strong>A</strong>는 <strong>B</strong>어야 한다.
+    
+    - A(<strong>실제값, actual</strong>)는 B(<strong>기대값, expect</strong>)어야 한다.
 
         ```javascript
         test('simple', () => {
@@ -353,7 +355,7 @@
 
 <br/>
 
-- ❗ <strong>[오류] ReferenceError: document is not defined</strong>
+- <strong>[ 오류 ❗ ] ReferenceError: document is not defined</strong>
 
     - render을 import했음에도 jest에서 document가 정의되지 않았다는 오류 발생
 
@@ -413,4 +415,6 @@
         ```
 <br/>
 
-- 
+- <strong>테스트 코드 작성법</strong>
+
+    - 아직 이해가 잘 되지 않는다. 내일 좀 더 공부를 해봐야 할 듯

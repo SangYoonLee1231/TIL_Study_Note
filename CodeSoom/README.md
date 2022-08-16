@@ -14,7 +14,9 @@
 
 <br/>
 
-<a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/repository_setting.md">\<Fork한 코드숨 과제 Repository - 기본 세팅 순서\></a>
+<a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/repository_setting.md">👉 Fork한 코드숨 과제 Repository - 기본 세팅 순서</a>
+
+<br/>
 
 ## Week 1
 
