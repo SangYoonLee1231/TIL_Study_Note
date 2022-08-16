@@ -193,7 +193,7 @@
                 ...state,
                 newTask: event.target.value,
             });
-        ```
+            ```
 
 <br/><br/>
 
@@ -288,30 +288,27 @@
 
 <br/>
 
-- 코드 작성
-
-    ```javascript
-    test('simple', () => {
-        expect(1 + 1).toBe(2);
-    })
-    ```
-
-    - 테스트의 기본 구조 : <strong>단언문 (Assertion)</strong>
+- 테스트의 기본 구조 : <strong>단언문 (Assertion)</strong>
     
-      - <strong>A</strong>는 <strong>B</strong>어야 한다. => A(<strong>실제값, actual</strong>)는 B(<strong>기대값, expect</strong>)어야 한다.
+    - <strong>A</strong>는 <strong>B</strong>어야 한다. -> A(<strong>실제값, actual</strong>)는 B(<strong>기대값, expect</strong>)어야 한다.
 
-    ```javascript
-    test('테스트 이름', 테스트 할 코드를 실행하는 함수 {
-        expect(A).toBe(B)
-        => '실제값(A)'이 '기대값(B)'이기를 기대한다.
-    })
-    ```
+        ```javascript
+        test('simple', () => {
+            expect(1 + 1).toBe(2);
+        })
+        ```
+        ```javascript
+        test('테스트 이름', 테스트 할 코드를 실행하는 함수 {
+            expect(A).toBe(B)
+            => '실제값(A)'이 '기대값(B)'이기를 기대한다.
+        })
+        ```
 
 <br/>
 
 - 다른 테스트 코드 예시
 
-    - Step 1 > RED
+    - Step 1 > <strong>RED</strong>
 
         ```javascript
         function add() {
@@ -329,7 +326,7 @@
 
     <br/>
 
-    - Step 2 > GREEN
+    - Step 2 > <strong>GREEN</strong>
 
         ```javascript
         function add() {
@@ -343,7 +340,7 @@
 
     <br/>
 
-    - Step 3 > Refactoring
+    - Step 3 > <strong>Refactoring</strong>
 
         ```javascript
         function add(x, y) {
@@ -353,3 +350,67 @@
         test('add', () => {
             expect(add(1, 3)).toBe(4);
         })
+
+<br/>
+
+- ❗ <strong>[오류] ReferenceError: document is not defined</strong>
+
+    - render을 import했음에도 jest에서 document가 정의되지 않았다는 오류 발생
+
+    - jsdom 실행 환경이 아니라서 발생한 문제
+
+    - jest가 28버전 이상이 되면서 패캐지 크기를 줄이기 위해 <code>jest-environment-jsdom</code>을 삭제하다고 한다.  
+    (<a href="https://stackoverflow.com/questions/69227566/consider-using-the-jsdom-test-environment">참고한 StackOverflow 질문</a>)
+
+    - <strong>해결 방법</strong>
+    
+        1. <code>jest-environment-jsdom</code>을 따로 설치해준다.
+
+            - 명령어 : <code>npm i -D jest-environment-jsdom</code>
+
+        2. <code>package.json</code>에 아래 코드를 추가하거나, <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가한다.  
+        (<strong>반드시 둘 중 하나만 해야 한다.</strong>)
+
+            - package.json
+
+            ```json
+            "jest":{
+                "testEnvironment": "jsdom"
+            }
+            ```
+
+            - jest.config.js
+
+            ```js
+            {
+                testEnvironment: 'jsdom',
+            };
+            ```
+
+<br/>
+
+- <strong>모든 테스트 파일에 적용할 코드 설정하기</strong>
+
+    - <code>jest.config.js</code> 파일에 다음을 추가한다.
+
+        ```js
+        // jest.config.js
+        module.exports = {
+            setupFilesAfterEnv: [
+                './jest.setup',
+            ],
+
+            // ...
+        };
+
+        ```
+    
+    - <code>jest.setup.js</code> 파일을 <strong>생성</strong>하고, 모든 테스트 파일에 적용할 코드를 그 안에 작성한다.
+
+        ```js
+        // jest.setup.js
+        import '@testing-library/jest-dom';
+        ```
+<br/>
+
+- 
