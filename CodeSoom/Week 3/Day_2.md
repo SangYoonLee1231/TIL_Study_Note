@@ -15,7 +15,7 @@
 
 <br/>
 
-- <strong>지난 주 2번째 과제 (간단한 Todo App 만들기) 코드 학습</strong>
+- <strong>지난 주 2번째 과제 (간단한 Todo App 만들기) 코드 이해하기</strong>
 
     - <strong>해설 코드</strong>
 
@@ -186,7 +186,7 @@
             }
             ```
 
-        - setState 설정시
+        - setState 설정시 (<code>...state</code>)
 
             ```javascript
             setState({
@@ -199,13 +199,13 @@
 
 ### 【2】 React 테스트 - 개념 학습
 
-- Jest : 자바스크립트 테스팅 라이브러리
+- <strong>Jest</strong> : 자바스크립트 테스팅 라이브러리
 
-    - Jest 설치 : <code>npm i -D jest @types/jest babel-jest</code>
+    - <strong>Jest 설치</strong> : <code>npm i -D jest @types/jest babel-jest</code>
 
-- Assertion : 단정문. 기댓값이 실제값과 일치하는 지 확인하는 데 사용
+- <strong>Assertion</strong> : 단정문. 기댓값이 실제값과 일치하는 지 확인하는 데 사용
 
-- Signature : 모든 연산의 명세 (연산 이름, 매개변수, 반환값)
+- <strong>Signature</strong> : 모든 연산의 명세 (연산 이름, 매개변수, 반환값)
 
 <br/>
 
@@ -213,13 +213,13 @@
 
     - <strong>단위 테스트</strong> : 구현에 대한 테스트
 
-    - <strong>TDD</strong> : 테스트가 개발을 주도하는 방법
+    - <strong>TDD</strong> : <strong>테스트가 개발을 주도하는 방법</strong>
 
-        - 자동화된 단위 테스트 코드를 먼저 작성함으로써 테스트가 개발을 이끌어 나가도록 하는 방식
+        - 자동화된 단위 테스트 코드를 <strong>먼저 작성</strong>함으로써 테스트가 개발을 이끌어 나가도록 하는 방식
 
-        - 테스트 코드가 자동으로 돌아가도록 한다.
+        - 테스트 코드가 <strong>자동</strong>으로 돌아가도록 한다.
 
-        - 어떤 결과를 원하는지 명확히 알고, 그 결과가 도출되는 과정 또한 명확히 안 후, 이를 구체적으로 (코드로) 표현할 수 있어야 한다.
+        - ✨ 어떤 결과를 원하는지 명확히 알고, 그 결과가 도출되는 과정 또한 명확히 안 후, 이를 구체적으로 (코드로) 표현할 수 있어야 한다.
 
             - Test First Programming
 
@@ -235,11 +235,11 @@
 
     - <strong>TDD 사이클 (How - Red Green Refactoring)</strong>
 
-        1. [Red] 처음에는 통과하지 못하는 테스트를 작성하라
+        1. <strong>[Red]</strong> 처음에는 통과하지 못하는 테스트를 작성하라
 
-        2. [Green] 그 다음 테스트를 통과할 수 있도록 코드를 작성하라.
+        2. <strong>[Green]</strong> 그 다음 테스트를 통과할 수 있도록 코드를 작성하라.
 
-        3. [Refactor] 통과한 코드를 리펙토링을 통해 개선하라. (TDD의 핵심)
+        3. <strong>[Refactor]</strong> 통과한 코드를 리펙토링을 통해 개선하라. (TDD의 핵심)
 
     <br/>
 
@@ -361,7 +361,8 @@
 
     - jsdom 실행 환경이 아니라서 발생한 문제
 
-    - jest가 28버전 이상이 되면서 패캐지 크기를 줄이기 위해 <code>jest-environment-jsdom</code>을 삭제하다고 한다.  
+    - jest가 28버전 이상이 되면서 패키지 크기를 줄이기 위해 <code>jest-environment-jsdom</code>을 삭제했다고 한다.  
+
     (<a href="https://stackoverflow.com/questions/69227566/consider-using-the-jsdom-test-environment">참고한 StackOverflow 질문</a>)
 
     - <strong>해결 방법</strong>
@@ -371,6 +372,7 @@
             - 명령어 : <code>npm i -D jest-environment-jsdom</code>
 
         2. <code>package.json</code>에 아래 코드를 추가하거나, <code>jest.config.js</code> 파일을 만들어 아래 코드를 추가한다.  
+        
         (<strong>반드시 둘 중 하나만 해야 한다.</strong>)
 
             - package.json
