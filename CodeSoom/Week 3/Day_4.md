@@ -14,7 +14,7 @@
 
 <br/>
 
-### 【2】테스트 코드 공부 - 'Jest 및 테스팅 라이브러리로 React 테스트하기' Udemy 강의
+### 【2】 테스트 코드 공부 - '<a href="https://www.udemy.com/share/106UHI3@eYd9_cuMTJmUabjWWnBxA3AsjrzO3IRupVwoj4PdDb53ByHr41AOxi_a3H26yz5B9g==/">Jest 및 테스팅 라이브러리로 React 테스트하기</a>' Udemy 강의
 
 #### React Testing Library (RTL)
 
