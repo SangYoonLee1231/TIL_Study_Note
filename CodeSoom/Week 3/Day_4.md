@@ -116,7 +116,7 @@ test('renders learn react link', () => {
 
         - expect 매서드 <- Jest 전역 매서드
 
-        - Matcher <- Jest DOM에서 옴
+        - Matcher <- 일반적인 매처 혹은 DOM 기반 매처
 
             - Matcher 종류에 따라 인수가 있을 수도 없을 수도 있음
 
@@ -165,7 +165,7 @@ test('renders learn react link', () => {
 
 <br/>
 
-### 테스트의 유형
+#### 테스트의 유형
 
 - <strong>유닛 테스트 (Unit Tests)</strong>
 
@@ -173,12 +173,16 @@ test('renders learn react link', () => {
 
     - 유닛끼리 상호 작용하는 것은 테스트하지 않음
 
+<br/>
+
 - <strong>통합 테스트 (Integration Tests)</strong>
 
     - 여러 유닛이 함께 작동하는 방식을 테스트
 
     - 유닛 간의 상호 작용을 테스트  
       (컴포넌트 간의 상호 작용, 마이크로 서비스 간의 상호 작용)
+
+<br/>
 
 - <strong>기능 테스트 (Functional Tests)</strong>
 
@@ -190,6 +194,8 @@ test('renders learn react link', () => {
 
     - RTL은 기능 테스트를 권장
 
+<br/>
+
 - <strong>인수 테스트 (Acceptance) 혹은 End-to-End 테스트 (E2E Tests)</strong>
 
     - 실제 브라우저와, 앱이 연결된 서버가 필요 (Cypress, Selenium이 가장 인기 있는 도구)
@@ -198,7 +204,7 @@ test('renders learn react link', () => {
 
 <br/>
 
-### 유닛 테스트 vs 기능 테스트
+#### 유닛 테스트 vs 기능 테스트
 
 - <strong>유닛 테스트 (Unit Tests)</strong>
 
@@ -206,7 +212,63 @@ test('renders learn react link', () => {
 
     - 그래서 함수나 컴포넌트를 테스트할 때 의존성을 표시
 
-    - 격리된 유닛에서 실패를 쉽고 정확하게 파악할 수 있다.
+    - 장점
+
+        - 테스트가 코드의 한 유닛에 격리되어 있기 때문에 실패를 쉽고 정확하게 파악할 수 있다.
+
+    - 단점
+
+        - 사용자가 소프트웨어와 상호 작용하는 방식과는 거리가 멀다.
+
+        - 리팩토링으로 실패할 가능성도 있다.
+
+<br/>
+
+- <strong>기능 테스트 (Functional Tests)</strong>
+
+    - 테스트하는 특정 동작이나 유저 플로우와 연관된 모든 단위를 포함
+
+    - 장점
+
+        - 사용자가 소프트웨어와 상호 작용하는 방식과 밀접.
+
+            - 테스트에 통과하면 사용자에게 문제가 없고, 테스트에 실패하면 사용자에게 문제가 발생할 가능성이 높다.
+
+        - 테스트가 견고하다.
+
+            - 코드 작성 방식을 리펙토링하면 동작이 동일하게 유지되는 한 테스트도 통과한다.
+
+    - 단점
+
+        - 실패한 테스트를 디버깅하기 어렵다.
+
+            - 코드가 테스트와 밀접하게 연관되어 있지 않아, 어떤 부분의 코드가 테스트 실패의 원인인지 정확히 알 수 없다.
+
+<br/>
+
+- 전반적으로 RTL은 기능 테스트의 장점이 단점을 보안한다고 생각한다.
+
+<br/>
+
+#### 접근성과 요소 찾기
+
+- 테스팅 라이브러리는 요소를 찾는 방식에도 완고하다.
+
+- 접근성으로 요소를 찾거나 요소를 찾을 수 있는 스크린 리더와 같은 보조 기술로 요소를 찾는 걸 권장한다.
+
+<br/>
+
+### 【2】 BDD에 대해 학습
+
+- <a href="https://github.com/CodeSoom/react-week3-assignment-1/pull/134">해당 PR</a>을 참고하고 나서 BDD에 대해 공부해보기로 했다.
+
+<br/>
+
+- <strong>BDD란</strong>
+
+    - 사양을 기술에 집중하는 TDD의 확장
+
+
 
 <br/><br/>
 
