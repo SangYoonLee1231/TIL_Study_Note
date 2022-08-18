@@ -14,7 +14,7 @@
 
 <br/>
 
-### 【2】 테스트 코드 공부 - '<a href="https://www.udemy.com/share/106UHI3@eYd9_cuMTJmUabjWWnBxA3AsjrzO3IRupVwoj4PdDb53ByHr41AOxi_a3H26yz5B9g==/">Jest 및 테스팅 라이브러리로 React 테스트하기</a>' Udemy 강의
+### 【2】 테스트 코드 공부 - '<a href="https://www.udemy.com/course/jest-testing-library/">Jest 및 테스팅 라이브러리로 React 테스트하기</a>' Udemy 강의
 
 #### React Testing Library (RTL)
 
@@ -36,10 +36,12 @@
 
 - <strong>RTL</strong>
 
-    - 테스트를 위한 가상 DOM 제공
+    - 테스트를 위한 가상 DOM 제공 (<code>render</code> 매서드로 생성)
     
-    - 브라우저 없이 테스트를 진행하려면 클릭 요소와 같은 작업을 할 때 가상 DOM이 필요
+    - 브라우저 없이 테스트를 진행하려면 클릭 요소와 같은 작업을 할 때 가상 DOM 필요
 
+        - 가상 DOM과 상호작용하여 요소를 클릭하거나 텍스트를 입력
+    
     - 가상 DOM이 원하는 대로 동작하는 지 확인 가능
 
 - <strong>Jest</strong>
@@ -47,6 +49,10 @@
     - 테스트 러너
 
     - 테스트를 찾고 실행하는 것과, 테스트 통과 여부를 결정하는 역할을 한다.
+
+    - Jest를 실행하는 방법으로 Watch 모드가 있다.
+
+        - Watch 모드 : 마지막 커밋 이후 파일의 모든 변경 사항 확인, 변경된 파일과 연관된 테스트만 실행
 
 <br/>
 
@@ -121,6 +127,14 @@ test('renders learn react link', () => {
         })
         ```
 
+    - 테스트 통과 원리
+
+        - 테스트는 테스트 함수가 에러를 발생하면 실패한다.
+
+        - 그리고 단언은 예상이 틀렸을 때 에러가 발생하도록 한다.
+
+        - 에러가 없으면 테스트에 통과한다.
+
 <br/>
 
 #### jest-dom
@@ -151,9 +165,48 @@ test('renders learn react link', () => {
 
 <br/>
 
-#### Jest의 원리와 필요한 이유
-        
+### 테스트의 유형
 
+- <strong>유닛 테스트 (Unit Tests)</strong>
+
+    - 보통 함수나 별개의 React 컴포넌트 코드의 한 유닛 혹은 단위를 테스트
+
+    - 유닛끼리 상호 작용하는 것은 테스트하지 않음
+
+- <strong>통합 테스트 (Integration Tests)</strong>
+
+    - 여러 유닛이 함께 작동하는 방식을 테스트
+
+    - 유닛 간의 상호 작용을 테스트  
+      (컴포넌트 간의 상호 작용, 마이크로 서비스 간의 상호 작용)
+
+- <strong>기능 테스트 (Functional Tests)</strong>
+
+    - 소프트웨어의 특정 기능을 테스트
+
+    - 코드가 아닌 동작을 테스트
+
+        - 특정 코드 함수가 아닌 소프트웨어의 일반적인 동작을 테스트 (Function의 동작과 관련한 의미)
+
+    - RTL은 기능 테스트를 권장
+
+- <strong>인수 테스트 (Acceptance) 혹은 End-to-End 테스트 (E2E Tests)</strong>
+
+    - 실제 브라우저와, 앱이 연결된 서버가 필요 (Cypress, Selenium이 가장 인기 있는 도구)
+
+    - RTL을 위해 설계된 테스트는 아님
+
+<br/>
+
+### 유닛 테스트 vs 기능 테스트
+
+- <strong>유닛 테스트 (Unit Tests)</strong>
+
+    - 유닛 테스트는 테스트를 최대한 격리
+
+    - 그래서 함수나 컴포넌트를 테스트할 때 의존성을 표시
+
+    - 격리된 유닛에서 실패를 쉽고 정확하게 파악할 수 있다.
 
 <br/><br/>
 
