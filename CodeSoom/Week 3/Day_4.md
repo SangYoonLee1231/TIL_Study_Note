@@ -268,6 +268,8 @@ test('renders learn react link', () => {
 
     - 사양을 기술에 집중하는 TDD의 확장
 
+    - ...
+
 
 
 <br/><br/>
@@ -279,3 +281,7 @@ test('renders learn react link', () => {
 <br/><br/>
 
 ## Feeling
+
+- 코로나로 인해 몸이 생각 이상으로 많이 아프지만, 그래도 오후까지 할 일에 집중할 수 있어 다행인 하루였다.
+
+- 그냥 빨리 낫고 싶다.. 😰
