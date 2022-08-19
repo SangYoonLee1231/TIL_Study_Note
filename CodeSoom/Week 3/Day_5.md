@@ -270,3 +270,27 @@
         expect(handleCilck).toBeCalledWith(1);
     });
     ```
+
+<br/>
+
+### 【3】 BDD 학습
+
+- <a href="https://ko.javascript.info/testing-mocha#ref-1068">해당 자료</a>를 통해 학습
+
+<br/><br/>
+
+## 과제 진행
+
+### 과제1. To-do 테스트 작성하기
+
+- <a href="https://github.com/CodeSoom/react-week3-assignment-1/pull/150">PR 기록 바로가기</a>
+
+    - Input 컴포넌트의 초기값 확인 테스트 코드만 작성하여 PR을 보냈다.
+
+    - 테스트 코드에서 요소를 가져올 때도 <code>querySelector</code> 를 사용할 수 있구나.
+
+    - 비록 9시를 넘겼지만, Input 컴포넌트 테스트 코드를 빠르게 완성하여 추가 커밋을 진행했다.
+
+<br/><br/>
+
+## Feeling
