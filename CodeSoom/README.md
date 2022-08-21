@@ -49,3 +49,4 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_3.md">Day 3 : 테스트 코드 관련 추가 학습 (코로나 확진으로 공부에 또 차질이 생김..😥)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_4.md">Day 4 : 지난 주 과제 코드 2차 복습 + 테스트 코드 관련 추가 학습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_5.md">Day 5 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_6-7.md">Day 6-7 : </a>

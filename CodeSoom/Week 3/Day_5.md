@@ -87,9 +87,13 @@
 
     - (기능 테스트의 경우 하나의 테스트에 여러 개의 단언문을 넣어주어도 상관없다.)
 
+    <br/>
+
     - <strong><code>render(<App />);</code></strong>
     
       - <code>render</code> 매서트로 <code>App</code> 컴포넌트의 가상 DOM을 생성한다.
+
+    <br/>
 
     - <strong><code>const colorButton = screen.getByRole('button', { name: 'Change to blue' });</code></strong>
 
@@ -102,6 +106,8 @@
         - (존재하지 않는 역할을 넣었을 때, 테스팅 라이브러리의 출력값을 통해 가이드를 받을 수 있다.)
 
       - <code>getByRole()</code>의 두 번째 인수는 옵션. <code>name</code> 옵션에서 예상하는 것을 입력해서 확인할 수 있다.
+
+    <br/>
 
     - <strong><code>expect(colorButton).toHaveStyle({ backgroundColor: 'red' })</code></strong>
 
