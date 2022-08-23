@@ -53,4 +53,7 @@
 
 <br/>
 
-## Week 3
+## Week 4
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_1.md">Day 1 : Flux 아키텍처와 Redux 기본 개념 학습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_2.md">Day 2 : </a>

@@ -95,7 +95,7 @@
 
 <br/>
 
-### 과제 2 - 간단한 사칙 연산 계산기 구현
+### 과제 2 - 간단한 Todo App 만들기
 
 - <a href="https://github.com/CodeSoom/react-week2-assignment-2/pull/157">PR 기록 바로가기</a>
 

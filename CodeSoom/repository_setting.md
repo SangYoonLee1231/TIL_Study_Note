@@ -146,6 +146,8 @@
 
     ```
 
+<br/>
+
 13. <code>jest.setup.js</code> 파일을 <strong>생성</strong>하고, 모든 테스트 파일에 적용할 코드를 그 안에 작성
 
     ```js
@@ -153,3 +155,36 @@
     import '@testing-library/jest-dom';
     ```
 
+<br/>
+
+#### 테스트 환경 추가 작업 : context 구문 사용
+
+14. jest-plugin-context 설치 : <code>npm i jest-plugin-context</code>
+
+<br/>
+
+15. <code>jest.config.js</code> 파일에 다음 코드를 추가
+
+    ```js
+    module.exports = {
+        setupFilesAfterEnv: [
+            'jest-plugin-context/setup',  <-- 이거 추가
+            './jest.setup',
+        ],
+        testEnvironment: 'jsdom',
+    };
+    ```
+
+<br/>
+
+16. <code>.eslintrc.js</code> 파일 수정
+
+    ```js
+    module.exports = {
+        // ...
+        globals: {
+            context: 'readonly',
+        },
+        // ...
+    }
+    ```

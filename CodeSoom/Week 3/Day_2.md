@@ -144,9 +144,9 @@
                     <ol>
                         {tasks.map((task) => (
                             <Item
-                            key={task.id}
-                            task={task}
-                            onClick={onClickDeleteTask}
+                                key={task.id}
+                                task={task}
+                                onClick={onClickDeleteTask}
                             />
                         ))}
                     </ol>
