@@ -56,4 +56,7 @@
 ## Week 4
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_1.md">Day 1 : Flux 아키텍처와 Redux 기본 개념 학습</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_2.md">Day 2 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_2.md">Day 2 : 테스트 코드 추가 실습 + Redux 개인 학습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_3.md">Day 3 : Redux 개인 학습 + 코드숨 온라인 강의 학습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_4.md">Day 4 : 코드숨 온라인 강의 학습 (ToDo앱 Redux로 리펙토링 + 테스트 코드 작성)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_5.md">Day 5 : </a>
