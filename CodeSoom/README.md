@@ -62,4 +62,4 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_4.md">Day 4 : 코드숨 온라인 강의 학습 (ToDo앱 Redux로 리펙토링 + 테스트 코드 작성)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_5.md">Day 5 : Redux와 친해지기</a>
 - Day 6-7 : (코드 리뷰 참고하여 리펙토링 진행 + 슬럼프..😥)
-- <a href="https://sylagape1231.tistory.com/51">✏ 3주차 주간 회고 (블로그 포스트)</a>
+- <a href="https://sylagape1231.tistory.com/51">✏ 4주차 주간 회고 (블로그 포스트)</a>
