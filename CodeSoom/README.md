@@ -50,6 +50,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_4.md">Day 4 : 지난 주 과제 코드 2차 복습 + 테스트 코드 관련 추가 학습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_5.md">Day 5 : 테스트 코드 관련 추가 학습 + 과제 시도</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%203/Day_6-7.md">Day 6-7 : 과제 분석 + BDD 스타일 학습</a>
+- <a href="https://sylagape1231.tistory.com/50">✏ 3주차 주간 회고 (블로그 포스트)</a>
 
 <br/>
 
@@ -59,4 +60,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_2.md">Day 2 : 테스트 코드 추가 실습 + Redux 개인 학습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_3.md">Day 3 : Redux 개인 학습 + 코드숨 온라인 강의 학습</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_4.md">Day 4 : 코드숨 온라인 강의 학습 (ToDo앱 Redux로 리펙토링 + 테스트 코드 작성)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_5.md">Day 5 : </a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%204/Day_5.md">Day 5 : Redux와 친해지기</a>
+- Day 6-7 : (코드 리뷰 참고하여 리펙토링 진행 + 슬럼프..😥)
+- <a href="https://sylagape1231.tistory.com/51">✏ 3주차 주간 회고 (블로그 포스트)</a>
