@@ -23,7 +23,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%EB%AF%B8%EB%94%94%EC%96%B4-content-%ED%83%9C%EA%B7%B8">미디어 content 태그 - <code>\<img></code>, <code>\<video></code></a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%ED%91%9C-%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%83%9C%EA%B7%B8">표 (테이블) 태그</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#form-%ED%83%9C%EA%B7%B8">Form 태그</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%EA%B8%B0%ED%83%80-%ED%83%9C%EA%B7%B8">기타 태그</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%EA%B8%B0%ED%83%80-%ED%83%9C%EA%B7%B8">기타 태그 - <code>\<a></code>, <code>\<hr></code></a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#semantic-html">Semantic HTML</a>
 
@@ -95,6 +95,12 @@
   <li>김치</li>
   <li>고기</li>
 </ol>
+
+<ul>
+  <li>1번</li>
+  <li>2번</li>
+  <li>3번</li>
+</ul>
 ```
 
 <br/>
@@ -162,6 +168,17 @@
     ```html
     <a href="https://www.google.com/">구글로 이동</a>
     ```
+
+  - <code>href</code> 속성을 부여하면 링크를 어디에서 열지 정할 수 있다.
+
+    - <code>_self</code>: 현재 창(혹은 탭)에서 링크를 연다.
+
+    - <code>_target</code>: 새 창(혹은 탭)에서 링크를 연다.
+
+      ```html
+      <!--다른 탭으로 구글 웹 페이지 열기-->
+      <a href="https://www.google.com/" target="_blank">구글로 이동</a>
+      ```
 
 <br/>
 
