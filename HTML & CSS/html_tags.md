@@ -89,13 +89,13 @@
 
   - <code>\<ol></code> 혹은 <code>\<li></code> 태그의 내부에 자식 태그로 쓰인다.
 
-  ```html
-  <ol>
-    <li>사과</li>
-    <li>김치</li>
-    <li>고기</li>
-  </ol>
-  ```
+```html
+<ol>
+  <li>사과</li>
+  <li>김치</li>
+  <li>고기</li>
+</ol>
+```
 
 <br/>
 
@@ -159,9 +159,9 @@
 
   - <code>href</code> 속성(attribute)으로 주소를 주어야 한다.
 
-  ```html
-  <a href="https://www.google.com/">구글로 이동</a>
-  ```
+    ```html
+    <a href="https://www.google.com/">구글로 이동</a>
+    ```
 
 <br/>
 
