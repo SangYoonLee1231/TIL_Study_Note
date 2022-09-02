@@ -8,12 +8,32 @@
 
 - HTML에서 자주 쓰이는 태그를 최대한 많이 정리하였다. <strong>단순 암기하지 말고 계속 쓰면서 익숙해지자.</strong>
 
-- ✨ 모르는 태그는 구글에 검색하거나 <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">MDN Web Docs</a>에 가서 찾아 쓰자. <br/>
-  <br/>
+- ✨ 모르는 태그는 구글에 검색하거나 <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">MDN Web Docs</a>에 가서 찾아 쓰자.
+
+<br/>
+
+### 목차
+
+- <a href="">\<head> 내부 태그 (메타 데이터 삽입 태그)</a>
+
+- <a href="">\<body> 내부 태그</a>
+  - <a href="">태그 분류 - 블록, 인라인 태그</a>
+  - <a href="">줄바꿈 - <code>\<br></code>, <code>\<p></code></a>
+  - <a href="">목록 (리스트) - <code>\<ol></code>, <code>\<ul></code>, <code>\<li></code></a>
+  - <a href="">미디어 content 태그 - <code>\<img></code>, <code>\<video></code></a>
+  - <a href="">표 (테이블) 태그</a>
+  - <a href="">Form 태그</a>
+  - <a href="">기타 태그</a>
+
+- <a href="">Semantic HTML</a>
+
+<br/><br/>
 
 ## \<head> 내부 태그 (메타 데이터 삽입 태그)
 
 - <code>\<title></code> : 웹페이지에 타이틀 달기
+
+<br/>
 
 - <code>\<meta></code> : 다양한 종류의 메타 데이터 나타냄
 
@@ -21,53 +41,65 @@
 
   - <code>\<meta content="..." name="description" /></code> : Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 표시.
 
+<br/>
+
 - <code>\<link></code>
 
   - <code>\<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /></code> : 웹 브라우저 탭의 이미지 설정
 
   - <code>\<link rel="stylesheet" href="style.css" /></code> : style이름의 css파일과 연결
 
+<br/>
+
 - <code>\<style></code> : 웹 페이지 전체에 적용할 css(스타일 시트) 코드 작성
 
-<br/>
+<br/><br/>
 
 ## \<body> 내부 태그
 
-### 블록, 인라인 태그
+### 태그의 분류 - 블록, 인라인 태그
 
 - 블록(<code>block</code>) 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
+
   - <code>\<div></code>, <code>\<p></code>, <code>\<h1></code>, <code>\<ul></code>
+
 - 인라인(<code>inline</code>) 태그 : 블록 속에 삽입되어 블록의 일부로 출력
+
   - <code>\<strong></code>, <code>\<a></code>, <code>\<img></code>, <code>\<span></code>
 
 <br/>
 
 ### 줄바꿈
 
-- <code>\<br></code> OR <code>\<br/></code> : 강제 줄바꿈 태그 (Self-Closing 태그)
+- <strong><code>\<br></code></strong> 또는 <code>\<br/></code> : 강제 줄바꿈 태그 (Self-Closing 태그)
 
-- <code>\<p></code> : 단락 표시  
+- <strong><code>\<p></code></strong> : 단락 표시  
+
   (의미를 담고 있는 태그이므로 <code>\<br></code>보다 좋은 태그이다.)
 
 <br/>
 
 ### 목록 (리스트)
 
-- <code>\<ol></code> : ordered list - 순서가 있는 목록 (부모 태그)
+- <strong><code>\<ol></code></strong> : ordered list - 순서가 있는 목록
 
-- <code>\<ul></code> : unordered list - 순서가 없는 목록 (부모 태그)
+- <strong><code>\<ul></code></strong> : unordered list - 순서가 없는 목록
 
-- <code>\<li></code> : 목록의 각 항목을 나열하는 태그 (자식 태그)
+- <strong><code>\<li></code></strong> : 목록의 각 항목을 나열하는 태그
 
-```html
-<ol>
-  <li>사과</li>
-  <li>김치</li>
-  <li>고기</li>
-</ol>
-```
+  - <code>\<ol></code> 혹은 <code>\<li></code> 태그의 내부에 자식 태그로 쓰인다.
 
-- ol 태그의 type 속성(attribute)
+  ```html
+  <ol>
+    <li>사과</li>
+    <li>김치</li>
+    <li>고기</li>
+  </ol>
+  ```
+
+<br/>
+
+- <code>\<ol></code> 태그의 type 속성(attribute)
 
   - <code>\<ol type="A"></code> : 1,2,3 숫자 순이 아닌 A,B,C 알파벳 순으로 리스트 항목 표시
 
@@ -122,7 +154,7 @@
 
 - <code>\<a></code> : 하이퍼링크 태그
 
-<br/>
+<br/><br/>
 
 ## Semantic HTML
 

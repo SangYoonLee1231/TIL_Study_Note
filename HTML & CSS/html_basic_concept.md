@@ -4,9 +4,20 @@
 
 > 참고 자료 : 「<a href="https://nomadcoders.co/kokoa-clone" target="_blank">노마드 코더 - 코코아톡 클론코딩 강의</a>」, 「<a href="https://youtube.com/playlist?list=PLuHgQVnccGMAE4Sn_SYvMw5-qEADJcU-X">생활코딩 - 웹 애플리케이션 만들기</a>」, 학부 수업 자료
 
+<br/>
+
+### 목차
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%84%B1">웹 사이트의 구성</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#-html-%EC%86%8C%EA%B0%9C">HTML 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#html-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95">HTML 기본 문법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#html%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0">HTML의 기본 구조</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#html-%EC%86%8D%EC%84%B1attribute">HTML 속성(attribute)</a>
+- <a href=""></a>
+
 <br/><br/>
 
-##  웹 사이트의 구성
+## 웹 사이트의 구성
 
 - interactive한 웹 사이트든, 단순한 웹 사이트든, 웹의 내부 구조는 같다.
 
@@ -25,6 +36,8 @@
 - 웹 사이트는 보통 3개의 언어(text)로 구성되어 있다.
 
   - <strong>HTML, CSS, JavaScript</strong>
+
+  - 이 셋 중 프로그래밍 언어는 Javascript 뿐이다.
 
 <br/><br/>
 
@@ -142,25 +155,3 @@
 - 다양한 태그의 attribute(속성)이 존재하나 역시 무작정 암기 X. <strong>사용법을 이해하고 필요할 때 검색해서 찾아 쓰자.</strong>
 
 - HTML은 attribute와 결합할 때 강력해진다.
-
-<br/><br/>
-
-## 🧩 조각 지식
-
-### <code>index.html</code>
-
-- 대부분의 웹 서버가 디폴트로 <code>index.html</code>을 찾아보도록 설정되어 있다.
-
-<br/>
-
-### VS Code 단축키 꿀팁
-
-- 해당줄을 복붙할때는 <strong>shift + alt + 아래(or 위)방향키</strong>를 누르면 된다.
-
-- <code>div class="name"</code>은 <strong><code>div.name</code></strong>으로 자동완성 된다.
-
-- <code>div id="id"</code>는 <strong><code>div#id</code></strong>하시면 자동완성 된다
-
-- 주석 처리는 작성후 <strong>Ctrl + /</strong> 하면 되고
-  여러 개를 동시에 만들고 싶으면
-  ex. <code>div</code>를 10개 -> <strong><code>div\*10</code></strong>하면 된다.
