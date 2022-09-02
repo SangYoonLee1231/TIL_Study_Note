@@ -8,9 +8,15 @@
 
 ## 🗨 CSS 소개
 
-* <strong>CSS</strong>는, <strong>선택자(Selector)</strong>를 통해 HTML 태그를 가리키고, 디자인 효과(스타일)를 부여하는 역할을 한다.
+- ✨ <strong>CSS (Cascading Style Sheet) 는 브라우저에게 웹 사이트가 어떻게 보여야 하는지 알려주는 언어이다.</strong>
 
-* <strong>CSS</strong> = <strong>Cascading</strong> Style Sheet : 위에서 아래로 코드를 읽는다.  
+- CSS는 HTML과 함께 쓴다.
+
+<br/>
+
+* CSS는 <strong>선택자(Selector)</strong>를 통해 HTML 태그를 가리키고, 디자인 효과(스타일)를 부여하는 역할을 한다.
+
+* CSS = <strong>Cascading Style Sheet</strong> : 위에서 아래로 코드를 읽는다.  
 
   ☞ 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
 

@@ -1,4 +1,4 @@
-# HTML의 기본
+# 웹 사이트의 구성과 HTML의 기본
 
 <br/>
 
@@ -6,21 +6,47 @@
 
 <br/><br/>
 
-## 🗨 HTML 소개
+##  웹 사이트의 구성
 
-- 웹사이트는 보통 3개의 언어로 구성되어 있다. - <strong>HTML, CSS, JavaScript</strong>
+- interactive한 웹 사이트든, 단순한 웹 사이트든, 웹의 내부 구조는 같다.
 
-- 이 중 <strong>HTML</strong>은 웹사이트의 <strong>뼈대</strong>를 담당한다.
+- <strong>웹 사이트는 그저 text 파일이다.</strong>
 
 <br/>
 
-- ✨ <strong>HTML</strong>은 인간의 언어를 이해하지 못하는 브라우저에게,
+- 웹 사이트는 우리가 만드는 것이 아니라, 브라우저가 코드(text 파일)를 보고 이해해서 만들어주는 것이다.
 
-  <strong>웹사이트의 content(이미지, 제목, 사진, 사이드 바 등등..)가 어떻게 구성되어 있는지</strong> 설명할 때 쓰이는 언어이다.
+- 즉, 개발자인 우리의 역할은 브라우저가 이해하는 text(코드)를 쓰는 일이다.
+
+  - 어디에 어떤 종류의 text를 써야하는 지
+
+<br/>
+
+- 웹 사이트는 보통 3개의 언어(text)로 구성되어 있다.
+
+  - <strong>HTML, CSS, JavaScript</strong>
+
+<br/><br/>
+
+## 🗨 HTML 소개
+
+- ✨ <strong>HTML (Hypertext Markup Language) 은 브라우저에게 content의 구조를 설명하는 언어이다.</strong>
+
+- HTML은 웹 사이트의 뼈대를 담당한다.
+
+<br/>
+
+- HTML은 <strong>인간의 언어를 이해하지 못하는</strong> 브라우저에게,
+
+  웹 사이트의 content (이미지, 제목, 사진, 사이드 바 등등..) 가 어떻게 구성되어 있는지 설명한다.
 
   - "브라우저야 이건 <code>title</code>이고, 이건 날짜야. 이것은 <code>img</code>(이미지)이고 이 <code>img</code>는 따로 설명이 되어 있어."
 
-- ✨ <strong>HTML</strong>의 모든 태그는 검색으로 찾아 쓸 수 있으니, 일일이 외우는 것보다 <strong>코드가 어떻게 작동하는 지를 이해하는 것이 중요하다.</strong>
+<br/>
+
+- HTML의 모든 태그는 검색으로 찾아 쓸 수 있으니 
+
+  태그를 일일이 외우는 것보단 <strong>코드가 어떻게 작동하는 지를 이해하는 것</strong>이 중요하다.
 
 <br/><br/>
 
@@ -30,15 +56,13 @@
 
 - HTML 태그엔 두 종류가 있다. - <strong>『일반 태그』</strong> vs <strong>『Self-Closing 태그』</strong>
 
-<br/>
+  ```html
+  /* 일반 태그 작성법 */
+  <tag> content </tag>
 
-```html
-/* 일반 태그 작성법 */
-<tag> content </tag>
-
-/* Self-Closing 태그 작성법 */
-<tag ... />
-```
+  /* Self-Closing 태그 작성법 */
+  <tag ... />
+  ```
 
 <br/>
 
