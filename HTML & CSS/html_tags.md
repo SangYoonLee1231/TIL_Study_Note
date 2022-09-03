@@ -8,7 +8,7 @@
 
 - HTML에서 자주 쓰이는 태그를 최대한 많이 정리하였다. <strong>단순 암기하지 말고 계속 쓰면서 익숙해지자.</strong>
 
-- ✨ 모르는 태그는 구글에 검색하거나 <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">MDN Web Docs</a>에 가서 찾아 쓰자.
+- ✨ 모르는 태그는 구글에 검색하거나 <strong><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">MDN Web Docs</a></strong>에 가서 찾아 쓰자.
 
 <br/>
 
@@ -47,7 +47,7 @@
 
   - <code>\<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /></code> : 웹 브라우저 탭의 이미지 설정
 
-  - <code>\<link rel="stylesheet" href="style.css" /></code> : style이름의 css파일과 연결
+  - <code>\<link rel="stylesheet" href="style.css" /></code> : <strong>style 이름의 css 파일과 연결</strong>
 
 <br/>
 
@@ -59,11 +59,11 @@
 
 ### 태그의 분류 - 블록, 인라인 태그
 
-- 블록 (<code>block</code>) 태그 : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
+- <strong>블록 (<code>block</code>) 태그</strong> : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
 
   - <strong><code>\<div></code>, <code>\<p></code>, <code>\<h1></code>, <code>\<ul></code></strong>
 
-- 인라인 (<code>inline</code>) 태그 : 블록 속에 삽입되어 블록의 일부로 출력
+- <strong>인라인 (<code>inline</code>) 태그</strong> : 블록 속에 삽입되어 블록의 일부로 출력
 
   - <strong><code>\<strong></code>, <code>\<a></code>, <code>\<img></code>, <code>\<span></code></strong>
 
@@ -73,9 +73,13 @@
 
 - <strong><code>\<br></code></strong> 또는 <code>\<br/></code> : 강제 줄바꿈 태그 (Self-Closing 태그)
 
+<br/>
+
 - <strong><code>\<p></code></strong> : 단락 표시  
 
   (의미를 담고 있는 태그이므로 <code>\<br></code>보다 좋은 태그이다.)
+
+- <strong><code>\<div></code></strong> : 보편적으로 쓰이는 단락 표시 태그
 
 <br/>
 
@@ -143,18 +147,75 @@
 
 <br/>
 
-### Form 태그
+### ✨ Form 태그
+
+- <strong><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%96%91%EC%8B%9D">MDN 문서 바로가기</a></strong>
 
 - 정보를 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타낸다.
 
-- <code>form</code> 내부에서, <code>input</code> 안에 있는 버튼을 누르거나, <code>type="submit"</code>인 input을 클릭하거나, 엔터를 누르면 (<code>input</code>이 더 이상 존재X)  
+<br/>
+
+- <strong><code>\<label></code></strong>
+
+  - <code>label</code>은 클릭 시 for 속성과 같은 값의 id를 가지고 있는 <code>input</code>을 작동시킨다.
+
+<br/>
+
+- <strong><code>\<input></code></strong>
+
+  - 사용자로부터 데이터를 입력 받을 수 있는 공간 생성
+
+  - <strong><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input">MDN 문서</a></strong>에 가서 input의 다양한 유형과 속성을 확인해보자.
+
+    ```html
+    <!--label과 함께 쓰이는 input 태그 예시 코드-->
+    <form>
+      <div>
+        <label for="profile">Profile</label>
+        <input id="profile" type="file" accept=".txt, image/*">
+      </div>
+      <div>
+        <input type="color">
+        <input type="range">
+        <input type="date">
+      </div>
+    </form>
+
+    <form>
+      <div>
+        <label for="username">User Name</label>
+        <input id="username" type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" minlength="8" required>
+      </div>
+      <div>
+        <input type="submit" value="Create Account">
+      </div>
+    </form>
+
+    <form>
+      <div>
+        <label for="website">Website</label>
+        <input type="url" id="website">
+
+        <label for="email">Email</label>
+        <input type="url" id="email">
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    ```
+
+<br/>
+
+- <code>form</code> 내부에서 <code>input</code> 안에 있는 버튼을 누르거나, <code>type="submit"</code>인 input을 클릭하거나, 엔터를 누르면 (<code>input</code>이 더 이상 존재X)  
   작성된 form이 자동으로 submit되고, 웹페이지는 새로고침 된다.
 
-- form 속성
+- <strong>form 속성</strong>
 
-  - <code>action</code> : form 제출 시, 어떤 html 파일로 데이터를 보낼 지를 지정하는 것
+  - <strong><code>action</code></strong> : form 제출 시, 어떤 html 파일로 데이터를 보낼 지를 지정하는 것
   
-  - <code>method</code> : form의 데이터를 보내는 방식. GET 방식 또는 POST 방식이 있음.  
+  - <strong><code>method</code></strong> : form의 데이터를 보내는 방식. GET 방식 또는 POST 방식이 있음.  
     (GET 방식은 URL, POST 방식은 서버에 전송하는 방식)
 
 <br/>
@@ -169,7 +230,9 @@
     <a href="https://www.google.com/">구글로 이동</a>
     ```
 
-  - <code>href</code> 속성을 부여하면 링크를 어디에서 열지 정할 수 있다.
+  <br/>
+
+  - <code>target</code> 속성을 부여하면 링크를 어디에서 열지 정할 수 있다.
 
     - <code>_self</code>: 현재 창(혹은 탭)에서 링크를 연다.
 
@@ -187,5 +250,19 @@
 <br/><br/>
 
 ## Semantic HTML
+
+- 의미가 있는 <code>div</code> 태그
+
+- 문서와 코드가 의미를 가지도록 시멘틱 태그를 사용하는 것이 좋다.
+
+- <code>\<header></code>, <code>\<main></code>, <code>\<footer></code> 등등
+
+<br/>
+
+- <strong>MDN 문서</strong> (시맨틱 태그 예시 참고)
+
+  - <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%BD%98%ED%85%90%EC%B8%A0_%EA%B5%AC%ED%9A%8D">블록 시맨틱 태그</a> & <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%9D%B8%EB%9D%BC%EC%9D%B8_%ED%85%8D%EC%8A%A4%ED%8A%B8_%EC%8B%9C%EB%A9%98%ED%8B%B1">인라인 시맨틱 태그</a>
+
+<br/>
 
 <img src="img/html_semantic.jpeg">

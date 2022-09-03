@@ -13,7 +13,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#html-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95">HTML 기본 문법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#html%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0">HTML의 기본 구조</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md#html-%EC%86%8D%EC%84%B1attribute">HTML 속성(attribute)</a>
-- <a href=""></a>
 
 <br/><br/>
 
@@ -37,7 +36,7 @@
 
   - <strong>HTML, CSS, JavaScript</strong>
 
-  - 이 셋 중 프로그래밍 언어는 Javascript 뿐이다.
+  - 이 셋 중 프로그래밍 언어는 JavaScript 뿐이다.
 
 <br/><br/>
 
@@ -67,15 +66,17 @@
 
 - HTML은 <strong>태그</strong>로 구성되어 있다.
 
-- HTML 태그엔 두 종류가 있다. - <strong>『일반 태그』</strong> vs <strong>『Self-Closing 태그』</strong>
+- HTML 태그엔 두 종류가 있다.
 
-  ```html
-  /* 일반 태그 작성법 */
-  <tag> content </tag>
+  - <strong>『일반 태그』</strong> vs <strong>『Self-Closing 태그』</strong>
 
-  /* Self-Closing 태그 작성법 */
-  <tag ... />
-  ```
+    ```html
+    /* 일반 태그 작성법 */
+    <tag> content </tag>
+
+    /* Self-Closing 태그 작성법 */
+    <tag ... />
+    ```
 
 <br/>
 
@@ -84,6 +85,8 @@
 - 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 <strong>이름은 반드시 동일</strong>해야 한다.
 
 - ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성하고, 태그와 내용은 함께 HTML의 한 <strong>요소(Element)</strong>를 이룬다.
+
+<br/>
 
 - Self-Closing 태그로 구성된 요소를 Void 요소라고 한다.
 
@@ -110,6 +113,8 @@
 </html>
 ```
 
+<br/>
+
 - <strong>\<!DOCTYPE html></strong> : 이 파일은 html임을 브라우저에게 알리는 코드
 
 <br/>
@@ -128,16 +133,15 @@
 
 - <strong>속성(attribute)</strong> : HTML 태그에 추가하여 태그의 동작을 제어하도록 사용자가 지정하는 값
 
-- HTML 태그의 속성은 태그 이름과 <strong>반드시 띄어쓴다</strong>.
-- attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
+- HTML은 attribute와 결합할 때 강력해진다.
 
 <br/>
 
 ```html
-/* 작성법 */
+<!--작성법-->
 <tagname attrName="">좋은 개발자가 되고 싶다</tagname>
 
-/* 실제 사용 예시 */
+<!--실제 사용 예시-->
 <div id="title">
   <a href="http://google.com" target="_blank">구글로 이동</a>
   <input disabled />
@@ -146,7 +150,31 @@
 
 <br/>
 
+### 대표적인 HTML 속성
+
+- <strong><code>id</code></strong>
+
+  - body 안에 어떤 태그에든 넣을 수 있는 속성
+
+  - ✨ 고유 식별자 (unique identifier) - 태그 하나당 하나의 고유한 id만을 가진다
+
+  - CSS와 JavaScript에서 요소를 가져올 때 식별자로 id가 쓰인다.
+
+- <strong><code>class</code></strong>
+
+<br/>
+
+### HTML 속성 부여 시 주의점
+
+- HTML 태그의 속성은 태그 이름과 <strong>반드시 띄어쓴다</strong>.
+
+- attribute에 값을 넣을 때, <strong>큰 따옴표("")</strong>를 사용하는 것이 좋다. (작은 따옴표(''), 백틱(``) 사용 자제)
+
+<br/>
+
 - 태그와 속성은 대소문자를 구분하지 않는다.
+
+<br/>
 
 - 일부 attribute는 모든 태그에 사용 가능하다. (예: id, class, style)
 
@@ -155,5 +183,3 @@
 <br/>
 
 - 다양한 태그의 attribute(속성)이 존재하나 역시 무작정 암기 X. <strong>사용법을 이해하고 필요할 때 검색해서 찾아 쓰자.</strong>
-
-- HTML은 attribute와 결합할 때 강력해진다.
