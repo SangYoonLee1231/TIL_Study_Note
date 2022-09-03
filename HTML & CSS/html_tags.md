@@ -149,7 +149,7 @@
 
 ### ✨ Form 태그
 
-- <strong><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%96%91%EC%8B%9D">MDN 문서 바로가기</a></strong>
+- <strong><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%96%91%EC%8B%9D">MDN 문서 - Form 태그 바로가기</a></strong>
 
 - 정보를 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타낸다.
 

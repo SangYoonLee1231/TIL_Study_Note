@@ -82,9 +82,14 @@
 
 - 일반 HTML 태그는 <strong>열고 반드시 닫아주어야</strong> 한다.
 
-- 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 <strong>이름은 반드시 동일</strong>해야 한다.
+- 그리고 여는 태그(Start Tag)와 닫는 태그(End Tag)의 이름은 반드시 동일해야 한다.
 
-- ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성하고, 태그와 내용은 함께 HTML의 한 <strong>요소(Element)</strong>를 이룬다.
+<br/>
+
+
+- ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성한다.  
+
+  &nbsp;&nbsp; → <strong>HTML의 한 요소(Element)를 이룸</strong>
 
 <br/>
 
