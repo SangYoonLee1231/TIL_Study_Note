@@ -66,6 +66,8 @@
 
 - HTML은 <strong>태그</strong>로 구성되어 있다.
 
+<br/>
+
 - HTML 태그엔 두 종류가 있다.
 
   - <strong>『일반 태그』</strong> vs <strong>『Self-Closing 태그』</strong>
@@ -164,6 +166,8 @@
   - ✨ 고유 식별자 (unique identifier) - 태그 하나당 하나의 고유한 id만을 가진다
 
   - CSS와 JavaScript에서 요소를 가져올 때 식별자로 id가 쓰인다.
+
+<br/>
 
 - <strong><code>class</code></strong>
 
