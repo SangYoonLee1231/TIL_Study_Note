@@ -56,7 +56,7 @@
 
 <br/>
 
-- HTML의 모든 태그는 검색으로 찾아 쓸 수 있으니 
+- HTML의 모든 태그는 검색으로 찾아 쓸 수 있으니
 
   태그를 일일이 외우는 것보단 <strong>코드가 어떻게 작동하는 지를 이해하는 것</strong>이 중요하다.
 
@@ -88,8 +88,7 @@
 
 <br/>
 
-
-- ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성한다.  
+- ✨ <strong>여는 태그(Start Tag)</strong>와 <strong>닫는 태그(End Tag)</strong> 사이에 <strong>내용(Content)</strong>을 작성한다.
 
   &nbsp;&nbsp; → <strong>HTML의 한 요소(Element)를 이룸</strong>
 
@@ -170,6 +169,12 @@
 <br/>
 
 - <strong><code>class</code></strong>
+
+  - (생략)
+
+<br/>
+
+- ID와 Class에 대한 설명은 <strong><a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">이 곳</a></strong>에 더 자세히 기록해두었다.
 
 <br/>
 
