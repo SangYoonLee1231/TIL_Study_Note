@@ -115,15 +115,19 @@ div {
 
 - <code>block</code>과 <code>inline</code> 요소 모두 가지고 있는 특징이다.
 
-```css
-div {
-  border: 1px solid black;
-  /* border: 너비 스타일 색깔 */
-}
-span {
-  border: 2px dotted blue;
-}
-```
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">border 스타일 종류 확인하기 (MDN 문서)</a>
+
+  ```css
+  div {
+    border: 1px solid black;
+    /* border: 너비 스타일 색깔 */
+  }
+  span {
+    border: 2px dotted blue;
+  }
+  ```
+
+<br/>
 
 - <code>border</code>은 다양한 속성값이 존재하나 대부분 이쁘지 않으므로 거의 한 종류만 쓴다.
 
