@@ -137,11 +137,13 @@ div {
 
 - <code>inline-block</code>은 높이와 너비를 가지는 동시에, 바로 옆에 다른 요소가 올 수 있는 <code>display</code> 속성이다.
 
-```css
-div {
-  display: inline-block;
-}
-```
+  ```css
+  div {
+    display: inline-block;
+  }
+  ```
+
+<br/>
 
 - 그러나 <strong>많은 문제점</strong>을 가지고 있으므로 사용을 지양한다.
 
