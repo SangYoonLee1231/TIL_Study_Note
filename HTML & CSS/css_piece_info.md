@@ -9,11 +9,11 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0---font-awesome">아이콘 삽입하기 - <a href="https://fontawesome.com/">Font Awesome</a></a>
-- <a href="">HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기</a>
-- <a href="">Reset CSS</a>
-- <a href="">CSS 변수 선언 및 사용</a>
-- <a href="">not 속성 (부정 CSS 가상 클래스)</a>
-- <a href="">Border Box</a>
+- <a href="">HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기 (VS Code)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#reset-css">Reset CSS</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8-%EB%B0%8F-%EC%82%AC%EC%9A%A9">CSS 변수 선언 및 사용</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#not-%EC%86%8D%EC%84%B1-%EB%B6%80%EC%A0%95-css-%EA%B0%80%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4">not 속성 (부정 CSS 가상 클래스)</a>
+- <a href="">거리 단위</a>
 - <a href=""></a>
 - <a href=""></a>
 
@@ -50,7 +50,7 @@
 
 <br/><br/>
 
-### HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기
+### HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기 (VS Code)
 
 - head 태그 내부에 <code>link:css</code>라 직성하면 된다.
 
@@ -58,7 +58,7 @@
 
 ### Reset CSS
 
-- 브라우저에 의해 HTML에 자동으로 적용되는 스타일을 무시하도록 하는 코드
+- 브라우저에 의해 HTML에 자동으로 적용되는 스타일 (사용자 에이전트 스타일시트) 을 무시하도록 하는 코드
 
 - 대부부분의 태그에 <code>margin:0</code>, <code>padding:0</code>, <code>border:0</code> 등을 가진 css 파일
 
@@ -244,4 +244,22 @@
 
 <br/><br/>
 
-### Border Box
+### 거리 단위
+
+- <strong><code>px</code></strong> : 가장 기본적으로 사용되는 픽셀 단위 (고정값)
+
+- <strong><code>em</code></strong> : 부모 요소를 기준으로 자식 요소의 크기를 정하는 것 (배수)
+
+  - <code>1.2em</code> : 부모 요소 기준 1.2배수 크기
+
+- <strong><code>vh</code></strong> : viewport(화면) height
+
+  - <code>100vh</code> : 화면 높이의 100%
+
+- <strong><code>vw</code></strong> : viewport(화면) width
+
+  - <code>100vh</code> : 화면 넓이의 100%
+
+<br/><br/>
+
+###
