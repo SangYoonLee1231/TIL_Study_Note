@@ -6,7 +6,8 @@
 
 - 브라우저 주소 창에 naver.com 을 쳤을 때 일어나는 일을 <strong>네트워크의 관점</strong>에서 정리했습니다.
 
-- CS 지식이 거의 전무한 상태에서 처음 학습을 시작했기 때문에 내용이 깊지는 않습니다. 추후 CS를 공부하며 세부적인 내용을 더 보충해 나가겠습니다.
+- CS 지식이 거의 전무한 상태에서 학습을 시작했기 때문에 내용이 깊지는 않습니다.
+  추후 CS를 공부하며 세부적인 내용을 더 보충해 나가겠습니다.
 
 <br/>
 
@@ -186,8 +187,6 @@
 
 ## 렌더링 프로세스
 
-<br/>
-
 ### 1. HTML 파싱 → DOM 트리 생성
 
 <br/><br/>
@@ -218,4 +217,4 @@
 > - <a href="https://poiemaweb.com/js-browser">브라우저 동작 원리</a> (PoiemaWeb)
 > - <a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=pxkey&logNo=221216492103">IP 주소와 도메인의 관계</a> (블로그 포스트)
 > - <a href="https://hanamon.kr/dns%eb%9e%80-%eb%8f%84%eb%a9%94%ec%9d%b8-%eb%84%a4%ec%9e%84-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ea%b0%9c%eb%85%90%eb%b6%80%ed%84%b0-%ec%9e%91%eb%8f%99-%eb%b0%a9%ec%8b%9d%ea%b9%8c%ec%a7%80/">DNS란? (도메인 네임 시스템 개념부터 작동 방식까지)</a> (블로그 포스트)
-> - <a href="https://code-lab1.tistory.com/154">[네트워크] 웹사이트 접속 과정에 대하여 (네트워크 과목 총 정리) | 주소창에 www.google.com을 입력하면 생기는 일</a> (블로그 포스트)
+> - <a href="https://code-lab1.tistory.com/154">[네트워크] 웹사이트 접속 과정에 대하여 (네트워크 과목 총 정리) - 주소창에 www.google.com을 입력하면 생기는 일</a> (블로그 포스트)
