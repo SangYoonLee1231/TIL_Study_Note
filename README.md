@@ -145,7 +145,7 @@
 
 ### ◻ 네트워크
 
-- <a href="">브라우저의 동작 원리</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">브라우저의 동작 원리</a>
 
 ### ◻ 컴퓨터 구조 및 시스템
 
