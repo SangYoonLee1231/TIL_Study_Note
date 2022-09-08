@@ -43,29 +43,29 @@
 
   - <strong>브라우저 엔진</strong>
 
-    - 페이지를 보여주는 창을 제외한 나머지 모든 영역.
+    -
 
   - <strong>렌더링 엔진</strong>
 
-    - 페이지를 보여주는 창을 제외한 나머지 모든 영역.
+    -
 
   - <strong>자료 저장소 / 데이터 저장소</strong>
 
-    - 페이지를 보여주는 창을 제외한 나머지 모든 영역.
+    -
 
   <br/>
 
   - <strong>통신 (Networking)</strong>
 
-    - 페이지를 보여주는 창을 제외한 나머지 모든 영역.
+    -
 
   - <strong>자바스크립트 해석기 (JavaScript Interpreter)</strong>
 
-    - 페이지를 보여주는 창을 제외한 나머지 모든 영역.
+    -
 
   - <strong>UI 백엔드 (UI Backend)</strong>
 
-    - 페이지를 보여주는 창을 제외한 나머지 모든 영역.
+    -
 
 <br/>
 
