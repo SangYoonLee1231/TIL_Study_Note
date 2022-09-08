@@ -6,27 +6,29 @@
 
 - 브라우저 주소 창에 naver.com 을 쳤을 때 일어나는 일을 <strong>네트워크의 관점</strong>에서 정리했습니다.
 
+- CS 지식이 거의 전무한 상태에서 처음 학습을 시작했기 때문에 내용이 깊지는 않습니다. 추후 CS를 공부하며 세부적인 내용을 더 보충해 나가겠습니다.
+
 <br/>
 
 ### 목차
 
-- <a href="">사전 지식</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EC%82%AC%EC%A0%84-%EC%A7%80%EC%8B%9D">사전 지식</a>
 
-  - <a href="">브라우저 아키텍처</a>
-  - <a href="">네트워크 기초 사전 지식</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">브라우저 아키텍처</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B8%B0%EC%B4%88-%EC%82%AC%EC%A0%84-%EC%A7%80%EC%8B%9D">네트워크 기초 사전 지식</a>
 
-- <a href="">브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 과정</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%A3%BC%EC%86%8C-%EC%B0%BD%EC%97%90-navercom%EB%A5%BC-%EC%B9%98%EA%B3%A0-enter%EC%9D%84-%EB%88%84%EB%A5%B4%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EA%B3%BC%EC%A0%95">브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 과정</a>
 
-  - <a href="">Step 1. 주소창에 입력한 텍스트 정보 확인</a>
-  - <a href="">Step 2. 네트워크 호출</a>
-  - <a href="">Step 3. 렌더링 작업</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-1-%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-%EC%9E%85%EB%A0%A5%ED%95%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%A0%95%EB%B3%B4-%ED%99%95%EC%9D%B8">Step 1. 주소창에 입력한 텍스트 정보 확인</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%98%B8%EC%B6%9C">Step 2. 네트워크 호출</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-3-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9E%91%EC%97%85">Step 3. 렌더링 작업</a>
 
-- <a href="">렌더링 프로세스</a>
-  - <a href="">1. HTML 파싱 → DOM 트리 생성</a>
-  - <a href="">2. CSS 파싱 → CSSOM 트리 생성</a>
-  - <a href="">3. Render Tree 생성</a>
-  - <a href="">4. 레이아웃 (Layout)</a>
-  - <a href="">5. 페인트 (Paint)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%A0%8C%EB%8D%94%EB%A7%81-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">렌더링 프로세스</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#1-html-%ED%8C%8C%EC%8B%B1--dom-%ED%8A%B8%EB%A6%AC-%EC%83%9D%EC%84%B1">1. HTML 파싱 → DOM 트리 생성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#2-css-%ED%8C%8C%EC%8B%B1--cssom-%ED%8A%B8%EB%A6%AC-%EC%83%9D%EC%84%B1">2. CSS 파싱 → CSSOM 트리 생성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#3-render-tree-%EC%83%9D%EC%84%B1">3. Render Tree 생성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#4-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-layout">4. 레이아웃 (Layout)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#5-%ED%8E%98%EC%9D%B8%ED%8A%B8-paint">5. 페인트 (Paint)</a>
 
 <br/><br/>
 
@@ -204,7 +206,7 @@
 
 ### 5. 페인트 (Paint)
 
-<br/><br/>
+<br/><br/><br/>
 
 > 참고 자료
 >
