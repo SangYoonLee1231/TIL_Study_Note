@@ -143,7 +143,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
 
-### ◻ 네트워크
+### ◻ 컴퓨터 네트워크
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">브라우저의 동작 원리</a>
 
