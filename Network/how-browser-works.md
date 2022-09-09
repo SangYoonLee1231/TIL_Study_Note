@@ -159,9 +159,9 @@
 
 <br/>
 
-- 클라이언트는 이렇게 알아낸 IP 주소(<code>125.209.222.142</code>)를 바탕으로 <strong>TCP 소켓</strong>을 통해 네이버 서버에 <strong>HTTP Request</strong>를 보낸다.
+- 클라이언트는 이렇게 알아낸 IP 주소(<code>125.209.222.142</code>)를 바탕으로 <strong>TCP 소켓</strong>을 통해 네이버 (백엔드) 서버에 <strong>HTTP Request</strong>를 보낸다.
 
-- HTTP Request를 받은 네이버 서버는 <strong>HTTP Reply</strong>를 클라이언트에 보낸다.
+- HTTP Request를 받은 네이버 서버는 <strong>HTTP Reply (HTTP Response)</strong>를 클라이언트에 보낸다.
 
 <br/>
 
