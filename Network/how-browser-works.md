@@ -183,7 +183,7 @@
 
 - 요청을 받은 렌더링 엔진은 응답받은 데이터를 가지고 <strong>렌더링 프로세스</strong>를 수행한다.
 
-<br/>
+  <br/>
 
 - 렌더링이 끝나면 웹 페이지에 화면에 띄워지고 모든 과정이 종료된다.
 
@@ -191,23 +191,71 @@
 
 ## 렌더링 프로세스
 
-### 1. HTML 파싱 → DOM 트리 생성
+- 렌더링 과정을 수행하는 <strong>렌더링 엔진</strong>은 요청받은 내용을 화면에 표시해주는 역할을 수행한다.
+
+<br/>
+
+- 파이어폭스는 모질라에서 직접 만든 <strong>게코(Gecko)</strong> 엔진을 사용하고, 사파리는 <strong>웹킷(Webkit)</strong> 엔진을 사용한다.
+
+- 크롬은 웹킷(Webkit) 엔진을 사용했다가, 웹킷을 Fork하여 자체적으로 구현한 <strong>블링크(Blink)</strong> 엔진을 현재 사용하고 있다.
+
+<br/>
+
+- ✨ 렌더링 과정은 크가 아래 4가지 과정으로 이루어진다.
+
+  1. HTML 파싱하여 <strong>DOM 트리 구축</strong>, CSS 파싱하여 <strong>CSSOM 트리 구축</strong> (+ JS 파싱)
+
+  2. DOM 트리와 CSSOM 트리를 통해 <strong>render 트리 구축</strong> (Attachment / 형상 구축)
+
+  3. <strong>render 트리 배치</strong> (Layout / Reflow)
+
+  4. <strong>render 트리 그리기</strong> (Paint)
+
+<br/>
+
+- 렌더링 과정은 브라우저 엔진에 따라 명칭을 다르게 사용하나, 기본적으로는 동일하다.
+
+  <img src="img/webkit_render.png" width="">
+
+  웹킷의 렌더링 엔진 동작 과정
+
+  <img src="img/gaeko_render.png" width="">
+
+  게코의 렌더링 엔진 동작 과정
+
+  👉 <a href="https://d2.naver.com/helloworld/59361">사진 출처</a>
 
 <br/><br/>
 
-### 2. CSS 파싱 → CSSOM 트리 생성
+### 파싱 (Parsing) 이란?
 
 <br/><br/>
 
-### 3. Render Tree 생성
+### Step 1-1. HTML 파싱 → DOM 트리 생성
+
+- 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 DOM 트리를 생성한다.
 
 <br/><br/>
 
-### 4. 레이아웃 (Layout)
+### Step 1-2. CSS 파싱 → CSSOM 트리 생성
+
+- CSS 파서가 CSS 문서를 파싱하여 CSSOM 트리를 생성한다.
 
 <br/><br/>
 
-### 5. 페인트 (Paint)
+### Step 1-3. JavaScript 파싱
+
+<br/><br/>
+
+### Step 2. Render Tree 생성
+
+<br/><br/>
+
+### Step 3. 레이아웃 (Layout)
+
+<br/><br/>
+
+### Step 4. 페인트 (Paint)
 
 <br/><br/><br/>
 
