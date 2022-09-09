@@ -191,7 +191,7 @@
 
 ## 렌더링 프로세스
 
-- 렌더링 과정을 수행하는 <strong>렌더링 엔진</strong>은 요청받은 내용을 화면에 표시해주는 역할을 수행한다.
+- 렌더링 과정을 수행하는 <strong>렌더링 엔진</strong>은 요청받은 내용을 화면에 표시해준다.
 
 <br/>
 
@@ -201,7 +201,7 @@
 
 <br/>
 
-- ✨ 렌더링 과정은 크가 아래 4가지 과정으로 이루어진다.
+- ✨ <strong>렌더링 과정은 크가 아래 4가지 과정으로 이루어진다.</strong>
 
   1. HTML 파싱하여 <strong>DOM 트리 구축</strong>, CSS 파싱하여 <strong>CSSOM 트리 구축</strong> (+ JS 파싱)
 
@@ -215,13 +215,19 @@
 
 - 렌더링 과정은 브라우저 엔진에 따라 명칭을 다르게 사용하나, 기본적으로는 동일하다.
 
+  <br/>
+
   <img src="img/webkit_render.png" width="">
 
   웹킷의 렌더링 엔진 동작 과정
 
+  <br/>
+
   <img src="img/gaeko_render.png" width="">
 
   게코의 렌더링 엔진 동작 과정
+
+  <br/>
 
   👉 <a href="https://d2.naver.com/helloworld/59361">사진 출처</a>
 
@@ -229,21 +235,61 @@
 
 ### 파싱 (Parsing) 이란?
 
+- 브라우저는 HTML, CSS 등 단순한 텍스트 문서를 이해하지 못한다.
+
+- 따라서 이 문서를 브라우저가 이해할 수 있는 구조로 변환해주는 과정이 반드시 필요하다.
+
+  이를 <strong>파싱 (Parsing)</strong> 이라 한다.
+
+<br/>
+
+- 파싱은 <strong>어휘 분석</strong>과 <strong>구문 분석</strong> 두 가지 과정으로 구분할 수 있다.
+
+  - <strong>어휘 분석</strong> (By 어휘 분석기) : 문자열을 의미 있는 <strong>토큰(token)</strong>으로 분해하는 과정
+
+  - <strong>구문 분석</strong> (By 파서) : 문자열의 문법에 따라 토큰 간의 위계관계를 분석하여 <strong>parsing 트리</strong>를 생성하는 과정
+
+    > 파싱 결과 생성되는 트리 형태를 <strong>parse 트리, parsing 트리, concrete syntax 트리</strong> 등 다양한 용어로 부른다.  
+    > parse 트리는 토큰화 된 문자열의 단순한 트리 형태에 불과하므로 <strong>랜더(render)가 불가능</strong>하다.  
+    > 따라서 브라우저는 이 parse 트리를 이용해 DOM 트리를 새로 만들어 사용한다.
+
 <br/><br/>
 
 ### Step 1-1. HTML 파싱 → DOM 트리 생성
 
-- 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 DOM 트리를 생성한다.
+- 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 <strong>DOM 트리</strong>를 생성한다.
+
+  - HTML 파싱 → DOM 노드 생성 → 이 DOM 노드를 병합하여 DOM 트리 생성
+
+- HTML
 
 <br/><br/>
 
 ### Step 1-2. CSS 파싱 → CSSOM 트리 생성
 
-- CSS 파서가 CSS 문서를 파싱하여 CSSOM 트리를 생성한다.
+- HTML 파싱 과정에서 <code>link</code> 태그를 만나면, DOM 생성을 잠시 중지하고 해당 CSS 리소스를 가져온다.
+
+- CSS 파서가 수신받은 CSS 문서를 파싱하여 <strong>CSSOM 트리</strong>를 생성한다.
 
 <br/><br/>
 
 ### Step 1-3. JavaScript 파싱
+
+- HTML 파싱 과정에서 <code>script</code> 태그를 만나면, DOM 생성을 잠시 중지하고 해당 JavaScript 리소스를 가져온다.
+
+- 그리고 JavaScript 엔진이 렌더링 엔진으로부터 제어권을 넘겨받는다.
+
+- 자바스크립트 파싱이 종료되면 렌더링 엔진이 다시 제어권을 돌려받고 DOM 생성을 이어나간다.
+
+<br/>
+
+- (자바스크립트 파싱 과정은 생략합니다. 추후에 추가하도록 하겠습니다.)
+
+<br/>
+
+- HTML 파싱이 끝나지 않은 상태에서 자바스크립트로 인해 DOM이 조작된다면 에러가 발생할 수 있으므로, <code>script</code> 태그는 반드시 body의 제일 최하단에 위치해야 한다.
+
+  - (혹은 <code>script</code> 태그에 <code>defer</code> 속성을 부여하는 방법도 있다.)
 
 <br/><br/>
 
@@ -270,3 +316,4 @@
 > - <a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=pxkey&logNo=221216492103">IP 주소와 도메인의 관계</a> (블로그 포스트)
 > - <a href="https://hanamon.kr/dns%eb%9e%80-%eb%8f%84%eb%a9%94%ec%9d%b8-%eb%84%a4%ec%9e%84-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ea%b0%9c%eb%85%90%eb%b6%80%ed%84%b0-%ec%9e%91%eb%8f%99-%eb%b0%a9%ec%8b%9d%ea%b9%8c%ec%a7%80/">DNS란? (도메인 네임 시스템 개념부터 작동 방식까지)</a> (블로그 포스트)
 > - <a href="https://code-lab1.tistory.com/154">[네트워크] 웹사이트 접속 과정에 대하여 (네트워크 과목 총 정리) - 주소창에 www.google.com을 입력하면 생기는 일</a> (블로그 포스트)
+> - <a href="https://bythem.net/2021/04/23/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EC%95%8C%EA%B3%A0-%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98-2/">프론트엔드 개발자라면 알고 있어야 할 브라우저의 동작 과정(2)</a> (블로그 포스트)
