@@ -201,9 +201,9 @@
 
 <br/>
 
-- ✨ <strong>렌더링 과정은 크가 아래 4가지 과정으로 이루어진다.</strong>
+- ✨ <strong>렌더링 과정은 크게 아래 4가지 과정으로 이루어진다.</strong>
 
-  1. HTML 파싱하여 <strong>DOM 트리 구축</strong>, CSS 파싱하여 <strong>CSSOM 트리 구축</strong> (+ JS 파싱)
+  1. HTML을 파싱하여 <strong>DOM 트리 구축</strong>, CSS를 파싱하여 <strong>CSSOM 트리 구축</strong> (+ JS 파싱)
 
   2. DOM 트리와 CSSOM 트리를 통해 <strong>render 트리 구축</strong> (Attachment / 형상 구축)
 
@@ -213,7 +213,7 @@
 
 <br/>
 
-- 렌더링 과정은 브라우저 엔진에 따라 명칭을 다르게 사용하나, 기본적으로는 동일하다.
+- 렌더링 과정은 브라우저 엔진에 따라 다른 명칭을 사용하나, 기본적으로는 동일한 과정으로 수행된다.
 
   <br/>
 
@@ -288,7 +288,9 @@
 
 <br/>
 
-- HTML 파싱이 끝나지 않은 상태에서 자바스크립트로 인해 DOM이 조작된다면 에러가 발생할 수 있으므로, <code>script</code> 태그는 반드시 body의 제일 최하단에 위치해야 한다.
+- HTML 파싱이 끝나지 않은 상태에서 자바스크립트로 인해 DOM이 조작된다면 에러가 발생할 수 있으므로,
+
+  <code>script</code> 태그는 반드시 body의 최하단에 위치해야 한다.
 
   - (혹은 <code>script</code> 태그에 <code>defer</code> 속성을 부여하는 방법도 있다.)
 
