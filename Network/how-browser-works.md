@@ -121,7 +121,7 @@
 
 <br/><br/><br/>
 
-## 브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 과정
+## 브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 일
 
 ### Step 1. 주소창에 입력한 텍스트 정보 확인
 
@@ -133,9 +133,9 @@
 
   <br/>
 
-- 입력한 텍스트가 '<strong>검색어</strong>'이면, 검색 엔진 URL에 검색어를 포함한 주소로 페이지를 이동시킨다.
+- 입력한 텍스트가 '<strong>검색어</strong>'라면, 검색 엔진 URL에 검색어를 포함한 주소로 페이지를 이동시킨다.
 
-- 입력한 텍스트가 '<strong>URL</strong>'이면, 브라우저 엔진에서 네트워크 스레드를 통해 '<strong>네트워크 호출</strong>'을 수행한다.
+- 입력한 텍스트가 '<strong>URL</strong>'라면, 브라우저 엔진에서 네트워크 스레드를 통해 '<strong>네트워크 호출</strong>'을 수행한다.
 
 <br/>
 
@@ -145,7 +145,7 @@
 
 - 사용자가 주소창에 도메인 네임이 포함된 URL (여기서는 <code>www.naver.com</code>) 를 입력하면
 
-- <strong>클라이언트 (사용자의 컴퓨터)</strong> 는 hosts 파일에서 그 도메인 네임 (<code>naver.com</code>) 에 대응하는 <strong>IP 주소 정보</strong>가 있는지 확인한다.
+- <strong>클라이언트 (사용자의 컴퓨터)</strong> 는 hosts 파일에서 그 도메인 네임 (<code>naver.com</code>) 에 대응하는 <strong>IP 주소 정보</strong>가 있는지 우선 확인한다.
 
 <br/>
 
@@ -167,7 +167,7 @@
 
 ### Step 3. 렌더링 작업
 
-- 네트웨크 스레드는 이렇게 얻은 데이터를 우선 <strong>검사</strong>한다.
+- 브라우저 엔진의 네트웨크 스레드는 이렇게 얻은 데이터를 우선 <strong>검사</strong>한다.
 
   - 악성 바이러스가 있는지 없는지..
 
