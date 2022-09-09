@@ -199,9 +199,11 @@
 
 <br/>
 
-- 파이어폭스는 모질라에서 직접 만든 <strong>게코(Gecko)</strong> 엔진을 사용하고, 사파리는 <strong>웹킷(Webkit)</strong> 엔진을 사용한다.
+- <strong>웹 브라우저 별 사용하는 렌더링 엔진</strong>
 
-- 크롬은 웹킷(Webkit) 엔진을 사용했다가, 웹킷을 Fork하여 자체적으로 구현한 <strong>블링크(Blink)</strong> 엔진을 현재 사용하고 있다.
+  - 파이어폭스는 모질라에서 직접 만든 <strong>게코(Gecko)</strong> 엔진을 사용하고, 사파리는 <strong>웹킷(Webkit)</strong> 엔진을 사용한다.
+
+  - 크롬은 웹킷(Webkit) 엔진을 사용했다가, 웹킷을 Fork하여 자체적으로 구현한 <strong>블링크(Blink)</strong> 엔진을 현재 사용하고 있다.
 
 <br/>
 
