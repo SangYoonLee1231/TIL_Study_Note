@@ -249,7 +249,8 @@
 
   - <strong>구문 분석</strong> (By 파서) : 문자열의 문법에 따라 토큰 간의 위계관계를 분석하여 <strong>parsing 트리</strong>를 생성하는 과정
 
-    > 파싱 결과 생성되는 트리 형태를 <strong>parse 트리, parsing 트리, concrete syntax 트리</strong> 등 다양한 용어로 부른다.  
+    > 파싱 결과 생성되는 트리 형태를 <strong>parse 트리, parsing 트리, concrete syntax 트리</strong> 등 다양한 용어로 부른다.
+
     > parse 트리는 토큰화 된 문자열의 단순한 트리 형태에 불과하므로 <strong>랜더(render)가 불가능</strong>하다.  
     > 따라서 브라우저는 이 parse 트리를 이용해 DOM 트리를 새로 만들어 사용한다.
 
