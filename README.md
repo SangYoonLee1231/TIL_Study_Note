@@ -109,6 +109,8 @@
 
 ## 📌 Computer Science
 
+- 💻 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">웹 브라우저의 동작 원리</a>
+
 ### ◻ 자료구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
@@ -144,8 +146,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
 
 ### ◻ 컴퓨터 네트워크
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">브라우저의 동작 원리</a>
 
 ### ◻ 컴퓨터 구조 및 시스템
 
