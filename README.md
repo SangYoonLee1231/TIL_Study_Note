@@ -23,12 +23,6 @@
 
 ---
 
-## 💻 교육 과정 참여
-
-#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/CodeSoom">⌨ CodeSoom 리엑트 11기 (2022.08.01 ~ 2022.10.02)</a>
-
-<br/>
-
 ## 📌 기본 언어
 
 ### ◻ Python
@@ -109,7 +103,7 @@
 
 ## 📌 Computer Science
 
-- 💻 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">웹 브라우저의 동작 원리</a>
+#### 💻 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">웹 브라우저의 동작 원리</a>
 
 ### ◻ 자료구조
 
@@ -151,8 +145,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
 
-#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/ComputerSystem/CS50_2019">💻 모두를 위한 컴퓨터 과학 (CS50 2019)</a>
-
 <br/>
 
 ## 📌 Etc.
@@ -169,3 +161,9 @@
 ### ◻ 유니티 (Unity)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_introduction.md">유니티 소개 및 설치</a>
+
+<br/>
+
+## 💻 교육 과정 참여
+
+#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/CodeSoom">⌨ CodeSoom 리엑트 11기 (2022.08.01 ~ 2022.10.02)</a>
