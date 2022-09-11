@@ -136,7 +136,7 @@
 
 <br/>
 
-- DOM Tree 내 하나의 객체를 <strong>노드<s/trong>라 하며, DOM Tree는 4가지 노드로 구성된다.
+- DOM Tree 내 하나의 객체를 <strong>노드</strong>라 하며, DOM Tree는 4가지 노드로 구성된다.
 
   - <strong>문서 노드 (Document Node)</strong> : 트리의 최상위 객체. DOM 트리에 접근하기 위한 시작점.
 
@@ -299,11 +299,24 @@
 
 - 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 <strong>DOM 트리</strong>를 생성한다.
 
-  - HTML 파싱 → DOM 노드 (객체 모델) 생성 → 이 DOM 노드를 병합하여 DOM 트리 생성
+<br/>
 
-- 렌더링 엔진은 HTML 문서가 모두 파실될 때까지 기다리지 않고 배치와 그리기 과정을 진행한다.
+- <strong>HTML 파싱 과정</strong>
 
-  - 더 나은 사용자 경험을 위해서이다.
+  1. 서버에서 <strong>바이트 형태</strong>의 HTML 문서를 응답받음
+
+  2. 지정된 인코딩 방식(UTF-8)에 따라 이를 <strong>문자열</strong>로 변환  
+     (<code>\<meta charset="UTF-8"></code>)
+
+  3. 변환된 문자열을 <strong>토큰</strong>으로 분해
+
+  4. 토큰을 내용에 따라 <strong>객체(노드)</strong>로 변환
+
+  5. 객체를 <strong>트리 구조</strong>로 구성하여 <strong>DOM</strong>을 생성
+
+<br/>
+
+- 더 나은 사용자 경험을 위해 렌더링 엔진은 HTML 문서가 <strong>모두 파싱될 때까지 기다리지 않고</strong> 배치와 그리기 과정을 진행한다.
 
 <br/><br/>
 
@@ -313,6 +326,25 @@
 
 - CSS 파서가 수신받은 CSS 문서를 파싱하여 <strong>CSSOM 트리</strong>를 생성한다.
 
+<br/>
+
+- <strong>CSS 파싱 과정</strong> (DOM 생성 과정과 동일)
+
+  1. 서버에서 <strong>바이트 형태</strong>의 CSS 문서를 응답받음
+
+  2. 지정된 인코딩 방식(UTF-8)에 따라 이를 <strong>문자열</strong>로 변환  
+     (<code>\<meta charset="UTF-8"></code>)
+
+  3. 변환된 문자열을 <strong>토큰</strong>으로 분해
+
+  4. 토큰을 내용에 따라 <strong>객체(노드)</strong>로 변환
+
+  5. 객체를 <strong>트리 구조</strong>로 구성하여 <strong>CSSOM</strong>을 생성
+
+<br/>
+
+- CSSOM 트리의 노드는 DOM 트리 요소의 선택자에 맞춰 적용될 CSS 스타일 정보가 포함되어 있다.
+
 <br/><br/>
 
 ### Step 1-3. JavaScript 파싱
@@ -321,7 +353,9 @@
 
 - 그리고 JavaScript 엔진이 렌더링 엔진으로부터 제어권을 넘겨받는다.
 
-- 자바스크립트 파싱이 종료되면 렌더링 엔진이 다시 제어권을 돌려받고 DOM 생성을 이어나간다.
+- JavaScript 엔진은 받아온 JS 리소스를 파싱하여 AST (추상 구문 트리) 를 생성하고, 이를 바이트코드로 변환해 실행한다.
+
+- JavaScript 파싱이 종료되면 렌더링 엔진이 다시 제어권을 돌려받고 DOM 생성을 이어나간다.
 
 <br/>
 
@@ -339,13 +373,46 @@
 
 ### Step 2. Render Tree 생성
 
+- <strong>DOM 트리와 CSSSOM 트리를 결합</strong>하여 랜더 트리 (Render Tree)를 생성한다.
+
+  <img src="img/dom+cssom=render_tree.png">
+
+  👉 <a href="https://velog.io/@moonshadow/CSSOM">사진 출처</a>
+
+<br/>
+
+- <strong>랜더 트리 생성 과정</strong>
+
+  1. <code>\<html></code> 태그와 <code>\<body></code> 태그를 처리하며 <strong>랜더 트리 루트</strong>를 구성한다.
+
+  2. <strong>DOM</strong>을 최상위 노드(<code>\<html></code>)부터 순회하며 <strong>화면에 보여지지 않는 노드를 제외</strong>한다.
+
+  3. 화면에 보여지는 노드에 <strong>CSSOM</strong> 규칙을 찾아 일치하는 스타일을 적용한다.  
+     (<code>position</code>이나 <code>float</code>를 사용했을 경우, 실제 그려지는 위치로 랜더 객체가 이동한다.)
+
 <br/><br/>
 
 ### Step 3. 레이아웃 (Layout)
 
+- 렌더 트리의 각 노드의 상대적인 위치, 크기 (너비와 높이) 를 계산하는 과정
+
+<br/>
+
+- 초기 배치 이후 DOM 노드가 추가되거나 변경되면, 불필요한 레이아웃이 발생하지 않도록 전체가 아닌 일부만 다시 배치되도록 한다.
+
+  (이를 'Reflow'라 한다.)
+
+  - 글로벌 레이아웃 vs 로컬 레이아웃
+
+  - 로컬 레이아웃 시 <strong>더티 비트</strong> 방식 사용
+
 <br/><br/>
 
 ### Step 4. 페인트 (Paint)
+
+- 렌더 트리를 순회하며 레이어를 만들고, 레이어의 배경, 테두리, 텍스트, 그려지는 순서, 레이어 간의 순서 등 그려지는 과정을 기록한다.
+
+- 렌더 트리의 각 노드를 화면의 실제 픽셀로 변환하여(이를 '래스터화'라 한다) 브라우저 화면에 그려준다.
 
 <br/><br/><br/>
 
