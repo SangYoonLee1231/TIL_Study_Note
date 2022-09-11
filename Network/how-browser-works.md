@@ -17,6 +17,7 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">브라우저 아키텍처</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B8%B0%EC%B4%88-%EC%82%AC%EC%A0%84-%EC%A7%80%EC%8B%9D">네트워크 기초 사전 지식</a>
+  - <a href="">DOM 트리</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%A3%BC%EC%86%8C-%EC%B0%BD%EC%97%90-navercom%EB%A5%BC-%EC%B9%98%EA%B3%A0-enter%EC%9D%84-%EB%88%84%EB%A5%B4%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EA%B3%BC%EC%A0%95">브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 과정</a>
 
@@ -124,6 +125,38 @@
 - 웹 브라우저는 도메인 네임을 해석할 수 없기 때문에, 이 도메인을 <strong>IP 주소</strong>로 변환해주는 <strong>DNS (Domain Name System)</strong>가 필요하다.
 
 - DNS는 <strong>네임 서버 (Name Server)</strong> 가 운영하는 장치이다.
+
+<br/><br/>
+
+### DOM 트리
+
+- DOM 트리는 문서 객체 모델 (Document Object Model) 의 줄임말로 <strong>HTML 문서의 객체 표현</strong>이다.
+
+- 즉, HTML/XML 문서의 <strong>모든 것을 객체로 만들고</strong>, 이를 브라우저가 읽을 수 있는 <strong>트리 구조로 구성한 것</strong>이 DOM 트리이다.
+
+<br/>
+
+- DOM Tree 내 하나의 객체를 <strong>노드<s/trong>라 하며, DOM Tree는 4가지 노드로 구성된다.
+
+  - <strong>문서 노드 (Document Node)</strong> : 트리의 최상위 객체. DOM 트리에 접근하기 위한 시작점.
+
+  - <strong>요소 노드(Element Node)</strong> : HTML 요소 (태그) 를 객체로 표현한 것
+
+  - <strong>어트리뷰트 노드(Attribute Node)</strong> : HTML 요소의 'Attribute'를 객체로 표현한 것
+
+  - <strong>텍스트 노드(Text Node)</strong> : HTML 요소의 '텍스트'를 객체로 표현한 것
+
+<br/>
+
+  <img src="img/dom-tree.png">
+
+👉 <a href="https://poiemaweb.com/js-dom">사진 출처</a>
+
+<br/>
+
+- 자비스크립트가 HTML 문서에 접근하고자 할 때 DOM 트리로 접근한다. 페이지를 조작할 때도 DOM 트리의 객체를 사용한다.
+
+- DOM 생성과정에서 브라우저는 문서에 있는 에러 등, 닫는 태그가 없는 에러 등을 자동으로 처리해준다.
 
 <br/><br/><br/>
 
@@ -266,9 +299,11 @@
 
 - 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 <strong>DOM 트리</strong>를 생성한다.
 
-  - HTML 파싱 → DOM 노드 생성 → 이 DOM 노드를 병합하여 DOM 트리 생성
+  - HTML 파싱 → DOM 노드 (객체 모델) 생성 → 이 DOM 노드를 병합하여 DOM 트리 생성
 
-- HTML
+- 렌더링 엔진은 HTML 문서가 모두 파실될 때까지 기다리지 않고 배치와 그리기 과정을 진행한다.
+
+  - 더 나은 사용자 경험을 위해서이다.
 
 <br/><br/>
 
