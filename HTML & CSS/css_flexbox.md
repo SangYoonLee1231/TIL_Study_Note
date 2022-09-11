@@ -139,13 +139,20 @@
 
 - flex-wrap 속성값
 
-  - <strong><code>wrap</code></strong> : flex 아이템을 여러 줄로 나누어 배치.  
-    화면 크기가 줄어들면, flex 아이템을 순서대로 다음 줄로 보낸다. 〈Default 값〉
+  - <strong><code>nowrap</code> 〈Default 값〉 </strong>: flex 아이템을 한 줄에 강제로 배치.
 
-  - <strong><code>nowrap</code></strong> 〈Default 값〉 : flex 아이템을 한 줄에 강제로 배치.  
     화면 크기가 줄어들면, flex 아이템의 원래 크기를 (비율에 맞게) 줄여서라도 강제로 배치시킨다.
 
-  - <strong><code>wrap-reverse</code></strong> : wrap과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, 요소 배치 순서의 기준이 정반대로 뒤집힌다.  
+    (아이템의 크기가 <strong>왜곡될 수 있다.</strong>)
+
+  - <strong><code>wrap</code></strong> : flex 아이템들을 여러 줄로 나누어 배치.
+
+    화면 크기가 줄어들면, flex 아이템을 순서대로 다음 줄로 보낸다.
+
+    (아이템의 크기가 <strong>왜곡되지 않는다.</strong>)
+
+  - <strong><code>wrap-reverse</code></strong> : wrap과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, 요소 배치 순서의 기준이 정반대로 뒤집힌다.
+
     (문자의 표기 방향과 정반대 방향)
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/flex_wrap2.jpg" width="550px">
