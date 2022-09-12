@@ -148,9 +148,9 @@
 
 <br/>
 
-  <div align="center" width="700">
+  <div align="center">
 
-  <img src="img/dom-tree.png">
+  <img src="img/dom-tree.png" width="550">
 
   </div>
 
