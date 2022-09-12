@@ -162,6 +162,10 @@
 
 ## 브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 일
 
+<img src="img/procedure.png" />
+
+<br/>
+
 ### Step 1. 주소창에 입력한 텍스트 정보 확인
 
 (주소창에 n을 치면 자동완성 기능으로 검색어가 표시될 수 있다.)
@@ -225,6 +229,10 @@
 <br/><br/><br/>
 
 ## 렌더링 프로세스
+
+<img src="img/procedure_detail.png" />
+
+<br/>
 
 - 【 Step 3. 렌더링 작업 】 중 렌더링 엔진에서 일어나는 <strong>렌더링 프로세스</strong>에 대해 좀 더 자세히 알아보자.
 

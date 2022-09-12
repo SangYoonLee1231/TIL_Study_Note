@@ -137,6 +137,10 @@
 
   - 존재하지 않는 값, 비어 있는 값, 알 수 없는 값임을 <strong>확실히 나타내고자 할 때</strong> 사용한다.
 
+  - 사용자가 직접 준 value로, JS가 자동으로 <code>null</code>값을 변수에 줄 수 없다.
+
+  - <code>null</code>의 typeof 연산은 <code>"object"</code>인데, 이는 언어상의 오류다. null은 객체가 아니다.
+
 <br/>
 
 - <code>undefined</code>
@@ -145,7 +149,7 @@
 
   - <strong>값이 할당되지 않은 상태</strong>를 나타낸다.
 
-  - 변수를 선언했지만, 값을 할당하지 않은 경우, 해당 변수에 <code>undefined</code>가 자동으로 할당된다.
+  - 변수를 선언했지만, 값을 할당하지 않은 경우, 해당 변수에 <code>undefined</code>가 <strong>자동으로 할당</strong>된다.
 
   - 변수에 <code>undefined</code>를 직접 할당하는 것이 가능하나, 권장하지 않는다.
 
@@ -169,9 +173,7 @@
 
 <br/>
 
-- <code>null</code>의 typeof 연산은 <code>"object"</code>인데, 이는 언어상의 오류다. null은 객체가 아니다.
-
-- 함수(예:<code>alert</code>)의 typeof 연산은 <code>"function"</code>인데, '함수'형은 따로 존재하지 않는다. 함수는 객체형에 속한다.  
+- 함수(예: <code>alert</code>)의 typeof 연산은 <code>"function"</code>인데, '함수'형은 따로 존재하지 않는다. 함수는 객체형에 속한다.  
   이 또한 오류이나, 하위 호환성 문제로 인해 언어에 남겨져 있다.
 
 <br/><br/>
