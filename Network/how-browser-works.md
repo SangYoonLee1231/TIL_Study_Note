@@ -170,7 +170,11 @@
 
 ## 브라우저 주소 창에 naver.com를 치고 Enter을 누르면 일어나는 일
 
-<img src="img/procedure.png" />
+<div align="center">
+
+<img src="img/procedure.png" width="850"/>
+
+</div>
 
 <br/>
 
@@ -254,7 +258,11 @@
 
 ## 렌더링 프로세스
 
-<img src="img/procedure_detail2.png" />
+<div align="center">
+
+<img src="img/procedure_detail2.png" width="850"/>
+
+</div>
 
 <br/>
 
