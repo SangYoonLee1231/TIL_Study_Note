@@ -230,7 +230,7 @@
 
 ## 렌더링 프로세스
 
-<img src="img/procedure_detail.png" />
+<img src="img/procedure_detail2.png" />
 
 <br/>
 
