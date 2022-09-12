@@ -182,7 +182,11 @@
 
   <br/>
 
+  <div align="center">
+
   <img src="img/text_identify.png" width="550">
+
+  </div>
 
 <br/>
 
@@ -212,7 +216,11 @@
 
   <br/>
 
+  <div align="center">
+
   <img src="img/network_process.png" width="550" />
+
+  </div>
 
 <br/>
 
@@ -315,6 +323,8 @@
 
 - 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 <strong>DOM 트리</strong>를 생성한다.
 
+  <br/>
+
   <div align="center">
 
   <img src="img/html_parsing.png" width="250">
@@ -347,6 +357,8 @@
 - HTML 파싱 과정에서 <code>link</code> 태그를 만나면, DOM 생성을 잠시 중지하고 해당 CSS 리소스를 가져온다.
 
 - CSS 파서가 수신받은 CSS 문서를 파싱하여 <strong>CSSOM 트리</strong>를 생성한다.
+
+  <br/>
 
   <div align="center">
 
