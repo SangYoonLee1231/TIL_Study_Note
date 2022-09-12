@@ -148,7 +148,11 @@
 
 <br/>
 
+  <div align="center" width="700">
+
   <img src="img/dom-tree.png">
+
+  </div>
 
 👉 <a href="https://poiemaweb.com/js-dom">사진 출처</a>
 
