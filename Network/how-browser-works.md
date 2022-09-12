@@ -146,7 +146,7 @@
 
   - <strong>텍스트 노드(Text Node)</strong> : HTML 요소의 '텍스트'를 객체로 표현한 것
 
-<br/>
+  <br/>
 
   <div align="center">
 
