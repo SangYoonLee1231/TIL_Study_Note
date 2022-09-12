@@ -180,6 +180,10 @@
 
 - 입력한 텍스트가 '<strong>URL</strong>'라면, 브라우저 엔진에서 네트워크 스레드를 통해 '<strong>네트워크 호출</strong>'을 수행한다.
 
+  <br/>
+
+  <img src="img/text_identify.png" width="550">
+
 <br/>
 
 ### Step 2. 네트워크 호출
@@ -205,6 +209,10 @@
 <br/>
 
 - 네이버 서버로부터 응답을 받은 클라이언트의 브라우저는 페이지를 띄우는데 필요한 <strong>데이터 (HTML, CSS, Javascript, 이미지 파일 등)</strong> 를 얻었다.
+
+  <br/>
+
+  <img src="img/network_process.png" width="550" />
 
 <br/>
 
@@ -234,7 +242,7 @@
 
 <br/>
 
-- 【 Step 3. 렌더링 작업 】 중 렌더링 엔진에서 일어나는 <strong>렌더링 프로세스</strong>에 대해 좀 더 자세히 알아보자.
+- 【 <strong>Step 3. 렌더링 작업</strong> 】 중 렌더링 엔진에서 일어나는 <strong>렌더링 프로세스</strong>에 대해 좀 더 자세히 알아보자.
 
 - <strong>렌더링 엔진</strong>은 요청받은 내용을 화면에 표시해주는 역할을 한다.
 
@@ -307,6 +315,12 @@
 
 - 렌더링 엔진이 HTML 데이터를 수신하면, HTML 파서가 이를 파싱하여 <strong>DOM 트리</strong>를 생성한다.
 
+  <div align="center">
+
+  <img src="img/html_parsing.png" width="250">
+
+  </div>
+
 <br/>
 
 - <strong>HTML 파싱 과정</strong>
@@ -333,6 +347,12 @@
 - HTML 파싱 과정에서 <code>link</code> 태그를 만나면, DOM 생성을 잠시 중지하고 해당 CSS 리소스를 가져온다.
 
 - CSS 파서가 수신받은 CSS 문서를 파싱하여 <strong>CSSOM 트리</strong>를 생성한다.
+
+  <div align="center">
+
+  <img src="img/css_parsing.png" width="250">
+
+  </div>
 
 <br/>
 
@@ -411,7 +431,15 @@
 
 - CSS에서 상대적인 모든 값들은 절대적인 값인 <code>px</code> 단위로 변환된다.
 
-<br/>
+  <br/>
+
+  <div align="center">
+
+  <img src="img/render_layout.png" width="350">
+
+  </div>
+
+  <br/>
 
 - 초기 배치 이후 DOM 노드가 추가되거나 변경되면, 불필요한 레이아웃이 발생하지 않도록 전체가 아닌 일부만 다시 배치된다.
 
