@@ -48,9 +48,13 @@
 
   <br/>
 
+  <div align="center">
+
   <img src="img\browser_architecture.png">
 
   👉 <a href="https://d2.naver.com/helloworld/59361">사진 출처</a>
+
+  </div>
 
   <br/>
 
@@ -150,11 +154,11 @@
 
   <div align="center">
 
-  <img src="img/dom-tree.png" width="550">
+  <img src="img/dom-tree.png" width="700">
+
+  👉 <a href="https://poiemaweb.com/js-dom">사진 출처</a>
 
   </div>
-
-👉 <a href="https://poiemaweb.com/js-dom">사진 출처</a>
 
 <br/>
 
