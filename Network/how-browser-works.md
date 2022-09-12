@@ -26,13 +26,14 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-3-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9E%91%EC%97%85">Step 3. 렌더링 작업</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%A0%8C%EB%8D%94%EB%A7%81-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">렌더링 프로세스</a>
-  - <a href="">파싱 (Parsing) 이란?</a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
-  - <a href=""></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%ED%8C%8C%EC%8B%B1-parsing-%EC%9D%B4%EB%9E%80">파싱 (Parsing) 이란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-1-1-html-%ED%8C%8C%EC%8B%B1--dom-%ED%8A%B8%EB%A6%AC-%EC%83%9D%EC%84%B1">Step 1-1. HTML 파싱 → DOM 트리 생성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-1-2-css-%ED%8C%8C%EC%8B%B1--cssom-%ED%8A%B8%EB%A6%AC-%EC%83%9D%EC%84%B1">Step 1-2. CSS 파싱 → CSSOM 트리 생성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-1-3-javascript-%ED%8C%8C%EC%8B%B1">Step 1-3. JavaScript 파싱</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-2-render-tree-%EC%83%9D%EC%84%B1">Step 2. Render Tree 생성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-3-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-layout">Step 3. 레이아웃 (Layout)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#step-4-%ED%8E%98%EC%9D%B8%ED%8A%B8-paint">Step 4. 페인트 (Paint)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md#%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0-reflow-%EC%99%80-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-repaint">리플로우 (Reflow) 와 리페인트 (Repaint)</a>
 
 <br/><br/>
 
@@ -172,7 +173,7 @@
 
 <div align="center">
 
-<img src="img/procedure.png" width="850"/>
+<img src="img/procedure.png" width="900"/>
 
 </div>
 
@@ -260,7 +261,7 @@
 
 <div align="center">
 
-<img src="img/procedure_detail2.png" width="850"/>
+<img src="img/procedure_detail2.png" width="900"/>
 
 </div>
 
