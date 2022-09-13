@@ -504,7 +504,7 @@
 
 > 참고 자료
 >
-> - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">브라우저는 어떻게 동작하는가?</a> (NAVER D2)
+> - <a href="https://d2.naver.com/helloworld/59361">브라우저는 어떻게 동작하는가?</a> (NAVER D2)
 > - <a href="https://youtu.be/dh406O2v_1c">What happens when you type google.com into your browser and press enter? (Detailed Analysis)</a> (유튜브 영상)
 > - 책 『<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791165921057">기초부터 완성까지, 프론트엔드</a>』 (이재성, 한전 지음 / 비제이퍼블릭 출판) - 8장. 브라우저 렌더링 과정
 > - 2018학년도 수능 모의고사 국어 영억 비문학 지문 - 『DNS 스푸핑』
