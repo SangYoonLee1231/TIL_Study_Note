@@ -8,7 +8,7 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#gitignore-%ED%8C%8C%EC%9D%BC">.gitignore 파일</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#gitignore-%ED%8C%8C%EC%9D%BC"><code>.gitignore</code> 파일</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
