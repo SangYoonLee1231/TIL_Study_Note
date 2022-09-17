@@ -5,17 +5,17 @@
 ### 목차
 
 - 프로세스 (Process)
-  - <a href="">프로세스 (Process) 란?</a>
-  - <a href="">프로세스의 문맥</a>
-    - <a href="">프로세스의 문맥의 종류</a>
-  - <a href="">프로세스의 상태</a>
-    - <a href="">프로세스 상태도</a>
-  - <a href="">문맥 교환 (Context Switch)</a>
-  - <a href="">스케줄러 (Scheduler)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-process-%EB%9E%80">프로세스 (Process) 란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98-%EB%AC%B8%EB%A7%A5">프로세스의 문맥</a>
+    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98-%EB%AC%B8%EB%A7%A5%EC%9D%98-%EC%A2%85%EB%A5%98">프로세스의 문맥의 종류</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98-%EC%83%81%ED%83%9C">프로세스의 상태</a>
+    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%83%81%ED%83%9C%EB%8F%84">프로세스 상태도</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%EB%AC%B8%EB%A7%A5-%EA%B5%90%ED%99%98-context-switch">문맥 교환 (Context Switch)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%EC%8A%A4%EC%BC%80%EC%A4%84%EB%9F%AC-scheduler">스케줄러 (Scheduler)</a>
 - 스레드 (Thread)
-  - <a href="">스레드 (Thread) 란?</a>
-  - <a href="">싱글 스레드 VS 멀티 스레드</a>
-    - <a href="">멀티 스레드의 장점</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%EC%8A%A4%EB%A0%88%EB%93%9C-thread-%EB%9E%80">스레드 (Thread) 란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%EC%8B%B1%EA%B8%80-%EC%8A%A4%EB%A0%88%EB%93%9C-vs-%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C">싱글 스레드 VS 멀티 스레드</a>
+    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md#%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%98-%EC%9E%A5%EC%A0%90">멀티 스레드의 장점</a>
 
 <br/><br/>
 
@@ -37,9 +37,9 @@
 
 <br/>
 
-- 현대 컴퓨터는 여러 프로세스들이 번갈아가며 CPU를 점유하고 그 프로세스의 명령을 수행한다.
+- 현대 컴퓨터는 여러 프로세스들이 번갈아가며 CPU를 점유한다. 그리고 CPU는 점유한 프로세스의 명령을 수행한다.
 
-- 이 때 특정 프로세스의 CPU 점유 차례가 다시 되돌아오면, 이전에 어디까지 명령을 수행했는지 그 정확한 시점과 상태를 알고 있어야 명령 수행을 정상적으로 재개할 수 있다.
+- 이 때 특정 프로세스의 CPU 점유 차례가 되돌아오면, 이전에 어디까지 명령을 수행했는지 그 정확한 시점과 상태를 알고 있어야< 명령 수행을 정상적으로 다시 할 수 있다.
 
 <br/><br/>
 
@@ -55,7 +55,7 @@
 
      > PCB (Process Control Block)
      >
-     > 운영체제가 여러 프로세스를 관리하기 위해 각 프로세스마다 하나씩 두는 자료 구조
+     > : 운영체제가 여러 프로세스를 관리하기 위해 각 프로세스마다 하나씩 두는 자료구조
 
 <br/><br/><br/>
 
@@ -68,8 +68,11 @@
   2. <strong>Ready</strong> : 다른 모든 준비(메모리 적재 등)를 끝낸 프로세스가 CPU를 기다리는 상태
 
   3. <strong>Block</strong> (Blocked, Wait, Sleep) : CPU의 제어권을 주어도 당장 instruction을 수행할 수 없는 상태  
-     ( ex) 디스크에서 파일을 읽어와야 하는 경우 )  
+     ( ex) 디스크에서 파일을 읽어와야 하는 경우 )
+
      (즉 어딘가에서 프로세스는 계속 일하는 중이다.)
+
+<br/>
 
 - 경우에 따라 아래 2가지 상태를 포함하기도 한다.
 
@@ -95,7 +98,7 @@
 
 ## 문맥 교환 (Context Switch)
 
-- CPU의 제어권을 한 프로세스에서 다른 프로세스로 넘겨주는 과정이다.
+- <strong>CPU의 제어권을 한 프로세스에서 다른 프로세스로 넘겨주는 과정</strong>이다.
 
 - 특정 프로세스가 CPU 제어권을 넘겨줄 때, 현재 상태(문맥)를 자신의 PCB에 저장한다.
 
@@ -105,7 +108,7 @@
 
 ## 스케줄러 (Scheduler)
 
-- 프로세스들의 동작 순서를 잡아주는 역할
+- 프로세스들의 <strong>동작 순서</strong>를 잡아주는 역할
 
 <br/>
 
@@ -163,7 +166,7 @@
 
 - <strong>경제성 (Economy)</strong> : 하나의 새 프로세스를 생성하고 문맥 교환이 일어나는 것보다, 스레드를 하나 생성하고 스레드 간의 문맥 교환이 일어나는 것이 더 효율적이다. (Overhead가 덜 든다.)
 
-- <strong> (Utilization of MultiProcessor Architectures)</strong> : CPU가 여려 개 있는 컴퓨터일 경우, 각 스레드를 (병렬적으로) 동시에 실행할 수 있어 더욱 빠른 결과를 얻을 수 있다.
+- <strong>다중 처리기구조의 활용 (Utilization of MultiProcessor Architectures)</strong> : CPU가 여려 개 있는 컴퓨터일 경우, 각 스레드를 (병렬적으로) 동시에 실행할 수 있어 더욱 빠른 결과를 얻을 수 있다.
 
 <br/><br/><br/>
 
