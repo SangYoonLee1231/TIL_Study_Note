@@ -25,9 +25,9 @@
 
 <br/>
 
-- <strong>운영체제</strong>에서 프로세스를 <strong>관리</strong>한다.
+- <strong>운영체제</strong>에서 프로세스를 <strong>관리</strong>하고, <strong>CPU</strong>에서 프로세스를 <strong>제어</strong>한다.
 
-- <strong>CPU</strong>에서 프로세스를 <strong>제어</strong>한다. 이 때 CPU는 한 번에 <strong>하나의 프로세스만</strong> 제어할 수 있다.
+  - 이 때 CPU는 한 번에 <strong>하나의 프로세스만</strong> 제어할 수 있다.
 
 <br/><br/><br/>
 
