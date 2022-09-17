@@ -162,13 +162,17 @@
 
 ### 멀티 스레드의 장점
 
-- <strong>빠른 응답성 (Responsiveness)</strong> : 하나의 스레드가 Blocked 상태인 동안에도 동일한 Task 내의 다른 스레드가 실행(Running 상태)가 되어 빠른 처리를 할 수 있다.
+- <strong>빠른 응답성 (Responsiveness)</strong> :  
+  하나의 스레드가 Blocked 상태인 동안에도 동일한 Task 내의 다른 스레드가 실행(Running 상태)가 되어 빠른 처리를 할 수 있다.
 
-- <strong>자원 공유 (Resource Sharing)</strong> : 만일 같은 일을 하는 프로세스가 여러 개 수행된다면, 그만큼 메모리 소모가 심해진다. 대신 하나의 프로세스에 여러 개의 스레드만 두면, 자원을 공유하는 부분이 생기게 되어 자원 절약 및 성능 향상의 효과를 얻을 수 있다.
+- <strong>자원 공유 (Resource Sharing)</strong> :  
+  만일 같은 일을 하는 프로세스가 여러 개 수행된다면, 그만큼 메모리 소모가 심해진다. 대신 하나의 프로세스에 여러 개의 스레드만 두면, 자원을 공유하는 부분이 생기게 되어 자원 절약 및 성능 향상의 효과를 얻을 수 있다.
 
-- <strong>경제성 (Economy)</strong> : 하나의 새 프로세스를 생성하고 문맥 교환이 발생되는 것보다, 스레드를 하나 생성하고 스레드 간의 문맥 교환이 일어나는 것이 더 효율적이다. (Overhead가 덜 든다.)
+- <strong>경제성 (Economy)</strong> :  
+  하나의 새 프로세스를 생성하고 문맥 교환이 발생되는 것보다, 스레드를 하나 생성하고 스레드 간의 문맥 교환이 일어나는 것이 더 효율적이다. (Overhead가 덜 든다.)
 
-- <strong>다중 처리기구조의 활용 (Utilization of MultiProcessor Architectures)</strong> : <storng>CPU가 여려 개 있는</storng> 컴퓨터일 경우, 각 스레드를 (병렬적으로) 동시에 실행할 수 있어 더욱 빠른 결과를 얻을 수 있다.
+- <strong>다중 처리기구조의 활용 (Utilization of MultiProcessor Architectures)</strong> :  
+  <strong>CPU가 여려 개 있는</strong> 컴퓨터일 경우, 각 스레드를 (병렬적으로) 동시에 실행할 수 있어 더욱 빠른 결과를 얻을 수 있다.
 
 <br/><br/><br/>
 
