@@ -145,6 +145,18 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
 
+### ◻ 운영체제
+
+- <a href=""></a>
+
+### ◻ 네트워크
+
+- <a href=""></a>
+
+### ◻ 데이터베이스
+
+- <a href=""></a>
+
 <br/>
 
 ## 📌 Etc.
