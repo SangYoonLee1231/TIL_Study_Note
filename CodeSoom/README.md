@@ -71,3 +71,7 @@
 - Day 1-5 : (슬럼프 극복 + 다른 일정 소화)
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CodeSoom/Week%205/Day_6-7.md">Day 6-7 : 비동기 처리 학습 (+ 콜백 함수, Promise)
 - <a href="https://sylagape1231.tistory.com/52">✏ 5주차 주간 회고 (블로그 포스트)</a>
+
+<br/>
+
+## Week 6-8
