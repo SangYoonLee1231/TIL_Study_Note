@@ -62,13 +62,13 @@
 
 - 자바스크립트 엔진의 종류
 
-  - V8 : Chrome이나 Opera에서 쓰인다.
+  - <strong>V8</strong> : Chrome이나 Opera에서 쓰인다.
 
-  - SpiderMonkey: Firefox에서 쓰인다.
+  - <strong>SpiderMonkey</strong>: Firefox에서 쓰인다.
 
-  - ChakraCore : Microsoft Edge에 쓰인다.
+  - <strong>ChakraCore</strong> : Microsoft Edge에 쓰인다.
 
-  - SquirrelFish : Safari에 쓰인다.
+  - <strong>SquirrelFish</strong> : Safari에 쓰인다.
 
 * JavaScript가 쓰이는 비 브라우저 환경 예시
 
@@ -114,9 +114,9 @@
 
 ### JavaScript는 싱글 스레드(Single-Threaded) 언어이다.
 
-- 스레드(Thread)란, 어떤 프로그램 내에서 실행되는 흐름의 최소 단위이다.
+- <strong>스레드(Thread)</strong>란, 어떤 프로그램 내에서 실행되는 흐름의 최소 단위이다.
 
-* 프로세스(process)란, 컴퓨터에서 실행 중인 프로그램을 말한다.
+* <strong>프로세스(process)</strong>란, 컴퓨터에서 실행 중인 프로그램을 말한다.
 
 * 하나의 프로세스는 여러 개의 스레드로 구성할 수 있으며, 스레드는 프로세스의 실행 단위라고도 할 수 있다.
 
