@@ -4,12 +4,18 @@
 
 - 스터디 발표를 준비하며 공부한 내용입니다.
 
-- 브라우저 주소 창에 naver.com 을 쳤을 때 일어나는 일을 <strong>네트워크의 관점</strong>에서 정리했습니다.
+- 브라우저 주소 창에 <code>naver.com</code> 을 쳤을 때 일어나는 일을 <strong>네트워크의 관점</strong>에서 정리했습니다.
 
 - CS 지식이 거의 전무한 상태에서 학습을 시작했기 때문에 내용이 깊지는 않습니다.
   추후 CS를 공부하며 세부적인 내용을 더 보충해 나가겠습니다.
 
-- 정리한 내용을 바탕으로 <strong>블로그 포스트</strong>를 작성했습니다. 👉<a href="https://velog.io/@sylagape1231/주소창에-naver.com을-치면-일어나는-일을-쉽게-이해해보자">여기</a>를 클릭하시면 확인할 수 있습니다.
+- 정리한 내용을 바탕으로 <strong>블로그 포스트</strong>를 작성했습니다. 👉<a href="https://velog.io/@sylagape1231/주소창에-naver.com을-치면-일어나는-일을-쉽게-이해해보자">여기</a> 혹은 아래 배너를 클릭하시면 확인할 수 있습니다.
+
+<div align="center">
+
+[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=sylagape1231&slug=주소창에-naver.com을-치면-일어나는-일을 쉽게-이해해보자)](hhttps://velog.io/@sylagape1231/주소창에-naver.com을-치면-일어나는-일을-쉽게-이해해보자)
+
+</div>
 
 <br/>
 
