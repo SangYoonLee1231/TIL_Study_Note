@@ -19,7 +19,7 @@
 
 <br/>
 
-### 크롬 콘솔창에서의 줄 바꿈 방법
+## 크롬 콘솔창에서의 줄 바꿈 방법
 
 > 참고 자료 : <a href="https://lemeraldl.tistory.com/588">크롬 콘솔창에서 작업 할때 엔터 키 (개인 블로그)</a>
 
@@ -27,7 +27,7 @@
 
 <br/><br/>
 
-### 템플릿 리터럴 (Template Literal) - 백틱을 사용하는 문자열 표기법
+## 템플릿 리터럴 (Template Literal) - 백틱을 사용하는 문자열 표기법
 
 > 참고 자료 : <a href="https://nomadcoders.co/javascript-for-beginners">노마드 코더 - 바닐라 JS로 크롬 앱 만들기</a>, <a href="https://leeborn.tistory.com/entry/JavaScript-ES2015-%EB%B0%B1%ED%8B%B1%EA%B3%BC-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%AC%B8%EC%9E%90%EC%97%B4">\[JavaScript] ES2015 백틱(`)과 템플릿 문자열 (블로그 포스트)</a>
 
@@ -48,7 +48,7 @@
 
 <br/><br/>
 
-### Math 모듈 - Random 기능
+## Math 모듈 - Random 기능
 
 - <strong>0부터 9까지 중 무작위로 숫자 뽑기</strong>
 
@@ -75,7 +75,7 @@
 
 <br/><br/>
 
-### <code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수
+## <code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수
 
 - <code>JSON.stringify(어떤것)</code> 함수는 JS object나 array 또는 어떤 JS 코드이건 간에, 문자열로 변환시켜주는 함수이다.
 
@@ -95,7 +95,7 @@
 
 <br/><br/>
 
-### <code>forEach</code>문
+## <code>forEach</code>문
 
 - 주어진 배열의 각 요소가 순서대로 '<code>forEach</code>의 인자로 주어진 함수'의 인자값으로 넘겨진다.
 
@@ -133,7 +133,7 @@
 
 <br/><br/>
 
-### <code>filter</code> 함수
+## <code>filter</code> 함수
 
 - 주어진 배열을 <strong>필터링</strong>하여 새로운 배열을 생성해 반환한다.
 
@@ -179,7 +179,7 @@
 
 <br/><br/>
 
-### 화살표 함수 (array function)
+## 화살표 함수 (array function)
 
 - 전통적인 함수 표현(function)의 간편한 대안이다.
 
@@ -205,7 +205,7 @@
 
 <br/><br/>
 
-### 구조 분해 할당
+## 구조 분해 할당
 
 - 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있도록 하는 JS 표현식이다.
 

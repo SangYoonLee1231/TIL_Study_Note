@@ -17,7 +17,7 @@
 
 <br/><br/>
 
-### <code>.gitignore</code> 파일
+## <code>.gitignore</code> 파일
 
 - <code>.gitignore</code>은 Git에서 커밋을 할 때, <strong>무시하고 싶은 파일들의 이름</strong>을 기록하는 파일이다.
 

@@ -15,13 +15,13 @@
 
 <br/><br/>
 
-### <code>index.html</code>
+## <code>index.html</code>
 
 - 대부분의 웹 서버가 디폴트로 <code>index.html</code>을 찾아보도록 설정되어 있다.
 
 <br/>
 
-### VS Code 단축키 꿀팁
+## VS Code 단축키 꿀팁
 
 - 해당줄을 복붙할때는 <strong>shift + alt + 아래(or 위)방향키</strong>를 누르면 된다.
 
@@ -48,4 +48,4 @@
 
 <br/><br/>
 
-###
+##
