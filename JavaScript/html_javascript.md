@@ -166,15 +166,15 @@
     ```html
     <!DOCTYPE html>
     <html lang="en">
-        <head>
-            ...
-        </head>
-        <body>
-            ...
-            <script src="js/background.js" defer></script>
-            <!-- 해당 위치에 요소 삽입 -->
-            <img src="img/image.png">
-        </body>
+      <head>
+        ...
+      </head>
+      <body>
+        ...
+        <script src="js/background.js" defer></script>
+        <!-- 해당 위치에 요소 삽입 -->
+        <img src="img/image.png">
+      </body>
     </html>
 
     ```
@@ -182,3 +182,43 @@
   - <code>appendChild()</code> 대신 <code>append()</code> 함수를 써도 된다.
 
   - <code>prepend()</code> 함수를 쓰면 주어진 태그 내부의 최상단에 코드가 삽입된다.
+
+<br/><br/>
+
+## JS를 통해 HTML 요소 생성 + 삽입하기 - 가독성을 높이는 방법
+
+- <code>innerHTML</code>와 <code>replace</code> 함수를 적극 활용하면, HTML 생성 및 삽입 시 가독성이 훨씬 더 높은 코드를 작성할 수 있다.
+
+<br/>
+
+### 매커니즘
+
+1. <code>template</code> 변수를 선언해 (백틱으로 감싼) HTML 마크업 구조의 문자열을 작성한다.
+
+2. <code>replace</code> 함수로 추가적인 작업이 필요한 부분만을 교체해준다.
+
+  ```javascript
+  const menus = ["피자", "삼겹살", "무생채"];
+
+  let template = `
+    <div>
+      <h1>레스토랑 메뉴</h1>
+      <ul>
+        {{__menu_list__}}
+      </ul>
+    </div>
+    <div>
+      <a href="#">뒤로 가기</a>
+    </div>
+  `;
+
+  const menuList = [];
+
+  for (let i = 0; i < menus.length; i++) {
+    menuList.push(`
+      <li>${menus[i]}</li>
+    `);
+  }
+
+  template.replace = ("{{__menu_list__}}", menuList.join(""));
+  ```
