@@ -12,8 +12,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A6%AC%ED%84%B0%EB%9F%B4-template-literal---%EB%B0%B1%ED%8B%B1%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%91%9C%EA%B8%B0%EB%B2%95">템플릿 리터럴 (Template Literal) - 백틱을 사용하는 문자열 표기법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#math-%EB%AA%A8%EB%93%88---random-%EA%B8%B0%EB%8A%A5">Math 모듈 - Random 기능</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#jsonstringify---%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%84-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%EC%8B%9C%ED%82%A4%EB%8A%94-%ED%95%A8%EC%88%98"><code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#foreach%EB%AC%B8"><code>forEach</code>문</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수 (array function)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9">구조 분해 할당</a>
 - <a href=""></a>
 
@@ -95,116 +93,6 @@
 
 <br/><br/>
 
-## <code>forEach</code>문
-
-- 주어진 배열의 각 요소가 순서대로 '<code>forEach</code>의 인자로 주어진 함수'의 인자값으로 넘겨진다.
-
-- 주어진 함수에 인자를 부여하면, 배열의 각 요소를 함수 내부에서 사용할 수 있다.
-
-  ```javascript
-  const numList = [1, 2, 3, 4, 5];
-
-  function sayHello(item) {
-    console.log("Say Hello to " + item);
-  }
-
-  newList = numList.forEach(sayHello);
-  ```
-
-  ```
-  Say Hello to 1
-  Say Hello to 2
-  Say Hello to 3
-  Say Hello to 4
-  Say Hello to 5
-  ```
-
-  - <code>forEach</code>문은 <code>numList</code> 배열 내 각각의 <code>item</code>에 대해 <code>sayHello</code> 함수를 실행시킨다.
-
-<br/>
-
-- 화살표 함수(arrow function) <code>=></code>를 활용하면 위 코드를 다음과 같이 줄여서 쓸 수 있다.
-
-  ```javascript
-  const numList = [1, 2, 3, 4, 5];
-
-  numList.forEach((item) => console.log("Say Hello to " + item));
-  ```
-
-<br/><br/>
-
-## <code>filter</code> 함수
-
-- 주어진 배열을 <strong>필터링</strong>하여 새로운 배열을 생성해 반환한다.
-
-- <code>filter</code> 함수에 인자로 주어진 함수(이하 필터링 함수)가 필터링 역할을 수행한다.
-
-  - <code>[주어진 배열].filter(필터링 함수)</code>
-
-  - <code>forEach</code> 함수와 마찬가지로, 주어진 배열의 각 요소가 순서대로 필터링 함수의 인자값으로 넘겨진다.
-
-  - ✨ 그 중 필터링 함수에서 true로 반환된 요소만 새 배열에 삽입된다.
-
-  ```javascript
-  const numList = [1, 2, 3, 4, 5];
-  const newList = [];
-
-  function sexyFilter(item) {
-    return item != 3;
-  }
-
-  const newList = numList.filter(sexyFilter);
-  console.log(newList);
-  ```
-
-  ```
-  [1, 2, 4, 5]
-  ```
-
-  <br/>
-
-  - <code>filter</code> 함수 역시 화살표 함수(arrow function) <code>=></code>를 활용하면 코드를 간략하게 쓸 수 있다.
-
-    ```javascript
-    const numList = [1, 2, 3, 4, 5];
-    const newList = [];
-
-    newList = numList.filter((item) => item > 3);
-    console.log(newList);
-    ```
-
-    ```
-    [4, 5]
-    ```
-
-<br/><br/>
-
-## 화살표 함수 (array function)
-
-- 전통적인 함수 표현(function)의 간편한 대안이다.
-
-- <a href="https://ko.javascript.info/arrow-functions-basics">javascript.info '화살표 함수 기본' 링크</a>
-
-  ```javascript
-  function title() {
-    return (
-      <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-        Hello I'm a title
-      </h3>
-    );
-  }
-  ```
-
-  ```javascript
-  const title = () => (
-    <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-      Hello I'm a title
-    </h3>
-  );
-  ```
-
-<br/><br/>
-
 ## 구조 분해 할당
 
 - 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있도록 하는 JS 표현식이다.
@@ -224,3 +112,7 @@
 
   const [firstNum, secondNum, thirdNum] = numList;
   ```
+
+<br/><br/>
+
+##
