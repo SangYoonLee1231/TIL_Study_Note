@@ -14,7 +14,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8-%EB%B0%8F-%EC%82%AC%EC%9A%A9">CSS 변수 선언 및 사용</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#not-%EC%86%8D%EC%84%B1-%EB%B6%80%EC%A0%95-css-%EA%B0%80%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4">not 속성 (부정 CSS 가상 클래스)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EA%B1%B0%EB%A6%AC-%EB%8B%A8%EC%9C%84">거리 단위</a>
-- <a href=""></a>
+- <a href="">Box Sizing (content-box, border-box)</a>
 - <a href=""></a>
 
 <br/><br/>
@@ -262,7 +262,7 @@
 
 <br/><br/>
 
-### Border Box (box-sizing)
+### Box Sizing (content-box, border-box)
 
 - <strong><code>box-sizing</code></strong>은 박스의 크기를 계산하는 기준을 설정하는 CSS 속성이다.
 
