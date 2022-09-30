@@ -1,4 +1,4 @@
-# JavaScript 배열 관련 메서드 정리 (+ 화살표 함수)
+# JavaScript - 배열 관련 메서드 정리 (+ 화살표 함수)
 
 > 참고 자료 : <a href="https://ko.javascript.info/">javascript.info</a>
 
@@ -105,7 +105,13 @@
 
 - 전통적인 함수 표현(function)의 간편한 대안이다.
 
+- 익명의 함수를 선언해 변수에 할당하는 방식으로 사용한다.
+
 - <a href="https://ko.javascript.info/arrow-functions-basics">javascript.info '화살표 함수 기본' 링크</a>
+
+<br/>
+
+- <storng>코드 예시</storng>
 
   ```javascript
   function title() {
@@ -117,13 +123,31 @@
   }
   ```
 
-  ```javascript
-  const title = () => (
-    <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-      Hello I'm a title
-    </h3>
-  );
-  ```
+- 아래 두 함수는 위 <code>title</code> 함수를 화살표 함수로 나타낸 것이다.
+
+  - 예시 1 : <strong>중괄호</strong> 사용 (내부에는 <strong>함수 본문 내용</strong>을 작성)
+
+    ```javascript
+    const title = () => {
+      return (
+        <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+          Hello I'm a title
+        </h3>
+      );
+    };
+    ```
+
+  - 예시 2 : <strong>소괄호</strong> 사용 (내부에한 함수의 <strong>반환값</strong>을 작성)
+
+    ```javascript
+    const title = () => (
+      <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+        Hello I'm a title
+      </h3>
+    );
+    ```
+
+    - 소괄호는 반환값이 간단할 경우 생략 가능하다.
 
 <br/><br/>
 
