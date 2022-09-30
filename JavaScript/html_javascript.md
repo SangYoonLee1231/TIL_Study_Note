@@ -9,6 +9,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#document-%EA%B0%9D%EC%B2%B4object">Document 객체(Object)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EC%97%90%EC%84%9C-html-%EC%9A%94%EC%86%8C%EC%97%90-%EC%A0%91%EA%B7%BC%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95">JS에서 HTML 요소에 접근하는 다양한 방법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EB%A5%BC-%ED%86%B5%ED%95%B4-html-%EC%9A%94%EC%86%8C-%EC%83%9D%EC%84%B1%ED%95%98%EC%97%AC-html-%ED%8C%8C%EC%9D%BC%EC%97%90-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0">JS를 통해 HTML 요소 생성하여 HTML 파일에 삽입하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md#js%EB%A5%BC-%ED%86%B5%ED%95%B4-html-%EC%9A%94%EC%86%8C-%EC%83%9D%EC%84%B1--%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0---%EA%B0%80%EB%8F%85%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95">JS를 통해 HTML 요소 생성 + 삽입하기 - 가독성을 높이는 방법</a>
 
 <br/><br/>
 
@@ -191,11 +192,15 @@
 
 <br/>
 
-### 매커니즘
+- <strong>매커니즘</strong>
 
-1. <code>template</code> 변수를 선언해 (백틱으로 감싼) HTML 마크업 구조의 문자열을 작성한다.
+  1. <code>template</code> 변수를 선언해 (백틱으로 감싼) HTML 마크업 구조의 문자열을 작성한다.
 
-2. <code>replace</code> 함수로 추가적인 작업이 필요한 부분만을 교체해준다.
+  2. <code>replace</code> 함수로 추가적인 작업이 필요한 부분만을 교체해준다.
+
+<br/>
+
+- <strong>예시 코드</strong>
 
   ```javascript
   const menus = ["피자", "삼겹살", "무생채"];
