@@ -19,18 +19,18 @@
 
 <br/><br/>
 
-### 아이콘 삽입하기 - <a href="https://fontawesome.com/">Font Awesome</a>
+## 아이콘 삽입하기 - <a href="https://fontawesome.com/">Font Awesome</a>
 
-- 아이콘 삽입 방법 (2가지)
+### 아이콘 삽입 방법 (2가지)
 
-  - 직접 이미지 아이콘 추가
-  - SVG (픽셀이 없는 이미지 파일 형식)
+- 직접 이미지 아이콘 추가
+- SVG (픽셀이 없는 이미지 파일 형식)
 
-- 아이콘 모음 사이트 추천
+### 아이콘 모음 사이트 추천
 
-  - <a href="https://heroicons.dev/">Heroicons [Heroicons - Free Open Source SVG Icon Library]</a>
+- <a href="https://heroicons.dev/">Heroicons [Heroicons - Free Open Source SVG Icon Library]</a>
 
-  - <a href="https://fontawesome.com/">Fontawesome [Font Awesome]</a>
+- <a href="https://fontawesome.com/">Fontawesome [Font Awesome]</a>
 
 <br/>
 
@@ -50,13 +50,13 @@
 
 <br/><br/>
 
-### HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기 (VS Code)
+## HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기 (VS Code)
 
 - head 태그 내부에 <code>link:css</code>라 직성하면 된다.
 
 <br/><br/>
 
-### Reset CSS
+## Reset CSS
 
 - 브라우저에 의해 HTML에 자동으로 적용되는 스타일 (사용자 에이전트 스타일시트) 을 무시하도록 하는 코드
 
@@ -200,7 +200,7 @@
 
 <br/><br/>
 
-### CSS 변수 선언 및 사용
+## CSS 변수 선언 및 사용
 
 - variables.css (변수 선언)
 
@@ -224,7 +224,7 @@
 
 <br/><br/>
 
-### not 속성 (부정 CSS 가상 클래스)
+## not 속성 (부정 CSS 가상 클래스)
 
 - 특정 선택자가 없을 때에 대한 스타일 처리를 하고자 할 때 사용한다.
 
@@ -244,7 +244,7 @@
 
 <br/><br/>
 
-### 거리 단위
+## 거리 단위
 
 - <strong><code>px</code></strong> : 가장 기본적으로 사용되는 픽셀 단위 (고정값)
 
@@ -262,7 +262,7 @@
 
 <br/><br/>
 
-### Box Sizing (content-box, border-box)
+## Box Sizing (content-box, border-box)
 
 - <strong><code>box-sizing</code></strong>은 박스의 크기를 계산하는 기준을 설정하는 CSS 속성이다.
 
