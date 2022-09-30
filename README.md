@@ -73,6 +73,8 @@
 ### ◻ Vanila JS
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
+- <a href="">JavaScript의 역사</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md">JavaScript 기본 3 - 기본 연산자</a>
@@ -80,7 +82,6 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md">JavaScript 기본 5 - 조건문 (<code>if</code>, <code>else</code>, <code>switch</code>), 논리 연산자</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md">JavaScript 기본 6 - nullish 병합 연산자 <code>??</code>, 반복문 (<code>for</code>, <code>while</code>)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md">JavaScript - 배열 관련 메서드 정리 (+ 화살표 함수)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_how_to_create_and_use_object.md">JavaScript - 객체 생성 및 사용법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md">JavaScript - 이벤트 리스너 (Event Listener)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
