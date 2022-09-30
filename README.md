@@ -98,7 +98,7 @@
 
 ### ◻ Node JS & NPM
 
-- <a href="">Node JS & NPM의 개념</a>
+- <a href="">Node JS & NPM의 개념</a> (준비 중)
 
 <br/>
 
