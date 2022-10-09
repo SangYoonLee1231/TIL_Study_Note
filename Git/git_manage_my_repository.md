@@ -12,15 +12,13 @@
 
 - 자신의 클라이언트 (로컬 저장소) 에서 깃으로 자신의 Repository (원격 저장소) 를 관리하는 방법에 대해 정리해보고자 한다.
 
-- 폴더 (로컬 저장소) 를 새로 만들어서 작업하는 것을 전제로 한다.
+- 새 폴더와 새 Repository를 만들어서 작업하는 것을 전제로 한다.
 
 <br/><br/><br/>
 
 ### 1. 사전 작업
 
-- <strong>1-1.</strong> <strong>자신의 컴퓨터 (로컬 저장소) 에서 다룰 본인의 Repository를 하나 선정한다.</strong>
-
-  - 만일 없다면 새로운 Repository를 생성해도 된다.
+- <strong>1-1.</strong> <strong>자신의 컴퓨터 (로컬 저장소) 에서 다룰 본인의 Repository를 깃허브에서 새로 하나 생성한다.</strong>
 
   - 이제부터 이 Repository를 <strong>Repository A</strong>라 부른다.
 
