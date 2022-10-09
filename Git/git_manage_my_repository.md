@@ -26,7 +26,7 @@
 
 <br/>
 
-- <strong>1-2.</strong> <strong>본인의 컴퓨터의 원하는 디렉토리에 레포지토리를 다룰 폴더를 새로 생성해준다.</strong>
+- <strong>1-2.</strong> <strong>본인의 컴퓨터의 원하는 디렉토리(위치)에 Repository A를 다룰 폴더를 새로 생성해준다.</strong>
 
   - 이제부터 이 폴더를 <strong>폴더 B</strong>라 부른다.
 
@@ -35,6 +35,8 @@
 ### 2. '폴더 B'(로컬 저장소)와 'Repository A'(원격 저장소)를 서로 연동하기 (Clone Repository)
 
 - <strong>2-1.</strong> <strong>터미널을 열고 폴더 B의 디렉토리로 이동한다.</strong>
+
+<br/>
 
 - <strong>2-2.</strong> <strong>폴더 B의 디렉토리에서 git을 초가화하는 명령어를 입력한다.</strong>
 
@@ -68,15 +70,15 @@
 
   - <strong>3-1.</strong> <strong>수정된 모든 파일 및 폴더를 Staging에 추가</strong>
 
-    깃 명령어 👉 <code>git add \*</code>
+    👉 <code>git add \*</code>
 
   - <strong>3-2.</strong> <strong>Staging에 있는 것들을 그대로 커밋</strong>
 
-    깃 명령어 👉 <code>git commit -m "커밋 메세지"</code>
+    👉 <code>git commit -m "커밋 메세지"</code>
 
   - <strong>3-3.</strong> <strong>원격 저장소에 푸쉬</strong>
 
-    깃 명령어 👉 <code>git init</code>
+    👉 <code>git init</code>
 
 <br/>
 
