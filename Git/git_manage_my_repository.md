@@ -18,7 +18,7 @@
 
 ### 1. 사전 작업
 
-- <strong>1-1.</strong> 자신의 컴퓨터 (로컬 저장소) 에서 다룰 본인의 Repository를 하나 선정한다.
+- <strong>1-1.</strong> <strong>자신의 컴퓨터 (로컬 저장소) 에서 다룰 본인의 Repository를 하나 선정한다.</strong>
 
   - 만일 없다면 새로운 Repository를 생성해도 된다.
 
@@ -26,7 +26,7 @@
 
 <br/>
 
-- <strong>1-2.</strong> 본인의 컴퓨터의 원하는 디렉토리에 레포지토리를 다룰 폴더를 새로 생성해준다.
+- <strong>1-2.</strong> <strong>본인의 컴퓨터의 원하는 디렉토리에 레포지토리를 다룰 폴더를 새로 생성해준다.</strong>
 
   - 이제부터 이 폴더를 <strong>폴더 B</strong>라 부른다.
 
