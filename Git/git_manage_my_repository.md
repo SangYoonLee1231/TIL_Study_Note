@@ -81,3 +81,11 @@
 <br/>
 
 - 앞으로 로컬 저장소에서 작업하고 수정 사항을 Repository A에 반영할 때마다 <strong>위 과정을 반복</strong>해주면 된다.
+
+- 만일 자신의 로컬 저장소가 아닌 다른 곳에서 Repository를 수정하였고, <strong>이 수정 사항을 자신의 로컬 저장소에도 반영하고 싶다면</strong>, <code>git fetch origin</code> 명령어를 사용해주면 된다.
+
+<br/>
+
+- <a href="https://desktop.github.com/">GitHub Desktop</a> 프로그램을 이용하면 깃 명령어를 사용하지 않고도 위의 작업을 손쉽게 할 수 있다.
+
+  - 만일 명령어와 터미널이 본인에게 진입 장벽으로 작용한다면, 이 프로그램을 먼저 사용해보면서 깃과 우선 친숙해지는 것을 추천한다.
