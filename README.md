@@ -165,6 +165,7 @@
 ### ◻ 깃 (Git)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md">명령어 정리 (터미널, 깃)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_manage_my_repository.md">Git - 깃으로 자신의 레포지토리 (Repository) 관리하기</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md">Git - 조각 지식 모음</a>
 
 ### ◻ 아두이노 (Arduino)

@@ -4,21 +4,21 @@
 
 ### 목차
 
-- <a href="">1. 사전 작업</a>
-- <a href="">2. 로컬 저장소와 원격 저장소를 서로 연동하기 (Clone Repository)</a>
-- <a href="">3. 깃 커밋하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_manage_my_repository.md#1-%EC%82%AC%EC%A0%84-%EC%9E%91%EC%97%85">1. 사전 작업</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_manage_my_repository.md#2-%ED%8F%B4%EB%8D%94-b%EB%A1%9C%EC%BB%AC-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%99%80-repository-a%EC%9B%90%EA%B2%A9-%EC%A0%80%EC%9E%A5%EC%86%8C%EB%A5%BC-%EC%84%9C%EB%A1%9C-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-clone-repository">2. 로컬 저장소와 원격 저장소를 서로 연동하기 (Clone Repository)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_manage_my_repository.md#3-%EA%B9%83-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0">3. 깃 커밋하기</a>
 
 <br/><br/>
 
-- 자신의 클라이언트 (로컬 저장소) 에서 깃으로 자신의 레포지토리 (Repository) 를 관리하는 방법에 대해 정리해보고자 한다.
+- 자신의 클라이언트 (로컬 저장소) 에서 깃으로 자신의 Repository (원격 저장소)를 관리하는 방법에 대해 정리해보고자 한다.
 
-- 폴더를 새로 만들어서 작업하는 것을 전제로 한다.
+- 폴더(로컬 저장소)를 새로 만들어서 작업하는 것을 전제로 한다.
 
 <br/><br/><br/>
 
 ### 1. 사전 작업
 
-- 1-1. 자신의 컴퓨터 (로컬 저장소) 에서 다룰 본인의 Repository를 하나 선정한다.
+- <strong>1-1.</strong> 자신의 컴퓨터 (로컬 저장소) 에서 다룰 본인의 Repository를 하나 선정한다.
 
   - 만일 없다면 새로운 Repository를 생성해도 된다.
 
@@ -26,7 +26,7 @@
 
 <br/>
 
-- 1-2. 본인의 컴퓨터의 원하는 디렉토리에 레포지토리를 다룰 폴더를 새로 생성해준다.
+- <strong>1-2.</strong> 본인의 컴퓨터의 원하는 디렉토리에 레포지토리를 다룰 폴더를 새로 생성해준다.
 
   - 이제부터 이 폴더를 <strong>폴더 B</strong>라 부른다.
 
@@ -34,9 +34,9 @@
 
 ### 2. '폴더 B'(로컬 저장소)와 'Repository A'(원격 저장소)를 서로 연동하기 (Clone Repository)
 
-- 2-1. 터미널을 열고 폴더 B의 디렉토리로 이동한다.
+- <strong>2-1.</strong> <strong>터미널을 열고 폴더 B의 디렉토리로 이동한다.</strong>
 
-- 2-2. 폴더 B의 디렉토리에서 git을 초가화하는 명령어를 입력한다.
+- <strong>2-2.</strong> <strong>폴더 B의 디렉토리에서 git을 초가화하는 명령어를 입력한다.</strong>
 
   👉 <code>git init</code>
 
@@ -44,7 +44,7 @@
 
 <br/>
 
-- 2-3. Repository A (원격 저장소)를 연결하는 명령어를 입력한다.
+- <strong>2-3.</strong> <strong>Repository A (원격 저장소)를 연결하는 명령어를 입력한다.</strong>
 
   👉 <code>git remote add origin <strong>원격저장소URL</strong></code>
 
@@ -56,28 +56,28 @@
 
 <br/>
 
-- 이제 폴더 B는 Repository A의 로컬 저장소가 되었다.
+- <strong>이제 폴더 B는 Repository A의 로컬 저장소가 되었다.</strong>
 
 <br/><br/>
 
 ### 3. 깃 커밋하기
 
-- 이제 로컬 저장소 (폴더 B)에서 파일을 수정하고 깃으로 커밋하면, 원격 저장소 (깃허브의 Repository A)에 그대로 반영된다.
+- <strong>이제 로컬 저장소 (폴더 B)에서 파일을 수정하고 깃으로 커밋하면, 원격 저장소 (깃허브의 Repository A)에 그대로 반영된다.</strong>
 
 - 이 과정은 총 3가지로 설명할 수 있다.
 
-  - [1] 수정된 모든 파일 및 폴더를 Staging에 추가
+  - <strong>3-1.</strong> <strong>수정된 모든 파일 및 폴더를 Staging에 추가</strong>
 
     깃 명령어 👉 <code>git add \*</code>
 
-  - [2] Staging에 있는 것들을 그대로 커밋
+  - <strong>3-2.</strong> <strong>Staging에 있는 것들을 그대로 커밋</strong>
 
     깃 명령어 👉 <code>git commit -m "커밋 메세지"</code>
 
-  - [3] 원격 저장소에 푸쉬
+  - <strong>3-3.</strong> <strong>원격 저장소에 푸쉬</strong>
 
     깃 명령어 👉 <code>git init</code>
 
 <br/>
 
-- 앞으로 로컬 저장소에서 작업하고 수정 사항을 Repository A에 반영할 때마다 위 과정을 반복해주면 된다.
+- 앞으로 로컬 저장소에서 작업하고 수정 사항을 Repository A에 반영할 때마다 <strong>위 과정을 반복</strong>해주면 된다.
