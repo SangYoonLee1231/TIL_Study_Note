@@ -74,9 +74,13 @@
 
     👉 <code>git commit -m "커밋 메세지"</code>
 
+  - (처음으로 push 하기 전, 현재 브랜치를 upstream 브랜치로 설정을 해주어야 한다.)
+
+    👉 <code>git push --set -upstream origin master</code>
+
   - <strong>3-3.</strong> <strong>원격 저장소에 푸쉬</strong>
 
-    👉 <code>git init</code>
+    👉 <code>git push</code>
 
 <br/>
 
