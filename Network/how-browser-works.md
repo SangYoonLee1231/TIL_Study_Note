@@ -11,7 +11,7 @@
 
 <br/>
 
-- 정리한 내용을 바탕으로 <strong>블로그 포스트</strong>를 작성했습니다. 👉<a href="https://velog.io/@sylagape1231/주소창에-naver.com을-치면-일어나는-일을-쉽게-이해해보자">여기</a> 혹은 아래 배너를 클릭하시면 확인할 수 있습니다.
+- 정리한 내용을 바탕으로 <strong>블로그 포스트</strong>를 작성했습니다. 👉<a href="https://velog.io/@sylagape1231/주소창에-naver.com을-치면-일어나는-일을-쉽게-이해해보자">여기</a>를 클릭하시면 바로 확인할 수 있습니다.
 
 <br/>
 
