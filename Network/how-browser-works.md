@@ -476,7 +476,7 @@
 
   <div align="center">
 
-  <img src="img/render_layout.png" width="350">
+  <img src="img/render_layout.png" width="500">
 
   </div>
 
