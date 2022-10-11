@@ -77,5 +77,6 @@
 ## Week 6-8
 
 - 교육 중단
+- <a href="https://sylagape1231.tistory.com/55">✏ 마지막 회고 및 교육 후기 (블로그 포스트)</a>
 
 <br/>
