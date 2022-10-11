@@ -20,6 +20,12 @@
 
 <br/>
 
+- Flexbox는 <strong>반응형 웹 디자인</strong>을 위해 등장하였다.
+
+  - 반응형웹 디자인(responsive web design, RWD)이란 하나의 웹사이트에서 PC, 스마트폰, 태블릿 PC 등 접속하는 디스플레이의 종류에 따라 화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법을 말한다.
+
+<br/>
+
 - 어떤 HTML Element(요소)에 CSS 코드 <code>display: flex</code>를 명시하면, 해당 요소는 <strong>flex 컨테이너</strong>가 되고, 내부 요소는 <strong>flex 아이템</strong>이 된다.
 
 <br/><br/>
