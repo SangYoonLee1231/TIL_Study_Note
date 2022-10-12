@@ -105,9 +105,13 @@
 
 </br>
 
-- <strong><code>justify-content</code></strong>는 <strong>주축(main axis)에 적용</strong>하는 <code>flex</code>의 속성이다.
+### <strong><code>justify-content</code></strong>
 
-- <strong><code>align-items</code></strong>는 <strong>교차축(cross axis)에 적용</strong>하는 <code>flex</code>의 속성이다.
+- <strong>주축(main axis)에 적용</strong>하는 <code>flex</code>의 속성이다.
+
+### <strong><code>align-items</code></strong>
+
+- <strong>교차축(cross axis)에 적용</strong>하는 <code>flex</code>의 속성이다.
 
   ```css
   body {
@@ -150,7 +154,7 @@
 - 모든 자식 요소의 기본 order 값은 <code>0</code>이다.
   따라서 특정 자식 요소에 양수 order 값을 부여하면 가장 끝으로 옮겨진다.
 
-- HTML을 조작할 수 없는 상황일 때 유용한 속성이다.
+- HTML을 조작할 수 없는 상황일 때 유용하다.
 
 <br/><br/>
 
