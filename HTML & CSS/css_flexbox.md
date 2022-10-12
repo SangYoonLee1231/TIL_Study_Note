@@ -113,6 +113,10 @@
 
 - <strong>교차축(cross axis)에 적용</strong>하는 <code>flex</code>의 속성이다.
 
+<br/>
+
+- 사용 예시
+
   ```css
   body {
     display: flex;
@@ -156,6 +160,14 @@
 
 - HTML을 조작할 수 없는 상황일 때 유용하다.
 
+<br/>
+
+### <strong><code>flex-grow</code></strong>
+
+<br/>
+
+### <strong><code>flex-shrink</code></strong>
+
 <br/><br/>
 
 ## Flex Wrap
@@ -172,23 +184,29 @@
 
 - flex-wrap 속성값
 
-  - <strong><code>nowrap</code> 〈Default 값〉 </strong>: flex 아이템을 한 줄에 강제로 배치.
+  - <strong><code>nowrap</code> 〈Default 값〉 </strong>: <strong>flex 아이템을 한 줄에 강제로 배치.</strong>
 
     화면 크기가 줄어들면, flex 아이템의 원래 크기를 (비율에 맞게) 줄여서라도 강제로 배치시킨다.
 
     (아이템의 크기가 <strong>왜곡될 수 있다.</strong>)
 
-  - <strong><code>wrap</code></strong> : flex 아이템들을 여러 줄로 나누어 배치.
+  - <strong><code>wrap</code></strong> : <strong>flex 아이템들을 여러 줄로 나누어 배치.</strong>
 
     화면 크기가 줄어들면, flex 아이템을 순서대로 다음 줄로 보낸다.
 
     (아이템의 크기가 <strong>왜곡되지 않는다.</strong>)
 
-  - <strong><code>wrap-reverse</code></strong> : wrap과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, 요소 배치 순서의 기준이 정반대로 뒤집힌다.
+  - <strong><code>wrap-reverse</code></strong> : wrap과 마찬가지로 flex 아이템을 여러 줄로 나누어 배치하되, <strong>요소 배치 순서의 기준이 정반대로 뒤집힌다.</strong>
 
     (문자의 표기 방향과 정반대 방향)
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/flex_wrap2.jpg" width="550px">
+
+<br/>
+
+- <code>align-content</code>
+
+  - line 간의 빈 공간 (줄 나눔 공간) 을 수정할 때 쓰이는 속성이다.
 
 <br/><br/>
 
