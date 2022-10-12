@@ -139,37 +139,6 @@
 
 <br/><br/>
 
-## 오직 자식 요소에만 줄 수 있는 Flexbox 속성
-
-### <strong><code>align-self</code></strong>
-
-- <strong><code>align-items</code>와 동일한 기능</strong>을 수행하는 Flexbox 속성이다.
-
-- 하지만 Flex Container의 <strong>자식 요소</strong>에만 줄 수 있는 속성이라는 점에서 <code>align-items</code>와 차이가 있다.
-
-- <code>align-self</code>는 하나의 자식 요소에 부여하는 것도 가능하고, 여러 요소에 부여하는 것도 가능하다.
-
-<br/>
-
-### <strong><code>order</code></strong>
-
-- Flex Container의 <strong>자식 요소의 순서를 부여</strong>하는 Flexbox 속성이다.
-
-- 모든 자식 요소의 기본 order 값은 <code>0</code>이다.
-  따라서 특정 자식 요소에 양수 order 값을 부여하면 가장 끝으로 옮겨진다.
-
-- HTML을 조작할 수 없는 상황일 때 유용하다.
-
-<br/>
-
-### <strong><code>flex-grow</code></strong>
-
-<br/>
-
-### <strong><code>flex-shrink</code></strong>
-
-<br/><br/>
-
 ## Flex Wrap
 
 - <strong><code>flex-wrap</code></strong> 속성은 flex 아이템을 한 줄에 강제로 배치할 지, 아님 여러 줄에 나누어 배치할 지를 결정하는 속성이다.
@@ -207,6 +176,65 @@
 - <code>align-content</code>
 
   - line 간의 빈 공간 (줄 나눔 공간) 을 수정할 때 쓰이는 속성이다.
+
+<br/><br/>
+
+## 오직 자식 요소에만 줄 수 있는 Flexbox 속성
+
+### <strong><code>align-self</code></strong>
+
+- <strong><code>align-items</code>와 동일한 기능</strong>을 수행하는 Flexbox 속성이다.
+
+- 하지만 Flex Container의 <strong>자식 요소</strong>에만 줄 수 있는 속성이라는 점에서 <code>align-items</code>와 차이가 있다.
+
+- <code>align-self</code>는 하나의 자식 요소에 부여하는 것도 가능하고, 여러 요소에 부여하는 것도 가능하다.
+
+<br/>
+
+### <strong><code>order</code></strong>
+
+- Flex Container의 <strong>자식 요소의 순서를 부여</strong>하는 Flexbox 속성이다.
+
+- 모든 자식 요소의 기본 order 값은 <code>0</code>이다.
+  따라서 특정 자식 요소에 양수 order 값을 부여하면 가장 끝으로 옮겨진다.
+
+- HTML을 조작할 수 없는 상황일 때 유용하다.
+
+<br/>
+
+### <strong><code>flex-grow</code></strong>
+
+- Flexbox 주위 빈 공간이 생길 때, element의 행동을 정의한다.
+
+- 화면의 크기가 커지면, Flexbox가 (남는 빈 공간을 차지하여) 얼마나 더 커지게 되는지 설정할 수 있다.
+
+  - default 값 = <code>0</code>
+
+<br/>
+
+### <strong><code>flex-shrink</code></strong>
+
+- Flexbox가 쥐어짜질 때, element의 행동을 정의한다.
+
+- <code>flex-wrap: no-wrap</code>인 상태에서 화면 크기가 작아지면, 해당 Box가 얼마나 더 빠르게 수축하는 지 설정할 수 있다.
+
+  - default 값 = <code>1</code>
+
+  - 값이 증가할수록 화면이 작아질 때 해당 Box가 더 빠르게 수축한다.
+
+<br/>
+
+### <strong><code>flex-basis</code></strong>
+
+- 해당 자식 요소에게 초기 사이즈를 지정할 때 쓰는 속성이다.
+
+- 사이즈가 높이인지 너비인지는 주축의 방향에 따라 달라진다.
+
+  - <code>flex-direction: row</code>이면, 주축이 가로축이므로 <code>flex-basis</code>는 너비(<code>width</code>)가 된다.
+
+  - 반대로 <code>flex-direction: column</code>이면, 주축이 세로축이므로 <code>flex-basis</code>는 높이(<code>height</code>)가 된다.
+
+- (자주 쓰이진 않는다고 한다.)
 
 <br/><br/>
 
