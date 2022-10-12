@@ -57,6 +57,42 @@
 
 <br/><br/>
 
+## ✨ Flex Direction
+
+- <strong><code>flex-direction</code></strong> : 메인이 되는 축(주축)의 방향을 지정하는 속성
+
+  - <strong><code>row</code></strong> 〈Default 값〉
+
+    <img src="img/row.png">
+
+    <br/>
+
+  - <strong><code>column</code></strong>
+
+    <img src="img/column.png">
+
+    <br/>
+
+        * row와 column은 두 축의 방향은 모두 같으나 주축과 교차축이 서로 반대이다.
+
+    <br/>
+
+  - <strong><code>row-reverse</code></strong>
+
+    <img src="img/row-reverse.png">
+
+    <br/>
+
+  - <strong><code>column-reverse</code></strong>
+
+    <img src="img/column-reverse.png">
+
+    <br/>
+
+        * 뒤에 -reverse가 붙으면 교차축 방향은 그대로 두고, 교차축을 기준으로 주축 방향만 선대칭하면 된다.
+
+<br/><br/>
+
 ## 주축(main axis)과 교차축(cross axis)
 
 - flex 컨테이너는 2개의 축을 가지고 있다.
@@ -95,39 +131,26 @@
 
 <br/><br/>
 
-## ✨ Flex Direction
+## 오직 자식 요소에만 줄 수 있는 Flexbox 속성
 
-- <strong><code>flex-direction</code></strong> : 주축의 방향을 지정하는 속성
+### <strong><code>align-self</code></strong>
 
-  - <strong><code>row</code></strong> 〈Default 값〉
+- <strong><code>align-items</code>와 동일한 기능</strong>을 수행하는 Flexbox 속성이다.
 
-    <img src="img/row.png">
+- 하지만 Flex Container의 <strong>자식 요소</strong>에만 줄 수 있는 속성이라는 점에서 <code>align-items</code>와 차이가 있다.
 
-    <br/>
+- <code>align-self</code>는 하나의 자식 요소에 부여하는 것도 가능하고, 여러 요소에 부여하는 것도 가능하다.
 
-  - <strong><code>column</code></strong>
+<br/>
 
-    <img src="img/column.png">
+### <strong><code>order</code></strong>
 
-    <br/>
+- Flex Container의 <strong>자식 요소의 순서를 부여</strong>하는 Flexbox 속성이다.
 
-        * row와 column은 두 축의 방향은 모두 같으나 주축과 교차축이 서로 반대이다.
+- 모든 자식 요소의 기본 order 값은 <code>0</code>이다.
+  따라서 특정 자식 요소에 양수 order 값을 부여하면 가장 끝으로 옮겨진다.
 
-    <br/>
-
-  - <strong><code>row-reverse</code></strong>
-
-    <img src="img/row-reverse.png">
-
-    <br/>
-
-  - <strong><code>column-reverse</code></strong>
-
-    <img src="img/column-reverse.png">
-
-    <br/>
-
-        * 뒤에 -reverse가 붙으면 교차축 방향은 그대로 두고, 교차축을 기준으로 주축 방향만 선대칭하면 된다.
+- HTML을 조작할 수 없는 상황일 때 유용한 속성이다.
 
 <br/><br/>
 
