@@ -1,4 +1,4 @@
-# CSS - Display 속성 : Flexbox 기초
+# CSS - Display 속성 : Flexbox
 
 <br/>
 
