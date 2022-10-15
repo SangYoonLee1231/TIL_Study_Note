@@ -2,7 +2,9 @@
 
 <br/>
 
-> 참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>》 페이지 참고
+> 참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>》 페이지 참고 +
+>
+> 「<a href="https://nomadcoders.co/css-layout-masterclass" target="_blank">노마드 코더 - CSS Layout 마스터클래스</a>」
 
 <br/>
 
