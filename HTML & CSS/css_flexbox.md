@@ -202,11 +202,11 @@
 
 - 이 속성은 다음의 값들을 인자로 받는다.
 
-  - <code>flex-start</code>: 여러 줄들을 컨테이너의 꼭대기에 정렬합니다.
-  - <code>flex-end</code>: 여러 줄들을 컨테이너의 바닥에 정렬합니다.
-  - <code>center</code>: 여러 줄들을 세로선 상의 가운데에 정렬합니다.
-  - <code>space-between</code>: 여러 줄들 사이에 동일한 간격을 둡니다.
-  - <code>space-around</code>: 여러 줄들 주위에 동일한 간격을 둡니다.
+  - <code>flex-start</code>: 여러 줄들을 컨테이너의 꼭대기에 정렬한다.
+  - <code>flex-end</code>: 여러 줄들을 컨테이너의 바닥에 정렬한다.
+  - <code>center</code>: 여러 줄들을 세로선 상의 가운데에 정렬한다.
+  - <code>space-between</code>: 여러 줄들 사이에 동일한 간격을 둔다.
+  - <code>space-around</code>: 여러 줄들 주위에 동일한 간격을 둔다.
   - <code>stretch</code>: 여러 줄들을 컨테이너에 맞도록 늘립니다.
 
 <br/>
