@@ -27,7 +27,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md#flex-shrink"><code>flex-shrink</code></a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md#flex-basis"><code>flex-basis</code></a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md#%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%9E%90%EB%A3%8C">유용한 자료</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md#%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%9E%90%EB%A3%8C">유용한 자료 (FLEXBOX FROGGY)</a>
 
 <br/><br/>
 
