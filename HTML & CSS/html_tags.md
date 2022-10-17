@@ -14,9 +14,12 @@
 
 ### 목차
 
+- <a href="">\<!DOCTYPE html></a>
+
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#head-%EB%82%B4%EB%B6%80-%ED%83%9C%EA%B7%B8-%EB%A9%94%ED%83%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%BD%EC%9E%85-%ED%83%9C%EA%B7%B8">\<head> 내부 태그 (메타 데이터 삽입 태그)</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#body-%EB%82%B4%EB%B6%80-%ED%83%9C%EA%B7%B8">\<body> 내부 태그</a>
+
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%ED%83%9C%EA%B7%B8%EC%9D%98-%EB%B6%84%EB%A5%98---%EB%B8%94%EB%A1%9D-%EC%9D%B8%EB%9D%BC%EC%9D%B8-%ED%83%9C%EA%B7%B8">태그 분류 - 블록, 인라인 태그</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%EC%A4%84%EB%B0%94%EA%BF%88">줄바꿈 - <code>\<br></code>, <code>\<p></code></a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md#%EB%AA%A9%EB%A1%9D-%EB%A6%AC%EC%8A%A4%ED%8A%B8">목록 (리스트) - <code>\<ol></code>, <code>\<ul></code>, <code>\<li></code></a>
@@ -29,25 +32,53 @@
 
 <br/><br/>
 
-## \<head> 내부 태그 (메타 데이터 삽입 태그)
+### <code>\<!DOCTYPE html></code>
 
-- <strong><code>\<title></code></strong> : 웹페이지에 타이틀 달기
+- HTML 파일의 최상단에 위치하는 선언문으로, HTML 태그는 아니다.
+
+- <strong>이 html 파일이 무슨 버전의 html을 사용했는지</strong> 브라우저에 알려주는 역할을 한다.
+
+- <code>\<!DOCTYPE html></code>은 이 문서가 HTML5 버전으로 작성되었다는 것을 의미한다.
 
 <br/>
 
-- <strong><code>\<meta></code></strong> : 다양한 종류의 메타 데이터 나타냄
+## <code>\<head></code> 내부 태그 (메타 데이터 삽입 태그)
 
-  - <code>\<meta charset="UTF-8"></code> : 브라우저에서 text를 어떻게 render할 지 말해주는 역할 (미작성시 글자가 깨질 수 있으니 항상 넣어줄 것)
+- <strong><code>\<title></code></strong> : 웹페이지에 타이틀 달기 (브라우저 탭에 표시)
 
-  - <code>\<meta content="..." name="description" /></code> : Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 표시.
+  - <code>\<title>제목\</title></code>
+
+<br/>
+
+- <strong><code>\<meta></code></strong> : 다양한 종류의 메타 데이터를 나타낸다.
+
+  - <code>\<meta charset="UTF-8"></code>
+
+    - 브라우저에서 HTML 텍스트를 어떻게 render할 지 설명해주는 역할을 한다. (미작성시 글자가 깨질 수 있으니 항상 넣어줄 것)
+
+    - 한글, 일본어, 중국어가 포함된 페이지라면 <code>UTF-8</code> 이라는 값으로 문자 인코딩을 추가해줘야 한다.
+
+  - <code>\<meta content="..." name="description"></code>
+
+    - Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 해당 요소의 내용을 표시한다.
+
+  - <code>\<meta name="viewport" content="width=device-width"></code>
+
+    - '디바이스의 가로 크기 == 웹페이지의 가로 크기' 라는 의미이다.
+
+    - 모바일 환경에서 웹페이지가 잘 보여지도록 해준다.
 
 <br/>
 
 - <strong><code>\<link></code></strong>
 
-  - <code>\<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /></code> : 웹 브라우저 탭의 이미지 설정
+  - <code>\<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="(img 주소)" /></code>
 
-  - <code>\<link rel="stylesheet" href="style.css" /></code> : <strong>style 이름의 css 파일과 연결</strong>
+    - 웹 브라우저 탭의 이미지를 설정한다.
+
+  - <code>\<link rel="stylesheet" href="style.css" /></code>
+
+    - <strong>style 이름의 css 파일과 연결한다.</strong>
 
 <br/>
 
@@ -55,9 +86,9 @@
 
 <br/><br/>
 
-## \<body> 내부 태그
+## <code>\<body></code> 내부 태그
 
-### 태그의 분류 - 블록, 인라인 태그
+### 태그의 분류 - block, inline
 
 - <strong>블록 (<code>block</code>) 태그</strong> : 양 옆에 다른 content 배치 X, 한 라인 독점 사용
 
@@ -69,13 +100,21 @@
 
 <br/>
 
+### 제목 태그
+
+- <strong><code>\<h1></code></strong>, <strong><code>\<h2></code></strong>, <strong><code>\<h3></code></strong>, <strong><code>\<h4></code></strong>, <strong><code>\<h5></code></strong> : 제목을 표시해주는 태그
+
+  (h 뒤에 붙는 숫자가 클수록 글씨 크기가 작아진다.)
+
+<br/>
+
 ### 줄바꿈
 
 - <strong><code>\<br></code></strong> 또는 <code>\<br/></code> : 강제 줄바꿈 태그 (Self-Closing 태그)
 
 <br/>
 
-- <strong><code>\<p></code></strong> : 단락 표시  
+- <strong><code>\<p></code></strong> : 단락 표시
 
   (의미를 담고 있는 태그이므로 <code>\<br></code>보다 좋은 태그이다.)
 
@@ -172,36 +211,36 @@
     <form>
       <div>
         <label for="profile">Profile</label>
-        <input id="profile" type="file" accept=".txt, image/*">
+        <input id="profile" type="file" accept=".txt, image/*" />
       </div>
       <div>
-        <input type="color">
-        <input type="range">
-        <input type="date">
+        <input type="color" />
+        <input type="range" />
+        <input type="date" />
       </div>
     </form>
 
     <form>
       <div>
         <label for="username">User Name</label>
-        <input id="username" type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" minlength="8" required>
+        <input id="username" type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" minlength="8" required />
       </div>
       <div>
-        <input type="submit" value="Create Account">
+        <input type="submit" value="Create Account" />
       </div>
     </form>
 
     <form>
       <div>
         <label for="website">Website</label>
-        <input type="url" id="website">
+        <input type="url" id="website" />
 
         <label for="email">Email</label>
-        <input type="url" id="email">
+        <input type="url" id="email" />
       </div>
       <div>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" />
       </div>
     </form>
     ```
@@ -214,7 +253,7 @@
 - <strong>form 속성</strong>
 
   - <strong><code>action</code></strong> : form 제출 시, 어떤 html 파일로 데이터를 보낼 지를 지정하는 것
-  
+
   - <strong><code>method</code></strong> : form의 데이터를 보내는 방식. GET 방식 또는 POST 방식이 있음.  
     (GET 방식은 URL, POST 방식은 서버에 전송하는 방식)
 
@@ -234,9 +273,9 @@
 
   - <code>target</code> 속성을 부여하면 링크를 어디에서 열지 정할 수 있다.
 
-    - <code>_self</code>: 현재 창(혹은 탭)에서 링크를 연다.
+    - <code>\_self</code>: 현재 창(혹은 탭)에서 링크를 연다.
 
-    - <code>_target</code>: 새 창(혹은 탭)에서 링크를 연다.
+    - <code>\_target</code>: 새 창(혹은 탭)에서 링크를 연다.
 
       ```html
       <!--다른 탭으로 구글 웹 페이지 열기-->
