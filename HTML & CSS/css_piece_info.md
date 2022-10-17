@@ -15,6 +15,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#not-%EC%86%8D%EC%84%B1-%EB%B6%80%EC%A0%95-css-%EA%B0%80%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4">not 속성 (부정 CSS 가상 클래스)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EA%B1%B0%EB%A6%AC-%EB%8B%A8%EC%9C%84">거리 단위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#box-sizing-content-box-border-box">Box Sizing (content-box, border-box)</a>
+- <a href="">CSS - 선택자 (Selector) 우선 순위</a>
 - <a href=""></a>
 
 <br/><br/>
@@ -281,3 +282,23 @@
   <code>box-sizing: content-box</code>일 경우, 요소의 크기 (<code>width</code>) 는 <code>280px</code>이고,
 
   <code>box-sizing: border-box</code>일 경우, 요소의 크기 (<code>width</code>) 는 <code>200px</code>이다.
+
+<br/><br/>
+
+### CSS - 선택자 (Selector) 우선 순위
+
+- 점수 계산으로 이루어진다.
+
+  - inline styling (HTML 요소에 style 속성을 주어 작성): <strong>1000점</strong>
+
+  - id명: <strong>100점</strong>
+
+  - class 이름: <strong>10점</strong>
+
+  - tag명: <strong>1점</strong>
+
+<br/>
+
+- 요약
+
+  - <strong>tag << class << id << inline styling</strong>
