@@ -2,75 +2,90 @@
 
 <br/>
 
->  참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>》 페이지 참고
+> 참고 자료 : 《<a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">HTML의 기본</a>》 페이지 참고
 
 <br/>
 
-* 선택자의 기본 3가지 종류
+- 선택자의 기본 3가지 종류
 
-    * 태그의 이름을 쓰는 선택자
+  - 태그의 이름을 쓰는 선택자
 
-    * 점<code>.</code>을 쓰고 클래스 이름을 쓰는 선택자
+  - 점<code>.</code>을 쓰고 클래스 이름을 쓰는 선택자
 
-    * 해시 기호<code>#</code>를 쓰고 id값을 쓰는 선택자
+  - 해시 기호<code>#</code>를 쓰고 id값을 쓰는 선택자
 
-* 이 외에, 좀 더 세부적으로 Element를 선택하는 도구(선택자)가 있다.
+- 이 외에, 좀 더 세부적으로 Element를 선택하는 도구(선택자)가 있다.
 
 <br/>
 
 ## 결합자 (Combinator)
 
-* 여러 선택자를 결합하여, 더 정밀히 요소를 찾아 가리키는 선택자를 결합자(Combinator)라 한다.
+- 여러 선택자를 결합하여, 더 정밀히 요소를 찾아 가리키는 선택자를 결합자(Combinator)라 한다.
 
 <br/>
 
-* <strong>자손 결합자</strong> : <code>A B</code>
+- <strong>자손 결합자</strong> : <code>A B</code>
 
-```css
-p span {
-    ...
-}
-```
-    p 안의 모든 span을 가리킨다.
+  ```css
+  p span {
+    ...;
+  }
+  ```
 
-```css
-div p span {
-    ...
-}
-```
-    div 안의 모든 p, 그 모든 p 안의 모든 span을 가리킨다.
+  p 안의 모든 span을 가리킨다.
 
-<br/>
+  ```css
+  div p span {
+    ...;
+  }
+  ```
 
-* <strong>자식 결합자</strong> : <code>A > B</code>
-
-```css
-p > span {
-    ...
-}
-```
-    p의 바로 밑 자손 span을 모두 가리킨다.
+  div 안의 모든 p, 그 모든 p 안의 모든 span을 가리킨다.
 
 <br/>
 
-* <strong>인접 형제 결합자</strong> : <code>A + B</code>
+- <strong>자식 결합자</strong> : <code>A > B</code>
 
-```css
-p + span {
-    ...
-}
-```
-    p 다음에 오는 형제 span 1개만을 가리킨다.
+  ```css
+  p > span {
+    ...;
+  }
+  ```
+
+  p의 바로 밑 자손 span을 모두 가리킨다.
+
+<br/>
+
+- <strong>인접 형제 결합자</strong> : <code>A + B</code>
+
+  ```css
+  p + span {
+    ...;
+  }
+  ```
+
+  p 다음에 오는 형제 span 1개만을 가리킨다.
 
 <br/>
 
-* <strong>일반 형제 결합자</strong> : <code>A ~ B</code>
+- <strong>일반 형제 결합자</strong> : <code>A ~ B</code>
 
-```css
-p ~ span {
-    ...
-}
-```
-    p의 형제 span을 모두 가리킨다.
+  ```css
+  p ~ span {
+    ...;
+  }
+  ```
+
+  p의 형제 span을 모두 가리킨다.
 
 <br/>
+
+- 태그를 붙여 쓰면 AND(&&)로 해석하면 된다.
+
+  ```css
+  p#third-line {
+    text-decoration: underline;
+  }
+  ```
+
+  - p 태그임과 동시에 third-line 아이디를 가지는 요소에 <code>underline</code>을 적용
