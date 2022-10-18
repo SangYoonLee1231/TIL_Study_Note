@@ -34,6 +34,8 @@ div {
 
   - Block 속성을 갖는 HTML 요소 : <code>\<div></code>, <code>\<p></code>, <code>\<address></code>, ..
 
+  - Block 속성을 갖는 HTML 요소는 <code>width</code> 속성을 부여하지 않으면 기본적으로 화면 크기의 좌우 끝 전체를 차지한다.
+
 <br/>
 
 - <strong>Inline</strong>
@@ -67,6 +69,17 @@ div {
     margin-right: 5px;
     margin-left: 10px;
   }
+  ```
+
+<br/>
+
+- <code>margin</code>에 <strong><code>auto</code></strong> 값을 주면 요소를 해당 방향의 중앙에 배치시킬 수 있다.
+
+  ```css
+  .center {
+    margin: 10px auto;
+  }
+  /* 요소를 좌우, 즉 가로 방향 기준으로 중앙에 배치한다. */
   ```
 
 <br/>
