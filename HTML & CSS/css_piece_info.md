@@ -269,7 +269,15 @@
 
   - <code>content-box (Default 값)</code> : 콘탠츠 영역를 기준으로 박스 크기를 계산한다.
 
-  - <code>border-box</code> : 테두리를 기준으로 박스 크기를 계산한다.
+  - ✨ <code>border-box</code> : 테두리를 기준으로 박스 크기를 계산한다.
+
+    - 개발 시 거의 항상 쓰이는 속성이라 한다.
+
+      ```css
+      * {
+        box-sizing: border-box;
+      }
+      ```
 
   - <code>initial</code> : 기본값으로 설정한다.
 
@@ -307,4 +315,8 @@
 
 ## <code>background-size</code> 속성
 
--
+- 요소 배경 이미지의 크기를 설정한다. (By MDN)
+
+- 가능한 속성값
+
+  - <code>auto</code>, <code>length</code>, <code>cover</code>, <code>contain</code>, <code>initial</code>, <code>inherit</code> 등
