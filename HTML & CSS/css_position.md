@@ -67,31 +67,43 @@ div {
 
 - ✨ 만일 부모 중에 <code>relative</code> <strong>요소가 없으면</strong>, <code>absoulte</code> 요소는 <code>body</code><strong>를 기준</strong>으로 삼는다.
 
+  - (부모 중에 position이 <code>relative</code>, <code>fixed</code>, <code>absolute</code>인 요소가 하나라도 있으면 그 부모가 기준이 된다)
+
+<br/>
+
+- 코드 예시
+
+  ```css
+  div {
+    width: 300px;
+    height: 300px;
+    background-color: wheat;
+
+    position: relative;
+  }
+  div > div {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    /* 가장 가까운 relative 부모(div)의 영역을 기준으로, 맨 아래에서 10px, 맨 우측에서 20px 떨어진 곳에 배치 */
+  }
+  ```
+
 <br/>
 
 - 이 때, 해당 위치에 다른 요소가 있을 경우, 뒤로 밀리지 않고 <strong>덮어쓰게 된다.</strong>
 
-```css
-div {
-  width: 300px;
-  height: 300px;
-  background-color: wheat;
+<br/>
 
-  position: relative;
-}
-div > div {
-  width: 100px;
-  height: 100px;
-  background-color: teal;
+- 어떤 Block 요소가 <code>absolute</code> 값을 갖게 되면, 크기를 지정하지 않아도 내용의 크기만큼만이 요소의 크기가 된다.
 
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  /* 가장 가까운 relative 부모(div)의 영역을 기준으로, 맨 아래에서 10px, 맨 우측에서 20px 떨어진 곳에 배치 */
-}
-```
+<br/>
 
-### 의문점
+### (의문점)
 
 ```css
 div {
