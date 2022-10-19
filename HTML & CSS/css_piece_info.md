@@ -16,6 +16,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EA%B1%B0%EB%A6%AC-%EB%8B%A8%EC%9C%84">거리 단위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#box-sizing-content-box-border-box">Box Sizing (content-box, border-box)</a>
 - <a href="">CSS 선택자 (Selector) 우선 순위</a>
+- <a href=""><code>width: 100%</code>의 의미</a>
 - <a href=""></a>
 
 <br/><br/>
@@ -320,3 +321,20 @@
 - 가능한 속성값
 
   - <code>auto</code>, <code>length</code>, <code>cover</code>, <code>contain</code>, <code>initial</code>, <code>inherit</code> 등
+
+<br/><br/>
+
+## <code>width: 100%</code>의 의미
+
+- 어떤 부모 요소의 크기가 <code>width: 200px</code>일 때, 자식 요소의 크기를 <code>width: 100%</code>로 설정하면
+  자식의 요소 너비 또한 <code>200px</code>이 된다.
+
+  ```css
+  .father {
+    width: 200px;
+  }
+
+  .child {
+    width: 100%;
+  }
+  ```

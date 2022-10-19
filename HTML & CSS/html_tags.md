@@ -170,15 +170,21 @@
 
 - <strong><code>\<caption></code></strong> : 표 제목
 
-- <strong><code>\<tr></code></strong>, <strong><code>\<th></code></strong>, <strong><code>\<td></code></strong> : 행(가로줄), 열(세로줄), 데이터 셀
+<br/>
+
+- <strong><code>\<tr></code></strong> : 행 (가로줄) (table row)
+
+- <strong><code>\<th></code></strong> : 열 (세로줄) (table heading)
+
+- <strong><code>\<td></code></strong> : 데이터 셀 (table data)
 
 <br/>
 
 - 셀 합치기
 
-  - <code>\<td></code> 요소의 <strong><code>rowspan</code></strong> 속성(attribute) : 위 아래 줄(rows)의 셀 병합
+  - <code>\<td></code> 요소의 <strong><code>rowspan</code></strong> 속성(attribute) : 위 아래 줄(rows)의 셀 병합 (가로줄끼리 병합)
 
-  - <code>\<td></code> 요소의 <strong><code>colspan</code></strong> 속성(attribute) : 옆 칸(column)의 셀 병합
+  - <code>\<td></code> 요소의 <strong><code>colspan</code></strong> 속성(attribute) : 옆 칸(column)의 셀 병합 (세로줄끼리 병합)
 
 <br/>
 
