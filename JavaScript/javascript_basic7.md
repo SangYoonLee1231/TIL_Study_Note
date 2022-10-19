@@ -45,6 +45,8 @@
 
 - <strong>매개변수 (parameter)</strong> : 인수 (argument) 라고도 불리며, 함수의 입력값에 해당한다. 없을 수도 있다.
 
+  - 매개변수(parameter)는 이름이고 인자(argument)는 값이다.
+
 - <strong>함수 본문 (body)</strong> : 함수의 대괄호 내 영역으로 함수의 기능을 구현하는 코드의 모임이다.
 
 - <strong>반환 값 (<code>return</code>)</strong> : 함수의 출력값이다. 함수 호출 시, 그 함수는 자신의 기능을 수행한 후 호출한 그 곳에 특정값을 반환한다. 반환 값이 없을 수도 있다.  
