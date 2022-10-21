@@ -115,4 +115,38 @@
 
 <br/><br/>
 
-##
+## 배열, 객체가 비어있는지를 조건문을 통해 확인하기 (<code>truthy</code>, <code>falsy</code> 심화)
+
+### 배열
+
+- (<code>''</code>은 <code>falsy</code>한 값이나) <code>[]</code>은 <code>truthy</code>한 값이다.
+
+- 따라서 배열이 비어있는지를 조건문을 통해 확인하려면, 조건식이 <code>[]</code>이 아닌 <code>[].length</code>으로 주어야 한다.
+
+  ```js
+  const array = [];
+
+  if (array.length) {
+    console.log("array is empty");
+  } else {
+    console.log("array is not empty");
+  }
+  ```
+
+<br/>
+
+### 객체
+
+- 객체가 비어있는지를 조건문을 통해 확인하려면 역시 <code>length</code>를 활용하면 된다.
+
+```js
+const obj = {};
+
+const isObjEmpty = Object.keys(obj).length == 0;
+
+if (isObjEmpty) {
+  console.log("Object is Empty");
+} else {
+  console.log("Object is not Empty");
+}
+```
