@@ -300,6 +300,8 @@
 
 - 문서와 코드가 의미를 가지도록 시멘틱 태그를 사용하는 것이 좋다.
 
+  - <a href="https://sylagape1231.tistory.com/57">Semantic Tag (시멘틱 태그) 를 사용하여 웹 개발 해야하는 이유</a>
+
 - <code>\<header></code>, <code>\<main></code>, <code>\<footer></code> 등등
 
 <br/>
