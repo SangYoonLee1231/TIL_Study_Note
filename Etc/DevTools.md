@@ -6,7 +6,13 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md#%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%8F%84%EA%B5%AC-devtool-%EB%9E%80">개발자 도구 (DevTool) 란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md#%EA%B0%81-%ED%8C%A8%EB%84%90%EC%9D%98-%EA%B8%B0%EB%8A%A5">각 패널의 기능</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md#elements-%ED%8C%A8%EB%84%90">Elements 패널</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md#console-%ED%8C%A8%EB%84%90">Console 패널</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md#network-%ED%8C%A8%EB%84%90">Network 패널</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md#application-%ED%8C%A8%EB%84%90">Application 패널</a>
 
 <br/><br/>
 
@@ -56,8 +62,6 @@
 
 - 브라우저에서 스크립트를 입력할 일이 생길 때 보통 다른 외부 도구(VS Code 등)를 활용하기보다, 개발자 도구의 Console 패널을 열어 코드를 입력한다고 한다.
 
-<br/>
-
 #### 꿀팁
 
 - [Enter] + [Shift]를 키보드에서 동시에 누르면 다음 줄에서 코드를 이어 작성할 수 있다.
@@ -89,8 +93,6 @@
 ### Application 패널
 
 - 브라우저의 저장소 기능을 담당하는 패널이다.
-
-<br/>
 
 #### 저장소 종류
 
