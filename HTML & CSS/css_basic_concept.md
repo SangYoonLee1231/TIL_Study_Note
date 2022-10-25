@@ -6,6 +6,15 @@
 
 <br/>
 
+### 목차
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md#-css-%EC%86%8C%EA%B0%9C">CSS 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md#html-%ED%8C%8C%EC%9D%BC%EC%97%90-css%EB%A5%BC-%EC%B6%94%EA%B0%80%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">HTML 파일에 CSS를 추가하는 방법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md#css-%ED%8C%8C%EC%9D%BC%EC%97%90-css%EB%A5%BC-%EC%B6%94%EA%B0%80%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">CSS 파일에 CSS를 추가하는 방법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md#css-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95">CSS 기본 문법</a>
+
+<br/><br/>
+
 ## 🗨 CSS 소개
 
 - ✨ <strong>CSS (Cascading Style Sheet) 는 브라우저에게 웹 사이트가 어떻게 보여야 하는지 알려주는 언어이다.</strong>
@@ -107,18 +116,18 @@
 
 > 참고1 : 선택자 <code>\*</code>는 모든 요소를 가리킨다.
 
-    ```css
-    * {
-    border: 1px dashed black;
-    }
-    ```
+```css
+* {
+  border: 1px dashed black;
+}
+```
 
 <br/>
 
 > 참고2 : <code>border-radius</code> 속성에 50% 속성값을 주면 경계선은 원모양이 된다.
 
-    ```css
-    * {
-    border-radius: 50%;
-    }
-    ```
+```css
+* {
+  border-radius: 50%;
+}
+```
