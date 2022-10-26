@@ -68,7 +68,7 @@
 
   - <strong>3-1.</strong> <strong>수정된 모든 파일 및 폴더를 Staging에 추가</strong>
 
-    👉 <code>git add \*</code>
+    👉 <code>git add .</code>
 
   - <strong>3-2.</strong> <strong>Staging에 있는 것들을 그대로 커밋</strong>
 
