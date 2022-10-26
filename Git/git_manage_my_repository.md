@@ -40,13 +40,15 @@
 
   👉 <code>git init</code>
 
-  - "이제부터 해당 폴더를 깃으로 관리하겠습니다" 라는 의미라 생각하면 된다.
+  - 깃 초기화 명령으로, "이제부터 해당 폴더를 깃으로 관리하겠습니다" 라는 의미라 생각하면 된다.
 
 <br/>
 
 - <strong>2-3.</strong> <strong>폴더 B와 Repository A (원격 저장소) 를 서로 연결하는 명령어를 입력한다.</strong>
 
-  👉 <code>git remote add origin <strong>원격저장소URL</strong></code>
+  👉 <code>git remote add origin <strong>[원격저장소 URL]</strong></code>
+
+    (origin은 원격저장소 URL의 별명이다.)
 
   - <strong>원격저장소URL</strong>에는 자신의 연동하고자 할 Repository A의 주소를 입력하면 된다.
 
@@ -80,7 +82,7 @@
 
   - <strong>3-3.</strong> <strong>원격 저장소에 푸쉬</strong>
 
-    👉 <code>git push</code>
+    👉 <code>git push origin [브랜치 이름]</code>
 
 <br/>
 
