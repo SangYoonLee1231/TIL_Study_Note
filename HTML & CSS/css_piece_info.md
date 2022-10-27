@@ -19,6 +19,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#background-size-%EC%86%8D%EC%84%B1"><code>background-size</code> 속성</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#width-100%EC%9D%98-%EC%9D%98%EB%AF%B8"><code>width: 100%</code>의 의미</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EC%86%8D%EC%84%B1-%EC%88%9C%EC%84%9C-%EC%BB%A8%EB%B2%A4%EC%85%98">CSS 속성 순서 (컨벤션)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EC%9E%91%EC%84%B1-%EB%B0%A9%EC%8B%9D-bottom-up">CSS 레이아웃 작성 방식 (bottom-up)</a>
 - <a href=""></a>
 
 <br/><br/>
