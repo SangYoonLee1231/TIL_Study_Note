@@ -48,7 +48,7 @@
 
 <br/>
 
-#### <code>user agent stylesheet</code>
+### <code>user agent stylesheet</code>
 
 - 브라우저에서 기본적으로 부여되는 스타일 속성을 말한다.
 
