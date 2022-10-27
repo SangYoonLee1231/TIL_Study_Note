@@ -32,7 +32,7 @@
 
 ## 각 패널의 기능
 
-### Elements 패널
+## Elements 패널
 
 <img alt="dev-tool_element" src="img/dev-tool_element.png">
 
@@ -58,7 +58,7 @@
 
 <br/><br/>
 
-### Console 패널
+## Console 패널
 
 <img alt="dev-tool_console" src="img/dev-tool_console.png">
 
@@ -82,7 +82,7 @@
 
 <br/><br/>
 
-### Network 패널
+## Network 패널
 
 <img alt="dev-tool_network" src="img/dev-tool_network.png">
 
@@ -96,13 +96,15 @@
 
 <br/><br/>
 
-### Application 패널
+## Application 패널
 
 <img alt="dev-tool_application" src="img/dev-tool_application.png">
 
 - 브라우저의 저장소 기능을 담당하는 패널이다.
 
-#### 저장소 종류
+<br/>
+
+### 저장소 종류
 
 - <strong>Storage</strong> : 브라우저의 저장소. 쿠키의 단점을 보완해서 만들어졌기에 보안이 우수하다.
 - <strong>Local Storage</strong> : 데이터를 영구적으로 저장할 수 있는 공간이다. 용량 또한 10MB로 크다. (key-value 형태의 객체로 데이터를 저장한다.)
