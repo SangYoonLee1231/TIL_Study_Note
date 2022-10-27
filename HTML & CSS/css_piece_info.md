@@ -359,4 +359,30 @@
 
   - Misc Properties (cursor, overflow, z-index)
 
-<br/>
+<br/><br/>
+
+## CSS 레이아웃 작성 방식 (bottom-up)
+
+- 레이아웃을 구성할 때 부모 요소의 높이를 미리 정해두고 자식 요소의 크기를 정하는 top-down 방식이 아닌, 자식 요소의 높이에 따라 부모 요소의 높이가 유동적으로 결정되는 bottom-up 방식으로 구성하는 것이 좋다.
+
+- 자식 요소의 크기에 따라 부요 요소의 크기가 유종적으로 조정되어야 유지보수가 더 쉬워지기 때문이다.
+
+  ```css
+  // BAD
+  .parent {
+    height: 100vh;
+  }
+
+  .child {
+    height: 300px;
+  }
+
+  // GOOD
+  .parent {
+    padding-top: 20px;
+  }
+
+  .child {
+    height: 300px;
+  }
+  ```
