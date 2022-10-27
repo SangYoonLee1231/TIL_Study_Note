@@ -48,7 +48,7 @@
 
   👉 <code>git remote add origin <strong>[원격저장소 URL]</strong></code>
 
-    (origin은 원격저장소 URL의 별명이다.)
+  (origin은 원격저장소 URL의 별명이다.)
 
   - <strong>원격저장소URL</strong>에는 자신의 연동하고자 할 Repository A의 주소를 입력하면 된다.
 

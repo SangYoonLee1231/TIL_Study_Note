@@ -19,6 +19,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#background-size-%EC%86%8D%EC%84%B1"><code>background-size</code> 속성</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#width-100%EC%9D%98-%EC%9D%98%EB%AF%B8"><code>width: 100%</code>의 의미</a>
 - <a href=""></a>
+- <a href=""></a>
 
 <br/><br/>
 
@@ -339,3 +340,21 @@
     width: 100%;
   }
   ```
+
+<br/><br/>
+
+## CSS 속성 순서 (컨벤션)
+
+- CSS 속성 작성 순서는 성능 향상이나 적용 순서에 유의미한 영향을 주진 않지만, <strong>가독성</strong>과 <strong>유지보수</strong>를 위해 <strong>인접 속성끼리 묶어서 작성</strong>해주는 것이 좋다.
+
+- <strong>권장 순서</strong>
+
+  - Layout Properties (position, float, clear, display)
+
+  - Box Model Properties (width, height, margin, padding)
+
+  - Visual Properties (color, background, border, box-shadow)
+
+  - Typography Properties (font-size, font-family, text-align, text-transform)
+
+  - Misc Properties (cursor, overflow, z-index)
