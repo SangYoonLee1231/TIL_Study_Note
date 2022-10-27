@@ -34,6 +34,8 @@
 
 ### Elements 패널
 
+<img alt="dev-tool_element" src="img/dev-tool_element.png">
+
 - HTML과 CSS 코드를 분석하고 실시간으로 이를 수정할 수 있는 패널이다. 사이트의 구조를 파악하는 데 용이하다.
 
  <br/>
@@ -58,6 +60,8 @@
 
 ### Console 패널
 
+<img alt="dev-tool_console" src="img/dev-tool_console.png">
+
 - 자바스크립트를 실시간 환경에서 실행할 수 있는 환경을 제공해주는 패널이다.
 
 - 브라우저에서 스크립트를 입력할 일이 생길 때 보통 다른 외부 도구(VS Code 등)를 활용하기보다, 개발자 도구의 Console 패널을 열어 코드를 입력한다고 한다.
@@ -80,6 +84,8 @@
 
 ### Network 패널
 
+<img alt="dev-tool_network" src="img/dev-tool_network.png">
+
 - HTTP 네트워크의 통신을 확인할 수 있는 패널이다.
 
 - 웹페이지에 포함된 모든 리소스들의 통신 과정과 그 정보들을 확인할 수 있으며, 오류가 발생 시 그 원인과 해결책을 찾을 수 있다.
@@ -91,6 +97,8 @@
 <br/><br/>
 
 ### Application 패널
+
+<img alt="dev-tool_application" src="img/dev-tool_application.png">
 
 - 브라우저의 저장소 기능을 담당하는 패널이다.
 
