@@ -4,9 +4,9 @@
 
 ### 목차
 
-- <a href="">브랜치 (Branch) 란?</a>
-- <a href="">브랜치를 생성하여 협업하는 방식</a>
-- <a href="">깃 명령어</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_branch.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-branch-%EB%9E%80">브랜치 (Branch) 란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_branch.md#%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EC%97%AC-%ED%98%91%EC%97%85%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D">브랜치를 생성하여 협업하는 방식</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_branch.md#%EA%B9%83-%EB%AA%85%EB%A0%B9%EC%96%B4">깃 명령어</a>
 
 <br/><br/>
 
@@ -37,8 +37,6 @@
 ### 코드가 순회하는 매커니즘
 
 <img src="img/git_circulation.png">
-
--
 
 <br/><br/>
 
@@ -84,4 +82,10 @@
 
   ```
   git merge [다른 브렌치의 이름 (주로 master)]
+  ```
+
+- 브랜치 삭제하기
+
+  ```
+  git branch -d [삭제할 브랜치 이름]
   ```
