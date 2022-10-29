@@ -6,15 +6,21 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EB%9E%80">React JS란</a>
+- <a href="">React JS와 탄생 배경</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 - <a href=""></a>
 
 <br/><br/>
 
-## React JS란
+## React JS의 개념과 탄생 배경
 
-- React JS는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>framework</strong>이자 <strong>library</strong>이다. (React 탄생 이유)
+- <strong>웹 애플리케이션</strong> : 웹 브라우저를 통해 응용 소프트웨어의 기능을 이용할 수 있도록 만든 웹 서비스
+
+- 웹 애플리캐이션의 등장에 따라 웹 개발의 복잡성이 증가하게 되었다.
+
+- 그에 따라 DOM을 직접 조작하는 (Vanila JS, jQuery를 이용하는) 기존의 개발 방법에 한계가 생겼다.
+
+- React JS는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>Library</strong>이다. (React 탄생 이유)
 
   <img src="img/react-is-both.png" width="650">
 
