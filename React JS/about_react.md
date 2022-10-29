@@ -1,12 +1,12 @@
 # React JS 소개 및 설치
 
-> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>
+> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료
 
 <br/>
 
 ### 목차
 
-- <a href="">React JS와 탄생 배경</a>
+- <a href="">React JS의 개녕과 탄생 배경</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 - <a href=""></a>
 
@@ -14,19 +14,53 @@
 
 ## React JS의 개념과 탄생 배경
 
-- <strong>웹 애플리케이션</strong> : 웹 브라우저를 통해 응용 소프트웨어의 기능을 이용할 수 있도록 만든 웹 서비스
+### React 탄생 배경
 
 - 웹 애플리캐이션의 등장에 따라 웹 개발의 복잡성이 증가하게 되었다.
 
-- 그에 따라 DOM을 직접 조작하는 (Vanila JS, jQuery를 이용하는) 기존의 개발 방법에 한계가 생겼다.
+  - <strong>웹 애플리케이션</strong> : 웹 브라우저를 통해 응용 소프트웨어의 기능을 이용할 수 있도록 만든 웹 서비스
 
-- React JS는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>Library</strong>이다. (React 탄생 이유)
+- 이에 따라 DOM을 직접 조작하는 (Vanila JS, jQuery를 이용하는) 기존의 개발 방법으론 한계가 생기게 되었다.
+
+- 이러한 상황에서 자연스럽게 프론트엔드 개발의 생산성 향상과 난이도 하향을 위한 여러 라이브러리 및 프레임워크가 탄생하였다.
+
+  - 이 중 제일 많이 사용되는 것은, React, Angular, Vue이다.
+
+<br/>
+
+### React JS란?
+
+- React JS (혹은 React)는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>프레임워크 (Framework) </strong>이자 <strong>라이브러리 (Library) </strong>이다.
 
   <img src="img/react-is-both.png" width="650">
+
+  - React 는 UI를 만드는 기능만을 제공해주기에, 라이브러리 하나로만 분류하는 관점도 존재한다.
+
+> < <strong>Framework VS Library</strong> >
+>
+> <strong>공통점</strong> : 복잡한 개발을 편리하게 하도록, 필요 기능들을 미리 만들어 사용할 수 있는 형태로 제공된 코드
+>
+> <strong>차이점</strong> : <strong>Framework</strong>은 전체적인 틀(Frame)을 제공해주기 때문에, 개발자가 그 틀 안에서 그 방식에 맞춰 작업해야 한다. 반면 <strong>Library</strong>는 틀이 아닌 하나의 기능만을 도구처럼 제공해주기 때문에, 개발자가 필요한 여러 도구를 가져와 조립해서 사용해야 한다.
 
 <br/>
 
 - React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
+
+<br/>
+
+## React JS의 장점
+
+- 다른 프레임워크 (혹은 라이브러리)에 비해 문법이 자바스크립트를 그대로 사용하기 때문에, React를 사용하는 것만으로도 JS 문법과 훨씬 더 친숙해질 수 있다.
+
+- Meta(구 Facebook)에서 지속적으로 관리해주는 라이브러리로, 사용자가 많아 생태계가 잘 활성화되어 있다. (현재 FE에서 가장 많이 사용)
+
+  - 이에 따라 React에 대해 개발자들이 고민하고 도출한 많은 해결방법이 존재한다.
+
+  - 또한 React 기반으로 개발된 기술이나 서비스가 많이 존재하고 제공된다.
+
+  - 이는 곧 React를 이용한 개발의 생산성이 높아진다는 것을 의마한다.
+
+- UI를 구축하는 기능만을 담당하므로, 유연하게 확장해서 사용할 수 있는 기술이다. (ex : React Native)
 
 <br/><br/>
 
