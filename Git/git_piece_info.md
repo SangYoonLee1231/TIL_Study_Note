@@ -31,5 +31,8 @@
 
   ```
   .DS_Store
+  /node_modules
   /screenshots
   ```
+
+- npm으로 설치한 패키지의 소스 파일(/node_modules)은 용량이 크기 때문에 깃으로 관리하지 않는다.
