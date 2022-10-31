@@ -104,9 +104,7 @@
 
 ## JSX
 
-- <strong>JSX</strong>는 Javascript를 확장한 문법이다.
-
-- HTML 문법과 같은 규칙을 사용한다.
+- <strong>JSX</strong>는 Javascript를 확장한 문법으로, HTML 문법과 같은 규칙을 사용한다.
 
 <br/>
 
@@ -223,7 +221,13 @@
 
   (이 때 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수</a>를 이용한다.)
 
+<br/>
+
+### 컴포넌트 (Component) 개념
+
 - <strong>컴포넌트</strong>란 JSX를 반환하는 함수이다. (<strong>함수형 컴포넌트</strong>)
+
+- 임의의 입력값(props)을 받아 화면에 어떻게 표시할 지를 기술하는 React 엘리먼트(element)를 반환한다.
 
 - 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
 
