@@ -26,7 +26,7 @@
 
   - 이 중 제일 많이 사용되는 것은, React, Angular, Vue이다.
 
-<br/>
+<br/><br/>
 
 ### React JS란?
 
@@ -48,7 +48,7 @@
 
 - React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
-<br/>
+<br/><br/><br/>
 
 ## React JS의 장점
 
@@ -64,7 +64,7 @@
 
 - UI를 구축하는 기능만을 담당하므로, 유연하게 확장해서 사용할 수 있는 기술이다. (ex : React Native)
 
-<br/><br/>
+<br/><br/><br/>
 
 ## React JS 설치
 
@@ -82,12 +82,18 @@
 
 <br/><br/>
 
-### ✨ 방법 2 : Node.js를 통해 설치
+### ✨ 방법 2 : Node.js를 통해 설치 - CRA
 
 - 사전 지식 : <a href="">Node JS & NPM 소개 및 설치</a>
 
-- React도 일종의 패키지이므로 다운로드 받기 위해 NPM이 필요하다.
+- React도 일종의 패키지이므로 다운로드 받기 위해선 NPM이 필요하다.
 
 - 또한 React를 이용해서 개발환경을 구축하려면 다른 패키지도 필요하고, 이 패키지들을 함께 실행할 환경도 제공되어야 하므로 NPM과 Node JS의 설치는 필수이다.
 
 <br/>
+
+- React 개발에 필요한 패캐지를 일일이 찾아 설치할 수도 있지만, 이는 까다로운 과정이기에, 대신 React와 필요한 도구들을 미리 조합해서 설정해둔 "<strong>툴체인</strong>"을 활용할 수 있다.
+
+- React 공식문서에서는 'React를 배우고 있거나, 새로운 싱글 페이지 앱(SPA)를 만들고 싶다면 <strong>Create React App</strong> 툴체인 사용을 권장한다.'
+
+  - CRA 설치 명령어 : <code>npx create-react-app westagram-react</code>
