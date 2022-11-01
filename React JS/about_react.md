@@ -72,7 +72,7 @@
 
 <br/><br/>
 
-### ✨ 방법 2 : Node.js를 통해 설치 - CRA
+### ✨ 방법 2 : Node.js를 통해 설치 - CRA (Create React App)
 
 - 사전 지식 : <a href="">Node JS & NPM 소개 및 설치</a>
 

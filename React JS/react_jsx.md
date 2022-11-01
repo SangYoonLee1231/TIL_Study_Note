@@ -1,4 +1,4 @@
-# React JS - JSX (HTML에 요소 만들어 추가하기)
+# React JS - JSX와 컴포넌트 (Component)
 
 > 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>
 
@@ -8,9 +8,11 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EB%B0%A9%EB%B2%95%EC%9C%BC%EB%A1%9C-html-%EC%9A%94%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0"><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
+
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
 
 <br/><br/>
 
@@ -24,7 +26,7 @@
 
   - 2.&nbsp;&nbsp;<code>Click me</code> 버튼 클릭 시, 콘솔 창에 <code>i clicked</code> 문구 표시
 
- <br/>
+<br/><br/>
 
 - <strong>Vanila JS</strong> 이용 + <code>createElement</code> 함수 활용
 
@@ -52,7 +54,7 @@
   </html>
   ```
 
-<br/>
+<br/><br/>
 
 - <strong>React JS</strong> 이용 + <code>createElement</code> 함수 활용
 
@@ -100,11 +102,156 @@
 
   => <strong>JSX</strong>
 
-<br/><br/>
+<br/><br/><br/>
 
 ## JSX
 
-- <strong>JSX</strong>는 Javascript를 확장한 문법으로, HTML 문법과 같은 규칙을 사용한다.
+- <strong>JSX</strong>는 JavaScript의 문법을 확장한 React만의 문법으로, JavaScript 내에서 HTML 마크업을 할 수 있도록 한 것이다.
+
+- 마크업과 자바스크립트 로직이 서로 연결되어 있다고 판단하여 이를 한 번에 작성할 수 있는 방법을 고민한 결과 생겨난 문법이다.
+
+- JavaScript 내에서 매크업을 작성할 수 있고, JS 로직도 함께 작성할 수 있다.
+
+<br/>
+
+- JavaScript 정식 문법은 아니기 떄문에 브라우저에서 이를 해석할 수 없다. 따라서 <strong>Babel</strong> 변역기로 이를 <code>React.createElement()</code> 함수로 변환하는 과정이 반드시 필요하다.
+
+<br/><br/>
+
+### JSX의 특징
+
+- <strong>JSX 자바스크립트의 값이다.</strong>
+
+  - 특정한 변수에 이 값을 담을 수 있고, 함수의 인자로 전달하거나 함수의 리턴값으로 사용할 수 있다.
+
+    ```js
+    function App() {
+      return <h1>Hello 이코딩</h1>;
+    }
+
+    const hello = App();
+    ```
+
+<br/>
+
+- <strong>JSX는 JavaScript 값을 포함할 수 있다.</strong>
+
+  - 중괄호를 이용해서 자바스크립트의 값을 감싸주면 된다.
+
+  - 함수의 반환 값도 값이므로, (반환값이 있는) 함수를 중괄호로 감싸 JSX 내부에서 사용할 수 있다.
+
+    ```js
+    function App() {
+      const name = "이코딩";
+
+      return <h1>Hello {name}</h1>;
+    }
+    ```
+
+<br/>
+
+- <strong>JSX 안에서 태그의 속성(Attribute)을 정의할 수 있다.</strong>
+
+  - 문자열로 줄 수도 있고 중괄호를 사용하여 JS 값으로 줄 수도 있다.
+
+    ```js
+    function App() {
+      const class = "title";
+
+      return <h1 className={class}>Hello 이코딩</h1>;
+    }
+    ```
+
+<br/>
+
+- <strong>JSX에서 요소에 바로 이벤트 라스너를 등록할 수 있다.</strong>
+
+  - 태그를 작성할 때 <code>on</code> 뒤에 이벤트 명을 작성하는 방식으로 바로 이벤트 리스너를 부착할 수 있다.
+
+    ```js
+    const introduce = () => alert("Hello World");
+
+    function App() {
+      return <h1 onClick={introduce}>Hello 이코딩</h1>;
+    }
+    ```
+
+<br/>
+
+- <strong>JSX에서 요소에 JavaScript 객체 형태로 inline style을 줄 수 있다.</strong>
+
+  - key-value 형태로 작성한 객체의 이름을 style 속성의 속성값으로 요소에 주면 된다.
+
+    ```js
+    const style = {
+      color: "red";,
+      backgroundColor: "yellow",
+    };
+
+    function App() {
+      return <h1 style={style}>Hello 이코딩</h1>;
+    }
+    ```
+
+  - JSX 내부에서 바로 스타일 객체를 선언하고 싶은 경우, 아래처럼 태그의 style 속성값에 객체를 작성하면 된다.
+
+    ```js
+    function App() {
+      return <h1 style={{
+        color: "red";,
+        backgroundColor: "yellow",
+      }}
+      >
+        Hello 이코딩
+      </h1>;
+    }
+    ```
+
+<br/>
+
+- <strong>JSX 요소는 반환값 전체가 하나의 부모 태그로만 감싸져 있어야 한다.</strong>
+
+  - <code>React.Fragment</code> 태그를 활용하자. (실제로 이 태그는 브라우저에 표시되지 않는다)
+
+    ```js
+    function App() {
+      return (
+        <React.Fragment>
+          <h1>Hello 이코딩</h1>
+          <p>
+            Who is 이코딩? For the blind, He is vision. For the hungry, He is
+            the chef. For the thirsty, He is water. If 이코딩 thinks, I agree.
+            If 이코딩 speaks, I’m listening. If 이코딩 has one fan, it is me. If
+            이코딩 has no fans, I do not exist.
+          </p>
+        </React.Fragment>
+      );
+    }
+    ```
+
+  - <code>\<></code>, <code>\</></code> 로 단축해서 쓸 수도 있다.
+
+    ```js
+    function App() {
+      return (
+        <>
+          <h1>Hello 이코딩</h1>
+          <p>
+            Who is 이코딩? For the blind, He is vision. For the hungry, He is
+            the chef. For the thirsty, He is water. If 이코딩 thinks, I agree.
+            If 이코딩 speaks, I’m listening. If 이코딩 has one fan, it is me. If
+            이코딩 has no fans, I do not exist.
+          </p>
+        </>
+      );
+    }
+    ```
+
+<br/>
+
+- 그 외 JSX의 특징 및 규칙
+
+  - <strong>JSX 태그는 확실하게 닫아주어야 한다.</strong>
 
 <br/>
 
@@ -181,7 +328,7 @@
 
 <br/>
 
-- JSX 문법으로 작성한 JS 코드는 브라우저가 바로 이해할 수 없기 때문에, 브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
+- (위에서 언급했지만) JSX 문법으로 작성한 코드는 브라우저가 바로 이해할 수 없기 때문에, 브라우저가 이해할 수 있는 형태로 변환해주는 장치가 필요하다.
 
   => <strong>Babel</strong>
 
@@ -213,17 +360,29 @@
 
   - 이 방식은 느리기 때문에 혼자할 때는 절대 이렇게 할 일이 없을 것이다. 이보다 더 나은 방식이 있다.
 
-<br/><br/>
+<br/><br/><br/>
 
-### 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
+## 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
 
-- element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong>
+<!-- - element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong>
 
-  (이 때 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수</a>를 이용한다.)
+  (이 때 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수</a>를 이용한다.) -->
+<!--
+<br/> -->
+
+### 컴포넌트 (Component) 란?
+
+- 컴퓨터 과학에서 컴포넌트란?
+
+  - 독립적이고, 재사용할 수 있는 소프트웨어 구성
+
+- 프론트엔드에서 컴포넌트란?
+
+  - 독립적이고, 재사용할 수 있는 UI 단위
+
+  - 로고믈록을 조립해서 큰 성을 만들듯이, 작은 UI를 조합해서 큰 UI를 구성할 수 있다.
 
 <br/>
-
-### 컴포넌트 (Component) 개념
 
 - <strong>컴포넌트</strong>란 JSX를 반환하는 함수이다. (<strong>함수형 컴포넌트</strong>)
 
@@ -235,37 +394,89 @@
 
 - ✨ 직접 만든 컴포넌트를 렌더링해서 다른 곳에 사용할 때는 이름이 <strong>항상 대문자로 시작</strong>되어야 한다.
 
-  ```javascript
-  const root = document.getElementById("root");
+- ✨ 컴포넌트를 리렌더링 시, 전체를 전부 재생산하지 않고 전과 달리진 부분만 새로 생성한다.
 
-  const Title = () => (
-    <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-      Hello I'm a title
-    </h3>
-  );
+<br/><br/>
 
-  const Btn = () => (
-    <button
-      style={{
-        backgroundColor: "tomato",
-      }}
-      onClick={() => console.log("i clicked")}
-    >
-      Click Me
-    </button>
-  );
+### 클래스 컴포넌트 vs 함수 컴포넌트
 
-  // Title, Btn, Container와 같이 이름이 대문자로 시작해야 컴포넌트로 바르게 인식된다.
-  const Container = () => (
-    <div>
-      <Title />
-      <Btn />
-    </div>
-  );
+- <strong>클래스 컴포넌트</strong>
 
-  ReactDOM.render(<Container />, root);
+  ```js
+  class Component {
+    render() {
+      <section>
+        <h1>Hello World</h1>
+      </section>;
+    }
+  }
   ```
+
+  - state, lifeCycle 등의 기능을 사용할 수 있어 초차이에 많이 이용된 방식이다.
+
+  - 하지만, Class 문법과 동작이 복잡하다는 단점이 존재한다.
 
 <br/>
 
-- ✨ 컴포넌트를 리렌더링 시, 전체를 전부 재생산하지 않고 전과 달리진 부분만 새로 생성한다.
+- <strong>함수 컴포넌트</strong>
+
+  ```js
+  function Component() {
+    return (
+      <section>
+        <h1>Hello World</h1>
+      </section>
+    );
+  }
+  ```
+
+  ```js
+  const Component = () => (
+    <section>
+      <h1>Hello World</h1>
+    </section>
+  );
+  ```
+
+  - 클래스에 비해 직관적이고 사용하기 쉽지만, state, lifeCycle 등의 기능을 이용할 수 없었다.
+
+  - 하지만 React 16.8 버전에서 Hook이란 개념의 등장으로 위 기능들을 함수 컴포넌트에서도 사용할 수 있게 되었다.
+
+  - 그로 인해 현재 React 생태계에서는 함수 컴포넌트를 가장 많이 사용한다.
+
+<br/><br/>
+
+### 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
+
+```javascript
+const root = document.getElementById("root");
+
+// Title 컴포넌트
+const Title = () => (
+  <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+    Hello I'm a title
+  </h3>
+);
+
+// Btn 컴포넌트
+const Btn = () => (
+  <button
+    style={{
+      backgroundColor: "tomato",
+    }}
+    onClick={() => console.log("i clicked")}
+  >
+    Click Me
+  </button>
+);
+
+// Title, Btn, Container와 같이 이름이 대문자로 시작해야 컴포넌트로 바르게 인식된다.
+const Container = () => (
+  <div>
+    <Title />
+    <Btn />
+  </div>
+);
+
+ReactDOM.render(<Container />, root);
+```
