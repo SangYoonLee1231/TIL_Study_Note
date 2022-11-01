@@ -7,8 +7,14 @@
 ### 목차
 
 - <a href="">React JS의 개녕과 탄생 배경</a>
+
+  - <a href="">React 탄생 배경</a>
+  - <a href="">React JS란?</a>
+
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
-- <a href=""></a>
+
+  - <a href="">방법 1 : HTML 문서에 <code>react</code>, <code>react-dom</code>을 import하는 방법</a>
+  - <a href="">방법 2 : Node.js를 통해 설치 - CRA</a>
 
 <br/><br/>
 
@@ -30,7 +36,7 @@
 
 ### React JS란?
 
-- React JS (혹은 React)는 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>프레임워크 (Framework) </strong>이자 <strong>라이브러리 (Library) </strong>이다.
+- React JS (혹은 React)는 UI를 구축하고 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>프레임워크 (Framework) </strong>이자 <strong>라이브러리 (Library) </strong>이다.
 
   <img src="img/react-is-both.png" width="650">
 
@@ -47,22 +53,6 @@
 <br/>
 
 - React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
-
-<br/><br/><br/>
-
-## React JS의 장점
-
-- 다른 프레임워크 (혹은 라이브러리)에 비해 문법이 자바스크립트를 그대로 사용하기 때문에, React를 사용하는 것만으로도 JS 문법과 훨씬 더 친숙해질 수 있다.
-
-- Meta(구 Facebook)에서 지속적으로 관리해주는 라이브러리로, 사용자가 많아 생태계가 잘 활성화되어 있다. (현재 FE에서 가장 많이 사용)
-
-  - 이에 따라 React에 대해 개발자들이 고민하고 도출한 많은 해결방법이 존재한다.
-
-  - 또한 React 기반으로 개발된 기술이나 서비스가 많이 존재하고 제공된다.
-
-  - 이는 곧 React를 이용한 개발의 생산성이 높아진다는 것을 의마한다.
-
-- UI를 구축하는 기능만을 담당하므로, 유연하게 확장해서 사용할 수 있는 기술이다. (ex : React Native)
 
 <br/><br/><br/>
 
