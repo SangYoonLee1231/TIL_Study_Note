@@ -9,10 +9,15 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EB%B0%A9%EB%B2%95%EC%9C%BC%EB%A1%9C-html-%EC%9A%94%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0"><code>createElement</code>를 이용한 기존의 방법으로 HTML 요소 다루기/추가하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx">JSX</a>
 
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#jsx%EC%9D%98-%ED%8A%B9%EC%A7%95">JSX의 특징</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-component-%EB%9E%80">컴포넌트 (Component) 란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-vs-%ED%95%A8%EC%88%98-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">클래스 컴포넌트 vs 함수 컴포넌트</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0-1">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
 
 <br/><br/>
 
@@ -364,21 +369,15 @@
 
 ## 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
 
-<!-- - element를 태그로 묶어 다른 곳에 사용하려면, <strong>element를 컴포넌트(함수형)로 바꿔주어야 한다.</strong>
-
-  (이 때 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수</a>를 이용한다.) -->
-<!--
-<br/> -->
-
 ### 컴포넌트 (Component) 란?
 
 - 컴퓨터 과학에서 컴포넌트란?
 
-  - 독립적이고, 재사용할 수 있는 소프트웨어 구성
+  - <strong>독립적이고, 재사용할 수 있는 소프트웨어 구성</strong>
 
 - 프론트엔드에서 컴포넌트란?
 
-  - 독립적이고, 재사용할 수 있는 UI 단위
+  - <strong>독립적이고, 재사용할 수 있는 UI 단위</strong>
 
   - 로고믈록을 조립해서 큰 성을 만들듯이, 작은 UI를 조합해서 큰 UI를 구성할 수 있다.
 
