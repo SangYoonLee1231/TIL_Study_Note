@@ -383,17 +383,17 @@
 
 <br/>
 
-- <strong>컴포넌트</strong>란 JSX를 반환하는 함수이다. (<strong>함수형 컴포넌트</strong>)
+- 컴포넌트란 <strong>JSX를 반환하는 함수</strong>이다. (<strong>함수형 컴포넌트</strong>)
 
 - 임의의 입력값(props)을 받아 화면에 어떻게 표시할 지를 기술하는 React 엘리먼트(element)를 반환한다.
 
-- 일반 element를 <strong>함수형</strong>으로 바꾸면 <strong>컴포넌트</strong>(사용자 정의 태그)로 인식된다.
+- 일반 element를 함수형으로 바꾸면 컴포넌트(사용자 정의 태그)로 인식된다.
 
 <br/>
 
 - ✨ 직접 만든 컴포넌트를 렌더링해서 다른 곳에 사용할 때는 이름이 <strong>항상 대문자로 시작</strong>되어야 한다.
 
-- ✨ 컴포넌트를 리렌더링 시, 전체를 전부 재생산하지 않고 전과 달리진 부분만 새로 생성한다.
+- ✨ 컴포넌트를 리렌더링 시, <strong>전체를 전부 재생산하지 않고</strong> 전과 달리진 부분만 새로 생성한다.
 
 <br/><br/>
 
@@ -411,7 +411,7 @@
   }
   ```
 
-  - state, lifeCycle 등의 기능을 사용할 수 있어 초차이에 많이 이용된 방식이다.
+  - state, lifeCycle 등의 기능을 사용할 수 있어 초항기에 많이 이용된 방식이다.
 
   - 하지만, Class 문법과 동작이 복잡하다는 단점이 존재한다.
 
@@ -471,10 +471,10 @@ const Btn = () => (
 
 // Title, Btn, Container와 같이 이름이 대문자로 시작해야 컴포넌트로 바르게 인식된다.
 const Container = () => (
-  <div>
+  <>
     <Title />
     <Btn />
-  </div>
+  </>
 );
 
 ReactDOM.render(<Container />, root);

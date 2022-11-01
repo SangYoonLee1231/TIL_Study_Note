@@ -6,26 +6,15 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md#react-js%EC%9D%98-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%ED%8A%B9%EC%A7%95-2%EA%B0%80%EC%A7%80">React JS의 대표적인 특징 2가지</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md#1-%EC%84%A0%EC%96%B8%ED%98%95">1. 선언형</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md#2-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EA%B8%B0%EB%B0%98">2. 컴포넌트 기반</a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md#virtual-dom">Virtual DOM</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md#react-js%EC%9D%98-%EC%9E%A5%EC%A0%90">React JS의 장점</a>
 
 <br/><br/>
-
-## React JS의 장점
-
-- 다른 프레임워크 (혹은 라이브러리)에 비해 문법이 자바스크립트를 그대로 사용하기 때문에, React를 사용하는 것만으로도 JS 문법과 훨씬 더 친숙해질 수 있다.
-
-- Meta(구 Facebook)에서 지속적으로 관리해주는 라이브러리로, 사용자가 많아 생태계가 잘 활성화되어 있다. (현재 FE에서 가장 많이 사용)
-
-  - 이에 따라 React에 대해 개발자들이 고민하고 도출한 많은 해결방법이 존재한다.
-
-  - 또한 React 기반으로 개발된 기술이나 서비스가 많이 존재하고 제공된다.
-
-  - 이는 곧 React를 이용한 개발의 생산성이 높아진다는 것을 의마한다.
-
-- UI를 구축하는 기능만을 담당하므로, 유연하게 확장해서 사용할 수 있는 기술이다. (ex : React Native)
-
-<br/><br/><br/>
 
 ## React JS의 대표적인 특징 2가지
 
@@ -94,3 +83,19 @@
 <br/>
 
 - Virtual DOM에 대한 좀 더 자세한 내용은 <a href="https://velog.io/@yesbb/virtual-dom의-성능이-더-좋은이유">해당 포스트를</a> 참고하자.
+
+<br/><br/><br/>
+
+## React JS의 장점
+
+- 다른 프레임워크 (혹은 라이브러리)에 비해 문법이 자바스크립트를 그대로 사용하기 때문에, React를 사용하는 것만으로도 JS 문법과 훨씬 더 친숙해질 수 있다.
+
+- Meta(구 Facebook)에서 지속적으로 관리해주는 라이브러리로, 사용자가 많아 생태계가 잘 활성화되어 있다. (현재 FE에서 가장 많이 사용)
+
+  - 이에 따라 React에 대해 개발자들이 고민하고 도출한 많은 해결방법이 존재한다.
+
+  - 또한 React 기반으로 개발된 기술이나 서비스가 많이 존재하고 제공된다.
+
+  - 이는 곧 React를 이용한 개발의 생산성이 높아진다는 것을 의마한다.
+
+- UI를 구축하는 기능만을 담당하므로, 유연하게 확장해서 사용할 수 있는 기술이다. (ex : React Native)
