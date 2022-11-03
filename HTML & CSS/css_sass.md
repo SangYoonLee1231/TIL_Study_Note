@@ -52,15 +52,15 @@
 
     ```scss
     nav
-    ul
+      ul
         margin: 0
         padding: 0
         list-style: none
 
-    li
+      li
         display: inline-block
 
-    a
+      a
         display: block
         padding: 6px 12px
         text-decoration: none
