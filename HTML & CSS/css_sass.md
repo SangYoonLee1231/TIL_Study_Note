@@ -44,9 +44,53 @@
 
 ### SASS vs SCSS
 
-- Sass를 작성하는 방법은 2가지가 있다. 이 중 <strong>Scss 문법을 사용하는 것을 권장</strong>한다.
+- SASS를 작성하는 방법은 2가지가 있다. 이 중 <strong>SCSS 문법을 사용하는 것을 권장</strong>한다.
 
-- 왜냐하면 Sass의 문법 개선을 통해 나온 것이 Scss이기도 하고, 여러 가지 문법의 차이가 있지만 <strong>Scss가 더 넓은 범용성과 CSS의 호환성</strong> 등의 장점이 있기 때문이다.
+- 왜냐하면 SASS의 문법 개선을 통해 나온 것이 SCSS이기도 하고, 여러 가지 문법의 차이가 있지만 <strong>SCSS가 더 넓은 범용성과 CSS의 호환성</strong> 등의 장점이 있기 때문이다.
+
+  - SASS 문법
+
+    ```scss
+    nav
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+    li
+        display: inline-block
+
+    a
+        display: block
+        padding: 6px 12px
+        text-decoration: none
+
+
+    ```
+
+  - SCSS 문법
+
+    ```scss
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+      }
+    }
+    ```
+
+<br/>
 
 ### SASS 적용하기
 
