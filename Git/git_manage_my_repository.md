@@ -76,9 +76,9 @@
 
     👉 <code>git commit -m "커밋 메세지"</code>
 
-  - (처음으로 push 하기 전, 브랜치 설정 작업이 한 번 필요하다.)
+  <!-- - (처음으로 push 하기 전, 브랜치 설정 작업이 한 번 필요하다.)
 
-    👉 <code>git push --set -upstream origin master</code>
+    👉 <code>git push --set -upstream origin master</code> -->
 
   - <strong>3-3.</strong> <strong>원격 저장소에 푸쉬</strong>
 

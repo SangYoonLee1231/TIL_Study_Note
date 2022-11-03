@@ -9,7 +9,7 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#gitignore-%ED%8C%8C%EC%9D%BC"><code>.gitignore</code> 파일</a>
-- <a href=""></a>
+- <a href=""><code>npm install</code>시 주의 사항</a>
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
@@ -36,3 +36,9 @@
   ```
 
 - npm으로 설치한 패키지의 소스 파일(/node_modules)은 용량이 크기 때문에 깃으로 관리하지 않는다.
+
+<br/><br/>
+
+## <code>npm install</code>시 주의 사항
+
+- 원격 저장소에서 초기 세팅한 파일들을 내 로컬 저장소로 clone 받고, npm install부터 하고나서 branch 생성해야 된다고 한다. (이유는 모르곘지만)
