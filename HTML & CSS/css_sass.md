@@ -2,14 +2,23 @@
 
 <br/>
 
-> 참고 자료 : 김민태의 프론트엔드 아카데미 : 제 1강 JavaScript & TypeScript Essential, 부트캠프 학습 자료
+> 참고 자료 : 부트캠프 학습 자료
 
 <br/>
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#css-%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0%EB%9E%80">CSS 전처리기란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-syntactically-awesome-style-sheets">SASS (Syntactically Awesome Style Sheets)</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-vs-scss">SASS vs SCSS</a>
+  - <a href="">SASS 적용하기</a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-%EB%AC%B8%EB%B2%95">SASS 문법</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#nesting">Nesting</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B3%80%EC%88%98">변수</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B6%80%EB%AA%A8%EC%84%A0%ED%83%9D%EC%9E%90--mixin--optional-arguments">부모선택자 (&), mixin (+ optional arguments)</a>
 
 <br/><br/>
 
@@ -39,9 +48,9 @@
 
 - 왜냐하면 Sass의 문법 개선을 통해 나온 것이 Scss이기도 하고, 여러 가지 문법의 차이가 있지만 <strong>Scss가 더 넓은 범용성과 CSS의 호환성</strong> 등의 장점이 있기 때문이다.
 
-### SASS 적용학기
+### SASS 적용하기
 
-- 확장자명 : <code>.scss</code>
+- 확장자 명 : <code>.scss</code>
 
   - 기존 css 파일이 있다면 확장자명을 scss로 변경해준다. (JS로 import 시도 마찬가지)
 
@@ -58,21 +67,38 @@
 ### Nesting
 
 ```scss
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+/* nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  border-bottom: 1px solid $borderColor;
+  background-color: white;
+
+  /* .nav div */
+  div {
+    width: 33%;
   }
 
-  li {
-    display: inline-block;
+  /* .nav__logo */
+  &__logo {
+    @include flex(0, flex-start, 0);
+    padding-left: 5vw;
   }
 
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
+  /* .nav__icon */
+  &__icon {
+    @include flex(0, center, 0);
+    margin: 20px 0px;
+  }
+
+  /* .nav__text */
+  &__text {
+    @include flex(0, flex-end, 0);
+    margin: 20px 0px;
+    font-family: "Lobster", cursive;
+    font-size: 20px;
   }
 }
 ```
