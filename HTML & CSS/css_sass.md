@@ -108,7 +108,7 @@
 
 ## SASS 문법
 
-### Nesting
+### Nesting, 부모선택자 (&)
 
 ```scss
 /* nav */
@@ -167,7 +167,7 @@ body {
 
 <br/>
 
-### 부모선택자 (&), mixin (+ optional arguments)
+### mixin (+ optional arguments)
 
 ```scss
 @mixin flex($direction: row, $justify: flex-start, $align: flex-start) {
