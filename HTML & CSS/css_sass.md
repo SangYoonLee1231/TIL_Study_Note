@@ -12,7 +12,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-syntactically-awesome-style-sheets">SASS (Syntactically Awesome Style Sheets)</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-vs-scss">SASS vs SCSS</a>
-  - <a href="">SASS 적용하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0">SASS 적용하기</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-%EB%AC%B8%EB%B2%95">SASS 문법</a>
 
