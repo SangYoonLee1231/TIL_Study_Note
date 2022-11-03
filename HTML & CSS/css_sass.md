@@ -127,22 +127,12 @@
 
   /* .nav__logo */
   &__logo {
-    @include flex(0, flex-start, 0);
     padding-left: 5vw;
   }
 
   /* .nav__icon */
   &__icon {
-    @include flex(0, center, 0);
     margin: 20px 0px;
-  }
-
-  /* .nav__text */
-  &__text {
-    @include flex(0, flex-end, 0);
-    margin: 20px 0px;
-    font-family: "Lobster", cursive;
-    font-size: 20px;
   }
 }
 ```
