@@ -6,10 +6,17 @@
 
 ### 목차
 
+- <a href=""></a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#reactusestate-%ED%95%A8%EC%88%98"><code>React.useState()</code> 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#state-%ED%95%A8%EC%88%98">State 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#state-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">State 활용하기</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_state.md#input%EC%97%90-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0"><code>input</code>에 활용하기</a>
+
+<br/><br/>
+
+## State란?
+
+- 컴포넌트 내부에서 가지고 있는 컴포넌트의 상태값
 
 <br/><br/>
 
