@@ -18,13 +18,15 @@
 
 - 컴포넌트 내부에서 가지고 있는 컴포넌트의 상태값
 
+- 컴포넌트 내에서 정의하고 사용하며, 변수처럼 얼마든지 변경할 수 있다.
+
 <br/><br/>
 
 ## <code>React.useState()</code> 함수
 
-- React에서 변수를 다루는 유용한 방법
+- React에서 변수를 다루는 유용한 방법이다.
 
-- 반드시 컴포넌트 내부에서만 사용할 수 있다.
+- React의 내장 Hook이기 때문에 반드시 컴포넌트 내부에서만 사용할 수 있다.
 
 <br/>
 
@@ -32,11 +34,13 @@
 
   ```javascript
   const root = document.getElementById("root");
+
   const App = () => {
-    // 주목할 부분
+    // 주목할 부분!!
     const data = React.useState(0);
     console.log(data);
-    // 여기까지
+    // 여기까지!!
+
     return (
       <div>
         <h3>Total clicks: {counter}</h3>
@@ -51,9 +55,13 @@
   [undefined, f ]
   ```
 
-  - <strong>undefined</strong> : 데이터 (변수)
+  - 첫 번째 요소 : <strong>undefined</strong>
 
-  - <strong>f</strong> : 데이터를 바꾸는 modifier 함수
+    ➡️ 데이터 (변수)
+
+  - 두 번째 요소 : <strong>f</strong>
+
+    ➡️ 데이터를 바꾸는 modifier 함수
 
 <br/>
 
@@ -61,13 +69,16 @@
 
   ```javascript
   const root = document.getElementById("root");
+
   const App = () => {
-    // 주목할 부분
+    // 주목할 부분!!
     const [counter, setCounter] = React.useState(0);
+
     const onClick = () => {
       setCounter(counter + 1);
     };
-    // 여기까지
+    // 여기까지!!
+
     return (
       <div>
         <h3>Total clicks: {counter}</h3>
@@ -80,7 +91,7 @@
 
 <br/>
 
-- ✨ modifier 함수를 통해 state(값)을 변경하면 컴포넌트가 새 값을 가지고 재생성(리랜더링)된다.
+- ✨ <strong>modifier 함수를 통해 state(값)을 변경하면 컴포넌트가 새 값을 가지고 재생성 (리랜더링) 된다.</strong> 이것이 React에서 변수 대신 <strong>State를 사용하는 이유</strong>이다.
 
 <br/><br/>
 
