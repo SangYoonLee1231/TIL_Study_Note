@@ -30,7 +30,7 @@
 
 - 이러한 상황에서 자연스럽게 프론트엔드 개발의 생산성 향상과 난이도 하향을 위한 여러 라이브러리 및 프레임워크가 탄생하였다.
 
-  - 이 중 제일 많이 사용되는 것은, React, Angular, Vue이다.
+  - 이 중 현재 제일 많이 사용되는 것은, React, Angular, Vue이다.
 
 <br/><br/>
 
@@ -84,8 +84,8 @@
 
 - React 개발에 필요한 패캐지를 일일이 찾아 설치할 수도 있지만, 이는 까다로운 과정이기에, 대신 React와 필요한 도구들을 미리 조합해서 설정해둔 "툴체인"을 활용할 수 있다.
 
-  - (<strong>툴체인</strong>> : 여러 도구들을 연결해놓은 것)
+  - (<strong>툴체인</strong> : 여러 도구들을 연결해놓은 것)
 
 - React 공식문서에서는 'React를 배우고 있거나, 새로운 싱글 페이지 앱(SPA)를 만들고 싶다면 <strong>Create React App</strong> 툴체인 사용을 권장한다.'
 
-  - CRA 설치 명령어 : <code>npx create-react-app westagram-react</code>
+  - <strong>CRA 설치 명령어</strong> : <code>npx create-react-app westagram-react</code>
