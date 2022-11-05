@@ -6,12 +6,13 @@
 
 ### 목차
 
-- <a href="">Hook이란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#hook%EC%9D%B4%EB%9E%80">Hook이란?</a>
 
-- <a href="">State란?</a>
-- <a href="">State의 Modifier 함수</a>
-- <a href="">Props란?</a>
-- <a href="">State와 Props를 함께 활용하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#state%EB%9E%80">State란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#reactusestate-%ED%95%A8%EC%88%98"><code>React.useState()</code> 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#state%EC%9D%98-modifier-%ED%95%A8%EC%88%98">State의 Modifier 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#props%EB%9E%80">Props란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#-state%EC%99%80-props%EB%A5%BC-%ED%95%A8%EA%BB%98-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">State와 Props를 함께 활용하기</a>
 
 <br/><br/>
 
@@ -326,7 +327,9 @@ const Child = (props) => {
 export default Child;
 ```
 
-- 자식 컴포넌트에서 발생한 이벤트로 부모 컴포넌트의 state가 변경되었고, 그 변경된 값이 다시 자식 컴포넌트에 반영되었다. 이를 <strong>State 끌어올리기</strong>라 한다.
+- 자식 컴포넌트에서 발생한 이벤트로 부모 컴포넌트의 state가 변경되었고, 그 변경된 값이 다시 자식 컴포넌트에 반영되었다.
+
+  이를 <strong>State 끌어올리기</strong>라 한다.
 
 <br/>
 
@@ -334,4 +337,6 @@ export default Child;
 
   - 데이터는 부모 컴포넌트에서 자식 컴포넌트로 흐른다. 즉 자식에서 부모로 데이터가 이동할 수 없다.
 
-  - 만일 자식 컴포넌트에서 State를 선언했다면 부모 컴포넌트에서 이 데이터를 사용할 방법이 없다. 따라서 부모 컴포넌트에서 State를 선언하고 Prop를 통해 자식 컴포넌트로 데이터를 흘려주는 방식을 사용하는 것이다.
+  - 만일 자식 컴포넌트에서 State를 선언했다면 부모 컴포넌트에서 이 데이터를 사용할 방법이 없다.
+
+    따라서 부모 컴포넌트에서 State를 선언하고 Prop를 통해 자식 컴포넌트로 데이터를 흘려주는 방식을 사용하는 것이다.
