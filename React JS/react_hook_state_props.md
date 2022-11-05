@@ -10,7 +10,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#state%EB%9E%80">State란?</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#reactusestate-%ED%95%A8%EC%88%98"><code>React.useState()</code> 함수</a>
-- <a href=""><code>React.useState()</code>의 Modifier 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#reactusestate%EC%9D%98-modifier-%ED%95%A8%EC%88%98"><code>React.useState()</code>의 Modifier 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#props%EB%9E%80">Props란?</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md#-state%EC%99%80-props%EB%A5%BC-%ED%95%A8%EA%BB%98-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">State와 Props를 함께 활용하기</a>
 
