@@ -33,7 +33,7 @@
 
 <br/><br/>
 
-- <strong>Vanila JS</strong> 이용 + <code>createElement</code> 함수 활용
+- <strong>Vanila JS</strong>로 구현
 
   ```html
   <!DOCTYPE html>
@@ -45,14 +45,18 @@
     <script>
       const text = document.getElementById("text");
       const button = document.getElementById("btn");
+      
       text.id = "title";
       button.style.backgroundColor = "tomato";
+      
       function handleClick() {
         console.log("i clicked");
       }
+      
       function handleMouseEnter() {
         console.log("mouse enter");
       }
+      
       button.addEventListener("click", handleClick);
       text.addEventListener("mouseenter", handleMouseEnter);
     </script>
@@ -61,7 +65,7 @@
 
 <br/><br/>
 
-- <strong>React JS</strong> 이용 + <code>createElement</code> 함수 활용
+- <strong>React JS</strong>로 구현 + <code>createElement</code> 함수 활용
 
   ```html
   <!DOCTYPE html>
@@ -73,6 +77,7 @@
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
     <script>
       const root = document.getElementById("root");
+      
       const title = React.createElement(
         "h3",
         {
@@ -81,6 +86,7 @@
         },
         "Hello. I'm a title."
       );
+      
       const btn = React.createElement(
         "button",
         {
@@ -91,6 +97,7 @@
         },
         "Click Me"
       );
+      
       const container = React.createElement("div", null, [h3, btn]);
       ReactDOM.render(container, root);
     </script>
@@ -99,19 +106,55 @@
 
 <br/>
 
-- <strong>React JS</strong>를 이용하는 것이 Vanila JS를 이용하는 것보다 <strong>더 편리함</strong>을 확인할 수 있다.
+- <strong>React JS를 이용하는 것</strong>이 Vanila JS를 이용하는 것보다 <strong>더 편리함</strong>을 확인할 수 있다.
 
   - <strong>JS에서 직접 HTML 요소를 생성</strong>한 후 <strong>필요한 기능을 한 번에 붙인 뒤</strong> HTML에 삽입하기만 하면 되므로
+
+<br/>
 
 - 하지만 <code>createElement</code>를 사용한 위 두 방법보다 <strong>더 편리하게</strong> HTML 요소를 만들어 넣는 방법이 있다.
 
   => <strong>JSX</strong>
+  
+<br/><br/>
+
+### 참고 : Vanila JS로 <code>React.createElement()</code> 직접 구현하기
+
+```js
+// Vanila JS로 React.createElement 함수 직접 구현 (하드 코딩)
+
+function createElement(tagName, ...children) {
+  const element = document.createElement(tagName);
+
+  children.forEach((child) => {
+    element.appendChild(child);
+  });
+
+  return element;
+}
+
+// 구현한 createElement 함수 활용법
+
+document.getElementById('app').appendChild(
+  createElement(
+    'div',
+    createElement(
+      'p',
+      ...['!!!', '!!!!!'].map((c) => document.createTextNode(`Hello World${c}`)),
+    ),
+    createElement(
+      'p',
+      document.createTextNode('Hi!!!'),
+    ),
+  ),
+);
+```
 
 <br/><br/><br/>
 
 ## JSX
 
-- <strong>JSX</strong>는 JavaScript의 문법을 확장한 React만의 문법으로, JavaScript 내에서 HTML 마크업을 사용할 수 있도록 한 것이다.
+- <strong>JSX</strong>는 <strong>JavaScript의 문법을 확장</strong>한 React만의 문법으로, <strong>JavaScript 내에서 HTML 마크업을 사용할 수 있도록 한 것이다.</strong>
 
 - 마크업과 자바스크립트 로직이 서로 연결되어 있다고 판단하여 이를 한 번에 작성할 수 있는 방법을 고민한 결과 생겨난 문법이다.
 
@@ -119,13 +162,15 @@
 
 <br/>
 
-- JavaScript 정식 문법은 아니기 때문에 브라우저에서 이를 해석할 수 없다. 따라서 <strong>Babel</strong> 변역기로 이를 <code>React.createElement()</code> 함수로 변환하는 과정이 반드시 필요하다.
+- <strong>JavaScript 정식 문법은 아니기 때문에 브라우저에서 이를 해석할 수 없다.</strong>  
+
+  따라서 <strong>Babel</strong> 변역기로 이를 <code>React.createElement()</code> 함수로 변환하는 과정이 반드시 필요하다.
 
 <br/><br/>
 
 ### JSX의 특징
 
-- <strong>JSX 자바스크립트의 값이다.</strong>
+- <strong>JSX는 자바스크립트의 값이다.</strong>
 
   - 특정한 변수에 이 값을 담을 수 있고, 함수의 인자로 전달하거나 함수의 리턴값으로 사용할 수 있다.
 
@@ -152,6 +197,11 @@
       return <h1>Hello {name}</h1>;
     }
     ```
+    ```js
+    function App() {
+      return <h1>Hello {() => ("이코딩")}</h1>;
+    }
+    ```
 
 <br/>
 
@@ -169,7 +219,7 @@
 
 <br/>
 
-- <strong>JSX에서 요소에 바로 이벤트 라스너를 등록할 수 있다.</strong>
+- <strong>JSX에서 요소에 inline 방식으로 이벤트 라스너를 등록할 수 있다.</strong>
 
   - 태그를 작성할 때 <code>on</code> 뒤에 이벤트 명을 작성하는 방식으로 바로 이벤트 리스너를 부착할 수 있다.
 
@@ -329,7 +379,7 @@
 
   - <code>class</code>나 <code>for</code>같은 키워드는 React JS에서 제대로 동작하지 않을 수 있다.
 
-    (<code>class</code> => <code>className</code>, <code>for</code> => <code>htmlFor</code>을 써야 한다.)
+    (<strong><code>class</code> => <code>className</code>, <code>for</code> => <code>htmlFor</code>을 써야 한다.</strong>)
 
 <br/>
 
@@ -341,11 +391,19 @@
 
 ### Babel
 
-- JSX로 적은 코드를 브라우저가 이해할 수 있는 형태로 바꿔주는 장치 (번역기)
+- <strong>Babel이란?</strong>
 
-- <a href="https://babeljs.io/">Babel 홈페이지 바로가기</a>
+  - 브라우저마다 사용하는 언어가 달라 발생하는 크로스브라우징 이슈를 해결하기 위해, 스크립트를 모든 브라우저에서 동작할 수 있는 코드로 '트랜스파일'해주는 장치
 
-  <br/>
+    - 트랜스파일 : 추상화 수준이 같은 코드로 변환해주는 것 (vs 빌드)
+
+  - ECMAScript2015 이상의 코드를 적당한 하위 버전으로 변환
+
+  - TypeScript나 JSX도 Babel의 변환 대상이다.
+
+  - <a href="https://babeljs.io/">Babel 홈페이지 바로가기</a>
+
+<br/>
 
 - Babel standalone를 이용하여 변환기 설치하기
 
@@ -367,6 +425,64 @@
 
   - 이 방식은 느리기 때문에 혼자할 때는 절대 이렇게 할 일이 없을 것이다. 이보다 더 나은 방식이 있다.
 
+<br/>
+
+- <strong>Node.js를 통해 설치하기</strong>
+
+  - 사전 지식 : <a href="">Node JS & NPM 소개 및 설치</a>
+
+  <br/>
+
+  - <strong>설치 명령어</strong>
+
+    - <code>npm i -D babel-loader</code> : Webpack에서 Babel을 쓸 수 있도록 도와줌
+    - <code>webpack.config.js</code> 파일 : webpack 설정 파일
+    - <code>npm i -D @babel/core</code> 
+    - <code>npm i -D @babel/preset-env @babel/preset-react</code>
+
+  <br/>
+
+  - <strong>config 설정</strong>
+
+    - <code>webpack.config.js</code>
+
+        ```javascript
+        module.exports = {
+            mode: 'development',
+            module: {
+                rules: [{
+                    test: /\.(js|jsx)?$/,
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                    },
+                }],
+            },
+            resolve: { extensions: ['.js', '.jsx'] },
+        };
+
+        ```
+
+    - <code>babel.config.js</code>
+
+        ```javascript
+        module.exports = {
+            presets:
+            [
+                [
+                    '@babel/preset-env',
+                    {
+                        targets: {
+                            node: 'current',
+                            chrome: '79',
+                        },
+                    },
+                ],
+                '@babel/preset-react',
+            ],
+        };
+        ```
+
 <br/><br/><br/>
 
 ## 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
@@ -376,6 +492,8 @@
 - 컴퓨터 과학에서 컴포넌트란?
 
   - <strong>독립적이고, 재사용할 수 있는 소프트웨어 구성</strong>
+
+<br/>
 
 - 프론트엔드에서 컴포넌트란?
 
@@ -393,9 +511,9 @@
 
 <br/>
 
-- ✨ 직접 만든 컴포넌트를 렌더링해서 다른 곳에 사용할 때는 이름이 <strong>항상 대문자로 시작</strong>되어야 한다.
+- ✨ 직접 만든 컴포넌트를 렌더링해서 다른 곳에 사용할 때는 <strong>이름이 항상 대문자로 시작</strong>되어야 한다.
 
-- ✨ 컴포넌트를 리렌더링 시, <strong>전체를 전부 재생산하지 않고</strong> 전과 달리진 부분만 새로 생성한다.
+- ✨ 컴포넌트를 리렌더링 시, 전체를 전부 재생산하지 않고 <strong>전과 달리진 부분만 새로 생성</strong>한다.
 
 <br/><br/>
 
