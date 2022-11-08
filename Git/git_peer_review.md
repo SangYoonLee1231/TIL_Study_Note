@@ -4,9 +4,9 @@
 
 ### 목차
 
-- <a href="">Peer Review란?</a>
-- <a href="">GitHub에서 Peer Review 진행하기</a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_peer_review.md#peer-review%EB%9E%80">Peer Review란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_peer_review.md#github%EC%97%90%EC%84%9C-peer-review-%EC%A7%84%ED%96%89%ED%95%98%EA%B8%B0">GitHub에서 Peer Review 진행하기</a>
+<!-- - <a href=""></a> -->
 
 <br/><br/>
 
