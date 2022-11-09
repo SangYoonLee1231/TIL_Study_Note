@@ -168,3 +168,104 @@ const changeTitle = (newTitle) => {
 - 시간은 계속해서 변하기에, 특정 시간이 지났을 때 액션을 취하거나(<code>setTimeout</code> 매서드), 특정 시간 주기마다 액션을 취하는(<code>setInterval</code> 매서드) 등의 행위를 시간을 구독함으로서 구현할 수 있다.
 
 - 이 또한 외부의 값의 변화를 계속해서 관찰하고 거기에 맞춰 동작을 하는 것이기에 Side Effect이다.
+
+<br/><br/><br/>
+
+## React에서 Side Effect의 올바른 발생 시점
+
+- 아래 코드처럼 함수 컴포넌트 본문에서 바로 Side Effect를 발생시킬 때의 문제점
+
+  ```js
+  const App = () => {
+    const doSideEffect = () => {
+      // do some side effect
+    };
+
+    doSideEffect();
+
+    return <h1>Hello World</h1>;
+  };
+  ```
+
+  1. Side Effect가 렌더링을 Blocking 한다.
+
+  2. 매 렌더링마다 Side Effect가 수행된다.
+
+<br/>
+
+- React에서 Side Effect를 발생시키기 위한 조건
+
+  1. 렌더링을 Blocking 하지 않기 위해서 <strong>렌더링이 모두 완료된 후에 Side Effect가 실행될 수 있어야 한다.</strong>
+
+  1. 매 렌더링마다 Side Effect가 실행되는 것이 아니라 <strong>필요할 때만 Side Effect가 조건부로 실행되도록 해주어야 한다.</strong>
+
+- React엔 위 두 조건을 모두 만족시켜주면서 편하게 Side Effect를 발생시켜주는 hook이 존재한다.
+
+  => <strong>useEffect</strong>
+
+<br/><br/>
+
+## useEffect
+
+- useEffect는 React에서 Side Effect를 편리하고 안전하게 발생시킬 수 있도록 도와주는 Hook이다.
+
+- useEffect는 함수이고, 매개변수로 <strong>콜백 함수</strong>를 가진다. 이 콜백 함수에서 특정한 Side Effect를 수행시킬 수 있다.
+
+  ```js
+  useEffect(콜백 함수);
+  ```
+
+<br/>
+
+### useEffect는 (Side Effect를 발생시키는) 콜백 함수를 랜더링 이후 실행시킨다.
+
+```js
+import { useEffect } from "react";
+
+const App = () => {
+  console.log("Side Effect 실행");
+  useEffect(() => {
+    // do some side effect
+    console.log("Side Effect with useEffect");
+  });
+
+  console.log("render");
+  return <h1>Hello World</h1>;
+};
+
+export default App;
+```
+
+```
+Side Effect 실행
+render
+Side Effect with useEffect
+```
+
+- 코드의 실행결과를 확인하니, 랜더링이 모두 끝난 이후 콜백 함수가 실행되었다.
+
+- 이를 통해 React에서 Side Effect를 발생시키기 위한 첫 번째 조건인 '렌더링이 모두 완료된 후에 Side Effect가 실행될 수 있어야 한다'는 것이 useEffect를 통해 만족될 수 있음을 알 수 있다.
+
+<br/>
+
+### useEffect는 (Side Effect를 발생시키는) 콜백 함수를 조건부로 실행시킨다.
+
+- 또한, useEffect의 콜백 함수는 기본적으로 최초의 랜더링 과정에서만 한 번 실행되고 그 뒤로는 다시 실행되지 않는다.
+
+- 만일 콜백 함수를 특정 조건에서 실행할 수 있도록 하려면, useEffect의 두 번째 인자에 들어가는 의존성 배열을 활용하면 된다.
+
+  ```js
+  useEffect(콜백 함수, 의존성 배열);
+  ```
+
+<br/>
+
+-
+
+<br/>
+
+- 이를 통해 React에서 Side Effect를 발생시키기 위한 두 번째 조건인 '필요할 때만 Side Effect가 조건부로 실행되도록 해주어야 한다'는 것이 useEffect를 통해 만족될 수 있음을 알 수 있다.
+
+<br/><br/>
+
+## Clean Up Effect
