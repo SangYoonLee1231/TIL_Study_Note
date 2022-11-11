@@ -8,8 +8,8 @@
 
 - <a href="">상수 데이터란?</a>
 - <a href="">상수 데이터 활용하기</a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="">Mock Data란?</a>
+- <a href=""><code>fetch</code> 매서드</a>
 
 <br/><br/>
 
@@ -19,7 +19,9 @@
 
 - React에서 데이터는 UI이다.
 
-- 시간이 흐르면서 변하는 변수 데이터로 UI를 만들 땐 백엔드 서버에서 데이터를 받아와야 한다.
+<br/>
+
+- 시간이 흐름에 따라 변하는 변수 데이터로 UI를 만들 땐 백엔드 서버에서 데이터를 받아와야 한다.
 
 - 반면 변하지 않는 상수 데이터로 UI를 만들 땐 백엔드 서버에서 데이터를 받아올 필요가 없다.
 
@@ -54,7 +56,7 @@ const App = () => {
 
 - 반복되는 UI 구조는 상수 데이터와 map 매서드를 활용해 간결히 나타낼 수 있다.
 
-- 이렇게 할 경우, 상수 데이터를 추가되거나 삭제하려면 JSX를 건드릴 필요 없이 상수 데이터 값에만 변화를 주면 된다.
+- 이렇게 할 경우, 상수 데이터를 추가하거나 삭제하려면 JSX를 건드릴 필요 없이 상수 데이터 값만 바꾸면 된다.
 
 <br/>
 
@@ -95,11 +97,11 @@ export const MENU_LIST = [
 
 - 프론트엔드 개발자가 필요에 의해 백엔드 API처럼 만든 UI (흉내낸) 데이터이다.
 
-- 그렇기 때문에, API의 구조를 확인한 후 Mock Data를 만들어야 한다.
+- 그렇기 때문에, Mock Data를 만들 땐 API의 구조를 우선 확인해야 한다.
 
-  (API의 key-value를 확인한다. 그 후 json 파일에 Mock Data를 만든다.)
+  (API의 key-value를 확인한다. 그 후 json 확장자 명으로 Mock Data를 만든다.)
 
-- 생성한 Mock Data는 public 폴더 하위의 data 폴더에서 관리한다.
+- 생성한 Mock Data는 <code>public</code> 폴더 하위의 <code>data</code> 폴더에서 관리한다.
 
 <br/>
 
@@ -107,17 +109,17 @@ export const MENU_LIST = [
 
 - 백엔드 API가 미완성인 상태에서도 차질없이 개발하기 위해서이다.
 
-- 실제 API가 없어도 API 데이터처럼 UI 랜더링이 가능하다.
+- Mock Data를 쓰면 실제 API가 없더라도 API 데이터처럼 UI 랜더링이 가능해진다.
 
 - API가 완성된 이후에 Mock Data에서 실제 API로 원활한 수정이 가능하다.
 
-<br/>
+<br/><br/>
 
-### <code>fetch</code> 매서드
+## <code>fetch</code> 매서드
 
-- Mock Data를 호출할 때 쓰이는 매서드이다.
+- Mock Data를 만들고 난 후 이를 <strong>호출</strong>할 때 쓰이는 매서드이다.
 
-  (실제 API를 호출할 때도 fetch 매서드를 쓴다.)
+  (실제 API를 호출할 때도 <code>fetch</code> 매서드를 쓴다.)
 
   ```js
   fetch("/data/파일명.json");
@@ -127,4 +129,32 @@ export const MENU_LIST = [
 
   - public 폴더 하위 data 폴더에 Mock Data 파일이 있기 때문에 위와 같이 경로를 적어준다.
 
-- fetch 호출 이후에 then() 매서드를 두 번 호출한다.
+<br/>
+
+### Step 1. Mock Data 받아 state에 저장하기
+
+- fetch 호출 이후에 <code>then()</code> 매서드를 두 번 호출한다.
+
+  ```js
+  fetch("/data/파일명.json")
+    .then(response -> response.json())
+    .then(result => setState(result));
+  ```
+
+  - 첫 번째 <code>.then</code> 매서드에 인자로 callBack을 전달하고 JSON 형태의 데이터가 들어온다. 이 데이터를 자바스크립트 형태로 변환하고 반환한다.
+
+  - 두 번째 <code>.then</code>에서는 인자로 callBack을 전달하고, 매개변수에서는 첫 번째 <code>.then</code>에서 반환된 객체를 result로 받아 setState 함수로 result를 state에 저장한다.
+
+- 이렇게 state에 Mock Data를 저장하고, 언제든 꺼내 쓸 수 있게 되었다.
+
+- 하지만 아직 이를 호출하는 작업은 하지 않았는데, 이를 하기 위해선
+
+<br/>
+
+### Step 2. 받아온 Mock Data 호출하기
+
+- <strong>데이터를 호출하는 시점은 상황에 따라 각기 다르다.</strong>
+
+  - 버튼을 클릭했을 때 UI가 그려져야 하는 경우도 있고, 페이지를 불러올 때 바로 화면에 UI를 그려줘야 하는 경우도 있다.
+
+  - 이 때 전자는 <code>이벤트 함수</code> 내에서, 후자는 <code>useEffect</code> 안에서 fetch 매서드를 호출하면 된다.
