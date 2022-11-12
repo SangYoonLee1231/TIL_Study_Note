@@ -6,14 +6,14 @@
 
 ### 목차
 
-- <a href="">Side Effect란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#side-effect%EB%9E%80">Side Effect란?</a>
 
-- <a href="">Side Effect가 있는 함수</a>
-- <a href="">Side Effect는 기피해야 하는 대상일까?</a>
-- <a href="">React에서의 Side Effect</a>
-- <a href="">React에서 Side Effect의 올바른 발생 시점</a>
-- <a href="">useEffect</a>
-- <a href="">Clean Up Effect</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#side-effect%EA%B0%80-%EC%9E%88%EB%8A%94-%ED%95%A8%EC%88%98">Side Effect가 있는 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#side-effect%EB%8A%94-%EA%B8%B0%ED%94%BC%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EB%8C%80%EC%83%81%EC%9D%BC%EA%B9%8C">Side Effect는 기피해야 하는 대상일까?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#react%EC%97%90%EC%84%9C%EC%9D%98-side-effect">React에서의 Side Effect</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#react%EC%97%90%EC%84%9C-side-effect%EC%9D%98-%EC%98%AC%EB%B0%94%EB%A5%B8-%EB%B0%9C%EC%83%9D-%EC%8B%9C%EC%A0%90">React에서 Side Effect의 올바른 발생 시점</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#useeffect">useEffect</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md#clean-up-effect">Clean Up Effect</a>
 
 <br/><br/>
 
@@ -284,7 +284,7 @@ Side Effect with useEffect
 
 ## Clean Up Effect
 
-- <strong>컴포넌트가 삭제(언마운트)될 때</strong> 어떤 작업을 수행할 수 있도록 한 장치이다.
+- <strong>컴포넌트가 삭제(언마운트)될 때</strong> 특정 작업을 수행할 수 있도록 한 장치이다.
 
 - Side Effect가 불필요하게 계속 남아있으면 프로그램이 비효울적으로 동작하거나 의도에 벗어나게 동작할 수 있다.
 
