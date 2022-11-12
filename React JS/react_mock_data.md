@@ -98,9 +98,9 @@ export const MENU_LIST = [
 
 - 프론트엔드 개발자가 필요에 의해 백엔드 API처럼 만든 UI (흉내낸) 데이터이다.
 
-- 그렇기 때문에, Mock Data를 만들 땐 API의 구조를 우선 확인해야 한다.
+- 그렇기 때문에, Mock Data를 만들 땐 백엔드 API의 구조를 우선적으로 확인해야 한다.
 
-  (API의 key-value를 확인한다. 그 후 json 확장자 명으로 Mock Data를 만든다.)
+  (API의 key-value를 확인한다. 그 후 <code>json</code> 확장자 명으로 Mock Data를 만든다.)
 
 - 생성한 Mock Data는 <code>public</code> 폴더 하위의 <code>data</code> 폴더에서 관리한다.
 
@@ -108,7 +108,7 @@ export const MENU_LIST = [
 
 ### Mock Data를 쓰는 이유
 
-- 백엔드 API가 미완성인 상태에서도 차질없이 개발하기 위해서이다.
+- 백엔드 API가 미완성인 상태에서도 차질없이 개발을 진행하기 위해서이다.
 
 - Mock Data를 쓰면 실제 API가 없더라도 API 데이터처럼 UI 랜더링이 가능해진다.
 
@@ -126,15 +126,15 @@ export const MENU_LIST = [
   fetch("/data/파일명.json");
   ```
 
-  - 파일의 경로는 public 폴더를 기준으로 적는다.
+  - 파일의 경로는 <code>public</code> 폴더를 기준으로 적는다.
 
-  - public 폴더 하위 data 폴더에 Mock Data 파일이 있기 때문에 위와 같이 경로를 적어준다.
+  - <code>public</code> 폴더 하위 <code>data</code> 폴더에 Mock Data 파일이 있기 때문에 위와 같이 경로를 적어준다.
 
 <br/>
 
 ### Step 1. Mock Data 받아 state에 저장하기
 
-- fetch 호출 이후에 <code>then()</code> 매서드를 두 번 호출한다.
+- <code>fetch</code> 호출 이후에 <code>then()</code> 매서드를 두 번 호출한다.
 
   ```js
   fetch("/data/파일명.json")
@@ -142,13 +142,13 @@ export const MENU_LIST = [
     .then(result => setState(result));
   ```
 
-  - 첫 번째 <code>.then</code> 매서드에 인자로 callBack을 전달하고 JSON 형태의 데이터가 들어온다. 이 데이터를 자바스크립트 형태로 변환하고 반환한다.
+  - 첫 번째 <code>.then</code> 매서드에 인자로 callBack을 전달하고 <strong>JSON 형태</strong>의 데이터가 들어온다. 이 데이터를 <strong>자바스크립트 형태로 변환</strong>하고 반환한다.
 
-  - 두 번째 <code>.then</code>에서는 인자로 callBack을 전달하고, 매개변수에서는 첫 번째 <code>.then</code>에서 반환된 객체를 result로 받아 setState 함수로 result를 state에 저장한다.
+  - 두 번째 <code>.then</code>에서는 인자로 callBack을 전달하고, 매개변수에서는 첫 번째 <code>.then</code>에서 반환된 객체를 result로 받아 <code>setState</code> 함수로 <strong>result를 state에 저장</strong>한다.
 
-- 이렇게 state에 Mock Data를 저장하고, 언제든 꺼내 쓸 수 있게 되었다.
+- 이렇게 하면 state에 Mock Data를 저장하고, 언제든 꺼내 쓸 수 있게 되었다.
 
-- 하지만 아직 이를 호출하는 작업은 하지 않았는데, 이를 하기 위해선
+- 하지만 아직 이를 호출하는 작업은 하지 않았는데, 이는 상황에 맞춰 진행하면 된다.
 
 <br/>
 
