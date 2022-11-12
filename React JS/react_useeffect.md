@@ -1,14 +1,19 @@
 # React JS - Side Effect와 useEffect
 
-> 참고 자료 : 부트캠프 학습 자료
+> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료
 
 <br/>
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="">Side Effect란?</a>
+
+- <a href="">Side Effect가 있는 함수</a>
+- <a href="">Side Effect는 기피해야 하는 대상일까?</a>
+- <a href="">React에서의 Side Effect</a>
+- <a href="">React에서 Side Effect의 올바른 발생 시점</a>
+- <a href="">useEffect</a>
+- <a href="">Clean Up Effect</a>
 
 <br/><br/>
 
@@ -26,7 +31,7 @@
 
 ### 프로그래밍에서 Side Effect (부작용) 란?
 
-- 코드가 의도한 주된 효과 외에 <strong>추가적으로 발생하는 효과</strong>
+- 코드가 의도한 주된 효과 외에 <strong>추가적으로 발생하는 부수 효과</strong>
 
 - 특히 프로그램을 구성하는 가장 작은 단위인 <strong>함수</strong>에서 자주 사용되는 용어
 
@@ -99,15 +104,15 @@ const changeTitle = (newTitle) => {
 
 ## Side Effect는 기피해야 하는 대상일까?
 
-- 프로그래밍에서 Side Effect는 기피해야 하는 대상이다. 그 이유는..
+- <strong>프로그래밍에서 Side Effect는 기피해야 하는 대상</strong>이다. 그 이유는..
 
   - Side Effect가 있는 함수는 동작 결과를 예측하기 어렵게 만든다.
 
   - 이는 곧 프로그래밍이 어떻게 동작할 지 예측하기 힘들게 만들어 유지 보수의 어려움도 야기한다.
 
-- 하지만 프로그래밍에서 외부의 값을 읽어오거나 변경하는 행위를 완전히 무시할 순 없다. 오히려 프로그래밍에 반드시 있어야 하는 동작이다.
+- 하지만 프로그래밍에서 외부의 값을 읽어오거나 변경하는 행위를 <strong>완전히 무시할 순 없다.</strong> 오히려 프로그래밍에 반드시 있어야 하는 동작이다.
 
-- 따라서 개발자들은 Side Effect를 최소화하면서 프로그램을 설계하되, Side Effect를 적재적소에 사용하고 통제할 수 있도록 하여, 관리 시 예측 가능하고 유지 보수하기 쉬운 프로그램을 만들어야 한다.
+- <strong>따라서 개발자들은 Side Effect를 최소화하면서 프로그램을 설계하되, Side Effect를 적재적소에 사용하고 통제할 수 있도록 하여, 관리 시 예측 가능하고 유지 보수하기 쉬운 프로그램을 만들어야 한다.</strong>
 
 <br/><br/>
 
@@ -133,11 +138,11 @@ const changeTitle = (newTitle) => {
 
 - React에서 함수 컴포넌트의 Side Effect는 함수 컴포넌트의 본질적인 역할 외 모든 행위를 의미한다.
 
-  - Data Fetching
+  - <strong>Data Fetching</strong>
 
-  - DOM 접근 및 조작
+  - <strong>DOM 접근 및 조작</strong>
 
-  - 구독 (Subscribe)
+  - <strong>구독 (Subscribe)</strong>
 
 <br/>
 
@@ -165,7 +170,7 @@ const changeTitle = (newTitle) => {
 
 - 개발에서 구독을 활용하는 보편적 예시는 "시간을 구독하는 것"이다.
 
-- 시간은 계속해서 변하기에, 특정 시간이 지났을 때 액션을 취하거나(<code>setTimeout</code> 매서드), 특정 시간 주기마다 액션을 취하는(<code>setInterval</code> 매서드) 등의 행위를 시간을 구독함으로서 구현할 수 있다.
+- 시간은 계속해서 변하기에, 특정 시간이 지났을 때 액션을 취하거나(<code>setTimeout</code> 매서드), 특정 시간 주기마다 액션을 취하는(<code>setInterval</code> 매서드) 등의 행위는 시간을 구독함으로서 구현할 수 있다.
 
 - 이 또한 외부의 값의 변화를 계속해서 관찰하고 거기에 맞춰 동작을 하는 것이기에 Side Effect이다.
 
@@ -260,7 +265,16 @@ Side Effect with useEffect
 
 <br/>
 
--
+- <strong>useEffect의 동작 방식</strong>
+
+  - 첫 번째 렌더링 이후에는 무조건 useEffect에 전달된 콜백 함수를 호출하고, 다음 렌더링부터는 아래의 조건에 따라 동작한다.
+
+    1. 의존성 배열이 전달되지 않았다면 매 렌더링마다 콜백 함수를 호출한다.
+
+    2. 의존성 배열이 전달되었다면 의존성 배열의 값을 검사한다.
+
+    - a. 의존성 배열에 있는 값 중 하나라도 이전 렌더링과 비교했을 때 달라졌다면 콜백 함수를 호출한다.
+    - b. 의존성 배열에 있는 값이 이전 렌더링과 비교했을 때 모두 동일하다면 콜백 함수를 호출하지 않는다.
 
 <br/>
 
@@ -269,3 +283,49 @@ Side Effect with useEffect
 <br/><br/>
 
 ## Clean Up Effect
+
+- <strong>컴포넌트가 삭제(언마운트)될 때</strong> 어떤 작업을 수행할 수 있도록 한 장치이다.
+
+- Side Effect가 불필요하게 계속 남아있으면 프로그램이 비효울적으로 동작하거나 의도에 벗어나게 동작할 수 있다.
+
+- 따라서 이러한 Side Effect는 반드시 Clean Up을 해주어야 한다.
+
+<br/>
+
+```js
+function Hello() {
+  function byFn() {
+    console.log("byebye");
+  }
+
+  function hiFn() {
+    console.log("hello");
+    return byFn;
+  }
+
+  useEffect(hiFn, []);
+
+  return <h1>Hello</h1>;
+}
+```
+
+```js
+const Hello = () => {
+  useEffect(() => {
+    console.log("hello");
+    return () => console.log("byebye");
+  }, []);
+
+  return <h1>Hello</h1>;
+};
+```
+
+- 만일 <code>Hello</code> 컴포넌트가 사라지면, useEffect 콜백 함수 <code>hiFn</code>의 반환 함수인 <code>byFn</code>이 실행된다.
+
+<br/>
+
+- <strong>useEffect에서 Clean Up 함수가 호출되는 조건</strong>
+
+  - 다음 Side Effect를 발생하기 전
+
+  - 컴포넌트가 Unmount될 때

@@ -99,6 +99,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md">React JS - SPA & Routing</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md">React JS - Hook & State & Props</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md">React JS - Side Effect와 useEffect</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/react_piece_info.md">React - 조각 지식 모음</a>
 <!-- - <a href=""></a> -->
 
 ### ◻ Node JS & NPM

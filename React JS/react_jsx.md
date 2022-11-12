@@ -1,6 +1,6 @@
 # React JS - JSX와 컴포넌트 (Component)
 
-> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>
+> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료
 
 <br/>
 
@@ -45,18 +45,18 @@
     <script>
       const text = document.getElementById("text");
       const button = document.getElementById("btn");
-      
+
       text.id = "title";
       button.style.backgroundColor = "tomato";
-      
+
       function handleClick() {
         console.log("i clicked");
       }
-      
+
       function handleMouseEnter() {
         console.log("mouse enter");
       }
-      
+
       button.addEventListener("click", handleClick);
       text.addEventListener("mouseenter", handleMouseEnter);
     </script>
@@ -77,7 +77,7 @@
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
     <script>
       const root = document.getElementById("root");
-      
+
       const title = React.createElement(
         "h3",
         {
@@ -86,7 +86,7 @@
         },
         "Hello. I'm a title."
       );
-      
+
       const btn = React.createElement(
         "button",
         {
@@ -97,7 +97,7 @@
         },
         "Click Me"
       );
-      
+
       const container = React.createElement("div", null, [h3, btn]);
       ReactDOM.render(container, root);
     </script>
@@ -115,7 +115,7 @@
 - 하지만 <code>createElement</code>를 사용한 위 두 방법보다 <strong>더 편리하게</strong> HTML 요소를 만들어 넣는 방법이 있다.
 
   => <strong>JSX</strong>
-  
+
 <br/><br/>
 
 ### 참고 : Vanila JS로 <code>React.createElement()</code> 직접 구현하기
@@ -135,19 +135,20 @@ function createElement(tagName, ...children) {
 
 // 구현한 createElement 함수 활용법
 
-document.getElementById('app').appendChild(
-  createElement(
-    'div',
+document
+  .getElementById("app")
+  .appendChild(
     createElement(
-      'p',
-      ...['!!!', '!!!!!'].map((c) => document.createTextNode(`Hello World${c}`)),
-    ),
-    createElement(
-      'p',
-      document.createTextNode('Hi!!!'),
-    ),
-  ),
-);
+      "div",
+      createElement(
+        "p",
+        ...["!!!", "!!!!!"].map((c) =>
+          document.createTextNode(`Hello World${c}`)
+        )
+      ),
+      createElement("p", document.createTextNode("Hi!!!"))
+    )
+  );
 ```
 
 <br/><br/><br/>
@@ -162,7 +163,7 @@ document.getElementById('app').appendChild(
 
 <br/>
 
-- <strong>JavaScript 정식 문법은 아니기 때문에 브라우저에서 이를 해석할 수 없다.</strong>  
+- <strong>JavaScript 정식 문법은 아니기 때문에 브라우저에서 이를 해석할 수 없다.</strong>
 
   따라서 <strong>Babel</strong> 변역기로 이를 <code>React.createElement()</code> 함수로 변환하는 과정이 반드시 필요하다.
 
@@ -197,9 +198,10 @@ document.getElementById('app').appendChild(
       return <h1>Hello {name}</h1>;
     }
     ```
+
     ```js
     function App() {
-      return <h1>Hello {() => ("이코딩")}</h1>;
+      return <h1>Hello {() => "이코딩"}</h1>;
     }
     ```
 
@@ -437,7 +439,7 @@ document.getElementById('app').appendChild(
 
     - <code>npm i -D babel-loader</code> : Webpack에서 Babel을 쓸 수 있도록 도와줌
     - <code>webpack.config.js</code> 파일 : webpack 설정 파일
-    - <code>npm i -D @babel/core</code> 
+    - <code>npm i -D @babel/core</code>
     - <code>npm i -D @babel/preset-env @babel/preset-react</code>
 
   <br/>
@@ -446,42 +448,42 @@ document.getElementById('app').appendChild(
 
     - <code>webpack.config.js</code>
 
-        ```javascript
-        module.exports = {
-            mode: 'development',
-            module: {
-                rules: [{
-                    test: /\.(js|jsx)?$/,
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
-                    },
-                }],
+      ```javascript
+      module.exports = {
+        mode: "development",
+        module: {
+          rules: [
+            {
+              test: /\.(js|jsx)?$/,
+              loader: "babel-loader",
+              options: {
+                presets: ["@babel/preset-env", "@babel/preset-react"],
+              },
             },
-            resolve: { extensions: ['.js', '.jsx'] },
-        };
-
-        ```
+          ],
+        },
+        resolve: { extensions: [".js", ".jsx"] },
+      };
+      ```
 
     - <code>babel.config.js</code>
 
-        ```javascript
-        module.exports = {
-            presets:
-            [
-                [
-                    '@babel/preset-env',
-                    {
-                        targets: {
-                            node: 'current',
-                            chrome: '79',
-                        },
-                    },
-                ],
-                '@babel/preset-react',
-            ],
-        };
-        ```
+      ```javascript
+      module.exports = {
+        presets: [
+          [
+            "@babel/preset-env",
+            {
+              targets: {
+                node: "current",
+                chrome: "79",
+              },
+            },
+          ],
+          "@babel/preset-react",
+        ],
+      };
+      ```
 
 <br/><br/><br/>
 
