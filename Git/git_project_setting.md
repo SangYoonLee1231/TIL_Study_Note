@@ -6,12 +6,12 @@
 
 ### 목차
 
-- <a href="">0. 사전 작업</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#0-%EC%82%AC%EC%A0%84-%EC%9E%91%EC%97%85">0. 사전 작업</a>
 
-- <a href="">1. CRA 패키지 설치</a>
-- <a href="">2. Third-Party Library Setting</a>
-- <a href="">3. 폴더 구조 생성 (폴더 및 파일 구성) 및 <code>.gitignore</code> 세팅</a>
-- <a href="">4. 초기 세팅 완료 후 원격 저장소로 push</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#1-cra-%ED%8C%A8%EC%BA%90%EC%A7%80-%EC%84%A4%EC%B9%98">1. CRA 패키지 설치</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#2-third-party-library-setting">2. Third-Party Library Setting</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#3-%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0-%EC%83%9D%EC%84%B1-%ED%8F%B4%EB%8D%94-%EB%B0%8F-%ED%8C%8C%EC%9D%BC-%EA%B5%AC%EC%84%B1-%EB%B0%8F-gitignore-%EC%84%B8%ED%8C%85">3. 폴더 구조 생성 (폴더 및 파일 구성) 및 <code>.gitignore</code> 세팅</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#4-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EC%99%84%EB%A3%8C-%ED%9B%84-%EC%9B%90%EA%B2%A9-%EC%A0%80%EC%9E%A5%EC%86%8C%EB%A1%9C-push">4. 초기 세팅 완료 후 원격 저장소로 push</a>
 
 <br/><br/>
 
