@@ -90,6 +90,62 @@ export default ListItem;
 
 <br/>
 
+#### [22.11.18] 슬라이더를 리엑트로 구현하였는데, 처음에 시간 간격에 따라 페이지가 이동할 때 화면에 사진이 사라지는 문제
+
+- <strong>원인</strong> : <code>slideLength</code> 값 ( === <code>sliderData.length</code>)에 정상적으로 값이 나오지 않고 0이 찍힌다.
+
+  - 0이 찍힌 이유는 useState 문제인 줄 알았는데, 아니었던 것 같다. 정확한 원인을 파악하지 못한 채 문제 해결
+
+  - 다음 부터는 문제가 발생하면 해결하기 전에 미리 문제 상황을 잘 기록해두자..
+
+- <strong>해결</strong> : 선행되는 데이터는 상단에 미리 작성하기, useEffect의 의존성 배열에 <code>auto</code> 함수 삽입
+
+  ```js
+  const PromotionSlide = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [sliderData, setSliderData] = useState([]);
+    const slideLength = sliderData.length;
+
+    useEffect(() => {
+      fetch("/data/sliderData.json", {
+        method: "GET",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setSliderData(data);
+        });
+    }, []);
+
+    useEffect(() => {
+      setCurrentSlide(0);
+    }, []);
+
+    const auto = () => {
+      slideInterval = setInterval(nextSlide, intervalTime);
+    };
+
+    let slideInterval = null;
+    let intervalTime = 5500;
+
+    useEffect(() => {
+      auto();
+      return () => clearInterval(slideInterval);
+    }, [auto, currentSlide, slideInterval]);
+
+    const nextSlide = () => {
+      setCurrentSlide((currentSlide + 1) % slideLength);
+    };
+
+    const prevSlide = () => {
+      setCurrentSlide((currentSlide - 1 + 4) % slideLength);
+    };
+
+    return (...);
+  };
+  ```
+
+<br/>
+
 <!-- #### (문제) [22.00.00(날짜)]
 
 - <strong>원인</strong> :

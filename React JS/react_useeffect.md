@@ -220,6 +220,8 @@ const changeTitle = (newTitle) => {
   useEffect(콜백 함수);
   ```
 
+- <strong>하나의 useEffect에 하나의 Side Effect를 담는 것이 좋다.</strong> (관리 용이, 가독성 ↑)
+
 <br/>
 
 ### useEffect는 (Side Effect를 발생시키는) 콜백 함수를 랜더링 이후 실행시킨다.

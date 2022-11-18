@@ -80,7 +80,6 @@ $ npm install -D stylelint stylelint-scss stylelint-config-prettier-scss
 
 # 3. 추가 config 패키지 설치 (recommended rules, smacss property sort order)
 $ npm install -D stylelint-config-recommended-scss stylelint-config-property-sort-order-smacss
-
 ```
 
 <br/>
