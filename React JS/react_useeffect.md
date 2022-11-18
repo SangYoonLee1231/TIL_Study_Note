@@ -220,7 +220,7 @@ const changeTitle = (newTitle) => {
   useEffect(콜백 함수);
   ```
 
-- <strong>하나의 useEffect에 하나의 Side Effect를 담는 것이 좋다.</strong> (관리 용이, 가독성 ↑)
+- <strong>하나의 useEffect엔 하나의 Side Effect만을 담는 것이 좋다.</strong> (관리 용이, 가독성 ↑)
 
 <br/>
 
