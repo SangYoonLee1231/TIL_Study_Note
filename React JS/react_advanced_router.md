@@ -157,3 +157,7 @@
 
   export default Detail;
   ```
+
+<br/><br/>
+
+## Query String (쿼리 스트링)
