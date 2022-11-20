@@ -105,7 +105,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md">React JS - Side Effect와 useEffect</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md">React JS - 상수 데이터 & Mock Data</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_component_reuse.md">React JS - Component의 분리와 재사용 (관심사의 분리)</a>
-- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/react_piece_info.md">React - 조각 지식 모음</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/advanced_router.md">React JS - Dynamic Routing & Query String</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_piece_info.md">React - 조각 지식 모음</a>
 <!-- - <a href=""></a> -->
 
 ### ◻ Node JS & NPM
