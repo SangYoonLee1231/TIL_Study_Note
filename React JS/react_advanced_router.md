@@ -6,13 +6,13 @@
 
 ### 목차
 
-- <a href="">Dynamic Routing (동적 라우팅)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md#dynamic-routing-%EB%8F%99%EC%A0%81-%EB%9D%BC%EC%9A%B0%ED%8C%85">Dynamic Routing (동적 라우팅)</a>
 
-- <a href=""><code>useParams</code> Hook</a>
-- <a href="">Query String (쿼리 스트링)</a>
-- <a href=""><code>react-router-dom</code>에서 쿼리 스트링의 사용</a>
-  - <a href=""><code>useLocation</code> Hook</a>
-  - <a href=""><code>useSearchParams</code> Hook</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md#useparams-hook"><code>useParams</code> Hook</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md#query-string-%EC%BF%BC%EB%A6%AC-%EC%8A%A4%ED%8A%B8%EB%A7%81">Query String (쿼리 스트링)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md#react-router-dom%EC%97%90%EC%84%9C-%EC%BF%BC%EB%A6%AC-%EC%8A%A4%ED%8A%B8%EB%A7%81%EC%9D%98-%EC%82%AC%EC%9A%A9"><code>react-router-dom</code>에서 쿼리 스트링의 사용</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md#uselocation-hook"><code>useLocation</code> Hook</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md#usesearchparams-hook"><code>useSearchParams</code> Hook</a>
 
 <br/><br/>
 
@@ -107,6 +107,8 @@
   - <strong>value</strong> : Route에서 설정한 path paramenter에 실제로 전달된 값
 
     - <code>/post/:id</code>로 path를 설정했을 때, 유저가 <code>/post/1</code>로 접속할 경우 <code>useParams</code>가 반환하는 객체의 <strong>key</strong>는 <code>id</code>이고, <strong>value</strong>는 <code>1</code>이다.
+
+    <br/>
 
   ```js
   // src/Router.js
@@ -268,7 +270,7 @@
 
 - <code>searchParams.set(key, value)</code> : 인지로 전달한 key값을 인자로 전달한 value로 덮어씌우는 메소드
 
-  - <code>?sort=popular&sort=latest</code> 의 경우  
+  - <code>"?sort=popular&sort=latest"</code> 의 경우  
     <code>searchParams.set("sort", "clear")</code> 호출 시  
     <code>searchParams.toString()</code>의 리턴값 : <code>"?sort=clear"</code>
 
@@ -276,7 +278,7 @@
 
 - <code>searchParams.append(key, value)</code> : 인지로 전달한 key값을 인자로 전달한 value로 추가하는 매소드 (기존 값은 수정하지 않음)
 
-  - <code>?sort=popular&sort=latest</code> 의 경우  
+  - <code>"?sort=popular&sort=latest"</code> 의 경우  
     <code>searchParams.set("sort", "clear")</code> 호출 시  
     <code>searchParams.toString()</code>의 리턴값 : <code>"?sort=clear"</code>
 
