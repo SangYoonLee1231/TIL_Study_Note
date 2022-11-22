@@ -11,7 +11,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md#%EC%83%81%EC%88%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">상수 데이터 활용하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md#mock-data%EB%9E%80">Mock Data란?</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md#fetch-%EB%A7%A4%EC%84%9C%EB%93%9C"><code>fetch</code> 매서드</a>
-- <a href=""><code>fetch</code> 매서드 심화</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md#fetch-%EB%A7%A4%EC%84%9C%EB%93%9C-%EC%8B%AC%ED%99%94"><code>fetch</code> 매서드 심화</a>
 
 <br/><br/>
 
