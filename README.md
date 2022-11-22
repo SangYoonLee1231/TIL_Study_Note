@@ -23,8 +23,6 @@
 
 ---
 
-#### 🚨📒 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ERROR/error_readme.md">ERROR NOTE (마주했던 에러 해결 기록) (From. Nov 2022)</a>
-
 <br/>
 
 ## 📌 기본 언어
