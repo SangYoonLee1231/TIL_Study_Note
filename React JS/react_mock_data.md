@@ -102,7 +102,40 @@ export const MENU_LIST = [
 
   (API의 key-value를 확인한다. 그 후 <code>json</code> 확장자 명으로 Mock Data를 만든다.)
 
+<br/>
+
 - 생성한 Mock Data는 <code>public</code> 폴더 하위의 <code>data</code> 폴더에서 관리한다.
+
+  - Mock Data는 서버에서 받아올 데이터의 모조 데이터이므로로컬 서버에서 받아오도록 구현해야 한다.
+
+  - 그렇기 때문에 npm start 시 로컬 서버에 올려지는 폴더인 <code>public</code> 폴더의 하위에서 관리해야 한다.
+
+<br/>
+
+### Mock Data의 구조
+
+- Mock Data 에시
+
+  ```json
+  // public/data/recommendData.json
+
+  [
+    {
+      "id": 1,
+      "name": "[돈마루] 한돈 삼겹살 2종 (냉장)",
+      "discount_rate": 5,
+      "discounted_price": 12967,
+      "original_price": 13650,
+      "is_sold_out": false
+    },
+    {
+      "id": 2,
+      "name": "엔다이브 2~3입",
+      ...
+    },
+  ...
+  ]
+  ```
 
 <br/>
 
@@ -159,3 +192,55 @@ export const MENU_LIST = [
   - 버튼을 클릭했을 때 UI가 그려져야 하는 경우도 있고, 페이지를 불러올 때 바로 화면에 UI를 그려줘야 하는 경우도 있다.
 
   - 이 때 전자는 <code>이벤트 함수</code> 내에서, 후자는 <code>useEffect</code> 안에서 fetch 매서드를 호출하면 된다.
+
+<br/><br/>
+
+## <code>fetch</code> 매서드 심화
+
+- <code>fetch</code> 매서드의 두 번째 인자로 options 객체를 줄 수 있다.
+
+  ```js
+  fetch(url, options)
+    .then(response => response.json())
+    .then(result => /* 결과 처리 */)
+  ```
+
+  ```js
+  fetch("/data/sliderData.json", {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      setSliderData(data);
+    });
+  ```
+
+<br/>
+
+- options 객체에는 HTTP 방식(method), HTTP 요청 헤더(headers), HTTP 요청 전문(body) 등을 설정해줄 수 있다.
+
+  - <strong>method (HTTP 방식)</strong>
+
+    - GET 호출 : 서버(원격 API)에서 데이터 수신
+
+    - POST 호출 : 서버(원격 API)로 데이터 전송, 원격 API에서 관리하고 있는 데이터 생성
+
+    - PUT, DELETE 호출 : 서버에 요청, 원격 API에서 관리하는 데이터의 수정 또는 삭제
+
+  - <strong>headers (HTTP 요청 헤더)</strong>
+
+    - fetch에 요청 헤더를 설정
+
+    - 사용자 Access Token과 같은 메타 데이터를 담아 전송
+
+  - <strong>body (HTTP 요청 전문)</strong>
+
+    - JSON 문자열이나 FormData 객체와 같은 데이터를 본문에 담아 전송
+
+<br/>
+
+- 응답(response) 객체로 부터는 HTTP 응답 상태(status), HTTP 응답 헤더(headers), HTTP 응답 전문(body) 등을 읽어올 수 있다.
+
+<br/>
+
+<img src="img/fetch_option.png" width="700">
