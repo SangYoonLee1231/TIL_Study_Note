@@ -1,4 +1,4 @@
-# React JS - 상수 데이터 & Mock Data
+# React JS - 상수 데이터 & Mock Data + <code>fetch</code> 매소드
 
 > 참고 자료 : 부트캠프 학습 자료
 
