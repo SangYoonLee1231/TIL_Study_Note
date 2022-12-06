@@ -185,7 +185,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md">Git - CRA를 통해 (팀) 프로젝트 세팅하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_conflict.md">Git - 깃으로 Branch (브랜치) 생성하여 협업하기 심화 (+ 오류 해결하기)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_peer_review.md">Git - Peer Review</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_rebase">Git - Rebase를 통해 커밋 하나로 압축하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_rebase.md">Git - Rebase를 통해 커밋 하나로 압축하기</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md">Git - 조각 지식 모음</a>
 
 ### ◻ 아두이노 (Arduino)
