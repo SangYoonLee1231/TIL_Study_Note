@@ -10,10 +10,10 @@
 
 ### 목차
 
-- <a href="">화살표 함수 (array function)</a>
-- <a href=""><code>forEach</code> 메서드</a>
-- <a href=""><code>filter</code> 메세드</a>
-- <a href=""><code>map</code> 메세드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-array-function">화살표 함수 (array function)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md#foreach-%ED%95%A8%EC%88%98"><code>forEach</code> 메서드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md#filter-%ED%95%A8%EC%88%98"><code>filter</code> 메세드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md#map-%ED%95%A8%EC%88%98"><code>map</code> 메세드</a>
 
 <br/><br/>
 
@@ -162,10 +162,6 @@
 - 새로운 배열을 반환해주므로, <strong>이를 변수에 할당해주어야 사용할 수 있다.</strong>
 
   - 어딘가에 할당해주지 않고 <code>newArr.map((item) => Number(item));</code> 이런 식으로만 쓴다면 아무 일도 일어나지 않는다.
-
-<br/>
-
-- <storng>코드 예시</storng>
 
   ```js
   let array = [ '1', '1', '1\r' ];
