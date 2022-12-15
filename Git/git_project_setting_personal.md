@@ -1,103 +1,61 @@
-# Git - CRA를 통해 (팀) 프로젝트 초기 세팅하기
+# Git - (CRA 없이) 개인 프로젝트 직접 세팅하기
 
-> 참고 자료 : 공식 문서, 부트캠프 학습 자료
+> 참고 자료 : 부트캠프 및 온라인 교육 학습 자료
 
 <br/>
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#0-%EC%82%AC%EC%A0%84-%EC%9E%91%EC%97%85">0. 사전 작업</a>
+- 패키지 설치 + 설정 순서
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#1-cra-%ED%8C%A8%EC%BA%90%EC%A7%80-%EC%84%A4%EC%B9%98">1. CRA 패키지 설치</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#2-third-party-library-setting">2. Third-Party Library Setting</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#3-%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0-%EC%83%9D%EC%84%B1-%ED%8F%B4%EB%8D%94-%EB%B0%8F-%ED%8C%8C%EC%9D%BC-%EA%B5%AC%EC%84%B1-%EB%B0%8F-gitignore-%EC%84%B8%ED%8C%85">3. 폴더 구조 생성 (폴더 및 파일 구성) 및 <code>.gitignore</code> 세팅</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md#4-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EC%99%84%EB%A3%8C-%ED%9B%84-%EC%9B%90%EA%B2%A9-%EC%A0%80%EC%9E%A5%EC%86%8C%EB%A1%9C-push">4. 초기 세팅 완료 후 원격 저장소로 push</a>
-
-<br/><br/>
-
-## 0. 사전 작업
-
-- 프로젝트를 진행할 공용 레포지토리를 깃허브에 생성한다.
-
-- 팀원 한 명이 대표로 초기 세팅을 진행하기 위해, 생성한 공용 레포지토리를 자신의 로컬 저장소와 연결한다.
-
-  - 명령어 : <code>git remote add origin [원격저장소 URL]</code>
-
-<br/>
-
-- 그 후 로컬 저장소에 아래의 과정에 따라 초기 세팅을 진행하면 된다.
+  - <a href="">NPM 초기화</a>
+  - <a href="">React 설치 (+ Router 설치)</a>
+  - <a href="">스타일링 패키지 설치</a> (SASS or styled-components)
+  - <a href="">ESLint / Prettier / Stylelint 추천 세팅</a>
+  - <a href="">폴더 구조 생성 (폴더 및 파일 구성)</a>
+  - <a href=""><code>.gitignore</code> 세팅</a>
+  - <a href="">Webpack 설치</a>
+  - <a href="">Babel 설치</a>
+  <!-- - <a href=""></a> -->
 
 <br/><br/><br/>
 
-## 1. CRA 패캐지 설치
+## 패키지 설치 + 설정 순서
 
-- 우선 <code>npx create-react-app [프로젝트명]</code> 명령어를 입력하여 CRA 패키지를 설치한다.
+### NPM 초기화
 
-- 프로젝트 폴더가 생성되면, 이 곳으로 이동한 후 폴더 및 패키지 세팅을 진행한다.
-
-<br/><br/><br/>
-
-## 2. Third-Party Library Setting
-
-- Routing
-
-  - 라우팅 기능을 설치하기 위해, 많이 사용되고 있는 react-router-dom을 설치한다.
-
-    ```
-    npm install react-router-dom
-    ```
-
-<br/>
-
-- Styling
-
-  - 스타일링을 위해, SASS와 styled-components 중 각 프로젝트에 필요한 라이브러리를 선택해 설치한다.
-
-    ```
-    npm install sass
-    ```
-
-    ```
-    npm install styled-components styled-reset
-    ```
+- <code>npm init -y</code> : NPM 프로젝트 생성하여 package.json 생성 (-y : 기본값으로 한 번에 설정)
 
 <br/><br/>
 
-### ESLint / Prettier / Stylelint
+### React 설치 (+ Router 설치)
 
-- VS Code의 Extensions에서 ESLint, Prettier, Stylelint(v1.2.3)를 모두 설치한다.
+- <code>npm install react react-dom</code>
 
-<br/>
+- <code>npm install react-router-dom</code>
 
-#### npm 패키지
+<br/><br/>
 
-```
-# 1. prettier eslint-prettier configuration
-$ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
+### 스타일링 패키지 설치
 
-# 2. stylelint with scss, prettier 패키지 설치
-$ npm install -D stylelint stylelint-scss stylelint-config-prettier-scss
+#### <strong>SASS 사용 시 (+ ESLint / Prettier / Stylelint)</strong>
 
-# 3. 추가 config 패키지 설치 (recommended rules, smacss property sort order)
-$ npm install -D stylelint-config-recommended-scss stylelint-config-property-sort-order-smacss
-```
+- <code>npm install sass</code> : SASS 설치
 
-<br/>
+- <code>npm install -D prettier eslint-config-prettier eslint-plugin-prettier</code> : ESLint + Prettier 설치
+
+- <code>npm install -D stylelint stylelint-scss stylelint-config-prettier-scss</code> : Stylelint 설치
+
+- <code>npm install -D stylelint-config-recommended-scss stylelint-config-property-sort-order-smacss</code> : 추가 config 패키지 설치
+
+  <br/>
 
 - 설치 후 제대로 설치되었는지 확인
 
   ```json
-  // package.json
-
   "eslintConfig": {
-    "extends": "react-app",
-    ...
-  }
-  ```
-
-  ```json
-  // package.json
-
+      "extends": "react-app",
+  },
   "dependencies": {
       "@testing-library/jest-dom": "^5.16.5",
       "@testing-library/react": "^13.4.0",
@@ -121,43 +79,17 @@ $ npm install -D stylelint-config-recommended-scss stylelint-config-property-sor
   },
   ```
 
-  <br/>
+<br/>
 
-- <strong>각 패키지에 대한 설명</strong>
+#### <strong>styled-component 사용 시</strong>
 
-  - prettier
+- <code>npm install styled-components styled-reset</code>
 
-    - ESLint 등 코드 포맷터의 설정에 맞게 코드 스타일을 자동으로 맞춰주기 위해서 사용하는 패키지
-
-  - eslint-config-prettier
-
-    - prettier와 출돌하는 eslint규칙을 비활성화하는 패키지
-
-  - eslint-plugin-prettier
-    - prettier를 eslint 규칙으로 실행하고 차이점을 eslint에게 전달하는 패키지
-  - stylelint
-    - stylelint 사용을 위해 설치해야할 기본 패키지
-  - stylelint-scss
-    - .scss 파일을 linting 하기 위해 설치해야할 패키지
-  - stylelint-config-prettier-scss
-    - prettier와 충돌되는 stylelint규칙을 비활성화하는 패키지
-  - stylelint-config-recommended-scss
-
-    - stylelint에서 표준으로 제공하는 scss규칙 패키지 둘 중 하나 선택하여 설치 recommended가 느슨한 rule
-
-  - stylelint-config-standard-scss
-
-    - standard가 엄격한 rule
-
-  - stylelint-config-property-sort-order-smacss
-
-    - recommended style property sort order를 지원하는 패키지
-
-    - (style property sort order는 smacss, rational, recess 등이 있습니다. 각 팀의 컨벤션에 맞추어 설정해주면 된다)
+- <code>npm install -D prettier eslint-config-prettier eslint-plugin-prettier</code> : ESLint, Prettier 설치
 
 <br/><br/>
 
-### 추천 세팅
+### ESLint / Prettier / Stylelint 추천 세팅
 
 - 다양한 설정파일이 존재할 때에는 차례대로 적용한 뒤 마지막에 적용되는 설정이 최종적으로 적용되기 때문에 settings.json → .editorconfig → .prettierrc 순서로 설정이 적용됩니다. 아래 설정들은 자동으로 포맷팅 하기 위한 최소한의 사항일 뿐이기 때문에 팀 컨벤션에 따라 원하는 옵션을 추가하거나, 빼도 무방합니다. 더 자세한 내용은 공식문서에 잘 나와 있으니 참고해 보세요. settings.json, .eslintrc, .prettierrc, .stylelint 파일을 아래와 같이 프로젝트 루트 폴더에 생성하고 내용을 기입하면, 프로젝트에 한해서, 해당 설정이 우선으로 적용됩니다.
 
@@ -307,17 +239,13 @@ $ npm install -D stylelint-config-recommended-scss stylelint-config-property-sor
 
 <br/><br/><br/>
 
-## 3. 폴더 구조 생성 (폴더 및 파일 구성) 및 <code>.gitignore</code> 세팅
+### 폴더 구조 생성 (폴더 및 파일 구성)
 
 - 폴더 구조 예시
 
   <img src="img/git_project_folder_tree.png">
 
-<br/><br/>
-
-### 각 폴더의 역할
-
-- (준비 중) (<a href="https://study.wecode.co.kr/session/content/301">여기 참고</a>)
+  - 사진에 빠진 내용은 <a href="https://study.wecode.co.kr/session/content/301">여기를 참고</a>
 
 <br/><br/>
 
@@ -349,12 +277,146 @@ yarn-error.log*
 .eslintcache
 ```
 
-<br/><br/><br/>
+<br/><br/>
 
-## 4. 초기 세팅 완료 후 원격 저장소로 push
+### Webpack 설치
 
-- 위의 모든 과정이 끝났으면 원격 저장소로 push한다.
+- <code>npx webpack serve --mode development</code> (모두 설치)
 
-- 다른 팀원들은 각자의 로컬 저장소에서 초기 세팅이 완료된 폴더 구조를 pull 한 후, 각자 맡은 기능에 따른 브랜치를 생성해서 작업을 시작하면 된다.
+- <code>npm install -D webpack-dev-server</code>
 
-- 이제 main 브랜치는 더 이상 커밋을 통해 직접 수정되선 안 되고, 다른 브랜치와의 병합을 통해서만 수정되여야 한다.
+- webpack 서버 띄울 시 경로 설정 바뀌어 있는지 확인 (<code>index.js</code>=><code>index.jsx</code>)
+
+  ```js
+  // webpack.config.js
+  const path = require("path");
+
+  module.exports = {
+    entry: path.resolve(__dirname, "src/index.jsx"),
+    mode: "development",
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          use: "babel-loader",
+        },
+      ],
+    },
+    resolve: {
+      extensions: [".js", ".jsx"],
+    },
+  };
+  ```
+
+- <code>.eslintrs.js</code> 파일 수정
+
+  ```js
+  // .eslintrc.js
+  module.exports = {
+    env: {
+      browser: true,
+      es2021: true,
+      jest: true,
+    },
+    extends: ["plugin:react/recommended", "airbnb"],
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true,
+      },
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
+    plugins: ["react"],
+    globals: {
+      Atomics: "readonly",
+      SharedArrayBuffer: "readonly",
+      actor: "readonly",
+      Feature: "readonly",
+      Scenario: "readonly",
+    },
+    rules: {
+      "linebreak-style": 0,
+      indent: ["error", 2],
+      "no-trailing-spaces": "error",
+      curly: "error",
+      "brace-style": "error",
+      "no-multi-spaces": "error",
+      "space-infix-ops": "error",
+      "space-unary-ops": "error",
+      "no-whitespace-before-property": "error",
+      "func-call-spacing": "error",
+      "space-before-blocks": "error",
+      "keyword-spacing": ["error", { before: true, after: true }],
+      "comma-spacing": ["error", { before: false, after: true }],
+      "comma-style": ["error", "last"],
+      "comma-dangle": ["error", "always-multiline"],
+      "space-in-parens": ["error", "never"],
+      "block-spacing": "error",
+      "array-bracket-spacing": ["error", "never"],
+      "object-curly-spacing": ["error", "always"],
+      "key-spacing": ["error", { mode: "strict" }],
+      "arrow-spacing": ["error", { before: true, after: true }],
+
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-no-bind": "off",
+    },
+  };
+  ```
+
+<br/><br/>
+
+### Babel 설치
+
+- <strong>설치 명령어</strong>
+
+  - <code>npm i -D babel-loader</code> : Webpack에서 Babel을 쓸 수 있도록 도와줌
+  - <code>webpack.config.js</code> 파일 : webpack 설정 파일
+  - <code>npm i -D @babel/core</code>
+  - <code>npm i -D @babel/preset-env @babel/preset-react</code>
+
+<br/>
+
+- <strong>config 설정</strong>
+
+  - <code>webpack.config.js</code>
+
+    ```javascript
+    module.exports = {
+      mode: "development",
+      module: {
+        rules: [
+          {
+            test: /\.(js|jsx)?$/,
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env", "@babel/preset-react"],
+            },
+          },
+        ],
+      },
+      resolve: { extensions: [".js", ".jsx"] },
+    };
+    ```
+
+  - <code>babel.config.js</code>
+
+    ```javascript
+    module.exports = {
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            targets: {
+              node: "current",
+              chrome: "79",
+            },
+          },
+        ],
+        "@babel/preset-react",
+      ],
+    };
+    ```
+
+<br/>
