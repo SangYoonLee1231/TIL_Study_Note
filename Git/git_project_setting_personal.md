@@ -8,14 +8,14 @@
 
 - 패키지 설치 + 설정 순서
 
-  - <a href="">NPM 초기화</a>
-  - <a href="">React 설치 (+ Router 설치)</a>
-  - <a href="">스타일링 패키지 설치</a> (SASS or styled-components)
-  - <a href="">ESLint / Prettier / Stylelint 추천 세팅</a>
-  - <a href="">폴더 구조 생성 (폴더 및 파일 구성)</a>
-  - <a href=""><code>.gitignore</code> 세팅</a>
-  - <a href="">Webpack 설치</a>
-  - <a href="">Babel 설치</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#npm-%EC%B4%88%EA%B8%B0%ED%99%94">NPM 초기화</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#react-%EC%84%A4%EC%B9%98--router-%EC%84%A4%EC%B9%98">React 설치 (+ Router 설치)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98">스타일링 패키지 설치</a> (SASS or styled-components)
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#eslint--prettier--stylelint-%EC%B6%94%EC%B2%9C-%EC%84%B8%ED%8C%85">ESLint / Prettier / Stylelint 추천 세팅</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0-%EC%83%9D%EC%84%B1-%ED%8F%B4%EB%8D%94-%EB%B0%8F-%ED%8C%8C%EC%9D%BC-%EA%B5%AC%EC%84%B1">폴더 구조 생성 (폴더 및 파일 구성)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#gitignore-%EC%84%B8%ED%8C%85"><code>.gitignore</code> 세팅</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#webpack-%EC%84%A4%EC%B9%98">Webpack 설치</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md#babel-%EC%84%A4%EC%B9%98">Babel 설치</a>
   <!-- - <a href=""></a> -->
 
 <br/><br/><br/>
@@ -244,6 +244,8 @@
 - 폴더 구조 예시
 
   <img src="img/git_project_folder_tree.png">
+
+  <br/>
 
   - 사진에 빠진 내용은 <a href="https://study.wecode.co.kr/session/content/301">여기를 참고</a>
 
