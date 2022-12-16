@@ -32,6 +32,10 @@
 
 - <strong><code>"문자열".match(new RegExp(/^[0-9]/))</code></strong> : "문자열"에서 정규표현식 /^[0-9]/에 매칭되는 항목들을 배열로 반환, 매칭되는 항목이 없으면 null을 반환
 
+- <strong><code>"문자열".toUpperCase()</code></strong> : 영어 "문자열"을 모두 대문자로 변환
+
+- <strong><code>"문자열".toLowerCase()</code></strong> : 영어 "문자열"을 모두 소문자로 변환
+
 <br/><br/>
 
 ## 알고리즘 관련 메소드
