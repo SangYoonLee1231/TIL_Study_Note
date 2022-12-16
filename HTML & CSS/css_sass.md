@@ -16,9 +16,9 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-%EB%AC%B8%EB%B2%95">SASS 문법</a>
 
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#nesting">Nesting</a>
+  - <a href="">Nesting, 부모선택자 (&)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B3%80%EC%88%98">변수</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B6%80%EB%AA%A8%EC%84%A0%ED%83%9D%EC%9E%90--mixin--optional-arguments">부모선택자 (&), mixin (+ optional arguments)</a>
+  - <a href="">mixin (+ optional arguments)</a>
 
 <br/><br/>
 
