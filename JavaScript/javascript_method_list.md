@@ -26,6 +26,10 @@
 
 - <strong><code>Math.sqrt(n)</code></strong> : n의 제곱근을 반환
 
+- <strong><code>Math.min(a, b, c)</code></strong> : 인자로 들어온 수들 a, b, c중 최솟값을 반환 (인자의 개수는 상관없다.)
+
+- <strong><code>Math.max(a, b, c)</code></strong> : 인자로 들어온 수들 a, b, c중 최댓값을 반환 (인자의 개수는 상관없다.)
+
 <br/><br/>
 
 ## 문자 관련 메소드
@@ -35,6 +39,8 @@
 - <strong><code>"문자열".toUpperCase()</code></strong> : 영어 "문자열"을 모두 대문자로 변환
 
 - <strong><code>"문자열".toLowerCase()</code></strong> : 영어 "문자열"을 모두 소문자로 변환
+
+- <strong><code>"문자열".substring(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치까지)
 
 <br/><br/>
 
