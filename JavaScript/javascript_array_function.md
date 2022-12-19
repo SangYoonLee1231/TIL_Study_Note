@@ -130,7 +130,7 @@
   ```
 
   ```
-  [1, 2, 4, 5]
+  [ 1, 2, 4, 5 ]
   ```
 
   <br/>
@@ -146,7 +146,7 @@
     ```
 
     ```
-    [4, 5]
+    [ 4, 5 ]
     ```
 
 <br/><br/>
@@ -195,4 +195,24 @@
 
   ```
   0
+  ```
+
+<br/><br/>
+
+## <code>splice</code> 함수
+
+- <code>array.splice(index, n)</code> : 배열의 index 위치부터 n개의 요소를 제거한다. 제거된 부분은 새 배열로 반환된다.
+
+  ```js
+  const array = [0, 1, 2, 3, 4];
+
+  const piece = array.splice(3, 1);
+
+  console.log(piece);
+  console.log(array);
+  ```
+
+  ```
+  [ 3 ]
+  [ 0, 1, 2, 4 ]
   ```

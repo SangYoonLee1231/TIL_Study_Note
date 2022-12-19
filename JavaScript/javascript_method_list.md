@@ -42,7 +42,7 @@
 
 - <strong><code>"문자열".substring(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치까지)
 
-- <strong><code>"문자열".slice(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치까지)
+- <strong><code>"문자열".slice(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치까지) + 음수 인덱스 지원
 
 - <strong><code>"문자열".repeat(n)</code></strong> : 문자열 n회 반복 출력 (ex : "n".repeat(3) => "nnn")
 
