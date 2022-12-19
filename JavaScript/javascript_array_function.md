@@ -65,8 +65,6 @@
 
     - 소괄호는 반환값이 간단할 경우 생략 가능하다.
 
-
-
 <br/><br/>
 
 ## <code>forEach</code> 함수
@@ -164,9 +162,37 @@
   - 어딘가에 할당해주지 않고 <code>newArr.map((item) => Number(item));</code> 이런 식으로만 쓴다면 아무 일도 일어나지 않는다.
 
   ```js
-  let array = [ '1', '1', '1\r' ];
+  let array = ["1", "1", "1\r"];
 
   array = array.map((item) => Number(item));
 
   console.log(array); // [ 1, 1, 1 ]
+  ```
+
+<br/><br/>
+
+## <code>indexOf</code> 함수
+
+- 배열의 특정 요소의 위치를 찾아 그 index 값을 반환해주는 함수이다.
+
+  ```js
+  const array = ["Lee", "Kim", "Park"];
+
+  const location = array.indexOf("Kim");
+  ```
+
+  ```
+  1
+  ```
+
+- 찾으려는 요소가 2개 이상 동일하게 존재하면, 먼저 등장하는 (index 값이 더 작은) 요소의 위치를 반환한다.
+
+  ```js
+  const array = ["Lee", "Kim", "Park", "Lee"];
+
+  const location = array.indexOf("Lee");
+  ```
+
+  ```
+  0
   ```
