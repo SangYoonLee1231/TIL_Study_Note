@@ -40,11 +40,17 @@
 
 - <strong><code>"문자열".toLowerCase()</code></strong> : 영어 "문자열"을 모두 소문자로 변환
 
-- <strong><code>"문자열".substring(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치까지)
+- <strong><code>"문자열".substring(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치 바로 전까지)
 
-- <strong><code>"문자열".slice(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치까지) + 음수 인덱스 지원
+- <strong><code>"문자열".slice(n, m)</code></strong> : 문자열 자르기 (index가 n인 위치부터 m인 위치 바로 전까지) + 음수 인덱스 지원
 
 - <strong><code>"문자열".repeat(n)</code></strong> : 문자열 n회 반복 출력 (ex : "n".repeat(3) => "nnn")
+
+  - n에 소수값이 들어가면 이를 버림하여 정수로 계산된다. (ex: "n".repeat(2.8) => "n".repeat(2) => "nn")
+
+- <strong><code>"문자열".split("문자열")</code></strong> : 문자열을 배열로 나누기 (split 인자의 문자열을 기준으로 분리)
+
+- <strong><code>[배열].join("문자열")</code></strong> : 배열을 문자열로 합치기 (join 인자의 문자열을 배열 각각의 요소 사이에 삽입. default값은 ",")
 
 <br/><br/>
 
