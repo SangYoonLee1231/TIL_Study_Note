@@ -216,3 +216,21 @@
   [ 3 ]
   [ 0, 1, 2, 4 ]
   ```
+
+<br/><br/>
+
+## <code>includes</code> 함수
+
+- <code>array.includes([특정 요소])</code> : 배열에 특정 요소가 있는지에 따라 true/false 값을 반환한다.
+
+  ```js
+  array = [1, 2, 3, 4, 5];
+
+  console.log(array.includes(1));
+  ```
+
+  ```
+  true
+  ```
+
+<br/><br/>
