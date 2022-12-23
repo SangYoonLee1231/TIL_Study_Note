@@ -54,6 +54,12 @@
 
 <br/><br/>
 
+## 배열 관련 메소드
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md">여기서 확인</a>
+
+<br/><br/>
+
 ## 알고리즘 관련 메소드
 
 - <strong><code>[배열].sort()</code></strong> : 배열을 유니코드 문자 순으로 정렬
