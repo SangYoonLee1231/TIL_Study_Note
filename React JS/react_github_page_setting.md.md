@@ -6,7 +6,9 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md.md#%EC%82%AC%EC%A0%84-%EC%9E%91%EC%97%85">사전 작업</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md.md#webpack-%EC%84%A4%EC%A0%95">Webpack 설정</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md.md#react-router-%EC%84%A4%EC%A0%95"><code>react-router</code> 설정</a>
 
 <br/><br/>
 
@@ -65,7 +67,7 @@
 
 <br/>
 
-#### 깃허브 배포하기
+### 깃허브 배포하기
 
 - <code>npm deploy</code>를 하거나, 깃허브 홈페이지에 가서 [Settings] -> [Pages] -> 'main 브랜치' '/docs 옵션'으로 설정 후 Save 한다.
 
