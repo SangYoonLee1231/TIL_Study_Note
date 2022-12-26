@@ -102,7 +102,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md">React JS 특징 + Virtual DOM</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md">React JS - JSX와 컴포넌트 (Component)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md">React JS - SPA & Routing</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md">React JS - <code>react-router</code>를 적용한 React 앱을 <strong>webpack</strong>으로 빌드하고 <strong>Github Page</strong>로 배포하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md.md">React JS - <code>react-router</code>를 적용한 React 앱을 <strong>webpack</strong>으로 빌드하고 <strong>Github Page</strong>로 배포하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md">React JS - Hook & State & Props</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md">React JS - Side Effect와 useEffect</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md">React JS - 상수 데이터 & Mock Data + <code>fetch</code> 매소드</a>
