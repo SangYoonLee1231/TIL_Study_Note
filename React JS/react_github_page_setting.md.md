@@ -86,7 +86,20 @@
   }
   ```
 
-- BrowserRouter에 <code>basename</code>을 추가한다.
+- BrowserRouter에 <code>basename</code> prop를 부여하여 프로젝트의 기본 URL을 설정한다.
+
+  ```js
+  <BrowserRouter basename="ERROR_NOTE">
+    <Nav />
+    <Aside />
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/content/:category" element={<Content />} />
+    </Routes>
+  </BrowserRouter>
+  ```
+
+- 만일 create_react_app을 사용하여 개발중인 경우 env 변수를 활용한다.
 
   ```js
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -99,8 +112,15 @@
   </BrowserRouter>
   ```
 
+  ```
+  // .env
+  PUBLIC_URL=https://sangyoonlee1231.github.io/ERROR_NOTE/
+  ```
+
   - 이 <code>basename</code> props는 프로젝트의 기본 URL을 설정해주는 역할을 한다.
 
   - Router에게 기본 URL을 제공하여 "<code>/</code>"이 아닌 리포지토리 주소 "<code>/ERROR_NOTE/</code>"로 이동하도록 지시하여 라우팅 오류를 미리 방지해준다.
 
   - PUBLIC_URL은 <code>package.json</code>의 <code>homepage</code> URL값으로 설정된다.
+
+<br/>
