@@ -10,11 +10,11 @@
 
 - React 공식 문서의 '<strong>2. JSX 소개</strong>', '<strong>3. 엘리먼트 렌더링</strong>', '<strong>4. Component와 Props</strong>' 이 세 파트를 공부했다.
 
-    - <strong>JSX</strong>
+  - <strong>JSX</strong>
 
-        - 유저에게 보여지는 UI를 더 쉽게 파악할 수 있는 (이해하기 쉬운) 코드를 작성하도록 돕는다.
+    - 유저에게 보여지는 UI를 더 쉽게 파악할 수 있는 (이해하기 쉬운) 코드를 작성하도록 돕는다.
 
-        - JS의 확장 문번으로 HTML 형태와 유사하다.
+    - JS의 확장 문법으로 HTML 형태와 유사하다.
 
 <br/><br/>
 
@@ -32,9 +32,9 @@
 
 - <strong>점 표기법</strong> vs <strong>대괄호 표기법</strong>
 
-    - 대괄호 표기법은 프로퍼티 이름과 값의 제약을 없애주기 때문에 점 표기법보다 훨씬 강력하지만, 작성하기 번거롭다는 단점이 있다.
+  - 대괄호 표기법은 프로퍼티 이름과 값의 제약을 없애주기 때문에 점 표기법보다 훨씬 강력하지만, 작성하기 번거롭다는 단점이 있다.
 
-    - 이런 이유로 보통 프로퍼티 이름이 확정되었고 단순하다면 처음엔 점 표기법을 사용하다가, 나중에 뭔가 복잡한 상황이 발생했을 때 대괄호 표기법으로 바꿔준다.
+  - 이런 이유로 보통 프로퍼티 이름이 확정되었고 단순하다면 처음엔 점 표기법을 사용하다가, 나중에 뭔가 복잡한 상황이 발생했을 때 대괄호 표기법으로 바꿔준다.
 
 - <strong>단축 프로퍼티</strong>
 
@@ -50,40 +50,41 @@
 
 - <strong>Object.keys(), values(), entries()</strong>
 
-    - <code>Object.keys(obj)</code> – 객체의 key만 담은 배열을 반환힌디.
-    - <code>Object.values(obj)</code> – 객체의 value만 담은 배열을 반환힌디.
-    - <code>Object.entries(obj)</code> – [key, value] 쌍을 담은 배열을 반환힌디.
+      - <code>Object.keys(obj)</code> – 객체의 key만 담은 배열을 반환힌디.
+      - <code>Object.values(obj)</code> – 객체의 value만 담은 배열을 반환힌디.
+      - <code>Object.entries(obj)</code> – [key, value] 쌍을 담은 배열을 반환힌디.
 
-        ```javascript
-        let user = {
-            name: "John",
-            age: 30
-        };
+          ```javascript
+          let user = {
+              name: "John",
+              age: 30
+          };
 
-        Object.keys(user) => ["name", "age"]
-        Object.values(user) => ["John", 30]
-        Object.entries(user) => [ ["name","John"], ["age",30] ]
-        ```
+          Object.keys(user) => ["name", "age"]
+          Object.values(user) => ["John", 30]
+          Object.entries(user) => [ ["name","John"], ["age",30] ]
+          ```
 
-        ```javascript
-        const object1 = {
-            a: 'somestring',
-            b: 42
-        };
+          ```javascript
+          const object1 = {
+              a: 'somestring',
+              b: 42
+          };
 
-        for (const [key, value] of Object.entries(object1)) {
-            console.log(`${key}: ${value}`);
-        }
+          for (const [key, value] of Object.entries(object1)) {
+              console.log(`${key}: ${value}`);
+          }
 
-        // expected output:
-        // "a: somestring"
-        // "b: 42"
-        ```
-<br/>
+          // expected output:
+          // "a: somestring"
+          // "b: 42"
+          ```
+
+  <br/>
 
 - <strong>instanceof 연산자</strong>
 
-    - 객체가 특정 클래스에 속하거나, 특정 클래스를 상속받으면 true를 반환하는 연산자
+  - 객체가 특정 클래스에 속하거나, 특정 클래스를 상속받으면 true를 반환하는 연산자
 
 <br/><br/>
 
@@ -91,32 +92,33 @@
 
 - <strong><code>React.createElement()</code> 함수 직접 구현해보기</strong>
 
-    ```javascript
-    /* @jsx createElement */
+      ```javascript
+      /* @jsx createElement */
 
-    function createElement(tagName, props, ...children) {
-        const element = document.createElement(tagName);
+      function createElement(tagName, props, ...children) {
+          const element = document.createElement(tagName);
 
-        Object.entries(props || {}).forEach(([key, value]) => {
-            element[key.toLowerCase()] = value;
-        });
+          Object.entries(props || {}).forEach(([key, value]) => {
+              element[key.toLowerCase()] = value;
+          });
 
-        children.flat().forEach((child) => {
-            if (child instanceof Node) {
-                element.appendChild(child);
-                return;
-            }
-            element.appendChild(document.createTextNode(child));
-        });
+          children.flat().forEach((child) => {
+              if (child instanceof Node) {
+                  element.appendChild(child);
+                  return;
+              }
+              element.appendChild(document.createTextNode(child));
+          });
 
-        return element;
-    }
-    ```
-<br/>
+          return element;
+      }
+      ```
+
+  <br/>
 
 - (드디어) <strong>과제 1 뼈대 코드 완성</strong>
 
-    (문제가 될 수 있으니 코드는 올리지 않겠습니다.)
+  (문제가 될 수 있으니 코드는 올리지 않겠습니다.)
 
 <br/><br/>
 
@@ -126,7 +128,7 @@
 
 - <a href="https://github.com/CodeSoom/react-week1-assignment-1/pull/193">PR 기록 바로가기</a>
 
-    - 스크립트를 저장하면 ESLint가 바로 적용이 된다고 생각하여, Lint 테스트를 돌려보지 않은 채 PR을 보내고 말았다. 다음부턴 PR 전 꼭 Lint 테스트를 돌려보자.
+  - 스크립트를 저장하면 ESLint가 바로 적용이 된다고 생각하여, Lint 테스트를 돌려보지 않은 채 PR을 보내고 말았다. 다음부턴 PR 전 꼭 Lint 테스트를 돌려보자.
 
 <br/>
 

@@ -74,7 +74,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_hack.md">CSS 핵 (Hack) 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md">CSS Preprocessor - SASS</a>
-- <a href="">CSS-in-JS - <code>styled-components</code></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md">CSS-in-JS - <code>styled-components</code></a>
 
 ### ◻ Vanila JS
 
