@@ -71,6 +71,8 @@
 
 - <code>npm run build</code>를 한다. 그럼 output의 path에 번들 파일이 저장된다.
 
+  - 수정 사항이 발생하면, 이를 반영하고 난 후 <code>npm run build</code>을 다시 해주어야 한다. (푸쉬도 당연히 해야함)
+
 - output path를 docs로 설정하고 해당 폴더를 포함하여 깃허브 레포지토리에 push한다. (pages 배포 옵션을 반드시 /docs로 설정해야 한다)
 
 <br/><br/>
@@ -86,6 +88,8 @@
   }
   ```
 
+<br />
+
 - BrowserRouter에 <code>basename</code> prop를 부여하여 프로젝트의 기본 URL을 설정한다.
 
   ```js
@@ -98,6 +102,8 @@
     </Routes>
   </BrowserRouter>
   ```
+
+<br />
 
 - 만일 create_react_app을 사용하여 개발중인 경우 env 변수를 활용한다.
 
