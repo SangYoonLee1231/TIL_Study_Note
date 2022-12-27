@@ -8,10 +8,15 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="">CSS-in-JS</a>
+- <a href="">Styled Components</a>
+- <a href="">Styled Components 사용법 및 문법</a>
+
+  - <a href="">컴포넌트의 props 속성값에 따라 서로 다른 스타일 부여하기 - <code>${(props) => props.[props 속성 이름]}</code></a>
+  - <a href="">컴포넌트 스타일 확장하기 - <code>styled([컴포넌트])</code></a>
+  - <a href="">컴포넌트의 HTML 태그 재설정하기 - <code>as</code> props</a>
+  - <a href="">컴포넌트의 HTML 태그에 속성 직접 추가하기 - <code>styled.[태그].attrs({ [속성] })</code></a>
+  - <a href=""></a>
 
 <br/><br/>
 
@@ -51,7 +56,7 @@ npm install styled-components
 
 <br/><br/>
 
-## Styled Components 사용법
+## Styled Components 사용법 및 문법
 
 ```jsx
 const [컴포넌트명] = styled.[html태그]`
@@ -93,7 +98,7 @@ export default App;
 
 <br/>
 
-### props를 통해 중복되는 스타일 코드 제거하기
+### 컴포넌트의 props 속성값에 따라 서로 다른 스타일 부여하기 - <code>${(props) => props.[props 속성 이름]}</code>
 
 ```js
 import styled from "styled-components";
@@ -119,9 +124,11 @@ function App() {
 export default App;
 ```
 
+- 이 문법을 활용하면 중복되는 스타일 코드를 하나로 나타낼 수 있으므로 코드가 더욱 깔끔해진다.
+
 <br/>
 
-### 컴포넌트 스타일 확장하기
+### 컴포넌트 스타일 확장하기 - <code>styled([컴포넌트])</code>
 
 ```js
 import styled from "styled-components";
@@ -144,6 +151,133 @@ function App() {
       <Box bgColor="teal" />
       <Circle bgColor="tomato" />
     </Father>
+  );
+}
+
+export default App;
+```
+
+<br/>
+
+### 컴포넌트의 HTML 태그 재설정하기 - <code>as</code> props
+
+```js
+import styled from "styled-components";
+
+const Father = styled.div`
+  display: flex;
+`;
+const Btn = styled.button`
+  color: white;
+  background-color: tomato;
+  border: 0;
+  border-radius: 15px;
+`;
+
+function App() {
+  return (
+    <Father as="header">
+      <Btn>Log In</Btn>
+      <Btn as="a" href="/">
+        Log In
+      </Btn>
+    </Father>
+  );
+}
+
+export default App;
+```
+
+```html
+<div id="root">
+  <header class="sc-dIfARi kqAazX">
+    <button class="sc-hHTYSt iKcUmj">Log In</button
+    ><a href="/" class="sc-hHTYSt iKcUmj">Log In</a>
+  </header>
+</div>
+```
+
+- 스타일은 그대로 두되, 컴포넌트의 태그를 바꾸고자 할 때 <code>as</code> props를 활용한다.
+
+<br/>
+
+### 컴포넌트의 HTML 태그에 속성 직접 추가하기 - <code>styled.[태그].attrs({ [속성] })</code>
+
+```js
+import styled from "styled-components";
+
+const Father = styled.div`
+  display: flex;
+`;
+const Input = styled.input.attrs({ required: true, minLength: 10 })`
+  background-color: tomato;
+`;
+
+function App() {
+  return (
+    <Father as="header">
+      <Input></Input>
+      <Input></Input>
+      <Input></Input>
+      <Input></Input>
+      <Input></Input>
+    </Father>
+  );
+}
+
+export default App;
+```
+
+```html
+<div id="root">
+  <header class="sc-fLcnxK hjukqa">
+    <input required="" class="sc-bBABsx iPtiKZ" minlength="10" /><input
+      required=""
+      class="sc-bBABsx iPtiKZ"
+      minlength="10"
+    /><input required="" class="sc-bBABsx iPtiKZ" minlength="10" /><input
+      required=""
+      class="sc-bBABsx iPtiKZ"
+      minlength="10"
+    /><input required="" class="sc-bBABsx iPtiKZ" minlength="10" />
+  </header>
+</div>
+```
+
+<br/>
+
+### styled-components 안에서 애니메이션 추가하기 - <code></code>
+
+- 우선 helper 함수인 <code>keyframes</code>를 import 해주어야 한다.
+
+```js
+import styled, { keyframes } from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+`;
+
+const rotateAnimation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Box = styled.div`
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+  animation: ${rotateAnimation} 1s linear infinite;
+`;
+
+function App() {
+  return (
+    <Wrapper>
+      <Box />
+    </Wrapper>
   );
 }
 
