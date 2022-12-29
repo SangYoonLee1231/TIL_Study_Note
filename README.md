@@ -76,7 +76,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md">CSS Preprocessor - SASS</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md">CSS-in-JS - <code>styled-components</code></a>
 
-### ◻ Vanila JS
+### ◻ Vanila JavaScript
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
 - <a href="">JavaScript의 역사</a> (준비 중)
@@ -95,6 +95,11 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md">JavaScript - 시간과 관련된 함수 및 객체 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)</a>
 - 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_method_list.md">JavaScript - 내장 메소드 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
+<!-- - <a href=""></a> -->
+
+### ◻ TypeScript
+
+- <a href="">TypeScript</a>
 
 ### ◻ React JS
 
