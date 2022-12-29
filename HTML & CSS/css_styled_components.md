@@ -258,11 +258,17 @@ const Wrapper = styled.div`
 `;
 
 const rotateAnimation = keyframes`
-  from {
+  0% {
     transform: rotate(0deg);
+    border-radius: 0px;
   }
-  to {
+  50% {
+    transform: rotate(180deg);
+    border-radius: 100px;
+  }
+  100% {
     transform: rotate(360deg);
+    border-radius: 0px;
   }
 `;
 
@@ -277,6 +283,170 @@ function App() {
   return (
     <Wrapper>
       <Box />
+    </Wrapper>
+  );
+}
+
+export default App;
+```
+
+<br/>
+
+### styled-components 가상 선택자
+
+```js
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+`;
+
+const Box = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+
+  span {
+    font-size: 36px;
+
+    &:hover {
+      font-size: 40px;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
+`;
+
+function App() {
+  return (
+    <Wrapper>
+      <Box>
+        <span>🙂</span>
+      </Box>
+    </Wrapper>
+  );
+}
+
+export default App;
+```
+
+```js
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+`;
+
+const Emoji = styled.span``;
+
+const EmojiTwo = styled.span``;
+
+const Box = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+
+  ${Emoji} {
+    font-size: 36px;
+
+    &:hover {
+      font-size: 90px;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
+
+  ${EmojiTwo}:hover {
+    font-size: 90px;
+  }
+`;
+
+function App() {
+  return (
+    <Wrapper>
+      <Box>
+        <Emoji>🙂</Emoji>
+        <EmojiTwo>🙁</EmojiTwo>
+      </Box>
+    </Wrapper>
+  );
+}
+
+export default App;
+```
+
+<br/>
+
+### theme
+
+- 모든 색상을 가지고 있는 Object
+
+```js
+// index.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "styled-components";
+import App from "./App";
+
+const darkTheme = {
+  textColor: "whitesmoke",
+  backgroundColor: "#111",
+};
+
+const lightTheme = {
+  textColor: "#111",
+  backgroundColor: "whitesmoke",
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <ThemeProvider theme={darkTheme}>
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
+);
+```
+
+```js
+// App.js
+import styled, { keyframes } from "styled-components";
+
+const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: ${(props) => props.theme.backgroundColor};
+`;
+
+// ... (코드 생략) ...
+
+function App() {
+  return (
+    <Wrapper>
+      <Title>Hello</Title>
+      <Box>
+        <Emoji>🙂</Emoji>
+        <EmojiTwo>🙁</EmojiTwo>
+      </Box>
     </Wrapper>
   );
 }

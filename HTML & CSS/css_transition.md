@@ -100,6 +100,21 @@ p {
   }
 
   @keyframes animation-name {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  ```
+
+  ```css
+  .div {
+    animation: animation-name 3s initial;
+  }
+
+  @keyframes animation-name {
     0% {
       opacity: 0;
     }
