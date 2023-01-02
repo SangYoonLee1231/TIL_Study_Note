@@ -6,7 +6,14 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md#typescript%EB%9E%80">TypeScript란?</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md#typescript%EC%9D%98-%ED%8A%B9%EC%A7%95">TypeScript의 특징</a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md#typescript-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">TypeScript 설치하기</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md#definitelytyped">DefinitelyTyped</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md#%EB%B6%80%EB%A1%9D--tsconfigjson-%ED%8C%8C%EC%9D%BC-%EC%84%A4%EC%A0%95-%EC%B6%94%EC%B2%9C"><code>tsconfig.json</code> 파일 설정 추천</a>
 
 <br/><br/>
 
