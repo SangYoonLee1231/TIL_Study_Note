@@ -10,7 +10,7 @@
 
 <br/><br/>
 
-## 수학 관련 메소드
+## 수 관련 메소드
 
 - <strong><code>[수].toString(2)</code></strong> : [수]를 2진수로 변환
 
@@ -29,6 +29,12 @@
 - <strong><code>Math.min(a, b, c)</code></strong> : 인자로 들어온 수들 a, b, c중 최솟값을 반환 (인자의 개수는 상관없다.)
 
 - <strong><code>Math.max(a, b, c)</code></strong> : 인자로 들어온 수들 a, b, c중 최댓값을 반환 (인자의 개수는 상관없다.)
+
+- <strong><code>isNaN()</code></strong> : 인자의 자료형이 <code>NaN</code>인지 확인
+
+  - <code>[NaN인 값] === NaN</code>의 결과값은 <code>false</code>이다.
+
+  - 따라서 <code>if ([NaN인 어떤 값] === NaN) { ... }</code>와 같이 자료형을 판단하면, 조건식이 <code>false</code>로 평가되므로 올바른 결과를 얻을 수 없다.
 
 <br/><br/>
 

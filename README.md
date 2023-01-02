@@ -99,7 +99,7 @@
 
 ### ◻ TypeScript
 
-- <a href="">TypeScript</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md">TypeScript 소개 및 설치</a>
 
 ### ◻ React JS
 
