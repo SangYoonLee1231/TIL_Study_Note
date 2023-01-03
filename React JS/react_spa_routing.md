@@ -109,7 +109,7 @@ export default Router;
 
 ## <code>react-router-dom</code>에서 제공하는 경로 이동 방법 2가지
 
-### 1. Link 컴포넌트
+### 1. <code>Link</code> 컴포넌트
 
 ```js
 /* Main.js */
@@ -137,7 +137,7 @@ export default function Main() {
 
 <br/><br/>
 
-### 2. useNavigate hook
+### 2. <code>useNavigate</code> Hook
 
 ```js
 /* Login.js */
@@ -179,6 +179,8 @@ export default function Login() {
 
 - <code>react-router-dom</code> v.6.4.3 버전
 
+  - <code></code>
+
 ```js
 /* index.js */
 import React from "react";
@@ -215,7 +217,7 @@ function Root() {
 export default Root;
 ```
 
-```js
+```jsx
 /* Router.js */
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./screens/Home";
@@ -225,17 +227,23 @@ import Root from "./Root";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Root /> /* 기본적으로 Root 컴포넌트를 render 한다 */,
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <Home /> /* Root의 Outlet이 Home 컴포넌트로 대체 */,
+        errorElement: (
+          <ErrorComponent />
+        ) /* Home 컴포넌트에서 에러 발생시 ErrorComponent를 render 한다 (여기서 다른 컴포넌트로 이동 가능) */,
       },
       {
         path: "about",
-        element: <About />,
+        element: <About /> /* Root의 Outlet이 About 컴포넌트로 대체 */,
       },
     ],
+    errorElement: (
+      <NotFound />
+    ) /* URL에 맞는 컴포넌트의 위치를 찾지 못할 때 NotFound 컴포넌트를 render 한다 */,
   },
 ]);
 
