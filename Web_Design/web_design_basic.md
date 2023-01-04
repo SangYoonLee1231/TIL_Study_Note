@@ -6,7 +6,7 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%A4%ED%95%B4">디자인에 대한 오해s</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%A4%ED%95%B4">디자인에 대한 오해</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98-%EA%B8%B0%EC%B4%88---%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83">디자인의 기초 - 레이아웃</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EC%A0%95%EB%A0%AC-align">정렬 (Align)</a>
@@ -67,6 +67,20 @@
   ↓
 
   <img src="img/equally_sized_grid.png" width="300">
+
+  </div>
+
+<br/>
+
+- 일반적으로 웹 디자인에서 가장 널리 사용되는 레이아웃 그리드는 <strong>12열 그리드</strong>이다.
+
+  - 12는 3과 4의 배수이므로 열을 나눌 수 있는 선택지가 많다.
+
+  <br/>
+
+  <div align="center">
+
+  <img src="img/12_row_grid.png" width="400">
 
   </div>
 
