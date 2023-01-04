@@ -6,7 +6,11 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%9C-%EC%98%A4%ED%95%B4">디자인에 대한 오해s</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98-%EA%B8%B0%EC%B4%88---%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83">디자인의 기초 - 레이아웃</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EC%A0%95%EB%A0%AC-align">정렬 (Align)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EA%B7%B8%EB%A6%AC%EB%93%9C-grid">그리드 (Grid)</a>
 
 <br/><br/>
 
@@ -16,7 +20,7 @@
 
 - 물론 창의성도 중요하지만, 디자이너가 되기 위해 진정으로 필요한 능력은 창의성이 아니라고 한다.
 
-- 타고난 재능이 없어도 누구나 웹 디자이너가 될 수 있다.
+- 즉, 타고난 재능이 없어도 누구나 웹 디자이너가 될 수 있다.
 
 - 디자인에는 <strong>규칙, 기술, 지침</strong>이 있고 이를 잘 학습하여 따르면 된다.
 
@@ -54,7 +58,7 @@
 
 - 요소를 페이지에 인식 가능한 구조로 배치해서 정리하는 방법이다.
 
-- 그 중에서도 정말 좋은 디자인은 같은 크기로 나누어진 그리드이다.
+- 그 중에서도 정말 좋은 디자인은 <strong>같은 크기로 나누어진 그리드</strong>이다.
 
   <div align="center">
 
@@ -68,9 +72,11 @@
 
 <br/>
 
-- 같은 크기로 나눈 열에 맞춰 요소를 정렬한 후 그 다음 작업은, 같은 값을 최대한 많이 재사용하는 것이다.
+- 같은 크기로 나눈 열에 맞춰 요소를 정렬한 후 그 다음 작업은, <strong>같은 값을 최대한 많이 재사용하는 것</strong>이다.
 
   - 예 : 요소 간 간격 일정히 유지하기 (같은 값의 간격으로 맞추기)
+
+  <br/>
 
   <div align="center">
 
@@ -84,9 +90,9 @@
 
 - 사용에 따라 그리드의 규칙의 제약에서 벗어날 때도 있다.
 
-- 그래도 처음엔 그리드를 적용해서 디자인을 하는 것이 좋은 디자인 습관을 익히는 최상의 방법이다.
+  - 다만, 디자인의 규칙을 어길 때는 그 목적이 분명해야 한다.
 
-- 디자인의 규칙을 어길 때는 그 목적이 분명해야 한다.
+- 그래도 처음엔 그리드를 적용해서 디자인을 하는 것이 좋은 디자인 습관을 익히는 최상의 방법이다.
 
 <br/>
 
