@@ -164,6 +164,52 @@
   export default Detail;
   ```
 
+<br/>
+
+- <code>createBrowserRouter</code>를 사용하여 라우터를 구현했을 때의 <code>Router.jsx</code> 코드는 아래와 같다.
+
+  ```jsx
+  // src/Router.jsx
+  import { createBrowserRouter } from "react-router-dom";
+  import Home from "./screens/Home";
+  import About from "./screens/About";
+  import User from "./screens/users/User";
+  import Root from "./Root";
+  import NotFound from "./components/NotFound";
+  import ErrorComponent from "./components/ErrorComponent";
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        {
+          path: "",
+          element: <Home />,
+          errorElement: <ErrorComponent />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "users",
+          element: <User />,
+          children: [
+            {
+              path: ":userId",
+              element: <User />,
+            },
+          ],
+        },
+      ],
+      errorElement: <NotFound />,
+    },
+  ]);
+
+  export default router;
+  ```
+
 <br/><br/><br/>
 
 ## Query String (쿼리 스트링)

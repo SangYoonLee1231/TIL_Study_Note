@@ -179,8 +179,6 @@ export default function Login() {
 
 - <code>react-router-dom</code> v.6.4.3 버전
 
-  - <code></code>
-
 ```js
 /* index.js */
 import React from "react";
@@ -202,7 +200,6 @@ root.render(
 /* Root.js (혹은 App.js) */
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Circle from "./Circle";
 import Header from "./screens/components/Header";
 
 function Root() {
