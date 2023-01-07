@@ -81,7 +81,7 @@
 
   <div align="center">
 
-  <img src="img/12_row_grid.png" width="500">
+  <img src="img/12_row_grid.png" width="450">
 
   </div>
 
@@ -95,7 +95,7 @@
 
   <div align="center">
 
-  <img src="img/grid_setting_complete.png" width="500">
+  <img src="img/grid_setting_complete.png" width="550">
 
   </div>
 
@@ -149,6 +149,8 @@
 <img src="img/visual_hierarchy.png" width="500">
 
 </div>
+
+<br/>
 
 - <strong>(1~2) 사진 + 이름</strong>
 
