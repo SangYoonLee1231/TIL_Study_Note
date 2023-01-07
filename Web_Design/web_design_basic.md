@@ -11,6 +11,7 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EC%A0%95%EB%A0%AC-align">정렬 (Align)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EA%B7%B8%EB%A6%AC%EB%93%9C-grid">그리드 (Grid)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EC%8B%9C%EA%B0%81%EC%A0%81-%EA%B3%84%EC%B8%B5%EA%B5%AC%EC%A1%B0-visual-hierarchy">시각적 계층구조 (Visual Hierarchy)</a>
 
 <br/><br/>
 
@@ -22,7 +23,7 @@
 
 - 즉, 타고난 재능이 없어도 누구나 웹 디자이너가 될 수 있다.
 
-- 디자인에는 <strong>규칙, 기술, 지침</strong>이 있고 이를 잘 학습하여 따르면 된다.
+- 디자인에는 <strong>규칙, 기술, 지침</strong>이 있고 이를 잘 학습하여 따르면 누구나 디자인을 잘 할 수 있다.
 
 <br/><br/><br/>
 
@@ -32,7 +33,7 @@
 
 - 물체를 정렬하면 구성이 더 좋아지고 질서정연해진다.
 
-- <strong>정렬</strong>은 단순하고 기본적이지만 가장 강력한 디자인 규칙에 속한다.
+- <strong>정렬</strong>은 단순하고 기본적이지만, 가장 강력한 디자인 규칙에 속한다.
 
 - 개체를 정렬하는 방법은 6가지가 있다.
 
@@ -54,7 +55,7 @@
 
 ### 그리드 (Grid)
 
-- 정렬을 시작하면 레이아웃이 일종의 구조를 형성하기 시작하는데, 이를 <strong>그리드</strong>라 한다.
+- 정렬을 하면 레이아웃이 일종의 구조를 형성하기 시작하는데, 이를 <strong>그리드</strong>라 한다.
 
 - 요소를 페이지에 인식 가능한 구조로 배치해서 정리하는 방법이다.
 
@@ -74,13 +75,13 @@
 
 - 일반적으로 웹 디자인에서 가장 널리 사용되는 레이아웃 그리드는 <strong>12열 그리드</strong>이다.
 
-  - 12는 3과 4의 배수이므로 열을 나눌 수 있는 선택지가 많다.
+  - 12는 3과 4의 배수이므로 열을 나눌 수 있는 선택지가 많기 때문이다.
 
   <br/>
 
   <div align="center">
 
-  <img src="img/12_row_grid.png" width="400">
+  <img src="img/12_row_grid.png" width="500">
 
   </div>
 
@@ -88,19 +89,19 @@
 
 - 같은 크기로 나눈 열에 맞춰 요소를 정렬한 후 그 다음 작업은, <strong>같은 값을 최대한 많이 재사용하는 것</strong>이다.
 
-  - 예 : 요소 간 간격 일정히 유지하기 (같은 값의 간격으로 맞추기)
+  - 예 : 요소 간 간격을 같은 값으로 맞춰 일정히 유지하기
 
   <br/>
 
   <div align="center">
 
-  <img src="img/grid_setting_complete.png" width="400">
+  <img src="img/grid_setting_complete.png" width="500">
 
   </div>
 
 <br/>
 
-- 그리드의 규칙은 유연하다.
+- 그리드의 규칙은 <strong>유연</strong>하다.
 
 - 사용에 따라 그리드의 규칙의 제약에서 벗어날 때도 있다.
 
@@ -116,13 +117,13 @@
 
 - 사용자는 눈에 보이지 않는 격자선을 실제로 체감한다.
 
-- 반복되는 그리드로 인해 무언가가 예측 가능하고 친숙해 보이는 느낌이 들 때 사용자는 웹 사이트를 더욱 신뢰하게 된다.
+- 반복되는 그리드로 인해 무언가가 예측 가능하고 친숙해 보이는 느낌이 들 때 사용자는 웹 사이트를 더욱 신뢰한다.
 
 <br/><br/>
 
 ### 시각적 계층구조 (Visual Hierarchy)
 
-- <strong>시각적으로 가장 중요한 정보부터 순서대로 눈에 들어오도록</strong> 웹 페이지의 요소들을 배치하는 중요한 디자인의 기본 원칙이다.
+- <strong>시각적으로 가장 중요한 정보부터 순서대로 눈에 들어오도록</strong> 웹 페이지의 요소들을 배치하는 디자인의 중요한 기본 원칙이다.
 
 - 사람은 어떤 대상을 볼 때 초점이 맞는 대상은 또럿히 보나 그 주변은 흐릿하게 본다. 즉, 사람의 시선은 한 번에 하나의 대상에만 집중할 수 있다.
 
@@ -136,15 +137,16 @@
 
 - 일반적으로 요소의 <strong>크기</strong>와 <strong>비중</strong>이 계층을 규정한다.
 
-- 색상 대비나 많은 관심을 끄는 이미지 등 계층을 규정하는 수단은 여러 가지가 존재하지만, 디자이너들은 주로 크기와 비중에 의존한다.
+- 색상 대비나 많은 관심을 끄는 이미지 등 계층을 규정하는 수단엔 여러 가지가 존재하지만,  
+  디자이너들은 주로 크기와 비중에 의존한다.
 
 <br/>
 
-#### 예시
-
 <div align="center">
 
-<img src="img/visual_hierarchy.png" width="400">
+#### (예시)
+
+<img src="img/visual_hierarchy.png" width="500">
 
 </div>
 
@@ -160,7 +162,7 @@
 
   - 그 다음 제목, 단락, 버튼 사이의 계층을 규정했다.
 
-  - 제목은 글씨를 크고 굵게 설정하여 대담하게 만들어졌다. 이 대담성을 요소의 비중이라 한다.
+  - 제목은 글씨를 크고 굵게 설정하여 대담하게 만들어졌다. 이 대담성이 바로 요소의 '비중'이다.
 
   - 제목 하단에 있는 단락은 제목보다 크기가 상당히 작게 설정되었다.
 
