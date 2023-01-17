@@ -50,9 +50,9 @@
 
 - <strong>Object.keys(), values(), entries()</strong>
 
-  - <code>Object.keys(obj)</code> – 객체의 key만 담은 배열을 반환힌디.
-  - <code>Object.values(obj)</code> – 객체의 value만 담은 배열을 반환힌디.
-  - <code>Object.entries(obj)</code> – [key, value] 쌍을 담은 배열을 반환힌디.
+  - <code>Object.keys(obj)</code> – 객체의 key만 담은 배열을 반환한다.
+  - <code>Object.values(obj)</code> – 객체의 value만 담은 배열을 반환한다.
+  - <code>Object.entries(obj)</code> – [key, value] 쌍을 담은 배열을 반환한다.
 
     ```javascript
     let user = {
