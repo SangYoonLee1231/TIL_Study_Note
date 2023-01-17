@@ -50,35 +50,35 @@
 
 - <strong>Object.keys(), values(), entries()</strong>
 
-      - <code>Object.keys(obj)</code> – 객체의 key만 담은 배열을 반환힌디.
-      - <code>Object.values(obj)</code> – 객체의 value만 담은 배열을 반환힌디.
-      - <code>Object.entries(obj)</code> – [key, value] 쌍을 담은 배열을 반환힌디.
+  - <code>Object.keys(obj)</code> – 객체의 key만 담은 배열을 반환힌디.
+  - <code>Object.values(obj)</code> – 객체의 value만 담은 배열을 반환힌디.
+  - <code>Object.entries(obj)</code> – [key, value] 쌍을 담은 배열을 반환힌디.
 
-          ```javascript
-          let user = {
-              name: "John",
-              age: 30
-          };
+    ```javascript
+    let user = {
+        name: "John",
+        age: 30
+    };
 
-          Object.keys(user) => ["name", "age"]
-          Object.values(user) => ["John", 30]
-          Object.entries(user) => [ ["name","John"], ["age",30] ]
-          ```
+    Object.keys(user) => ["name", "age"]
+    Object.values(user) => ["John", 30]
+    Object.entries(user) => [ ["name","John"], ["age",30] ]
+    ```
 
-          ```javascript
-          const object1 = {
-              a: 'somestring',
-              b: 42
-          };
+    ```javascript
+    const object1 = {
+      a: "somestring",
+      b: 42,
+    };
 
-          for (const [key, value] of Object.entries(object1)) {
-              console.log(`${key}: ${value}`);
-          }
+    for (const [key, value] of Object.entries(object1)) {
+      console.log(`${key}: ${value}`);
+    }
 
-          // expected output:
-          // "a: somestring"
-          // "b: 42"
-          ```
+    // expected output:
+    // "a: somestring"
+    // "b: 42"
+    ```
 
   <br/>
 
@@ -92,27 +92,27 @@
 
 - <strong><code>React.createElement()</code> 함수 직접 구현해보기</strong>
 
-      ```javascript
-      /* @jsx createElement */
+  ```javascript
+  /* @jsx createElement */
 
-      function createElement(tagName, props, ...children) {
-          const element = document.createElement(tagName);
+  function createElement(tagName, props, ...children) {
+    const element = document.createElement(tagName);
 
-          Object.entries(props || {}).forEach(([key, value]) => {
-              element[key.toLowerCase()] = value;
-          });
+    Object.entries(props || {}).forEach(([key, value]) => {
+      element[key.toLowerCase()] = value;
+    });
 
-          children.flat().forEach((child) => {
-              if (child instanceof Node) {
-                  element.appendChild(child);
-                  return;
-              }
-              element.appendChild(document.createTextNode(child));
-          });
-
-          return element;
+    children.flat().forEach((child) => {
+      if (child instanceof Node) {
+        element.appendChild(child);
+        return;
       }
-      ```
+      element.appendChild(document.createTextNode(child));
+    });
+
+    return element;
+  }
+  ```
 
   <br/>
 
