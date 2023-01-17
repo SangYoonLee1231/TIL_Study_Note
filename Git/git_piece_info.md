@@ -42,3 +42,5 @@
 - 원격 저장소에서 초기 세팅한 파일들을 내 로컬 저장소로 clone 받고, npm install부터 하고나서 branch 생성해야 된다고 한다. (이유는 모르곘지만)
 
 <br/><br/>
+
+## <code>npm install</code> 시 주의 사항
