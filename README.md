@@ -44,7 +44,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_sort.md">Python - 정렬 내장 함수 <code>sort</code>, <code>sorted</code></a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md">Python - 조각 지식 모음</a>
 
-### ◻ C
+### ◻ C / C# / C++
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md">C - 파일 입출력</a>
 
