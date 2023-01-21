@@ -246,3 +246,71 @@ const router = createBrowserRouter([
 
 export default router;
 ```
+
+<br/>
+
+#### <code>Outlet</code> 컴포넌트의 역할 : 자식 경로의 컴포넌트로 대체
+
+```js
+// Router.tsx
+
+// .. (생략) ..
+
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <Root />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+        errorElement: <ErrorComponent />,
+      },
+      {
+        path: "about",
+        element: <About />,
+        errorElement: <ErrorComponent />,
+      },
+      {
+        path: "users/:userId",
+        element: <User />,
+        errorElement: <ErrorComponent />,
+        children: [
+          {
+            path: "followers",
+            element: <Followers />,
+          },
+        ],
+      },
+    ],
+    errorElement: <NotFound />,
+  },
+]);
+
+export default router;
+```
+
+```js
+// User.tsx
+import { useParams, Outlet, Link } from "react-router-dom";
+import { users } from "../../db";
+
+function User() {
+  const { userId } = useParams();
+
+  return (
+    <div>
+      <div>
+        <h1>User</h1>
+        <h3>ID : {userId}</h3>
+        <h3>Name : {users[Number(userId) - 1].name}</h3>
+      </div>
+      <hr />
+      <Outlet />
+      <Link to="followers">See Followers</Link>
+    </div>
+  );
+}
+
+export default User;
+```

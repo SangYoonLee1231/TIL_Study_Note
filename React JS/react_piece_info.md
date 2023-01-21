@@ -9,7 +9,9 @@
 ### 목차
 
 - <a href="">Mount의 의미</a>
-- <a href=""></a>
+- <a href="">React에 Font Awesome 적용하기</a>
+- <a href="">경로 이동에서 <code>/</code>의 의미</a>
+<!-- - <a href=""></a> -->
 
 <br/><br/>
 
@@ -42,13 +44,27 @@
 
   ...
 
-  return (
+    return (
       <>
       <div className="product-select-quantity">
           <FontAwesomeIcon icon={faMinusCircle} />
           <FontAwesomeIcon icon={faPlusCircle} />
       </div>
       </>
-  );
+    );
   };
   ```
+
+<br/><br/>
+
+## 경로 이동에서 <code>/</code>의 의미
+
+- 경로 이동에서 <code>/</code>은 절대 경로로 이동하라는 의미이다.
+
+  - <code>localhost:3000/users</code> 경로에서 <code>\<Link to="/followers">See Followers\</Link></code> 클릭 시 ->  
+    <code>localhost:3000/followers</code> 경로로 이동
+
+- 반면 <code>/</code>을 붙이지 않으면 상대 경로로 이동하라는 의미이다.
+
+  - <code>localhost:3000/users</code> 경로에서 <code>\<Link to="followers">See Followers\</Link></code> 클릭 시 ->  
+    <code>localhost:3000/users/followers</code> 경로로 이동
