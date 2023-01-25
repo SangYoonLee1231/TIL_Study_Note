@@ -51,6 +51,73 @@
 
 <br/>
 
+## 🎮 Game Development
+
+### ◻ 유니티 (Unity)
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_introduction.md">유니티 소개 및 설치</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_c_script.md">유니티 (Unity) - C# 스크립트 정리</a>
+
+<br/>
+
+## 📌 Computer Science
+
+#### 💻 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">웹 브라우저의 동작 원리</a>
+
+### ◻ 자료구조
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
+
+#### 순차적 자료구조
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">배열 vs 리스트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">스택 (Stack)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">큐 (Queue)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/deque.md">덱 (Deque)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">연결 리스트 - 기본 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">연결 리스트 - 단방향 연결 리스트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">연결 리스트 - 양방향 연결 리스트 (원형 연결 리스트)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_iterator.md">연결 리스트 - Iterator</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 - 기초 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 - 해시 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing</a>
+
+#### 트리(Tree) 구조
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md">이진 트리</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap.md">힙 (Heap)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md">힙 (Heap) - <code>make_heap</code> 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - <code>insert</code>, <code>find_max</code> 와 <code>delete_max</code> 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md">이진 탐색 트리 (Binary Search Tree / BST)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree_delete.md">이진 탐색 트리 (Binary Search Tree / BST) 의 삭제 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/balanced_bst.md">균형 이진 탐색 트리 (Balanced BST)</a>
+
+### ◻ 알고리즘
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
+
+### ◻ 컴퓨터 구조 및 시스템
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
+
+### ◻ 운영체제
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md">프로세스와 스레드</a>
+
+### ◻ 네트워크
+
+<!-- - <a href=""></a> -->
+
+### ◻ 데이터베이스
+
+<!-- - <a href=""></a> -->
+
+<br/>
+
 ## 📌 Front-End
 
 ### ◻ HTML
@@ -125,64 +192,6 @@
 
 <br/>
 
-## 📌 Computer Science
-
-#### 💻 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">웹 브라우저의 동작 원리</a>
-
-### ◻ 자료구조
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/data_structure_introduction.md">자료구조 소개</a>
-
-#### 순차적 자료구조
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/array_and_list.md">배열 vs 리스트</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/stack.md">스택 (Stack)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/queue.md">큐 (Queue)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/deque.md">덱 (Deque)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_basic.md">연결 리스트 - 기본 개념</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/singly_linked_list.md">연결 리스트 - 단방향 연결 리스트</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/doubly_linked_list.md">연결 리스트 - 양방향 연결 리스트 (원형 연결 리스트)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/linked_list_iterator.md">연결 리스트 - Iterator</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table.md">해시 테이블 - 기초 개념</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_hash_function.md">해시 테이블 - 해시 함수</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/hash_table_collision_resolution_method.md">해시 테이블 - 충돌 회피 방법 - Open Addressing의 Linear Probing</a>
-
-#### 트리(Tree) 구조
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/tree_basic.md">트리 기본 개념</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_tree.md">이진 트리</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap.md">힙 (Heap)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_make_heap.md">힙 (Heap) - <code>make_heap</code> 연산</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/heap_insert_delete_max.md">힙 (Heap) - <code>insert</code>, <code>find_max</code> 와 <code>delete_max</code> 연산</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree.md">이진 탐색 트리 (Binary Search Tree / BST)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree_delete.md">이진 탐색 트리 (Binary Search Tree / BST) 의 삭제 연산</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/balanced_bst.md">균형 이진 탐색 트리 (Balanced BST)</a>
-
-### ◻ 알고리즘
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
-
-### ◻ 컴퓨터 구조 및 시스템
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
-
-### ◻ 운영체제
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md">프로세스와 스레드</a>
-
-### ◻ 네트워크
-
-<!-- - <a href=""></a> -->
-
-### ◻ 데이터베이스
-
-<!-- - <a href=""></a> -->
-
-<br/>
-
 ## 📌 Etc.
 
 - ⚙️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/DevTools.md">개발자 도구</a>
@@ -207,10 +216,6 @@
 ### ◻ 아두이노 (Arduino)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Arduino/arduino_introduction.md">아두이노의 학습 목적 및 소개</a>
-
-### ◻ 유니티 (Unity)
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_introduction.md">유니티 소개 및 설치</a>
 
 <br/>
 
