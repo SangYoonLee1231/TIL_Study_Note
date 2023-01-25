@@ -173,3 +173,70 @@ void Update()
 - 로컬 좌표계 -> 월드 좌표계 : <code>transform.TransformDirection()</code>
 
 - 월드 좌표계 -> 로컬 좌표계 : <code>transform.InverseTransformDirection()</code>. <code>transform.Translate()</code>
+
+<br/><br/>
+
+## 벡터 (Vector) 구현하기
+
+```c#
+struct MyVector
+{
+    // 벡터의 x, y, z값
+    public float x;
+    public float y;
+    public float z;
+
+    // 벡터 크기 계산
+    public float magnitude { get { return Mathf.Sqrt(x*x + y*y + z*z); } }
+    // 단위 벡터 반환
+    public MyVector normalized
+    {
+        get { return new MyVector(x / magnitude, y / magnitude, z / magnitude); }
+    }
+
+    // 벡터 초기 설정 (생성자)
+    public MyVector(float x, float y, float z)
+    {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    // 벡터 연산 정의
+    public static MyVector operator+(MyVector a, MyVector b)
+    {
+        return new MyVector(a.x + b.x, a.y + b.y, a.z + b.z);
+    }
+
+    public static MyVector operator -(MyVector a, MyVector b)
+    {
+        return new MyVector(a.x - b.x, a.y - b.y, a.z - b.z);
+    }
+
+    public static MyVector operator *(MyVector a, float d)
+    {
+        return new MyVector(a.x * d, a.y * d, a.z * d);
+    }
+}
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField]
+    float _speed = 10.0f;
+
+    void Start()
+    {
+        MyVector from = new MyVector(5.0f, 0.0f, 0.0f);
+        MyVector to = new MyVector(10.0f, 0.0f, 0.0f);
+        MyVector dir = to - from; // 방향 벡터 = (5.0f, 0.0f, 0.0f)
+        dir = dir.normalized;
+
+        MyVector newPos = from + dir * _speed;
+    }
+
+    void Update()
+    {
+        // ..(생략)..
+    }
+}
+```
