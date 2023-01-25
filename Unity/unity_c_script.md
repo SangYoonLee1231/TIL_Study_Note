@@ -170,9 +170,9 @@ void Update()
 
 <br/>
 
-- 로컬 좌표계 -> 월드 좌표계 : <code>transform.TransformDirection()</code>
+- 로컬 좌표계(기준)를 월드 좌표계로 계산 : <code>transform.TransformDirection()</code>, <code>transform.Translate()</code>
 
-- 월드 좌표계 -> 로컬 좌표계 : <code>transform.InverseTransformDirection()</code>. <code>transform.Translate()</code>
+- 월드 좌표계(기준)를 로컬 좌표계로 계산 : <code>transform.InverseTransformDirection()</code>
 
 <br/><br/>
 
