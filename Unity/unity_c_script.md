@@ -240,3 +240,105 @@ public class PlayerController : MonoBehaviour
     }
 }
 ```
+
+<br/><br/>
+
+## 오브젝트 (대상) 회전시키기, 특정 방향으로 바라보도록 하기
+
+- 해당 내용 관련 Unity 공식 문서 (유용함!) 👉🏻 <a href="https://docs.unity3d.com/kr/2021.3/Manual/QuaternionAndEulerRotationsInUnity.html">바로가기</a>
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField]
+    float _speed = 10.0f;
+
+    void Start()
+    {
+
+    }
+
+    float _yAngle = 0.0f;
+
+    void Update()
+    {
+        _yAngle += Time.deltaTime * 30.0f;
+
+        // < 오브젝트 (대상) 회전시키기 >
+
+        // 회전 방법 1. 절대 회전값
+        // transform.eulerAngles = new Vector3(0.0f, _yAngle, 0.0f);
+
+        // 회전 방법 2. +- delta
+        // transform.Rotate(new Vector3(0.0f, Time.deltaTime * 100.0f, 0.0f));
+
+        // 회전 방법 3. Quaternion값 지정
+        // transform.rotation = Quaternion.Euler(new Vector3(0.0f, _yAngle, 0.0f));
+
+
+        // < 오브젝트 (대상) 특정 방향으로 바라보도록 하기 >
+        if (Input.GetKey(KeyCode.W))
+        {
+            // LookRotation 함수 : 대상을 원하는 방향으로 바라보도록 rotation값을 조정하는 함수
+            // LookRotation은 절대 좌표계 기준으로 동작한다.
+            transform.rotation = Quaternion.LookRotation(Vector3.forward);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.rotation = Quaternion.LookRotation(Vector3.back);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.rotation = Quaternion.LookRotation(Vector3.left);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.rotation = Quaternion.LookRotation(Vector3.right);
+        }
+    }
+}
+```
+
+<br/>
+
+- 만일 대상의 방향 전환을 좀 더 자연스럽게 하려면 <strong><code>Quaternion.Slerp()</code> 함수</strong>를 이용해주면 된다.
+
+  - <code>Quaternion.Slerp()</code> 함수 관련 내용 👉🏻 <a href="https://docs.unity3d.com/kr/2021.3/ScriptReference/Quaternion.Slerp.html">바로가기</a>
+
+```c#
+void Update()
+{
+    _yAngle += Time.deltaTime * 30.0f;
+
+    if (Input.GetKey(KeyCode.W))
+    {
+        // LookRotation 함수 : 대상을 원하는 방향으로 바라보도록 rotation값을 조정하는 함수
+        // LookRotation은 절대 좌표계 기준으로 동작한다.
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward), 0.1f);
+        transform.position += Vector3.forward * Time.deltaTime * _speed;
+    }
+
+    if (Input.GetKey(KeyCode.S))
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back), 0.1f);
+        transform.position += Vector3.back * Time.deltaTime * _speed;
+    }
+    if (Input.GetKey(KeyCode.A))
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left), 0.1f);
+        transform.position += Vector3.left * Time.deltaTime * _speed;
+    }
+    if (Input.GetKey(KeyCode.D))
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right), 0.1f);
+        transform.position += Vector3.right * Time.deltaTime * _speed;
+    }
+}
+```
+
+<br/>
