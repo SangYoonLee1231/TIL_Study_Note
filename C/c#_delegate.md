@@ -4,13 +4,6 @@
 
 > 참고 자료 : <a href="https://www.inflearn.com/course/%EC%9C%A0%EB%8B%88%ED%8B%B0-mmorpg-%EA%B0%9C%EB%B0%9C-part1">[C#과 유니티로 만드는 MMORPG 게임 개발 시리즈] Part1: C# 기초 프로그래밍 입문 (Rookiss 님)</a>
 
-<br/>
-
-### 목차
-
-- <a href=""></a>
-- <a href=""></a>
-
 <br/><br/>
 
 ## Delegate (대리자) 문법이란?
@@ -59,7 +52,7 @@ namespace CSharp
 
 <br/>
 
-- delegate 객체에 한 개가 아닌 여러개의 함수를 동시에 넘겨줄 수도 있다.
+- delegate 객체에 한 개가 아닌 <strong>여러 개의 함수를 동시에</strong> 넘겨줄 수도 있다.
 
 ```c#
 namespace CSharp

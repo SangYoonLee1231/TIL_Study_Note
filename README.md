@@ -47,6 +47,7 @@
 ### ◻ C / C# / C++
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/file.md">C - 파일 입출력</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/c%23_delegate.md">C# - Delegate (대리자)</a>
 - <a href="https://sylagape1231.tistory.com/92">C++ - C++과 객체 지향 프로그래밍이란? (블로그 포스트)</a>
 - 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/.md">C++ - 자주 쓰이는 메소드 정리</a>
 
