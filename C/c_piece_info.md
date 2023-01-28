@@ -23,3 +23,23 @@
     double a = 1 + 3.5;
     cout << a; // 4.5
     ```
+
+<br/><br/>
+
+## 자료형 선언은 절대적인 것이 아니다.
+
+- 자료형 선언을 실수로 했더라도 계산 결과가 정수이면 출력값 또한 정수가 된다.
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double a = 3 / 3;
+
+  cout << a << endl; // 1
+
+	return 0;
+}
+```
