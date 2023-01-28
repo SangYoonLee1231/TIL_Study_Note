@@ -13,3 +13,7 @@
 
 - <code>cout << fixed;</code>  
   <code>cout.precision(n);</code> : 소수점 아래 n번째 까지 출력하기 (반올림 반영)
+
+- <code>cin.get();</code> : 표준 입력 버퍼에서 문자를 하나 받아온다.
+
+  - 입력 받아도 쓰일 곳이 없는 문자를 처리할 때 쓰기 좋다.

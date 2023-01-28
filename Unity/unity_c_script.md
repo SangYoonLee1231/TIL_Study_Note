@@ -1,8 +1,8 @@
-# 유니티 (Unity) - C# 스크립트 정리
+# 유니티 (Unity) - C# 스크립트 정리 1
 
 <br/>
 
-> 참고 자료 : <a href="https://www.inflearn.com/course/%EC%9C%A0%EB%8B%88%ED%8B%B0-mmorpg-%EA%B0%9C%EB%B0%9C-part1">[C#과 유니티로 만드는 MMORPG 게임 개발 시리즈] Part1: C# 기초 프로그래밍 입문 (Rookiss 님)</a>
+> 참고 자료 : <a href="https://www.inflearn.com/course/%EC%9C%A0%EB%8B%88%ED%8B%B0-mmorpg-%EA%B0%9C%EB%B0%9C-part1">[C#과 유니티로 만드는 MMORPG 게임 개발 시리즈] Part1: C# 기초 프로그래밍 입문 (Rookiss님)</a>
 
 <br/>
 
@@ -57,12 +57,6 @@ public class Manager : MonoBehaviour
     void Start()
     {
         Init();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     static void Init()
@@ -351,4 +345,124 @@ void Update()
 }
 ```
 
-<br/>
+<br/><br/>
+
+## Input 메니저 생성
+
+```c#
+// InputManager.cs
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class InputManager
+{
+    public Action KeyAction = null;
+    public void OnUpdate()
+    {
+        if (Input.anyKey == false)
+            return;
+
+        if (KeyAction != null)
+            KeyAction.Invoke();
+    }
+}
+```
+
+```c#
+// Manager.cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Manager : MonoBehaviour
+{
+    static Manager s_instance;
+    static Manager Instance { get { Init(); return s_instance; } }
+
+    InputManager _input = new InputManager();
+    public static InputManager Input { get { return Instance._input; } }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Init();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        _input.OnUpdate();
+    }
+
+    // '매니저' 생성 및 연결 코드
+    static void Init()
+    {
+        if (s_instance == null)
+        {
+            GameObject go = GameObject.Find("@Managers");
+
+            if (go == null)
+            {
+                go = new GameObject { name = "@Managers" };
+                go.AddComponent<Manager>();
+            }
+
+            DontDestroyOnLoad(go);
+            s_instance = go.GetComponent<Manager>();
+        }
+    }
+}
+```
+
+```c#
+// PlayerController.cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField]
+    float _speed = 10.0f;
+
+    void Start()
+    {
+        Manager.Input.KeyAction -= OnKeyBoard;
+        Manager.Input.KeyAction += OnKeyBoard;
+    }
+
+    float _yAngle = 0.0f;
+
+    void OnKeyBoard()
+    {
+        _yAngle += Time.deltaTime * 30.0f;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            // LookRotation 함수 : 대상을 원하는 방향으로 바라보도록 rotation값을 조정하는 함수
+            // LookRotation은 절대 좌표계 기준으로 동작한다.
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward), 0.1f);
+            transform.position += Vector3.forward * Time.deltaTime * _speed;
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back), 0.1f);
+            transform.position += Vector3.back * Time.deltaTime * _speed;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left), 0.1f);
+            transform.position += Vector3.left * Time.deltaTime * _speed;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right), 0.1f);
+            transform.position += Vector3.right * Time.deltaTime * _speed;
+        }
+    }
+}
+```
