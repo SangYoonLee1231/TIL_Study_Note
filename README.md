@@ -61,6 +61,10 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_introduction.md">유니티 소개 및 설치</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Unity/unity_c_script.md">유니티 (Unity) - C# 스크립트 정리</a>
 
+### ◻ 게임 서버 (Game Server)
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Game_Server/about_game_server.md">Game Server란?</a>
+
 <br/>
 
 ## 📌 Computer Science
