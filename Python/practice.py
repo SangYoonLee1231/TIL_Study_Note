@@ -1,61 +1,87 @@
-from collections import deque
-
-
-n, k = tuple(map(int, input().split()))
-
-grid = [
-    list(map(int, input().split()))
+# 변수 선언, 입력
+n = int(input())
+matrix = [
+    list(input())
     for _ in range(n)
 ]
+razer_point = int(input())
+count = 1
 
-start_list = [
-    tuple(map(int, input().split()))
-    for _ in range(k)
-]
+#      D. L. U.  R.
+drs = [1, 0, -1, 0]
+dcs = [0, -1, 0, 1]
 
-visited = [
-    [False] * n
-    for _ in range(n)
-]
-
-q = deque()
+dir_num = (razer_point - 1) // n
 
 
-def can_move(x, y):
-    return not grid[x][y]
-
-def in_range(x, y):
-    return x >= 0 and y >= 0 and x < n and y < n
-
-def bfs():
-    while q:
-        q.popleft()
-
-        dxs = [0, 1, 0, -1]
-        dys = [1, 0 , -1, 0]
-
-        for dx, dy in zip(dxs, dys):
-            nx = x + dx
-            ny = y + dy
-
-            if in_range(nx, ny) and can_move(nx, ny) and not visited[nx][ny]:
-                q.append((nx, ny))
-                visited[nx][ny] = True
-                
+# 처리 Step 1 - 레이저 시작 포인트 설정
+if (dir_num == 0):
+    start_point = [0, razer_point - 1]
+elif (dir_num == 1):
+    start_point = [(razer_point - 1) % n, n-1]
+elif (dir_num == 2):
+    start_point = [n-1, (n-1) - ((razer_point - 1) % n)]
+elif (dir_num == 3):
+    start_point = [(n-1) - ((razer_point - 1) % n), 0]
+else:
+    pass
 
 
-# 처리
-for x, y in start_list:
-    x, y = x-1, y-1
-    q.append((x, y))
-    visited[x][y] = True
-    bfs()
+# 처리 Step 2 - 레이저 꺾기 관련 함수 정의
 
-# 출력
-count = 0
-for i in range(n):
-    for j in range(n):
-        if visited[i][j] == True:
-            count += 1
+# 범위
+def in_range(r, c, n):
+    return r >= 0 and r < n and c >= 0 and c < n
 
+# '\' 처리 과정
+def left_slice_process(r, c, dir_num):
+    if (dir_num == 0 or dir_num == 2):
+        # 왼쪽으로 꺾기
+        return move_counter_clockwise(r, c, dir_num)
+    elif (dir_num == 1 or dir_num == 3):
+        # 오른쪽으로 꺾기
+        return move_clockwise(r, c, dir_num)
+    else: pass
+
+# '/' 처리 과정
+def right_slice_process(r, c, dir_num):
+    if (dir_num == 0 or dir_num == 2):
+        # 오른쪽으로 꺾기
+        return move_clockwise(r, c, dir_num)
+    elif (dir_num == 1 or dir_num == 3):
+        # 왼쪽으로 꺾기
+        return move_counter_clockwise(r, c, dir_num)
+    else: pass
+
+
+# 왼쪽으로 꺾기
+def move_counter_clockwise(r, c, dir_num):
+    dir_num = (dir_num - 1 + 4) % 4
+    return r + drs[dir_num], c + dcs[dir_num]
+
+# 오른쪽으로 꺾기
+def move_clockwise(r, c, dir_num):
+    dir_num = (dir_num + 1) % 4
+    return r + drs[dir_num], c + dcs[dir_num]
+
+
+# 처리 Step 3 - 레이저 이동
+r, c = start_point
+
+while True:
+    if (matrix[r][c] == '\\'):
+        nr, nc = left_slice_process(r, c, dir_num)
+    elif (matrix[r][c] == '/'):
+        nr, nc = right_slice_process(r, c, dir_num)
+    else:
+        pass
+
+    if in_range(nr, nc, n):
+        r, c = nr, nc
+        count += 1
+    else:
+        break
+
+
+# 결과 출력
 print(count)
