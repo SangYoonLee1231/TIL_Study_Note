@@ -13,7 +13,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-component-%EB%9E%80">컴포넌트 (Component) 란?</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-vs-%ED%95%A8%EC%88%98-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">클래스 컴포넌트 vs 함수 컴포넌트</a>
@@ -155,7 +155,7 @@ document
 
 ## JSX
 
-- <strong>JSX</strong>는 <strong>JavaScript의 문법을 확장</strong>한 React만의 문법으로, <strong>JavaScript 내에서 HTML 마크업을 사용할 수 있도록 한 것이다.</strong>
+- <strong>JSX</strong>는 <strong>JavaScript의 문법을 확장</strong>한 React만의 문법으로, <strong>JavaScript 내에서 HTML 마크업을 사용할 수 있도록 한 것</strong>이다.
 
 - 마크업과 자바스크립트 로직이 서로 연결되어 있다고 판단하여 이를 한 번에 작성할 수 있는 방법을 고민한 결과 생겨난 문법이다.
 
@@ -165,7 +165,7 @@ document
 
 - <strong>JavaScript 정식 문법은 아니기 때문에 브라우저에서 이를 해석할 수 없다.</strong>
 
-  따라서 <strong>Babel</strong> 변역기로 이를 <code>React.createElement()</code> 함수로 변환하는 과정이 반드시 필요하다.
+  따라서 <strong>Babel</strong> 변역기를 통해 이를 <code>React.createElement()</code> 함수로 변환하는 과정이 반드시 필요하다.
 
 <br/><br/>
 
@@ -185,7 +185,7 @@ document
 
 <br/>
 
-- <strong>JSX는 JavaScript 값을 포함할 수 있다.</strong>
+- <strong>JSX는 자바스크립트 값을 포함할 수 있다.</strong>
 
   - 중괄호를 이용해서 자바스크립트의 값을 감싸주면 된다.
 
@@ -237,11 +237,11 @@ document
 
 - <strong>JSX에서 요소에 JavaScript 객체 형태로 inline style을 줄 수 있다.</strong>
 
-  - key-value 형태로 작성한 객체의 이름을 style 속성의 속성값으로 요소에 주면 된다.
+  - key-value 형태로 작성한 객체의 이름을 원하는 요소에 style 속성의 속성값으로 주면 된다.
 
     ```js
     const style = {
-      color: "red";,
+      color: "red",
       backgroundColor: "yellow",
     };
 
@@ -255,7 +255,7 @@ document
     ```js
     function App() {
       return <h1 style={{
-        color: "red";,
+        color: "red",
         backgroundColor: "yellow",
       }}
       >
@@ -395,19 +395,21 @@ document
 
 - <strong>Babel이란?</strong>
 
-  - 브라우저마다 사용하는 언어가 달라 발생하는 크로스브라우징 이슈를 해결하기 위해, 스크립트를 모든 브라우저에서 동작할 수 있는 코드로 '트랜스파일'해주는 장치
+  - 브라우저마다 사용하는 언어가 달라 발생하는 크로스 브라우징 이슈를 해결하기 위해, 스크립트를 '트랜스파일'하여 모든 브라우저에서 동작할 수 있도록 하는 장치
 
     - 트랜스파일 : 추상화 수준이 같은 코드로 변환해주는 것 (vs 빌드)
 
   - ECMAScript2015 이상의 코드를 적당한 하위 버전으로 변환
 
-  - TypeScript나 JSX도 Babel의 변환 대상이다.
+  - TypeScript나 JSX은 Babel의 변환 대상이다.
 
   - <a href="https://babeljs.io/">Babel 홈페이지 바로가기</a>
 
 <br/>
 
-- Babel standalone를 이용하여 변환기 설치하기
+#### Babel 사용법
+
+- <strong>1.</strong> Babel standalone를 이용하여 변환기 설치하기
 
   - HTML에 다음을 삽입한다.
 
@@ -429,7 +431,7 @@ document
 
 <br/>
 
-- <strong>Node.js를 통해 설치하기</strong>
+- <strong>2. Node.js를 통해 설치하기</strong>
 
   - 사전 지식 : <a href="">Node JS & NPM 소개 및 설치</a>
 
@@ -487,7 +489,7 @@ document
 
 <br/><br/><br/>
 
-## 컴포넌트 생성 & 컴포넌트를 다른 컴포넌트에 넣기
+## 컴포넌트
 
 ### 컴포넌트 (Component) 란?
 
