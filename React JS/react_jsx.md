@@ -13,7 +13,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#createelement-vs-jsx"><code>createElement</code> vs JSX</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#babel">Babel</a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EC%84%B1--%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90-%EB%84%A3%EA%B8%B0">컴포넌트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">컴포넌트</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-component-%EB%9E%80">컴포넌트 (Component) 란?</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-vs-%ED%95%A8%EC%88%98-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">클래스 컴포넌트 vs 함수 컴포넌트</a>
@@ -537,7 +537,7 @@ document
 
   - state, lifeCycle 등의 기능을 이용할 수 있어 초항기에 많이 사용된 방식이다.
 
-  - 하지만, Class 문법과 동작이 복잡하다는 단점이 존재한다.
+  - 하지만, Class의 문법과 동작이 복잡하다는 단점이 존재한다.
 
 <br/>
 
@@ -593,13 +593,15 @@ const Btn = () => (
   </button>
 );
 
-// Title, Btn, Container와 같이 이름이 대문자로 시작해야 컴포넌트로 바르게 인식된다.
+// Title, Btn 컴포넌트를 포함하는 Container 컴포넌트
 const Container = () => (
   <>
     <Title />
     <Btn />
   </>
 );
+
+// Title, Btn, Container와 같이 이름이 대문자로 시작되어야만 React에서 컴포넌트를 컴포넌트로 바르게 인식한다.
 
 ReactDOM.render(<Container />, root);
 ```
