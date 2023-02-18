@@ -28,6 +28,8 @@
 
 ## 📌 기본 언어
 
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/what-is-programming.md">프로그래밍이란?</a>
+
 ### ◻ Python
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_output.md">Python - 출력 함수 <code>print()</code> 사용법</a>
@@ -51,6 +53,80 @@
 - <a href="https://sylagape1231.tistory.com/92">C++ - C++과 객체 지향 프로그래밍이란? (블로그 포스트)</a>
 - 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/c++_method.md">C++ - 자주 쓰이는 메소드 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/C/c_piece_info.md">C / C# / C++ - 조각 지식 모음</a>
+
+### ◻ Vanila JavaScript
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
+- <a href="">JavaScript의 역사</a> (준비 중)
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md">JavaScript 기본 3 - 기본 연산자</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md">JavaScript 기본 4 - 비교 연산자</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md">JavaScript 기본 5 - 조건문 (<code>if</code>, <code>else</code>, <code>switch</code>), 논리 연산자</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md">JavaScript 기본 6 - nullish 병합 연산자 <code>??</code>, 반복문 (<code>for</code>, <code>while</code>)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md">JavaScript - 배열 관련 메서드 정리 (+ 화살표 함수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_how_to_create_and_use_object.md">JavaScript - 객체 생성 및 사용법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md">JavaScript - 이벤트 리스너 (Event Listener)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md">JavaScript - 시간과 관련된 함수 및 객체 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)</a>
+- 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_method_list.md">JavaScript - 내장 메소드 정리</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
+<!-- - <a href=""></a> -->
+
+<br/>
+
+## 📌 Front-End
+
+### ◻ HTML
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">웹 사이트의 구성과 HTML의 기본</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
+
+### ◻ CSS
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md">CSS - Display 속성 : Flexbox</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_grid.md">CSS - Display 속성 : Grid</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_position.md">CSS - Position</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 결합자, 속성 선택자, 가상 클래스, 가상 요소</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_color_variable.md">CSS - 색상 체계, 사용자 지정 CSS 속성 (변수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition, 애니메이션</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md">CSS - 미디어 쿼리 (Media Query)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_bem.md">CSS - BEM (Block Element Modifier) (클래스 이름 짓기 규칙)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_hack.md">CSS 핵 (Hack) 정리</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md">CSS Preprocessor - SASS</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md">CSS-in-JS - <code>styled-components</code></a>
+
+### ◻ TypeScript
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md">TypeScript 소개 및 설치</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md">TypeScript - 타입 설명 방식</a>
+
+### ◻ React JS
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md">React JS 소개 및 설치</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md">React JS 특징 + Virtual DOM</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md">React JS - JSX와 컴포넌트 (Component)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md">React JS - SPA & Routing</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md.md">React JS - <code>react-router</code>를 적용한 React 앱을 <strong>webpack</strong>으로 빌드하고 <strong>Github Page</strong>로 배포하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md">React JS - Hook & State & Props</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md">React JS - Side Effect와 useEffect</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md">React JS - 상수 데이터 & Mock Data + <code>fetch</code> 매소드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_component_reuse.md">React JS - Component의 분리와 재사용 (관심사의 분리)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md">React JS - Dynamic Routing & Query String</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_piece_info.md">React - 조각 지식 모음</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_custom_hook.md">React JS - 관심사의 분리와 Custom Hook</a>
+<!-- - <a href=""></a> -->
+
+### ◻ Node JS & NPM
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NodeJS/about_nodejs.md">Node JS & NPM 소개 및 설치</a>
 
 <br/>
 
@@ -109,80 +185,6 @@
 ### ◻ 데이터베이스
 
 <!-- - <a href=""></a> -->
-
-<br/>
-
-## 📌 Front-End
-
-### ◻ HTML
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_basic_concept.md">웹 사이트의 구성과 HTML의 기본</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML의 다양한 태그</a>
-
-### ◻ CSS
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_basic_concept.md">CSS의 소개와 기본 문법</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_id_and_class.md">CSS - ID와 Class</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_display_block_inline.md">CSS - Display 속성 : Block과 Inline</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_flexbox.md">CSS - Display 속성 : Flexbox</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_grid.md">CSS - Display 속성 : Grid</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_position.md">CSS - Position</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_pseudo_selector.md">CSS - 결합자, 속성 선택자, 가상 클래스, 가상 요소</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_color_variable.md">CSS - 색상 체계, 사용자 지정 CSS 속성 (변수)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transition.md">CSS - Transition, 애니메이션</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_transformation.md">CSS - Tranformation</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_media_query.md">CSS - 미디어 쿼리 (Media Query)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_bem.md">CSS - BEM (Block Element Modifier) (클래스 이름 짓기 규칙)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_hack.md">CSS 핵 (Hack) 정리</a>
-- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md">CSS Preprocessor - SASS</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md">CSS-in-JS - <code>styled-components</code></a>
-
-### ◻ Vanila JavaScript
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
-- <a href="">JavaScript의 역사</a> (준비 중)
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/html_javascript.md">JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic3.md">JavaScript 기본 3 - 기본 연산자</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic4.md">JavaScript 기본 4 - 비교 연산자</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic5.md">JavaScript 기본 5 - 조건문 (<code>if</code>, <code>else</code>, <code>switch</code>), 논리 연산자</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_basic6.md">JavaScript 기본 6 - nullish 병합 연산자 <code>??</code>, 반복문 (<code>for</code>, <code>while</code>)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_array_function.md">JavaScript - 배열 관련 메서드 정리 (+ 화살표 함수)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_how_to_create_and_use_object.md">JavaScript - 객체 생성 및 사용법</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener.md">JavaScript - 이벤트 리스너 (Event Listener)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md">JavaScript - 시간과 관련된 함수 및 객체 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)</a>
-- 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_method_list.md">JavaScript - 내장 메소드 정리</a>
-- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
-<!-- - <a href=""></a> -->
-
-### ◻ TypeScript
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/about_typescript.md">TypeScript 소개 및 설치</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md">TypeScript - 타입 설명 방식</a>
-
-### ◻ React JS
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md">React JS 소개 및 설치</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_feature.md">React JS 특징 + Virtual DOM</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md">React JS - JSX와 컴포넌트 (Component)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md">React JS - SPA & Routing</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_github_page_setting.md.md">React JS - <code>react-router</code>를 적용한 React 앱을 <strong>webpack</strong>으로 빌드하고 <strong>Github Page</strong>로 배포하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_hook_state_props.md">React JS - Hook & State & Props</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_useeffect.md">React JS - Side Effect와 useEffect</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_mock_data.md">React JS - 상수 데이터 & Mock Data + <code>fetch</code> 매소드</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_component_reuse.md">React JS - Component의 분리와 재사용 (관심사의 분리)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md">React JS - Dynamic Routing & Query String</a>
-- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_piece_info.md">React - 조각 지식 모음</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_custom_hook.md">React JS - 관심사의 분리와 Custom Hook</a>
-<!-- - <a href=""></a> -->
-
-### ◻ Node JS & NPM
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NodeJS/about_nodejs.md">Node JS & NPM 소개 및 설치</a>
 
 <br/>
 
