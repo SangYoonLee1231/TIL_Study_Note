@@ -28,7 +28,7 @@
 
 ## 📌 기본 언어
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/what-is-programming.md">프로그래밍이란?</a>
+- <strong><a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/what-is-programming.md">프로그래밍이란?</a></strong>
 
 ### ◻ Python
 
