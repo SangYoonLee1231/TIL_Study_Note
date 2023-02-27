@@ -1,84 +1,34 @@
-from collections import deque
+n, m = tuple(map(int, input().split()))
+lst = []
+used = [False for i in range(n + 1)]
 
-m, n = tuple(map(int, input().split()))
-
-box = [
-    list(map(int, input().split()))
-    for _ in range(n)
-]
-
-visited = [
-    [False] * m
-    for _ in range(n)
-]
-
-days = [
-    [0] * m
-    for _ in range(n)
-]
-
-q = deque()
-
-# visited, days 세팅
-answer_0_flag = True
-
-for r in range(n):
-    for c in range(m):
-        if box[r][c] == -1:
-            visited[r][c] = True
-            days[r][c] = -1
-        if box[r][c] == 0:
-            answer_0_flag = False
+print(used)
 
 
-drs, dcs = [1, -1, 0, 0], [0, 0, 1, -1]
+def print_lst():
+    for elem in lst:
+        print(elem, end=" ")
+    print()
 
 
-def in_range(r, c):
-    return r >= 0 and r < n and c >= 0 and c < m
+def choose(curr_num):
+    # 종료 조건
+    if curr_num == m + 1:
+        print_lst()
+    return
 
-def can_go(r, c):
-    return in_range(r, c) and not visited[r][c]
+    # 재귀 호출
+    for i in range(1, n + 1):
+        if used[i] == True:
+            continue
 
-def bfs():
-    while q:
-        r, c = q.popleft()
+        lst.append(i)
+        used[i] = True
 
-        for dr, dc in zip(drs, dcs):
-            nr, nc = r + dr, c + dc
+        choose(curr_num + 1)
 
-            if can_go(nr, nc) and box[nr][nc] == 0:
-                visited[nr][nc] = True
-                days[nr][nc] += (days[r][c] + 1)
-                box[nr][nc] = 1
-                q.append((nr, nc))
-
-
-# 토마토 익는 과정 수행
-for r in range(n):
-    for c in range(m):
-        if box[r][c] == 1:
-            visited[r][c] = True
-            days[r][c] = 0 # 없어도 되는 코드
-            q.append((r, c))
-bfs()
+        used[i] = False
+        lst.pop()
 
 
-# 결과 분석
-max_days = 0
-
-def analyze_result():
-    global max_days
-
-    if answer_0_flag:
-        return 0
-
-    for r in range(n):
-        for c in range(m):
-            max_days = max(days[r][c], max_days)
-            if box[r][c] == 0:
-                return -1
-    return max_days
-
-
-print(analyze_result())
+choose(1)

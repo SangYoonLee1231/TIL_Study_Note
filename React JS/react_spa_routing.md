@@ -30,7 +30,7 @@
 
 - 여기서 페이지란 html 파일을 뜻하기 때문에, SPA는 웹 사이트 전체에 HTML 파일이 하나인 웹 어플리케이션이다.
 
-- MPA와 달리, SPA는 html이 하나 뿐이므로 여러 페이지(UI)를 하나의 페이지에서 보여주기 위해 <strong>Routing 기능</strong>이 필요하다.
+- MPA와 달리, SPA는 html이 하나 뿐이므로 여러 페이지(UI)를 하나의 페이지에 보여주기 위해선 <strong>Routing 기능</strong>이 필요하다.
 
 <br/>
 
@@ -38,7 +38,7 @@
 
 - SPA에서 경로에 따라 다른 페이지를 브라우저 화면에 보여주는 것을 Routing이라 한다.
 
-- React 자체에는 Routing 기능이 없기 때문에, React-Router이라는 라이브러리를 설치해 사용해야 한다.
+- React 자체에는 Routing 기능이 없기 때문에, 대신 React-Router라는 라이브러리를 별도로 설치해주어야 한다.
 
   - React-Router 설치 명령어 : <code>npm install react-router-dom</code>
 
