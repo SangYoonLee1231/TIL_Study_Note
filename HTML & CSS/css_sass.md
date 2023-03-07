@@ -12,9 +12,9 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-syntactically-awesome-style-sheets">SASS (Syntactically Awesome Style Sheets)</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-vs-scss">SASS vs SCSS</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0">SASS 적용하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#scss-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0">SCSS 적용하기</a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#sass-%EB%AC%B8%EB%B2%95">SASS 문법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#scss-%EB%AC%B8%EB%B2%95">SCSS 문법</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#nesting-%EB%B6%80%EB%AA%A8%EC%84%A0%ED%83%9D%EC%9E%90-">Nesting, 부모선택자 (&)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B3%80%EC%88%98">변수</a>
@@ -92,7 +92,7 @@
 
 <br/>
 
-### SASS 적용하기
+### SCSS 적용하기
 
 - 확장자 명 : <code>.scss</code>
 
@@ -106,7 +106,7 @@
 
 <br/><br/>
 
-## SASS 문법
+## SCSS 문법
 
 ### Nesting, 부모선택자 (&)
 
