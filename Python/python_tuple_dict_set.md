@@ -4,9 +4,9 @@
 
 ## 목차
 
-- <a href="">튜플 (tuple)</a>
-- <a href="">딕셔너리 (dictonary)</a>
-- <a href="">집합 (set)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_tuple_dict_set.md#%ED%8A%9C%ED%94%8C-tuple">튜플 (tuple)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_tuple_dict_set.md#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-dictonary">딕셔너리 (dictonary)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_tuple_dict_set.md#%EC%A7%91%ED%95%A9-set">집합 (set)</a>
 
 <br/><br/>
 
