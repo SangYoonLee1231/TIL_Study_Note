@@ -169,7 +169,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
 
-### ◻ 컴퓨터 구조 및 시스템
+### ◻ 컴퓨터 구조
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
@@ -177,7 +177,9 @@
 
 ### ◻ 운영체제
 
+- <a href="https://sylagape1231.tistory.com/120">운영체제란 무엇일까? (정의, 종류, 역할) (블로그 포스트)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md">프로세스와 스레드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md">시스템의 구조 (사용자 영역, 커널 영역, 하드웨어)</a>
 
 ### ◻ 네트워크
 
