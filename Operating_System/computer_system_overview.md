@@ -6,7 +6,13 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md#%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EA%B5%AC%EC%A1%B0">시스템의 구조</a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md#%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%98%81%EC%97%AD-%EC%9A%B4%EC%98%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8">사용자 영역 (운영 프로그램)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md#%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C-vs-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%BD%9C">시스템 콜 vs 라이브러리 콜</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md#%EC%BB%A4%EB%84%90-%EC%98%81%EC%97%AD-os">커널 영역 (OS)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md#%EC%BB%A4%EB%84%90-%EC%98%81%EC%97%AD%EC%97%90%EC%84%9C-%EC%9D%B4%EB%A3%A8%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9Cos%EC%9D%98-4%EA%B0%80%EC%A7%80-%EC%97%AD%ED%95%A0">커널 영역에서 이루어지는 운영체제(OS)의 4가지 역할</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md#%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%98%81%EC%97%AD">하드웨어 영역</a>
 
 <br/><br/>
 
@@ -19,6 +25,16 @@
     <img src="img/slide-17.png" />
 
     </div>
+
+  - <strong>사용자 영역, 커널 영역, 하드웨어 영역</strong>으로 구분할 수 있다.
+
+    - <strong>사용자 영역</strong>은 응용 프로그램들이 실행되는 메모리 공간이다.
+
+    - <strong>커널 영역</strong>은 운영체제 프로그램이 실행되는 메모리 공간이다.
+
+    - <strong>하드웨어 영역</strong>은 CPU, 메모리 등 컴퓨터의 물리적 부품들이 동작하는 공간이다.
+
+  - <strong>운영체제</strong>는 <strong>커널 영역</strong>에서 운영 프로그램들이 잘 실행될 수 있도록 <strong>하드웨어와 소프트웨어를 관리</strong>한다.
 
 <br/>
 
