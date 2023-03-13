@@ -138,15 +138,21 @@
 
   - 프로세스 동기화, 교착 상태 해결
 
+<br/>
+
 - <strong>파일 관리 (File Management)</strong>
 
   - 디스크의 파일 관리 (컴퓨터의 여러 파일 및 폴더 관리)
+
+<br/>
 
 - <strong>메모리 관리 (Memory Management)</strong>
 
   - OS가 프로세스에게 메모리를 어떻게 할당해줄지
 
   - 메모리가 부족한 상황에선 이를 어떻게 극복하는지
+
+<br/>
 
 - <strong>디바이스 관리 (Device Management)</strong>
 
