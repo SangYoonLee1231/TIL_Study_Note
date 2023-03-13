@@ -178,8 +178,8 @@
 ### ◻ 운영체제
 
 - <a href="https://sylagape1231.tistory.com/120">운영체제란 무엇일까? (정의, 종류, 역할) (블로그 포스트)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md">프로세스와 스레드</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/computer_system_overview.md">시스템의 구조 (사용자 영역, 커널 영역, 하드웨어)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/process_and_thread.md">프로세스와 스레드</a>
 
 ### ◻ 네트워크
 
