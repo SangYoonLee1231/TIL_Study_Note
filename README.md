@@ -174,6 +174,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
+- <a href="">PC 하드웨어 - CPU 개요</a>
 
 ### ◻ 운영체제
 
