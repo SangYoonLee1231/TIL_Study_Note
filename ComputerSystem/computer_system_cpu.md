@@ -8,11 +8,11 @@
 
 ### 목차
 
-- <a href="">CPU의 개념</a>
-- <a href="">코어 (Core)</a>
-- <a href="">모바일 중앙 처리 장치</a>
-- <a href="">CPU-오버클럭 (Over-clock)</a>
-- <a href="">CISC와 RISC</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md#cpu%EC%9D%98-%EA%B0%9C%EB%85%90">CPU의 개념</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md#%EC%BD%94%EC%96%B4-core">코어 (Core)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%A4%91%EC%95%99-%EC%B2%98%EB%A6%AC-%EC%9E%A5%EC%B9%98">모바일 중앙 처리 장치</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md#cpu-%EC%98%A4%EB%B2%84%ED%81%B4%EB%9F%AD-over-clock">CPU-오버클럭 (Over-clock)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md#cisc%EC%99%80-risc">CISC와 RISC</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -27,13 +27,13 @@
 
   - 기계어로 **명령어를 수행하고 데이터를 처리한다. (CPU가 하는 일)**
 
-  - 구성요소 : 연산장치(ALU), 제어장치(CU), 레지스터(register)
+  - **구성요소** : 연산장치, 제어장치, 레지스터
 
-    - **연산장치** : 계산 장치
+    - **연산장치 (ALU)** : 계산 장치
 
-    - **제어장치** : 명령, 제어
+    - **제어장치 (CU)** : 명령, 제어
 
-    - **레지스터** : 저장소 (가장 빠른 메모리)
+    - **레지스터 (Register)** : 저장소 (가장 빠른 메모리)
 
 <br/><br/>
 
@@ -168,3 +168,5 @@
 <img src="img/cisc_vs_risc2.png">
 
 </div>
+
+<br/>
