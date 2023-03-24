@@ -176,6 +176,11 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md">PC 하드웨어 - CPU 개요</a>
 
+### ◻ 시스템 프로그래밍 (Linux)
+
+- <a href="">리눅스 개요</a>
+<!-- - <a href=""></a> -->
+
 ### ◻ 운영체제
 
 - <a href="https://sylagape1231.tistory.com/120">운영체제란 무엇일까? (정의, 종류, 역할) (블로그 포스트)</a>
