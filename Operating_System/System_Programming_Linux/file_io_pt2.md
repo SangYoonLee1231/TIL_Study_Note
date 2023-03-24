@@ -8,9 +8,9 @@
 
 ### 목차
 
-- <a href="">리눅스 명령어 맛보기</a>
-- <a href="">파일 I/O Part 1 복습</a>
-- <a href="">버퍼 (Buffer) 심화</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%A7%9B%EB%B3%B4%EA%B8%B0">리눅스 명령어 맛보기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%ED%8C%8C%EC%9D%BC-io-part-1-%EB%B3%B5%EC%8A%B5">파일 I/O Part 1 복습</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EB%B2%84%ED%8D%BC-buffer-%EC%8B%AC%ED%99%94">버퍼 (Buffer) 심화</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -95,6 +95,8 @@
 
   - fdopen : 시스템 콜을 통해 파일 디스크립터만 만들고 → 이를 가지고 오픈(read, write)모드를 갖는 파일 스트림 구조체를 만들어줘
 
+<br/>
+
 - 함수의 이름, 인자, 반환값, 값들의 타입 꼭 잘 기억할 것
 
 <br/><br/>
@@ -109,7 +111,7 @@
 
   - 버퍼가 있으면, 엔터가 들어오거나, 버퍼에 있는 내용이 일정량 다 차야 커널에 전달
 
-  - 버퍼를 사용할 때, (출력을 예로 듦) 내가 write 하면 버퍼링 하지 말고 바로 커널로 내려보내서 장치에 나타나게 하라 → Unbuffering
+  - 버퍼를 사용할 때, (출력을 예로 듦) 내가 write 하면 버퍼링 하지 말고 바로 커널로 내려보내서 장치에 나타나게 하라 → **Unbuffering**
 
   - 시스템 콜로 매번 내려보내면 시간 오래 걸림, 비용 문제 발생 → 그래서 버퍼를 씀
 
@@ -132,6 +134,10 @@
   - getchar() (키보드에서 문자 하나씩 받아들일 때) 문제
     - line buffering에선 getchar() 함수가 정상적으로 동작하지 않음
 
+- **Unbuffering** : 버퍼를 쓰지 말고 곧바로 커널로 내려보내 장치에 결과가 나타나게 하라
+
+<br/>
+
 - 상황을 보고 버퍼링 모드를 사용해야 할 때 쓰고 아님 말고
 
 - fflush() 써도 된다.
@@ -145,7 +151,9 @@
 - 리눅스에선 (디폴트 값)
 
   - stderr : 항상 unbuffering (긴급한 메세지)
+
   - stdin/stdout : 항상 line buffering
+
   - 그 외 나머지 : 항상 full buffering
 
 <br/>

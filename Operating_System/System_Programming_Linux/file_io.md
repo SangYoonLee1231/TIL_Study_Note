@@ -174,3 +174,9 @@
 - **파일 스트림 하나와 파일 디스크립터 번호 하나는 일대일 대응**
   - **파일 하나를 열면, 파일 라이브러리에서는 스트림 객체를 하나 만들 것이고, 시스템 콜에는 그에 해당하는 디스크립터를 배정해야 한다.**
 - 파일 스트림에는 자기 스트림에 대응하는 디스크립터 번호를 하나 기록하고 있어야 한다.
+
+<br/>
+
+> <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md">Part 2</a>에서 이어집니다.
+
+<br/>
