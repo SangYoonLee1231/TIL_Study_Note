@@ -178,8 +178,10 @@
 
 ### ◻ 시스템 프로그래밍 (Linux)
 
-- <a href="">리눅스 개요</a>
-<!-- - <a href=""></a> -->
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/about_linux.md">리눅스 개요</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md">파일 I/O Part 1 (Linking, 파일 스트림, 라이브러리 버퍼)</a>
+  <!-- - <a href=""></a> -->
+  <!-- - <a href=""></a> -->
 
 ### ◻ 운영체제
 
