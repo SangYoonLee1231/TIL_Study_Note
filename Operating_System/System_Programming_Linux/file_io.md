@@ -8,10 +8,10 @@
 
 ### 목차
 
-- <a href="">시전 지식</a>
-- <a href="">라이브러리와 Linking</a>
-- <a href="">파일 스트림 (FILE \*), 파일 디스크립터 (File Discripter)</a>
-- <a href="">정리</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%EC%82%AC%EC%A0%84-%EC%A7%80%EC%8B%9D">시전 지식</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-linking">라이브러리와 Linking</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%ED%8C%8C%EC%9D%BC-%EC%8A%A4%ED%8A%B8%EB%A6%BC-file--%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-file-discripter">파일 스트림 (FILE \*), 파일 디스크립터 (File Discripter)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%EC%A0%95%EB%A6%AC">정리</a>
 
 <br/><br/>
 
@@ -87,10 +87,15 @@
   - stdio 라이브러리에서 제공하는 파일과 관련된 함수들
 
     - **File Stream (FILE \*)** : 그 파일과 관련된 모든 정보를 갖고 있는 구조체
+
     - 표준 입력, 표준 출력, 표준 에러 : 이미 만들어져 있는 스트림
+
       - 이 세 가지는 자동으로 만들어진다.
+
     - 리눅스는 모든 프로그램을 쉘(Shell)에서 실행한다.
+
       - 그 프로그램을 실행할 때, 쉘이 갖고 있던 여러 파일들의 속성이 응용 프로그램에 전달된다. → 상속된다.
+
       - 표준 입출력 장치에 대한 그 파일 스트림은 실제로 쉘이 이미 만들어 놓은 파일 스트림을 실행하는 응용 프로그램이 그대로 가져다 쓰는 것이다.
 
   - OS가 제공하는 File I/O 시스템 콜
@@ -102,21 +107,31 @@
 
       - 각 파일들에 대한 파일 정보나 장치 정보를 가리키고 있는 테이블
 
-      FDT
-      0 [ ] → 키보드 (표준 입력 장치)
-      1 [ ] → 모니터 (표준 출력 장치)
-      2 [ ] → 모니터
-      . [ . ]
-      . [ . ]
-      . [ . ]
+    ***
 
-- 처음으로 사용 안되는 번호 → 내가 생성하려는 파일의 디스크립터 번호로 할당
+    \<FDT><br/>
+    0 [ ] → 키보드 (표준 입력 장치)<br/>
+    1 [ ] → 모니터 (표준 출력 장치)<br/>
+    2 [ ] → 모니터<br/>
+    . [ . ]<br/>
+    . [ . ]<br/>
+    . [ . ]<br/>
+
+    ***
+
+<br/>
+
+- 처음으로 사용 되는 않는 번호 → 내가 생성하려는 파일의 디스크립터 번호로 할당
 
   - 중간에 3번을 close → 3번은 미사용
 
   - 그 다음 파일을 오픈하면 **3번이 할당됨**
 
+<br/>
+
 - 일반적으로 리눅스에서는 한 프로세스당 최대 1024개까지 파일을 열 수 있다고 한다.
+
+<br/>
 
 - standard I/O library 함수 (printf, fprintf, puts) 는 궁극적으로 ‘시스템 콜’의 도움을 받아야 한다.
 
