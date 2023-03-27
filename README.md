@@ -189,7 +189,7 @@
 
 ### ◻ 네트워크
 
-- <a href="">네트워크 기초</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md">네트워크 기초</a>
 <!-- - <a href=""></a> -->
 
 ### ◻ 데이터베이스
