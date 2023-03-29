@@ -10,8 +10,12 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%A7%9B%EB%B3%B4%EA%B8%B0">리눅스 명령어 맛보기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%ED%8C%8C%EC%9D%BC-io-part-1-%EB%B3%B5%EC%8A%B5">파일 I/O Part 1 복습</a>
+
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EB%B2%84%ED%8D%BC-buffer-%EC%8B%AC%ED%99%94">버퍼 (Buffer) 심화</a>
-<!-- - <a href=""></a> -->
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%B2%84%ED%8D%BC-library-buffer">라이브러리 버퍼 (Library Buffer)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EC%BB%A4%EB%84%90-%EB%B2%84%ED%8D%BC-%EC%BA%90%EC%8B%9C-kernal-buffer-cache">커널 버퍼 캐시 (kernal buffer cache)</a>
+  <!-- - <a href=""></a> -->
 
 <br/><br/>
 
@@ -198,7 +202,7 @@
 
 - 시스템 콜이든 라이브러리 콜이든 호출하면 리턴값을 확인하는 습관을 가질 것
 
-<br/>
+<br/><br/>
 
 ## 커널 버퍼 캐시 (kernal buffer cache)
 
@@ -295,5 +299,59 @@
 
     - 정상 : 정상적으로 쓴 오브젝트의 개수
     - 에러 : 0
+
+<br/><br/>
+
+## 파일 관련 함수
+
+#### **File Open**
+
+- <code>FILE * fopen ( const char *filename, const char \*type);</code>
+
+  - return한 반한값이 NULL인지 항상 체크를 해주어야 한다.
+    - if (fp = NIULL) { /_\*파일 오픈에 실패_\*/ }
+
+  <img src="../img/file_access_mode.png">
+
+- 파일 디스크립터 개수 : 1024개
+
+- 파일 스트림은 1024개보다 적다
+  - 파일 스트림 구조체 자체가 메모리 크기를 상당부분 차지하기 때문
+
+<br/>
+
+#### **File Reopen**
+
+- <code>FILE * freopen ( const char *filename, const char *type, FILE *stream);</code>
+
+  - <code>FILE \*stream</code> : 기존에 이미 만들어진 파일 스트림
+
+  - 먼저 파일 스트림과 이미 연결되어 있는 파일을 닫는다.
+
+  - <code>const char \*filename</code> 파일과 파일 스트림을 연결한다.
+
+  - file descriptor와의 관계는 유지가 된다.
+
+  - 예시 코드
+
+    ```c
+    freopen("myfile.txt", "w", stdout);
+    printf("This sentence is redirected to a file.");
+    fclose(stdout);
+    ```
+
+<br/>
+
+#### File Close
+
+- <code>int fclose( FILE \*stream);</code>
+
+  - 파일을 닫는 함수
+
+  - return 값 : 정상적으로 닫히면 0, 에러면 EOF
+
+  - 프로세스가 정상적으로 종료되면, OS가 파일 디스크립터 테이블을 보고 관련 모든 파일을 종료시킨다. (자동으로 종료되는 것처럼 보임)
+
+  - 파일 다썼으면 fclose를 꼭 해주어야 데이터 손실을 방지할 수 있다.
 
 <br/>
