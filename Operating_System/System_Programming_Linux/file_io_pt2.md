@@ -39,7 +39,7 @@
 
 - <code>vi test.c</code> : 기본 템플릿으로 소스 코드 보기
 
-- <code>cp -r /sp-resource/ .</code> : 루트 밑 sp-resource에 있는 모든 걸 복사
+- <code>cp -r /sp-resource/ .</code> : 루트 밑 sp-resource에 있는 모든 것을 현재 디렉토리로 복사
 
 <br/><br/>
 
@@ -103,7 +103,23 @@
 
 ## 버퍼 (Buffer) 심화
 
-- 버퍼는 내가 쓰는 라이브러리에서 관리하는 버퍼 (라이브러리 버퍼링)
+- 버퍼링의 종류
+
+  - 유저 레벨의 버퍼링 : 라이브러리 버퍼 (library buffer)
+
+    - Full, Line, Unbuffering은 이 버퍼를 어떻게 사용할 것인지에 관한 이야기이다.
+
+  - 커널 안에서의 버퍼링 : 커널 버퍼 캐시 (kernal buffer cache)
+
+  <br/>
+
+<img src="../img/buffer.png">
+
+<br/>
+
+## 라이브러리 버퍼 (Library Buffer)
+
+- 라이브러리 버퍼는 내가 쓰는 라이브러리에서 관리하는 버퍼
 
   - fread → 데이터 전달 → buffer에 자연스럽게 카피
 
@@ -181,3 +197,103 @@
 - 에러 코드를 잘 처리하는 것도 매우 중요한 일 중 하나
 
 - 시스템 콜이든 라이브러리 콜이든 호출하면 리턴값을 확인하는 습관을 가질 것
+
+<br/>
+
+## 커널 버퍼 캐시 (kernal buffer cache)
+
+- 디스크에서 데이터를 읽으면, 버퍼 캐시에도 그 데이터를 카피한 다음, 위로(유저 스페이스 영역으로) 데이터를 올려보낸다.
+
+- 커널 버퍼 캐시의 목적 : 디스크의 접근 횟수를 줄이기 위해서
+
+  - b/c : 디스크에 접근에서 데이터를 읽어오는 시간이 (CPU 입장에서) 오래 걸린다.
+
+- OS는 디스크에서 데이터를 **바이트 단위가 아닌** **block 단위(2KB or 4KB)로 읽어온다.**
+
+  - 데이터 하나를 읽더라도 그 데이터가 있는 블록 전체를 가져와서 버퍼 캐시에 저장한다.
+
+### 버퍼 캐시의 유용함
+
+- 버퍼 캐시는 읽을 때에도 유용하다.
+
+  - 디스크까지 내려갈 필요 없이 버퍼 캐시에서 데이터를 읽으면 되므로
+
+- 버퍼 캐시는 쓸 때도 유용하다.
+
+  - 먼저 캐시에 데이터를 저장하고, 나중에 디스크로 내려보낸다.
+
+  - 만일 캐시가 없다면, 느린 기계(하드디스크)에 데이터를 계속 넣게 되므로 전체 성능이 떨어진다.
+
+- **Delayed Write** : 디스크에 데이터가 write 된는 시점이 실제 write 시점보다 약간 늦게 일어난다.
+
+  - 성능 개선 효과 but 갑자기 전원이 나가면 데이터가 증발할 위험이 있다.
+
+<br/>
+
+### fflush 함수
+
+- 라이브러리 버퍼에 있는 내용을 커널 버퍼 캐시로 내려보내는 함수
+
+- fflush를 쓰면 딜레이 없이 데이터를 보거나 읽을 수 있다.
+
+- 디스크 단위로 입출력한다. → Block Device I/O
+
+  - 디스크와 커널 사이 KB 단위로 데이터가 이동한다. → block
+
+- buffer cache는 page cache와 동일한 개념이다.
+
+- 커널 버퍼 캐시에 있는 데이터를 디스크로 내려보내는 함수 → fsync(), sync()
+
+- 시스템 전원을 끄기전 sync 함수를 호출해줘야 데이터 손실을 방지할 수 있다.
+
+- 파일이 닫힐 때, fflush 함수가 자동적으로 호출된다.
+
+  - 파일 라이브러리에 있던 모든 데이터가 화면에 나타나고 파일이 끝난다.
+
+- OS system의 open 함수
+
+  - O_SYNC를 주면 커널 버퍼 캐시를 거치지 않고 데이터를 바로 디스크로 내려보낸다. (손실되면 큰일나는 중요한 데이터를 다룰 때 씀)
+
+<br/>
+
+### 그 외 버퍼 관련 함수
+
+#### fread
+
+- <code>size_t fread (void *ptr, size_t size, size_t nitems, FILE *stream)</code>
+
+  - <code>void \*ptr : 데이터를 읽어왔을 때 데이터를 담을 버퍼의 주소</code>
+
+  - <code>size_t size : 읽을 데이터의 크기 (객체 유닛 하나의 크기)</code>
+
+  - <code>size_t nitems : 객체의 개수</code>
+
+  - <code>FILE \*stream : 어떤 파일 스트림으로부터 데이터를 읽을 것인가</code>
+
+  - return 값
+
+    - 정상 : 성공적으로 읽은 오브젝트의 개수
+    - 에러 : 0
+
+  - <code>size_t</code>는 사이즈를 나타내며 unsigned int 타입이다. (typedef으로 변환해준다)
+
+    - <code>typedef size_t, unsigned int</code>
+
+#### fwrite
+
+- <code>size_t fwrite (void *ptr, size_t size, size_t nitems, FILE *stream)</code>
+
+  - <code>void \*ptr</code> : 데이터를 쓸 버퍼의 주소
+
+  - <code>size_t size</code> : 읽을 데이터의 크기 (객체 유닛 하나의 크기)
+
+  - <code>size_t nitems</code> : 객체의 개수
+
+  - <code>FILE \*stream</code> : 어떤 파일 스트림에 데이터를 쓸 것인가
+
+  - return 값
+
+    - 정상 : 정상적으로 쓴 오브젝트의 개수
+    - 에러 : 0
+
+<br/>
