@@ -198,6 +198,14 @@
 
 <br/>
 
+## 📌 Data Science
+
+### ◻ 데이터 마이닝
+
+- <a href="">Numpy 배열 기초</a>
+
+<br/>
+
 ## 🎮 Game Development
 
 ### ◻ 유니티 (Unity)
