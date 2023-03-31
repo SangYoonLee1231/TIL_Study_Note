@@ -202,7 +202,7 @@
 
 ### ◻ 데이터 마이닝
 
-- <a href="">Numpy 배열 기초</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md">Numpy 배열 기초</a>
 
 <br/>
 

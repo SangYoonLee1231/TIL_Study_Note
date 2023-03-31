@@ -8,15 +8,15 @@
 
 ### 목차
 
-- <a href="">Numpy 배열이란?</a>
-- <a href="">벡터화 연산</a>
-- <a href="">2차원 배열</a>
-- <a href="">배열의 차원과 크기 (shape, ndim)</a>
-- <a href="">배열의 인덱싱과 슬라이싱</a>
-- <a href="">팬시 인덱싱 (Fancy Indexing)</a>
-- <a href="">Numpy의 자료형 (dtype)</a>
-- <a href="">Inf와 NaN</a>
-- <a href="">브로드캐스팅 (Broadcasting)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#numpy-%EB%B0%B0%EC%97%B4%EC%9D%B4%EB%9E%80">Numpy 배열이란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#%EB%B2%A1%ED%84%B0%ED%99%94-%EC%97%B0%EC%82%B0">벡터화 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4">2차원 배열</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%B0%A8%EC%9B%90%EA%B3%BC-%ED%81%AC%EA%B8%B0-shape-ndim">배열의 차원과 크기 (shape, ndim)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%9D%B8%EB%8D%B1%EC%8B%B1%EA%B3%BC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1">배열의 인덱싱과 슬라이싱</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#%ED%8C%AC%EC%8B%9C-%EC%9D%B8%EB%8D%B1%EC%8B%B1-fancy-indexing">팬시 인덱싱 (Fancy Indexing)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#numpy%EC%9D%98-%EC%9E%90%EB%A3%8C%ED%98%95-dtype">Numpy의 자료형 (dtype)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#inf%EC%99%80-nan">Inf와 NaN</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_1.md#%EB%B8%8C%EB%A1%9C%EB%93%9C%EC%BA%90%EC%8A%A4%ED%8C%85-broadcasting">브로드캐스팅 (Broadcasting)</a>
 
 <br/><br/>
 
