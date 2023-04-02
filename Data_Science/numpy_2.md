@@ -8,11 +8,11 @@
 
 ### 목차
 
-- <a href="">배열 생성 관련 명령어</a>
-- <a href="">차원 축소 연산</a>
-- <a href="">정렬 (sort)</a>
-- <a href="">기술 통계 관련 명령어</a>
-- <a href="">난수 발생과 카운팅 관련 명령어</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_2.md#%EB%B0%B0%EC%97%B4-%EC%83%9D%EC%84%B1-%EA%B4%80%EB%A0%A8-%EB%AA%85%EB%A0%B9%EC%96%B4">배열 생성 관련 명령어</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_2.md#%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EC%97%B0%EC%82%B0">차원 축소 연산</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_2.md#%EC%A0%95%EB%A0%AC-sort">정렬 (sort)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_2.md#%EA%B8%B0%EC%88%A0-%ED%86%B5%EA%B3%84-%EA%B4%80%EB%A0%A8-%EB%AA%85%EB%A0%B9%EC%96%B4">기술 통계 관련 명령어</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Data_Science/numpy_2.md#%EB%82%9C%EC%88%98-%EB%B0%9C%EC%83%9D%EA%B3%BC-%EC%B9%B4%EC%9A%B4%ED%8C%85-%EA%B4%80%EB%A0%A8-%EB%AA%85%EB%A0%B9%EC%96%B4">난수 발생과 카운팅 관련 명령어</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -23,7 +23,7 @@
 
 - `ones` : 모든 원소를 1로 초기화
 
-- `zeros_like, ones_like `: 모든 원소를 0 또는 1로 초기화하되, 배열 크기는 인자로 준 배열의 크기를 따름
+- `zeros_like, ones_like` : 모든 원소를 0 또는 1로 초기화하되, 배열 크기는 인자로 준 배열의 크기를 따름
 - `empty` : 원소를 초기화하지 않고 선언만 진행
 - `arange` : range의 numpy 버전, 규칙에 따라 만들어진 수열을 배열로 생성
 - `linspace, logspace (시작점, 끝점, 분할개수)` : 선형 구간 혹은 로그 구간을 지정한 구간 수만큼 분할한다.
