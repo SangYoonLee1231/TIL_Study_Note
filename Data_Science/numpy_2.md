@@ -152,11 +152,11 @@ a[j]
 
   - 데이터를 가장 작은 수부터 가장 큰 수까지 크기가 커지는 순서대로 정렬하였을 때 1/4, 2/4, 3/4 위치에 있는 수
 
-    - `np.percentile(x, 0)  *# 최소값*`
-    - `np.percentile(x, 25)  *# 1사분위 수*`
-    - `np.percentile(x, 50)  *# 2사분위 수*`
-    - `np.percentile(x, 75)  *# 3사분위 수*`
-    - `np.percentile(x, 100)  *# 최댓값*`
+    - `np.percentile(x, 0)  # 최소값`
+    - `np.percentile(x, 25)  # 1사분위 수`
+    - `np.percentile(x, 50)  # 2사분위 수`
+    - `np.percentile(x, 75)  # 3사분위 수`
+    - `np.percentile(x, 100)  # 최댓값`
 
 <br/><br/>
 

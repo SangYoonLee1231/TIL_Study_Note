@@ -353,7 +353,7 @@
 - <code>FILE * fopen ( const char *filename, const char \*type);</code>
 
   - return한 반한값이 NULL인지 항상 체크를 해주어야 한다.
-    - if (fp = NIULL) { /_\*파일 오픈에 실패_\*/ }
+    - `if (fp = NULL) { /_\*파일 오픈에 실패_\*/ }`
 
   <img src="../img/file_access_mode.png">
 
@@ -366,7 +366,7 @@
 
 #### **File Reopen**
 
-- <code>FILE * freopen ( const char *filename, const char *type, FILE *stream);</code>
+- <code>FILE * freopen (const char *filename, const char *type, FILE *stream);</code>
 
   - <code>FILE \*stream</code> : 기존에 이미 만들어진 파일 스트림
 
@@ -397,5 +397,43 @@
   - 프로세스가 정상적으로 종료되면, OS가 파일 디스크립터 테이블을 보고 관련 모든 파일을 종료시킨다. (자동으로 종료되는 것처럼 보임)
 
   - 파일 다썼으면 fclose를 꼭 해주어야 데이터 손실을 방지할 수 있다.
+
+<br/>
+
+#### File Write
+
+- `size_t fwrite (void *ptr, size_t size, size_t nitems, FILE *stream)`
+
+  - `void \*ptr` : 데이터를 쓸 버퍼의 주소
+
+  - `size_t size` : 읽을 데이터의 크기 (객체 유닛 하나의 크기)
+
+  - `size_t nitems` : 객체의 개수
+
+  - `FILE \*stream` : 어떤 파일 스트림에 데이터를 쓸 것인가
+
+  - return 값
+
+    - 정상 : 정상적으로 쓴 오브젝트의 개수
+
+    - 에러 : 0
+
+<br/>
+
+#### Character Input 함수
+
+<img src="../img/character_input_func.png" />
+
+- `int getc()` (오타) : 표준 입력에서 읽을 때
+
+  - Line Buffering 모드에선 정상적으로 동작하지 않는 것처럼 보일 수 있다.
+
+- `int fgetc(FILE \*stream)`
+
+<br/>
+
+#### Character Output 함수
+
+<img src="../img/character_output_func.png" />
 
 <br/>
