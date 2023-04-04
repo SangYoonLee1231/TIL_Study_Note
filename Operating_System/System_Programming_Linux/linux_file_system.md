@@ -1,4 +1,4 @@
-# 리눅스 파일 관리 시스템 Part 1
+# 리눅스 파일 관리 시스템 Part 1 (inode, File Discriptor)
 
 <br/>
 
