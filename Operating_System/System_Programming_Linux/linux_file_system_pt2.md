@@ -207,7 +207,7 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 <br/>
 
-#### `int fstat(int fd, struct stat \*buf);`
+#### `int fstat(int fd, struct stat *buf);`
 
 - 파일을 하나 열면 파일 디스크립터가 하나 할당
 
@@ -222,8 +222,6 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 #### Macro
 
   <img src="../img/macro.png">
-
-![스크린샷 2023-03-29 오후 10.12.15.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/38f8684e-d3b3-4994-a041-ea0fc8fa852c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-29_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.12.15.png)
 
 - mode 정보 인자를 macro에 적용
 
