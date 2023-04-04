@@ -31,11 +31,11 @@
 
   - <code>..</code> : 현 디렉토리의 하나 위
 
-- <code>pwd</code> : 현재 어디에 있는지 확인하는 명령어
+- <code>pwd</code> : 현재 자신의 위치를 확인하는 명령어
 
 - <code>cp -r /sp-resource/.vim\* .</code> : vim으로 시작하는 모든 디렉토리를 복사
 
-  - <code>cp</code> : 목사
+  - <code>cp</code> : 복사
 
   - <code>-r</code> : 서브 디렉토리까지 모두 긁어서 가져옴
 
