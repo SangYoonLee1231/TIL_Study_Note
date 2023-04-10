@@ -187,9 +187,9 @@
 #### 리눅스(Linux) 시스템 프로그래밍
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/about_linux.md">리눅스 개요</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md">파일 I/O Part 1 (Linking, 파일 스트림, 라이브러리 버퍼)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md">파일 I/O Part 2 (파일 스트림과 디스크립터, 버퍼 심화)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md">File Offset</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md">파일 I/O Part 1 (Linking, 파일 스트림과 디스크립터, 라이브러리 버퍼)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md">파일 I/O Part 2 (Part 1 복습, 버퍼 심화, 파일 관련 라이브러리 함수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md">파일 I/O Part 3 (File Offset)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md">리눅스 파일 관리 시스템 Part 1 (inode, File Discriptor)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md">리눅스 파일 관리 시스템 Part 2 (v-node, Link)</a>
 - <a href="">Real ID & Effective ID</a>

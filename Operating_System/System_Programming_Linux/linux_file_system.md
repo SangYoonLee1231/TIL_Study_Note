@@ -17,22 +17,24 @@
 
 <br/><br/>
 
-### inode
+리눅스의 시스템 콜과 함께 리눅스가 제공하는 파일 정보들이 어떻게 관리되는 지 눈여겨볼 필요가 있다.
 
-- 리눅스의 시스템 콜과 함께 리눅스가 제공하는 파일 정보들이 어떻게 관리되는 지 눈여겨볼 필요가 있다.
+<br/>
+
+### inode
 
 - 파일 시스템의 각 파일들은 **inode**라는 것을 갖는다.
 
   - **inode**: 모든 정보(파일의 관리 정보)를 갖고 있는 구조체 (파일 속성)
 
-    • file name
-    • file type (regular, directory,...)
-    • file owner id
-    • access permission : 보안 등급
-    rwxr-xr-x (for owner, group, others)
-    • creation/modified time : 최근 생성/수정 시간
-    • file size : 파일 크기 (Block 단위로 관리)
-    • file data block addr. table : 모든 하드디스크는 Block 단위로 쪼개지고, 각 단위는 **Block Address(블락 포인터)**를 갖는다.
+    - file name
+    - file type (regular, directory,...)
+    - file owner id
+    - access permission : 보안 등급
+      rwxr-xr-x (for owner, group, others)
+    - creation/modified time : 최근 생성/수정 시간
+    - file size : 파일 크기 (Block 단위로 관리)
+    - file data block addr. table : 모든 하드디스크는 Block 단위로 쪼개지고, 각 단위는 **Block Address(블락 포인터)**를 갖는다.
 
   - OS는 파일의 내용 보단 파일의 이름, 타입, 속성 등에 더 관심이 있다.
 
