@@ -192,6 +192,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md">File Offset</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md">리눅스 파일 관리 시스템 Part 1 (inode, File Discriptor)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md">리눅스 파일 관리 시스템 Part 2 (v-node, Link)</a>
+- <a href="">Real ID & Effective ID</a>
 
 ### ◻ 네트워크
 

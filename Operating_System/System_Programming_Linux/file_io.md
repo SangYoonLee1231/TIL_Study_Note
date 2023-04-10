@@ -10,7 +10,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%EC%82%AC%EC%A0%84-%EC%A7%80%EC%8B%9D">시전 지식</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-linking">라이브러리와 Linking</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%ED%8C%8C%EC%9D%BC-%EC%8A%A4%ED%8A%B8%EB%A6%BC-file--%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-file-discripter">파일 스트림 (FILE \*), 파일 디스크립터 (File Discripter)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%ED%8C%8C%EC%9D%BC-%EC%8A%A4%ED%8A%B8%EB%A6%BC-file--%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-file-discripter">파일 스트림 (FILE \*), 파일 디스크립터 (File Discriptor)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io.md#%EC%A0%95%EB%A6%AC">정리</a>
 
 <br/><br/>
@@ -91,7 +91,7 @@
 
 <br/><br/>
 
-## 파일 스트림 (FILE \*), 파일 디스크립터 (File Discripter)
+## 파일 스트림 (FILE \*), 파일 디스크립터 (File Discriptor)
 
 - 파일 관련 2가지 살펴볼 것
 
