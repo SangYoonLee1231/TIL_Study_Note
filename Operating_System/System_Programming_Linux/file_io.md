@@ -220,6 +220,6 @@
 
 <br/>
 
-> <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md">Part 2</a>에서 이어집니다.
+👉 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md">Part 2</a>에서 이어집니다.
 
 <br/>

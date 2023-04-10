@@ -1,4 +1,4 @@
-# 파일 I/O Part 2 (파일 스트림과 디스크립터, 버퍼 심화)
+# 파일 I/O Part 2 (Part 1 복습, 버퍼 심화, 파일 관련 라이브러리 함수)
 
 <br/>
 
@@ -16,7 +16,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%B2%84%ED%8D%BC-library-buffer">라이브러리 버퍼 (Library Buffer)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%EC%BB%A4%EB%84%90-%EB%B2%84%ED%8D%BC-%EC%BA%90%EC%8B%9C-kernal-buffer-cache">커널 버퍼 캐시 (kernal buffer cache)</a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_io_pt2.md#%ED%8C%8C%EC%9D%BC-%EA%B4%80%EB%A0%A8-%ED%95%A8%EC%88%98">파일 관련 함수</a>
+- <a href="">파일 관련 라이브러리 함수</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -348,7 +348,7 @@
 
 <br/><br/>
 
-## 파일 관련 함수
+## 파일 관련 라이브러리 함수
 
 #### **File Open**
 
