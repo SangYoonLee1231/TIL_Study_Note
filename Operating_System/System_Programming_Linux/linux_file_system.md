@@ -34,7 +34,7 @@
       rwxr-xr-x (for owner, group, others)
     - creation/modified time : 최근 생성/수정 시간
     - file size : 파일 크기 (Block 단위로 관리)
-    - file data block addr. table : 모든 하드디스크는 Block 단위로 쪼개지고, 각 단위는 **Block Address(블락 포인터)**를 갖는다.
+    - file data block addr. table : 모든 하드디스크는 Block 단위로 쪼개지고, 각 단위는 <strong>Block Address(블락 포인터)</strong>를 갖는다.
 
   - OS는 파일의 내용 보단 파일의 이름, 타입, 속성 등에 더 관심이 있다.
 
