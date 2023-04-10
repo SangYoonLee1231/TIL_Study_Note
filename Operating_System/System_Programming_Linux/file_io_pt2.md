@@ -186,7 +186,7 @@
 
 ### 버퍼링 관련 함수
 
-- <code>void setbuf (FILE *stream, char *buf);</code>
+- <code>void **setbuf** (FILE *stream, char *buf);</code>
 
   - <code>char \*buf</code> : character array의 주소, 8KB or 16KB의 데이터 공간을 잡아놓고 그 주소를 가리키는 포인터이다.
 
@@ -194,7 +194,7 @@
 
   - <code>char \*buf</code>이 <code>NULL</code>이라면 Unbuffering으로 쓰겠다는 의미
 
-- <code>int setvbuf (FILE *stream, char *buf, int type, size_t size);</code>
+- <code>int **setvbuf** (FILE *stream, char *buf, int type, size_t size);</code>
 
   - <code>int type</code> : 버퍼링 타입 지정 (Full, Line, Unbuffering)
 
