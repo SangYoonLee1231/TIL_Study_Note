@@ -226,6 +226,8 @@
 
   - 데이터 하나를 읽더라도 그 데이터가 있는 블록 전체를 가져와서 버퍼 캐시에 저장한다.
 
+<br/>
+
 ### 버퍼 캐시의 유용함
 
 - 버퍼 캐시는 읽을 때에도 유용하다.
@@ -246,9 +248,11 @@
 
 ### `fflush` 함수
 
-- 라이브러리 버퍼에 있는 내용을 커널 버퍼 캐시로 내려보내는 함수
+- 라이브러리 버퍼에 있는 모든 내용을 바로 커널 버퍼 캐시로 내려보내는 함수
 
 - `fflush`를 쓰면 딜레이 없이 데이터를 보거나 읽을 수 있다.
+
+<br/>
 
 - 디스크 단위로 입출력한다. → Block Device I/O
 
@@ -256,9 +260,13 @@
 
 - buffer cache는 page cache와 동일한 개념이다.
 
+<br/>
+
 - 커널 버퍼 캐시에 있는 데이터를 디스크로 내려보내는 함수 → `fsync()`, `sync()`
 
-- 시스템 전원을 끄기전 `sync` 함수를 호출해줘야 데이터 손실을 방지할 수 있다.
+- 시스템 전원을 끄기 전 `sync` 함수를 호출해줘야 데이터 손실을 방지할 수 있다.
+
+<br/>
 
 - 파일이 닫힐 때, `fflush` 함수가 자동적으로 호출된다.
 
@@ -276,13 +284,13 @@
 
 - <code>size_t fread (void *ptr, size_t size, size_t nitems, FILE *stream)</code>
 
-  - <code>void \*ptr : 데이터를 읽어왔을 때 데이터를 담을 버퍼의 주소</code>
+  - <code>void \*ptr</code> : 데이터를 읽어왔을 때 데이터를 담을 버퍼의 주소
 
-  - <code>size_t size : 읽을 데이터의 크기 (객체 유닛 하나의 크기)</code>
+  - <code>size_t size</code> : 읽을 데이터의 크기 (객체 유닛 하나의 크기)
 
-  - <code>size_t nitems : 객체의 개수</code>
+  - <code>size_t nitems</code> : 객체의 개수
 
-  - <code>FILE \*stream : 어떤 파일 스트림으로부터 데이터를 읽을 것인가</code>
+  - <code>FILE \*stream</code> : 어떤 파일 스트림으로부터 데이터를 읽을 것인가
 
   - return 값
 
