@@ -25,38 +25,44 @@
 
 - 파일 시스템의 각 파일들은 **inode**라는 것을 갖는다.
 
-  - **inode**: 모든 정보(파일의 관리 정보)를 갖고 있는 구조체 (파일 속성)
+  - **inode**: 어떤 파일의 모든 정보(파일의 관리 정보)를 갖고 있는 구조체 (파일 속성)
 
-    - file name
-    - file type (regular, directory,...)
-    - file owner id
-    - access permission : 보안 등급
-      rwxr-xr-x (for owner, group, others)
-    - creation/modified time : 최근 생성/수정 시간
-    - file size : 파일 크기 (Block 단위로 관리)
-    - file data block addr. table : 모든 하드디스크는 Block 단위로 쪼개지고, 각 단위는 <strong>Block Address(블락 포인터)</strong>를 갖는다.
+    - `file name`
+    - `file type` (regular, directory,...)
+    - `file owner id`
+    - `access permission` : 보안 등급
+      `rwxr-xr-x` (for owner, group, others)
+    - `creation/modified time` : 최근 생성/수정 시간
+    - `file size` : 파일 크기 (하드 디스크는 Block 단위로 데이터를 관리)
+    - `file data block addr. table` : 모든 하드디스크는 Block 단위로 쪼개지고, 각 단위는 <strong>Block Address(블락 포인터)</strong>를 갖는다.
 
   - OS는 파일의 내용 보단 파일의 이름, 타입, 속성 등에 더 관심이 있다.
 
-  - 내가 파일을 만들면 OS는 그 파일에 대한 inode를 함께 만든다.
+  - 내가 파일을 만들면 OS는 항상 그 파일에 대한 inode를 함께 생성한다.
+
+    - 그 inode에는 그 파일에 관한 모든 관리 정보가 들어있다.
 
 <br/>
 
 #### **Block Address(블락 포인터)**
 
-- 하드 디스크의 데이터를 일정 크기로 쪼갬 → 번호 붙임→ 블락 어드레스 (블락 포인터)
+- 하드 디스크의 데이터를 일정 크기로 쪼갬 → 번호 붙임 → 블락 어드레스 (블락 포인터)
+
+  - 하드 디스크의 데이터 단위 : 블락 (Block)
 
 - 한 블록에 데이터가 들어가지 않는다면 여러 블록에 데이터를 나눠서 저장한다.
 
-- 대신 각 블록이 어디에 있는지는 inode에 기록되어 있다.
+- 대신 각 블록이 어디에 있는지를 가리키는 정보는 inode에 기록되어 있다.
 
   - File Data Block Address Table
+
+<br/>
 
 - 파일 개수 = inode 개수
 
 - inode도 하드 디스크에 저장된다.
 
-- 하드 디스크의 공간은 inode가 저장되는 공간과 데이터가 저장되는 공간으로 분할된다.
+- 하드 디스크의 공간은 inode가 저장되는 공간과 실제 데이터가 저장되는 공간으로 분할된다.
 
 - 파일 시스템 : inode와 데이터들의 집합
 
@@ -109,14 +115,15 @@
 
     - 소유자, 파일 이름, 파일 사이즈, 생성/수정 시간 등
 
-  - 나머지 15개
+  - 나머지 15개의 Block Address
 
-    - 실제 파일이 있는 곳을 가리키는 포인터들
+    - 실제 파일이 있는 곳을 가리키는 포인터들 : Direct Pointer
 
     - 이 중 12개는 직접 블록을 가리키는 블록 정보를 담고 있고
-    - 나머지 3개는 indirection 사용
 
-  - indirection을 사용하면 정보를 읽는데 시간이 더 걸린다. → 퍼포먼스 문제
+    - 나머지 3개(13~15번)는 Indirect Block으로 간접 지정하여 사용
+
+  - Indirection을 사용하면 정보를 읽는데 시간이 더 걸린다. → 퍼포먼스 문제
 
   - 합의 결과 12개의 포인터로 데이터에 직접 접근하도록 하자
 
