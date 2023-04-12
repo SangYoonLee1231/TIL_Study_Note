@@ -185,19 +185,17 @@
 
 - stdin, stdout, stderr ← 0, 1, 2 (자동 생성)
 
-- 각 프로세스가 생성이 되면 파일 디스크립터 테이블이 만들어진다.
+- 각 프로세스가 생성이 되면 **파일 디스크립터 테이블**이 만들어진다.
 
-- 파일 디스크립터 테이블
-
-  - 그 프로세스에서 오픈하는 파일들의 정보를 관리하는 테이블
+- **파일 디스크립터 테이블** : 그 프로세스에서 오픈하는 파일들의 정보를 관리하는 테이블
 
 - `echo “foo bar baz” | wc - w`
 
   - `echo` : 뒤의 문자열을 화면에 표준 출력하라
 
-  - `|` : 바로 표준 출력하지 않고, 뒤에 오는 응용 프로그램에 입력 데이터로 보냄
+  - `|` : 바로 표준 출력으로 내보내지 않고, 뒤에 오는 응용 프로그램에 입력 데이터로 보냄
 
-  - `wc` : word count (파일의 라인수, 캐릭터 수 등을 파악할 때 사용)
+  - `wc` : word count (파일의 라인 수, 캐릭터 수 등을 파악할 때 사용)
 
     - -w : 단어의 개수
     - -l : 라인의 개수
@@ -205,26 +203,27 @@
 
 - Relying on “magic numbers” is BAD.
 
-  - stdin 등을 쓸 때 0, 1, 2 쓰지 말고 심볼을 써라.
+  - stdin 등을 쓸 때 0, 1, 2 쓰지 말고 **심볼을 써라**.
 
     - 의미 파악을 명확히 하기 위해
 
-    - `STDIN_FILENO`, `STDOUT_FILENO`, `STDERR_FILENO`
+    - `STDIN_FILENO`(0), `STDOUT_FILENO`(1), `STDERR_FILENO`(2)
 
 - 한 프로세스에서 오픈할 수 있는 최대 파일 수는 1024개
 
-  - 리눅스 서버에서 내가 사용할 수 있는 파일 개수 등을 알아보기 위해 쓰는 명령어 : ulimit -a (모든 정보 표시)
+  - 리눅스 서버에서 내가 사용할 수 있는 파일 개수, 내가 만들어낼 수 있는 프로세스의 개수 등을 알아보기 위해 쓰는 명령어  
+    → `ulimit -a` (모든 정보 표시)
 
 <br/>
 
-- 리눅스에서 제공하는 파일 I/O
+- 리눅스에서 제공하는 시스템 콜 I/O
 
-  - open
-  - close
+  - open : 파일 열기
+  - close : 파일 닫기
   - lseek : 내가 원하는 곳으로 Offset을 옮김
-  - read
-  - write
-  - 위 함수들의 시스템 콜 섹션은 전부 2다.
+  - read : 파일 읽기
+  - write : 파일 쓰기
+  - 위 함수들의 시스템 콜 섹션은 전부 2다. (시스템 콜이므로)
 
 <br/>
 
@@ -236,7 +235,7 @@ int open(const char *path, int oflag);
 int open(const char *path, int oflag, mode_t mode);
 ```
 
-- `path` : 만들려는 파일의 경로명 (절대경로/상대경로)
+- `path` : 내가 만들려는 파일의 경로명 (절대경로 or 상대경로)
 
 - `oflag` (open flag) : 어떤 방식으로 read or wirte 할 것인지
 
@@ -256,9 +255,7 @@ int open(const char *path, int oflag, mode_t mode);
 
   - 8진수로 표현
 
-  - 특별한 모드
-
-    - `S_ISUID`, `S_ISGID`, `S_ISVTX`
+  - 특별한 모드 : `S_ISUID`, `S_ISGID`, `S_ISVTX`
 
 <br/>
 
@@ -287,12 +284,18 @@ int close(int fd);
 
 - `argv[1]`이 가리키는 문자열은 `test.txt` 문자열이 들어가있다.
 
+<br/>
+
 - **시스템 콜로 파일을 오픈하면 파일 스트림이 만들어진다. (X)**
+
+  - 버퍼도 만들어지지 않는다.
 
   - 라이브러리 함수로 오픈했을 때만 파일 스트림이 만들어진다.
 
-  - `fdopen` : 파일 디스크립터와 오픈 모드를 인자로 준다.
+  - `fdopen` : 파일 스트림이 필요할 때 부르는 함수
 
-  - 그 때 formatting library function을 쓸 수 있게끔 파일 스트림을 하나 만들어준다.
+    - 파일 디스크립터와 오픈 모드를 인자로 준다.
+
+  - 그 때 formatting library function을 쓸 수 있게끔 파일 스트림을 하나 만들어준다. (파일 스트림이 return 값)
 
 <br/>
