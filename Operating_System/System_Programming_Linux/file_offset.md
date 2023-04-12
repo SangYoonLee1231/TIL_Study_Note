@@ -26,7 +26,7 @@
 
 - 파일을 처음에 열면, File Offset은 시작 위치를 자동으로 가리키고, 파일을 읽으면 읽은만큼 전진한다. (항상 다음 읽어야 할 위치를 가리킴)
 
-- appending 모드로 파일을 열면 File Offset은 맨 끝 위치를 가리킨다. → write하면 그 위치에 데이터를 쓴다.
+- appending 모드(파일 뒤에 내용을 덧붙이는 모드)로 파일을 열면 File Offset은 맨 끝 위치를 가리킨다. → write하면 그 위치에 데이터를 쓴다.
 
 <br/><br/>
 
@@ -34,33 +34,33 @@
 
 #### Sequential Access
 
-- 순차적으로 작업
+- 파일을 순차적으로 읽고 쓰는 작업
 
 #### Random Access
 
-- 파일을 여기 저기 왔다갔다 하면서 작업을 해야 할 때 (임의의 위치)
+- 경우에 따라 파일을 여기 저기 왔다갔다 하면서 작업을 해야 할 때가 있다 (임의의 위치)
 
-- 데이터를 쓰려면 원하는 위치로 Offset을 우선 옮겨야 한다.
+- 데이터를 원하는 위치에 쓰려면 원하는 위치로 Offset을 우선 옮겨야 한다.
 
   → `fseek`(라이브러리 함수), `lseek` (시스템 콜 함수)
 
-- 레코드(record) 단위로 이동한다.
-
-  - 데이터 베이스는 key
+- 데이터를 관리하는 기본 단위인 레코드(record) 단위로 이동한다.
 
 <br/><br/>
 
 ### File Offset 관련 함수
 
-#### `int fseek (FILE \*stream, long offset, int sopt)`
+#### `int fseek (FILE *stream, long offset, int sopt)`
 
-- `FILE \*stream` : 대상 파일의 스
+- 라이브러리 함수
 
-- offset값은 어디로 옮길지의 값
+- `FILE *stream` : 대상 파일의 스트림
+
+- `offset` : 어디로 옮길지의 값
 
   - SEEK_SET : 시작 위치로부터 offset 바이트만큼 떨어진 곳으로 offset을 옮긴다.
 
-  - SEEK_CUR : 현재 offset 위치로부터 상대적으로 offset만큼 옮겨라
+  - SEEK_CUR : 현재 offset 위치로부터 상대적으로 offset만큼 옮겨라 (음수가 되면 파일 앞쪽으로 이동)
 
   - SEEK_END : 파일 끝이 기준, 맨 끝에서부터 상대적으로 offset만큼 옮겨라
 
@@ -69,6 +69,8 @@
 <br/>
 
 #### `off_t lseek(int fd, off_t offset, int whence);`
+
+- 시스템 콜 함수
 
 - fseek 기능과 거의 동일
 
@@ -80,17 +82,17 @@
 
 <br/>
 
-#### `void rewind (FILE \*stream)`
+#### `void rewind (FILE *stream)`
 
 - Offset을 맨 앞으로 옮겨라
 
 <br/>
 
-#### `long ftell (FILE \*stream)`
+#### `long ftell (FILE *stream)`
 
-- Offset의 값을 물어보는 함수
+- 현재 Offset의 값을 물어보는 함수
 
-- 비정상적으로 동작하면 return 값은 -1
+- 비정상적으로 동작하면 return 값은 -1이 된다.
 
 <br/><br/>
 
@@ -98,13 +100,15 @@
 
 - `sprintf` : 출력의 결과를 캐릭터 버퍼에 출력 (화면에 바로 안나옴)
 
+  - `s`는 string을 의미
+
   - return 값 → 정상 : input 길이, 비정상 : EOF
 
 - `sscanf` : 어떤 버퍼에 뭔가 문자열이 들어있을 때 거기에서 값을 가져오라
 
   - return 값 → 정상 : input 길이, 비정상 : EOF
 
-- `ferror` : 어떤 파일 스트림을 조작하는 과정 중에 에러가 발생했는지
+- `ferror` : 어떤 파일 스트림을 조작하는 과정 중에 에러가 발생했는지를 확인하는 명령
 
   - 없으면 0, 발생했으면 0이 아님
 
