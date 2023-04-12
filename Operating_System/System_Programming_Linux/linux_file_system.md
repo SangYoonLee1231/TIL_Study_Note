@@ -8,11 +8,11 @@
 
 ### 목차
 
-- <a href="">inode</a>
-- <a href="">디렉토리 파일</a>
-- <a href="">inode와 하드디스크</a>
-- <a href="">파일의 여러가지 타입</a>
-- <a href="">파일 디스크립터 (in Linux)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md#inode">inode</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md#%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%ED%8C%8C%EC%9D%BC">디렉토리 파일</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md#inode%EC%99%80-%ED%95%98%EB%93%9C%EB%94%94%EC%8A%A4%ED%81%AC">inode와 하드디스크</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md#%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%ED%83%80%EC%9E%85">파일의 여러가지 타입</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md#%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-in-linux">파일 디스크립터 (in Linux)</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -66,7 +66,7 @@
 
 - 파일 시스템 : inode와 데이터들의 집합
 
-<br/>
+<br/><br/>
 
 ### 디렉토리 파일
 
@@ -84,7 +84,7 @@
 
 - inode도 고유한 번호가 있다.
 
-<br/>
+<br/><br/>
 
 ### inode와 하드디스크
 
@@ -126,11 +126,11 @@
 
     - 나머지 3개(13~15번)는 Indirect Block으로 간접 지정하여 사용
 
-  - Indirection을 사용하면 정보를 읽는데 시간이 더 걸린다. → 퍼포먼스 문제
+  - Indirection을 사용하면 정보를 읽는데 시간이 더 걸린다. → 퍼포먼스 문제가 발생할 수 있음
 
-  - 합의 결과 12개의 포인터로 데이터에 직접 접근하도록 하자
+  - 합의 결과 12개의 포인터로 데이터에 직접 접근하도록 하자고 정했다.
 
-<br/>
+<br/><br/>
 
 ### 파일의 여러가지 타입
 
@@ -142,7 +142,7 @@
 
   - 파일 이름과 그 파일의 inode 번호를 가리키는 파일
 
-- Character Special File
+- Character Block Special File
 
   - 디바이스 파일
 
@@ -180,7 +180,7 @@
     - b : 블록 디바이스
     - l : 심볼릭 링크
 
-<br/>
+<br/><br/>
 
 ### 파일 디스크립터 (in Linux)
 
