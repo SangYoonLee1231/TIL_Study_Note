@@ -154,31 +154,28 @@
 
     - 하드디스크는 Block 단위
 
-  - FIFO 파일
+- FIFO 파일
 
-    - 다른 이름으로 파이프
+  - 다른 이름으로 '파이프'라 한다.
 
-    - Named Pipe vs Unnamed Pipe
+  - Named Pipe vs Unnamed Pipe
 
-      - 많이 쓰는 건 이름을 안 쓰는 파이프 파일(unnamed pipe)
+    - 많이 쓰는 건 이름을 안 쓰는 파이프 파일(unnamed pipe)
 
-  - Symbolic link file
+- Symbolic link file
 
-    - 어떤 파일의 경로 정보를 담고 있는 특별한 파일
+  - 어떤 파일의 경로 정보를 담고 있는 특별한 파일
 
-    - (윈도우의 단추 바이커(?))
-
-      - vs Hardlink : 하드 링크는 파일이 아니다.
+    - vs Hardlink : 하드 링크는 파일이 아니다.
 
 <br/>
 
-- 리눅스
+- 리눅스에서 ls를 통해 파일 리스트를 보면, 맨 앞은 파일 타입을 나타냄
 
-  - 맨 앞은 파일 타입을 나타냄
-    - d : 디렉토리
-    - c : 캐릭터 디바이스
-    - b : 블록 디바이스
-    - l : 심볼릭 링크
+  - d : 디렉토리
+  - c : 캐릭터 디바이스
+  - b : 블록 디바이스
+  - l : 심볼릭 링크
 
 <br/><br/>
 
