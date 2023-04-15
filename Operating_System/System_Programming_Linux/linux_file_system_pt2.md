@@ -11,7 +11,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-v-node">파일 디스크립터 시스템과 v-node</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-in-linux">파일 디스크립터 (in Linux)</a>
-  - <a href="">파일 테이블 (File Table)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#%ED%8C%8C%EC%9D%BC-%ED%85%8C%EC%9D%B4%EB%B8%94-file-table">파일 테이블 (File Table)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#v-node">v-node</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#hard-link-vs-soft-link-symbolic-link-link-%EA%B4%80%EB%A0%A8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">Hard Link vs Soft Link (Symbolic Link), Link 관련 시스템 콜</a>
@@ -48,33 +48,39 @@
 
 ### 파일 테이블 (File Table)
 
-- 파일 status flag : read용인지 write용인지, 어떤 permission인지
+- **file status flag** : read용인지 write용인지, 어떤 permission인지
 
-- current file offset : 현재 Offset 값
+- **current file offset** : 현재 Offset의 값
 
-- v-node pointer : 하드 디스크의 v-node 테이블을 가리키는 포인터
+- **v-node pointer** : 하드 디스크의 v-node 테이블을 가리키는 포인터
 
-- 파일 테이블은 커널 메모리에서 관리된다.
+- 파일 테이블은 **커널 메모리**에서 관리된다.
 
 <br/>
 
 ### v-node
 
-- 리눅스에서 쓰는 i-node도 있고, 다른 형태의 파일 시스템도 있을 수 있다 (하둡 등)
+- 리눅스에서 쓰는 i-node도 있고, 다른 형태의 파일 시스템도 있을 수 있다. (하둡 등)
 
 - 이들을 통일된 형태로 인터페이스를 (위에서) 제공해주어야 한다.
 
-  → **v-node**로 확장된 인터페이스 제공
+  → **v-node**라는 이름으로 확장된 인터페이스 제공
 
 - 리눅스만 쓰는 시스템에선 **v-node = i-node**
 
 - **vnode는 하드 디스크에 있다.**
 
-- dup
-  - 기존의 오픈된 파일 디스크립터와 똑같은 엔트리를 만듦
-  - int dup(int fd);
-    - 쉘에서 파이프를 구현하려면 dup 함수가 필요함
-      - 파이프 : 쉘에서 앞에서 작용한 표준 출력 결과를 뒤 프로세스에 넘겨주는 오퍼레이터
+<br/>
+
+#### dup
+
+- 기존의 오픈된 파일 디스크립터와 똑같은 엔트리를 만듦
+
+- `int dup(int fd);`
+
+  - 쉘에서 **파이프**를 구현하려면 dup 함수가 필요함
+
+    - **파이프** : 쉘에서 앞에서 작용한 표준 출력 결과를 뒤 프로세스에 넘겨주는 오퍼레이터
 
 <br/><br/>
 
