@@ -227,9 +227,9 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
   int stat(const char *pathname, struct stat *statbuf);
   ```
 
-- 첫 번째 인자인 `pathname`은 파일의 경로를 나타내는 문자열이다.
+  - 첫 번째 인자인 `pathname`은 파일의 경로를 나타내는 문자열이다.
 
-- 두 번째 인자인 `statbuf`는 `stat` 구조체에 대한 포인터로, 파일 정보가 저장된다.
+  - 두 번째 인자인 `statbuf`는 `stat` 구조체에 대한 포인터로, 파일 정보가 저장된다.
 
 <br/>
 
@@ -275,7 +275,7 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 <br/><br/>
 
-#### `int lstat(const char *path, struct stat *buf);`
+#### `lstat` 함수 : `int lstat(const char *path, struct stat *buf);`
 
 - `lstat`는 그 링크가 가리키는 target 파일이 **아닌** 그 llnk 파일의 정보를 가져온다.
 
@@ -283,7 +283,7 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 <br/>
 
-#### `int fstat(int fd, struct stat *buf);`
+#### `fstat` 함수 : `int fstat(int fd, struct stat *buf);`
 
 - 파일을 하나 열면 파일 디스크립터가 하나 할당
 
