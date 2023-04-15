@@ -215,6 +215,54 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 ### 관련 시스템 콜
 
+#### `stat` 함수 (`int stat(const char *pathname, struct stat *statbuf);`)
+
+- stat 함수는 리눅스 C 파일 입출력에서 파일의 정보를 얻어오는 함수이다. 이 함수를 사용하여 파일의 종류, 크기, 수정 시간 등의 정보를 얻을 수 있다.
+
+- stat 함수의 선언은 다음과 같습니다.
+
+  ```c
+  int stat(const char *pathname, struct stat *statbuf);
+  ```
+
+- 첫 번째 인자인 `pathname`은 파일의 경로를 나타내는 문자열입니다. 두 번째 인자인 `statbuf`는 `stat` 구조체에 대한 포인터로, 파일 정보가 저장된다.
+
+- stat 구조체는 다음과 같이 정의된다.
+
+  ```c
+  struct stat {
+    dev_t     st_dev;         /* 파일이 위치한 장치의 ID */
+    ino_t     st_ino;         /* 파일의 inode 번호 */
+    mode_t    st_mode;        /* 파일의 종류 및 접근 권한 */
+    nlink_t   st_nlink;       /* 파일을 참조하는 하드 링크의 수 */
+    uid_t     st_uid;         /* 파일의 소유자 ID */
+    gid_t     st_gid;         /* 파일의 그룹 ID */
+    dev_t     st_rdev;        /* 특수 파일의 장치 ID */
+    off_t     st_size;        /* 파일의 크기(바이트) */
+    blksize_t st_blksize;     /* 파일 시스템의 I/O 블록 크기 */
+    blkcnt_t  st_blocks;      /* 할당된 블록 수 */
+    time_t    st_atime;       /* 마지막으로 접근한 시간 */
+    time_t    st_mtime;       /* 마지막으로 수정한 시간 */
+    time_t    st_ctime;       /* 마지막으로 상태가 변경된 시간 */
+  };
+  ```
+
+- `st_mode` 멤버 변수는 파일의 종류와 접근 권한을 나타내는데, 이 값은 다음과 같은 **매크로 함수**를 사용하여 해석할 수 있다.
+
+  <img src="../img/this_is_macro.png">
+
+  - `S_ISREG(mode)`: 일반 파일인 경우
+  - `S_ISDIR(mode)`: 디렉토리인 경우
+  - `S_ISCHR(mode)`: 문자 장치 파일인 경우
+  - `S_ISBLK(mode)`: 블록 장치 파일인 경우
+  - `S_ISFIFO(mode)`: FIFO 파일인 경우
+  - `S_ISLNK(mode)`: 심볼릭 링크인 경우
+  - `S_ISSOCK(mode)`: 소켓 파일인 경우
+
+- 이외에도 `stat` 함수를 통해 얻을 수 있는 정보는 다양하다. `man 2 stat` 명령어를 입력하면 `stat` 함수에 대한 더 자세한 정보를 얻을 수 있다.
+
+<br/>
+
 #### `int lstat(const char *path, struct stat *buf);`
 
 - `lstat`는 그 링크가 가리키는 target 파일이 **아닌** 그 llnk 파일의 정보를 가져온다.
@@ -232,19 +280,5 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 - 경로명이 필요 없음
 
 - `fd` : 파일 디스크립터 (번호)
-
-<br/>
-
-#### Macro
-
-<img src="../img/this_is_macro.png">
-
-- mode 정보 인자를 macro에 적용
-
-- macro는 이미 만들어져 있음
-
-- ISREG = is regular file
-
-- ISCOCK → ISSOCK = is socket
 
 <br/>
