@@ -96,15 +96,17 @@
 
   - **inode는 이 파일에 대한 모든 정보를 가지고 있는 정보 구조체이다.**
 
-  - 디렉토리 : 파일 이름과 inode의 집합
+  - **디렉토리** : 파일 이름과 inode의 집합
 
-- myfile.txt를 만들면, OS에서 그것에 해당하는 inode를 자동으로 부여해준다.
+<br/>
 
-- 경우에 따라 다른 지점에다가 “my-hard-link”라는 다른 이름의 파일을 만들 수 있다.
+- `myfile.txt`를 만들면, OS에서 그것에 해당하는 inode를 자동으로 부여해준다.
 
-- 그리고 “myfile.txt”의 inode를 가리키도록 묶어줄 수 있다.
+- 경우에 따라 다른 지점에다가 `my-hard-link`라는 다른 이름의 파일을 만들 수 있다.
 
-- 이렇게 하면 myfile.txt 뿐만 아니라 my-hard-link 파일로도 같은 파일에 접근할 수 있게 된다.
+- 그리고 `myfile.txt`의 inode를 가리키도록 묶어줄 수 있다.
+
+- 이렇게 하면 `myfile.txt` 뿐만 아니라 `my-hard-link` 파일로도 같은 파일에 접근할 수 있게 된다.
 
 - 이렇게 같은 파일로 접근할 수 있도록 만든 링크를 **Hard Link**라 한다.
 
@@ -114,47 +116,51 @@
 
 ### Soft Link
 
-- 반면, 윈도우즈의 단축 아이콘은 Hard Link가 아니다.
-
 - 어떤 아주 짧은 파일을 만들어 놓는다.
 
 - 그 안에는 (내가 접근하려고 하는) 경로명이 들어있다.
 
-- “my-soft-link’를 이런 방식으로 만들어 놓으면 내가 그 안에 있는 “myfile.txt”라는 이름을 읽고 그 파일로 이동한다.
+- `my-soft-link`라는 파일을 Soft Link 방식으로 만들어 놓으면, 내가 그 안에 있는 “myfile.txt”라는 이름을 읽고 그 파일로 이동한다.
 
-- “my-soft-link”는 파일 그 자체가 경로명을 갖고 있는 short file이다.
+- `my-soft-link`는 파일 그 자체가 경로명을 갖고 있는 short file이다.
 
 - 이런 방식의 링크를 **Symbolic Link (Soft Link)**라 한다.
 
+- 윈도우즈의 단축 아이콘은 Hard Link가 아닌 Soft Link이다.
+
 <br/>
 
-- hard link와 soft link 이 둘의 목적은 별반 다르지 않다.
+### Hard Link vs Soft Link
 
-  - 다만 hard link가 좀 더 빠르게 동작한다.
+- Hard Link와 Soft Link 이 둘의 목적은 별반 다르지 않다.
 
-- hard link는 하나의 링크를 끊는다고 해서 inode를 바로 삭제하지 않는다.
+  - 다만 **Hard Link가 좀 더 빠르게 동작한다.**
+
+  - Soft Link은 파일을 매번 읽어서 경로를 찾아가야 하기 때문이다.
+
+- Hard Link는 하나의 링크를 끊는다고 해서 inode를 바로 삭제하지 않는다.
 
   - inode에는 **count**가 있다. (몇 개의 파일이 나를 가리키고 있는지)
 
   - 정확히는 **reference count**라 부른다.
 
-    - 이 count가 0이 되어야 비로소 inode를 청소한다.
+    - 이 count가 0이 되어야 비로소 inode가 청소된다.
 
-- 그럼에도 불구하고 **soft link가 유용한 이유**
+- 그럼에도 불구하고 **Soft Link가 유용한 이유**
 
   - 한 디스크에서 파일 시스템이 만들어지고, 다른 디스크에 또 다른 파일 시스템이 만들어질 수 있다.
 
   - 리눅스나 유닉스에선 이 둘을 연결하는 구조를 지원한다.
 
-  - 그러나 inode는 한 개의 파일 시스템 내에서만 unique하다.
+  - 그러나 **inode는 한 개의 파일 시스템 내에서만 unique**하다.
 
     - inode는 한 개의 파일 시스템 안에서 고유한 번호이다.
 
-  - **즉, hard link는 서로 다른 파일 시스템 내 파일끼리 할 수 없다.**
+  - **즉, 서로 다른 파일 시스템 간에는 Hard Link를 할 수 없다.**
 
-    - 같은 파일 시스템 내에서만 hard link를 만들어놓을 수 있다.
+    - 같은 파일 시스템 내에서만 Hard Link를 만들어놓을 수 있다.
 
-  - **따라서 서로 다른 파일 시스템끼리 연결하고 싶으면 symbolic link를 써야 한다.**
+  - 따라서 서로 다른 파일 시스템끼리 연결하고 싶으면 **symbolic link를 써야 한다.**
 
 <br/>
 
