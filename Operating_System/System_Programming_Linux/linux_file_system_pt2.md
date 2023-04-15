@@ -215,17 +215,23 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 ### 관련 시스템 콜
 
-#### `stat` 함수 (`int stat(const char *pathname, struct stat *statbuf);`)
+#### `stat` 함수 : `int stat(const char *pathname, struct stat *statbuf);`
 
-- stat 함수는 리눅스 C 파일 입출력에서 파일의 정보를 얻어오는 함수이다. 이 함수를 사용하여 파일의 종류, 크기, 수정 시간 등의 정보를 얻을 수 있다.
+- stat 함수는 리눅스 C 파일 입출력에서 파일의 정보를 얻어오는 함수이다.
 
-- stat 함수의 선언은 다음과 같습니다.
+- 이 함수를 사용하여 파일의 종류, 크기, 수정 시간 등의 정보를 얻을 수 있다.
+
+- stat 함수의 선언은 다음과 같다.
 
   ```c
   int stat(const char *pathname, struct stat *statbuf);
   ```
 
-- 첫 번째 인자인 `pathname`은 파일의 경로를 나타내는 문자열입니다. 두 번째 인자인 `statbuf`는 `stat` 구조체에 대한 포인터로, 파일 정보가 저장된다.
+- 첫 번째 인자인 `pathname`은 파일의 경로를 나타내는 문자열이다.
+
+- 두 번째 인자인 `statbuf`는 `stat` 구조체에 대한 포인터로, 파일 정보가 저장된다.
+
+<br/>
 
 - stat 구조체는 다음과 같이 정의된다.
 
@@ -247,6 +253,8 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
   };
   ```
 
+<br/>
+
 - `st_mode` 멤버 변수는 파일의 종류와 접근 권한을 나타내는데, 이 값은 다음과 같은 **매크로 함수**를 사용하여 해석할 수 있다.
 
   <img src="../img/this_is_macro.png">
@@ -259,7 +267,9 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
   - `S_ISLNK(mode)`: 심볼릭 링크인 경우
   - `S_ISSOCK(mode)`: 소켓 파일인 경우
 
-- 이외에도 `stat` 함수를 통해 얻을 수 있는 정보는 다양하다. `man 2 stat` 명령어를 입력하면 `stat` 함수에 대한 더 자세한 정보를 얻을 수 있다.
+- 이외에도 `stat` 함수를 통해 얻을 수 있는 정보는 다양하다.
+
+- `man 2 stat` 명령어를 입력하면 `stat` 함수에 대한 더 자세한 정보를 얻을 수 있다.
 
 <br/>
 
