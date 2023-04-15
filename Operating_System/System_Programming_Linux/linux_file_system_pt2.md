@@ -124,9 +124,9 @@
 
 - `my-soft-link`는 파일 그 자체가 경로명을 갖고 있는 short file이다.
 
-- 이런 방식의 링크를 **Symbolic Link (Soft Link)**라 한다.
+- 이런 방식의 링크를 <strong>Symbolic Link (Soft Link)</strong>라 한다.
 
-- 윈도우즈의 단축 아이콘은 Hard Link가 아닌 Soft Link이다.
+> - 윈도우즈의 단축 아이콘은 Hard Link가 아닌 Soft Link이다.
 
 <br/>
 
@@ -160,7 +160,7 @@
 
     - 같은 파일 시스템 내에서만 Hard Link를 만들어놓을 수 있다.
 
-  - 따라서 서로 다른 파일 시스템끼리 연결하고 싶으면 **symbolic link를 써야 한다.**
+  - 따라서 서로 다른 파일 시스템끼리 연결하고 싶으면 **Symbolic Link를 써야 한다.**
 
 <br/>
 
@@ -185,7 +185,7 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 <img src="../img/symbolic_link_system_call.png">
 
-- 링크와 관련된 여러 시스템 콜들이 있는데
+- 링크와 관련된 여러 시스템 콜들이 있는데,
 
 - 이 중에서, (symbolic link든 hard link든) 어떤 link가 있을 경우, 그 link가 가리키는 최종 목적지 파일(target file)에 가서 target file의 정보를 가져오는 시스템 콜이 있다. → 이것이 일반적이다.
 
@@ -195,11 +195,13 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 - symbolic link 파일에 오퍼레이션을 수행한다는 의미다.
 
+- 이러한 명령어는 6개가 있다.
+
   - **lchown** : link change owner (링크의 사용자 변경)
 
   - **lstat** : link 파일의 status 정보를 읽어낸다
 
-  - **remove** : 대상 link 파일을 제거하거나 디렉토리를 제거한다. (일반적인 명령 rm + rmdir)
+  - **remove** : 대상 link 파일을 제거하거나 디렉토리를 제거한다. (rm + rmdir)
 
     - [비교] rmdir : 리눅스 명령어
 
@@ -235,7 +237,7 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
 #### Macro
 
-  <img src="../img/macro.png">
+<img src="../img/this_is_macro.png">
 
 - mode 정보 인자를 macro에 적용
 
