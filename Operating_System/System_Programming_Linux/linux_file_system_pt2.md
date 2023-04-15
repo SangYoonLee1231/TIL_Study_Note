@@ -8,18 +8,18 @@
 
 ### 목차
 
-- <a href="">파일 디스크립터 시스템과 v-node</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-v-node">파일 디스크립터 시스템과 v-node</a>
 
-  - <a href="">파일 디스크립터 (in Linux)</a>
-  - <a href="">파일 테이블</a>
-  - <a href="">v-node</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0-in-linux">파일 디스크립터 (in Linux)</a>
+  - <a href="">파일 테이블 (File Table)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#v-node">v-node</a>
 
-- <a href="">Hard Link vs Soft Link (Symbolic Link), Link 관련 시스템 콜</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#hard-link-vs-soft-link-symbolic-link-link-%EA%B4%80%EB%A0%A8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">Hard Link vs Soft Link (Symbolic Link), Link 관련 시스템 콜</a>
 
-  - <a href="">Hard Link</a>
-  - <a href="">Soft Link</a>
-  - <a href="">Hard Link Example</a>
-  - <a href="">관련 시스템 콜</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#hard-link">Hard Link</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#soft-link">Soft Link</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#hard-link-example">Hard Link Example</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md#%EA%B4%80%EB%A0%A8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">관련 시스템 콜</a>
   <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -32,11 +32,13 @@
 
 - 프로그램을 하나 실행시키면 프로세스가 생성
 
-- 한 프로세스 안에는 그 프로세스가 오픈한 파일들의 리스트를 관리하는 테이블이 하나 있음  
-  → 파일 디스크립터 테이블
+- 한 프로세스 안에는 그 프로세스가 오픈한 파일들의 리스트를 관리하는 테이블이 하나 있음
+
+  → **파일 디스크립터 테이블**
+
 - 파일 디스크립터 (넘버) : 각 엔트리에 할당된 인덱스
 
-  - 0, 1, 2 : 표준 입력 장치, 표준 출력 장치, 표준 에러 장치
+  - **0, 1, 2** : 표준 입력 장치, 표준 출력 장치, 표준 에러 장치
 
   - (파일 포인터가) 장치를 가리킴 = 시스템이 관리하는 그 장치에 관련된 정보를 가리킴
 
@@ -44,7 +46,7 @@
 
 <br/>
 
-### 파일 테이블
+### 파일 테이블 (File Table)
 
 - 파일 status flag : read용인지 write용인지, 어떤 permission인지
 
