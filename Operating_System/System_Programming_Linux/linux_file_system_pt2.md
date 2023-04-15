@@ -211,7 +211,7 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
 
   - **unlink** : 대상 link를 제거한다.
 
-<br/>
+<br/><br/>
 
 ### 관련 시스템 콜
 
@@ -267,11 +267,13 @@ drwxr-xr-x 3 oskernel oskernel 512 Jul 9 22:01 .
   - `S_ISLNK(mode)`: 심볼릭 링크인 경우
   - `S_ISSOCK(mode)`: 소켓 파일인 경우
 
+<br/>
+
 - 이외에도 `stat` 함수를 통해 얻을 수 있는 정보는 다양하다.
 
 - `man 2 stat` 명령어를 입력하면 `stat` 함수에 대한 더 자세한 정보를 얻을 수 있다.
 
-<br/>
+<br/><br/>
 
 #### `int lstat(const char *path, struct stat *buf);`
 
