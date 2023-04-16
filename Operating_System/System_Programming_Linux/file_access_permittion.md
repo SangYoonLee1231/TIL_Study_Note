@@ -38,6 +38,8 @@
 
   - `uid_t getuid(void)`
 
+<br/>
+
 - (이 프로세스를 생성한) 내가 속해있는 그룹의 id를 알려면 **`getgid` 함수**를 호출하면 된다.
 
   - 이 또한 시스템에세 실제로 쓰는 real id이다.
@@ -60,9 +62,12 @@
 
   - **`geteuid` 함수** : effective id를 알고 싶을 때 쓰는 id
 
+<br/>
+
 - 마찬가지로 group id도 effective id가 존재한다.
 
   - **`getegid` 함수** : 이를 알기 위한 함수
+
     - 역시 마찬가지로 사용자의 real group id와 같은 정보가 배정된다.
 
 <br/><br/>
@@ -90,6 +95,8 @@
 - 이는 내 권한으로는 할 수 없는 일이지만, mount 프로세스의 real id가 ‘나’, effective id가 모두 ‘나’다.
 
 - 그래서 이 파일에 접근은 가능하나 작업을 할 수 없는 상황이 발생한다.
+
+<br/>
 
 - 이런 상황을 해결하기 위해 **set user id bit, set group id bit를 설정**해줄 수 있다.
 
@@ -262,22 +269,39 @@
 - 파일의 permission 모드를 바꿀 수 있다.
 
   - **umask**은 파일 permission 모드의 default 값을 설정해주는 역할
+
   - 이미 permission이 있어도 강제로 내가 원하는 permission으로 바꾸고 싶을 때 **chmod**라는 명령어를 쓴다.
+
   - 많은 시스템 콜이 쉘에서 똑같은 이름의 명령어로도 제공된다.
+
   - read user write 등을 8진수로 주어도 되고, 앞에서 본 심볼들의 결합으로 주어도 된다.
+
     - 이것은 경로에 있는 파일을 지정할 때
+
     - 이미 파일을 열면, 파일 디스크립터 하나 할당
+
     - 그 파일 디스크립터가 가리키는 파일을 이렇게 바꾸자 ← 이렇게 할 수도 있다.
+
   - 파일의 정보를 읽는 스텟이라는 파일
+
     - 연 파일의 정보를 읽을 때 → fstat
+
   - 정상적이면 0, 비정상적이면 -1 (perror)
 
-- chown
+<br/>
+
+- `chown`
+
   - owner을 바꾸어라
+
   - owner은 크게 두 종류가 있다.
+
     - owner_id, groud_id는 숫자로 지정되어 있음
-  - lchown : 링크를 따라가지 않는다.
-    - 링크는 심볼릭 링크
-    - target 파일에 적용하지 않고 symbolic link에 적용한다.
+
+- `lchown` : 링크를 따라가지 않는다.
+
+  - 링크는 심볼릭 링크
+
+  - target 파일에 적용하지 않고 symbolic link에 적용한다.
 
 <br/>
