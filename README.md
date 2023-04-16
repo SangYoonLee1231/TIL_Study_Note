@@ -193,6 +193,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system.md">리눅스 파일 관리 시스템 Part 1 (inode, File Discriptor)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md">리눅스 파일 관리 시스템 Part 2 (v-node, Link)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md">리눅스 파일 관리 시스템 Part 3 (파일 접근 권한)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md">리눅스 파일 관리 시스템 Part 4 (프로세스 생성 원리 : <code>fork</code>, <code>exec</code> 시스템 콜)</a>
 
 ### ◻ 네트워크
 
