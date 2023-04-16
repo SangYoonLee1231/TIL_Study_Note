@@ -8,14 +8,14 @@
 
 ### 목차
 
-- <a href="">특수 권한</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md#%ED%8A%B9%EC%88%98-%EA%B6%8C%ED%95%9C">특수 권한</a>
 
-  - <a href="">Real ID</a>
-  - <a href="">Effective ID</a>
-  - <a href="">Set User ID & Set Group ID</a>
-  - <a href="">Sticky Bit</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md#real-id">Real ID</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md#effective-id">Effective ID</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md#set-user-id--set-group-id">Set User ID & Set Group ID</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md#sticky-bit">Sticky Bit</a>
 
-- <a href="">파일 접근 권한 살펴보기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md#%ED%8C%8C%EC%9D%BC-%EC%A0%91%EA%B7%BC-%EA%B6%8C%ED%95%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">파일 접근 권한 살펴보기</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -265,6 +265,8 @@
 - 가급적이면 논리적인 의미를 갖는 모드 이름의 결합으로 표현하는 것이 좋다.
 
   - 다만 cmask에서 이런 비트들의 값이 들어간다는 이야기 → 그 비트를 켜겠다? 끄겠다? → 끄겠다.
+
+<br/>
 
 - 파일의 permission 모드를 바꿀 수 있다.
 
