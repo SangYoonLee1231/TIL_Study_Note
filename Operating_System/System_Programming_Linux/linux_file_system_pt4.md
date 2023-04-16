@@ -378,7 +378,7 @@
 
   - 이후 빈 공간이 생기게 되면 → wakeup이 일어난다.
 
-<br/>
+<br/><br/>
 
 > ### ☝🏻 Q. 리눅스에서 pipe연산의 block & wakeup 기능이 Race Condition을 예방하는 방법에 대해 자세히 설명해주세요.
 >
