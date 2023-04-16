@@ -8,23 +8,23 @@
 
 ### 목차
 
-- <a href="">프로세스 생성 관련 시스템 콜</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%83%9D%EC%84%B1-%EA%B4%80%EB%A0%A8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">프로세스 생성 관련 시스템 콜</a>
 
-  - <a href="">`fork` 시스템 콜</a>
-  - <a href="">`wait` 시스템 콜</a>
-  - <a href="">Concurrent Process</a>
-  - <a href="">`exit` 시스템 콜</a>
-  - <a href="">`exec` 시스템 콜</a>
-  - <a href="">User Process Tree</a>
-  - <a href="">Shell의 동작 방식</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#fork-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">`fork` 시스템 콜</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#wait-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">`wait` 시스템 콜</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#concurrent-process">Concurrent Process</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#exit-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">`exit` 시스템 콜</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#exec-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">`exec` 시스템 콜</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#user-process-tree">User Process Tree</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#shell%EC%9D%98-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D">Shell의 동작 방식</a>
 
-- <a href="">Multitask Scheduling</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#multitask-scheduling">Multitask Scheduling</a>
 
-  - <a href="">Context Switching</a>
-  - <a href="">조심해야 할 문제 상황 : Race Condition</a>
-  - <a href="">문제 상황 설명</a>
-  - <a href="">해결 방법</a>
-  - <a href="">pipe</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#context-switching">Context Switching</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#%EC%A1%B0%EC%8B%AC%ED%95%B4%EC%95%BC-%ED%95%A0-%EB%AC%B8%EC%A0%9C-%EC%83%81%ED%99%A9--race-condition">조심해야 할 문제 상황 : Race Condition</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#%EB%AC%B8%EC%A0%9C-%EC%83%81%ED%99%A9-%EC%84%A4%EB%AA%85">문제 상황 설명</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">해결 방법</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md#pipe">pipe</a>
 
 <!-- - <a href=""></a> -->
 
@@ -83,7 +83,7 @@
 
   → 이를 **Concurrent Process**라 부른다.
 
-  <img src="../img/스크린샷 2023-04-05 오후 4.37.13.png">
+  <img src="../img/2023-04-05_PM_4.37.13.png">
 
   - 여러 프로세스를 동시에 만들어서 각자 자신의 몫에 맞는 역할을 수행할 수 있도록 소프트웨이를 설계
 
@@ -141,7 +141,7 @@
 
   - 부모-자녀 관계도 그대로 유지된다.
 
-  <img src="../img/스크린샷 2023-04-05 오후 4.42.18.png">
+  <img src="../img/2023-04-05_PM_4.42.18.png">
 
 <br/>
 
@@ -156,7 +156,7 @@
 
 ### User Process Tree
 
-<img src="../img/스크린샷 2023-04-04 오전 10.19.44.png">
+<img src="../img/2023-04-04_AM_10.19.44.png">
 
 - **init** : 최초로 생성되는 유저 프로세스 (프로세스의 조상)
 
@@ -194,7 +194,7 @@
 
 - **예시**
 
-  <img src="../img/스크린샷 2023-04-04 오전 10.20.24.png">
+  <img src="../img/2023-04-04_AM_10.20.24.png">
 
 - `$ .a/out` : shell, a.out 프로세스 생성
 
@@ -230,7 +230,7 @@
 
 - **Simple shell example**
 
-  <img src="../img/스크린샷 2023-04-04 오전 10.28.11.png">
+  <img src="../img/2023-04-04_AM_10.28.11.png">
 
   - prompt를 통해 입력 받은 string을 읽어들이고 이를 해석한다.
 
@@ -250,7 +250,7 @@
 
 ## Multitask Scheduling
 
-<img src="../img/스크린샷 2023-04-05 오후 9.43.28.png">
+<img src="../img/2023-04-05_PM_9.43.28.png">
 
 - CPU가 하나인 상황에서 여러개의 프로세스가 메모리에 있을 때
 
@@ -266,7 +266,7 @@
 
 ### Context Switching
 
-<img src="../img/스크린샷 2023-04-05 오후 9.44.15.png">
+<img src="../img/2023-04-05_PM_9.44.15.png">
 
 - 두 개의 프로세스가 하나의 CPU를 공유하는 상황을 가정해보자.
 
@@ -298,7 +298,7 @@
 
 - 만일 File 하나를 여러 개의 프로세스가 함부로 공유해서 복사하거나 협력 작업을 할 경우 조심해야 할 문제가 있다.
 
-  <img src="../img/스크린샷 2023-04-04 오전 10.38.09.png">
+  <img src="../img/2023-04-04_AM_10.38.09.png">
 
 - 하나의 프로세스에서 read file을 1byte씩 읽어 copyfile 이름으로 복사하는 작업의 코드이다.
 
@@ -306,7 +306,7 @@
 
 - 이 때 아래의 문제가 발생할 수 있다.
 
-  <img src="../img/스크린샷 2023-04-04 오전 10.39.20.png">
+  <img src="../img/2023-04-04_AM_10.39.20.png">
 
 <br/>
 
