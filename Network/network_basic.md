@@ -8,24 +8,24 @@
 
 ### 목차
 
-- <a href="">데이터 통신 시스템 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%86%B5%EC%8B%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%86%8C%EA%B0%9C">데이터 통신 시스템 소개</a>
 
-  - <a href="">통신 시스템 기본 특성</a>
-  - <a href="">통신 시스템 구성 요소</a>
-  - <a href="">데이터 표현</a>
-  - <a href="">데이터 전송 방식</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%ED%86%B5%EC%8B%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EB%B3%B8-%ED%8A%B9%EC%84%B1">통신 시스템 기본 특성</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%ED%86%B5%EC%8B%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C">통신 시스템 구성 요소</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%ED%98%84">데이터 표현</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%EB%B0%A9%EC%8B%9D">데이터 전송 방식</a>
 
-- <a href="">네트워크란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%9E%80">네트워크란?</a>
 
-  - <a href="">인터넷이란?</a>
-  - <a href="">네트워크의 분류</a>
-  - <a href="">네트워크의 통신 방식</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%B4%EB%9E%80">인터넷이란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%B6%84%EB%A5%98">네트워크의 분류</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%ED%86%B5%EC%8B%A0-%EB%B0%A9%EC%8B%9D">네트워크의 통신 방식</a>
 
-- <a href="">네트워크 프로토콜</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">네트워크 프로토콜</a>
 
-- <a href="">네트워크 모델 : TCP, OSI 7 layer, 패킷</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%AA%A8%EB%8D%B8--tcp-osi-7-layer-%ED%8C%A8%ED%82%B7">네트워크 모델 : TCP, OSI 7 layer, 패킷</a>
 
-- <a href="">패킷</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md#%ED%8C%A8%ED%82%B7">패킷</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
