@@ -197,7 +197,21 @@
 
 ### ◻ 네트워크
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md">네트워크 기초</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md">데이터 통신 소개 및 네트워크 기초</a>
+
+#### TCP/IP 모델 1계층 : Physical Layer (물리층)
+
+<!-- - <a href=""></a> -->
+
+<!-- #### TCP/IP 모델 2계층 : Data-link Layer (데이터 링크층) -->
+
+<!-- #### TCP/IP 모델 3계층 : Network Layer (네트워크 링크층) -->
+
+<!-- #### TCP/IP 모델 4계층 : Transport Layer (전송 링크층) -->
+
+<!-- #### TCP/IP 모델 5계층 : Application Layer (응용 링크층) -->
+
+<!-- - <a href=""></a> -->
 <!-- - <a href=""></a> -->
 
 ### ◻ 데이터베이스
