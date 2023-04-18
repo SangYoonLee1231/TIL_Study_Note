@@ -164,10 +164,14 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/binary_search_tree_delete.md">이진 탐색 트리 (Binary Search Tree / BST) 의 삭제 연산</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/DataStructure/balanced_bst.md">균형 이진 탐색 트리 (Balanced BST)</a>
 
+<br/>
+
 ### ◻ 알고리즘
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_introduction.md">알고리즘 소개</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Algorithm/algorithm_time_complexity.md">시간 복잡도</a>
+
+<br/>
 
 ### ◻ 컴퓨터 구조
 
@@ -177,6 +181,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/ComputerSystem/computer_system_cpu.md">PC 하드웨어 - CPU 개요</a>
 
 <!-- - <a href=""></a> -->
+
+<br/>
 
 ### ◻ 운영체제
 
@@ -194,6 +200,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt2.md">리눅스 파일 관리 시스템 Part 2 (v-node, Link)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_access_permittion.md">리눅스 파일 관리 시스템 Part 3 (파일 접근 권한)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_file_system_pt4.md">리눅스 파일 관리 시스템 Part 4 (프로세스 생성 및 관리 - <code>fork</code>, <code>exec</code> 시스템 콜)</a>
+
+<br/>
 
 ### ◻ 네트워크
 
@@ -216,6 +224,8 @@
 
 <!-- - <a href=""></a> -->
 <!-- - <a href=""></a> -->
+
+<br/>
 
 ### ◻ 데이터베이스
 
