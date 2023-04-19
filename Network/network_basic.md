@@ -2,7 +2,7 @@
 
 <br/>
 
-> 참고 자료 : <a href="https://youtube.com/playlist?list=PL0d8NnikouEWcF1jJueLdjRIC4HsUlULi">네트워크 유튜브 강의 (따라하면서 배우는 IT)</a>
+> 참고 자료 : <a href="https://youtube.com/playlist?list=PL0d8NnikouEWcF1jJueLdjRIC4HsUlULi">네트워크 유튜브 강의 (따라하면서 배우는 IT)</a>, '데이터 통신' 학부 수업 내용 및 전공 서적 '데이터 통신' (Behrouz A. Forouzan 저 | 이재광, 김봉한 판역 | Mc Graw Hill 출판)
 
 <br/><br/>
 
