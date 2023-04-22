@@ -188,21 +188,71 @@
 
 - <code>void **setbuf** (FILE *stream, char *buf);</code>
 
-  - <code>char \*buf</code> : character array의 주소, 8KB or 16KB의 데이터 공간을 잡아놓고 그 주소를 가리키는 포인터이다.
+  - 표준 입출력 버퍼를 설정하는 함수이다.
 
-  - 그 array을 <code>FILE \*stream</code>이 사용하는 버퍼로 세팅
+  - 인자 설명
 
-  - <code>char \*buf</code>이 <code>NULL</code>이라면 Unbuffering으로 쓰겠다는 의미
+    - <code>FILE \*stream</code> : 버퍼를 설정할 스트림을 가리키는 파일 포인터이
+
+    - <code>char \*buf</code> : character array의 주소, 8KB or 16KB의 데이터 공간을 잡아놓고 그 주소를 가리키는 포인터
+
+      - 그 array을 <code>FILE \*stream</code>이 사용하는 버퍼로 세팅
+
+      - <code>char \*buf</code>이 <code>NULL</code>이라면 Unbuffering으로 쓰겠다는 의미이다.
+
+  - 예시 코드
+
+    ```c
+    #include <stdio.h>
+
+    int main(void) {
+        char buffer[BUFSIZ];
+        setbuf(stdout, buffer);
+        printf("Hello, World!");
+        return 0;
+    }
+    ```
+
+    - 이 코드는 stdout 스트림의 버퍼를 buffer로 설정한 후, `"Hello, World!"` 문자열을 출력한다.
+
+    - 이 때 `printf()` 함수는 버퍼에 데이터를 쌓고, 버퍼가 가득 차거나 명시적으로 비워질 때까지 작업을 지연시킨다.
+
+<br/>
 
 - <code>int **setvbuf** (FILE *stream, char *buf, int type, size_t size);</code>
 
-  - <code>int type</code> : 버퍼링 타입 지정 (Full, Line, Unbuffering)
+  - 표준 입출력 버퍼의 크기와 종류를 지정하는 함수이다.
 
-    - `_IONBF` : unbuffered, `IOLBF` : line buffered, `_IOFBF` : fully buffered (심볼 제공)
+  - `setbuf`함수와 기능이 유사하나 좀 더 많은 옵션을 제공해준다.
 
-  - <code>size_t size</code> : 버퍼 사이즈 지정
+  - 인자 설명
+
+    - <code>FILE \*stream</code> : 버퍼를 설정할 스트림을 가리키는 파일 포인터
+
+    - <code>int type</code> : 버퍼링 타입 지정 (Full, Line, Unbuffering)
+
+      - `_IONBF` : unbuffered, `IOLBF` : line buffered, `_IOFBF` : fully buffered (심볼 제공)
+
+    - <code>size_t size</code> : 버퍼 사이즈 지정
 
   - **return 값** : 0이면 성공적으로 수행, 0이 아니면 에러 코드 반환
+
+  - 예시 코드
+
+    ```c
+    #include <stdio.h>
+
+    int main(void) {
+        char buffer[BUFSIZ];
+        setvbuf(stdout, buffer, _IOFBF, BUFSIZ);
+        printf("Hello, World!");
+        return 0;
+    }
+    ```
+
+    - 이 코드는 stdout 스트림의 버퍼를 buffer로 설정한 후, 전체 버퍼링 모드(`_IOFBF`)와 버퍼 크기(`BUFSIZ`)를 지정한다.
+
+    - 이 때 `printf()` 함수는 버퍼에 데이터를 쌓고, 버퍼가 가득 차거나 명시적으로 비워질 때까지 작업을 지연시킨다.
 
 <br/>
 
