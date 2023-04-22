@@ -121,7 +121,7 @@
 
     - Full, Line, Unbuffering은 이 버퍼를 어떻게 사용할 것인지에 관한 이야기이다.
 
-  - 커널 안에서의 버퍼링 : <strong>커널 버퍼 캐시 (kernal buffer cache)</strong>
+  - 커널 안에서의 버퍼링 : <strong>버퍼 캐시 (buffer cache)</strong>
 
   <br/>
 
