@@ -231,7 +231,7 @@
 
     - <code>int type</code> : 버퍼링 타입 지정 (Full, Line, Unbuffering)
 
-      - `_IONBF` : unbuffered, `IOLBF` : line buffered, `_IOFBF` : fully buffered (심볼 제공)
+      - `_IONBF` : unbuffered | `IOLBF` : line buffered | `_IOFBF` : fully buffered (심볼 제공)
 
     - <code>size_t size</code> : 버퍼 사이즈 지정
 
@@ -264,9 +264,15 @@
 
 ## 버퍼 캐시 (Buffer Cache)
 
-- 디스크에서 데이터를 읽으면, 버퍼 캐시에도 그 데이터를 카피하는 공간이 있다.
+- 커널 영역에도 데이터를 카피하여 임시로 저장해두는 공간이 있다.
 
-- 이 공간이 다 차면 유저 스페이스 영역으로 데이터를 올려보낸다.
+- 디스크에서 데이터를 읽으면, 이 공간에 카피된 데이터가 보관된다.
+
+- 만일 이 공간이 다 찰 경우, 유저 스페이스 영역으로 데이터를 올려보낸다.
+
+- 이 공간을 <strong>버퍼 캐시(Buffer Cache)</strong>라 부른다.
+
+<br/>
 
 - 버퍼 캐시의 목적 : **디스크의 접근 횟수를 줄이기 위해서**
 
