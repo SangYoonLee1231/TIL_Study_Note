@@ -8,10 +8,10 @@
 
 ### 목차
 
-- <a href="">File Offset이란?</a>
-- <a href="">파일을 다루는 방법</a>
-- <a href="">File Offset 관련 함수</a>
-- <a href="">추가적으로 짚고 넘어갈 함수 (`sprintf`, `sscanf`, `ferror`, `feof`, `clearerr`)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md#file-offset%EC%9D%B4%EB%9E%80">File Offset이란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md#%ED%8C%8C%EC%9D%BC%EC%9D%84-%EB%8B%A4%EB%A3%A8%EB%8A%94-%EB%B0%A9%EB%B2%95">파일을 다루는 방법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md#file-offset-%EA%B4%80%EB%A0%A8-%ED%95%A8%EC%88%98">File Offset 관련 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/file_offset.md#%EC%B6%94%EA%B0%80%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%A7%9A%EA%B3%A0-%EB%84%98%EC%96%B4%EA%B0%88-%ED%95%A8%EC%88%98">추가적으로 짚고 넘어갈 함수 (`sprintf`, `sscanf`, `ferror`, `feof`, `clearerr`)</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
