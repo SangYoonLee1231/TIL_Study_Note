@@ -198,17 +198,17 @@
 
   <img src="../img/2023-04-04_AM_10.20.24.png">
 
-- `$ .a/out` : shell, a.out 프로세스 생성
+- `$ ./a.out` : shell, a.out 프로세스 생성
 
   - shell은 일반적으로 자식을 만들면 그 자식이 종료될 때까지 wait한다.
 
   - shell 프로세스의 내부에 fork 이후 wait을 하는 코드가 존재한다.
 
-- `$ cat myfile` : cat은 파일을 표준 출력에 띄워주는 역할을 하는 명령어이다.
+- `$ cat myfile` : cat은 파일을 표준 출력에 띄워주는 명령어이다.
 
   - cat이라는 프로세스가 만들어진다.
 
-- `$ .a/out &`의 `&` 표시 : shell이 waiting을 하지 않는다. ‘나는 나대로 다음 실행을 하겠다’는 의미이다.
+- `$ ./a.out &`의 `&` 표시 : shell이 waiting을 하지 않는다. ‘나는 나대로 다음 실행을 하겠다’는 의미이다.
 
   - 이때 이 프로세스를 background process라 한다.
 
