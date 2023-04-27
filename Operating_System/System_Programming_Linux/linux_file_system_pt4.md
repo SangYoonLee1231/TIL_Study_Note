@@ -246,7 +246,7 @@
 
   - 그리고 나서 fork의 리턴값을 체크한다. (pid가 0이면 자식 프로세스)
 
-  - foreground 프로세스
+  - **foreground 프로세스**
 
     - foreground process = 자식이 끝날 때까지 기다린다.
 
