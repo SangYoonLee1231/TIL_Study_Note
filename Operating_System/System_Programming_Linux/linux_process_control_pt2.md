@@ -16,7 +16,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt2.md#%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">해결 방법</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt2.md#pipe">pipe</a>
 
-- <a href="">Process Control 시스템 콜</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt2.md#process-control-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%BD%9C">Process Control 시스템 콜</a>
 
 <br/><br/>
 
