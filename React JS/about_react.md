@@ -55,6 +55,10 @@
 
 - React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
+  - 이를 CSR(Client Side Rendering)이라 부른다.
+
+  - (CSR에 대한 자세한 내용은 <a href="">여기</a>를 참고)
+
 <br/>
 
 ### <strong>React의 핵심 개념</strong>

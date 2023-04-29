@@ -126,8 +126,8 @@
 
 ### ◻ Next JS
 
+- <a href="">CSR vs SSR</a>
 - <a href="">Next JS 소개</a>
-  <!-- - <a href=""></a> -->
   <!-- - <a href=""></a> -->
 
 <br/>
