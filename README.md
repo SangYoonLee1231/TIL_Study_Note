@@ -292,3 +292,5 @@
 ## 💻 교육 과정 참여
 
 #### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/CodeSoom">⌨ CodeSoom 리엑트 11기 (2022.08.01 ~ 2022.10.02)</a>
+
+#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/HufsLion-Study">⌨ 멋쟁이 사저처럼 11기 스터디를 위한 학습 내용 정리 (2023.04.29 ~ 2023.xx.xx)</a>
