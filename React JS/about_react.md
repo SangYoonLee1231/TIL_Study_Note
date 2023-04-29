@@ -54,6 +54,22 @@
 
 - React JS는 <strong>모든 것이 JavaScript에서 시작한다.</strong> HTML 요소를 JS에서 직접 만들어서 HTML에 반영한다.
 
+<br/>
+
+- <strong>React의 핵심 개념</strong>
+
+  - Angular처럼 (재사용이 가능한) 컴포넌트(Component)를 조합하여 웹사이트(앱)를 만드는데 도움을 주는 라이브러리다.
+
+    - Angular 프레임워크는 데이터의 흐름을 파악하기 어려운 문제가 있으므로, 이를 해결하기 위해 페이스북에서 React라는 새 프레임워크를 개발하였다.
+
+  - 가상 DOM을 생성하고, render시 이를 실제 DOM과 비교하여 변화된 부분만 찾아 앱에 반영한다.
+
+  - 일방향적인 데이터 흐름을 보여준다.
+
+    - state ⇒ component ⇒ 가상 DOM ⇒ 실제 DOM과 비교 ⇒ 화면에 그리기
+
+  - React는 UI 라이브러리에 불과하다. 하지만 이로 인해 오히려 다른 플랫폼에서도 React를 활용할 수 있다.
+
 <br/><br/><br/>
 
 ## React JS 설치
