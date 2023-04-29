@@ -1,16 +1,17 @@
 # CSR vs SSR
 
-> 참고 자료 : <a href="https://www.inflearn.com/course/lecture?courseSlug=%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A0%88%EB%94%A7&unitId=123111&tab=curriculum">따라하며 배우는 노드, 리액트 시리즈 - 레딧 사이트 만들기(NextJS) (인프런 / John Ahn님)</a>,
-> <a href="https://fastcampus.co.kr/courses/203527">김민태의 프론트엔드 아카데미 : 제 1강 JavaScript & TypeScript Essential (패스트캠퍼스 / 김민태님)</a>,
-> <a href="https://www.sarah-note.com/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/posting2/">SSR vs CSR 비교 설명, Next.js가 탄생하게 된 이유 (블로그 포스트)</a>,
+> 참고 자료 : <a href="https://www.inflearn.com/course/lecture?courseSlug=%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A0%88%EB%94%A7&unitId=123111&tab=curriculum">따라하며 배우는 노드, 리액트 시리즈 - 레딧 사이트 만들기(NextJS) (인프런 / John Ahn님)</a>,  
+> <a href="https://fastcampus.co.kr/courses/203527">김민태의 프론트엔드 아카데미 : 제 1강 JavaScript & TypeScript Essential (패스트캠퍼스 / 김민태님)</a>,  
+> <a href="https://www.sarah-note.com/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/posting2/">SSR vs CSR 비교 설명, Next.js가 탄생하게 된 이유 (블로그 포스트)</a>,  
 > <a href="https://www.startupcode.kr/company/blog/archives/12">CSR과 SSR의 장단점 (블로그 포스트)</a>
 
 <br/>
 
 ### 목차
 
-- <a href="">SSR vs CSR</a>
-- <a href="">SSR과 CSR의 특징 (장단점)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md#ssr-vs-csr">SSR vs CSR</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md#ssr%EA%B3%BC-csr%EC%9D%98-%ED%8A%B9%EC%A7%95-%EC%9E%A5%EB%8B%A8%EC%A0%90">SSR과 CSR의 특징 (장단점)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md#%EC%96%B4%EB%96%A4-%EB%B0%A9%EC%8B%9D%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%A0-%EA%B2%83%EC%9D%B8%EA%B0%80">어떤 방식을 사용할 것인가</a>
 
 <br/><br/>
 

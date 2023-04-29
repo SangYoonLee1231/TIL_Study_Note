@@ -57,7 +57,7 @@
 
   - 이를 CSR(Client Side Rendering)이라 부른다.
 
-  - (CSR에 대한 자세한 내용은 <a href="">여기</a>를 참고)
+  - (CSR에 대한 자세한 내용은 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md">여기</a>를 참고)
 
 <br/>
 

@@ -126,8 +126,8 @@
 
 ### ◻ Next JS
 
-- <a href="">CSR vs SSR</a>
-- <a href="">Next JS 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md">CSR vs SSR</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/about_next_js.md">Next JS 소개</a>
   <!-- - <a href=""></a> -->
 
 <br/>

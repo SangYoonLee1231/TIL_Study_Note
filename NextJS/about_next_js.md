@@ -12,10 +12,10 @@
 
 ## Next JS란?
 
-- React에서 **SSR(Server Side Rendering)**을 쉽게 구현할 수 있도록 도와주는 간단한 **프레임워크**이다.
+- React에서 <strong>SSR(Server Side Rendering)</strong>을 쉽게 구현할 수 있도록 도와주는 간단한 **프레임워크**이다.
 
 - 리엑트로 개발할 땐 SPA(Single Page Application)를 이용하여 CSR(Client Side Rendering)을 하지만, 이 방식은 검색 엔진 최적화(SEO) 부분에서 단점이 존재한다.
 
-- 왜 이러한 단점이 있는지, SSR에 대해 CSR과 비교해보며 알아보자.
+  - 왜 이러한 단점이 있는지는 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md">여기</a>를 참고하여 짚고 넘어가자.
 
 <br/>
