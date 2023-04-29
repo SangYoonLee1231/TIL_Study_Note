@@ -8,12 +8,12 @@
 
 ### 목차
 
-- <a href="">쓰레드의 탄생 배경</a>
-- <a href="">쓰레드의 핵심 아이디어</a>
-- <a href="">쓰레드 (Thread)</a>
-- <a href="">쓰레드의 특징</a>
-- <a href="">멀티 쓰레드로 프로그래밍 할 때 주의할 점</a>
-- <a href="">멀티 쓰레드를 사용하면 유익한 점</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md#%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD">쓰레드의 탄생 배경</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md#%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%ED%95%B5%EC%8B%AC-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4">쓰레드의 핵심 아이디어</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md#%EC%93%B0%EB%A0%88%EB%93%9C-thread">쓰레드 (Thread)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md#%EC%93%B0%EB%A0%88%EB%93%9C%EC%9D%98-%ED%8A%B9%EC%A7%95">쓰레드의 특징</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md#%EB%A9%80%ED%8B%B0-%EC%93%B0%EB%A0%88%EB%93%9C%EB%A1%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%A0-%EB%95%8C-%EC%A3%BC%EC%9D%98%ED%95%A0-%EC%A0%90-1">멀티 쓰레드로 프로그래밍 할 때 주의할 점</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md#%EB%A9%80%ED%8B%B0-%EC%93%B0%EB%A0%88%EB%93%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%A9%B4-%EC%9C%A0%EC%9D%B5%ED%95%9C-%EC%A0%90">멀티 쓰레드를 사용하면 유익한 점</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
