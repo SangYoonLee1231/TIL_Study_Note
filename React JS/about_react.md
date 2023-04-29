@@ -10,6 +10,7 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD">React 탄생 배경</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EB%9E%80">React JS란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90">React의 핵심 개념</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 
@@ -56,7 +57,7 @@
 
 <br/>
 
-#### <strong>React의 핵심 개념</strong>
+### <strong>React의 핵심 개념</strong>
 
 - Angular처럼 재사용이 가능한 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">컴포넌트(Component)</a>를 조합하여 웹사이트(앱)를 만드는데 도움을 주는 라이브러리다.
 
