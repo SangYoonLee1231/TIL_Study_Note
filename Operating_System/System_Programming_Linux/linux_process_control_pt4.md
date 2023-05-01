@@ -16,6 +16,9 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#%EC%93%B0%EB%A0%88%EB%93%9C%EB%A5%BC-%EC%A2%85%EB%A3%8C%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95">쓰레드를 종료시키는 방법</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#joinable-thread-vs-detached-thread">joinable thread VS detached thread</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#%EC%93%B0%EB%A0%88%EB%93%9C-%EA%B0%95%EC%A0%9C-%EC%A2%85%EB%A3%8C">쓰레드 강제 종료</a>
+
+- (...)
+
   <!-- - <a href=""></a>
 
 <!-- - <a href=""></a>
