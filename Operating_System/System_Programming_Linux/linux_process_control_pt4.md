@@ -8,8 +8,20 @@
 
 ### 목차
 
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#%EC%93%B0%EB%A0%88%EB%93%9C-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-thread-library">쓰레드 라이브러리 (Thread Library)</a>
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#pthread">Pthread</a>
+
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#pthread%EC%99%80-%EA%B4%80%EB%A0%A8%EB%90%9C-api">Pthread와 관련된 API</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#%EC%93%B0%EB%A0%88%EB%93%9C%EB%A5%BC-%EC%A2%85%EB%A3%8C%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95">쓰레드를 종료시키는 방법</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#joinable-thread-vs-detached-thread">joinable thread VS detached thread</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#%EC%93%B0%EB%A0%88%EB%93%9C-%EA%B0%95%EC%A0%9C-%EC%A2%85%EB%A3%8C">쓰레드 강제 종료</a>
+  <!-- - <a href=""></a>
+
+<!-- - <a href=""></a>
+
+  - <a href=""></a>
+  - <a href=""></a> -->
 
 <br/><br/>
 
@@ -33,6 +45,8 @@
   - 구현(implementation)은 내부적으로 OS마다 조금씩 다르다. 그러나 그렇게 중요하지 않음
 
   - 우리에게 중요한 것은 인터페이스 (어떻게 함수명이 구성되어 있는지, 인자는 무엇을 주어야 하는지) ← 돌아가면 장땡
+
+<br/>
 
 - 쓰레드 프로그래밍을 할 때 소스 코드에 `#include <pthread.h>`을 명시해야 한다.
 
@@ -128,6 +142,8 @@
 
 - `pthread_join()`은 프로세스의 wait과 비슷하다. (자세한 설명은 아래에)
 
+<br/>
+
 - **프로세스에서 wait, exit과의 관계 ≒ 쓰레드에서 pthread_join, pthread_exit와의 관계**
 
   <img src="../img/2023-04-21_PM_7.55.24.png">
@@ -144,7 +160,7 @@
 
 <br/><br/>
 
-### **joinable thread VS detached thread**
+### joinable thread VS detached thread
 
 #### **joinable thread**
 
