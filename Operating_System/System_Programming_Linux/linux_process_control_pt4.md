@@ -40,59 +40,55 @@
 
 - 컴파일을 할 땐 `$ gcc test.c -lpthread`
 
-<br/>
+<br/><br/>
 
 ### Pthread와 관련된 API
 
-![스크린샷 2023-04-18 오전 1.13.51.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/27c70384-486a-4785-b441-4d75fed441d8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-04-18_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.13.51.png)
+<img src="../img/2023-04-18_AM_1.13.51.png">
 
 - 쓰레드를 생성하는 방법, mutex를 사용하는 방법 이 두 가지만 알면 쓰레드 프로그래밍을 하는데 큰 어려움이 없다고 한다.
 
-- pthread_create 함수
+#### `pthread_create` 함수
 
-  - 쓰레드를 하나 만드는 함수
+- 쓰레드를 하나 만드는 함수
 
-  - `int pthread_create( pthread_t *thread, pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);`
+- `int pthread_create(pthread_t *thread, pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);`
 
-  - (비교 : 하나의 프로세스를 만들기 위해선 fork를 부름)
+- (비교 : 하나의 프로세스를 만들기 위해선 fork를 부름)
 
-  - 하나의 프로세스에는 기본적으로 하나의 쓰레드가 있다.
+- 하나의 프로세스에는 기본적으로 하나의 쓰레드가 있다.
 
-  - 여기에서 pthread_create 함수를 부르는 순간 새로운 쓰레드가 그 프로세스 안에 만들어진다.
+- 여기에서 pthread_create 함수를 부르는 순간 새로운 쓰레드가 그 프로세스 안에 만들어진다.
 
-  - 인자
+- 인자
 
-    - thread: pointer variable to store a thread ID returned
+  - thread: pointer variable to store a thread ID returned
 
-    - attr: thread attributes for the new thread (default: NULL)
+  - attr: thread attributes for the new thread (default: NULL)
 
-    - start_routine: 새 쓰레드가 해야할 일을 지정 (포인터 값을 리턴 받는 함수의 이름을 전달)
+  - start_routine: 새 쓰레드가 해야할 일을 지정 (포인터 값을 리턴 받는 함수의 이름을 전달)
 
-    - arg: argument passed to the thread function(i.e. start_routine) (없으면 NULL)
-
-<br/>
-
-### 쓰레드 함수
-
-- pthead_create 함수(API) : `int pthread_create( pthread_t *thread, pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);`
-
-  - `*thread` 인자 역할 : pthread_t라는 쓰레드 id를 받는 변수 (여기서 포인터 변수는 함수로부터 정보를 받기 위해 사용)
-
-  - pthread_create를 통해 쓰레드를 만들 때, 메인 함수에 쓰레드 하나가 기본적으로 할당된다.
-
-  - 즉, 한 프로세스 안에는 하나의 쓰레드가 기본적으로 있는 것이다. → Main Thread
-
-  - 이 외에 나머지 모든 쓰레드은 명시적으로 pthead_create를 통해 생성한다.
-
-  - 쓰레드에게 주어질 미션은 함수 형태로 전달한다.
-
-  - 쓰레드가 생성이 되면 모든 쓰레드들은 동일한 동료들이다. (누가 더 중요하고 그런거 없음)
-
-  - 프로세스에서 쓰레드를 생성하는 maximun number는 프로세스 시스템에서 관리자가 설정한다.
-
-    - `– cat /proc/sys/kernel/threads-max (default: 388547)`
+  - arg: argument passed to the thread function(i.e. start_routine) (없으면 NULL)
 
 <br/>
+
+- `*thread` 인자 역할 : pthread_t라는 쓰레드 id를 받는 변수 (여기서 포인터 변수는 함수로부터 정보를 받기 위해 사용)
+
+- pthread_create를 통해 쓰레드를 만들 때, 메인 함수에 쓰레드 하나가 기본적으로 할당된다.
+
+- 즉, 한 프로세스 안에는 하나의 쓰레드가 기본적으로 있는 것이다. → Main Thread
+
+- 이 외에 나머지 모든 쓰레드은 명시적으로 pthead_create를 통해 생성한다.
+
+- 쓰레드에게 주어질 미션은 함수 형태로 전달한다.
+
+- 쓰레드가 생성이 되면 모든 쓰레드들은 동일한 동료들이다. (누가 더 중요하고 그런거 없음)
+
+- 프로세스에서 쓰레드를 생성하는 maximun number는 프로세스 시스템에서 관리자가 설정한다.
+
+  - `– cat /proc/sys/kernel/threads-max (default: 388547)`
+
+<br/><br/>
 
 ### 쓰레드를 종료시키는 방법
 
@@ -132,7 +128,7 @@
 
 - **프로세스에서 wait, exit과의 관계 ≒ 쓰레드에서 pthread_join, pthread_exit와의 관계**
 
-  ![스크린샷 2023-04-21 오후 7.55.24.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f9158ea-b86a-4cdb-bd9a-e14db48c2317/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-04-21_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.55.24.png)
+  <img src="../img/2023-04-21_PM_7.55.24.png">
 
 - 모든 쓰레드에서 `pthread_exit()` 콜을 쓰는 것이 권장사항이다.
 
@@ -144,16 +140,20 @@
 
 - 만일 `pthread_exit()` 콜을 부르지 않고, `exit` 콜을 통해 프로세스를 끝내면 모든 쓰레드가 종료되어 버린다. (조심할 것)
 
-<br/>
+<br/><br/>
 
 ### **joinable thread VS detached thread**
 
 #### **joinable thread**
 
 - **합칠 수 있는 쓰레드**
+
 - `pthread_join()`을 통해 자식 쓰레드가 다시 자신에게 join 할 수 있다.
+
 - 다른 쓰레드에게 join할 수도 있다. → 나의 결과물을 다른 쓰레드에게 전달 가능
+
   - 쓰레드를 생성하면 **기본적으로 joinable thread로 설정**된다. (default)
+
 - joinable thread가 종료될 때, 이 쓰레드가 사용하던 여러 리소스들(메모리, 자료구조 등)은 바로 회수되지 않는다. → 좀비 쓰레드 (없는 용어)
 
 <br/>
@@ -227,9 +227,9 @@
 
 - pthread 예시 코드
 
-  ![스크린샷 2023-04-21 오후 8.08.48.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c3376077-5d3d-4644-9a38-4f45125d6882/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-04-21_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.08.48.png)
+  <img src="../img/2023-04-21_PM_8.08.48.png">
 
-  ![스크린샷 2023-04-21 오후 8.08.53.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd953e69-00ab-46f7-8615-bd05c2eaae9e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-04-21_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.08.53.png)
+  <img src="../img/2023-04-21_PM_8.08.53.png">
 
 <br/>
 
