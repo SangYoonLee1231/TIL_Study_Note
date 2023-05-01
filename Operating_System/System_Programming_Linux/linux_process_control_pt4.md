@@ -46,7 +46,9 @@
 
 <img src="../img/2023-04-18_AM_1.13.51.png">
 
-- 쓰레드를 생성하는 방법, mutex를 사용하는 방법 이 두 가지만 알면 쓰레드 프로그래밍을 하는데 큰 어려움이 없다고 한다.
+- 쓰레드를 생성하는 방법, mutex를 사용하는 방법 이 두 가지만 알면 쓰레드 프로그래밍을 하는데 큰 어려움이 없다
+
+<br/>
 
 #### `pthread_create` 함수
 
@@ -197,6 +199,8 @@
 
 - return 값 : 성공 시 0, 에러 시 에러 번호
 
+<br/>
+
 - **caller vs callee**
 
   - `pthread_join()`을 호출할 때 그 호출하는 당사자 쓰레드을 caller(호출자)라 한다.
@@ -264,6 +268,8 @@
     - 이 API 외에도 cancellation point를 지정해주는 API가 여러 개 존재하지만, 우선은 이 하나만 숙지해두자.
 
     - cancellation point에서 clean up 하려는 함수를 미리 등록해둘 수 있다. → `pthread_cleanup_push()` API
+
+<br/>
 
 #### Cancellation 모드 설정하기
 
