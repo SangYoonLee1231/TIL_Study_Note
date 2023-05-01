@@ -17,7 +17,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#joinable-thread-vs-detached-thread">joinable thread VS detached thread</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md#%EC%93%B0%EB%A0%88%EB%93%9C-%EA%B0%95%EC%A0%9C-%EC%A2%85%EB%A3%8C">쓰레드 강제 종료</a>
 
-- <a href=""></a>
+- (🙂)
 
 <!-- - <a href=""></a>
 
