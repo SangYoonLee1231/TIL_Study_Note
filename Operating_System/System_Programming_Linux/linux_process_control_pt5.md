@@ -8,17 +8,17 @@
 
 ### 목차
 
-- <a href="">Mutex (뮤텍스)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#mutex-%EB%AE%A4%ED%85%8D%EC%8A%A4">Mutex (뮤텍스)</a>
 
-  - <a href="">Mutex 선언 방법</a>
-  - <a href="">Mutex Lock / Unlock</a>
-  - <a href="">Mutex 예시 코드</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#mutex-%EC%84%A0%EC%96%B8-%EB%B0%A9%EB%B2%95">Mutex 선언 방법</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#mutex-lock--unlock">Mutex Lock / Unlock</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#mutex-%EC%98%88%EC%8B%9C-%EC%BD%94%EB%93%9C">Mutex 예시 코드</a>
 
-- <a href="">Condition Variables (조건 변수)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#condition-variables-%EC%A1%B0%EA%B1%B4-%EB%B3%80%EC%88%98">Condition Variables (조건 변수)</a>
 
-  - <a href="">주의할 점</a>
-  - <a href="">중요한 Operation들</a>
-  - <a href="">CV example (`cond-var.c`)</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#%EC%A3%BC%EC%9D%98%ED%95%A0-%EC%A0%90">주의할 점</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#%EC%A4%91%EC%9A%94%ED%95%9C-operation%EB%93%A4">중요한 Operation들</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md#cv-example-cond-varc">CV example (`cond-var.c`)</a>
 
 <br/><br/>
 
@@ -193,15 +193,22 @@ pthread_mutex_t mutex_name = PTHREAD_MUTEX_INITIALIZER;
 #### 멀티 쓰레드 Dot-Product 예시
 
 - dot-product : 두 벡터의 내적 (하나는 행벡터, 다른 하나는 열벡터)
+
   - 대응하는 원소들의 곱을 더한 값
+
   - for all i, sum += A[i]\*B[i]
+
 - 만일 벡터가 무지하게 길면 (예 : 행벡터, 열벡터 원소 개수가 100만개)
 
   - 백만번의 곱과 덧셈이 이루어져야 함
+
   - CPU의 멀티 코어로 쓰레드를 생성하여 협업하면, 계산 과정의 일부를 부분부분 할당시킬 수 있음 ← 쓰레드를 분배
+
     - local_sum
+
     - sum += local_sum of the thread
-  - 협력하는 코드 예시 (dot\*product.c)
+
+  - 협력하는 코드 예시 (dot_product.c)
 
     <img src="../img/2023-04-23_PM_4.36.45.png">
 
