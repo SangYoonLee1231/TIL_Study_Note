@@ -205,6 +205,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt3.md">리눅스 프로세스 관리 Part 3 (멀티 쓰레드)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt4.md">리눅스 프로세스 관리 Part 4 (Pthread Library)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt5.md">리눅스 프로세스 관리 Part 5 (Mutex)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/System_Programming_Linux/linux_process_control_pt6.md">리눅스 프로세스 관리 Part 6 (Record Lock)</a>
 <!-- - <a href=""></a> -->
 
 <br/>
