@@ -88,6 +88,20 @@
 
 <br/><br/>
 
-## Pre-rendering
+## Pre-Rendering
 
-- Next
+- Pre-Rendering이란 CSR이 아닌 SSR 방식으로 렌더링을 하는 것을 말한다.
+
+- 즉, Client Side에서 JavaScript로 모든 UI를 생성하지 않고, 대신 각 페이지의 HTML을 사전에 미리 생성하는 것이다.
+
+- 이 작업 덕분에 Next 앱은 SEO에서 더 나은 성능을 보여줄 수 있다.
+
+<br/>
+
+- NextJS는 모든 페이지를 pre-render한다.
+
+- Pre-Rendering된 Next 앱은 서버에서 미리 만들어지기 때문에 JS 기능을 사용하지 않더라도 브라우저 화면에서 잘 동작한다.
+
+  - (React는 CSR 방식으로 JS가 UI를 만들어주기 때문에, JS 기능을 끄면 앱이 정상적으로 동작하지 않는다.)
+
+<br/>
