@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  background-color: beige;
+}
+
+h1 {
+  background-color: greenyellow;
+}
+
+h2 {
+  background-color: bisque;
+}
+
+.paragraph {
+  color: green;
+  font-size: 25px;
+}
+
+.paragraph-2 {
+  color: green;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.two table {
+  width: 230px;
+  margin: 30px;
+}
+
+.flex-practice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: brown;
+  width: 300px;
+  height: 100px;
+}
+
+.flex-practice .item {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 1px white solid;
+}
