@@ -90,18 +90,54 @@
 
 ## Pre-Rendering
 
-- Pre-Rendering이란 CSR이 아닌 SSR 방식으로 렌더링을 하는 것을 말한다.
-
-- 즉, Client Side에서 JavaScript로 모든 UI를 생성하지 않고, 대신 각 페이지의 HTML을 사전에 미리 생성하는 것이다.
+- Pre-Rendering이란, Client Side에서 JavaScript로 모든 UI를 생성하지 않고, 대신 각 페이지의 HTML을 사전에 미리 생성하는 방식을 말한다.
 
 - 이 작업 덕분에 Next 앱은 SEO에서 더 나은 성능을 보여줄 수 있다.
 
 <br/>
 
-- NextJS는 모든 페이지를 pre-render한다.
+- NextJS는 모든 페이지를 Pre-Render한다.
 
 - Pre-Rendering된 Next 앱은 서버에서 미리 만들어지기 때문에 JS 기능을 사용하지 않더라도 브라우저 화면에서 잘 동작한다.
 
   - (React는 CSR 방식으로 JS가 UI를 만들어주기 때문에, JS 기능을 끄면 앱이 정상적으로 동작하지 않는다.)
+
+<br/>
+
+#### Pre-Rendering에는 2가지 과정이 있다.
+
+- **Initial Load** : 서버 측에서 웹 페이지를 사전 렌더링하는 단계
+
+  - JS 파일이 로드되기 전이므로 웹 UI(HTML)만 나타난다.
+
+- **Hydration** : 클라이언트 측에서 초기 로드된 정적 HTML을 가져와 브라우저에서 동적으로 구성되는 단계
+
+  - JS와 HTML이 연결되어 페이지와 유저가 상호작용할 수 있게 된다.
+
+<br/>
+
+#### Pre-Rendering에는 2가지 종류가 있다.
+
+- **Static Generation** : HTML을 빌드 타임에 생성하고, 요청 시마다 재사용한다.
+
+- **Server-Side Rendering** : HTML을 요청 시마다 생성한다.
+
+<br/><br/>
+
+## Data Fetching
+
+- Data Fetching은 말 그대로 **데이터를 가져오는 것이다.**
+
+- NextJS에서 데이터를 가져오는 방법은 여러가지가 있다.
+
+### 1. `getStaticProps`
+
+<br/>
+
+### 2. `getStaticPaths`
+
+<br/>
+
+### 3. `getServerSideProps`
 
 <br/>
