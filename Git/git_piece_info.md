@@ -10,7 +10,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#gitignore-%ED%8C%8C%EC%9D%BC"><code>.gitignore</code> 파일</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#npm-install-%EC%8B%9C-%EC%A3%BC%EC%9D%98-%EC%82%AC%ED%95%ADs"><code>npm install</code> 시 주의 사항</a>
-- <a href="">git commit 메세지 수정하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#git-commit-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">git commit 메세지 수정하기</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
