@@ -25,9 +25,23 @@
 
 - JavaScript의 슈퍼 셋이다.
 
-  - JavaScript의 기본 기능을 모두 제공하되 몇 가지 '새로운 기능'을 추가로 더 제공해주는 언어이다.
+  - JavaScript의 기본 기능을 모두 제공하되, 몇 가지 '새로운 기능'을 추가로 더 제공해주는 언어이다.
 
   - TypeScript의 '새로운 가능' : <strong>명시적인 데이터 유형 설명</strong>
+
+<br/>
+
+- 쉽게 말하면, TypeScript는 JavaScript에 **Type을 부여**한 언어이다.
+
+<br/><br/>
+
+### TypeScript 등장 배경
+
+- JavaScript의 소스 코드가 점점 복잡해지고, 클라이언트 측 언어를 넘어 서버 측 기술로도 활용되기 시작하면서,
+
+- Type 검사 및 컴파일 시 오류 검사의 기능을 수용하여,
+
+- JS를 본격적인 서버 측 기술로 활용할 수 있도록 하기 위해 TypeScript가 제시되었다.
 
 <br/><br/>
 
@@ -47,7 +61,19 @@
 
 <br/>
 
-- TypeScript (TS) 는 브라우저에서 읽을 수 없는 언어이기 때문에 publish 시 JavaScript 언어로 컴파일된다.
+- TypeScript (TS) 는 브라우저에서 읽을 수 없는 언어이기 때문에 publish 시 JavaScript 언어로 **컴파일**된다.
+
+- TypeScript는 성능 향상과는 관계가 없다.
+
+<br/><br/>
+
+### TypeScript를 사용하는 이유
+
+- TypeScript는 JavaScript 코드를 단순화하여 더 쉽게 읽고 이해 할 수 있다.
+
+- TypeScript는 코드 유형 검사를 통해 JacaScript를 작성할 떄 개발자가 일반적으로 겪는 버그를 미리 예방할 수 있다.
+
+- TypeScript는 ES6 (ECMAScript6) 의 모든 이점과 더 많은 생산성을 제공한다.
 
 <br/><br/>
 
