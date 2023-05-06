@@ -9,9 +9,9 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#gitignore-%ED%8C%8C%EC%9D%BC"><code>.gitignore</code> 파일</a>
-- <a href=""><code>npm install</code> 시 주의 사항</a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md#npm-install-%EC%8B%9C-%EC%A3%BC%EC%9D%98-%EC%82%AC%ED%95%ADs"><code>npm install</code> 시 주의 사항</a>
+- <a href="">git commit 메세지 수정하기</a>
+<!-- - <a href=""></a> -->
 
 <br/><br/>
 
@@ -42,3 +42,9 @@
 - 원격 저장소에서 초기 세팅한 파일들을 내 로컬 저장소로 clone 받고, npm install부터 하고나서 branch 생성해야 된다고 한다. (이유는 모르곘지만)
 
 <br/><br/>
+
+## git commit 메세지 수정하기
+
+- `git commit --amend` 명렁어를 통해 수정해주면 된다.
+
+<br/>
