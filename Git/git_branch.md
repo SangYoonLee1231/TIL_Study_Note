@@ -40,6 +40,8 @@
 
 <img src="img/git_circulation.png">
 
+- 여기서 origin(원격 저장소)이 **upstream**, local(로컬 저장소)가 **downstream**이다.
+
 - <a href="https://drive.google.com/file/d/18U6CgRbT8qO73DV-UBeJVka14mdKKRvy/view?usp=share_link">참고 자료 (Private 용)</a>
 
 <br/><br/>
