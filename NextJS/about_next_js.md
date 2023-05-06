@@ -118,9 +118,15 @@
 
 #### Pre-Rendering에는 2가지 종류가 있다.
 
-- **Static Generation** : HTML을 빌드 타임에 생성하고, 요청 시마다 재사용한다.
+- <strong>SSG (Static Side Generation)</strong>
 
-- **Server-Side Rendering** : HTML을 요청 시마다 생성한다.
+  - 빌드 시, pages 폴더에서 작성한 각 페이지들에 대해 각각의 문서를 static한 파일로 생성한다.
+
+  - HTML을 빌드 타임에 생성하고, 요청 시마다 재사용한다.
+
+- <strong>SSSR (Server-Side Rendering)</strong>
+
+  - 유저가 HTML을 요청할 때마다 그에 맞는 HTML 문서를 생성해서 반환한다.
 
 <br/><br/>
 
@@ -130,14 +136,36 @@
 
 - NextJS에서 데이터를 가져오는 방법은 여러가지가 있다.
 
-### 1. `getStaticProps`
+- 앱의 사용 용도에 따라 맞는 방법을 택해 사용하자.
 
 <br/>
 
-### 2. `getStaticPaths`
+#### Next JS 13 버전에선 `async`/`await`을 통한 `fetch()` API를 사용한다.
 
 <br/>
 
-### 3. `getServerSideProps`
+#### 13 버전 이전 방식은 다음과 같다.
+
+- <strong>SSG (Static Side Generation)</strong>
+
+  - `getStaticProps`, `getStaticPaths`, `getServerSideProps`
+
+- <strong>SSR (Server Side Rendering)</strong>
+
+  - `getServerSideProps`
 
 <br/>
+
+<!-- #### 1. `getStaticProps`
+
+- -->
+
+<!-- <br/>
+
+#### 2. `getStaticPaths`
+
+<br/> -->
+<!--
+#### 3. `getServerSideProps`
+
+<br/> -->
