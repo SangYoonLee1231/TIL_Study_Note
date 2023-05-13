@@ -1,4 +1,4 @@
-## 1주차 (Week 1)
+## Chapter 2. Web의 동작 원리 - 클라이언트와 서버의 만남
 
 ### 1. Web의 등장
 
@@ -76,7 +76,7 @@
 
 - 프로토콜 (Protocol) : 서로 통신할 때 필요한 (일정한) 규칙 (여권에 비유)
 
-- HTTP : HyperText를 통해 이동하려는 페이지의 정보를 요청하고, 이를 응답받는 규칙
+- **HTTP** : HyperText를 통해 이동하려는 페이지의 정보를 요청하고, 이를 응답받는 규칙
 
   - HyperText Transfer Protocol
 
@@ -84,6 +84,24 @@
 
 - **클라이언트와 서버는 HTTP라는 규칙을 통해 서로 소통한다.**
 
--
+<br/>
+
+- **URL** : 인터넷 상에 위치해있는 각종 자원들의 주소 체계를 가리키는 말 (Uniform Resource Locator)
+
+  - 서버에 저장된 웹 페이지 및 자원들은 모두 자신이 위치한 URL을 가지고 있다.
+
+- URL 분석 - 예시 : `https://www.google.com/search?q=techit`
+
+  - `https://` : 프로토콜 (통신 규칙)
+
+  - `www.google.com` : 호스트 (서버의 주소)
+
+  - `/search` : 경로 (웹서버에 자원의 위치를 찾아 들어감)
+
+  - `q=techit` : 쿼리 문자열 (Query String)
 
 <br/>
+
+### 5. 쿠키와 세션
+
+- **쿠키** :

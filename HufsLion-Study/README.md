@@ -14,6 +14,8 @@
 
 - <a href="techit-study/week2/ch3.md">Chapter 3. 웹 페이지를 이루는 삼총사 - HTML, CSS, JavaScript</a>
 
+- <a href="">Chapter 6-7. HTML</a>
+
 <!-- - <a href=""></a> -->
 
 <br/>
