@@ -8,6 +8,12 @@
 
 ### TECHIT 프론트엔드 트랙 수강 기록 스터디
 
-👉 <a href="">강의 내용 정리 바로가기 (Notion)</a>
+#### 1주차
+
+- <a href="techit-study/week1/ch2.md">Chapter 2. Web의 동작 원리 - 클라이언트와 서버의 만남</a>
+
+- <a href="techit-study/week2/ch3.md">Chapter 3. 웹 페이지를 이루는 삼총사 - HTML, CSS, JavaScript</a>
+
+<!-- - <a href=""></a> -->
 
 <br/>
