@@ -180,7 +180,7 @@ export default function Login() {
 - <code>react-router-dom</code> v.6.4.3 버전
 
 ```js
-/* index.js */
+/* index.tsx */
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
@@ -197,7 +197,7 @@ root.render(
 ```
 
 ```js
-/* Root.js (혹은 App.js) */
+/* Root.jsx (혹은 App.jsx) */
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./screens/components/Header";
