@@ -8,15 +8,19 @@
 
 ### 목차
 
-- <a href="">CSS-in-JS</a>
-- <a href="">Styled Components</a>
-- <a href="">Styled Components 사용법 및 문법</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#css-in-js">CSS-in-JS</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#styled-components">Styled Components</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#styled-components-%EC%82%AC%EC%9A%A9%EB%B2%95-%EB%B0%8F-%EB%AC%B8%EB%B2%95">Styled Components 사용법 및 문법</a>
 
-  - <a href="">컴포넌트의 props 속성값에 따라 서로 다른 스타일 부여하기 - <code>${(props) => props.[props 속성 이름]}</code></a>
-  - <a href="">컴포넌트 스타일 확장하기 - <code>styled([컴포넌트])</code></a>
-  - <a href="">컴포넌트의 HTML 태그 재설정하기 - <code>as</code> props</a>
-  - <a href="">컴포넌트의 HTML 태그에 속성 직접 추가하기 - <code>styled.[태그].attrs({ [속성] })</code></a>
-  - <a href=""></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-props-%EC%86%8D%EC%84%B1%EA%B0%92%EC%97%90-%EB%94%B0%EB%9D%BC-%EC%84%9C%EB%A1%9C-%EB%8B%A4%EB%A5%B8-%EC%8A%A4%ED%83%80%EC%9D%BC-%EB%B6%80%EC%97%AC%ED%95%98%EA%B8%B0---props--propsprops-%EC%86%8D%EC%84%B1-%EC%9D%B4%EB%A6%84">컴포넌트의 props 속성값에 따라 서로 다른 스타일 부여하기 - <code>${(props) => props.[props 속성 이름]}</code></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%ED%83%80%EC%9D%BC-%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0---styled%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">컴포넌트 스타일 확장하기 - <code>styled([컴포넌트])</code></a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-html-%ED%83%9C%EA%B7%B8-%EC%9E%AC%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0---as-props">컴포넌트의 HTML 태그 재설정하기 - <code>as</code> props</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-html-%ED%83%9C%EA%B7%B8%EC%97%90-%EC%86%8D%EC%84%B1-%EC%A7%81%EC%A0%91-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0---styled%ED%83%9C%EA%B7%B8attrs-%EC%86%8D%EC%84%B1-">컴포넌트의 HTML 태그에 속성 직접 추가하기 - <code>styled.[태그].attrs({ [속성] })</code></a>
+  - <a href="">styled-components 안에서 애니메이션 추가하기</a>
+  - <a href="">styled-components 가상 선택자</a>
+  - <a href="">theme</a>
+  - <a href="">전역 스타일링</a>
+  <!-- - <a href=""></a> -->
 
 <br/><br/>
 
@@ -246,7 +250,7 @@ export default App;
 
 <br/>
 
-### styled-components 안에서 애니메이션 추가하기 - <code></code>
+### styled-components 안에서 애니메이션 추가하기
 
 - 우선 helper 함수인 <code>keyframes</code>를 import 해주어야 한다.
 
@@ -453,3 +457,63 @@ function App() {
 
 export default App;
 ```
+
+<br/>
+
+### 전역 스타일링
+
+```jsx
+// GlobalStyle.jsx (예시)
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
+
+const GlobalStyle = createGlobalStyle`
+  ${reset}
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+    text-decoration: none;
+    font-size: 0.625rem;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  body {
+    background-image: url('./images/background-2426328_1920.jpg');
+    background-size: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+`;
+
+export default GlobalStyle;
+```
+
+```jsx
+// index.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "styled-components";
+import { RouterProvider } from "react-router-dom";
+import router from "./Router";
+import reportWebVitals from "./reportWebVitals";
+import GlobalStyle from "./styles/GlobalStyle";
+import GlobalFont from "./styles/GlobalFont";
+import theme from "./styles/theme";
+import variables from "./styles/variables";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <ThemeProvider theme={{ theme, variables }}>
+    <GlobalStyle />
+    <GlobalFont />
+    <RouterProvider router={router} />
+  </ThemeProvider>
+);
+
+reportWebVitals();
+```
+
+<br/>
