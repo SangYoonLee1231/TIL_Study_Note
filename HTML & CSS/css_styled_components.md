@@ -16,10 +16,10 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%ED%83%80%EC%9D%BC-%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0---styled%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">컴포넌트 스타일 확장하기 - <code>styled([컴포넌트])</code></a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-html-%ED%83%9C%EA%B7%B8-%EC%9E%AC%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0---as-props">컴포넌트의 HTML 태그 재설정하기 - <code>as</code> props</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-html-%ED%83%9C%EA%B7%B8%EC%97%90-%EC%86%8D%EC%84%B1-%EC%A7%81%EC%A0%91-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0---styled%ED%83%9C%EA%B7%B8attrs-%EC%86%8D%EC%84%B1-">컴포넌트의 HTML 태그에 속성 직접 추가하기 - <code>styled.[태그].attrs({ [속성] })</code></a>
-  - <a href="">styled-components 안에서 애니메이션 추가하기</a>
-  - <a href="">styled-components 가상 선택자</a>
-  - <a href="">theme</a>
-  - <a href="">전역 스타일링</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#styled-components-%EC%95%88%EC%97%90%EC%84%9C-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0">styled-components 안에서 애니메이션 추가하기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#styled-components-%EA%B0%80%EC%83%81-%EC%84%A0%ED%83%9D%EC%9E%90">styled-components 가상 선택자</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#theme">theme</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_styled_components.md#%EC%A0%84%EC%97%AD-%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81">전역 스타일링</a>
   <!-- - <a href=""></a> -->
 
 <br/><br/>
