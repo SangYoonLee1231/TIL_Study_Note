@@ -16,6 +16,12 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">Chapter 6-7. HTML</a>
 
+<br/>
+
+#### 1주차
+
+- <a href="https://github.com/SangYoonLee1231/TIL#-css">Chapter 8-10. CSS</a>
+
 <!-- - <a href=""></a> -->
 
 <br/>
