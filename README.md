@@ -22,7 +22,7 @@
 
 - 다른 사람들도 읽었을 때 이해하기 쉽도록, 최대한 깔끔하고 자세히 기록한다.
 - 기록은 일회성으로 끝내지 않고 지속적인 복습을 통해 더 정돈된 기록으로 남긴다.
-- 공부 및 기록에 참고한 자료와 정리에 활용한 사진 자료는 출처를 남긴다.
+<!-- - 공부 및 기록에 참고한 자료와 정리에 활용한 사진 자료는 출처를 남긴다. -->
 
 ---
 
@@ -272,7 +272,7 @@
 
 ### ◻ 깃 (Git)
 
-#### ⌨️ <a href="">Git - 오픈소스 이론부터 실전까지 총 정리 (오픈소스SW 수업 내용)</a>
+#### ⌨️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_about_all.md">Git - 오픈소스 이론부터 실전까지 총 정리 (오픈소스SW 수업 내용)</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md">명령어 정리 (터미널, 깃)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_manage_my_repository.md">Git - 깃으로 자신의 레포지토리 (Repository) 관리하기</a>
