@@ -246,6 +246,36 @@
 
 ## 2. 오픈소스의 이점 및 Git의 기초
 
+### OSS의 이점
+
+#### Individual Users
+
+- Less Cost, More Freedom, Can avoid Vender lock-in
+
+  - (Vender lock-in : 버전 자동 업데이트)
+
+#### Business
+
+- Less Cost, Receive Free Review
+
+#### Education
+
+- Few and low cost, Can utilize old hardware
+
+#### Developers
+
+- Can reuse code, Make good Communication Skill
+
+<br/><br/>
+
+### Git의 기초
+
+- 깃 레포지토리 초기화하기
+
+  - `git init` : 현재 디렉토리를 깃 레포지토리로 초기화
+
+  - `git clone <링크>` : 깃 레포지토리 불러오기
+
 <br/><br/><br/>
 
 ## 3. Branching
