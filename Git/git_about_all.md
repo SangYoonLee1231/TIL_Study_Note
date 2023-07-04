@@ -342,13 +342,13 @@
 
 <img src="img/git_commit_tree.png" width="450">
 
-</div>
-
 - **blob** : 각 파일을 나타냄 (파일 컨텐츠를 저장)
 
 - **tree** : 모든 blob를 가리킴
 
 - **commit** : tree의 root를 가리킴
+
+</div>
 
 <br/>
 
