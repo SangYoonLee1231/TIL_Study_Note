@@ -47,7 +47,7 @@
 
 #### 정의
 
-- 소스코드가 라이선스(License)로 인해 <strong>누구에게나 열려있다(Open and Available)</strong>
+- 소스코드가 라이선스(License)로 인해 <strong>누구에게나 열려있다</strong>(Made Available with a License)
 
   - Open = "Free to Distribute"
 
@@ -270,11 +270,61 @@
 
 ### Git의 기초
 
-- 깃 레포지토리 초기화하기
+#### 깃 레포지토리 초기화하기
 
-  - `git init` : 현재 디렉토리를 깃 레포지토리로 초기화
+- `git init` : 현재 디렉토리를 깃 레포지토리로 초기화
 
-  - `git clone <링크>` : 깃 레포지토리 불러오기
+- `git clone <링크>` : 깃 레포지토리 불러오기
+
+<br/>
+
+#### 깃 레포지토리의 4가지 상태
+
+- Untracked, Unmodified, Modified, Staged
+
+  <div align="center">
+
+  <img src="img/git_file_states.png" width="400">
+
+  </div>
+
+<br/>
+
+#### 기초 깃 명령어 정리
+
+- `git status` : 깃으로 관리되는 파일의 상태 확인하기
+
+- `git status -s` or `git status -short` : 파일 상태 짧게 확인하기
+
+  <div align="center">
+
+  <img src="img/git_short_status.png" width="350">
+
+  </div>
+
+<br/>
+
+- `git add <file명>` : 해당 파일을 Staging Area에 추가
+
+- `git commit -m "메세지"` : Staging Area의 모든 정보를 커밋
+
+- `git commit -a -m "메세지"` 또는 `git commit -am "메세지"` : 커밋과 스테이징을 동시에 진행 (Auto-Staging)
+
+<br/>
+
+- `git commit --amend` : 이전 커밋 덮어쓰기
+
+- `git reset HEAD <file명>` : Unstaging a staged file
+
+- `git checkout --<file>` : 파일의 수정 사항을 초기화(Discard)
+
+<br/>
+
+- `git log` : 커밋 히스토리 확인
+
+- `git log --stat` : 커밋 히스토리를 (파일의 추가 및 삭제된 부분과 함께) 확인
+
+- `git log --graph --oneline --all` : 커밋 히스토리를 그래프 령식으로 확인
 
 <br/><br/><br/>
 
