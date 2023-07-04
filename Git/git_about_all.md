@@ -172,7 +172,7 @@
 
   <div align="center">
 
-  <img src="img/git_local_vcs.png" height="300">
+  <img src="img/git_local_vcs.png" height="250">
 
   </div>
 
@@ -186,7 +186,7 @@
 
   <div align="center">
 
-  <img src="img/git_centralized_vcs.png" height="300">
+  <img src="img/git_centralized_vcs.png" height="250">
 
   </div>
 
@@ -200,7 +200,7 @@
 
   <div align="center">
 
-  <img src="img/git_distributed_vcs.png" height="300">
+  <img src="img/git_distributed_vcs.png" height="350">
 
   </div>
 
