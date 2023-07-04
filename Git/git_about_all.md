@@ -330,6 +330,38 @@
 
 ## 3. Branching
 
+### 깃 관련 데이터 구조
+
+#### 커밋과 트리 구조
+
+<div align="center">
+
+<img src="img/git_commit_tree.png" width="350">
+
+</div>
+
+- **blob** : 각 파일을 나타냄 (파일 컨텐츠를 저장)
+
+- **tree** : 모든 blob를 가리킴
+
+- **commit** : tree의 root를 가리킴
+
+<br/>
+
+- <strong>하나의 커밋은 이전 커밋을 가리키는 포인터를 가지고 있다. (Backtracking 가능)</strong>
+
+  <div align="center">
+
+  <img src="img/git_subsequent_commits.png" height="200">
+
+  </div>
+
+<br/><br/>
+
+### Branch (브랜치)
+
+####
+
 <br/><br/><br/>
 
 ## 4. Git Remote
