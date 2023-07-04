@@ -180,6 +180,8 @@
 
   - 단점: 한 컴퓨터를 사용하는 한 명의 사용자만 하나의 버전에 Contribute 할 수 있다.
 
+<br/>
+
 - **Centralized VCS Server**
 
   <div align="center">
@@ -191,6 +193,8 @@
   - 장점: Many people can collaborate together
 
   - 단점: Single Point of Failure (서버가 망가지면 모든 것이 망가진다)
+
+<br/>
 
 - **Distributed VCS**
 
@@ -284,7 +288,7 @@
 
   <div align="center">
 
-  <img src="img/git_file_states.png" width="400">
+  <img src="img/git_file_states.png" width="500">
 
   </div>
 
@@ -336,7 +340,7 @@
 
 <div align="center">
 
-<img src="img/git_commit_tree.png" width="350">
+<img src="img/git_commit_tree.png" width="450">
 
 </div>
 
@@ -352,7 +356,7 @@
 
   <div align="center">
 
-  <img src="img/git_subsequent_commits.png" height="200">
+  <img src="img/git_subsequent_commits.png" height="250">
 
   </div>
 
