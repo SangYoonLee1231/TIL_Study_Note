@@ -18,9 +18,9 @@
 
 <br/>
 
-#### 1주차
+#### 2주차
 
-- <a href="https://github.com/SangYoonLee1231/TIL#-css">Chapter 8-10. CSS</a>
+- <a href="techit-study/week2/ch8.md">Chapter 8. Beginner</a>
 
 <!-- - <a href=""></a> -->
 

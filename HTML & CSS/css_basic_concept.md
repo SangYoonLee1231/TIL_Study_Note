@@ -54,7 +54,11 @@
   ```html
   /* link 태그 속성 작성법 */
   <head>
-    <link href="styles.css (css 파일 이름)" rel="stylesheet" type="text/css" />
+    <link
+      href="./styles.css (css 파일 이름)"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   ```
 
@@ -64,7 +68,7 @@
 
   - <strong><code>type</code></strong> : link 태그로 연결되는 파일이 어떤 것인지 알려준다. 여기서 css 파일을 연결하므로 type 값은 항상 <code>text/css</code>이다.
 
-  - <strong><code>rel</code></strong> : rel은 HTML 파일과 CSS 파일과의 관계를 설명하는 속성이다. css 파일을 링크할 때는 항상 <code>stylesheet</code> 값을 대입해줍니다.
+  - <strong><code>rel</code></strong> : rel은 HTML 파일과 CSS 파일과의 관계를 설명하는 속성이다. css 파일을 링크할 때는 항상 <code>stylesheet</code> 값을 대입해준다.
 
 <br/><br/>
 
@@ -93,7 +97,7 @@
     ```css
     ↙ 선택자 (Selector)
     h1 {
-        font-style: italic;
+        font-style: italic;  ← 선언 (Declaration)
             ↑          ↑
         속성 이름   속성 값
         (Property)  (Value)
