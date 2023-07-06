@@ -20,7 +20,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#width-100%EC%9D%98-%EC%9D%98%EB%AF%B8"><code>width: 100%</code>의 의미</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EC%86%8D%EC%84%B1-%EC%88%9C%EC%84%9C-%EC%BB%A8%EB%B2%A4%EC%85%98">CSS 속성 순서 (컨벤션)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EC%9E%91%EC%84%B1-%EB%B0%A9%EC%8B%9D-bottom-up">CSS 레이아웃 작성 방식 (bottom-up)</a>
-- <a href=""></a>
+<!-- - <a href=""></a> -->
 
 <br/><br/>
 
@@ -253,9 +253,26 @@
 
 - <strong><code>px</code></strong> : 가장 기본적으로 사용되는 픽셀 단위 (고정값)
 
-- <strong><code>em</code></strong> : 부모 요소를 기준으로 자식 요소의 크기를 정하는 것 (배수)
+- <strong><code>em</code></strong> : 부모 요소(의 폰트 크기)를 기준으로 자식 요소의 크기를 정하는 것 (배수)
 
   - <code>1.2em</code> : 부모 요소 기준 1.2배수 크기
+
+- <strong><code>rem</code></strong> : 최상위 요소인 \<html>( 폰트 크기를 기준으로 요소의 크기를 정하는 것 (배수)
+
+  - <code>5rem</code> : \<html> 요소 기준 5배수 크기
+
+    ```css
+    html {
+      font-size: 10px;
+    }
+
+    div.inner {
+      width: 5rem;
+      /* 10px * 5 = 50px */
+    }
+    ```
+
+  - **통일된 기준을 잡기 위해서는 rem 단위 사용 권장**
 
 - <strong><code>vh</code></strong> : viewport(화면) height
 
@@ -393,3 +410,5 @@
     height: 300px;
   }
   ```
+
+<br/>

@@ -1,8 +1,8 @@
-## Chapter 8. CSS Beginner
+# Chapter 8. CSS Beginner
 
 <br/>
 
-### 1. CSS 적용
+## 1. CSS 적용
 
 - 【<strong>external CSS</strong>】 css 파일을 <strong>따로 생성</strong>한 후, html 문서에서 <code>\<link></code>태그를 이용하여 html 파일과 css 파일을 서로 연결한다.
 
@@ -27,9 +27,9 @@
 
   - <strong><code>rel</code></strong> : rel은 HTML 파일과 CSS 파일과의 관계를 설명하는 속성이다. css 파일을 링크할 때는 항상 <code>stylesheet</code> 값을 대입해준다.
 
-<br/>
+<br/><br/>
 
-### 2. CSS 구성(1) : Box Sizing (content-box, border-box)
+## 2. CSS 구성(1) : Box Sizing (content-box, border-box)
 
 - <strong><code>box-sizing</code></strong>은 박스의 크기를 계산하는 기준을 설정하는 CSS 속성이다.
 
@@ -49,9 +49,9 @@
 
   - <code>inherit</code> : 부모 요소의 속성값을 물려받는다.
 
-<br/>
+<br/><br/>
 
-### 3. CSS 구성(2)
+## 3. CSS 구성(2)
 
 - 용어 정리
 
@@ -77,7 +77,7 @@
 
 <br/>
 
-#### ID
+### ID
 
 - id는 <strong>고유한 값</strong>으로 한 요소당 하나만 가질 수 있다.
 
@@ -110,7 +110,7 @@
 
 </br><br/>
 
-#### Class
+### Class
 
 - class는 id와 달리, <strong>여러 요소에 같은 이름으로</strong> 부여할 수 있다.
 
@@ -148,7 +148,7 @@
 
 <br/>
 
-#### 선택자 (Selector)
+### 선택자 (Selector)
 
 - 선택자의 기본 3가지 종류
 
@@ -162,7 +162,7 @@
 
 <br/>
 
-#### 결합자 (Combinator)
+### 결합자 (Combinator)
 
 - 여러 선택자를 결합하여, 더 정밀히 요소를 찾아 가리키는 선택자를 결합자(Combinator)라 한다.
 
@@ -188,7 +188,7 @@
 
 <br/>
 
-#### CSS 주석
+### CSS 주석
 
 ```css
 /* h1 {
@@ -197,9 +197,9 @@
 */
 ```
 
-<br/>
+<br/><br/>
 
-### 4. CSS 특성
+## 4. CSS 특성
 
 ### Cascading (폭포수)
 
@@ -207,13 +207,13 @@
 
   ☞ 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
 
-#### Inheritance (상속)
+### Inheritance (상속)
 
 - 부모 요소의 CSS 규칙을 자식 요소가 상속하여 적용
 
 - 그렇지만, 만일 자식 요소가 CSS 규칙을 가지고 있다면 이를 우선하여 적용한다.
 
-#### Specificity (우선순위)
+### Specificity (우선순위)
 
 - CSS 규칙이 서로 충돌할 때 어떤 것을 적용할지?
 
@@ -235,11 +235,11 @@
 
   - **inlince styling은 지향하자.**
 
-<br/>
+<br/><br/>
 
-### 5. Box Model
+## 5. Box Model
 
-#### Block VS Inline
+### Block VS Inline
 
 - <strong>Block</strong>
 
@@ -270,6 +270,8 @@
       (가지도록 하려면 <code>display</code> 속성을 <code>inline-block</code>으로 바꾸어야 한다)
 
   - Inline 속성을 갖는 HTML 요소 : <code>\<span></code>, <code>\<a></code>, <code>\<img></code>, ..
+
+<br/>
 
 ### Box Model
 
@@ -364,5 +366,92 @@ div {
 <br/>
 
 - <code>border</code>은 다양한 속성값이 존재하나 대부분 이쁘지 않으므로 거의 한 종류만 쓴다.
+
+<br/><br/>
+
+## 6. Box Sizing
+
+- <strong><code>box-sizing</code></strong>은 박스의 크기를 계산하는 기준을 설정하는 CSS 속성이다.
+
+  - <code>content-box (Default 값)</code> : 콘탠츠 영역를 기준으로 박스 크기를 계산한다.
+
+  - ✨ <code>border-box</code> : 테두리를 기준으로 박스 크기를 계산한다.
+
+    - 개발 시 거의 항상 쓰이는 속성이라 한다.
+
+      ```css
+      * {
+        box-sizing: border-box;
+      }
+      ```
+
+  - <code>initial</code> : 기본값으로 설정한다.
+
+  - <code>inherit</code> : 부모 요소의 속성값을 물려받는다.
+
+<br/>
+
+- 어떤 요소의 크기가 <code>width: 200px</code>이고 <code>padding: 40px</code>이라 하면,
+
+  <code>box-sizing: content-box</code>일 경우, 요소의 크기 (<code>width</code>) 는 <code>280px</code>이고,
+
+  <code>box-sizing: border-box</code>일 경우, 요소의 크기 (<code>width</code>) 는 <code>200px</code>이다.
+
+<br/><br/>
+
+## 7. CSS 단위
+
+- 예) px, %, rem, em
+
+#### px
+
+- 픽셀값, 절댓값
+
+- 스크린을 구성하는 작은 점
+
+#### %
+
+- 상댓값
+
+- 부모 요소를 기준으로 크기를 결정
+
+#### em / rem
+
+- 폰트 크기에 비례하여 크기 설정
+
+- 상댓값
+
+- <strong><code>em</code></strong> : 부모 요소의 폰트 크기 (배수)
+
+- <strong><code>rem</code></strong> (root rm) : 루트 요소의 폰트 크기
+
+  - <code>5rem</code> : \<html> 요소 기준 5배수 크기
+
+  ```css
+  html {
+    font-size: 10px;
+  }
+
+  div.inner {
+    width: 5rem;
+    /* 10px * 5 = 50px */
+  }
+  ```
+
+  - **통일된 기준을 잡기 위해서는 rem 단위 사용 권장**
+
+#### vw / vh
+
+- <strong><code>vh</code></strong> : viewport(화면) height
+
+  - <code>100vh</code> : 화면 높이의 100%
+
+- <strong><code>vw</code></strong> : viewport(화면) width
+
+  - <code>100vh</code> : 화면 넓이의 100%
+
+<br/><br/>
+
+## 8. 이미지 다루기
 
 <br/>
