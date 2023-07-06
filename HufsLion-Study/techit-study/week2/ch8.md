@@ -77,24 +77,292 @@
 
 <br/>
 
-- 역시 모든 속성을 외우려 하지 말고 모르면 구글링하면 된다는 마인드로.
+#### ID
 
-<br/><br/>
+- id는 <strong>고유한 값</strong>으로 한 요소당 하나만 가질 수 있다.
 
-> 참고1 : 선택자 <code>\*</code>는 모든 요소를 가리킨다.
+- id명을 통해 <strong>특정 요소를 직접</strong> 가리킬 수 있다.
+
+<br/>
+
+- CSS 코드에서 선택자로 id를 쓸 때, 값 앞에 <code>#</code>을 붙여서 쓴다.
 
 ```css
-* {
-  border: 1px dashed black;
+#first {
+  padding: 20px 15px;
+}
+#second {
+  background-color: tomato;
+}
+```
+
+```html
+<div id="first">
+  <div id="second"></div>
+</div>
+```
+
+<br/>
+
+- 여러 같은 html 태그를 생성하였을 때, id를 이용하여 각각을 구분할 수 있고, 서로 다른 속성을 적용시킬 수 있다.
+
+- CSS 코드의 id명은 HTML 코드에서 썼던 id명과 동일해야 한다.
+
+</br><br/>
+
+#### Class
+
+- class는 id와 달리, <strong>여러 요소에 같은 이름으로</strong> 부여할 수 있다.
+
+- class명을 통해 <strong>여러 요소를 동시에</strong> 가리킬 수 있다.
+
+<br/>
+
+- CSS 코드에서 선택자로 class를 쓸 때, 값 앞에 <code>.</code>을 붙여쓴다.
+
+- 하나의 HTML 요소에 여러 종류의 class가 쓰일 수 있다.
+
+```css
+.btn {
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+}
+.tomato {
+  background-color: tomato;
+}
+.potato {
+  background-color: teal;
+}
+```
+
+```html
+<span class="btn tomato">HELLO!</span> <span class="btn potato">HELLO!</span>
+```
+
+<br/>
+
+- class 특징을 활용하여 <strong>반복되는 코드를 하나로 묶음</strong>으로써 코드 길이를 줄일 수 있다.
+
+  (위의 btn class처럼)
+
+<br/>
+
+#### 선택자 (Selector)
+
+- 선택자의 기본 3가지 종류
+
+  - 태그의 이름을 쓰는 선택자
+
+  - 점<code>.</code>을 쓰고 클래스 이름을 쓰는 선택자
+
+  - 해시 기호<code>#</code>를 쓰고 id값을 쓰는 선택자
+
+- 이 외에, 좀 더 세부적으로 Element를 선택하는 도구(선택자)가 있다.
+
+<br/>
+
+#### 결합자 (Combinator)
+
+- 여러 선택자를 결합하여, 더 정밀히 요소를 찾아 가리키는 선택자를 결합자(Combinator)라 한다.
+
+<br/>
+
+- <strong>자손 결합자</strong> : <code>A B</code>
+
+  ```css
+  p span {
+    ...;
+  }
+  ```
+
+  p 안의 모든 span을 가리킨다.
+
+  ```css
+  div p span {
+    ...;
+  }
+  ```
+
+  div 안의 모든 p, 그 모든 p 안의 모든 span을 가리킨다.
+
+<br/>
+
+#### CSS 주석
+
+```css
+/* h1 {
+    color: brown;
+}
+*/
+```
+
+<br/>
+
+### 4. CSS 특성
+
+### Cascading (폭포수)
+
+- CSS = <strong>Cascading Style Sheet</strong> : 위에서 아래로 코드를 읽는다.
+
+  ☞ 같은 속성 코드가 중복 작성 시, <strong>제일 마지막 줄이 브라우저에 반영</strong>
+
+#### Inheritance (상속)
+
+- 부모 요소의 CSS 규칙을 자식 요소가 상속하여 적용
+
+- 그렇지만, 만일 자식 요소가 CSS 규칙을 가지고 있다면 이를 우선하여 적용한다.
+
+#### Specificity (우선순위)
+
+- CSS 규칙이 서로 충돌할 때 어떤 것을 적용할지?
+
+- 점수 계산으로 이루어진다.
+
+  - inline styling (HTML 요소에 style 속성을 주어 작성): <strong>1000점</strong>
+
+  - id명: <strong>100점</strong>
+
+  - class 이름: <strong>10점</strong>
+
+  - tag명: <strong>1점</strong>
+
+- 요약
+
+  - <strong>tag &nbsp; << &nbsp; class &nbsp; << &nbsp; id &nbsp; << &nbsp; inline styling</strong>
+
+- TIP
+
+  - **inlince styling은 지향하자.**
+
+<br/>
+
+### 5. Box Model
+
+#### Block VS Inline
+
+- <strong>Block</strong>
+
+  - <code>block</code> 태그 옆엔 <strong>다른 요소가 올 수 없다.</strong>
+
+  - <code>block</code>은 <strong>높이</strong>(<code>height</code>)와 <strong>너비</strong>(<code>width</code>)를 가진다.
+
+  - <code>block</code>은 <strong>Box</strong>이고, 여백과 관련된 3가지 중요한 특징을 가진다.
+
+    : <code>margin</code>, <code>border</code>, <code>padding</code>
+
+    (<code>inline</code>도 가지고 있는 특징이다. 상하 margin만 제외하고)
+
+  - Block 속성을 갖는 HTML 요소 : <code>\<div></code>, <code>\<p></code>, <code>\<address></code>, ..
+
+  - Block 속성을 갖는 HTML 요소는 <code>width</code> 속성을 부여하지 않으면 기본적으로 화면 크기의 좌우 끝 전체를 차지한다.
+
+<br/>
+
+- <strong>Inline</strong>
+
+  - <code>inline</code> 태그 옆에 <strong>다른 요소가 올 수 있다.</strong>
+
+  - <code>inline</code>은 ✨<strong>높이</strong>(<code>height</code>)와 <strong>너비</strong>(<code>width</code>)를 <strong>가질 수 없다.</strong>
+
+    - 따라서 ✨<strong>위, 아래에 </strong><code>margin</code><strong>을 가지지 않는다.</strong>
+
+      (가지도록 하려면 <code>display</code> 속성을 <code>inline-block</code>으로 바꾸어야 한다)
+
+  - Inline 속성을 갖는 HTML 요소 : <code>\<span></code>, <code>\<a></code>, <code>\<img></code>, ..
+
+### Box Model
+
+#### 여백과 관련된 속성 1 : margin
+
+- <code>margin</code>은 <strong>요소의 경계(border)의 바깥에 있는 영역</strong>이다.
+
+- <code>block</code>과 <code>inline</code> 요소 모두 가지고 있는 특징이나, <code>inline</code>은 <strong>상하에</strong> <code>margin</code><strong>을 가지지 않는다.</strong>
+
+  ```css
+  div {
+    margin: 20px; /* 전방향 */
+    margin: 20px 15px; /* 상하 좌우 */
+    margin: 20px 5px 15px 10px; /* 상 우 하 좌 */
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  ```
+
+<br/>
+
+- <code>margin</code>에 <strong><code>auto</code></strong> 값을 주면 요소를 해당 방향의 중앙에 배치시킬 수 있다.
+
+  ```css
+  .center {
+    margin: 10px auto;
+  }
+  /* 요소를 좌우, 즉 가로 방향 기준으로 중앙에 배치한다. */
+  ```
+
+<br/>
+
+- <strong>user agent stylesheet</strong> :
+
+  브라우저가 기본적으로 부여한 style 속성  
+  ex) <code>body { margin : 8px; }</code>
+
+  - 이를 없에려면 <strong><a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#reset-css">Reset CSS</a></strong>를 적용해주면 된다.
+
+- <strong>Collasping Margins</strong> :
+
+  box 요소의 경계가 부모 box 요소의 경계와 일치하면, 이 두 <code>margin</code>이 하나로 취급되는 현상
+
+  - 위, 아래에서만 일어난다.
+
+<br/>
+
+#### 여백과 관련된 속성 2 : padding
+
+- <code>padding</code>은 <strong>box의 경계(border)로부터 안쪽에 있는 영역</strong>이다.
+
+- <code>block</code>과 <code>inline</code> 요소 모두 가지고 있는 특징이다.
+
+```css
+div {
+  padding: 20px; /* 전방향 */
+  padding: 20px 15px; /* 상하 좌우 */
+  padding: 20px 5px 15px 10px; /* 상 우 하 좌 */
+
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  padding-left: 10px;
+
+  /* 규칙은 margin과 동일하다. */
 }
 ```
 
 <br/>
 
-> 참고2 : <code>border-radius</code> 속성에 50% 속성값을 주면 경계선은 원모양이 된다.
+#### 여백과 관련된 속성 3 : border
 
-```css
-* {
-  border-radius: 50%;
-}
-```
+- <code>border</code>은 말 그대로 박스의 '<strong>경계</strong>'이다.
+
+- <code>block</code>과 <code>inline</code> 요소 모두 가지고 있는 특징이다.
+
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">border 스타일 종류 확인하기 (MDN 문서)</a>
+
+  ```css
+  div {
+    border: 1px solid black;
+    /* border: 너비 스타일 색깔 */
+  }
+  span {
+    border: 2px dotted blue;
+  }
+  ```
+
+<br/>
+
+- <code>border</code>은 다양한 속성값이 존재하나 대부분 이쁘지 않으므로 거의 한 종류만 쓴다.
+
+<br/>

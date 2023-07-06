@@ -315,6 +315,12 @@
 
   - <strong>tag &nbsp; << &nbsp; class &nbsp; << &nbsp; id &nbsp; << &nbsp; inline styling</strong>
 
+<br/>
+
+- TIP
+
+  - **inlince styling은 지향하자.**
+
 <br/><br/>
 
 ## <code>background-size</code> 속성
