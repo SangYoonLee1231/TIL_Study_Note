@@ -20,8 +20,28 @@
 
 #### 2주차
 
-- <a href="techit-study/week2/ch8.md">Chapter 8. Beginner</a>
+- <a href="techit-study/week2/ch8.md">Chapter 8. CSS Beginner</a>
+
+- <a href="techit-study/week2/ch8.md">Chapter 9. CSS Next Level</a>
+
+- <a href="techit-study/week2/ch8.md">Chapter 10. CSS 외부 리소스 적용해보기</a>
 
 <!-- - <a href=""></a> -->
 
 <br/>
+
+#### 3주차
+
+- <a href="techit-study/week3/ch11.md">Chapter 11. 웹 페이지 구성하기</a>
+
+- <a href="techit-study/week3/ch12.md">Chapter 12. CSS 라이브러리 활용하기 - Tailwind CSS</a>
+
+<!-- - <a href=""></a> -->
+
+<br/>
+
+#### 4-5주차
+
+- <a href="techit-study/week4/ch13.md">Chapter 13. JavaScript Beginner</a>
+
+- <a href="techit-study/week4/ch14.md">Chapter 14. JavaScript Next Level</a>
