@@ -76,6 +76,36 @@
 
     - 웹 브라우저 탭의 이미지를 설정한다.
 
+    - img 태그에서 함께 쓸 수 있는 CSS 문법
+
+      ```css
+      img {
+        max-width: 100%;
+      }
+      /* 부모 영역에서 벗어나지 않도록 이미지의 너비 상한선을 100%로 설정 */
+      ```
+
+      ```css
+      img {
+        object-fit: cover;
+      }
+      /* 이미지를 부모 요소의 영역의 크기 만큼 확대/축소하여 채움 */
+      ```
+
+      ```css
+      img {
+        object-fit: contain;
+      }
+      /* 이미지의 비율을 유지하면서 크기를 변경하여 부모 요소를 채움 */
+      ```
+
+      ```css
+      img {
+        object-fit: fill;
+      }
+      /* 이미지의 비율을 유지하지 않고 부모 요소의 크기에 맞게 변경하여 채움 */
+      ```
+
   - <code>\<link rel="stylesheet" href="style.css" /></code>
 
     - <strong>style 이름의 css 파일과 연결한다.</strong>
