@@ -491,3 +491,233 @@ div {
 <br/><br/>
 
 ## 9. Overflow
+
+- Overflow: 요소가 넘처흐른다.
+
+- 브라우저 입장에서 요소가 넘치는 것은 에러가 아님
+
+- 넘처흐르는 요소를 어떻게 처리할 수 있느냐? → CSS의 Overflow 프로퍼티의 역할
+
+  ```css
+  div.overflow {
+    border: 2px solid black;
+    width: 180px;
+    font-size: 50px;
+    overflow: auto;
+  }
+  ```
+
+- `overflow: hidden` : 넘쳐흐르는 부분을 보여주지 않는다
+
+- `overflow: scroll` : 사용자가 스크롤을 넘겨서 넘처흐르는 요소를 볼 수 있도록 한다
+
+- 브라우저에서 쓸 데 없는 스크롤이 나오지 않도록 방지
+
+  - `overflow-x: scroll;` (가로 스크롤)
+
+  - `overflow-y: scroll;` (세로 스크롤)
+
+- 요소가 넘치지 않으면 스크롤를 주지 않도록 하는 것이 사용자 입장에서 좋은 경험이다.
+
+  → `overflow: auto`
+
+<br/><br/>
+
+## 10-11. 폰트 / 이미지 꾸미기
+
+### 색상 체계 (Color System)
+
+- CSS는 색상 이름을 통해 140가지의 색상을 지원한다. (☞ <a href="https://www.w3schools.com/cssref/css_colors.asp">지원하는 색상 이름 확인</a>)
+
+- 그러나 여러 색상 체계를 통해 이보다 더 다채로운 색상을 브라우저에 표현할 수 있다.
+
+<br/>
+
+1. <strong>hex code</strong>
+
+```css
+p {
+  color: #059669;
+  /* 16진수 색상코드 */
+}
+```
+
+2. <strong>rgb</strong>
+
+```css
+p {
+  color: rgb(252, 206, 0);
+  /* 각각 red, green, blue를 의미 */
+}
+```
+
+3. <strong>rgba</strong>
+
+```css
+p {
+  color: rgba(252, 206, 0, 0.8);
+  /* 각각 red, green, blue, '투명도'를 의미 */
+
+  /* 투명도는 0(투명)~1(불투명) 사이의 값으로 조절할 수 있다. */
+}
+```
+
+<br/>
+
+### 사용자 지정 CSS 속성 (Custom Properties)
+
+- ☞ <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Using_CSS_custom_properties">공식 문서 바로가기</a>
+
+- CSS에서 사용하는 <strong>변수</strong>이다. (CSS 변수)
+
+- 반복적으로 사용하는 값을 변수로 저장하여 한 번에 관리할 수 있다.
+
+<br/>
+
+- 사용자 지정 속성은 <strong>전용 표기법</strong>을 사용해 정의하고, <strong>var() 함수</strong>를 사용해 접근할 수 있다.
+
+```css
+:root {
+  --main-color: #fcce00;
+  --default-border: 1px solid var(--main-color);
+}
+/* :root는 모든 document의 뿌리를 뜻함 */
+
+a {
+  color: var(--main-color);
+  border: var(--default-border);
+}
+```
+
+- <strong>변수 이름 전용 표기법</strong>
+
+  - 맨 앞에 dash 2개를 붙인다.
+
+  - 아름 사이에 여백이 있으면 안되므로, 띄어쓰기는 dash 하나로 표현한다.
+
+<br/>
+
+### 폰트 꾸미기 예시
+
+```html
+<div class="container">
+  <p>Hello:)</p>
+  <a href="...">링크</a>
+</div>
+```
+
+```css
+html {
+  font-size: 10px;
+}
+
+p {
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none; /* 링크 태그 밑줄 표시 제거 */
+}
+
+a:link {
+  color: black; /* 클릭한 적이 없는 링크 */
+}
+
+a:visited {
+  color: black; /*  방문했던 링크  */
+}
+
+/* a:link와 a:visited 작성 순서를 지켜주어야 한다. */
+```
+
+<br/>
+
+### 테두리 꾸미기 예시
+
+```html
+<div class="container"></div>
+```
+
+```css
+.container {
+  border: 2px solid blue;
+  border-radius: 20px; /* 반경 값을 넣어 모서리를 둥글게 */
+}
+```
+
+- 테두리는 별도 선언이 없으면 none 값이 적용되어 보이지 않는다.
+
+<br/><br/>
+
+## 12. 배경 이미지 설정
+
+### 배경 색 설정
+
+```html
+<div class="container">
+  <p>안녕하세요!</p>
+</div>
+```
+
+```css
+.container {
+  background-color: blue;
+}
+
+p {
+  background-color: skyblue;
+}
+```
+
+<br/>
+
+### 배경 이미지 넣기
+
+```html
+<div class="container"></div>
+```
+
+```css
+.container {
+  background-image: url("imoji.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* 이미지가 온전히 표시되는 것이 우선 */
+  background-position: center; /* 배경 이미지를 정중앙에 배치 */
+}
+```
+
+- 이미지를 레이아웃에 맞는 해상도로 크롭해서 사용하는 것이 가장 좋다.
+
+<br/><br/>
+
+## 13. 요소 정렬하기
+
+### 요소를 가운데로 정렬하기
+
+#### 정중앙 정렬하는 전통적인 방법
+
+```css
+div {
+  margin: 0 auto;
+}
+```
+
+- 부모 block 요소의 width를 기준으로 자동으로 margin 계산
+
+- 부모 block 요소 자체를 중앙으로 정렬함
+
+<br/>
+
+#### 정중앙 정렬하는 또다른 방법
+
+```css
+div {
+  text-align: center;
+}
+```
+
+- 부모 요소가 block이고, 정렬하고자 하는 자식 요소가 inline 요소일 때 가능
+
+<br/>

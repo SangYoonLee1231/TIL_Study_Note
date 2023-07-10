@@ -16,10 +16,12 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EA%B1%B0%EB%A6%AC-%EB%8B%A8%EC%9C%84">거리 단위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#box-sizing-content-box-border-box">Box Sizing (content-box, border-box)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EC%84%A0%ED%83%9D%EC%9E%90-selector-%EC%9A%B0%EC%84%A0-%EC%88%9C%EC%9C%84">CSS 선택자 (Selector) 우선 순위</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#background-size-%EC%86%8D%EC%84%B1"><code>background-size</code> 속성</a>
+- <a href="">배경 이미지 넣기 및 <code>background-size</code> 속성</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#width-100%EC%9D%98-%EC%9D%98%EB%AF%B8"><code>width: 100%</code>의 의미</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EC%86%8D%EC%84%B1-%EC%88%9C%EC%84%9C-%EC%BB%A8%EB%B2%A4%EC%85%98">CSS 속성 순서 (컨벤션)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EC%9E%91%EC%84%B1-%EB%B0%A9%EC%8B%9D-bottom-up">CSS 레이아웃 작성 방식 (bottom-up)</a>
+- <a href="">Overflow 프로퍼티</a>
+- <a href="">요소를 가운데로 정렬하기</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -340,13 +342,34 @@
 
 <br/><br/>
 
-## <code>background-size</code> 속성
+## 배경 이미지 넣기 및 <code>background-size</code> 속성
+
+```html
+<div class="container"></div>
+```
+
+```css
+.container {
+  background-image: url("imoji.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* 이미지가 온전히 표시되는 것이 우선 */
+  background-position: center; /* 배경 이미지를 정중앙에 배치 */
+}
+```
+
+- 이미지를 레이아웃에 맞는 해상도로 크롭해서 사용하는 것이 가장 좋다.
+
+<br/>
+
+### <code>background-size</code> 속성
 
 - 요소 배경 이미지의 크기를 설정한다. (By MDN)
 
 - 가능한 속성값
 
   - <code>auto</code>, <code>length</code>, <code>cover</code>, <code>contain</code>, <code>initial</code>, <code>inherit</code> 등
+
+  - <code>contain</code>: 이미지가 온전히 표시되는 것이 우선
 
 <br/><br/>
 
@@ -410,5 +433,66 @@
     height: 300px;
   }
   ```
+
+<br/><br/>
+
+## Overflow 프로퍼티
+
+- Overflow: 요소가 넘처흐른다.
+
+- 브라우저 입장에서 요소가 넘치는 것은 에러가 아님
+
+- 넘처흐르는 요소를 어떻게 처리할 수 있느냐? → CSS의 Overflow 프로퍼티의 역할
+
+  ```css
+  div.overflow {
+    border: 2px solid black;
+    width: 180px;
+    font-size: 50px;
+    overflow: auto;
+  }
+  ```
+
+- `overflow: hidden` : 넘쳐흐르는 부분을 보여주지 않는다
+
+- `overflow: scroll` : 사용자가 스크롤을 넘겨서 넘처흐르는 요소를 볼 수 있도록 한다
+
+- 브라우저에서 쓸 데 없는 스크롤이 나오지 않도록 방지
+
+  - `overflow-x: scroll;` (가로 스크롤)
+
+  - `overflow-y: scroll;` (세로 스크롤)
+
+- 요소가 넘치지 않으면 스크롤를 주지 않도록 하는 것이 사용자 입장에서 좋은 경험이다.
+
+  → `overflow: auto`
+
+<br/><br/>
+
+## 요소를 가운데로 정렬하기
+
+### 정중앙 정렬하는 전통적인 방법
+
+```css
+div {
+  margin: 0 auto;
+}
+```
+
+- 부모 block 요소의 width를 기준으로 자동으로 margin 계산
+
+- 부모 block 요소 자체를 중앙으로 정렬함
+
+<br/>
+
+### 정중앙 정렬하는 또다른 방법
+
+```css
+div {
+  text-align: center;
+}
+```
+
+- 부모 요소가 block이고, 정렬하고자 하는 자식 요소가 inline 요소일 때 가능
 
 <br/>
