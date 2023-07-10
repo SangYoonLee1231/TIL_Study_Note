@@ -9,19 +9,19 @@
 ### 목차
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0---font-awesome">아이콘 삽입하기 - <a href="https://fontawesome.com/">Font Awesome</a></a>
-- <a href="">HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기 (VS Code)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#html%EC%97%90-css-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%9E%91%EC%84%B1%ED%95%98%EB%8A%94-link-%ED%83%9C%EA%B7%B8-%EB%8B%A8%EC%B6%95%EA%B8%B0-vs-code">HTML에 CSS 파일을 연결하기 위해 작성하는 link 태그 단축기 (VS Code)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#reset-css">Reset CSS</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8-%EB%B0%8F-%EC%82%AC%EC%9A%A9">CSS 변수 선언 및 사용</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#not-%EC%86%8D%EC%84%B1-%EB%B6%80%EC%A0%95-css-%EA%B0%80%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4">not 속성 (부정 CSS 가상 클래스)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EA%B1%B0%EB%A6%AC-%EB%8B%A8%EC%9C%84">거리 단위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#box-sizing-content-box-border-box">Box Sizing (content-box, border-box)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EC%84%A0%ED%83%9D%EC%9E%90-selector-%EC%9A%B0%EC%84%A0-%EC%88%9C%EC%9C%84">CSS 선택자 (Selector) 우선 순위</a>
-- <a href="">배경 이미지 넣기 및 <code>background-size</code> 속성</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EB%B0%B0%EA%B2%BD-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%84%A3%EA%B8%B0-%EB%B0%8F-background-size-%EC%86%8D%EC%84%B1">배경 이미지 넣기 및 <code>background-size</code> 속성</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#width-100%EC%9D%98-%EC%9D%98%EB%AF%B8"><code>width: 100%</code>의 의미</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EC%86%8D%EC%84%B1-%EC%88%9C%EC%84%9C-%EC%BB%A8%EB%B2%A4%EC%85%98">CSS 속성 순서 (컨벤션)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#css-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EC%9E%91%EC%84%B1-%EB%B0%A9%EC%8B%9D-bottom-up">CSS 레이아웃 작성 방식 (bottom-up)</a>
-- <a href="">Overflow 프로퍼티</a>
-- <a href="">요소를 가운데로 정렬하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#overflow-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0">Overflow 프로퍼티</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_piece_info.md#%EC%9A%94%EC%86%8C%EB%A5%BC-%EA%B0%80%EC%9A%B4%EB%8D%B0%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0">요소를 가운데로 정렬하기</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
