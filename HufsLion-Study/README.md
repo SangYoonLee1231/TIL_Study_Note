@@ -10,21 +10,21 @@
 
 #### 1주차
 
-- <a href="techit-study/week1/ch2.md">Chapter 2. Web의 동작 원리 - 클라이언트와 서버의 만남</a>
+- <a href="techit-study/week1/ch2.md">Web의 동작 원리 - 클라이언트와 서버의 만남</a>
 
-- <a href="techit-study/week1/ch3.md">Chapter 3. 웹 페이지를 이루는 삼총사 - HTML, CSS, JavaScript</a>
+- <a href="techit-study/week1/ch3.md">웹 페이지를 이루는 삼총사 - HTML, CSS, JavaScript</a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">Chapter 6-7. HTML</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML</a>
 
 <br/>
 
 #### 2주차
 
-- <a href="techit-study/week2/ch8.md">Chapter 8. CSS Beginner</a>
+- <a href="techit-study/week2/ch8.md">CSS Beginner</a>
 
-- <a href="techit-study/week2/ch9.md">Chapter 9. CSS Next Level</a>
+- <a href="techit-study/week2/ch9.md">CSS Next Level</a>
 
-- <a href="techit-study/week2/ch10.md">Chapter 10. CSS 외부 리소스 적용해보기</a>
+<!-- - <a href="techit-study/week3/ch10.md">Chapter 10. CSS 외부 리소스 적용해보기</a> -->
 
 <!-- - <a href=""></a> -->
 
@@ -32,9 +32,9 @@
 
 #### 3주차
 
-- <a href="techit-study/week3/ch11.md">Chapter 11. 웹 페이지 구성하기</a>
+- <a href="techit-study/week3/ch11.md">웹 페이지 구성하기</a>
 
-- <a href="techit-study/week3/ch12.md">Chapter 12. CSS 라이브러리 활용하기 - Tailwind CSS</a>
+- <a href="techit-study/week3/ch12.md">CSS 라이브러리 활용하기 - Tailwind CSS</a>
 
 <!-- - <a href=""></a> -->
 
@@ -42,8 +42,6 @@
 
 #### 4-5주차
 
-- <a href="techit-study/week4/ch13.md">Chapter 13. JavaScript Beginner</a>
-
-- <a href="techit-study/week4/ch14.md">Chapter 14. JavaScript Next Level</a>
+- <a href="techit-study/week4/ch13-14.md">JavaScript</a>
 
 <br/>
