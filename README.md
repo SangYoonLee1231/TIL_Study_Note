@@ -284,7 +284,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_rebase.md">Git - Rebase를 통해 커밋 하나로 압축하기</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md">Git - 조각 지식 모음</a>
 
-### ◻ 웹 디자인 (Web Design)
+### ◻ UI, UX 및 웹 디자인 (Web Design)
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md">웹 디자인의 기초</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_tip.md">웹 디자인 Tips</a>

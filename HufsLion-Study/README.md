@@ -22,9 +22,9 @@
 
 - <a href="techit-study/week2/ch8.md">Chapter 8. CSS Beginner</a>
 
-- <a href="techit-study/week2/ch8.md">Chapter 9. CSS Next Level</a>
+- <a href="techit-study/week2/ch9.md">Chapter 9. CSS Next Level</a>
 
-- <a href="techit-study/week2/ch8.md">Chapter 10. CSS 외부 리소스 적용해보기</a>
+- <a href="techit-study/week2/ch10.md">Chapter 10. CSS 외부 리소스 적용해보기</a>
 
 <!-- - <a href=""></a> -->
 
