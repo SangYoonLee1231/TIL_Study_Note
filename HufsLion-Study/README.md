@@ -45,3 +45,13 @@
 - <a href="techit-study/week4/ch13-14.md">JavaScript</a>
 
 <br/>
+
+#### 6-7주차
+
+- 노마드코더 - ReactJS로 영화 웹 서비스 만들기
+
+  - <a href="https://github.com/SangYoonLee1231/react-for-beginners">실습용 레포지토리 바로가기</a>
+
+  - <a href="techit-study/week6-7/react-note.md">강의 내용 필기</a>
+
+<br/>
