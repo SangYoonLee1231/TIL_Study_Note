@@ -17,23 +17,21 @@
 
 ## SSR vs CSR
 
-- 웹에서 UI를 만드는 역할은 HTML이 담당한다.
+- 웹에서 UI를 만드는 역할은 보통 HTML이 담당하고, JavaScript를 이용해서 이 HTML을 조작할 수 있다.
 
-- 그리고 JavaScript를 이용해서 이 HTML을 조작할 수 있다.
-
-- 따라서 JavaScript를 통해 UI를 제공해줄 수도 있다.
+- 따라서 JavaScript를 통해 UI를 제공해줄 수도 있는 것이다.
 
 <br/>
 
-- 그런데 결론적으로는, 어떤 식으로든 UI를 만들기 위해선 최종적으로 HTML 형태가 만들어져 있어야 하기 때문에,
+- 그런데 결론적으로는, 어떤 식으로든 UI를 만들기 위해선 최종적으로 HTML 형태가 만들어져 있어야 하기 때문에
 
-- 이 HTML을 어디에서 만드는 지가 굉장히 중요해진다.
+- 이 HTML을 **어디에서 만드는 지**가 굉장히 중요해진다.
 
   - 웹 서버에서 UI에 필요한 정보들이 담긴 HTML을 이미 만들어 브라우저로 전송하는 방식을 <strong>SSR(Server Side Rendering)</strong>이라 한다.
 
     - 웹 서버에서 HTML을 주도적으로 만든다.
 
-  - 웹 서버에 있는 HTML에는 UI에 대한 내용이 거의 없고, 브라우저에서 JS가 실행되면서 필요한 UI를 그떄그때마다 생성해내는 방식을 <strong>CSR(Client Side Rendering)</strong>이라 한다.
+  - 웹 서버에 있는 HTML에는 UI에 대한 내용이 거의 없고, 브라우저에서 JS가 실행되면서 필요한 UI를 그떄그때 생성해내는 방식을 <strong>CSR(Client Side Rendering)</strong>이라 한다.
 
     - 클라이언트에서 HTML을 주도적으로 만든다.
 
