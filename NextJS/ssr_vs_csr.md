@@ -27,7 +27,7 @@
 
 - 이 HTML을 **어디에서 만드는 지**가 굉장히 중요해진다.
 
-  - 웹 서버에서 UI에 필요한 정보들이 담긴 HTML을 이미 만들어 브라우저로 전송하는 방식을 <strong>SSR(Server Side Rendering)</strong>이라 한다.
+  - 웹 서버에서 UI에 필요한 정보들이 담긴 HTML을 미리 만들어 브라우저로 전송하는 방식을 <strong>SSR(Server Side Rendering)</strong>이라 한다.
 
     - 웹 서버에서 HTML을 주도적으로 만든다.
 
