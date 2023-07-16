@@ -14,7 +14,7 @@
 
 - <a href="techit-study/week1/ch3.md">웹 페이지를 이루는 삼총사 - HTML, CSS, JavaScript</a>
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/html_tags.md">HTML + 웹 페이지 구성하기</a>
 
 <br/>
 
@@ -22,7 +22,7 @@
 
 - <a href="techit-study/week2/ch8.md">CSS Beginner</a>
 
-- <a href="techit-study/week2/ch9.md">CSS Next Level + 웹 페이지 구성하기</a>
+- <a href="techit-study/week2/ch9.md">CSS Next Level</a>
 
 <!-- - <a href="techit-study/week3/ch10.md">Chapter 10. CSS 외부 리소스 적용해보기</a> -->
 
