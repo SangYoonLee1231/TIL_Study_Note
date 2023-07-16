@@ -344,7 +344,7 @@ export default Child;
 
 <br/><br/>
 
-## 참고 - `React.memo()`
+## 참고 1. `React.memo()`
 
 - `React.memo()`를 통해 컴포넌트 리렌더링 시, 변경되는 state가 없는 자식 컴포넌트는 리렌더링되지 않도록 막을 수 있다. (성능 개선)
 
@@ -385,5 +385,44 @@ export default Child;
   const root = document.getElementById("root");
   ReactDOM.render(<App />, root);
   ```
+
+<br/><br/>
+
+## 참고 2. PropTypes
+
+- 리엑트는 파라미터의 데이터 타입을 잘못 넘겨도 에러가 발생하지 않는다.
+
+- 이러한 문제를 해결하기 위해 PropTypes라는 모듈의 도움을 받을 수 있다.
+
+```js
+const Btn = ({ text, changeValue, fontSize = 12 }) => {
+  console.log(text + " was rendered");
+  return (
+    // -- (코드 생략) -- //
+  );
+};
+
+// --------- propTypes -------- //
+Btn.propTypes = {
+  text: PropTypes.string.isRequired,
+  fontSize: PropTypes.number,
+};
+// ---------------------------- //
+
+const App = () => {
+  const [value, setValue] = React.useState("Save Changes");
+  const changeValue = () => {
+    setValue("Revert Changes");
+  };
+  return (
+    <div>
+      <Btn text={value} changeValue={changeValue} fontSize={18} />
+      <Btn text="Continue" />
+    </div>
+  );
+};
+const root = document.getElementById("root");
+ReactDOM.render(<App />, root);
+```
 
 <br/>
