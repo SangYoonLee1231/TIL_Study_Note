@@ -330,6 +330,8 @@ export default Child;
 
   이를 <strong>State 끌어올리기</strong>라 한다.
 
+- **주의**: 위 코드에서 Child 컴포넌트의 changeColor 프로퍼티는 그저 하나의 props **이름**이다. (함수 X)
+
 <br/>
 
 - <strong>데이터의 단방향성</strong>
@@ -339,3 +341,49 @@ export default Child;
   - 만일 자식 컴포넌트에서 State를 선언했다면 부모 컴포넌트에서 이 데이터를 사용할 방법이 없다.
 
     따라서 부모 컴포넌트에서 State를 선언하고 Prop를 통해 자식 컴포넌트로 데이터를 흘려주는 방식을 사용하는 것이다.
+
+<br/><br/>
+
+## 참고 - `React.memo()`
+
+- `React.memo()`를 통해 컴포넌트 리렌더링 시, 변경되는 state가 없는 자식 컴포넌트는 리렌더링되지 않도록 막을 수 있다. (성능 개선)
+
+  ```js
+  // 예시 코드
+  import React, { useState } from "react";
+
+  const Btn = ({ text, changeValue }) => {
+    console.log(text + " was rendered");
+    return (
+      <button
+        onClick={changeValue}
+        style={{
+          backgroundColor: "tomato",
+          color: "white",
+          padding: "10px 20px",
+          border: 0,
+          borderRadius: 10,
+        }}
+      >
+        {text}
+      </button>
+    );
+  };
+  const MemorizedBtn = React.memo(Btn);
+  const App = () => {
+    const [value, setValue] = React.useState("Save Changes");
+    const changeValue = () => {
+      setValue("Revert Changes");
+    };
+    return (
+      <div>
+        <MemorizedBtn text={value} changeValue={changeValue} />
+        <MemorizedBtn text="Continue" />
+      </div>
+    );
+  };
+  const root = document.getElementById("root");
+  ReactDOM.render(<App />, root);
+  ```
+
+<br/>
