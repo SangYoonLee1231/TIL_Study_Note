@@ -18,23 +18,13 @@
 
 <br/>
 
-#### 2주차
+#### 2-3주차
 
 - <a href="techit-study/week2/ch8.md">CSS Beginner</a>
 
-- <a href="techit-study/week2/ch9.md">CSS Next Level</a>
+- <a href="techit-study/week2/ch9.md">CSS Next Level + 웹 페이지 구성하기</a>
 
 <!-- - <a href="techit-study/week3/ch10.md">Chapter 10. CSS 외부 리소스 적용해보기</a> -->
-
-<!-- - <a href=""></a> -->
-
-<br/>
-
-#### 3주차
-
-- <a href="techit-study/week3/ch11.md">웹 페이지 구성하기</a>
-
-- <a href="techit-study/week3/ch12.md">CSS 라이브러리 활용하기 - Tailwind CSS</a>
 
 <!-- - <a href=""></a> -->
 
@@ -52,6 +42,6 @@
 
   - <a href="https://github.com/SangYoonLee1231/react-for-beginners">실습용 레포지토리 바로가기</a>
 
-  - <a href="techit-study/week6-7/react-note.md">강의 내용 필기</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HufsLion-Study/week6-7/react-note.md">강의 내용 필기</a>
 
 <br/>
