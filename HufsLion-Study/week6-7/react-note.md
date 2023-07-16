@@ -438,3 +438,119 @@
 - ❓ modifier 함수 (setState 함수) 내에 변수 명을 current로 설정해도 무방한 이유
 
   - setState는 그 인자값이 객체인지 함수인지 판별하는 부분이 있다. 만일 함수일 경우 알아서 현재 state값을 찾아 매핑해준다.
+
+<br/><br/><br/>
+
+## Props란?
+
+- Props는 <strong>컴포넌트의 속성값</strong>이다.
+
+- Props는 <strong>부모 컴포넌트로부터 전달받은 데이터를 지니고 있는 객체</strong>이다.
+
+- ✨ Props를 이용하면 부모 컴포넌트에서 자식 컴포넌트에게 어떤 값이든 (문자, 숫자, 변수, 함수 등) 전달할 수 있다.
+
+<br/><br/>
+
+## ✨ State와 Props를 함께 활용하기
+
+```js
+// Parents.js
+import React, { useState } from "react";
+import Child from "./Child";
+
+const Parent = () => {
+  const [color, setColor] = useState("blue");
+
+  const changeColor = () => {
+    setColor("green");
+  };
+
+  return (
+    <>
+      <div>부모 컴포넌트</div>
+      <Child color={color} changeColor={changeColor} />
+    </>
+  );
+};
+
+export default Parent;
+```
+
+```js
+// Child.js
+import React from "react";
+
+const Child = (props) => {
+  return (
+    <>
+      <div>자식 컴포넌트</div>
+      <p>{props.color}</p>
+      <button onClick={props.changeColor}>색상 바꾸기</button>
+    </>
+  );
+};
+
+export default Child;
+```
+
+- 자식 컴포넌트에서 발생한 이벤트로 부모 컴포넌트의 state가 변경되었고, 그 변경된 값이 다시 자식 컴포넌트에 반영되었다.
+
+  이를 <strong>State 끌어올리기</strong>라 한다.
+
+- **주의**: 위 코드에서 Child 컴포넌트의 changeColor 프로퍼티는 그저 하나의 prop **이름**이다. (함수 X)
+
+<br/>
+
+- <strong>데이터의 단방향성</strong>
+
+  - 데이터는 부모 컴포넌트에서 자식 컴포넌트로 흐른다. 즉 자식에서 부모로 데이터가 이동할 수 없다.
+
+  - 만일 자식 컴포넌트에서 State를 선언했다면 부모 컴포넌트에서 이 데이터를 사용할 방법이 없다.
+
+    따라서 부모 컴포넌트에서 State를 선언하고 Prop를 통해 자식 컴포넌트로 데이터를 흘려주는 방식을 사용하는 것이다.
+
+<br/><br/>
+
+## 참고 - `React.memo()`
+
+- `React.memo()`를 통해 컴포넌트 리렌더링 시, 변경되는 state가 없는 자식 컴포넌트는 리렌더링되지 않도록 막을 수 있다. (성능 개선)
+
+  ```js
+  // 예시 코드
+  import React, { useState } from "react";
+
+  const Btn = ({ text, changeValue }) => {
+    console.log(text + " was rendered");
+    return (
+      <button
+        onClick={changeValue}
+        style={{
+          backgroundColor: "tomato",
+          color: "white",
+          padding: "10px 20px",
+          border: 0,
+          borderRadius: 10,
+        }}
+      >
+        {text}
+      </button>
+    );
+  };
+  const MemorizedBtn = React.memo(Btn);
+  const App = () => {
+    const [value, setValue] = React.useState("Save Changes");
+    const changeValue = () => {
+      setValue("Revert Changes");
+    };
+    return (
+      <div>
+        <MemorizedBtn text={value} changeValue={changeValue} />
+        <MemorizedBtn text="Continue" />
+      </div>
+    );
+  };
+  const root = document.getElementById("root");
+  ReactDOM.render(<App />, root);
+  ```
+
+<br/>
