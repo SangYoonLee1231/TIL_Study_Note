@@ -12,6 +12,8 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EC%A0%95%EB%A0%AC-align">정렬 (Align)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EA%B7%B8%EB%A6%AC%EB%93%9C-grid">그리드 (Grid)</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md#%EC%8B%9C%EA%B0%81%EC%A0%81-%EA%B3%84%EC%B8%B5%EA%B5%AC%EC%A1%B0-visual-hierarchy">시각적 계층구조 (Visual Hierarchy)</a>
+  - <a href="">착시현상 주의 (Optical Illusions)</a>
+  - <a href=""></a>
 
 <br/><br/>
 
@@ -179,5 +181,39 @@
 - <strong>그 이외의 디자인 요소</strong>
 
   - 그리드와 왼쪽 정렬을 통해 세련되고 정돈된 디자인을 표현하였다.
+
+<br/><br/>
+
+### 착시현상 주의 (Optical Illusions)
+
+- 착시현상에 의해 두 물체의 크기가 실제로는 동일하지만 사용자의 눈에 다르게 보일 수 있다.
+
+- 그럴 경우, 우리는 **사용자의 눈에 두 물체가 같은 크기로 보이도록 작아보이는 물체의 크기를 실제로 키워주어야 한다.**
+
+  <div align="center">
+
+  <img src="img/need_to_size_up.png" width="500">
+
+  </div>
+
+  - 얼마나 확대해야 하는지에 대한 규칙은 없다. 눈대중으로, 같은 크기로 느껴질 때까지 계속 확대해주면 된다.
+
+- 이를 두고 디자이너들은 보통 '**객체의 무게감**'이란 말을 쓴다. 즉, 무게감이 더 큰 객체가 (실제로는 같음에도) 더 넓거나 길어보이는 것이다.
+
+- 이러한 작은 디테일이 아마추어와 전문가의 차이를 만든다.
+
+<br/>
+
+- <strong>Tip) 글자를 정렬할 때 항상 중앙에 정확히 정렬하지 말고, 살짝 위로 올리자.</strong>
+
+  <div align="center">
+
+  <img src="img/floating_text.png" width="500">
+
+  </div>
+
+  - 텍스트가 가라앉는 느낌이 아닌, 떠다니는 느낌을 주어야 사용자들에게 좋은 인상을 줄 수 있다.
+
+  - **상황에 따라 항상 이렇게 할 필요는 없다. 텍스트를 중앙 정렬을 했을 때 가라앉는 느낌이 든다면 고치자.**
 
 <br/>
