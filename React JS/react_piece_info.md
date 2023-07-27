@@ -68,3 +68,25 @@
 
   - <code>localhost:3000/users</code> 경로에서 <code>\<Link to="followers">See Followers\</Link></code> 클릭 시 ->  
     <code>localhost:3000/users/followers</code> 경로로 이동
+
+<br/><br/>
+
+## React Strict Mode에서 render가 두 번씩 되는 현상
+
+<div align="center">
+
+<img src="img/render_twice.png" width="450">
+
+</div>
+
+- React의 Strict Mode에선 컴포넌트를 두 번씩 렌더링한다.
+
+- 이렇게 하는 이유는 코드의 문제점을 파악하기 위해서라고 한다. 다만 이 것은 Dev 모드 한정이고, 실제 앱에선 한 번만 렌데링된다.
+
+- 공식 문서에 다음과 같은 언급이 있다.
+
+  > "Strict mode can’t automatically detect side effects for you, but it can help you spot them by making them a little more deterministic. This is done by intentionally double-invoking the following functions"
+
+- Reference : <a href="https://stackoverflow.com/questions/61254372/my-react-component-is-rendering-twice-because-of-strict-mode">My React Component is rendering twice because of Strict Mode (Stack Overflow)</a>
+
+<br/>
