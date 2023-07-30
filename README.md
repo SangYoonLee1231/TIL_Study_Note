@@ -286,7 +286,7 @@
 
 ### ◻ UI, UX 및 웹 디자인 (Web Design)
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md">웹 디자인의 기초</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md">웹 디자인의 기초 - 레이아웃</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_tip.md">웹 디자인 Tips</a>
 
 ### ◻ 아두이노 (Arduino)
