@@ -6,13 +6,37 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="">Next JS란?</a>
+
+  - <a href="">Next JS의 특징</a>
+  - <a href="">Next JS 설치</a>
+
+- <a href="">Next JS 기본 파일 구조</a>
+
+  - <a href="">`pages`</a>
+  - <a href="">`public`</a>
+  - <a href="">`styles`</a>
+
+- <a href="">Pre-Rendering</a>
+- <a href="">Data Fetching</a>
+  <!-- - <a href=""></a> -->
+  <!-- - <a href=""></a> -->
 
 <br/><br/>
 
 ## Next JS란?
 
 - React에서 <strong>SSR(Server Side Rendering)</strong>을 쉽게 구현할 수 있도록 도와주는 간단한 <strong>프레임워크 (Framework)</strong>이다.
+
+<br/>
+
+> < <strong>Framework VS Library</strong> >
+>
+> <strong>공통점</strong> : 복잡한 개발을 편리하게 할 수 있도록, 필요한 기능들을 미리 만들어 사용할 수 있는 형태로 제공된 코드
+>
+> <strong>차이점</strong> : <strong>Framework</strong>은 전체적인 틀(Frame)을 제공해주기 때문에, 개발자가 그 틀 안에서 그 방식에 맞춰 작업을 해야만 한다. / 반면 <strong>Library</strong>는 하나의 기능만을 도구로써 제공해주기 때문에, 개발자 본인이 필요한 여러 도구들을 직접 가져와서 조립히여 사용해야 한다.
+
+<br/>
 
 - 리엑트로 개발할 땐 SPA(Single Page Application)를 이용하여 CSR(Client Side Rendering)을 하지만, 이 방식은 검색 엔진 최적화(SEO) 부분에서 단점이 존재한다.
 
@@ -22,7 +46,16 @@
 
 ### Next JS의 특징
 
-- NextJS는 Framework이므로, Library와 달리 렌더링 과정을 사용자가 직접 다루지 못한다. (ReactJS는 Library)
+- NextJS는 Framework이므로, Library와 달리 **렌더링 과정**을 사용자가 직접 다루지 못한다. (ReactJS는 Library)
+
+- <strong>pages 폴더 안에 있는 파일명에 따라 route가 결정된다.</strong>
+
+  - `pages/about.js` → localhost:3000/about
+  - `pages/index.js` → localhost:3000 (예외사항)
+
+- JSX를 쓰고 있다면, React를 import하지 않아도 된다.
+
+  - 그러나 useState나 useEffect와 같은 react 메소드를 쓰고 싶다면 React를 import 해주어야 한다.
 
 <br/>
 
