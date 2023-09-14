@@ -367,6 +367,28 @@ yarn-error.log*
   };
   ```
 
+<br/>
+
+- <strong>npm 커스텀 명령어</strong>
+
+  - 사용자가 패키지 관리 파일(<code>package.json</code>)에서 직접 정의하여 쓰는 npm 명령어
+
+  - 사용 예시
+
+    ```javascript
+    //package.json
+    {
+      ...
+      "scripts" : {
+        "server" : "npx webpack serve --mode development"
+      }
+    }
+    ```
+
+    ```sh
+    npm run server
+    ```
+
 <br/><br/>
 
 ### Babel 설치
