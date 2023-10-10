@@ -20,7 +20,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B3%80%EC%88%98">변수</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#mixin--optional-arguments">mixin (+ optional arguments)</a>
 
-- <a href="">SCSS 사용 시 주의할 점 : 클래스 이름 중복 금지</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#scss-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EC%A3%BC%EC%9D%98%ED%95%A0-%EC%A0%90--%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%9D%B4%EB%A6%84-%EC%A4%91%EB%B3%B5-%EA%B8%88%EC%A7%80">SCSS 사용 시 주의할 점 : 클래스 이름 중복 금지</a>
 
 <br/><br/>
 
