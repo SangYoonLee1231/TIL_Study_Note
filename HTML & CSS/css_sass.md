@@ -20,6 +20,8 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#%EB%B3%80%EC%88%98">변수</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_sass.md#mixin--optional-arguments">mixin (+ optional arguments)</a>
 
+- <a href="">SCSS 사용 시 주의할 점 : 클래스 이름 중복 금지</a>
+
 <br/><br/>
 
 ## CSS 전처리기란?
@@ -200,3 +202,28 @@ body {
   }
 }
 ```
+
+<br/><br/>
+
+## SCSS 사용 시 주의할 점 : 클래스 이름 중복 금지
+
+- <code>import './style.scss;'</code>와 같이 SCSS파일을 import하면, 해당 스타일은 전역적으로 적용된다.
+
+- 그래서 이 상태에서 클래스 이름이 겹치게 되면 의도치 않은 스타일이 적용되는 문제가 생긴다.
+
+- 이를 해결하는 방법은 2가지 있다.
+
+  - 1. 클래스 이름이 겹쳐지지 않도록 컨벤션을 정해서 클래스 이름을 붙여준다.
+
+  - 2. 다음과 같이 코드를 작성한다. (import문, 클래스 이름 작성 참고)
+
+    ```jsx
+    import React from "react";
+    import styles from "./App.module.scss";
+
+    const App = () => {
+      return <div className={styles.myStyle}>Hello</div>;
+    };
+    ```
+
+<br/>
