@@ -10,12 +10,11 @@
 
 ### 목차
 
-- <a href="">Early Systems</a>
-
-- <a href="">Batch Processing Systems (일괄 처리 시스템)</a>
-- <a href="">Multi-programming Systems</a>
-- <a href="">Time Sharing (Multi-tasking) Systems (3세대)</a>
-- <a href="">4세대 Systems</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md#early-systems">Early Systems</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md#batch-processing-systems-%EC%9D%BC%EA%B4%84-%EC%B2%98%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C">Batch Processing Systems (일괄 처리 시스템)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md#multi-programming-systems">Multi-programming Systems</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md#time-sharing-multi-tasking-systems-3%EC%84%B8%EB%8C%80">Time Sharing (Multi-tasking) Systems (3세대)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md#4%EC%84%B8%EB%8C%80-systems">4세대 Systems</a>
 
 <br/><br/>
 
@@ -29,7 +28,7 @@
 
 ## Batch Processing Systems (일괄 처리 시스템)
 
-- J**ob Control Programming**
+- **Job Control Programming**
 
 - **Jobs** - 한 줄의 코딩이 카드 (puncjed card) 한 장에 대응
 
