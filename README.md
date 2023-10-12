@@ -212,20 +212,20 @@
 
 #### 운영체제 (Opearting System)
 
-- <a href="">1. 컴퓨터 시스템과 OS</a>
-- <a href="">2. OS의 역사</a>
-- <a href="">3. 다양한 종류의 OS</a>
-- <a href="">4. I/O 오퍼레이션과 인터럽트 핸들링 (Interrupt Handling)</a>
-- <a href="">5. 메모리 보호 (Memory Protection)와 OS의 두 가지 모드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md">1. 컴퓨터 시스템과 OS</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md">2. OS의 역사</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/3-various-os.md">3. 다양한 종류의 OS</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/4-io-operation-interrupt-handling.md">4. I/O 오퍼레이션과 인터럽트 핸들링 (Interrupt Handling)</a>
+<!-- - <a href="">5. 메모리 보호 (Memory Protection)와 OS의 두 가지 모드</a>
 - <a href="">6. 시스템 콜 (System Call)</a>
-- <a href="">7.OS의 구조 (OS Structure)</a>
+- <a href="">7. OS의 구조 (OS Structure)</a>
 - <a href="">8. 프로세스 (Process)</a>
 - <a href="">9. Context Switching</a>
 - <a href="">10. Process State Queues</a>
 - <a href="">11. 프로세스 생성 (fork와 exec 시스템 콜)</a>
 - <a href="">12. </a>
 - <a href="">13. 파이프 (Pipe)</a>
-- <a href="">14. CPU 스케줄링</a>
+- <a href="">14. CPU 스케줄링</a> -->
 <!-- - <a href=""></a> -->
 
 <!-- - <a href=""></a> -->
@@ -236,11 +236,11 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/network_basic.md">데이터 통신 소개 및 네트워크 기초</a>
 
-#### TCP/IP 모델 1계층 : Physical Layer (물리층)
+<!-- #### TCP/IP 모델 1계층 : Physical Layer (물리층)
 
 - <a href="">물리층 개요</a> (준비중)
 - <a href="">디지털 전송 (디지털-대-디지털 변환, 아날로그-대-디지털 변환)</a> (준비중)
-- <a href="">아날로그 전송 (디지털-대-아날로그 변환, 아날로그-대-아날로그 변환</a> (준비중)
+- <a href="">아날로그 전송 (디지털-대-아날로그 변환, 아날로그-대-아날로그 변환</a> (준비중) -->
 <!-- - <a href=""></a> -->
 
 <!-- #### TCP/IP 모델 2계층 : Data-link Layer (데이터 링크층) -->
@@ -319,6 +319,6 @@
 
 #### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/CodeSoom">⌨ CodeSoom 리엑트 11기 (2022.08.01 ~ 2022.10.02)</a>
 
-#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/HufsLion-Study">🦁 멋쟁이 사저처럼 11기 스터디를 위한 학습 내용 정리 (2023.04.29 ~ 2023.xx.xx)</a>
+#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/HufsLion-Study">🦁 멋쟁이 사저처럼 11기 스터디를 위한 학습 내용 정리 (2023.04.29 ~ 2023.07)</a>
 
 <br/>

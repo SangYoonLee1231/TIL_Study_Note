@@ -10,13 +10,13 @@
 
 ### 목차
 
-- <a href="">컴퓨터 시스템 구성 요소</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md#%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C">컴퓨터 시스템 구성 요소</a>
 
-- <a href="">OS (Operating System) 란?</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md#os-operating-system-%EB%9E%80">OS (Operating System) 란?</a>
 
-  - <a href="">어플리케이션 측면에서 OS란?</a>
-  - <a href="">시스템 측면에서 OS란?</a>
-  - <a href="">OS는 Highly-concurrent, event-driven software</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md#%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%B8%A1%EB%A9%B4%EC%97%90%EC%84%9C-os%EB%9E%80">어플리케이션 측면에서 OS란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md#%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%B8%A1%EB%A9%B4%EC%97%90%EC%84%9C-os%EB%9E%80">시스템 측면에서 OS란?</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md#os%EB%8A%94-highly-concurrent-event-driven-software">OS는 Highly-concurrent, event-driven software</a>
 
 <br/><br/>
 
@@ -46,7 +46,7 @@
 
 - **버스 (bus)** : 전기적 신호를 전달하는 라인
 
-<br/><br/>
+<br/><br/><br/>
 
 ## OS (Operating System) 란?
 
@@ -60,7 +60,7 @@
 
   - 하드디스크는 '책'처럼 단일화된 형태를 'Volume'으로 관리
 
-<br/>
+<br/><br/>
 
 ### 시스템 측면에서 OS란?
 
@@ -88,7 +88,7 @@
 
 - **Dynamic Frequency** : CPU의 클럭을 동적으로 조절하여 파워가 낭비되지 않도록 함
 
-<br/>
+<br/><br/>
 
 ### OS는 Highly-concurrent, event-driven software
 
