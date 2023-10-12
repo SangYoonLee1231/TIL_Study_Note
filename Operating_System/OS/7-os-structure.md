@@ -10,12 +10,12 @@
 
 ### 목차
 
-- <a href="">MS-DOS</a>
-- <a href="">Monolithic Structure (단일 몸체 커널)</a>
-- <a href="">Layered Structure</a>
-- <a href="">Micro-kernel</a>
-- <a href="">Modules (모듈)</a>
-- <a href="">Virtual Machines</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md#ms-dos">MS-DOS</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md#monolithic-structure-%EB%8B%A8%EC%9D%BC-%EB%AA%B8%EC%B2%B4-%EC%BB%A4%EB%84%90">Monolithic Structure (단일 몸체 커널)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md#layered-structure">Layered Structure</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md#micro-kernel">Micro-kernel</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md#modules-%EB%AA%A8%EB%93%88">Modules (모듈)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md#virtual-machines">Virtual Machines</a>
 
 <br/><br/>
 
