@@ -214,8 +214,8 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/1-computer-system-os.md">1. 컴퓨터 시스템과 OS</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/2-os-history.md">2. OS의 역사</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/3-various-os.md">3. 다양한 종류의 OS</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/4-io-operation-interrupt-handling.md">4. I/O 오퍼레이션과 인터럽트 핸들링 (Interrupt Handling)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/3-various-os.md">3. 다양한 종류의 OS (준비중)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/4-io-operation-interrupt-handling.md">4. I/O 오퍼레이션과 인터럽트 핸들링 (Interrupt Handling) (준비중)</a>
 - <a href="">5. 메모리 보호 (Memory Protection)와 OS의 두 가지 모드</a> (준비중)
 - <a href="">6. 시스템 콜 (System Call)</a> (준비중)
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Operating_System/OS/7-os-structure.md">7. OS의 구조 (OS Structure)</a>
