@@ -7,19 +7,23 @@
 - <a href=""></a>
 <!-- - <a href=""></a> -->
 
-<br/><br/>
+<br/><br/><br/>
 
 ## 서버 통신 3가지 방법
 
-**서버 주소**와 HTTP 메소드만 있으면 데이터를 요청할 수 있습니다!
+- **서버 주소**와 **HTTP 메소드** 이 두 가지 만으로 데이터를 요청할 수 있다.
+
+<br/>
 
 ### 1. ajax
 
-**Asynchronous JavaScript And XML**의 약자로,
+- **Asynchronous JavaScript And XML**의 약자로,
 
-자바스크립트를 이용해 클라이언트와 서버 간에 데이터를 주고받는 비동기 HTTP 통신이다.
+  자바스크립트를 이용해 클라이언트와 서버 간에 데이터를 주고받는 비동기 HTTP 통신이다.
 
-가장 오래된 형태의 비동기 통신 방법 중 하나이다.
+- 가장 오래된 형태의 비동기 통신 방법 중 하나이다.
+
+<br/>
 
 - 장점
   - Jquery를 통해 쉽게 구현 가능
@@ -45,13 +49,17 @@
   });
   ```
 
+<br/><br/>
+
 ### 2. fetch
 
-ES6부터 들어온 JavaScript 내장 라이브러리
+- ES6부터 들어온 JavaScript 내장 라이브러리
 
-Promise를 기반으로 한 비동기적인 특성을 지니고 있음
+- Promise를 기반으로 한 비동기적인 특성을 지니고 있음
 
 → 간단한 API 구조를 가지고 있어, 간단한 HTTP 요청을 만들 때 유용하다.
+
+<br/>
 
 - 장점
   - 자바스크립트의 내장 라이브러리이므로 별도로 import 할 필요가 없음
@@ -70,11 +78,15 @@ Promise를 기반으로 한 비동기적인 특성을 지니고 있음
     **.catch(error => console.error("Error:", error));**
   ```
 
+<br/><br/>
+
 ### 3. axios
 
-Node.js와 브라우저를 위한 Promise API를 활용하는 비동기 HTTP 통신 라이브러리
+- Node.js와 브라우저를 위한 Promise API를 활용하는 비동기 HTTP 통신 라이브러리
 
-외부 라이브러리로, 모든 브라우저에서 사용 가능하다.
+- 외부 라이브러리로, 모든 브라우저에서 사용 가능하다.
+
+<br/>
 
 - 장점
   - response timeout(fetch에는 없는 기능) 처리 방법이 존재
@@ -94,6 +106,8 @@ Node.js와 브라우저를 위한 Promise API를 활용하는 비동기 HTTP 통
     .catch((error) => console.error("Error:", error));
   ```
 
+<br/><br/>
+
 ### 4. 비교를 해봅시다.
 
 - 브라우저 지원
@@ -107,7 +121,7 @@ Node.js와 브라우저를 위한 Promise API를 활용하는 비동기 HTTP 통
   - `fetch`도 유사한 기능을 사용할 수 있지만, 구현이 더 복잡할 수 있다.
   - `ajax`는 이러한 기능을 직접 제공하지 않지만, jQuery와 함께 사용할 때 편리한 인터페이스를 제공
 
-<br/><br/>
+<br/><br/><br/>
 
 ## 데이터 GET 요청 - Fetch
 
@@ -124,11 +138,9 @@ function App() {
 export default App;
 ```
 
-…! 에러가 발생할 거예요!
+- …! 에러가 발생할 거예요!
 
-- 에러 사진 확인하기
-  ![스크린샷 2023-11-16 오전 3.56.23.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/4432d9bc-5149-4b56-ae3c-3c22a70d2812/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_3.56.23.png)
-  ![스크린샷 2023-11-16 오전 3.57.18.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/e5edb6b8-6f78-4266-9e0a-9e165992ace3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_3.57.18.png)
+<br/><br/>
 
 ### 2. CORS 에러
 
@@ -146,6 +158,8 @@ export default App;
 
 </aside>
 
+<br/><br/>
+
 ### 3. CORS 에러 해결
 
 **CORS 에러의 해결은 서버에서!**
@@ -155,8 +169,6 @@ export default App;
    ```jsx
    npm install cors
    ```
-
-   ![스크린샷 2023-11-16 오전 4.04.05.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/5b49153d-6b67-4f73-baff-94882616ac1e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_4.04.05.png)
 
 1. 이제 server/app.js에 middleware를 추가
 
@@ -174,7 +186,7 @@ export default App;
 
    `npm start` → 클라이언트 실행 → http://localhost:3000/
 
-   ![스크린샷 2023-11-16 오전 4.06.57.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/4700c6b9-0c92-46fe-aea9-f43a60bf85a1/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_4.06.57.png)
+<br/><br/>
 
 ### 4. 데이터 저장하여 화면에 띄우기
 
@@ -196,7 +208,9 @@ function App() {
 export default App;
 ```
 
-에러가… 납니다!
+- 에러가… 납니다!
+
+<br/><br/>
 
 ### 5. 무한 리렌더링 에러
 
@@ -231,6 +245,8 @@ export default App;
 - `setDiaryList(data)` → 문제의 코드
   : 상태변화함수이므로 리액트 컴포넌트 상태를 변경시킨다. 즉, 페이지가 재실행된다. 해당 과정이 무한으로 반복하여 오류가 발생한다.
 
+<br/><br/>
+
 ### 6. 리랜더링 무한반복 해결하기
 
 <aside>
@@ -250,6 +266,8 @@ useEffect(() => {
 ```
 
 → 의존성 리스트 비워두기
+
+<br/><br/>
 
 ### 7. 화면 구성하기
 
@@ -319,7 +337,7 @@ const DiaryContent = styled.p`
 `;
 ```
 
-<br/><br/>
+<br/><br/><br/>
 
 ## 데이터 POST 요청 - Fetch
 
@@ -334,6 +352,8 @@ const DiaryContent = styled.p`
    ```
 
    form 태그로 감싸주기!
+
+<br/>
 
 2. 제출 시 실행될 함수 생성
 
@@ -357,6 +377,8 @@ const DiaryContent = styled.p`
    - `JSON.stringfy` : JavaScript 객체나 값의 직렬화(serialize)를 수행하는 메서드
    - `e.preventDefault()` submit의 기본 동작(POST 후 GET)을 막기 위해 작성
 
+<br/>
+
 3. `Content-Type` 설정
 
    ```jsx
@@ -378,6 +400,8 @@ const DiaryContent = styled.p`
    ```
 
    - 내가 보내는 데이터의 타입을 명시하는 것!
+
+<br/>
 
 4. 데이터 실시간 반영하기
 
@@ -412,6 +436,8 @@ const DiaryContent = styled.p`
        }).then(() => fetchDiary());
      };
      ```
+
+<br/>
 
 5. 꾸미기
 
@@ -521,7 +547,7 @@ const DiaryContent = styled.p`
    `;
    ```
 
-<br/><br/>
+<br/><br/><br/>
 
 ## axios로 변경하기
 
@@ -533,6 +559,8 @@ const DiaryContent = styled.p`
    npm install axios
    ```
 
+<br/>
+
 2. 불러오기
 
    ```jsx
@@ -540,6 +568,8 @@ const DiaryContent = styled.p`
 
    import axios from "axios";
    ```
+
+<br/>
 
 3. `GET` 메서드
 
@@ -551,6 +581,8 @@ const DiaryContent = styled.p`
    ```
 
    → 변수에 담아서 사용할 수 있어요!
+
+<br/>
 
 4. `POST` 메서드
 
@@ -569,7 +601,7 @@ const DiaryContent = styled.p`
    - `axios.post`의 형식
    - `fetchDiary()`
 
-<br/><br/>
+<br/><br/><br/>
 
 ## MSW
 
@@ -585,21 +617,16 @@ const DiaryContent = styled.p`
    - 백엔드 API 개발과 프론트엔드 UI 개발이 동시에 진행되야하는 경우, 백엔드 API 구현이 완료될 때까지 프론트엔드 팀에서 임시로 사용하기 위한 가짜(mock) API를 서비스 워커로 돌리기 위해서.
    - 테스트를 실행 시 실제 백엔드 API에 네트워크 호출을 하는 대신에 훨씬 빠르고 안정적인 가짜 API 서버를 구축하기 위해서
 
-1. 장점
+<br/>
+
+2. 장점
    - 네트워크 단에서 일어나기 때문에 프론트엔드 코드를 실제 백엔드 API와 네트워크 통신하는 것과 크게 다르지 않게 작성할 수 있다
    - REST API 모킹과 GraphQL API 모킹을 모두 지원한다
-1. 단점
+
+<br/>
+
+3. 단점
 
    - 일부 브라우저에서 지원하지 않는다.
 
-1. 임의의 더미 데이터 만들기
-
-   ![스크린샷 2023-11-16 오전 5.32.40.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/dfa3b620-17c9-49d2-9940-9b52ee85d954/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.32.40.png)
-
-1. handler 설정하기
-
-   ![스크린샷 2023-11-16 오전 5.33.25.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/60e9fc33-1eb1-43b7-86b5-627ed3abba1b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.33.25.png)
-
-1. 페이지 적용하기
-
-   ![스크린샷 2023-11-16 오전 5.33.35.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3098701c-a6f1-41c0-9556-2a0e198a19de/1b558468-c7d1-4489-a5b2-d660afa22409/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-16_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.33.35.png)
+<br/>
