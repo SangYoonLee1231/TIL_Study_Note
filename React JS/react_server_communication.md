@@ -129,7 +129,7 @@
 
 ## 데이터 GET 요청 - Fetch
 
-### 1. `fetch` 사용하여 데이터 받아오기 ~
+### 1. `fetch` 사용하여 데이터 받아오기
 
 ```jsx
 function App() {
