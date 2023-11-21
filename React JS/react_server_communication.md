@@ -4,7 +4,11 @@
 
 ### 목차
 
-- <a href=""></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md#%EC%84%9C%EB%B2%84-%ED%86%B5%EC%8B%A0-3%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95">서버 통신 3가지 방법 (ajax, fetch, axios)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-get-%EC%9A%94%EC%B2%AD---fetch">데이터 GET 요청 - Fetch</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-post-%EC%9A%94%EC%B2%AD---fetch">데이터 POST 요청 - Fetch</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md#axios%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0">axios로 변경하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md#msw">MSW</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/><br/>
@@ -138,15 +142,16 @@ function App() {
 export default App;
 ```
 
-- …! 에러가 발생할 거예요!
+- …! 에러가 발생한다!
 
 <br/><br/>
 
 ### 2. CORS 에러
 
-`Cross Origin Resource Sharing` 의 약자로, 보안 상의 이유로 브라우저에서 실행되는 웹 페이지가 다른 도메인의 리소스에 접근할 때 발생하는 보안 정책
+- `Cross Origin Resource Sharing` 의 약자로, 보안 상의 이유로 브라우저에서 실행되는 웹 페이지가 다른 도메인의 리소스에 접근할 때 발생하는 보안 정책
 
 <aside>
+
 💡 **우리 상황에 대입해보면?**
 
 - 클라이언트의 접근
@@ -170,7 +175,7 @@ export default App;
    npm install cors
    ```
 
-1. 이제 server/app.js에 middleware를 추가
+2. 이제 server/app.js에 middleware를 추가
 
    ```jsx
    const cors = require("cors");
@@ -178,9 +183,9 @@ export default App;
    app.use(cors());
    ```
 
-   다시 node app.js로 서버 폴더에서 서버를 실행시켜주고, 4000포트 주소로 들어가보면 에러가 해결된 것을 확인할 수 있습니ㅏㄷ!
+   다시 node app.js로 서버 폴더에서 서버를 실행시켜주고, 4000포트 주소로 들어가보면 에러가 해결된 것을 확인할 수 있다.
 
-1. 에러 해결 확인하기
+3. 에러 해결 확인하기
 
    `node app.js` → 서버 실행 → http://localhost:4000/
 
@@ -208,16 +213,18 @@ function App() {
 export default App;
 ```
 
-- 에러가… 납니다!
+- 에러가… 난다.
 
 <br/><br/>
 
 ### 5. 무한 리렌더링 에러
 
 <aside>
+
 💡 **리액트의 무한 리렌더링**
-컴포넌트가 계속해서 다시 렌더링되는 현상.
-일반적으로 컴포넌트의 상태(State)나 속성(Props)이 변경될 때 발생한다.
+
+- 컴포넌트가 계속해서 다시 렌더링되는 현상.
+- 일반적으로 컴포넌트의 상태(State)나 속성(Props)이 변경될 때 발생한다.
 
 - 리액트는 상태값이 업데이트 될 때마다 컴포넌트의 리렌더링이 일어난다.
 
@@ -250,10 +257,11 @@ export default App;
 ### 6. 리랜더링 무한반복 해결하기
 
 <aside>
-💡 `**useEffect`**
 
-React가 DOM을 랜더링한 이후 추가로 코드를 실행해야 하는 경우 사용한다.
-첫 번째 랜더링과 dependancy 리스트 안에 있는 요소의 값이 변할 때마다 수행된다.
+💡 **`useEffect`**
+
+- React가 DOM을 랜더링한 이후 추가로 코드를 실행해야 하는 경우 사용한다.
+- 첫 번째 랜더링과 dependancy 리스트 안에 있는 요소의 값이 변할 때마다 수행된다.
 
 </aside>
 
@@ -580,7 +588,7 @@ const DiaryContent = styled.p`
    };
    ```
 
-   → 변수에 담아서 사용할 수 있어요!
+   → 변수에 담아서 사용할 수 있다!
 
 <br/>
 
@@ -606,9 +614,10 @@ const DiaryContent = styled.p`
 ## MSW
 
 <aside>
-💡 **MSW**(Mock Service Worker)
-서비스 워커(Service Worker)를 사용하여 **네트워크 호출을 가로채는 API 모킹**라이브러리
-즉, API인 척! 프론트엔드의 요청에 가짜 데이터를 응답해준다.
+💡 <strong>MSW (Mock Service Worker)</strong>
+
+- 서비스 워커(Service Worker)를 사용하여 **네트워크 호출을 가로채는 API 모킹** 라이브러리
+  즉, API인 척! 프론트엔드의 요청에 가짜 데이터를 응답해준다.
 
 </aside>
 
