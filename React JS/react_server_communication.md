@@ -38,7 +38,7 @@
 - 예시
 
   ```jsx
-  var serverAddress = "https://localhost:3000";
+  const serverAddress = "https://localhost:3000";
 
   // jQuery의 .get 메소드 사용
   $.ajax({
@@ -75,6 +75,7 @@
   - JSON으로 변환해주는 과정 필요
   - 상대적으로 axios에 비해 기능이 부족
 - 사용 예시
+
   ```jsx
   fetch("https://api.example.com/data")
     .then(response => response.json())
