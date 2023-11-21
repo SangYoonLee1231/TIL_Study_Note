@@ -115,12 +115,19 @@
 ### 비교해보자
 
 - 브라우저 지원
-  : `fetch`는 최신 브라우저에서 네이티브로 지원 / `axios`와 `ajax`는 모든 주요 브라우저에서 지원
+
+  - `fetch`는 최신 브라우저에서 네이티브로 지원 / `axios`와 `ajax`는 모든 주요 브라우저에서 지원
+
 - API 편의성
-  : `axios`는 기능적으로 우수 / `fetch`는 비교적 간단한 API
+
+  - `axios`는 기능적으로 우수 / `fetch`는 비교적 간단한 API
+
 - Promise 지원
-  : `fetch`와 `axios`는 Promise 기반 / `ajax`는 jQuery와 함께 사용될 때 콜백 기반의 구조 지님
+
+  - `fetch`와 `axios`는 Promise 기반 / `ajax`는 jQuery와 함께 사용될 때 콜백 기반의 구조 지님
+
 - CSRF 등의 기능
+
   - `axios`는 요청 및 응답 인터셉터를 통해 CSRF 보호와 같은 고급 기능을 지원
   - `fetch`도 유사한 기능을 사용할 수 있지만, 구현이 더 복잡할 수 있다.
   - `ajax`는 이러한 기능을 직접 제공하지 않지만, jQuery와 함께 사용할 때 편리한 인터페이스를 제공
@@ -224,6 +231,7 @@ export default App;
 💡 **리액트의 무한 리렌더링**
 
 - 컴포넌트가 계속해서 다시 렌더링되는 현상.
+
 - 일반적으로 컴포넌트의 상태(State)나 속성(Props)이 변경될 때 발생한다.
 
 - 리액트는 상태값이 업데이트 될 때마다 컴포넌트의 리렌더링이 일어난다.
@@ -249,7 +257,9 @@ export default App;
 ```
 
 - 1️⃣ 2️⃣ 3️⃣ 순서대로 실행
+
 - `setDiaryList(data)` → 문제의 코드
+
   : 상태변화함수이므로 리액트 컴포넌트 상태를 변경시킨다. 즉, 페이지가 재실행된다. 해당 과정이 무한으로 반복하여 오류가 발생한다.
 
 <br/><br/>
@@ -261,6 +271,7 @@ export default App;
 💡 **`useEffect`**
 
 - React가 DOM을 랜더링한 이후 추가로 코드를 실행해야 하는 경우 사용한다.
+
 - 첫 번째 랜더링과 dependancy 리스트 안에 있는 요소의 값이 변할 때마다 수행된다.
 
 </aside>
@@ -278,8 +289,6 @@ useEffect(() => {
 <br/><br/>
 
 ### 7. 화면 구성하기
-
-그럼 이제 아래의 코드를 복사해서 페이지를 구성해봅시다.
 
 ```jsx
 return (
@@ -381,8 +390,11 @@ const DiaryContent = styled.p`
    ```
 
    - `fetch`
+
    - `POST` : 클라이언트가 서버로 데이터를 전송하기 위해 사용되는 요청 메서드
+
    - `JSON.stringfy` : JavaScript 객체나 값의 직렬화(serialize)를 수행하는 메서드
+
    - `e.preventDefault()` submit의 기본 동작(POST 후 GET)을 막기 위해 작성
 
 <br/>
@@ -605,8 +617,11 @@ const DiaryContent = styled.p`
    ```
 
    - header의 Content-Type 생략 가능!
+
    - body 직렬화 코드 생략 가능!
+
    - `axios.post`의 형식
+
    - `fetchDiary()`
 
 <br/><br/><br/>
@@ -624,12 +639,15 @@ const DiaryContent = styled.p`
 1. 사용하는 경우
 
    - 백엔드 API 개발과 프론트엔드 UI 개발이 동시에 진행되야하는 경우, 백엔드 API 구현이 완료될 때까지 프론트엔드 팀에서 임시로 사용하기 위한 가짜(mock) API를 서비스 워커로 돌리기 위해서.
+
    - 테스트를 실행 시 실제 백엔드 API에 네트워크 호출을 하는 대신에 훨씬 빠르고 안정적인 가짜 API 서버를 구축하기 위해서
 
 <br/>
 
 2. 장점
+
    - 네트워크 단에서 일어나기 때문에 프론트엔드 코드를 실제 백엔드 API와 네트워크 통신하는 것과 크게 다르지 않게 작성할 수 있다
+
    - REST API 모킹과 GraphQL API 모킹을 모두 지원한다
 
 <br/>
