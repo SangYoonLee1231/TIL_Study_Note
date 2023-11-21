@@ -124,7 +124,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_component_reuse.md">React JS - Component의 분리와 재사용 (관심사의 분리)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_advanced_router.md">React JS - Dynamic Routing & Query String</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_custom_hook.md">React JS - 관심사의 분리와 Custom Hook</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communicaion.md">React JS - 프론트엔드 서버 통신</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_piece_info.md">React - 조각 지식 모음</a>
 <!-- - <a href=""></a> -->
 
