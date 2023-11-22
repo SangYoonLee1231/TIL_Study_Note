@@ -50,9 +50,9 @@
 
 ## 샘플 코드
 
-```js
-// 일기장 만들기
+일기장 만들기
 
+```js
 const express = require("express");
 const app = express();
 const cors = require("cors"); // CORS 에러 방지용 코드
@@ -108,7 +108,7 @@ app.get("/", function (req, res) {
 
 - `app.get("/", function(req, res) {...})`는 HTTP GET 요청이 "/" 경로로 전송될 때 실행될 함수를 정의한다.
 
-- 이 함수의 매개변수 *req*와 *res*는 각각 요청(request)과 응답(response)을 나타냅니다.
+- 이 함수의 매개변수 *req*와 *res*는 각각 요청(request)과 응답(response)을 나타낸다.
 
   - <strong>req (요청 객체 - Request Object)</strong>: 클라이언트로부터 서버로 전송된 HTTP 요청에 대한 정보를 포함하는 객체이다. 이 객체는 요청 헤더, 요청 본문, URL 매개변수, 쿼리 매개변수 등과 같은 다양한 정보에 접근할 수 있는 메서드 및 속성을 제공한다.
 
