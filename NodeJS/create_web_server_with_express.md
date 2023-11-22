@@ -110,10 +110,10 @@ app.get("/", function (req, res) {
 
 - 이 함수의 매개변수 *req*와 *res*는 각각 요청(request)과 응답(response)을 나타낸다.
 
-  - <strong>req (요청 객체 - Request Object)</strong>:
+  - <strong>req (요청 객체 - Request Object)</strong>:  
     클라이언트에서 서버로 전송된 HTTP 요청에 대한 정보를 포함하는 객체이다. 이 객체는 요청 헤더, 요청 본문, URL 매개변수, 쿼리 매개변수 등과 같은 다양한 정보에 접근할 수 있는 메서드 및 속성을 제공한다.
 
-  - <strong>res (응답 객체 - Response Object)</strong>:
+  - <strong>res (응답 객체 - Response Object)</strong>:  
     서버에서 클라이언트로 전송할 HTTP 응답을 나타내는 객체이다. 이 객체를 사용하여 응답 상태 코드, 응답 헤더, 응답 본문 등을 설정하고 클라이언트에게 응답을 보낸다.
 
 - 여기서 `res.send("Hello World");`는 간단한 텍스트 응답을 보내는 메소드이다. 클라이언트가 서버에 HTTP GET 요청을 보내면, 서버는 "Hello World"라는 텍스트를 응답으로 보내게 된다.
