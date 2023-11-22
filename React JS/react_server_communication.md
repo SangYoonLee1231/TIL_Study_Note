@@ -138,6 +138,14 @@
 
 프론트엔드와 서버가 서로 통신하며 데이터를 읽고 쓰는 '일기장' 앱을 예제로 만들어보자.
 
+<br/>
+
+> ### 참고 기록
+>
+> - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NodeJS/create_web_server_with_express.md">Express 프레임워크를 이용한 웹 서버 구축해보기</a>
+
+<br/>
+
 ### 1. `fetch` 사용하여 데이터 받아오기
 
 ```jsx
