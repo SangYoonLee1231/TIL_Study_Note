@@ -119,3 +119,7 @@ app.get("/", function (req, res) {
 - 여기서 `res.send("Hello World");`는 간단한 텍스트 응답을 보내는 메소드이다. 클라이언트가 서버에 HTTP GET 요청을 보내면, 서버는 "Hello World"라는 텍스트를 응답으로 보내게 된다.
 
 <br/>
+
+> ### 참고 기록
+>
+> - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신</a>
