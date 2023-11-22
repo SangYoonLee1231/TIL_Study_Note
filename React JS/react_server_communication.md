@@ -640,6 +640,12 @@ const DiaryContent = styled.p`
 
    - `fetchDiary()`
 
+<br/><br/>
+
+> ### 예제 앱 레포지토리
+>
+> - <a href="https://github.com/SangYoonLee1231/hufslion-react-server-communication">프론트엔드와 서버가 서로 통신하며 데이터를 읽고 쓰는 '일기장' 앱</a>
+
 <br/><br/><br/>
 
 ## MSW
