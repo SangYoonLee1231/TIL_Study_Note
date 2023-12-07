@@ -11,6 +11,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%81%AC%EB%A1%AC-%EC%BD%98%EC%86%94%EC%B0%BD%EC%97%90%EC%84%9C%EC%9D%98-%EC%A4%84%EB%B0%94%EA%BF%88-%EB%B0%A9%EB%B2%95">크롬 콘솔창에서의 줄 바꿈 방법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A6%AC%ED%84%B0%EB%9F%B4-template-literal---%EB%B0%B1%ED%8B%B1%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EB%AC%B8%EC%9E%90%EC%97%B4-%ED%91%9C%EA%B8%B0%EB%B2%95">템플릿 리터럴 (Template Literal) - 백틱을 사용하는 문자열 표기법</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#math-%EB%AA%A8%EB%93%88---random-%EA%B8%B0%EB%8A%A5">Math 모듈 - Random 기능</a>
+- <a href="">JSON이란?</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#jsonstringify---%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%84-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%EC%8B%9C%ED%82%A4%EB%8A%94-%ED%95%A8%EC%88%98"><code>JSON.stringify()</code> - 모든 것을 문자열로 변환시키는 함수</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9">구조 분해 할당</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%EB%B0%B0%EC%97%B4-%EA%B0%9D%EC%B2%B4%EA%B0%80-%EB%B9%84%EC%96%B4%EC%9E%88%EB%8A%94%EC%A7%80%EB%A5%BC-%EC%A1%B0%EA%B1%B4%EB%AC%B8%EC%9D%84-%ED%86%B5%ED%95%B4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0-truthy-falsy-%EC%8B%AC%ED%99%94">배열, 객체가 비어있는지를 조건문을 통해 확인하기 (<code>truthy</code>, <code>falsy</code> 심화)</a>
@@ -71,6 +72,20 @@
     /* [방법3] round : 반올림 */
     const ans = Math.round(num - 0.5);
     ```
+
+<br/><br/>
+
+## JSON이란?
+
+- 프로그래머가 파일에 정보를 저장하기 위해 만든 하나의 방식
+
+```json
+{
+  "name": "my-project"
+}
+```
+
+- 예) <code?>package.json</code>
 
 <br/><br/>
 
