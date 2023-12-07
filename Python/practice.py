@@ -1,4 +1,14 @@
-import numpy as np
+def solution(arr):
+    exist = []
+    for i in range(len(arr)):
+        for elem in exist:
+            if arr[i] == elem:
+                print(str(i) + "break")
+                break
+        print(str(i) + "append")
+        exist.append(arr[i])
 
-ar = np.array([0,1,2,3,4,5])
-print(ar)
+    return exist
+
+
+print(solution([1, 1, 3, 3, 0, 1, 1]))
