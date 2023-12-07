@@ -81,7 +81,23 @@
 
 ```json
 {
-  "name": "my-project"
+  "name": "nomad-coder-wetube",
+  "version": "1.0.0",
+  "description": "Nomad Coder Course - Wetube Clone Coding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SangYoonLee1231/nomad-coder-wetube.git"
+  },
+  "author": "SangYoonLee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SangYoonLee1231/nomad-coder-wetube/issues"
+  },
+  "homepage": "https://github.com/SangYoonLee1231/nomad-coder-wetube#readme"
 }
 ```
 
