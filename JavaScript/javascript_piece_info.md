@@ -85,7 +85,7 @@
 }
 ```
 
-- 예) <code?>package.json</code>
+- 예) <code>package.json</code>
 
 <br/><br/>
 
