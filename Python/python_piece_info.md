@@ -195,7 +195,7 @@ result = ''.join(int_list)
 # TypeError: sequence item 0: expected str instance, int found
 ```
 
-- int형의 list를 join하려고 보면 이러한 에러가 생긴다. 뜻을 해석하자면 join할 때는 string이 들어가야 하나 int가 들어갔다는 것이다.
+- int형의 list를 join하려고 보면 이러한 에러가 생긴다. 뜻을 해석하자면 <strong>join할 때는 string이 들어가야 하나</strong> int가 들어갔다는 것이다.
 
 - 이것을 join하고 싶다면 어떻게 해야 할까?
 
@@ -219,6 +219,6 @@ print(result_to_int)
 # 1234567
 ```
 
-- 그냥 map 함수를 이용해서 str로 바꿔주면 된다. 그러면 당연히 합쳐진 1234567은 string 형태를 갖게 되는데, 이를 int 형태로 바꾸고 싶다면 그냥 전체를 int로 씌워주면 된다.
+- 그냥 <strong>map 함수를 이용해서 str로 바꿔주면 된다.</strong> 그러면 당연히 합쳐진 1234567은 string 형태를 갖게 되는데, 이를 int 형태로 바꾸고 싶다면 그냥 전체를 int로 씌워주면 된다.
 
 <br/><br/>
