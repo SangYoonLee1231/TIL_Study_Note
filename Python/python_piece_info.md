@@ -11,7 +11,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%97%90%EC%84%9C-%EB%B3%80%EC%88%98%EC%9D%98-scope-%EB%B2%94%EC%9C%84">파이썬에서 변수의 scope 범위</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4-%EC%84%A0%EC%96%B8-%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD">2차원 배열 선언 시 유의 사항</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Python/python_piece_info.md#python%EC%9D%98-%EC%B5%9C%EB%8C%80-%EC%A0%95%EC%88%98%EA%B0%92-sysmaxsize-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0">python의 최대 정수값 <code>sys.maxsize</code> 활용하기</a>
-- <a href=""></a>
+- <a href="">TypeError: sequence item 0: expected str instance, int found 해결 (int형 list join하기)</a>
 - <a href=""></a>
 - <a href=""></a>
 
@@ -184,3 +184,41 @@
   ```
 
 * 반대로 최솟값을 찾을 땐, 가장 큰 수 <code>sys.maxsize</code>로 초기값을 잡아준다.
+
+<br/><br/>
+
+## TypeError: sequence item 0: expected str instance, int found 해결 (int형 list join하기)
+
+```python
+int_list = [1, 2, 3, 4, 5, 6, 7]
+result = ''.join(int_list)
+# TypeError: sequence item 0: expected str instance, int found
+```
+
+- int형의 list를 join하려고 보면 이러한 에러가 생긴다. 뜻을 해석하자면 join할 때는 string이 들어가야 하나 int가 들어갔다는 것이다.
+
+- 이것을 join하고 싶다면 어떻게 해야 할까?
+
+```python
+int_list = [1, 2, 3, 4, 5, 6, 7]
+result = ''.join(map(str, int_list))
+result_to_int = int(''.join(map(str, int_list)))
+
+print(type(result))
+print(result)
+
+print(type(result_to_int))
+print(result_to_int)
+
+# <class 'str'>
+
+# 1234567
+
+# <class 'int'>
+
+# 1234567
+```
+
+- 그냥 map 함수를 이용해서 str로 바꿔주면 된다. 그러면 당연히 합쳐진 1234567은 string 형태를 갖게 되는데, 이를 int 형태로 바꾸고 싶다면 그냥 전체를 int로 씌워주면 된다.
+
+<br/><br/>
