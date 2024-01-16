@@ -18,7 +18,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#-%EC%97%B0%EC%82%B0%EC%9E%90-null-%EB%B3%91%ED%95%A9-%EC%97%B0%EC%82%B0%EC%9E%90">`??` 연산자 (Null 병합 연산자)</a>
 <!-- - <a href=""></a> -->
 
-<br/>
+<br/><br/>
 
 ## 크롬 콘솔창에서의 줄 바꿈 방법
 
@@ -190,12 +190,12 @@
 
 - Nullish Coalescing Operator
 
-- ?? 연산자 앞에 값이 null 또는 undefined라면, ?? 연산자 뒤의 값을 반환하는 논리 연산자이다.
+- `??` 연산자 앞에 값이 `null` 또는 `undefined`라면, `??` 연산자 뒤의 값을 반환하는 **논리 연산자**이다.
 
   ```js
+  console.log("hi" ?? "hello"); // hi
   console.log(null ?? "hello"); // hello
   console.log(undefined ?? "hello"); // hello
-  console.log("hi" ?? "hello"); // hi
   ```
 
 <br/><br/>
