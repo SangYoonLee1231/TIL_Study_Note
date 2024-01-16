@@ -16,6 +16,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9">구조 분해 할당</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_piece_info.md#%EB%B0%B0%EC%97%B4-%EA%B0%9D%EC%B2%B4%EA%B0%80-%EB%B9%84%EC%96%B4%EC%9E%88%EB%8A%94%EC%A7%80%EB%A5%BC-%EC%A1%B0%EA%B1%B4%EB%AC%B8%EC%9D%84-%ED%86%B5%ED%95%B4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0-truthy-falsy-%EC%8B%AC%ED%99%94">배열, 객체가 비어있는지를 조건문을 통해 확인하기 (<code>truthy</code>, <code>falsy</code> 심화)</a>
 - <a href=""></a>
+<!-- - <a href=""></a> -->
 
 <br/>
 
@@ -183,6 +184,20 @@
   }
   ```
 
-<br/>
+<br/><br/>
 
-###
+## `??` 연산자 (Null 병합 연산자)
+
+- Nullish Coalescing Operator
+
+- ?? 연산자 앞에 값이 null 또는 undefined라면, ?? 연산자 뒤의 값을 반환하는 논리 연산자이다.
+
+  ```js
+  console.log(null ?? "hello"); // hello
+  console.log(undefined ?? "hello"); // hello
+  console.log("hi" ?? "hello"); // hi
+  ```
+
+<br/><br/>
+
+<!-- ## -->
