@@ -6,11 +6,11 @@
 
 ### 목차
 
-- <a href="">직접 타입을 정의하는 방식</a>
-- <a href="">인터페이스 (interface) 방식</a>
-- <a href="">Optional Props (선택적인 Props)</a>
-- <a href="">useState애서의 TypeScript</a>
-- <a href="">event 객체에 타입을 추가하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md#%EC%A7%81%EC%A0%91-%ED%83%80%EC%9E%85%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D">직접 타입을 정의하는 방식</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-interface-%EB%B0%A9%EC%8B%9D">인터페이스 (interface) 방식</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md#optional-props-%EC%84%A0%ED%83%9D%EC%A0%81%EC%9D%B8-props">Optional Props (선택적인 Props)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md#usestate%EC%95%A0%EC%84%9C%EC%9D%98-typescript">useState애서의 TypeScript</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/TypeScript/typescript_explain_type.md#event-%EA%B0%9D%EC%B2%B4%EC%97%90-%ED%83%80%EC%9E%85%EC%9D%84-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0">event 객체에 타입을 추가하기</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
