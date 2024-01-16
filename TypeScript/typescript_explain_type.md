@@ -10,6 +10,7 @@
 - <a href="">인터페이스 (interface) 방식</a>
 - <a href="">Optional Props (선택적인 Props)</a>
 - <a href="">useState애서의 TypeScript</a>
+- <a href="">event 객체에 타입을 추가하기</a>
 <!-- - <a href=""></a> -->
 
 <br/><br/>
@@ -147,3 +148,48 @@ const x = (a: number, b: number) => a + b;
   - state의 상태가 undefined 또는 null이 될 수 있음
 
   - state에 객체 또는 배열이 저장되는 상황
+
+<br/><br/>
+
+## event 객체에 타입을 추가하기
+
+- 다음과 같이 코드를 작성하여 구현할 수 있다.
+
+  ```ts
+  import React, { useState } from "react";
+
+  function App() {
+    const [value, setValue] = useState("");
+    /* 주목 */
+    const onChange = (event: React.FormEvent<HTMLInputElement>) => {
+      // console.log(event.currentTarget.value);
+      const {
+        currentTarget: { value },
+      } = event;
+      setValue(value);
+    };
+    /* 주목 */
+    const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      console.log("hello", value);
+    };
+
+    return (
+      <div>
+        <form onSubmit={onSubmit}>
+          <input
+            value={value}
+            onChange={onChange}
+            type="text"
+            placeholder="username"
+          />
+          <button>Log in</button>
+        </form>
+      </div>
+    );
+  }
+
+  export default App;
+  ```
+
+<br/><br/>
