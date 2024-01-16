@@ -37,7 +37,7 @@
 
 ### TypeScript 등장 배경
 
-- JavaScript의 소스 코드가 점점 복잡해지고, 클라이언트 측 언어를 넘어 서버 측 기술로도 활용되기 시작하면서,
+- JavaScript의 소스 코드가 점점 복잡해지고, JS가 클라이언트 측 언어를 넘어 서버 측 기술로도 활용되기 시작하면서,
 
 - Type 검사 및 컴파일 시 오류 검사의 기능을 수용하여,
 
@@ -47,7 +47,7 @@
 
 ### TypeScript의 특징
 
-- strongly-typed 언어 : 프로그래밍 언어가 작동하기 전에 type를 확인한다.
+- **strongly-typed 언어** : 프로그래밍 언어가 작동하기 전에 type를 확인한다.
 
   - 코드에 타입 관련 오류가 있어도 프로그램 실행 전 TypeScript가 타입 에러를 미리 확인해준다. (타입 실수를 바로 잡아준다)
 
@@ -95,13 +95,16 @@
 
 ### DefinitelyTyped
 
-- (TS로 만들어지지 않은) 유명한 npm 라이브러리를 TS에서도 지원되도록 타입을 제공해주는 저장소
+- (TS로 만들어지지 않은) **유명한 npm 라이브러리**를 TS에서도 지원되도록 **타입을 정의하고 제공**해주는 저장소
 
   - <a href="https://github.com/DefinitelyTyped/DefinitelyTyped">DefinitelyTyped Repository</a>
 
 - DefinitelyTyped를 통해 TS에서도 JS로 만들어진 라이브러리를 사용할 수 있다.
 
+  - (`@types` 로 시작함)
+
   ```
+  [styled-components를 TS에서도 읽을 수 있도록 해주기]
   npm i -D @types/styled-components @types/
   ```
 
