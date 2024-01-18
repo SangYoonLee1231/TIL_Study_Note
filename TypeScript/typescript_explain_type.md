@@ -167,11 +167,17 @@ const x = (a: number, b: number) => a + b;
       } = event;
       setValue(value);
     };
+
     /* 주목 */
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       console.log("hello", value);
     };
+
+    const onClick = (event : React.MouseEvent<HTMLButtonElement>) => {
+      event.preventDefault();
+      const.log("button is clicked");
+    }
 
     return (
       <div>
@@ -184,11 +190,21 @@ const x = (a: number, b: number) => a + b;
           />
           <button>Log in</button>
         </form>
+
+        <button onClick={onClick}>click me</button>
       </div>
     );
   }
 
   export default App;
   ```
+
+<br/>
+
+- React 내의 모든 이벤트들에 관해 알고 싶으면 React 공식문서의 <strong><a href="https://reactjs.org/docs/events.html">SyntheticEvent</a></strong>라는 가이드를 참고하면 된다.
+
+- React는 자바스크립트의 실제 이벤트를 넘겨주는 것이 아니라 React 버전의 이벤트인 SyntheticEvent를 주는 것이다.
+
+  - (React가 어는 다른 방식으로 이벤트들을 최적화할 수 있음)
 
 <br/><br/>
