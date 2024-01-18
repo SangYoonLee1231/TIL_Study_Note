@@ -36,9 +36,8 @@ const x = (a: number, b: number) => a + b;
   const sayHello = (playerObj: PlayerShape) =>
     `Hello ${playerObj.name}. You are ${playerObj.age} yeats old.`;
 
-  sayHello({name: "SangYoonLee", age: 25});
-  sayHello({name: "SangYoonLee", age: 25,  hello: 1}); // 에러 발생!
-  sayHello({name: "SangYoonLee", age: "25"}, hello: 1); // 에러 발생!
+  sayHello({ name: "SangYoonLee", age: 25 });
+  sayHello({ name: "SangYoonLee", age: "25" }); // 에러 발생!
   ```
 
 - 실제 React 코드 예시를 살펴보자.
