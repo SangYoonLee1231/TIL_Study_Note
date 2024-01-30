@@ -317,24 +317,24 @@
 
 <!-- #### ⌨️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_about_all.md">Git - 오픈소스 이론부터 실전까지 총 정리 (오픈소스SW 수업 내용)</a> -->
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_command.md">명령어 정리 (터미널, 깃)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_manage_my_repository.md">Git - 깃으로 자신의 레포지토리 (Repository) 관리하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_branch.md">Git - 깃으로 Branch (브랜치) 생성하여 협업하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_conflict.md">Git - 깃으로 Branch (브랜치) 생성하여 협업하기 심화 (+ 오류 해결하기)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting.md">Git - CRA를 통해 팀 프로젝트 세팅하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_project_setting_personal.md">Git - (CRA 없이) 개인 프로젝트 직접 세팅하기</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_peer_review.md">Git - Peer Review</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_rebase.md">Git - Rebase를 통해 커밋 하나로 압축하기</a>
-- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Git/git_piece_info.md">Git - 조각 지식 모음</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_command.md">명령어 정리 (터미널, 깃)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_manage_my_repository.md">Git - 깃으로 자신의 레포지토리 (Repository) 관리하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_branch.md">Git - 깃으로 Branch (브랜치) 생성하여 협업하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_conflict.md">Git - 깃으로 Branch (브랜치) 생성하여 협업하기 심화 (+ 오류 해결하기)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_project_setting.md">Git - CRA를 통해 팀 프로젝트 세팅하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_project_setting_personal.md">Git - (CRA 없이) 개인 프로젝트 직접 세팅하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_peer_review.md">Git - Peer Review</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_rebase.md">Git - Rebase를 통해 커밋 하나로 압축하기</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_piece_info.md">Git - 조각 지식 모음</a>
 
 ### ◻ UI, UX 및 웹 디자인 (Web Design)
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_basic.md">웹 디자인의 기초 - 레이아웃</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Web_Design/web_design_tip.md">웹 디자인 Tips</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Web_Design/web_design_basic.md">웹 디자인의 기초 - 레이아웃</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Web_Design/web_design_tip.md">웹 디자인 Tips</a>
 
 ### ◻ 아두이노 (Arduino)
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Arduino/arduino_introduction.md">아두이노의 학습 목적 및 소개</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Arduino/arduino_introduction.md">아두이노의 학습 목적 및 소개</a>
 
 <br/>
 
