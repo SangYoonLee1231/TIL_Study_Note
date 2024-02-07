@@ -6,9 +6,9 @@
 
 ### 목차
 
-- <a href="">동기 처리와 비동기 처리</a>
-  - <a href="">⭐️ 동기 vs 비동기 (암기용 키워드)</a>
-- <a href="">이벤트 루프와 태스크 큐</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous.md#%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC%EC%99%80-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC">동기 처리와 비동기 처리</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous.md#%EF%B8%8F-%EB%8F%99%EA%B8%B0-vs-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%95%94%EA%B8%B0%EC%9A%A9-%ED%82%A4%EC%9B%8C%EB%93%9C">⭐️ 동기 vs 비동기 (암기용 키워드)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EC%99%80-%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90">이벤트 루프와 태스크 큐</a>
   <!-- - <a href=""></a> -->
   <!-- - <a href=""></a> -->
 
