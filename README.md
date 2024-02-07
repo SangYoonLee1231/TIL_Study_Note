@@ -75,7 +75,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_time_function.md">JavaScript - 시간과 관련된 함수 및 객체 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)</a>
 <!-- - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_execution_context.md">JavaScript - 실행 컨텍스트 (Execution Context) -->
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous_and_promise.md">JavaScript - 비동기 프로그래밍 (Execution Context) 그리고 Promise
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous.md">JavaScript - 비동기 프로그래밍 (Execution Context)
 - 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_method_list.md">JavaScript - 내장 메소드 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
 <!-- - <a href=""></a> -->
