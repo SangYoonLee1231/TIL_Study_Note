@@ -61,6 +61,9 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/about_javascript.md">JavaScript 소개 (By MDN 문서)</a>
 - <a href="">JavaScript의 역사</a> (준비 중)
+
+#### JavaScript 기초
+
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/html_javascript.md">JavaScript 통해 HTML 요소에 접근하기 + HTML 요소 생성해 삽입하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_basic.md">JavaScript 기본 1 - 사전 지식 약점 포인트</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_basic2.md">JavaScript 기본 2 - 변수와 자료형, 상호작용, 형 변환</a>
@@ -74,9 +77,13 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_time_function.md">JavaScript - 시간과 관련된 함수 및 객체 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous.md">JavaScript - 비동기 프로그래밍 (Execution Context)
 - 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_method_list.md">JavaScript - 내장 메소드 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
+
+#### JavaScript 심화
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_asynchronous.md">JavaScript - 비동기 프로그래밍 (Execution Context)
+
   <!-- - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_execution_context.md">JavaScript - 실행 컨텍스트 (Execution Context) -->
   <!-- - <a href=""></a> -->
 
