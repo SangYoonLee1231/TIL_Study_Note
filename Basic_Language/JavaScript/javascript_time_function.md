@@ -1,4 +1,5 @@
-# JavaScript - 시간과 관련된 함수 및 객체     
+# JavaScript - 시간과 관련된 함수 및 객체
+
 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)
 
 <br/>
@@ -9,29 +10,28 @@
 
 ### 목차
 
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#setinterval-%ED%95%A8%EC%88%98"><code>setInterval</code> 함수</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#settimeout-%ED%95%A8%EC%88%98"><code>setTimeout</code> 함수</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#date-%EA%B0%9D%EC%B2%B4"><code>Date</code> 객체</a>
-    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-date-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EB%82%B4%EC%9E%A5-%ED%95%A8%EC%88%98">대표적인 <code>Date</code> 객체의 내장 함수</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%99%9C%EC%9A%A9">활용</a> 
-    - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%A0%84%EC%9E%90-%EC%8B%9C%EA%B3%84-%EB%A7%8C%EB%93%A4%EA%B8%B0">현재 시간을 실시간으로 알려주는 전자 시계 만들기</a>
-
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#setinterval-%ED%95%A8%EC%88%98"><code>setInterval</code> 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#settimeout-%ED%95%A8%EC%88%98"><code>setTimeout</code> 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#date-%EA%B0%9D%EC%B2%B4"><code>Date</code> 객체</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-date-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EB%82%B4%EC%9E%A5-%ED%95%A8%EC%88%98">대표적인 <code>Date</code> 객체의 내장 함수</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%99%9C%EC%9A%A9">활용</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/JavaScript/javascript_time_function.md#%ED%98%84%EC%9E%AC-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EC%A0%84%EC%9E%90-%EC%8B%9C%EA%B3%84-%EB%A7%8C%EB%93%A4%EA%B8%B0">현재 시간을 실시간으로 알려주는 전자 시계 만들기</a>
 
 <br/><br/>
 
 ## <code>setInterval</code> 함수
 
-- <strong><code>setInterval</code> 함수</strong> : 주어진 시간을 주기로 특정 함수를 반복 호출하는 함수
+- <strong><code>setInterval</code> 함수</strong> : 주어진 시간을 주기로 특정 함수를 반복 호출하는 비동기 함수
 
-    ```javascript
-    function sayHello() {
+  ```javascript
+  function sayHello() {
     console.log("hello");
-    }
+  }
 
-    setInterval(sayHello, 5000);
-    ```
+  setInterval(sayHello, 5000);
+  ```
 
-    - <code>setInterval(호출할 함수 이름, 반복 시간 (ms 단위))</code>
+  - <code>setInterval(호출할 함수 이름, 반복 시간 (ms 단위))</code>
 
 <br/>
 
@@ -39,30 +39,30 @@
 
 - 따라서 프로그램이 시작되자마자 함수가 호출되도록 하려면, 호출할 함수를 <code>setInterval</code> 함수 앞에 따로 선언해주어야 한다.
 
-    ```javascript
-    function sayHello() {
+  ```javascript
+  function sayHello() {
     console.log("hello");
-    }
+  }
 
-    sayHello(); // 따로 선언해주어야 한다.
-    setInterval(sayHello, 5000);
-    ```
+  sayHello(); // 따로 선언해주어야 한다.
+  setInterval(sayHello, 5000);
+  ```
 
 <br/><br/>
 
 ## <code>setTimeout</code> 함수
 
-- <strong><code>setTImeout</code> 함수</strong> : 주어진 시간이 흐른 후 특정 함수를 한 번 호출하는 함수
+- <strong><code>setTImeout</code> 함수</strong> : 주어진 시간이 흐른 후 특정 함수를 한 번 호출하는 비동기 함수
 
-    ```javascript
-    function sayHello() {
+  ```javascript
+  function sayHello() {
     console.log("hello");
-    }
+  }
 
-    setTimeout(sayHello, 5000);
-    ```
+  setTimeout(sayHello, 5000);
+  ```
 
-    - <code>setTimeout(호출할 함수 이름, 지연 시간 (ms 단위))</code>
+  - <code>setTimeout(호출할 함수 이름, 지연 시간 (ms 단위))</code>
 
 <br/><br/>
 
@@ -72,12 +72,13 @@
 
 - Date 객체는 현재 시간에 대한 정보를 담고 있다.
 
-    ```javascript
-    new Date()
-    ```
-    ```
-    Wed Jul 06 2022 21:31:02 GMT+0900 (한국 표준시)
-    ```
+  ```javascript
+  new Date();
+  ```
+
+  ```
+  Wed Jul 06 2022 21:31:02 GMT+0900 (한국 표준시)
+  ```
 
 <br/>
 
@@ -105,105 +106,107 @@
 
 - <strong>Step 1</strong> > <code>Date</code>객체와 <code>setInterval()</code>함수를 활용하여 기능 구현하기
 
-    - index.html
+  - index.html
 
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                ...
-            </head>
-            <body>
-                ...
-                <h2 id="clock">00:00:00</h2>
-                ...
-                <script src="js/greetings.js" defer></script>
-                <script src="js/clock.js" defer></script>
-            </body>
-        </html>
-        ```
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        ...
+      </head>
+      <body>
+        ...
+        <h2 id="clock">00:00:00</h2>
+        ...
+        <script src="js/greetings.js" defer></script>
+        <script src="js/clock.js" defer></script>
+      </body>
+    </html>
+    ```
 
-    - clock.js
+  - clock.js
 
-        ```javascript
-        const clock = document.querySelector("h2#clock");
+    ```javascript
+    const clock = document.querySelector("h2#clock");
 
-        function getClock() {
-            const date = new Date();
-            const hour = date.getHours();
-            const min = date.getMinutes();
-            const sec = date.getSeconds();
-            clock.innerText = `${hour}:${min}:${sec}`;
-        }
+    function getClock() {
+      const date = new Date();
+      const hour = date.getHours();
+      const min = date.getMinutes();
+      const sec = date.getSeconds();
+      clock.innerText = `${hour}:${min}:${sec}`;
+    }
 
-        getClock();
-        setInterval(getClock, 1000);
-        ```
+    getClock();
+    setInterval(getClock, 1000);
+    ```
 
-    - <strong>문제점</strong> : 숫지가 한 자리일 때 한 자리의 공간만 표시해준다. ex) 17:01:8
+  - <strong>문제점</strong> : 숫지가 한 자리일 때 한 자리의 공간만 표시해준다. ex) 17:01:8
 
 <br/>
 
 - <strong>Step 2</strong> > <code>padStart()</code> 함수를 추가하여 자리 수 맞추기 (Step 1 문제점 해결)
 
-    - <code>padStart()</code> 함수 : 문자열 앞에 새 문자열을 삽입하여, 문자열을 원하는 길이로 만드는 함수
+  - <code>padStart()</code> 함수 : 문자열 앞에 새 문자열을 삽입하여, 문자열을 원하는 길이로 만드는 함수
 
-        - <code>"문자열".padStart(원하는 문자열 길이, "짧을 경우 앞에 삽입할 문자열")</code>
+    - <code>"문자열".padStart(원하는 문자열 길이, "짧을 경우 앞에 삽입할 문자열")</code>
 
-        <br/>
+      <br/>
 
-        ```javascript
-        "1".padStart(2, "0");
-        ```
-        ```
-        "01"
-        ```
+    ```javascript
+    "1".padStart(2, "0");
+    ```
 
-        ```javascript
-        "12".padStart(2, "0");
-        ```
-        ```
-        "12"
-        ```
+    ```
+    "01"
+    ```
+
+    ```javascript
+    "12".padStart(2, "0");
+    ```
+
+    ```
+    "12"
+    ```
 
     <br/>
 
-    - <strong>코드</strong>
+  - <strong>코드</strong>
 
-    - index.html
+  - index.html
 
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                ...
-            </head>
-            <body>
-                ...
-                <h2 id="clock">00:00:00</h2>
-                ...
-                <script src="js/greetings.js" defer></script>
-                <script src="js/clock.js" defer></script>
-            </body>
-        </html>
-        ```
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        ...
+      </head>
+      <body>
+        ...
+        <h2 id="clock">00:00:00</h2>
+        ...
+        <script src="js/greetings.js" defer></script>
+        <script src="js/clock.js" defer></script>
+      </body>
+    </html>
+    ```
 
-    - clock.js
+  - clock.js
 
-        ```javascript
-        const clock = document.querySelector("h2#clock");
+    ```javascript
+    const clock = document.querySelector("h2#clock");
 
-        function getClock() {
-            const date = new Date();
+    function getClock() {
+      const date = new Date();
 
-            // 숫자로 반환되기 때문에, 문자열로 형변환 후 padStart() 함수를 적용해줘야 한다.
-            const hour = String(date.getHours()).padStart(2, "0");
-            const min = String(date.getMinutes()).padStart(2, "0");
-            const sec = String(date.getSeconds()).padStart(2, "0");
+      // 숫자로 반환되기 때문에, 문자열로 형변환 후 padStart() 함수를 적용해줘야 한다.
+      const hour = String(date.getHours()).padStart(2, "0");
+      const min = String(date.getMinutes()).padStart(2, "0");
+      const sec = String(date.getSeconds()).padStart(2, "0");
 
-            clock.innerText = `${hour}:${min}:${sec}`;
-        }
+      clock.innerText = `${hour}:${min}:${sec}`;
+    }
 
-        getClock();
-        setInterval(getClock, 1000);
-        ```
+    getClock();
+    setInterval(getClock, 1000);
+    ```
