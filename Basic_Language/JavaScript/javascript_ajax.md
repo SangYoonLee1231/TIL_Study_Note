@@ -43,4 +43,86 @@
 
 ## JSON
 
+- 자바스크립트에 종속되지 않는 언어 독립형 텍스트 데이터 포멧이다.
+
+- 클라이언트와 서버 간의 HTTP 통신에서 사용한다.
+
+<br/>
+
+### JSON 표기 방식
+
+- JSON은 키와 값으로 구성되어 있다.
+
+  ```json
+  {
+    "name": "Lee Sang Yoon",
+    "age": 26,
+    "grade": 4,
+    "hobby": ["room escape", "travel", "watching webtoons"]
+  }
+  ```
+
+- JSON의 키는 반드시 큰따옴표로 묶어야 한다.
+
+- JSON의 값은 객체 리터럴돠 같은 표기법을 그대로 사용한다. (문자열은 반드시 큰따옴표로 묶어야 한다.)
+
+- <주의> 큰따옴표 대신 작은따옴표는 사용할 수 없다.
+
+<br/>
+
+### JSON.stringify와 JSON.parse
+
+- JSON.stringify는 JSON을 문자열로 변환한다.
+
+- 클라이언트에서 서버로 객체를 전송하려면 객체를 문자열화 해야한다. 이를 직렬화(Serializing)라 한다.
+
+  ```js
+  const obj = {
+    name: "Lee Sang Yoon",
+    age: 26,
+    grade: 4,
+    hobby: ["room escape", "travel", "watching webtoons"],
+  };
+
+  const json = JSON.stringify(obj);
+
+  console.log(typeof json);
+  // string
+
+  console.log(json);
+  // {"name": "Lee Sang Yoon","age": 26,"grade": 4,"hobby": ["room escape", "travel", "watching webtoons"]}
+  ```
+
+<br/>
+
+- JSON.parse는 반대로 JSON 포멧의 문자열을 객체로 변환한다.
+
+- 서버에서 클라이언트로 전송된 JSON 문자열 데이터를 객체로 변환해주어야 사용할 수 있다. 이 과정을 역정렬화(Deserializing)라 한다.
+
+  ```js
+  const obj = {
+    name: "Lee Sang Yoon",
+    age: 26,
+    grade: 4,
+    hobby: ["room escape", "travel", "watching webtoons"],
+  };
+
+  const json = JSON.stringify(obj);
+  const parsed = JSON.parse(json);
+
+  console.log(typeof parsed);
+  // object
+
+  console.log(parsed);
+  // {"name": "Lee Sang Yoon","age": 26,"grade": 4,"hobby": ["room escape", "travel", "watching webtoons"]}
+  ```
+
+<br/><br/>
+
+## XMLHttpRequest
+
+- 자바스크립트를 통해 HTTP 요청을 전송하려면 `XMLHttpRequest` 객체를 사용한다.
+
+- Web API인 `XMLHttpRequest` 객체는 HTTP 요청 전송과 HTTP 응답 수신을 위한 다양한 메서드와 프로퍼티를 제공한다.
+
 <br/>
