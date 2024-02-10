@@ -6,8 +6,10 @@
 
 ### 목차
 
-  <!-- - <a href=""></a> -->
-  <!-- - <a href=""></a> -->
+- <a href="">Ajax</a>
+- <a href="">JSON</a>
+- <a href="">XMLHttpRequest</a>
+<!-- - <a href=""></a> -->
 
 <br/><br/>
 
@@ -124,5 +126,98 @@
 - 자바스크립트를 통해 HTTP 요청을 전송하려면 `XMLHttpRequest` 객체를 사용한다.
 
 - Web API인 `XMLHttpRequest` 객체는 HTTP 요청 전송과 HTTP 응답 수신을 위한 다양한 메서드와 프로퍼티를 제공한다.
+
+<br/>
+
+### HTTP 요청 전송
+
+#### 순서
+
+1. `XMLHttpRequest` 객체 생성 - By `XMLHttpRequest` 생성자 함수
+
+2. HTTP 요청 초기화 - By `XMLHttpRequest.prototype.open` 메서드
+
+3. 특정 HTTP 요청의 헤더 값 설정 - By `XMLHttpRequest.prototype.setRequestHeader` 메서드
+
+4. HTTP 요청 전송 - By `XMLHttpRequest.prototype.send` 메서드
+
+```js
+// `XMLHttpRequest` 객체 생성
+const xhr = new XMLHttpRequest();
+
+// HTTP 요청 초기화
+xhr.open("GET", "/users");
+
+// 특정 HTTP 요청의 헤더 값 설정
+xhr.setRequestHeader("content-type", "application/json");
+
+// HTTP 요청 전송
+xhr.send();
+```
+
+<br/>
+
+#### `XMLHttpRequest.prototype.open` 메서드
+
+- open 메서드는 서버에 전송할 HTTP 요청을 초기화한다.
+
+```js
+xhr.open(method, url[, async]);
+```
+
+- `method`: HTTP 요청 메서드 ("GET", "POST", "PUT", "DELETE" 등)
+
+- `url`: HTTP 요청을 전송할 URL
+
+- `async`: 옵션값, 비동기 요청 여부, 기본값 = true, 비동기 방식으로 동작
+
+<br/>
+
+#### HTTP 요청 메서드
+
+- **GET**: 모든/특정 리소스 취득 (index/retrieve)
+
+- **POST**: 리소스 생성 (create)
+
+- **PUT**: 리소스 전체 교체 (replace)
+
+- **PATCH**: 리소스의 일부 수정 (modify)
+
+- **DELETE**: 모든/특정 리소스 삭제 (delete)
+
+<br/>
+
+#### `XMLHttpRequest.prototype.send` 메서드
+
+- send 메서드는 open 메서드로 초기화된 HTTP 요청을 서버에 전송한다.
+
+- GET, POST 요청 매서드에 따라 서버로 전송하는 데이터의 전송 방식에 차이가 있다.
+
+  - GET 요청 메서드: 데이터를 URL의 일부인 쿼리 문자열(Query String)로 서버에 전송한다.
+
+  - POST 요청 메서드: 데이터(페이로드)를 요청 몸체(request body)에 담아 전송한다.
+
+- send 메서드에는 요청 몸체에 담아 전송할 데이터(페이로드)를 인수로 전달할 수 있다.
+
+- 이때 페이로드가 객체인 경우 반드시 `JSON.stringify` 메서드를 통해 직렬화 헌 다음 전달해야 한다.
+
+  ```js
+  const obj = {
+    name: "Lee Sang Yoon",
+    age: 26,
+    grade: 4,
+    hobby: ["room escape", "travel", "watching webtoons"],
+  };
+
+  const json = JSON.stringify(obj);
+
+  xhr.send(json);
+  ```
+
+- HTTP 요청 메서드가 GET인 경우 send 메서드에 페이로드로 전달한 인수는 무시되고 요청 몸체는 null로 설정된다.
+
+<br/>
+
+#### `XMLHttpRequest.prototype.setRequestHeader` 메서드
 
 <br/>
