@@ -189,13 +189,13 @@ xhr.open(method, url[, async]);
 
 #### `XMLHttpRequest.prototype.send` 메서드
 
-- send 메서드는 open 메서드로 초기화된 HTTP 요청을 서버에 전송한다.
+- send 메서드는 **open 메서드로 초기화된 HTTP 요청을 서버에 전송한다.**
 
 - GET, POST 요청 매서드에 따라 서버로 전송하는 데이터의 전송 방식에 차이가 있다.
 
-  - GET 요청 메서드: 데이터를 URL의 일부인 쿼리 문자열(Query String)로 서버에 전송한다.
+  - **GET 요청 메서드**: 데이터를 URL의 일부인 쿼리 문자열(Query String)로 서버에 전송한다.
 
-  - POST 요청 메서드: 데이터(페이로드)를 요청 몸체(request body)에 담아 전송한다.
+  - **POST 요청 메서드**: 데이터(페이로드)를 요청 몸체(request body)에 담아 전송한다.
 
 - send 메서드에는 요청 몸체에 담아 전송할 데이터(페이로드)를 인수로 전달할 수 있다.
 
@@ -219,5 +219,33 @@ xhr.open(method, url[, async]);
 <br/>
 
 #### `XMLHttpRequest.prototype.setRequestHeader` 메서드
+
+- setRequestHeader 메서드는 **특정 HTTP 요청의 헤더 값을 설정한다.**
+
+- 반드시 open 메서드 호출 이후에 호출해야 한다.
+
+- **HTTP 요청 헤더**
+
+  - `Content-type`: Request Body에 담아 전송할 데이터의 MIME 타입 정보를 표현한다. MIME 타입은 서버로부터 받은 데이터가 어떤 종류의 데이터인지를 나타낸다.
+
+    ```js
+    xhr.setRequestHeader("content-type", "application/json");
+    ```
+
+  - `Accept`: 클라이언트가 서버에게 어떤 미디어 타입이나 데이터 형식을 받을 수 있는지를 나타낸다.
+
+    ```js
+    xhr.setRequestHeader("accept", "application/json");
+    ```
+
+    - 만약 Accept 헤더를 설정하지 않으면, send 메서드가 호출될 때 Accept 헤더가 */*로 전송된다.
+
+- **MIME (Multipurpose Internet Mail Extensions) 타입**
+
+  - `text`: text/plain, text/html, text/css, text/javascript
+
+  - `application`: application/json, application/x-www-form-urlencode
+
+  - `multipart`: multipart/formed-data
 
 <br/>
