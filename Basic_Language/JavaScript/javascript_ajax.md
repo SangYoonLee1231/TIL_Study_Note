@@ -249,3 +249,7 @@ xhr.open(method, url[, async]);
   - `multipart`: multipart/formed-data
 
 <br/>
+
+### HTTP 응답 처리
+
+<br/>
