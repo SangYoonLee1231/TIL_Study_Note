@@ -142,7 +142,7 @@
 
 - ✨ <strong>modifier 함수를 통해 state(값)을 변경하면 컴포넌트가 새 값을 가지고 재생성 (리랜더링) 된다.</strong>
 
-  이것이 React에서 변수 대신 <strong>State를 사용하는 이유</strong>이다.
+  이것이 React에서 <strong>변수 대신 State를 사용하는 이유</strong>이다.
 
 <br/><br/><br/>
 
