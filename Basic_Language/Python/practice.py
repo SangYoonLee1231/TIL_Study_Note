@@ -1,14 +1,25 @@
-def solution(arr):
-    exist = []
-    for i in range(len(arr)):
-        for elem in exist:
-            if arr[i] == elem:
-                print(str(i) + "break")
-                break
-        print(str(i) + "append")
-        exist.append(arr[i])
+n = int(input())
 
-    return exist
+grid = [
+    [0] * n
+    for _ in range(n)
+]
 
+flag = True
+num = 1
 
-print(solution([1, 1, 3, 3, 0, 1, 1]))
+for i in range(n - 1, -1, -1):
+    if flag:
+        for j in range(n - 1, -1, -1):
+            grid[j][i] = num
+    else:
+        for j in range(n):
+            grid[j][i] = num
+
+    num += 1
+    flag = not flag
+
+for i in range(n):
+    for j in range(n):
+        print(grid[i][j], end=" ")
+    print()
