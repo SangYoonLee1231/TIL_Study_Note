@@ -43,10 +43,12 @@ inc(); // 3
 
 <br/>
 
-## TypeScript로 클로저 구햔하기
+## TypeScript로 클로저 구현하기
 
 ```ts
 class MyObj {
   private saveNumber: number;
 }
 ```
+
+<br/>
