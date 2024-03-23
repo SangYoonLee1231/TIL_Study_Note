@@ -9,6 +9,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md#spa--routing">SPA & Routing</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md#spa-single-page-application-%EC%9D%98-%EA%B0%9C%EB%85%90">SPA (Single Page Application) 의 개념</a>
+  - <a href="">SPA (Single Page Application) 방식을 사용하는 이유</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md#routing%EC%9D%98-%EA%B0%9C%EB%85%90">Routing의 개념</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_spa_routing.md#routing---by-browserrouter-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">Routing - By <code>BrowserRouter</code> 컴포넌트</a>
@@ -34,11 +35,23 @@
 
 <br/>
 
+### SPA (Single Page Application) 방식을 사용하는 이유
+
+- 전통적인 다중 페이지 방식의 웹 애플리케이션과 달리, SPA 방식은 페이지를 새로고침하지 않고 동적으로 콘텐츠를 업데이트한다.
+
+- 이로 인해 SPA 방식은 화면이 지연되지 않고 빠르게 반응하는 웹 애플리케이션을 만들 수 있게 된다.
+
+- SPA 방식이 화면이 지연되지 않는 이유 4가지
+
+  : 비동기적으로 데이터를 로딩, 부분적으로 페이지를 갱신, 로컬에서 데이터를 캐싱 및 관리, 클라이언트 측에서 렌더링 최적화 가능
+
+<br/>
+
 ### Routing의 개념
 
-- SPA에서 경로에 따라 다른 페이지를 브라우저 화면에 보여주는 것을 Routing이라 한다.
+- SPA에서 <strong>경로에 따라 다른 페이지를 브라우저 화면에 보여주는 것</strong>을 Routing이라 한다.
 
-- React 자체에는 Routing 기능이 없기 때문에, 대신 React-Router라는 라이브러리를 별도로 설치해주어야 한다.
+- React 자체에는 Routing 기능이 없기 때문에, 대신 <strong>React-Router</strong>라는 라이브러리를 별도로 설치해주어야 한다.
 
   - React-Router 설치 명령어 : <code>npm install react-router-dom</code>
 
