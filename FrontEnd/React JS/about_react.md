@@ -1,6 +1,6 @@
 # React JS 소개 및 설치
 
-> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료
+> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료, <a href="https://fastcampus.co.kr/dev_academy_kmt2">김민태의 프론트엔드 아카데미 2강<a/>」
 
 <br/>
 
@@ -10,7 +10,8 @@
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD">React 탄생 배경</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EB%9E%80">React JS란?</a>
-  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90">React의 핵심 개념</a>
+  - <a href="">React의 핵심 개념 및 특징</a>
+  - <a href="">React에서 가상 DOM을 만들게 된 배경</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 
@@ -37,11 +38,11 @@
 
 ### React JS란?
 
-- React JS (혹은 React)는 UI를 구축하고 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>프레임워크 (Framework) </strong>이자 <strong>라이브러리 (Library) </strong>이다.
+- React JS (혹은 React)는 <strong>UI를 구축</strong>하고 어플리케이션이 <strong>interactive</strong>하도록 만들어주는 <strong>프레임워크 (Framework)</strong>이자 <strong>라이브러리 (Library)</strong>이다.
 
   <img src="img/react-is-both.png" width="650">
 
-  - React 는 UI를 만드는 기능만을 제공해주기에, <strong>라이브러리</strong> 하나로만 분류하는 관점도 존재한다.
+  - React는 보통 <strong>프레임워크<.strong>로 분류되나, UI를 만드는 기능만을 제공해주기에 라이브러리 하나로만 분류하는 관점도 존재한다.
 
 <br/>
 
@@ -59,21 +60,45 @@
 
   - (CSR에 대한 자세한 내용은 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/NextJS/ssr_vs_csr.md">여기</a>를 참고)
 
-<br/>
+<br/><br/>
 
-### <strong>React의 핵심 개념</strong>
+### <strong>React의 핵심 개념 및 특징</strong>
 
 - Angular처럼 재사용이 가능한 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_jsx.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">컴포넌트(Component)</a>를 조합하여 웹사이트(앱)를 만드는데 도움을 주는 라이브러리다.
 
   - Angular 프레임워크는 데이터의 흐름을 파악하기 어려운 문제가 있으므로, 이를 해결하기 위해 페이스북에서 React라는 새 프레임워크를 개발하였다.
 
-- 가상 DOM을 생성하고, render시 이를 실제 DOM과 비교하여 변화된 부분만 찾아 앱에 반영한다.
+- <strong>가상 DOM을 생성하고, render시 이를 실제 DOM과 비교하여 변화된 부분만 찾아 앱에 반영한다.</strong>
 
-- 일방향적인 데이터 흐름을 보여준다.
+- React는 일방향적인 데이터 흐름을 보여준다.
 
   - state ⇒ component ⇒ 가상 DOM ⇒ 실제 DOM과 비교 ⇒ 화면에 그리기
 
 - React는 UI 라이브러리에 불과하다. 하지만 이로 인해 오히려 다른 플랫폼에서도 React를 활용할 수 있다.
+
+<br/><br/>
+
+### <strong>React에서 가상 DOM을 만들게 된 배경</strong>
+
+- React는 가상 DOM을 통해 개발자가 직접 DOM을 조작하지 않도록 하는 개발 방식을 택하였다.
+
+- 그 이유는, DOM API는 너무나 많은 기능을 재공해주는 방대한 API이지만, 웹 애플리케이션 개발에 최적화된 형태로 되어있진 않기 때문이다.
+
+- 이로 인해 애플리케이션이 복잡해질수록 DOM API를 가지고 UI를 만들 때 더 많은 문제들이 발생할 수 있다. (아래는 DOM API의 문제점이다.)
+
+  - DOM은 일관적이지 않다.
+
+  - DOM은 라이브 오브젝트라는 컨셉을 가지고 있어 어떤 API는 DOM 객체를 참조하지만(NodeList), 어떤 API는 DOM 객체를 참조하지 않는다(HTMLCollection).
+
+  - 또한, 엄청나게 다양한 브라우저로 인한 크로스 브라우징 이슈도 개발자에게 고통을 주는 중대한 요소이다.
+
+<br/>
+
+- 그래서 React팀은 DOM을 다루기 위해 과감하게 DOM을 쓰지 말자는 결정을 내렸다.
+
+- 대신 DOM의 모조품인 '가상 DOM'을 만들어, <strong>DOM에 대한 직접적인 조작은 React 쪽에서 감당하고, 개발자에게는 훨씬 다루기 편한 가상 DOM을 주어</strong> 더 쉽고 편리한 개발 환경을 제공해주었다.
+
+- 이렇게 '다루기 까다로운 무언가가 있다면, 더 다루기 쉬운 포멧으로 바꿔서 다루자'는 아이디어는 소프트웨어 개발에 많이 사용되는 중요한 개념이다.
 
 <br/><br/><br/>
 
