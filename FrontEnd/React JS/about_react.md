@@ -6,12 +6,12 @@
 
 ### 목차
 
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD">React JS의 개녕과 탄생 배경</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD">React JS의 개념과 탄생 배경</a>
 
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD">React 탄생 배경</a>
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-js%EB%9E%80">React JS란?</a>
-  - <a href="">React의 핵심 개념 및 특징</a>
-  - <a href="">React에서 가상 DOM을 만들게 된 배경</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/about_react.md#react%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95">React의 핵심 개념 및 특징</a>
+  - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/about_react.md#react%EC%97%90%EC%84%9C-%EA%B0%80%EC%83%81-dom%EC%9D%84-%EB%A7%8C%EB%93%A4%EA%B2%8C-%EB%90%9C-%EB%B0%B0%EA%B2%BD">React에서 가상 DOM을 만들게 된 배경</a>
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/about_react.md#react-%EC%84%A4%EC%B9%98">React 설치</a>
 
