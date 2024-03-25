@@ -28,6 +28,10 @@
 
 <br/>
 
+#### <a href="https://github.com/SangYoonLee1231/ERROR-Note">📒 ERROR NOTE - 개발 중 마주했던 🚨에러🚨들을 어떻게 해결했는지 간단히 기록하는 공간</a>
+
+<br/>
+
 ## 📌 기본 언어
 
 - <strong><a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/what-is-programming.md">프로그래밍이란?</a></strong>
