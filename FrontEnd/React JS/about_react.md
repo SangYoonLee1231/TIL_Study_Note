@@ -42,7 +42,7 @@
 
   <img src="img/react-is-both.png" width="650">
 
-  - React는 보통 <strong>프레임워크<.strong>로 분류되나, UI를 만드는 기능만을 제공해주기에 라이브러리 하나로만 분류하는 관점도 존재한다.
+  - React는 보통 <strong>프레임워크</strong>로 분류되나, UI를 만드는 기능만을 제공해주기에 라이브러리 하나로만 분류하는 관점도 존재한다.
 
 <br/>
 
