@@ -1,6 +1,6 @@
 # React JS 소개 및 설치
 
-> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료, <a href="https://fastcampus.co.kr/dev_academy_kmt2">김민태의 프론트엔드 아카데미 2강<a/>」
+> 참고 자료 : <a href="https://nomadcoders.co/react-for-beginners">노마드 코더 - React JS로 영화 웹서비스 만들기</a>, 부트캠프 학습 자료, <a href="https://fastcampus.co.kr/dev_academy_kmt2">김민태의 프론트엔드 아카데미 2강<a/>
 
 <br/>
 
