@@ -100,6 +100,8 @@
 
 - 이렇게 '다루기 까다로운 무언가가 있다면, 더 다루기 쉬운 포멧으로 바꿔서 다루자'는 아이디어는 소프트웨어 개발에 많이 사용되는 중요한 개념이다.
 
+(좀 더 자세한 배경 내용은 <a href="https://github.com/SangYoonLee1231/MinTae_React_Redux/tree/main/lecture_note">여기</a>를 참고하자.)
+
 <br/><br/><br/>
 
 ## React JS 설치
