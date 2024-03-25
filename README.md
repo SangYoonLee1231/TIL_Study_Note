@@ -18,6 +18,8 @@
 
 - <strong>매일 꾸준히</strong> 기록하도록 노력한다.
 
+<br/>
+
 ### ✔ TIL 작성 규칙
 
 - 다른 사람들도 읽었을 때 이해하기 쉽도록, 최대한 깔끔하고 자세히 기록한다.
@@ -27,8 +29,6 @@
 ---
 
 <br/><br/>
-
-#### <a href="https://github.com/SangYoonLee1231/ERROR-Note">📒 ERROR NOTE - 개발 중 마주했던 🚨에러🚨들을 어떻게 해결했는지 간단히 기록하는 공간</a>
 
 ## 📌 기본 언어
 
@@ -94,6 +94,8 @@
 <br/>
 
 ## 📌 Front-End
+
+#### <a href="https://github.com/SangYoonLee1231/ERROR-Note">📒 ERROR NOTE - 개발 중 마주했던 🚨에러🚨들을 어떻게 해결했는지 간단히 기록하는 공간</a>
 
 ### ◻ Web 상식
 
