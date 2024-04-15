@@ -49,7 +49,9 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/Python/python_call_by_assignment.md">Python - Call By Assignment</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/Python/python_scope_of_variable.md">Python - 변수 Scope (전역 변수와 지역 변수)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/Python/python_sort.md">Python - 정렬 내장 함수 <code>sort</code>, <code>sorted</code></a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/Python/python_regular_expression.md">Python - 정규표현식 (Regular Expression)</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/Python/python_piece_info.md">Python - 조각 지식 모음</a>
+<!-- - <a href=""></a> -->
 
 ### ◻ C / C# / C++
 
@@ -97,9 +99,9 @@
 
 #### <a href="https://github.com/SangYoonLee1231/ERROR-Note">📒 ERROR NOTE - 개발 중 마주했던 🚨에러🚨들을 어떻게 해결했는지 간단히 기록하는 공간</a>
 
-### ◻ Web 상식
+<!-- ### ◻ Web 상식
 
-- <a href="">CI/CD란 무엇인가?</a>
+- <a href="">CI/CD란 무엇인가?</a> -->
 <!-- - <a href=""></a> -->
 
 ### ◻ HTML
@@ -160,6 +162,12 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/NextJS/ssr_vs_csr.md">CSR vs SSR</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/NextJS/about_next_js.md">Next JS 소개</a>
   <!-- - <a href=""></a> -->
+
+### ◻ Project Setting
+
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_project_setting.md">CRA를 통해 팀 프로젝트 세팅하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_project_setting_personal.md">(CRA 없이) 개인 프로젝트 직접 세팅하기</a>
+<!-- - <a href=""></a> -->
 
 <br/>
 

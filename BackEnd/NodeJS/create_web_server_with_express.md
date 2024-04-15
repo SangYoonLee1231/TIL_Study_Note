@@ -122,6 +122,6 @@ app.get("/", function (req, res) {
 
 > ### 참고 기록
 >
-> - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신</a>
+> - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신</a>
 
 <br/>

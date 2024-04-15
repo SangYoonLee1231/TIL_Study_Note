@@ -283,28 +283,42 @@ yarn-error.log*
 
 ### Webpack 설치
 
+#### 필요 패키지 설치
+
 - <code>npx webpack serve --mode development</code> (모두 설치)
 
-- <code>npm install -D webpack-dev-server</code>
+- <code>npm install -D webpack-cli webpack-dev-server</code>
 
 - webpack 서버 띄울 시 경로 설정 바뀌어 있는지 확인 (<code>index.js</code>=><code>index.jsx</code>)
 
   ```js
   // webpack.config.js
-  const path = require("path");
+  const HtmlWebpackPlugin = require("html-webpack-plugin"); // 'html-webpack-plugin' 외부 패키지 불러오기
+  const path = require("path"); // 다른 OS 시스템에서도 문제없이 동작하도록 하기 위함
 
   module.exports = {
     entry: path.resolve(__dirname, "src/index.jsx"),
-    mode: "development",
+    mode: "development", // 개발 용도
     module: {
       rules: [
         {
-          test: /\.jsx?$/,
-          exclude: /node_modules/,
-          use: "babel-loader",
+          test: /\.jsx?$/, // 이 파일들만 babel-loader에게 입력으로 넣어줘
+          exclude: /node_modules/, // 필요없는 js 파일들은 제외
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env", "@babel/preset-react"],
+            },
+          },
         },
       ],
     },
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: "이름은 알아서 정하면 된다",
+        template: "index.html",
+      }),
+    ], // 외부 패키지 호출
     resolve: {
       extensions: [".js", ".jsx"],
     },
@@ -404,43 +418,22 @@ yarn-error.log*
 
 - <strong>config 설정</strong>
 
-  - <code>webpack.config.js</code>
-
-    ```javascript
-    module.exports = {
-      mode: "development",
-      module: {
-        rules: [
-          {
-            test: /\.(js|jsx)?$/,
-            loader: "babel-loader",
-            options: {
-              presets: ["@babel/preset-env", "@babel/preset-react"],
-            },
+  ```javascript
+  // babel.config.js
+  module.exports = {
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          targets: {
+            node: "current",
+            chrome: "79",
           },
-        ],
-      },
-      resolve: { extensions: [".js", ".jsx"] },
-    };
-    ```
-
-  - <code>babel.config.js</code>
-
-    ```javascript
-    module.exports = {
-      presets: [
-        [
-          "@babel/preset-env",
-          {
-            targets: {
-              node: "current",
-              chrome: "79",
-            },
-          },
-        ],
-        "@babel/preset-react",
+        },
       ],
-    };
-    ```
+      "@babel/preset-react",
+    ],
+  };
+  ```
 
 <br/>
