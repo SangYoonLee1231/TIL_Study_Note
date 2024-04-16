@@ -458,9 +458,15 @@ function App() {
 export default App;
 ```
 
-<br/>
+<br/><br/>
 
-### 전역 스타일링
+## 전역 스타일링
+
+### 설치
+
+```
+npm install styled-components
+```
 
 ```jsx
 // GlobalStyle.jsx (예시)
