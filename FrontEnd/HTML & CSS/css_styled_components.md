@@ -465,7 +465,7 @@ export default App;
 ### 설치
 
 ```
-npm install styled-components
+npm install styled-reset
 ```
 
 ```jsx
