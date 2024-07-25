@@ -93,7 +93,7 @@
     <!-- - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_execution_context.md">JavaScript - 실행 컨텍스트 (Execution Context) -->
     <!-- - <a href=""></a> -->
 
-#### <a href="https://superb-ranunculus-46a.notion.site/1-c779ce17ba5b4d339ef1b55b228d8024?pvs=4">자바스크립트(+TS) 개념 총 정리 (김민태 프론트엔드 아카데미 1강 - 참조사전 학습 내용 정리)</a>
+#### <a href="https://superb-ranunculus-46a.notion.site/1-c779ce17ba5b4d339ef1b55b228d8024?pvs=4">📔 자바스크립트(+TS) 개념 총 정리 (김민태 프론트엔드 아카데미 1강 - 참조사전 학습 내용 정리)</a>
 
 <br/>
 
