@@ -468,6 +468,8 @@ export default App;
 npm install styled-reset
 ```
 
+<br/>
+
 ```jsx
 // GlobalStyle.jsx (예시)
 import { createGlobalStyle } from "styled-components";
