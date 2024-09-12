@@ -58,6 +58,22 @@
 
     - 한글, 일본어, 중국어가 포함된 페이지라면 <code>UTF-8</code> 이라는 값으로 문자 인코딩을 추가해줘야 한다.
 
+  - <code>\<meta http-equiv="X-UA-Compatible" content="iIE=edge" /></code>
+
+    - 주로 Internet Explorer(IE) 브라우저에서 페이지가 호환성 모드 대신 최신 렌더링 엔진을 사용하도록 설정한다.
+
+    - <code>"IE=edge"</code>는 IE에서 최신 버전의 렌더링 모드를 강제로 적용한다는 의미이다. IE가 페이지를 구 버전 호환 모드로 렌더링하는 것을 방지하는 데 사용된다.
+
+  - <code>\<meta name="viewpoint" content="width=device-width, inital-scale=1.0" /></code>
+
+    - 반응형 웹 디자인을 구현하는 데 중요한 역할을 하는 태그이다.
+
+    - <code>name="viewport"</code>는 뷰포트 설정을 지정하며, 이후의 <code>content</code> 속성을 통해 다양한 옵션을 설정할 수 있다.
+
+    - <code>width=device-width</code>는 뷰포트의 너비를 사용자가 사용하는 장치의 화면 너비에 맞춘다는 의미이다.
+
+    - <code>initial-scale=1.0</code>은 페이지 로드 시 초기 확대/축소 비율을 1로 설정한다는 뜻으로, 화면을 기본 크기로 표시한다.
+
   - <code>\<meta content="..." name="description"></code>
 
     - Google이 검색할 때 찾는 태그. Google 검색 시 링크 창의 설명란에 해당 요소의 내용을 표시한다.
