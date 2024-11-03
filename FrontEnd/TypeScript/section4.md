@@ -2,6 +2,8 @@
 
 > 참고 자료 : <a href="https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%ED%81%AC%EA%B8%B0-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/dashboard">한 입 크기로 잘라먹는 타입스크립트(TypeScript) (By 이정환 강사님)</a>
 
+<br/>
+
 ## 함수 타입 정의 방법
 
 - 함수를 설명하는 가장 좋은 방법은 '어떤 타입의 매개변수를 받고, 어떤 타입의 결과값을 변환하는지'를 이야기하는 것이다.
