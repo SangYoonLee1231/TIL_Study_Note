@@ -153,7 +153,7 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/about_typescript.md">TypeScript 소개 및 설치</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/section1.md">TypeScript 개론</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/section2.md">TypeScript 초기세팅 및 타입 종류</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/section2.md">TypeScript 초기 세팅 및 타입 종류</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/section3.md">TypeScript 타입의 원리</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/section4.md">TypeScript - 함수와 타입</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/TypeScript/section5.md">TypeScript - 인터페이스 (Interface)</a>
