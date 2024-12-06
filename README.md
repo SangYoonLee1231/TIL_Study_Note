@@ -244,7 +244,7 @@
 
 #### 혼곰컴운 컴퓨터 구조 학습 노트
 
-- <a href="">컴퓨터 구조 시작하기</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/HonGong/1_start_computer_system.md">컴퓨터 구조 시작하기</a>
 <!-- - <a href=""></a> -->
 
 <br/>
