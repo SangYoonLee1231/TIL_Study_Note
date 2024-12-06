@@ -1,27 +1,46 @@
-case = int(input())
+n = int(input())
+
+inputs = [
+    list(input().split())
+    for _ in range(n)
+]
+
+trail = [0 for _ in range(2001)]
+
+dl, dr = [1, -1]
+mapper = {
+    "R": 1,
+    "L": -1
+}
 
 
-def check_all_same(lst):
-    flag = lst[0]
-    for elem in lst:
-        if (elem != flag):
-            return False
-    return True
+def move():
+    global trail
+
+    curr = 1000
+
+    for i in range(n):
+        x = int(inputs[i][0])
+        dir_x = inputs[i][1]
+
+        if i == 0:
+            curr += mapper[dir_x]
+        for _ in range(x):
+            trail[curr] += 1
+            curr += mapper[dir_x]
+    
+
+def check_answer():
+    global trail
+    
+    count = 0
+
+    for elem in trail:
+        if elem >= 2:
+            count += 1
+    
+    return count
 
 
-def test_case():
-    n, k = tuple(map(int, input().split()))
-    lst = list(map(int, input().split()))
-
-    for count in range(1, n + 1):
-        if check_all_same(lst):
-            return count - 1
-        # 작업 신행
-        lst.append(lst[k - 1])
-        lst.pop(0)
-
-    return -1
-
-
-for i in range(1, case + 1):
-    print(f"#{i} {test_case()}")
+move()
+print(check_answer())
