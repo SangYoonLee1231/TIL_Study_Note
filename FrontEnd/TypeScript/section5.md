@@ -102,7 +102,7 @@ const personTwo: Person2 = {
 
 ## 인터페이스 확장
 
-- 타입 별칭에는 없는데 인터페이스에사만 특별히 사용할 수 있는 독특한 기능
+- 타입 별칭에는 없는데 인터페이스에서만 특별히 사용할 수 있는 독특한 기능
 
 ```ts
 import { SourceOrigin } from "module";
