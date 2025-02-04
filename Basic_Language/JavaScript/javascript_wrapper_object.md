@@ -18,6 +18,8 @@
 
   - Object 타입은 **가변성 및 참조(reference)를 저장**한다는 특징을 가진다.
 
+<br/>
+
 - Primitive 타입은 Object 타입이 아니므로 본래 메서드나 프로퍼티를 가지고 있지 않다. 그러나 JS에서는 `string`, `number`, `boolean` 타입의 값을 마치 Object처럼 다룰 수 있다고 한다.
 
 - 이것이 가능한 이유는 자바스크립트 엔진이 **래퍼 객체(Wrapper Object)를 자동으로 생성하기 때문**이다.
@@ -28,7 +30,9 @@
 
 - `string`, `number`, `boolean` 이 3가지 타입은 각각 `String`, `Number`, `Boolean` 래퍼 객체가 존재한다.
 
-- 이 객체들은 원시 값과 관련된 메스드 및 프로퍼티를 제공하는 역할을 한다. 아래 코드를 살펴보자.
+- 이 객체들은 원시 값과 관련된 메서드 및 프로퍼티를 제공하는 역할을 한다.
+
+- 아래 코드를 살펴보자.
 
 ```js
 let str = "hello";
@@ -37,12 +41,12 @@ console.log(str.length); // 5
 console.log(str.toUpperCase()); // "HELLO"
 ```
 
-- **문자열은 원시 타입인데 어떻게 .length나 .toUpperCase()를 호출할 수 있을까?**  
+- **문자열은 원시 타입인데 어떻게 `.length`나 `.toUpperCase()`를 호출할 수 있을까?**  
   👉 **바로 래퍼 객체가 자동으로 생성되기 때문이다.**
 
 <br/>
 
-### Boolean과 Number의 래퍼 객체 예시
+### Boolean과 Number 래퍼 객체 예시
 
 ```js
 let bool1 = true;
@@ -56,7 +60,7 @@ console.log(num1.toFixed(2)); // "42.00"
 
 ## 래퍼 객체의 내부 동작 과정
 
-- 자바스크립트 엔진은 다음과 같은 과정을 거칩니다.
+- 자바스크립트 엔진은 다음과 같은 과정을 거친다.
 
 ```js
 let str = "hello"; // (1) Primitive 값 생성
@@ -124,6 +128,6 @@ if (bool2) {
 
 <br/>
 
-#### 결론: 자바스크립트가 제공하는 자동 래핑 기능만 활용하고, 직접 new 키워드로 래퍼 객체를 만드는 것은 피하는 것이 좋다!
+#### ✅ 결론: 자바스크립트가 제공하는 자동 래핑 기능만 활용하고, 직접 new 키워드로 래퍼 객체를 만드는 것은 피하는 것이 좋다!
 
 <br/>
