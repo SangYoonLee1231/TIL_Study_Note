@@ -90,54 +90,7 @@ console.log(c1.width); // 300
 
 <br/><br/>
 
-## 함수의 프로토타입
-
-- 함수도 자바스크립트에선 객체이므로, 프로토타입이 존재한다.
-
-- 함수로 객체를 만들 수 있는 방법 중, new 연산자를 통해 인스턴스 객체를 만들 수 있다.
-
-```js
-function Func() {
-  this.name = name;
-}
-
-const f = new Func("Yoon");
-
-console.log(f.name); // Yoon
-```
-
-- `Func` 함수는 객체이므로 `__proto__` 속성이 역시 존재한다.
-
-- 그리고 함수는 일반 객체와 달리 `prototype`이라고 하는 풀 네임을 갖고 있는 속성도 가지고 있다.
-
-```js
-// 위 코드에 이어서
-Func.prototype.newProperty = "Hello";
-
-console.log(f); // Yoon
-console.log9(f.newProperty); // Hello
-```
-
-- 어떻게 이러한 결과가 나올까?
-
-- 여기서 new가 하는 일은..
-
-```js
-function Func() {
-  this.name = name;
-  this.__proto__ = Func.prototype; // <- 이 일!!
-}
-```
-
-- 이렇게 new 연산자를 통해서 함수의 인스턴스 객체를 만들면 일반 객체 프로토타입을 코드로 연결시켜 놓은 것을 훨씬 더 단순하고 간편하게 객체의 상속 관계를 만들 수 있게 해준다.
-
-- 하지만 이조차도 꽤 번거롭다는 의견이 굉장이 많았기 때문에 ES6에 class 문법이 등장하였다.
-
-- 그렇지만 ES6의 class 자체도 이 동작 메커니즘은 완전히 같으므로, 내부 메커니즘을 이해하는 면에서 이를 잘 알아두면 좋다.
-
-<br/><br/>
-
-## 자바스크립트 프로토타입의 계층 구조
+## 내장 객체의 프로토타입과 계층 구조
 
 - 자바스크립트의 프로토타입은 한 종류만 존재하는 것이 아닌, 다양한 종류가 존재하며, 프로토타입들은 계층적으로 연결되어 있다.
 
@@ -168,5 +121,71 @@ null
     │   └── Animal.prototype
 
 ```
+
+<br/>
+
+- Array, Date, Function 세 내장 객체의 내부 구조 (출처: 코어 자바스크립트)
+
+<div align="center">
+
+<img src="img/inner_prototype.png" width="540px" />
+
+</div>
+
+- 명세서에선 모든 내장 프로토타입의 상속 트리 꼭대기엔 Object.prototype이 있어야 한다고 규정한다.
+
+- 이런 명세 때문에 몇몇 사람들은 "모든 것은 객체를 상속받는다."라는 말을 하기도 한다.
+
+<br/><br/>
+
+## 함수의 프로토타입
+
+- 함수도 자바스크립트에선 객체이므로, 프로토타입이 존재한다.
+
+- 함수로 객체를 만들 수 있는 방법 중, new 연산자를 통해 인스턴스 객체를 만들 수 있다.
+
+```js
+function Func() {
+  this.name = name;
+}
+
+const f = new Func("Yoon");
+
+console.log(f.name); // Yoon
+```
+
+- `Func` 함수는 객체이므로 `__proto__` 속성이 역시 존재한다.
+
+- 그리고 함수는 일반 객체와 달리 `prototype`이라고 하는 풀 네임을 갖고 있는 속성도 가지고 있다.
+
+```js
+function Func() {
+  this.name = name;
+}
+
+const f = new Func("Yoon");
+
+Func.prototype.newProperty = "Hello";
+
+console.log(f); // Yoon
+console.log9(f.newProperty); // Hello
+```
+
+- 어떻게 이러한 결과가 나올까?
+
+- 여기서 new가 하는 일은..
+
+```js
+function Func() {
+  this.name = name;
+  this.__proto__ = Func.prototype; // <- 이 일!!
+}
+```
+
+- 이렇게 new 연산자를 통해서 함수의 인스턴스 객체를 만들면, 일반 객체 프로토타입을 코드로 연결시켜 놓은 것을 훨씬 더 단순하고 간편하게 객체의 상속 관계를 만들어준다.
+
+- 하지만 이조차도 꽤 번거롭다는 의견이 굉장이 많았기 때문에 ES6에 class 문법이 등장하였다.
+
+- 그렇지만 ES6의 class 자체도 이 동작 메커니즘은 완전히 같으므로, 내부 메커니즘을 이해하는 면에서 이를 잘 알아두면 좋다.
 
 <br/>
