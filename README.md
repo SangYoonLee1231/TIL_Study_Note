@@ -81,6 +81,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_event_listener_utilize.md">JavaScript - 이벤트 활용하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_local_storage.md">JavaScript - 로컬 스토리지 (Local Storage)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_time_function.md">JavaScript - 시간과 관련된 함수 및 객체 (<code>setInterval</code> 함수, <code>setTimeout</code> 함수, <code>Date</code> 객체)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_regular_expression.md">JavaScript - 정규 표현식 (Regular Expression) 정리</a>
 - 🛠️ <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_method_list.md">JavaScript - 내장 메소드 정리</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Basic_Language/JavaScript/javascript_piece_info.md">JavaScript - 조각 지식 모음</a>
 
