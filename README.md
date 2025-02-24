@@ -239,14 +239,14 @@
 
 ### ◻ 컴퓨터 구조
 
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/HonGong/1_start_computer_system.md">컴퓨터 구조 시작하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/computer_system_intro.md">컴퓨터 구조의 큰 개요</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/computer_system_binary_system.md">2진수 체계</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/computer_system_bool_logic.md">불 논리</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/computer_system_cpu.md">PC 하드웨어 - CPU 개요</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/process_memory_heap.md">프로세스 메모리의 네 가지 영역 그리고 힙(Heap)</a>
 
-#### 혼곰컴운 컴퓨터 구조 학습 노트
-
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/ComputerSystem/HonGong/1_start_computer_system.md">컴퓨터 구조 시작하기</a>
+<!-- #### 혼곰컴운 컴퓨터 구조 학습 노트 -->
 <!-- - <a href=""></a> -->
 
 <br/>
@@ -278,10 +278,10 @@
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/1-computer-system-os.md">1. 컴퓨터 시스템과 OS</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/2-os-history.md">2. OS의 역사</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/3-various-os.md">3. 다양한 종류의 OS</a> (준비중)
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/4-io-operation-interrupt-handling.md">4. I/O 오퍼레이션과 인터럽트 핸들링 (Interrupt Handling)</a> (준비중)
-  <!-- - <a href="">5. 메모리 보호 (Memory Protection)와 OS의 두 가지 모드</a> (준비중) -->
-  <!-- - <a href="">6. 시스템 콜 (System Call)</a> (준비중) -->
+  <!-- - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/3-various-os.md">3. 다양한 종류의 OS</a> (준비중) -->
+  <!-- - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/4-io-operation-interrupt-handling.md">4. I/O 오퍼레이션과 인터럽트 핸들링 (Interrupt Handling)</a> (준비중) -->
+    <!-- - <a href="">5. 메모리 보호 (Memory Protection)와 OS의 두 가지 모드</a> (준비중) -->
+    <!-- - <a href="">6. 시스템 콜 (System Call)</a> (준비중) -->
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/OS/7-os-structure.md">7. OS의 구조 (OS Structure)</a>
 <!-- - <a href="">8. 프로세스 (Process)</a>
 - <a href="">9. Context Switching</a>
