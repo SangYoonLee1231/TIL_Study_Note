@@ -6,7 +6,7 @@
 >
 > 「<a href="https://nomadcoders.co/css-layout-masterclass" target="_blank">노마드 코더 - CSS Layout 마스터클래스</a>」
 
-<br/>
+<!-- <br/>
 
 ### 목차
 
@@ -18,7 +18,7 @@
   - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/HTML%20%26%20CSS/css_grid.md#gap-column-gap-row-gap"><code>gap</code> (<code>column-gap</code>, <code>row-gap</code>)</a>
 
 - <a href=""></a>
-- <a href=""></a>
+- <a href=""></a> -->
 
 <br/><br/>
 
