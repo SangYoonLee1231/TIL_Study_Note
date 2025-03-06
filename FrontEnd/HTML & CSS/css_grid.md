@@ -74,9 +74,9 @@
 
   - <code>row-gap</code> : 가로줄 간의 간격을 설정
 
-<br/>
+<br/><br/>
 
-### 참고 코드
+## 참고 실습 코드
 
 ```html
 <div class="grid-container">
