@@ -172,7 +172,7 @@ int b; // 4 bytes (정렬을 위해 3바이트 패딩)
 
 <br/><br/>
 
-## 힘(Heap) 동적 메모리 관리 전략
+## 힙(Heap) 동적 메모리 관리 전략
 
 - 힙에서 메모리를 효율적으로 할당하기 위해 <strong>First-Fit, Best-Fit, Worst-Fit</strong> 등의 전략이 사용된다.
 
