@@ -8,9 +8,11 @@
 
 ## 비동기 처리란?
 
-- JavaScript는 기본적으로 **싱글 스레드(Single-thread)**에서 동작하며, 한 번에 하나의 작업만 실행할 수 있다. 하지만, 네트워크 요청, 파일 읽기, 타이머 같은 **비동기 작업**을 처리하기 위해 **이벤트 루프(Event Loop)**와 **비동기 API(Web API)**를 활용한다.
+- JavaScript는 기본적으로 <strong>싱글 스레드(Single-thread)</strong>에서 동작하며, 한 번에 하나의 작업만 실행할 수 있다. 하지만, 네트워크 요청, 파일 읽기, 타이머 같은 **비동기 작업**을 처리하기 위해 <strong>이벤트 루프(Event Loop)</strong>와 <strong>비동기 API(Web API)</strong>를 활용한다.
 
-- 비동기 작업이란 다음과 같은 작업을 말합니다.
+<br/>
+
+- 비동기 작업이란 다음과 같은 작업을 말한다.
 
   - **네트워크 요청**: `fetch()`, `XMLHttpRequest`
   - **타이머**: `setTimeout()`, `setInterval()`
@@ -26,6 +28,8 @@
 ### (1) Promise의 개념
 
 - `Promise`는 **비동기 작업의 완료 또는 실패를 나타내는 객체**이다. 네트워크 요청처럼 시간이 걸리는 작업을 수행하고, **작업이 완료되었을 때 결과 값을 제공하거나 실패 시 오류를 반환**한다.
+
+<br/>
 
 ### (2) Promise의 상태
 
@@ -62,6 +66,8 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
 
 - `.then()`을 통해 비동기 작업의 결과를 순차적으로 처리할 수 있다.
 - `.catch()`를 사용하면 네트워크 요청 실패 시 오류를 잡아낼 수 있다.
+
+<br/>
 
 ### (2) `setTimeout`을 Promise로 감싸기
 
