@@ -12,8 +12,6 @@
 
 - 하지만, 네트워크 요청, 파일 읽기, 타이머 같은 **비동기 작업**을 처리하기 위해 <strong>이벤트 루프(Event Loop)</strong>와 <strong>비동기 API(Web API)</strong>를 활용한다.
 
-<br/>
-
 - 비동기 작업의 대표적인 예시는 다음과 같다.
 
   - **네트워크 요청**: `fetch()`, `XMLHttpRequest`
@@ -21,7 +19,9 @@
   - **이벤트 리스너**: `addEventListener()`
   - **파일 읽기/쓰기**: `FileReader`, `fs.readFile()`
 
-- JavaScript는 이러한 비동기 작업이 완료될 때까지 기다리지 않고, 나머지 코드들을 먼저 실행하며 <strong>이벤트 루프(Event Loop)</strong>를 통해 비동기 코드가 실행될 수 있도록 한다.
+- JavaScript는 이러한 비동기 작업이 완료될 때까지 기다리지 않고, 나머지 코드들을 먼저 실행하며
+
+  <strong>이벤트 루프(Event Loop)</strong>를 통해 비동기 코드가 실행될 수 있도록 한다.
 
 <br/><br/>
 
