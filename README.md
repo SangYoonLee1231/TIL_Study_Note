@@ -6,6 +6,7 @@
 
 <img src="https://img.shields.io/badge/since-2021.12-grey"></a>
 <img src="https://img.shields.io/badge/author-SangYoonLee-skyblue"></a>
+
 <!-- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSangYoonLee1231%2FTIL&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) -->
 
 </div>
@@ -106,9 +107,14 @@
 
 #### <a href="https://github.com/SangYoonLee1231/ERROR-Note">📒 ERROR NOTE - 개발 중 마주했던 🚨에러🚨들을 어떻게 해결했는지 간단히 기록하는 공간</a>
 
-<!-- ### ◻ Web 상식
+### ◻ Web 상식 및 개발 방법론
 
-- <a href="">CI/CD란 무엇인가?</a> -->
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Network/how-browser-works.md">웹 브라우저의 동작 원리 - 주소창에 naver.com을 치면 일어나는 일</a>
+- <a href="">FE 디렉토리 구조</a>
+- <a href=""></a>
+<!-- - <a href=""></a> -->
+
+<!-- - <a href="">CI/CD란 무엇인가?</a> -->
 <!-- - <a href=""></a> -->
 
 ### ◻ HTML
@@ -150,6 +156,13 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_custom_hook.md">React JS - 관심사의 분리와 Custom Hook</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신 (`axios`, `fetch`, `axios`)</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_piece_info.md">React - 조각 지식 모음</a>
+<!-- - <a href=""></a> -->
+
+#### React 심화
+
+- <a href="">React JS - 라이프사이클 기능</a>
+- <a href="">React JS - Custom Hook</a>
+- <a href="">React JS - 성능 최적화 방법</a>
 <!-- - <a href=""></a> -->
 
 ### ◻ TypeScript
@@ -197,8 +210,6 @@
 <br/>
 
 ## 📌 Computer Science
-
-#### 💻 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Network/how-browser-works.md">웹 브라우저의 동작 원리</a>
 
 ### ◻ 자료구조
 
