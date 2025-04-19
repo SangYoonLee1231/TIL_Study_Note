@@ -140,6 +140,7 @@
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/HTML%20%26%20CSS/css_piece_info.md">CSS - 조각 지식 모음</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/HTML%20%26%20CSS/css_sass.md">CSS Preprocessor - SASS</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/HTML%20%26%20CSS/css_styled_components.md">CSS-in-JS - <code>styled-components</code></a>
+- <a href="">CSS에서 애니메이션을 적용할 때 성능에 유리한 속성이나 방법</a>
 
 ### ◻ React JS
 
@@ -192,7 +193,7 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/NextJS/about_next_js.md">Next JS 소개</a>
   <!-- - <a href=""></a> -->
 
-### ◻ Project Setting
+### ◻ Project Setting + Etc.
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_project_setting.md">CRA를 통해 팀 프로젝트 세팅하기</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/Etc/Git/git_project_setting_personal.md">(CRA 없이) 개인 프로젝트 직접 세팅하기</a>
