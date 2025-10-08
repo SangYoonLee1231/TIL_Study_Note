@@ -272,6 +272,8 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/computer_system_overview.md">시스템의 구조 (사용자 영역, 커널 영역, 하드웨어)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/process_and_thread.md">프로세스와 스레드</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/process_lifecycle.md">프로세스가 만들어지는 과정 (라이프사이클)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/hardware_abstraction_concurrency_security.md">하드웨어의 추상화 (Abstraction), 동시성 (Concurrency), 보안 (Security)</a>
+- 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/os_piece_info.md">운영체제 - 조각 지식 모음</a>
 <!-- - <a href=""></a> -->
 
 #### 리눅스(Linux) 시스템 프로그래밍
