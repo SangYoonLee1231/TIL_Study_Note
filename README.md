@@ -155,14 +155,16 @@
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_component_reuse.md">React JS - Component의 분리와 재사용 (관심사의 분리)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_advanced_router.md">React JS - Dynamic Routing & Query String</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_custom_hook.md">React JS - Custom Hook</a>
-- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신 (`axios`, `fetch`, `axios`)</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_server_communication.md">React JS - 프론트엔드 서버 통신 (`ajax`, `fetch`, `axios`)</a>
 - 🧩 <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_piece_info.md">React - 조각 지식 모음</a>
 <!-- - <a href=""></a> -->
 
 #### React 심화
 
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/FrontEnd/React%20JS/react_lifecycle_methods.md">React JS - 라이프사이클 기능</a>
-- <a href="">React JS - Custom Hook</a>
+- <a href="">React JS - React Hooks와 상태 업데이트</a>
+- <a href="">React JS - 렌더링 최적화</a>
+- <a href="">React JS - 상태 관리 (Redux, Context API, Zustand)</a>
 - <a href="">React JS - 성능 최적화 방법</a>
 <!-- - <a href=""></a> -->
 
@@ -269,6 +271,8 @@
 - <a href="https://sylagape1231.tistory.com/120">운영체제란 무엇일까? (정의, 종류, 역할) (블로그 포스트)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/computer_system_overview.md">시스템의 구조 (사용자 영역, 커널 영역, 하드웨어)</a>
 - <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/process_and_thread.md">프로세스와 스레드</a>
+- <a href="https://github.com/SangYoonLee1231/TIL/blob/main/CS/Operating_System/process_lifecycle.md">프로세스가 만들어지는 과정 (라이프사이클)</a>
+<!-- - <a href=""></a> -->
 
 #### 리눅스(Linux) 시스템 프로그래밍
 
@@ -398,6 +402,6 @@
 
 #### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/HufsLion-Study">🦁 멋쟁이 사자처럼 11기 스터디를 위한 학습 내용 정리 (2023.04.29 ~ 2023.07)</a>
 
-#### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/DevCourseTIL">💻 프로그래머스 데브코스 FE 6기 TIL (2025.07.30 ~ 2026.01.13)</a>
+<!-- #### <a href="https://github.com/SangYoonLee1231/TIL/tree/main/DevCourseTIL">💻 프로그래머스 데브코스 FE 6기 TIL (2025.07.30 ~ 2026.01.13)</a> -->
 
 <br/>

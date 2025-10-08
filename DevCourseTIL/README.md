@@ -2,6 +2,6 @@
 
 ### Period 1 (25.07.30~)
 
-- <a href="https://github.com/SangYoonLee1231/TIL_Study_Note/blob/main/DevCourseTIL/peroid_1/250805.md">25.08.05 TIL</a>
+- <a href="https://github.com/SangYoonLee1231/TIL_Study_Note/blob/main/DevCourseTIL/peroid_1/250805_TIL.md">25.08.05 TIL</a>
 
 <br/>
